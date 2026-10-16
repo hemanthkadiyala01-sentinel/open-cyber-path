@@ -2,100 +2,67 @@
 
 **Discover your path. Learn for free. Build your future.**
 
-OpenCyberPath is a learner-built, community-curated directory of cybersecurity learning resources, hands-on labs, open-source tools, career roadmaps, and job-preparation guidance.
+OpenCyberPath is a learner-built directory of cybersecurity learning resources, hands-on labs, beginner-friendly notes, and career roadmaps. It helps students discover resources that already exist around the world, understand their access conditions, and follow a clearer path from foundational knowledge to practical skills.
 
-Our purpose is simple: help people find useful cybersecurity learning opportunities that already exist around the world, understand which ones fit their goals and budget, and follow a clearer path from beginner knowledge to practical skills.
+We are learners too. This is an independent community project, not a paid course provider or placement company. The core directory and our original learning aids are intended to be usable without a paid subscription. Students still need a computer and internet access for many resources, and some external platforms have limits or paid extras.
 
-We are learners too. We are building this openly so we can learn, contribute, and help others learn alongside us.
+## What is available
 
-## Our principles
+- **Resource directory:** searchable resource cards with category, level, access type, account needs, and links to official providers.
+- **Learning tiers:** Beginner, Intermediate, and Advanced tracks, plus a SOC Analyst roadmap.
+- **Labs & notes:** original PDF and DOCX notes, including notebook/handwriting-inspired beginner notes, Windows process-event triage, detection evaluation, zero-budget lab setup, and advanced detection tuning.
+- **Sample cases:** clearly labelled synthetic JSON/CSV records for safe practice.
+- **Detection-evaluation exercise:** a small Python script that applies a narrow sample rule and calculates TP, FP, TN, FN, accuracy, precision, recall, specificity, and F1.
+- **Video guide directory:** curated third-party YouTube tutorials/provider-linked webinars paired with official documentation. Videos may be older; current official documentation takes precedence for product-version steps.
+- **Career planning:** learning steps and portfolio milestones for SOC Analyst and related roles.
 
-- **Accessible by design:** the core directory and our own beginner learning guidance should not require a paid subscription.
-- **Honest about cost:** distinguish free learning, open-source software, free tiers, paid extras, and trials.
-- **Link to original sources:** send learners to the official resource owner. Do not copy third-party course material without permission.
-- **Practice matters:** connect topics to exercises, labs, projects, and evidence of skills.
-- **No job guarantees:** provide roadmaps and preparation guidance, not promises of employment or placement.
-- **Community-curated:** welcome corrections and contributions, and record when resource details were last checked.
-- **Safe and authorised learning:** recommend defensive practice and labs intentionally designed for security training.
+## Run the website locally
 
-## What you can discover here
+From the repository root:
 
-### Learning resources
-Curated links to official documentation, free learning material, community projects, and selected courses from providers around the world.
+```powershell
+cd website
+npm ci
+npm run dev
+```
 
-### Hands-on labs and practice
-Resources for SOC analysis, SIEM, detection engineering, networking, Linux, digital forensics, web security, and other cybersecurity topics. Some platforms have a limited free tier or paid extras; listings should say so clearly.
+Open the local URL printed by Vite (usually `http://localhost:5173`). To create a production build, run `npm run build` from the `website` directory.
 
-### Career roadmaps
-Structured paths that explain what to learn, in what order, how to practise, what to build, and how to prepare for roles such as:
+## Try the labs
 
-- SOC Analyst
-- Detection Engineer
-- Digital Forensics / Incident Response Analyst
-- Cloud Security Analyst
+Open the **Labs & notes** section of the website and download the PDF/DOCX handouts or sample data. To run the detection-evaluation script from the `website` directory:
 
-### Portfolio and job preparation
-Ideas for demonstrable projects, investigation reports, résumé preparation, interview practice, and finding relevant entry-level vacancies.
+```powershell
+python public/labs/evaluate-detection-cases.py public/labs/detection-evaluation-cases.csv
+```
 
-## Start exploring: initial resources
+The bundled data is synthetic and designed for education. The rule and labels are deliberately small and manually curated; their metrics are **not** estimates of real-world detection performance. The advanced exercise asks learners to modify one rule condition and compare the precision/recall trade-off.
 
-These are starting points, not endorsements. Check each provider's current terms and access requirements before signing up. The access notes below were checked on **2026-10-16** and may change.
+## Learning roadmaps
 
-| Resource | Useful for | Access notes | Official link |
-| --- | --- | --- | --- |
-| Wazuh documentation | SIEM, endpoint monitoring, agents, rules, and alerts | The platform is free and open source; documentation is free. Running the full stack needs suitable computer resources. | [Getting started](https://documentation.wazuh.com/current/getting-started/index.html) |
-| Splunk free courses | Log analysis, events, fields, dashboards, and Splunk basics | Free learning content is available. Product, certification, and lab access can have separate conditions. | [Free courses](https://www.splunk.com/en_us/training/free-courses/overview.html) |
-| Microsoft Learn | Security, cloud, Microsoft tools, and role-based learning paths | Training content is free. Some optional cloud exercises may require an Azure subscription and could incur charges. | [Training](https://learn.microsoft.com/en-us/training/) |
-| SigmaHQ rules | Detection engineering and reusable detection logic | Public community repository. Check the repository and individual rule terms before reusing content. | [Sigma rules](https://github.com/SigmaHQ/sigma) |
-| MITRE ATT&CK | Adversary tactics, techniques, and defensive analysis | Public knowledge base and learning reference. | [Get started](https://attack.mitre.org/resources/) |
-| PortSwigger Web Security Academy | Web security concepts and interactive labs | Free training and labs are available; use the Academy's intended environments. | [Web Security Academy](https://portswigger.net/web-security) |
-| OverTheWire Bandit | Linux command-line and security fundamentals | Educational wargame aimed at beginners; requires terminal/SSH access. | [Bandit](https://overthewire.org/wargames/bandit/) |
-| OWASP Juice Shop | Web application security practice | Free, open-source deliberately vulnerable application. Run only in a controlled lab you own or are authorised to use. | [Project page](https://owasp.org/projects/juice-shop) |
-| TryHackMe free rooms | Guided hands-on cybersecurity exercises | Selected rooms are free; other rooms, features, paths, or certification options may require payment. Account required to use the platform. | [Free rooms](https://tryhackme.com/free-rooms) |
+- [`roadmaps/soc-analyst.md`](roadmaps/soc-analyst.md) — foundations through job preparation.
+- [`roadmaps/learning-tiers.md`](roadmaps/learning-tiers.md) — beginner, intermediate, and advanced milestones.
 
-For a machine-readable starter list, see [`data/resources.json`](data/resources.json). Before adding more entries, read [`RESOURCE_VERIFICATION.md`](RESOURCE_VERIFICATION.md).
+## Resource catalogue and verification
 
-## Example roadmap: SOC Analyst
+- [`data/resources.json`](data/resources.json) — machine-readable catalogue snapshot.
+- [`website/src/data/resources.js`](website/src/data/resources.js) — resource data used by the website.
+- [`VIDEO-SOURCES.md`](VIDEO-SOURCES.md) — notes about the curated video links and their official documentation references.
+- [`RESOURCE_VERIFICATION.md`](RESOURCE_VERIFICATION.md) — approach to access labels and link checks.
+- [`CONTRIBUTING.md`](CONTRIBUTING.md) — how to suggest corrections and new resources.
 
-This is a learning sequence, not a guarantee of job readiness by a specific date.
+We distinguish free learning, open-source tools, free tiers, free documentation, and paid extras. Provider access and pricing can change, so check the official provider's terms before signing up or provisioning cloud resources. We link to third-party materials rather than copying course content without permission.
 
-1. **Foundations:** networking, TCP/IP, DNS, Windows and Linux basics, files, processes, permissions, and command-line skills.
-2. **Logs and events:** learn Windows Event Viewer, Linux authentication logs, timestamps, users, hosts, processes, and structured data such as JSON.
-3. **SIEM basics:** understand ingestion, parsing, searching, filtering, dashboards, alerts, and detection rules. Explore Wazuh and free Splunk learning material.
-4. **Alert triage:** review evidence, identify what triggered a rule, consider benign explanations, and document what is known versus unknown.
-5. **Detection engineering:** write and test rules, include benign and suspicious cases, measure false positives and false negatives, and document limitations.
-6. **Incident investigation:** link events to alerts, create a timeline, record findings, and communicate a clear conclusion.
-7. **Portfolio:** publish reproducible labs and reports with sanitised evidence, tests, and honest limitations.
-8. **Job preparation:** compare your skills against actual entry-level job descriptions, prepare a résumé, practise technical explanations, and apply to suitable vacancies.
+## Relationship to Cyber-Threat-Monitor
 
-The first detailed roadmap is in [`roadmaps/soc-analyst.md`](roadmaps/soc-analyst.md).
+OpenCyberPath focuses on learning-resource discovery and career roadmaps. Our separate [Cyber-Threat-Monitor](https://github.com/hemanthkadiyala01-sentinel/Cyber-Threat-Monitor) project focuses on security event ingestion, detection, and incident investigation. The two projects have distinct purposes and can link to each other.
 
-## How we classify resource cost
+## Safety and limitations
 
-- **Free learning:** the listed learning content is currently available without payment.
-- **Open source:** source code is available under a stated licence; hosting or hardware can still cost money.
-- **Free documentation:** documentation is public, while a hosted product, lab, or certification might have a cost.
-- **Free tier / limited free access:** some content or usage is free, but limits or paid extras apply.
-- **Trial / paid:** access is temporary or requires payment; these are not presented as part of the zero-cost path.
-
-For every resource, we aim to record the official link, topics covered, skill level, prerequisites, account requirements, hardware needs, cost classification, and last-verified date.
+Only use systems and labs you own or are authorised to access. Intentionally vulnerable applications must remain isolated. No course, roadmap, lab, certificate, or project guarantees employment. OpenCyberPath is not affiliated with the external providers listed; their names and content belong to their respective owners.
 
 ## Contributing
 
-We welcome corrections and new resource suggestions from learners. Please read [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`RESOURCE_VERIFICATION.md`](RESOURCE_VERIFICATION.md) before submitting additions.
-
-## Project status
-
-OpenCyberPath is at an early stage. This repository begins with the mission, an initial resource list, and a starter SOC Analyst roadmap. The next milestone is a simple searchable website with topic, difficulty, and cost filters. The presence of a link does not mean we have independently tested the provider's platform.
-
-## Relationship to other projects
-
-OpenCyberPath focuses on resource discovery and career-learning roadmaps. Our separate [Cyber-Threat-Monitor](https://github.com/hemanthkadiyala01-sentinel/Cyber-Threat-Monitor) project focuses on security event ingestion, detection, and incident investigation. The projects may link to one another but have distinct purposes.
-
-## Disclaimer
-
-OpenCyberPath is a learner-built community project and is not affiliated with or endorsed by the external providers listed. Provider names and trademarks belong to their respective owners. Follow the terms and rules of every external lab. No resource, roadmap, or project guarantees a job.
-
----
+We welcome learners who want to correct resource listings, add official learning links, or improve roadmaps. Read [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`RESOURCE_VERIFICATION.md`](RESOURCE_VERIFICATION.md) first.
 
 **Learn openly. Practise responsibly. Help the next learner.**

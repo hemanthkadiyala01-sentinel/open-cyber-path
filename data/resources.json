@@ -1,110 +1,189 @@
 [
   {
     "id": "wazuh-getting-started",
-    "name": "Wazuh Getting Started",
+    "name": "Wazuh documentation",
+    "provider": "Wazuh",
+    "category": "SOC & SIEM",
+    "kind": "Open source",
+    "level": "Beginner",
+    "description": "Learn endpoint monitoring, agents, security events, rules, and alerts using the official guides.",
+    "skills": [
+      "SIEM",
+      "Endpoint monitoring",
+      "Detection"
+    ],
     "url": "https://documentation.wazuh.com/current/getting-started/index.html",
-    "topics": ["SOC", "SIEM", "endpoint monitoring", "detection"],
-    "level": "beginner-to-intermediate",
-    "access_category": "free_documentation",
-    "account_requirement": "Documentation is publicly accessible; platform installation requires suitable compute resources.",
-    "hardware_requirement": "Reading docs requires a browser. Running the full stack requires more resources; check the official requirements.",
-    "access_note": "Wazuh is free and open source. Its hosted cloud service is separate and offers a trial, so do not treat that service as permanently free.",
-    "last_verified": "2026-10-16"
+    "account": "No account for docs",
+    "note": "Running the full stack needs suitable hardware. Use current docs rather than old installation videos."
   },
   {
     "id": "splunk-free-courses",
-    "name": "Splunk Free Courses",
+    "name": "Splunk free courses",
+    "provider": "Splunk",
+    "category": "SOC & SIEM",
+    "kind": "Free learning",
+    "level": "Beginner",
+    "description": "Build familiarity with log searches, events, fields, dashboards, and Splunk fundamentals.",
+    "skills": [
+      "Log analysis",
+      "SPL",
+      "Dashboards"
+    ],
     "url": "https://www.splunk.com/en_us/training/free-courses/overview.html",
-    "topics": ["log analysis", "search", "fields", "dashboards", "SIEM"],
-    "level": "beginner",
-    "access_category": "free_learning",
-    "account_requirement": "Registration may be required for course access.",
-    "hardware_requirement": "Browser and internet access; hands-on product access may have separate requirements.",
-    "access_note": "The provider lists free learning opportunities. Product use, certifications, and some labs may have separate conditions.",
-    "last_verified": "2026-10-16"
+    "account": "Account may be needed",
+    "note": "Learning content and product or lab access can have different conditions."
   },
   {
     "id": "microsoft-learn",
-    "name": "Microsoft Learn",
-    "url": "https://learn.microsoft.com/en-us/training/",
-    "topics": ["security", "cloud", "Microsoft technologies", "career paths"],
-    "level": "beginner-to-advanced",
-    "access_category": "free_learning",
-    "account_requirement": "A profile is not required to read training content; sign-in is needed for some profile features.",
-    "hardware_requirement": "Browser and internet access. Some optional cloud labs need separate Azure resources.",
-    "access_note": "Training is free. Check carefully before provisioning cloud resources, which may require a subscription and can incur charges.",
-    "last_verified": "2026-10-16"
+    "name": "Microsoft Learn: Sentinel and KQL",
+    "provider": "Microsoft",
+    "category": "SOC & SIEM",
+    "kind": "Free learning",
+    "level": "Intermediate",
+    "description": "Study Microsoft security, Sentinel, KQL, cloud concepts, and investigation workflows.",
+    "skills": [
+      "Sentinel",
+      "KQL",
+      "Cloud security"
+    ],
+    "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/",
+    "account": "Some modules may need sign-in",
+    "note": "Documentation is free; cloud exercises can incur charges. Do not provision Azure services without checking pricing."
   },
   {
-    "id": "sigmahq-rules",
-    "name": "SigmaHQ Detection Rules",
+    "id": "sigma-rules",
+    "name": "Sigma detection rules",
+    "provider": "SigmaHQ",
+    "category": "Detection Engineering",
+    "kind": "Open source",
+    "level": "Intermediate",
+    "description": "Explore community detection rules and learn how detection logic can be expressed portably.",
+    "skills": [
+      "Detection logic",
+      "Rule review",
+      "Threat hunting"
+    ],
     "url": "https://github.com/SigmaHQ/sigma",
-    "topics": ["detection engineering", "SIEM", "threat hunting", "rule analysis"],
-    "level": "intermediate-to-advanced",
-    "access_category": "open_source",
-    "account_requirement": "A GitHub account is not required to view public content; needed for some contribution workflows.",
-    "hardware_requirement": "Browser; rule testing/conversion may need local tools.",
-    "access_note": "Public rule repository. Review its current licence and the requirements and status of individual rules before reusing them.",
-    "last_verified": "2026-10-16"
+    "account": "No account to browse",
+    "note": "Review each rule’s log-source requirements, false-positive notes, and license."
   },
   {
     "id": "mitre-attack",
-    "name": "MITRE ATT&CK Resources",
-    "url": "https://attack.mitre.org/resources/",
-    "topics": ["adversary tactics", "techniques", "defensive analysis", "threat modelling"],
-    "level": "beginner-to-advanced",
-    "access_category": "free_reference",
-    "account_requirement": "Public reference material; no account normally needed to read it.",
-    "hardware_requirement": "Browser and internet access.",
-    "access_note": "A public knowledge base for describing observed adversary behaviour; mapping a technique does not prove an alert is malicious.",
-    "last_verified": "2026-10-16"
+    "name": "MITRE ATT&CK",
+    "provider": "MITRE",
+    "category": "Detection Engineering",
+    "kind": "Free knowledge base",
+    "level": "Beginner → Advanced",
+    "description": "Understand adversary tactics and techniques and use them to contextualise defensive detections.",
+    "skills": [
+      "Threat modelling",
+      "Detection mapping",
+      "Investigation"
+    ],
+    "url": "https://attack.mitre.org/",
+    "account": "No account required",
+    "note": "A knowledge base, not a step-by-step course or proof a technique occurred."
   },
   {
-    "id": "portswigger-web-security-academy",
-    "name": "PortSwigger Web Security Academy",
+    "id": "portswigger-academy",
+    "name": "Web Security Academy",
+    "provider": "PortSwigger",
+    "category": "Web Security",
+    "kind": "Free labs",
+    "level": "Beginner → Advanced",
+    "description": "Learn web security concepts through structured explanations and interactive training labs.",
+    "skills": [
+      "Web security",
+      "HTTP",
+      "Vulnerability testing"
+    ],
     "url": "https://portswigger.net/web-security",
-    "topics": ["web security", "web vulnerabilities", "interactive labs"],
-    "level": "beginner-to-advanced",
-    "access_category": "free_learning",
-    "account_requirement": "Check the provider's current account requirements for lab progress and tracking.",
-    "hardware_requirement": "Browser and internet access; some exercises benefit from local web security tools.",
-    "access_note": "The Academy describes itself as free online training with interactive labs. Use only its intended labs or systems you are authorised to test.",
-    "last_verified": "2026-10-16"
+    "account": "Check individual lab needs",
+    "note": "Practise in intended training environments only."
   },
   {
-    "id": "overthewire-bandit",
+    "id": "overthewire",
     "name": "OverTheWire Bandit",
+    "provider": "OverTheWire",
+    "category": "Foundations",
+    "kind": "Free practice",
+    "level": "Beginner",
+    "description": "Practise Linux command-line concepts through a beginner-friendly educational wargame.",
+    "skills": [
+      "Linux",
+      "Command line",
+      "Problem solving"
+    ],
     "url": "https://overthewire.org/wargames/bandit/",
-    "topics": ["Linux", "terminal", "SSH", "command-line fundamentals"],
-    "level": "beginner",
-    "access_category": "free_learning",
-    "account_requirement": "Use the service's documented SSH connection; review its current rules and instructions.",
-    "hardware_requirement": "A terminal with SSH capability and internet access.",
-    "access_note": "A beginner-oriented educational wargame. Stay within the challenge environment and published rules.",
-    "last_verified": "2026-10-16"
+    "account": "Terminal/SSH access",
+    "note": "Follow the rules and instructions provided by the game."
   },
   {
-    "id": "owasp-juice-shop",
+    "id": "juice-shop",
     "name": "OWASP Juice Shop",
-    "url": "https://owasp.org/projects/juice-shop",
-    "topics": ["web application security", "secure development", "training labs"],
-    "level": "beginner-to-advanced",
-    "access_category": "open_source",
-    "account_requirement": "No account needed to read project documentation; local setup has its own requirements.",
-    "hardware_requirement": "A supported runtime or container environment and sufficient local resources.",
-    "access_note": "Intentionally vulnerable training application. Run only in a controlled lab you own or are authorised to use; never expose it as a public vulnerable service.",
-    "last_verified": "2026-10-16"
+    "provider": "OWASP",
+    "category": "Web Security",
+    "kind": "Open source",
+    "level": "Intermediate → Advanced",
+    "description": "Use an intentionally vulnerable training app to learn common web security issues.",
+    "skills": [
+      "Web security",
+      "App testing",
+      "Secure coding"
+    ],
+    "url": "https://owasp.org/www-project-juice-shop/",
+    "account": "Local setup recommended",
+    "note": "Run in an isolated lab; never expose a vulnerable instance publicly."
   },
   {
     "id": "tryhackme-free-rooms",
-    "name": "TryHackMe Free Rooms",
-    "url": "https://tryhackme.com/free-rooms",
-    "topics": ["cybersecurity fundamentals", "hands-on labs", "blue team", "red team"],
-    "level": "beginner-to-advanced",
-    "access_category": "free_tier",
-    "account_requirement": "An account is required to use the platform.",
-    "hardware_requirement": "Browser and internet access; individual rooms may have additional requirements.",
-    "access_note": "The provider lists selected free rooms; learning paths, rooms, AttackBox time, and other features may have premium restrictions.",
-    "last_verified": "2026-10-16"
+    "name": "TryHackMe free rooms",
+    "provider": "TryHackMe",
+    "category": "Hands-on Labs",
+    "kind": "Free tier",
+    "level": "Beginner → Intermediate",
+    "description": "Explore guided exercises covering cybersecurity concepts, SOC skills, and security tooling.",
+    "skills": [
+      "SOC basics",
+      "Linux",
+      "Security tools"
+    ],
+    "url": "https://tryhackme.com/r/rooms",
+    "account": "Account required",
+    "note": "Only selected content is free; other rooms/features may require payment."
+  },
+  {
+    "id": "cyberdefenders",
+    "name": "CyberDefenders blue-team labs",
+    "provider": "CyberDefenders",
+    "category": "Hands-on Labs",
+    "kind": "Free / varies by lab",
+    "level": "Intermediate → Advanced",
+    "description": "Explore defensive investigations, threat hunting, and digital forensics exercises.",
+    "skills": [
+      "SOC investigations",
+      "Forensics",
+      "Threat hunting"
+    ],
+    "url": "https://cyberdefenders.org/blue-team-labs/",
+    "account": "Varies by lab",
+    "note": "Check the access conditions for each individual lab."
+  },
+  {
+    "id": "windows-security-auditing",
+    "name": "Windows process creation auditing",
+    "provider": "Microsoft Learn",
+    "category": "Foundations",
+    "kind": "Free documentation",
+    "level": "Intermediate",
+    "description": "Understand Windows process-creation auditing concepts and event details.",
+    "skills": [
+      "Windows logs",
+      "Event ID 4688",
+      "Audit policy"
+    ],
+    "url": "https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/basic-audit-process-creation",
+    "account": "No account for docs",
+    "note": "Do not change audit policy on managed devices without permission; use sample events for practice."
   }
 ]

@@ -1,0 +1,24 @@
+[
+  {
+    "event_id": "SAMPLE-4688-001",
+    "windows_event_id": 4688,
+    "timestamp": "2026-10-17T10:12:00Z",
+    "host": "TRAINING-WIN-01",
+    "user": "STUDENT-LAB",
+    "process": "C:\\Windows\\System32\\notepad.exe",
+    "command_line": "notepad.exe",
+    "activity_label": "benign",
+    "rationale": "Harmless synthetic process-creation example; not live telemetry."
+  },
+  {
+    "event_id": "SAMPLE-4688-002",
+    "windows_event_id": 4688,
+    "timestamp": "2026-10-17T10:15:00Z",
+    "host": "TRAINING-WIN-01",
+    "user": "STUDENT-LAB",
+    "process": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "command_line": "powershell.exe -EncodedCommand [REDACTED_TRAINING_PLACEHOLDER]",
+    "activity_label": "suspicious",
+    "rationale": "Synthetic case with an encoded-command marker for alert-triage practice; placeholder is not executable content."
+  }
+]

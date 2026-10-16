@@ -1,0 +1,10 @@
+case_id,activity_label,process,command_line,rationale
+case-001,benign,notepad.exe,notepad.exe,A harmless sample process; no PowerShell encoded-command indicator.
+case-002,suspicious,powershell.exe,powershell.exe -EncodedCommand [REDACTED_TRAINING_PLACEHOLDER],"Synthetic training string contains an encoded-command marker; this is a triage indicator, not proof of malicious intent."
+case-003,benign,powershell.exe,powershell.exe -NoProfile -Command Get-Date,A benign administrative-style sample used to discuss false-positive risk.
+case-004,suspicious,powershell.exe,powershell.exe -enc [REDACTED_TRAINING_PLACEHOLDER],A second synthetic argument spelling for rule testing; the placeholder is not executable content.
+case-005,benign,chrome.exe,chrome.exe,Unrelated process should not match this narrow rule.
+case-006,ambiguous,powershell.exe,powershell.exe -EncodedCommand [REDACTED_TRAINING_PLACEHOLDER],"A rule match alone cannot resolve authorization, intent, or impact; this case is excluded from binary metrics."
+case-007,benign,powershell.exe,powershell.exe -EncodedCommand [REDACTED_TRAINING_PLACEHOLDER],Synthetic authorised-maintenance scenario; demonstrates that encoded arguments still require context and can produce a false positive.
+case-008,suspicious,pwsh.exe,pwsh.exe -EncodedCommand [REDACTED_TRAINING_PLACEHOLDER],Synthetic PowerShell 7-style process name exposes a scope limitation in a rule that only matches powershell.exe.
+case-009,benign,pwsh.exe,pwsh.exe -EncodedCommand [REDACTED_TRAINING_PLACEHOLDER],Synthetic authorised-maintenance scenario for PowerShell 7-style process; expanding detection scope may add a false positive.
