@@ -1,0 +1,11 @@
+field,learner_answer,reminder
+Training environment,,Use official training lab or local isolated app only.
+Exact in-scope page,,Record the official lab/page; no arbitrary public targets.
+Request method and path,,"Remove tokens, cookies, and personal data."
+Status code,,Explain expected vs observed behaviour.
+Content type / non-secret headers,,A missing header alone is not automatically a vulnerability.
+Expected behaviour,,What does the lab documentation say should happen?
+Observed behaviour,,Record what you actually saw; avoid assumptions.
+Evidence,,Use a redacted screenshot or short note.
+Impact and fix idea,,Be specific and do not exaggerate.
+Scope confirmation,,Stop if permission is unclear.

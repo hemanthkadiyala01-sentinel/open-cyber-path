@@ -1,68 +1,72 @@
 # OpenCyberPath
 
-**Discover your path. Learn for free. Build your future.**
+**Learn · Practise · Grow Together**
 
-OpenCyberPath is a learner-built directory of cybersecurity learning resources, hands-on labs, beginner-friendly notes, and career roadmaps. It helps students discover resources that already exist around the world, understand their access conditions, and follow a clearer path from foundational knowledge to practical skills.
+OpenCyberPath is an independent, learner-built guide to cybersecurity learning resources. It helps people with limited budgets find trusted documentation, open-source tools, free learning, practice labs, original notes, and career roadmaps without needing a paid course subscription to get started. Learners still need a compatible device and internet access for many resources, and external providers may have account requirements, free-tier limits, or paid extras.
 
-We are learners too. This is an independent community project, not a paid course provider or placement company. The core directory and our original learning aids are intended to be usable without a paid subscription. Students still need a computer and internet access for many resources, and some external platforms have limits or paid extras.
+OpenCyberPath is a community learning project, not a paid course provider or placement company. External products, courses, logos, and platforms belong to their respective providers.
 
-## What is available
+## What is available in v0.5
 
-- **Resource directory:** searchable resource cards with category, level, access type, account needs, and links to official providers.
-- **Learning tiers:** Beginner, Intermediate, and Advanced tracks, plus a SOC Analyst roadmap.
-- **Labs & notes:** original PDF and DOCX notes, including notebook/handwriting-inspired beginner notes, Windows process-event triage, detection evaluation, zero-budget lab setup, and advanced detection tuning.
-- **Sample cases:** clearly labelled synthetic JSON/CSV records for safe practice.
-- **Detection-evaluation exercise:** a small Python script that applies a narrow sample rule and calculates TP, FP, TN, FN, accuracy, precision, recall, specificity, and F1.
-- **Video guide directory:** curated third-party YouTube tutorials/provider-linked webinars paired with official documentation. Videos may be older; current official documentation takes precedence for product-version steps.
-- **Career planning:** learning steps and portfolio milestones for SOC Analyst and related roles.
+- **Resource directory:** searchable cards with topic icons, skill levels, access labels, account notes, caveats, and links to original providers.
+- **Learning paths:** foundations, threat hunting, bug-bounty foundations, and detection engineering, with practical milestones rather than job promises.
+- **Labs and notes:** downloadable PDF and editable DOCX guides, with a notebook-inspired visual treatment and clear topic-specific icons.
+- **Threat-hunting exercises:** fictional sign-in and DNS datasets for hypothesis building, timeline analysis, and evidence-based notes.
+- **Bug-bounty foundations:** scope-review and HTTP-observation exercises designed for official training labs or explicitly authorised targets.
+- **Command cheatsheet:** safe local-device, networking, log-review, and learning-path quick references.
+- **Attack basics:** plain-language explanations of common security patterns, why they occur, everyday examples, and defensive practices.
+- **Video guide directory:** third-party learning links paired with official provider documentation where possible. Videos can become outdated, so prefer current official documentation for version-specific instructions.
+- **Published data sources:** links to CIC-IDS2017, CTU-13, and Splunk BOTS v3 with source context, size/citation caveats, and safe starting points.
 
 ## Run the website locally
 
-From the repository root:
+From the repository root, run:
 
 ```powershell
 cd website
 npm ci
+npm run build
 npm run dev
 ```
 
-Open the local URL printed by Vite (usually `http://localhost:5173`). To create a production build, run `npm run build` from the `website` directory.
+Open the localhost URL printed by Vite. After applying the current v0.5 overlay, test Home, Resources, Learning paths, Labs & notes, and Attack basics; check search and filters, share action, and at least one PDF, DOCX, and sample-data download. The file-copy steps are in [`WEBSITE-V0.5-UPGRADE-GUIDE.md`](WEBSITE-V0.5-UPGRADE-GUIDE.md), and the data/visual explanation is in [`WEBSITE-V0.5-EVIDENCE-AND-VISUALS.md`](WEBSITE-V0.5-EVIDENCE-AND-VISUALS.md).
 
-## Try the labs
+## Roadmaps and resource verification
 
-Open the **Labs & notes** section of the website and download the PDF/DOCX handouts or sample data. To run the detection-evaluation script from the `website` directory:
-
-```powershell
-python public/labs/evaluate-detection-cases.py public/labs/detection-evaluation-cases.csv
-```
-
-The bundled data is synthetic and designed for education. The rule and labels are deliberately small and manually curated; their metrics are **not** estimates of real-world detection performance. The advanced exercise asks learners to modify one rule condition and compare the precision/recall trade-off.
-
-## Learning roadmaps
-
-- [`roadmaps/soc-analyst.md`](roadmaps/soc-analyst.md) — foundations through job preparation.
-- [`roadmaps/learning-tiers.md`](roadmaps/learning-tiers.md) — beginner, intermediate, and advanced milestones.
-
-## Resource catalogue and verification
-
-- [`data/resources.json`](data/resources.json) — machine-readable catalogue snapshot.
+- [`roadmaps/learning-tiers.md`](roadmaps/learning-tiers.md) — staged beginner-to-advanced learning milestones.
+- [`roadmaps/threat-hunting.md`](roadmaps/threat-hunting.md) — a defensive hunting path.
+- [`roadmaps/bug-bounty-foundations.md`](roadmaps/bug-bounty-foundations.md) — scope-first web security learning and report writing.
+- [`data/resources.json`](data/resources.json) — machine-readable resource catalogue snapshot.
 - [`website/src/data/resources.js`](website/src/data/resources.js) — resource data used by the website.
-- [`VIDEO-SOURCES.md`](VIDEO-SOURCES.md) — notes about the curated video links and their official documentation references.
-- [`RESOURCE_VERIFICATION.md`](RESOURCE_VERIFICATION.md) — approach to access labels and link checks.
+- [`VIDEO-SOURCES.md`](VIDEO-SOURCES.md) — notes on video links and official documentation references.
+- [`RESOURCE_VERIFICATION.md`](RESOURCE_VERIFICATION.md) — access labels and link-verification approach.
+- [`PUBLIC-DATA-SOURCES.md`](PUBLIC-DATA-SOURCES.md) — documented sources for larger, externally hosted cybersecurity datasets.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — how to suggest corrections and new resources.
 
-We distinguish free learning, open-source tools, free tiers, free documentation, and paid extras. Provider access and pricing can change, so check the official provider's terms before signing up or provisioning cloud resources. We link to third-party materials rather than copying course content without permission.
+We distinguish open-source tools, free documentation, free learning, free tiers, and variable or paid access. Provider access and pricing can change, so check the official provider's terms before signing up or provisioning cloud resources. We link to third-party materials rather than republishing course content without permission.
 
 ## Relationship to Cyber-Threat-Monitor
 
-OpenCyberPath focuses on learning-resource discovery and career roadmaps. Our separate [Cyber-Threat-Monitor](https://github.com/hemanthkadiyala01-sentinel/Cyber-Threat-Monitor) project focuses on security event ingestion, detection, and incident investigation. The two projects have distinct purposes and can link to each other.
+OpenCyberPath focuses on learning-resource discovery, original learning aids, and skill roadmaps. Our separate [Cyber-Threat-Monitor](https://github.com/hemanthkadiyala01-sentinel/Cyber-Threat-Monitor) project focuses on security-event ingestion, detection, and incident investigation. They are separate projects with different purposes.
 
 ## Safety and limitations
 
-Only use systems and labs you own or are authorised to access. Intentionally vulnerable applications must remain isolated. No course, roadmap, lab, certificate, or project guarantees employment. OpenCyberPath is not affiliated with the external providers listed; their names and content belong to their respective owners.
+- Bundled threat-hunting and detection datasets are synthetic teaching examples, not real telemetry or evidence of operational detection performance.
+- Practise web security only in intentionally provided training labs, local isolated applications, or on assets covered by explicit written authorisation and current program scope. Do not test arbitrary public systems, access other people's data, or continue when permission is unclear.
+- The commands and examples are for learning on your own device, supplied sample files, and authorised environments.
+- A roadmap, lab, certificate, portfolio, or participation in a bounty program does not guarantee employment, freelance income, or bounty rewards.
 
 ## Contributing
 
-We welcome learners who want to correct resource listings, add official learning links, or improve roadmaps. Read [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`RESOURCE_VERIFICATION.md`](RESOURCE_VERIFICATION.md) first.
+We welcome learners who want to correct resource listings, add official learning links, and improve roadmaps or original learning aids. Read [`CONTRIBUTING.md`](CONTRIBUTING.md) and [`RESOURCE_VERIFICATION.md`](RESOURCE_VERIFICATION.md) before proposing additions. Prefer official provider links, explain access conditions, avoid unverified claims, and record when a resource was checked.
 
 **Learn openly. Practise responsibly. Help the next learner.**
+
+
+## v0.4 visual direction
+
+The website uses topic-specific visual identities rather than one repeated accent: cobalt foundations, coral SOC & SIEM, cyan threat hunting, violet bug bounty, indigo detection engineering, warm-paper handwritten notes, amber command references, and coral defensive-awareness guides. v0.5 adds concept-specific illustrations, data calculated from included sample CSVs, and links to documented public benchmark datasets. See `WEBSITE-V0.5-UPGRADE-GUIDE.md` and `WEBSITE-V0.5-EVIDENCE-AND-VISUALS.md`.
+
+## v0.5 concept visuals and data evidence
+
+The v0.5 overlay adds concept-specific artwork for the learning paths and a homepage evidence panel. That panel reads the bundled CSV training samples in the browser, displays the actual sample rows and label counts, and recalculates a small detection-rule confusion matrix and common metrics using the same narrow rule as the supplied Python evaluator. The underlying data remains explicitly labelled **synthetic training data**; no live telemetry or real-world performance is claimed. See [`WEBSITE-V0.5-EVIDENCE-AND-VISUALS.md`](WEBSITE-V0.5-EVIDENCE-AND-VISUALS.md) before applying the overlay.

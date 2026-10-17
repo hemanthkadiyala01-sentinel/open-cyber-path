@@ -3,3 +3,7 @@ website/node_modules/
 website/dist/
 .env
 .DS_Store
+
+# Python bytecode
+__pycache__/
+*.py[cod]

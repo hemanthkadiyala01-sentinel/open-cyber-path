@@ -1,0 +1,11 @@
+timestamp_utc,case_id,host,user,event_type,source_ip,result,label,training_note
+2026-01-12T09:00:00Z,HUNT-001,TRAIN-WIN-01,student.a,login,192.0.2.10,failure,benign,One mistyped password in synthetic baseline
+2026-01-12T09:01:00Z,HUNT-002,TRAIN-WIN-01,student.a,login,192.0.2.10,success,benign,Expected sign-in after typo
+2026-01-12T09:05:00Z,HUNT-003,TRAIN-WIN-02,student.b,login,198.51.100.12,failure,suspicious,Synthetic burst: repeated failures
+2026-01-12T09:05:20Z,HUNT-004,TRAIN-WIN-02,student.b,login,198.51.100.12,failure,suspicious,Synthetic burst: repeated failures
+2026-01-12T09:05:43Z,HUNT-005,TRAIN-WIN-02,student.b,login,198.51.100.12,failure,suspicious,Synthetic burst: repeated failures
+2026-01-12T09:06:01Z,HUNT-006,TRAIN-WIN-02,student.b,login,198.51.100.12,failure,suspicious,Synthetic burst: repeated failures
+2026-01-12T09:06:22Z,HUNT-007,TRAIN-WIN-02,student.b,login,198.51.100.12,success,ambiguous,Success after failures; context is intentionally incomplete
+2026-01-12T09:10:00Z,HUNT-008,TRAIN-LNX-01,student.c,dns_lookup,203.0.113.53,allowed,benign,Synthetic normal lab DNS event
+2026-01-12T09:12:00Z,HUNT-009,TRAIN-LNX-01,student.c,dns_lookup,203.0.113.53,allowed,benign,Repeated lookup is not enough by itself to infer malicious intent
+2026-01-12T09:13:00Z,HUNT-010,TRAIN-WIN-03,student.d,login,192.0.2.44,failure,benign,Another isolated failed login

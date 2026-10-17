@@ -1,0 +1,8 @@
+timestamp_utc,case_id,host,user,dns_query,answer_ip,query_count_10m,label,training_note
+2026-02-03T10:00:00Z,DNS-001,TRAIN-WIN-01,student.a,updates.example.invalid,192.0.2.15,1,benign,Single expected-looking fictional query
+2026-02-03T10:02:00Z,DNS-002,TRAIN-WIN-01,student.a,portal.example.invalid,192.0.2.20,1,benign,Ordinary baseline query in synthetic data
+2026-02-03T10:04:00Z,DNS-003,TRAIN-WIN-02,student.b,telemetry-lab.example.invalid,203.0.113.44,8,ambiguous,Repeated query; repetition alone does not establish intent
+2026-02-03T10:05:00Z,DNS-004,TRAIN-WIN-02,student.b,telemetry-lab.example.invalid,203.0.113.44,8,ambiguous,Context intentionally missing; could be application retry behaviour
+2026-02-03T10:07:00Z,DNS-005,TRAIN-LNX-01,student.c,rare-sample.example.invalid,198.51.100.24,3,suspicious,"Teaching label marks for review, not a real indicator"
+2026-02-03T10:09:00Z,DNS-006,TRAIN-LNX-01,student.c,portal.example.invalid,192.0.2.20,1,benign,Normal-looking query after the flagged sample
+2026-02-03T10:12:00Z,DNS-007,TRAIN-WIN-03,student.d,updates.example.invalid,192.0.2.15,1,benign,Another synthetic baseline row
