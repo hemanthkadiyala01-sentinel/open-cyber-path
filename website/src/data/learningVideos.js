@@ -784,5 +784,294 @@ export const learningVideos = [
       "threat-hunting-detection-engineering",
       "soc-blue-team"
     ]
-  }
+  },
+{
+        "id":  "advanced-defender-kql-incident-tracking",
+        "title":  "Tracking the Adversary E4: Applying KQL to incident tracking",
+        "creator":  "Microsoft Defender XDR",
+        "level":  "Advanced",
+        "topic":  "Threat Hunting",
+        "url":  "https://www.youtube.com/watch?v=2EUxOc_LNd8",
+        "officialDocs":  "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-expert-training",
+        "note":  "Advanced hunting webcast on following activity across incident evidence. Query execution may require access to a Microsoft Defender environment; use the published query materials or a synthetic dataset when you do not have an authorized tenant.",
+        "youtubeId":  "2EUxOc_LNd8",
+        "embedUrl":  null,
+        "type":  "Official Microsoft technical webcast",
+        "careerPathIds":  [
+                              "soc-blue-team",
+                              "threat-hunting-detection-engineering",
+                              "digital-forensics-incident-response",
+                              "cloud-security",
+                              "threat-intelligence-ethical-osint"
+                          ]
+    },
+    {
+        "id":  "advanced-defender-hunting-optimization",
+        "title":  "L33TSP3AK: Advanced hunting query optimization and best practices",
+        "creator":  "Microsoft Defender XDR",
+        "level":  "Advanced",
+        "topic":  "Detection Engineering",
+        "url":  "https://www.youtube.com/watch?v=nMGbK-ALaVg",
+        "officialDocs":  "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-expert-training",
+        "note":  "Technical webcast focused on efficient advanced-hunting queries, ransomware investigations, dynamic JSON data, and external-data operators. Some demonstrations require an authorized Defender XDR environment.",
+        "youtubeId":  "nMGbK-ALaVg",
+        "embedUrl":  null,
+        "type":  "Official Microsoft technical webcast",
+        "careerPathIds":  [
+                              "soc-blue-team",
+                              "threat-hunting-detection-engineering",
+                              "security-engineering-devsecops-iam",
+                              "cloud-security"
+                          ]
+    },
+    {
+        "id":  "advanced-defender-suspicious-signins-exfiltration",
+        "title":  "L33TSP3AK: Investigating suspicious sign-ins and data-exfiltration signals",
+        "creator":  "Microsoft Defender XDR",
+        "level":  "Advanced",
+        "topic":  "Threat Hunting",
+        "url":  "https://www.youtube.com/watch?v=QaUxdtNfbd8",
+        "officialDocs":  "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-expert-training",
+        "note":  "Advanced investigation of unusual sign-in locations and inbox-forwarding behavior using Defender data. Treat signals as leads that need corroboration, and use only data you are authorized to investigate.",
+        "youtubeId":  "QaUxdtNfbd8",
+        "embedUrl":  null,
+        "type":  "Official Microsoft technical webcast",
+        "careerPathIds":  [
+                              "soc-blue-team",
+                              "threat-hunting-detection-engineering",
+                              "digital-forensics-incident-response",
+                              "cloud-security",
+                              "threat-intelligence-ethical-osint"
+                          ]
+    },
+    {
+        "id":  "advanced-defender-hunting-external-data-partitioning",
+        "title":  "L33TSP3AK: Advanced hunting with external data and query partitioning",
+        "creator":  "Microsoft Defender XDR",
+        "level":  "Advanced",
+        "topic":  "Detection Engineering",
+        "url":  "https://www.youtube.com/watch?v=vd5lgIJKmYs",
+        "officialDocs":  "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-expert-training",
+        "note":  "Advanced query workflow covering external data and partitioning to manage larger query jobs. Product capabilities and access requirements can change; compare the recording with current Microsoft documentation.",
+        "youtubeId":  "vd5lgIJKmYs",
+        "embedUrl":  null,
+        "type":  "Official Microsoft technical webcast",
+        "careerPathIds":  [
+                              "soc-blue-team",
+                              "threat-hunting-detection-engineering",
+                              "security-engineering-devsecops-iam",
+                              "cloud-security"
+                          ]
+    },
+    {
+        "id":  "advanced-zeek-meta-scale-detections",
+        "title":  "Zeek@Meta: Scale, log enrichment and network detections",
+        "creator":  "Zeek Project / Meta",
+        "level":  "Advanced",
+        "topic":  "Network Detection \u0026 SOC",
+        "url":  "https://www.youtube.com/watch?v=QgLkJ_J2pp4",
+        "officialDocs":  "https://zeek.org/events/webinars/",
+        "note":  "Practitioner talk on network security monitoring at scale, connection-log enrichment and active detections. Treat this as architecture and detection-engineering study; test ideas only on networks or packet captures you are authorized to analyze.",
+        "youtubeId":  "QgLkJ_J2pp4",
+        "embedUrl":  null,
+        "type":  "Official Zeek webinar",
+        "careerPathIds":  [
+                              "soc-blue-team",
+                              "threat-hunting-detection-engineering",
+                              "digital-forensics-incident-response",
+                              "security-engineering-devsecops-iam",
+                              "threat-intelligence-ethical-osint"
+                          ]
+    },
+    {
+        "id":  "advanced-zeek-file-extraction-malware-analysis",
+        "title":  "Zeek file extraction and automating malware-analysis workflows",
+        "creator":  "Zeek Project / CISA speaker",
+        "level":  "Advanced",
+        "topic":  "Malware Analysis",
+        "url":  "https://www.youtube.com/watch?v=Bw__xplbx1o",
+        "officialDocs":  "https://zeek.org/events/webinars/",
+        "note":  "Technical talk about extracting network-carried files and connecting network monitoring to malware-analysis workflows. Keep analysis in an isolated lab and use approved samples or sanitized training captures; never run unknown files on a daily-use computer.",
+        "youtubeId":  "Bw__xplbx1o",
+        "embedUrl":  null,
+        "type":  "Official Zeek webinar",
+        "careerPathIds":  [
+                              "malware-analysis-reverse-engineering",
+                              "digital-forensics-incident-response",
+                              "soc-blue-team",
+                              "threat-hunting-detection-engineering"
+                          ]
+    },
+    {
+        "id":  "advanced-zeek-ml-analysis",
+        "title":  "Integrating machine-learning analysis with Zeek",
+        "creator":  "Zeek Project / Corelight",
+        "level":  "Advanced",
+        "topic":  "Network Detection \u0026 SOC",
+        "url":  "https://www.youtube.com/watch?v=YTnyeyrFWdE",
+        "officialDocs":  "https://zeek.org/events/webinars/",
+        "note":  "Technical webinar on combining network telemetry with ML-oriented analysis. Use it to understand detection design and limitations; do not treat model output as proof without validating the underlying evidence.",
+        "youtubeId":  "YTnyeyrFWdE",
+        "embedUrl":  null,
+        "type":  "Official Zeek webinar",
+        "careerPathIds":  [
+                              "soc-blue-team",
+                              "threat-hunting-detection-engineering",
+                              "security-engineering-devsecops-iam",
+                              "digital-forensics-incident-response"
+                          ]
+    },
+    {
+        "id":  "advanced-zeek-telemetry-framework",
+        "title":  "Zeek telemetry framework: designing useful network-security data",
+        "creator":  "Zeek Project / Corelight",
+        "level":  "Advanced",
+        "topic":  "Network Detection \u0026 SOC",
+        "url":  "https://www.youtube.com/watch?v=F61G2CMbkos",
+        "officialDocs":  "https://zeek.org/events/webinars/",
+        "note":  "Technical session about telemetry architecture and observability around Zeek. Compare ideas with the current documentation before adapting them to a lab or production design.",
+        "youtubeId":  "F61G2CMbkos",
+        "embedUrl":  null,
+        "type":  "Official Zeek webinar",
+        "careerPathIds":  [
+                              "soc-blue-team",
+                              "threat-hunting-detection-engineering",
+                              "security-engineering-devsecops-iam",
+                              "cloud-security"
+                          ]
+    },
+    {
+        "id":  "advanced-zeek-real-world-logging",
+        "title":  "Designing logs in the real world: Zeek telemetry lessons",
+        "creator":  "Zeek Project / Corelight",
+        "level":  "Advanced",
+        "topic":  "Network Detection \u0026 SOC",
+        "url":  "https://www.youtube.com/watch?v=dHthJNFt-NI",
+        "officialDocs":  "https://zeek.org/events/webinars/",
+        "note":  "Practitioner discussion of log design and making telemetry useful for investigations. Focus on data quality, context, retention and limitations when designing your own defensive lab.",
+        "youtubeId":  "dHthJNFt-NI",
+        "embedUrl":  null,
+        "type":  "Official Zeek webinar",
+        "careerPathIds":  [
+                              "soc-blue-team",
+                              "threat-hunting-detection-engineering",
+                              "security-engineering-devsecops-iam",
+                              "cloud-security",
+                              "digital-forensics-incident-response"
+                          ]
+    },
+    {
+        "id":  "advanced-aws-guardduty-extended-threat-detection",
+        "title":  "Amazon GuardDuty extended threat detection for EC2 and ECS: technical demo",
+        "creator":  "Amazon Web Services",
+        "level":  "Advanced",
+        "topic":  "Cloud Security",
+        "url":  "https://www.youtube.com/watch?v=hqfmOaFGDoo",
+        "officialDocs":  "https://aws.amazon.com/guardduty/",
+        "note":  "Official demo of correlating signals across resources and time to investigate cloud attack sequences. Cloud consoles can create charges; use training accounts, review current pricing, and clean up resources after practice.",
+        "youtubeId":  "hqfmOaFGDoo",
+        "embedUrl":  null,
+        "type":  "Official AWS technical demo",
+        "careerPathIds":  [
+                              "cloud-security",
+                              "soc-blue-team",
+                              "security-engineering-devsecops-iam",
+                              "grc-security-fundamentals"
+                          ]
+    },
+    {
+        "id":  "advanced-aws-guardduty-detective-investigation",
+        "title":  "GuardDuty attack-sequence triage with Amazon Detective",
+        "creator":  "Loi Liang Yang",
+        "level":  "Advanced",
+        "topic":  "Cloud Security",
+        "url":  "https://www.youtube.com/watch?v=Sopg0HJsk78",
+        "officialDocs":  "https://aws.amazon.com/detective/",
+        "note":  "Community technical walkthrough showing cloud finding correlation and investigation pivots. Verify current product behavior against AWS documentation; cloud demos may require an account and can incur charges.",
+        "youtubeId":  "Sopg0HJsk78",
+        "embedUrl":  null,
+        "type":  "Community technical walkthrough",
+        "careerPathIds":  [
+                              "cloud-security",
+                              "soc-blue-team",
+                              "threat-hunting-detection-engineering",
+                              "digital-forensics-incident-response"
+                          ]
+    },
+    {
+        "id":  "advanced-dfir-filesystem-memory-timeline",
+        "title":  "Digital-forensics timeline analysis with fls, Volatility and Timeline Explorer",
+        "creator":  "LiveOverflow featuring 13Cubed",
+        "level":  "Advanced",
+        "topic":  "DFIR \u0026 Forensics",
+        "url":  "https://www.youtube.com/watch?v=2SSZs7coCKQ",
+        "officialDocs":  "https://volatility3.readthedocs.io/",
+        "note":  "Forensic workflow combining file-system and memory artefacts into a timeline. The recording is older, so check current tool syntax; practise on copies of evidence or supplied training images, not systems or data you do not own or have permission to examine.",
+        "youtubeId":  "2SSZs7coCKQ",
+        "embedUrl":  null,
+        "type":  "Technical DFIR video",
+        "careerPathIds":  [
+                              "digital-forensics-incident-response",
+                              "malware-analysis-reverse-engineering",
+                              "soc-blue-team",
+                              "threat-hunting-detection-engineering"
+                          ]
+    },
+    {
+        "id":  "advanced-mitre-attckcon-risk-informed-defense",
+        "title":  "ATT\u0026CKcon 2.0: threat intelligence, threat-informed defense and risk prioritization",
+        "creator":  "The MITRE Corporation",
+        "level":  "Advanced",
+        "topic":  "GRC \u0026 Risk",
+        "url":  "https://www.youtube.com/watch?v=xiUvOGr7Zfg",
+        "officialDocs":  "https://attack.mitre.org/",
+        "note":  "Long-form conference stream with technical sessions on threat intelligence, ATT\u0026CK-informed defense, detection and risk prioritization. It is from 2019, so compare its terminology and examples with the current ATT\u0026CK knowledge base.",
+        "youtubeId":  "xiUvOGr7Zfg",
+        "embedUrl":  null,
+        "type":  "Official conference recording",
+        "careerPathIds":  [
+                              "grc-security-fundamentals",
+                              "threat-intelligence-ethical-osint",
+                              "soc-blue-team",
+                              "threat-hunting-detection-engineering",
+                              "security-engineering-devsecops-iam"
+                          ]
+    },
+    {
+        "id":  "advanced-appsec-request-smuggling-research",
+        "title":  "HTTP request smuggling research: modern desync risks and mitigations",
+        "creator":  "NahamSec with James Kettle / PortSwigger",
+        "level":  "Advanced",
+        "topic":  "Web \u0026 AppSec",
+        "url":  "https://www.youtube.com/watch?v=QjPFjd8GJWY",
+        "officialDocs":  "https://portswigger.net/web-security/request-smuggling/advanced",
+        "note":  "Advanced AppSec research on request desynchronization and HTTP infrastructure risks. For practical exercises, use only PortSwigger Web Security Academy\u0027s intentionally vulnerable labs; never test public or production systems without explicit written authorization.",
+        "youtubeId":  "QjPFjd8GJWY",
+        "embedUrl":  null,
+        "type":  "Research interview",
+        "careerPathIds":  [
+                              "application-security-bug-bounty",
+                              "penetration-testing-red-team",
+                              "security-engineering-devsecops-iam"
+                          ]
+    },
+    {
+        "id":  "advanced-devsecops-slsa-sigstore-sbom",
+        "title":  "SLSA, Sigstore, SBOMs and software supply-chain security",
+        "creator":  "NDC Conferences / Abdel Sghiouar",
+        "level":  "Advanced",
+        "topic":  "DevSecOps \u0026 CI/CD",
+        "url":  "https://www.youtube.com/watch?v=hF95PiItWtM",
+        "officialDocs":  "https://slsa.dev/",
+        "note":  "Technical conference talk explaining software supply-chain security concepts and approaches from development through production. Treat it as conceptual guidance and use the current specifications and vendor docs before changing a real pipeline.",
+        "youtubeId":  "hF95PiItWtM",
+        "embedUrl":  null,
+        "type":  "Technical conference talk",
+        "careerPathIds":  [
+                              "security-engineering-devsecops-iam",
+                              "application-security-bug-bounty",
+                              "cloud-security",
+                              "grc-security-fundamentals"
+                          ]
+    }
 ];

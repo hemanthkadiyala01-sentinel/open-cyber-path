@@ -41,6 +41,14 @@ const pathIds = unique(careerPaths, (p) => p.id, 'career paths');
 const resourceIds = unique(resources, (r) => r.id, 'resources');
 const labIds = unique(labs, (lab) => lab.id, 'labs/notes');
 const videoIds = unique(learningVideos, (v) => v.id, 'videos');
+const advancedVideos = learningVideos.filter((video) => video.level === 'Advanced');
+const advancedTopics = new Set(advancedVideos.map((video) => video.topic));
+const advancedPathIds = new Set(advancedVideos.flatMap((video) => video.careerPathIds || []));
+if (advancedVideos.length < 12) errors.push(`Expected at least 12 Advanced-level learning videos; found ${advancedVideos.length}`);
+if (advancedTopics.size < 8) errors.push(`Expected Advanced resources across at least 8 topics; found ${advancedTopics.size}`);
+for (const pathId of pathIds) {
+  if (!advancedPathIds.has(pathId)) errors.push(`Career path '${pathId}' has no Advanced-level learning video mapped`);
+}
 
 for (const route of careerPaths) {
   sourceStats.modules += route.modules?.length || 0;
