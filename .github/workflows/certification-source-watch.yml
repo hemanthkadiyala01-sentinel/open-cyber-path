@@ -1,0 +1,75 @@
+name: Certification Source Watch
+
+on:
+  schedule:
+    - cron: '19 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: certification-source-watch
+  cancel-in-progress: false
+
+jobs:
+  check-official-pages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out default branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Check official certification pages
+        id: watch
+        working-directory: website
+        run: node scripts/watch-certification-sources.mjs
+      - name: Save source status snapshot
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add website/public/data/certification-source-status.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh certification source status"
+            git push
+          else
+            echo "Source status report unchanged; nothing to commit."
+          fi
+      - name: Prepare review alert
+        if: steps.watch.outputs.has_alerts == 'true'
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile, writeFile } from 'node:fs/promises';
+          const report = JSON.parse(await readFile('website/public/data/certification-source-status.json', 'utf8'));
+          const alerts = report.sources.filter((source) => source.alertThisRun);
+          const rows = alerts.map((source) => `- ${source.url} — ${source.pageState}${source.changedThisRun ? '; public page fingerprint changed' : ''}; fingerprint: ${source.contentFingerprint || 'none'}. ${source.note}`).join('\n');
+          const body = `The scheduled monitor detected official-source changes or a verification-state transition on ${report.generatedAt}.\n\nPlease review the issuer page manually. The monitor does **not** infer live exam seat availability or treat a responding page as proof that enrollment is open.\n\n${rows}\n\nAfter checking the official page, use the acknowledgement command documented in website/docs/CERTIFICATION-AUTOMATION.md when appropriate.`;
+          await writeFile('website/source-review-alert.md', `${body}\n`, 'utf8');
+          NODE
+      - name: Create or update source-review issue
+        if: steps.watch.outputs.has_alerts == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          existing_issue=$(gh issue list --state open --search '"Certification source monitor: review required" in:title' --json number --jq '.[0].number // empty')
+          if [ -n "$existing_issue" ]; then
+            existing_body=$(gh issue view "$existing_issue" --json body --jq '.body')
+            new_event_found=false
+            while IFS= read -r signature; do
+              [ -z "$signature" ] && continue
+              if ! printf '%s' "$existing_body" | grep -Fq "$signature"; then new_event_found=true; fi
+            done < <(jq -r '.sources[] | select(.alertThisRun) | (.url + " — " + .pageState + "" + (if .changedThisRun then "; public page fingerprint changed" else "" end) + "; fingerprint: " + (.contentFingerprint // "none"))' website/public/data/certification-source-status.json)
+            if [ "$new_event_found" = true ]; then
+              gh issue comment "$existing_issue" --body-file website/source-review-alert.md
+            else
+              echo "No new source-state signatures; existing review issue is already tracking these alerts."
+            fi
+          else
+            gh issue create --title 'Certification source monitor: review required' --body-file website/source-review-alert.md
+          fi

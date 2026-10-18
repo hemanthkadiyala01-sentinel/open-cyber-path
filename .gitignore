@@ -7,3 +7,26 @@ website/dist/
 # Python bytecode
 __pycache__/
 *.py[cod]
+
+# Local environment and secrets
+.env.*
+!.env.example
+
+# Android / Capacitor generated files and local configuration
+website/android/.gradle/
+website/android/local.properties
+website/android/.idea/
+website/android/**/build/
+website/android/captures/
+*.apk
+*.aab
+*.jks
+*.keystore
+keystore.properties
+
+# Local editor and log files
+.vscode/
+*.log
+
+# Generated certification review alert
+website/source-review-alert.md

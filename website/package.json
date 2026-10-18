@@ -10,17 +10,24 @@
     "check:basics": "node scripts/verify-basics-library.mjs",
     "check:journey": "node scripts/verify-learning-journey.mjs",
     "check:learning-quality": "node scripts/verify-learning-quality.mjs",
-    "check:static": "npm run check:basics && npm run check:journey && npm run check:learning-quality",
+    "check:certifications": "node scripts/verify-certifications.mjs",
+    "check:career-intelligence": "node scripts/verify-career-intelligence.mjs",
+    "monitor:certification-sources": "node scripts/watch-certification-sources.mjs",
+    "ack:certification-source": "node scripts/acknowledge-certification-source.mjs",
+    "check:static": "npm run check:basics && npm run check:journey && npm run check:learning-quality && npm run check:certifications && npm run check:career-intelligence",
     "check": "npm run check:static && npm run build",
     "audit:links": "node scripts/verify-learning-quality.mjs --online",
     "refresh:resource-health": "node scripts/refresh-resource-health.mjs",
     "review:resources": "python ../scripts/weekly_resource_discovery.py"
   },
   "dependencies": {
+    "@capacitor/android": "^8.5.3",
+    "@capacitor/core": "^8.5.3",
     "react": "19.2.6",
     "react-dom": "19.2.6"
   },
   "devDependencies": {
+    "@capacitor/cli": "^8.5.3",
     "@vitejs/plugin-react": "6.0.1",
     "vite": "^8.3.4"
   }
