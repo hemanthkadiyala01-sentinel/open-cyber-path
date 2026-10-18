@@ -1,22 +1,21 @@
 # OpenCyberPath Weekly Resource Review
 
-Generated: 2026-10-18T07:55:39.359194+00:00
+Generated: 2026-10-18T08:25:38.350828+00:00
 
 > This is a discovery and link-health report, not an auto-approved curriculum list. Newly discovered items are not inserted into the learner-facing catalogue automatically. Check learning value, source credibility, free/access terms, direct URL, content freshness, and safety/authorization notes before adding them.
 
 ## Existing catalogue link health
 
 - Unique URLs checked: **204**
-- Responded to HTTP request: **171**
-- Possible broken links (404/410): **2**
+- Responded to HTTP request: **173**
+- Possible broken links (404/410): **0**
 - Manual review required (blocked/transient/unknown): **31**
 
 A responding URL is not proof that the content is accurate, relevant, free, or still the intended resource. A blocked or transient response is not automatically considered broken.
 
 ### Possible broken links
 
-- [Windows process-creation auditing](https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/basic-audit-process-creation) — HTTP 404; check the provider page manually before removing the entry (HTTP 404)
-- [CISA Industrial Control Systems training (lab for these notes)](https://www.cisa.gov/resources-tools/programs/industrial-control-systems) — HTTP 404; check the provider page manually before removing the entry (HTTP 404)
+No items in this category for this run.
 
 ### Links needing manual review
 
