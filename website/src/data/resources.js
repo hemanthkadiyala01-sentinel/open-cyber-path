@@ -92,7 +92,7 @@ export const resources = [
   {
     id: 'windows-security-auditing', name: 'Windows process-creation auditing', provider: 'Microsoft Learn', category: 'Foundations', kind: 'Free documentation', level: 'Intermediate',
     description: 'Understand Windows process-creation auditing concepts and the meaning of event fields.',
-    skills: ['Windows logs', 'Event ID 4688', 'Audit policy'], url: 'https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/basic-audit-process-creation',
+    skills: ['Windows logs', 'Event ID 4688', 'Audit policy'], url: 'https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-Audit#detailedtracking_auditprocesscreation',
     account: 'No account for docs', note: 'Do not change audit policy on managed devices without permission. Sample events are enough to begin.', image: '/images/learning/windows-telemetry.svg', icon: 'file-text'
   },
   {

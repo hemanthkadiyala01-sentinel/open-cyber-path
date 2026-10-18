@@ -88,7 +88,7 @@ export const learningVideos = [
     "level": "Beginner",
     "topic": "Windows & PowerShell",
     "url": "https://www.youtube.com/watch?v=-fV7jZwZuGQ",
-    "officialDocs": "https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/basic-audit-process-creation",
+    "officialDocs": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-Audit#detailedtracking_auditprocesscreation",
     "note": "The mission uses synthetic event records; this tutorial concerns a real Windows UI, so use a system you control.",
     "youtubeId": "-fV7jZwZuGQ",
     "embedUrl": null,

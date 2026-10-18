@@ -953,7 +953,7 @@ export const careerPathLabMap = {
       "id": "grc-cisa-ics",
       "title": "CISA Industrial Control Systems (ICS) training",
       "provider": "CISA",
-      "url": "https://www.cisa.gov/resources-tools/programs/industrial-control-systems",
+      "url": "https://www.cisa.gov/topics/industrial-control-systems/ics-training-calendar",
       "format": "Specialist training catalogue",
       "tier": "Extension",
       "module": "Collect evidence and review gaps",
