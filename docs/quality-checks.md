@@ -1,35 +1,27 @@
-# OpenCyberPath quality checks (CP-02)
+# OpenCyberPath quality checks
 
-Run these commands from the repository root on Windows PowerShell:
+Run from the repository root:
 
 ```powershell
 python scripts\sync_catalogue.py
 python scripts\quality_checks.py
 python -m unittest discover -s tests -v
-
-Push-Location website
-npm ci
-npm run build
-Pop-Location
 ```
 
-`sync_catalogue.py` exports `website/src/data/resources.js` into `data/resources.json`. It is a one-way export: edit the runtime JS catalogue first, then run the sync script. The quality check compares every shared resource field so the mirror cannot silently drift.
+The runtime resource source is `website/src/data/resources.js`; `data/resources.json` is its checked machine-readable mirror. After changing the JavaScript catalogue, regenerate the mirror before running validation.
 
-## What is checked
+Current expected snapshot for the ten-vision upgrade:
 
-- Resource IDs are unique and the JSON mirror matches the runtime JS catalogue.
-- Required resource metadata is present, URLs use HTTPS, skill tags are non-empty, and local resource images exist.
-- Lab IDs are unique and every referenced PDF, DOCX, dataset, script, worksheet, and illustration exists under `website/public`.
-- CSV files have a header and consistent row widths; key exercise files have their expected columns.
-- The Windows process-event sample is valid JSON.
-- The detection evaluator exits successfully and produces the expected confusion-matrix/metric output for the bundled synthetic CSV.
-- A production Vite build completes using the existing `website/package.json` and lockfile.
+- 28 curated resources
+- 10 canonical career visions
+- 14 lab entries with matching PDF/DOCX handouts
+- 8 CSV files, including synthetic hunting examples and DFIR/cloud/GRC worksheets
+- 10 automated unit tests
 
-## What is not checked yet
+Checks cover resource ID parity, required resource metadata, local image paths, lab IDs, document and worksheet references, CSV/JSON structure, the ten canonical career visions and their references, and the deterministic synthetic detection-evaluation output.
 
-- External URL availability, licensing/access changes, or live provider terms.
-- Browser interaction, responsive visual regression, keyboard navigation, accessibility, or PDF/DOCX visual layout.
-- Detection effectiveness on real telemetry. The test dataset is synthetic and the rule is intentionally narrow.
-- Backend/authentication security: the current reviewed implementation is a static frontend without learner accounts or stored progress.
+These checks do not establish that every external provider URL remains live, do not replace manual browser and accessibility testing, and do not make the synthetic detection results a real-world benchmark.
 
-The GitHub Actions workflow runs the same local-file checks, Python tests, and production build. A green workflow means those specific checks passed; it is not a security certification.
+## Eight-pillar domain map
+
+`python scripts/quality_checks.py` checks `website/src/data/cybersecurityDomains.js` for eight unique pillar IDs, 31 named specialisations, non-empty descriptions and beginner first steps, related-path IDs, and the separately represented official eight-domain CISSP exam list. It checks that the Paths page explains the framework distinction and links the official (ISC)² exam outline. These are structural checks, not browser or external-link monitoring.

@@ -247,6 +247,26 @@
     ]
   },
   {
+    "id": "pwn-college",
+    "name": "pwn.college learning platform",
+    "provider": "Arizona State University / pwn.college",
+    "category": "Hands-on Labs",
+    "kind": "Free interactive labs",
+    "level": "Beginner → Advanced",
+    "description": "A hands-on cybersecurity education platform with structured modules and practical challenges covering low-level computing and security concepts.",
+    "url": "https://pwn.college/",
+    "account": "Platform account may be needed",
+    "note": "Practice inside the platform’s provided environment and follow its current rules. OpenCyberPath links to the official platform; it does not host or control pwn.college lab sessions.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "terminal",
+    "skills": [
+      "Linux",
+      "Systems fundamentals",
+      "Program security",
+      "Practical challenges"
+    ]
+  },
+  {
     "id": "cyberdefenders",
     "name": "CyberDefenders blue-team labs",
     "provider": "CyberDefenders",
@@ -358,6 +378,178 @@
       "Event search",
       "Investigation",
       "Evidence notes"
+    ]
+  },
+  {
+    "id": "nist-incident-response",
+    "name": "NIST incident response lifecycle resources",
+    "provider": "NIST",
+    "category": "DFIR",
+    "kind": "Free guidance",
+    "level": "Beginner → Advanced",
+    "description": "Explore incident-response lifecycle resources and related digital-forensics references from the US National Institute of Standards and Technology.",
+    "url": "https://csrc.nist.gov/Projects/incident-response/life-cycle-resources",
+    "account": "No account for public pages",
+    "note": "Use this as a reference library, not a substitute for your organisation’s approved incident process.",
+    "image": "/images/learning/digital-forensics.svg",
+    "icon": "clipboard",
+    "skills": [
+      "Incident response",
+      "Evidence handling",
+      "Investigation"
+    ]
+  },
+  {
+    "id": "autopsy-forensics",
+    "name": "Autopsy digital forensics platform",
+    "provider": "The Sleuth Kit / Autopsy",
+    "category": "DFIR",
+    "kind": "Open source tool",
+    "level": "Intermediate",
+    "description": "Learn what a digital-forensics platform does and explore its official project documentation before using it on prepared training evidence.",
+    "url": "https://www.autopsy.com/",
+    "account": "Local installation may be required",
+    "note": "Use only supplied or authorised evidence images. Preserve originals and follow your lab’s evidence-handling rules.",
+    "image": "/images/learning/digital-forensics.svg",
+    "icon": "search",
+    "skills": [
+      "Digital forensics",
+      "Evidence review",
+      "Case documentation"
+    ]
+  },
+  {
+    "id": "aws-security-learning",
+    "name": "AWS training and security learning",
+    "provider": "Amazon Web Services",
+    "category": "Cloud Security",
+    "kind": "Free learning / access varies",
+    "level": "Beginner → Intermediate",
+    "description": "Find provider-led cloud learning by role and topic, including security concepts and cloud responsibility models.",
+    "url": "https://aws.amazon.com/training/",
+    "account": "Account may be needed for some features",
+    "note": "Digital courses and hands-on resources can have different terms. Do not create billable resources without checking current pricing.",
+    "image": "/images/learning/career-cloud-security.webp",
+    "icon": "network",
+    "skills": [
+      "Cloud fundamentals",
+      "Identity and access",
+      "Security controls"
+    ]
+  },
+  {
+    "id": "azure-security-learning",
+    "name": "Microsoft Learn: Azure security training",
+    "provider": "Microsoft Learn",
+    "category": "Cloud Security",
+    "kind": "Free learning",
+    "level": "Beginner → Intermediate",
+    "description": "Browse Azure security learning modules covering identity, network protection, monitoring, and cloud security concepts.",
+    "url": "https://learn.microsoft.com/en-us/training/browse/?products=azure&subjects=security",
+    "account": "Some features may require sign-in",
+    "note": "Read the exercise requirements before provisioning resources; cloud usage can have costs even when learning content is free.",
+    "image": "/images/learning/career-cloud-security.webp",
+    "icon": "shield-check",
+    "skills": [
+      "Azure",
+      "Identity",
+      "Cloud monitoring"
+    ]
+  },
+  {
+    "id": "nist-csf-2",
+    "name": "NIST Cybersecurity Framework 2.0",
+    "provider": "NIST",
+    "category": "GRC & Security Fundamentals",
+    "kind": "Free framework",
+    "level": "Beginner → Advanced",
+    "description": "Use a widely referenced framework to organise cybersecurity outcomes, risk discussions, profiles, and improvement priorities.",
+    "url": "https://www.nist.gov/cyberframework",
+    "account": "No account for public resources",
+    "note": "A framework mapping is not proof of compliance. State scope, assumptions, and evidence for each control claim.",
+    "image": "/images/learning/grc-risk-map.svg",
+    "icon": "file-text",
+    "skills": [
+      "Risk management",
+      "Governance",
+      "Control outcomes"
+    ]
+  },
+  {
+    "id": "cis-controls",
+    "name": "CIS Critical Security Controls",
+    "provider": "Center for Internet Security",
+    "category": "GRC & Security Fundamentals",
+    "kind": "Free reference / terms vary",
+    "level": "Beginner → Intermediate",
+    "description": "Explore prioritised safeguards for reducing common cybersecurity risk and structuring practical improvement work.",
+    "url": "https://www.cisecurity.org/controls",
+    "account": "Download terms may vary",
+    "note": "Use current provider guidance and check current terms. Link a control to evidence; do not claim compliance based on a checklist alone.",
+    "image": "/images/learning/grc-risk-map.svg",
+    "icon": "check-circle",
+    "skills": [
+      "Security controls",
+      "Risk treatment",
+      "Improvement planning"
+    ]
+  },
+  {
+    "id": "nist-digital-evidence",
+    "name": "NIST SP 800-86: forensic techniques in incident response",
+    "provider": "NIST",
+    "category": "DFIR",
+    "kind": "Free guidance",
+    "level": "Beginner → Advanced",
+    "description": "Read foundational guidance on integrating computer and network forensic techniques into incident-response work.",
+    "url": "https://csrc.nist.gov/pubs/sp/800/86/final",
+    "account": "No account for public guidance",
+    "note": "This older publication is foundational guidance, not a complete investigation playbook or legal advice. Check current organisational requirements.",
+    "image": "/images/learning/dfir-evidence-timeline.svg",
+    "icon": "clipboard",
+    "skills": [
+      "Forensics",
+      "Evidence handling",
+      "Incident response"
+    ]
+  },
+  {
+    "id": "nist-csf-quickstart",
+    "name": "NIST CSF 2.0 Quick-Start Guides",
+    "provider": "NIST",
+    "category": "GRC & Security Fundamentals",
+    "kind": "Free guidance",
+    "level": "Beginner → Intermediate",
+    "description": "Use concise guides to understand how organisations can begin applying Cybersecurity Framework 2.0 to their situation.",
+    "url": "https://www.nist.gov/cyberframework/quick-start-guides",
+    "account": "No account for public guides",
+    "note": "Choose a guide suited to the organisation and context. Using a framework is not the same as proving compliance.",
+    "image": "/images/learning/grc-risk-map.svg",
+    "icon": "book-open",
+    "skills": [
+      "Cyber risk",
+      "Framework adoption",
+      "Improvement planning"
+    ]
+  },
+  {
+    "id": "cisa-cyber-essentials",
+    "name": "CISA Cyber Essentials",
+    "provider": "CISA",
+    "category": "GRC & Security Fundamentals",
+    "kind": "Free guidance",
+    "level": "Beginner",
+    "description": "A practical introduction for leaders and small organisations to foundational cyber-readiness actions.",
+    "url": "https://www.cisa.gov/sites/default/files/publications/19_1106_cisa_CISA_Cyber_Essentials_S508C_1.pdf",
+    "account": "No account for public PDF",
+    "note": "Use it as introductory guidance; adapt actions to current official recommendations and the organisation’s risks.",
+    "image": "/images/learning/grc-risk-map.svg",
+    "icon": "shield-check",
+    "skills": [
+      "Cyber hygiene",
+      "MFA",
+      "Backups",
+      "Patch management"
     ]
   }
 ]
