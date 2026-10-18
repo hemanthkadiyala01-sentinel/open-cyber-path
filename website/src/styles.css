@@ -76,6 +76,25 @@
 .resource-card .card-category, .resource-card .card-link { color: var(--resource-accent); }
 .resource-card .skill-tags span { border-color: color-mix(in srgb,var(--resource-line) 58%,#213e4a); background: var(--resource-tint); }
 .resource-card .access-badge { border-color: color-mix(in srgb,var(--resource-accent) 48%,#256756); }
+.resource-penetration-testing { --resource-accent: #a78bfa; --resource-tint: #2d1b4e; --resource-line: #7e3af2; }
+.resource-monogram { display:inline-flex; align-items:center; justify-content:center; width:26px; height:26px; margin:6px 0 10px; border:1px solid var(--resource-line); border-radius:7px; background:var(--resource-tint); color:var(--resource-accent); font:7px var(--mono); font-weight:800; letter-spacing:0.3px; text-transform:uppercase; flex:0 0 auto; }
+.resource-workflow { margin:0 0 24px; }
+.resource-workflow .section-heading { margin-bottom:16px; }
+.resource-workflow .section-heading > div > p { max-width:700px; margin:8px 0 0; color:#9bb5bf; font-size:11px; line-height:1.8; }
+.workflow-stages { display:grid; gap:10px; list-style:none; margin:0 0 16px; padding:0; }
+.workflow-stages li { display:grid; grid-template-columns:auto 1fr; gap:12px; align-items:flex-start; padding:14px 16px; border:1px solid var(--line2); border-radius:12px; background:#0b2432; }
+.workflow-stages h4 { margin:0 0 6px; color:#eef9fa; font-size:12px; text-transform:uppercase; letter-spacing:1px; font:8px var(--mono); grid-column:1/-1; }
+.workflow-stages p { margin:0; color:#a6bec7; font-size:10.5px; line-height:1.7; grid-column:2; }
+.workflow-reminder { display:flex; gap:12px; align-items:flex-start; padding:15px 17px; border:1px solid var(--resource-line); border-radius:12px; background:var(--resource-tint); color:#e9d7ff; margin-bottom:16px; }
+.workflow-reminder .icon { flex:0 0 auto; color:var(--resource-accent); margin-top:2px; }
+.workflow-reminder > div { flex:1; min-width:0; }
+.workflow-reminder b { display:block; margin-bottom:5px; color:#f5e6ff; font-size:11px; }
+.workflow-reminder p { margin:0; color:#c9b4e8; font-size:10px; line-height:1.75; }
+.workflow-practice { display:flex; gap:12px; align-items:flex-start; padding:14px 17px; border:1px solid #2d5f52; border-radius:12px; background:#0b2e2b; }
+.workflow-practice > b { flex:0 0 auto; color:#7ff3d0; font-size:10px; line-height:1.5; margin-top:2px; font:8px var(--mono); letter-spacing:1px; text-transform:uppercase; }
+.workflow-practice a { color:var(--mint); }
+.workflow-practice a:hover { text-decoration:underline; }
+@media(max-width:600px){.workflow-stages li{grid-template-columns:1fr}}
 
 /* Labs, handwritten notes, and cheat sheets get dedicated identity and visual rhythm. */
 .lab-card { --lab-accent: var(--hunt); --lab-tint: #092c35; --lab-border: #247d7a; }

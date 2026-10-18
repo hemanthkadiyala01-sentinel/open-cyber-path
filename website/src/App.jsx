@@ -262,6 +262,17 @@ const gratitudeQuotes = [
 function slugify(value = '') {
   return String(value).toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
+function resourceMonogram(name = '') {
+  return String(name)
+    .split(/\s+/)
+    .map((word) => {
+      const match = word.match(/[A-Za-z0-9]/);
+      return match ? match[0].toUpperCase() : '';
+    })
+    .filter(Boolean)
+    .slice(0, 4)
+    .join('');
+}
 function ExternalLink({ href, children, className = '', title }) {
   return <a className={className} href={href} target="_blank" rel="noreferrer" title={title}>{children}</a>;
 }
@@ -281,12 +292,13 @@ function ResourceCard({ resource }) {
   return <article className={`resource-card resource-${slugify(resource.category)}`}>
     <div className="resource-art"><img src={resource.image || '/images/learning/command-cheatsheet.jpg'} alt="" loading="lazy" onError={handleArtworkError} /><span className="art-icon"><Icon name={resource.icon || 'book'} size={20} /></span><span className="level-label">{resource.level}</span></div>
     <div className="resource-card-body">
-      <div className="card-category">{resource.category}</div><h3>{resource.name}</h3><div className="provider-name">BY {resource.provider.toUpperCase()}</div>
+      <div className="card-category">{resource.category}</div><span className="resource-monogram" title={resource.provider}>{resource.monogram || resourceMonogram(resource.name)}</span><h3>{resource.name}</h3><div className="provider-name">BY {resource.provider.toUpperCase()}</div>
       <p className="card-description">{resource.description}</p>
       <div className="skill-tags">{resource.skills.slice(0, 3).map((skill) => <span key={skill}>{skill}</span>)}</div>
       <div className="access-line"><span className={`access-badge ${accessClass}`}><Icon name={accessClass === 'open' ? 'check-circle' : accessClass === 'limited' ? 'alert-triangle' : 'book'} size={13} />{resource.kind}</span><span className="account-note">{resource.account}</span></div>
       <p className="resource-note">{resource.note}</p>
       <ExternalLink className="card-link" href={resource.url}>Visit original resource <Icon name="arrow-up-right" size={16} /></ExternalLink>
+      {resource.practiceUrl && <ExternalLink className="card-link card-link-practice" href={resource.practiceUrl} title={`Guided practice for ${resource.name}`}>Guided practice <Icon name="arrow-up-right" size={16} /></ExternalLink>}
       <ResourceHealthStatus url={resource.url} />
       <a className="resource-report-link" href={buildResourceReportUrl({ id: resource.id, title: resource.name, provider: resource.provider, url: resource.url, type: resource.kind })} target="_blank" rel="noreferrer">Report a link or access problem ↗</a>
     </div>
@@ -496,7 +508,7 @@ function App() {
   }, [huntRows]);
 
   const visibleResources = useMemo(() => resources.filter((r) => {
-    const searchable = `${r.name} ${r.provider} ${r.category} ${r.description} ${r.skills.join(' ')} ${r.note}`.toLowerCase();
+    const searchable = `${r.name} ${r.provider} ${r.category} ${r.description} ${r.skills.join(' ')} ${r.note} ${r.practiceUrl || ''}`.toLowerCase();
     const matchesQuery = searchable.includes(query.trim().toLowerCase());
     const matchesCategory = category === 'All resources' || r.category === category;
     const kind = r.kind.toLowerCase();
@@ -729,8 +741,45 @@ function App() {
       {page === 'resources' && <section className="section-wrap resource-page">
         <PageHeading kicker="THE RESOURCE LIBRARY" title="Good resources." emphasis="All in one place." description="Explore official documentation, free learning, open-source tools, threat-hunting references, and authorised web-security training. We link to the original providers and explain access limits." />
         <div className="search-row"><label className="search-box"><Icon name="search" size={19} /><input ref={searchInputRef} value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search skills, tools, topics, providers…" aria-label="Search resources" /><kbd>Ctrl K</kbd></label><label className="select-wrap"><span className="sr-only">Access type</span><select value={cost} onChange={(e) => setCost(e.target.value)}><option>All access types</option><option>Free</option><option>Open source</option><option>Free tier / varies</option></select></label><label className="select-wrap"><span className="sr-only">Skill level</span><select value={level} onChange={(e) => setLevel(e.target.value)}><option>All levels</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></label></div>
-        <div className="category-row" role="group" aria-label="Filter by category">{categories.map((c) => <button key={c} className={`category-chip ${category === c ? 'chosen' : ''}`} onClick={() => setCategory(c)}>{c === 'Threat Hunting' ? <Icon name="radar" size={14} /> : c === 'Bug Bounty' ? <Icon name="bug" size={14} /> : c === 'Foundations' ? <Icon name="book-open" size={14} /> : c === 'Security Concepts' ? <Icon name="shield-check" size={14} /> : c === 'Detection Engineering' ? <Icon name="terminal" size={14} /> : c === 'SOC & SIEM' ? <Icon name="chart" size={14} /> : c === 'Hands-on Labs' ? <Icon name="target" size={14} /> : c === 'DFIR' ? <Icon name="clipboard" size={14} /> : c === 'Cloud Security' ? <Icon name="network" size={14} /> : c === 'GRC & Security Fundamentals' ? <Icon name="file-text" size={14} /> : <Icon name="spark" size={14} />}{c}</button>)}</div>
+        <div className="category-row" role="group" aria-label="Filter by category">{categories.map((c) => <button key={c} className={`category-chip ${category === c ? 'chosen' : ''}`} onClick={() => setCategory(c)}>{c === 'Threat Hunting' ? <Icon name="radar" size={14} /> : c === 'Bug Bounty' ? <Icon name="bug" size={14} /> : c === 'Foundations' ? <Icon name="book-open" size={14} /> : c === 'Security Concepts' ? <Icon name="shield-check" size={14} /> : c === 'Detection Engineering' ? <Icon name="terminal" size={14} /> : c === 'SOC & SIEM' ? <Icon name="chart" size={14} /> : c === 'Hands-on Labs' ? <Icon name="target" size={14} /> : c === 'DFIR' ? <Icon name="clipboard" size={14} /> : c === 'Cloud Security' ? <Icon name="network" size={14} />         : c === 'Penetration Testing' ? <Icon name="bug" size={14} /> : <Icon name="spark" size={14} />}{c}</button>)}</div>
         <div className="results-caption"><span><b>{visibleResources.length}</b> resources to explore</span><span>External links open the original provider <Icon name="arrow-up-right" size={13} /></span></div>
+        <section className="section-wrap resource-workflow" aria-labelledby="workflow-heading">
+          <div className="section-heading">
+            <div>
+              <div className="section-kicker">AUTHORISED TESTING WORKFLOW</div>
+              <h2 id="workflow-heading">Think like a tester.<br /><em>Prove it in a lab.</em></h2>
+              <p>Each stage below assumes a system you own, or a target expressly assigned by a training provider. Practice targets are configured by the learner or the provider; OpenCyberPath does not host, assign, or scan external targets.</p>
+            </div>
+          </div>
+          <ol className="workflow-stages">
+            <li>
+              <h4>1. Define scope</h4>
+              <p>Use a system you own or a target expressly assigned by a training provider. Record permitted hosts, test types, time windows, and prohibited actions before any testing begins.</p>
+            </li>
+            <li>
+              <h4>2. Prepare the lab</h4>
+              <p>Use a local, isolated instance of an intentionally vulnerable application, such as OWASP Juice Shop or DVWA. Keep vulnerable services bound to localhost or an appropriate isolated lab network.</p>
+            </li>
+            <li>
+              <h4>3. Map the application</h4>
+              <p>Understand the app, its routes, services, and normal behaviour before attempting any tests.</p>
+            </li>
+            <li>
+              <h4>4. Test carefully</h4>
+              <p>Choose the tool that matches the learning goal. Start with manual observation and low-impact checks; avoid unnecessary automation and destructive tests. No tool is harmless by default, and an open-source licence does not grant permission to test a system.</p>
+            </li>
+            <li>
+              <h4>5. Record evidence</h4>
+              <p>Save sanitised request and response details, timestamps, the observed result, and any uncertainty. Never publish passwords, session tokens, personal data, or sensitive captures.</p>
+            </li>
+            <li>
+              <h4>6. Fix and retest</h4>
+              <p>Explain the impact, propose a mitigation, repeat the relevant test in the lab, and document whether the issue is resolved.</p>
+            </li>
+          </ol>
+          <div className="workflow-reminder"><Icon name="shield-alert" size={17} /><div><b>Authorisation comes first.</b><p>Public websites, school networks, college networks, workplace systems, and third-party services are not automatically authorised testing targets. Only test what you own or what a provider has expressly assigned to you.</p></div></div>
+          <div className="workflow-practice"><b>Designated practice.</b>Set up a local lab such as <ExternalLink href="https://owasp.org/projects/juice-shop/">OWASP Juice Shop</ExternalLink> or complete guided labs at <ExternalLink href="https://portswigger.net/web-security">PortSwigger Web Security Academy</ExternalLink>. Do not scan or test targets you have not been authorised to assess.</div>
+        </section>
         <div className="resource-grid">{visibleResources.map((resource) => <ResourceCard key={resource.id} resource={resource} />)}</div>
         {visibleResources.length === 0 && <div className="empty-state"><Icon name="search" size={28} /><h3>No matching resources yet</h3><p>Try another topic or remove a filter.</p><button className="button button-primary" onClick={clearFilters}>Clear filters</button></div>}
         <div className="verification-note"><Icon name="alert-triangle" size={19} /><p><b>Access can change.</b> Providers may change free tiers, account requirements, lab availability, or terms. Check the original site before signing up; OpenCyberPath does not control external services or promise jobs or bounty rewards.</p></div>

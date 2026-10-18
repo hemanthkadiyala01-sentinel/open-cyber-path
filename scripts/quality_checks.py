@@ -58,6 +58,12 @@ def parse_js_records(path: Path, declaration: str = "resources") -> list[dict[st
             match = re.search(rf"\b{list_field}:\s*\[([^\]]*)\]", block, re.S)
             if match:
                 record[list_field] = [unescape_js(item) for item in re.findall(JS_STRING, match.group(1))]
+        practice_match = re.search(rf"\bpracticeUrl:\s*{JS_STRING}", block)
+        if practice_match:
+            record["practiceUrl"] = unescape_js(practice_match.group(1))
+        monogram_match = re.search(rf"\bmonogram:\s*{JS_STRING}", block)
+        if monogram_match:
+            record["monogram"] = unescape_js(monogram_match.group(1))
         records.append(record)
     return records
 
@@ -528,6 +534,9 @@ def run_quality_checks(root: Path = ROOT) -> tuple[list[str], list[str], dict[st
                 errors.append(f"resource {rid} is missing required field {field}")
         if not valid_https_url(item.get("url")):
             errors.append(f"resource {rid} URL must be an absolute HTTPS URL")
+        practice = item.get("practiceUrl")
+        if practice and not valid_https_url(practice):
+            errors.append(f"resource {rid} practice URL must be an absolute HTTPS URL: {practice}")
         if not isinstance(item.get("skills"), list) or not item.get("skills"):
             errors.append(f"resource {rid} must have a non-empty skills array")
 
@@ -542,6 +551,9 @@ def run_quality_checks(root: Path = ROOT) -> tuple[list[str], list[str], dict[st
                 errors.append(f"website resource {rid} is missing required field {field}")
         if not valid_https_url(record.get("url")):
             errors.append(f"website resource {rid} URL must be an absolute HTTPS URL")
+        practice = record.get("practiceUrl")
+        if practice and not valid_https_url(practice):
+            errors.append(f"website resource {rid} practice URL must be an absolute HTTPS URL: {practice}")
         image = record.get("image", "")
         if isinstance(image, str) and image.startswith("/"):
             local_image = root / "website/public" / image.lstrip("/")
@@ -563,6 +575,14 @@ def run_quality_checks(root: Path = ROOT) -> tuple[list[str], list[str], dict[st
             for field in RESOURCE_FIELDS:
                 if json_by_id[rid].get(field) != js_by_id[rid].get(field):
                     errors.append(f"resource mirror mismatch for {rid}.{field}; run python scripts/sync_catalogue.py")
+            js_practice = js_by_id[rid].get("practiceUrl")
+            json_practice = json_by_id[rid].get("practiceUrl")
+            if js_practice != json_practice:
+                errors.append(f"resource mirror mismatch for {rid}.practiceUrl; run python scripts/sync_catalogue.py")
+            js_monogram = js_by_id[rid].get("monogram")
+            json_monogram = json_by_id[rid].get("monogram")
+            if js_monogram != json_monogram:
+                errors.append(f"resource mirror mismatch for {rid}.monogram; run python scripts/sync_catalogue.py")
     counts["resources"] = len(js_by_id)
 
     # Validate lab/module metadata and all referenced local files.
