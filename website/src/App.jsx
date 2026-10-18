@@ -1,4 +1,4 @@
-﻿import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
+import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import { categories, resources } from './data/resources.js';
 import { labs } from './data/labs.js';
 
@@ -7,6 +7,8 @@ import { cybersecurityPillars, isc2CisspDomains } from './data/cybersecurityDoma
 import StartHereGuide from './components/StartHereGuide.jsx';
 import ResourceHealthStatus from './components/ResourceHealthStatus.jsx';
 import { buildResourceReportUrl } from './utils/resourceFeedback.js';
+
+import './components/CreatorIdentity.css';
 
 
 
@@ -22,6 +24,8 @@ const ExternalLabLinks = lazy(() => import('./components/ExternalLabLinks.jsx'))
 const InteractiveLabWorkbench = lazy(() => import('./components/InteractiveLabWorkbench.jsx'));
 const CuratedVideosLibrary = lazy(() => import('./components/CuratedVideosLibrary.jsx'));
 const CareerVideoLibrary = lazy(() => import('./components/CareerVideoLibrary.jsx'));
+ const CreatorIdentity = lazy(() => import('./components/CreatorIdentity.jsx'));
+const CertificationsHub = lazy(() => import('./components/CertificationsHub.jsx'));
 
 const levelRanks = { beginner: 1, intermediate: 2, advanced: 3 };
 function matchesLevel(label, selected, allLabel) {
@@ -580,19 +584,20 @@ function App() {
     <header className="site-header">
       <Logo onClick={navigate} />
       <nav className="nav-links" aria-label="Main navigation">
-        {[['home','Home'],['roadmap','Paths'],['systems-academy','OS + Networks'],['resources','Resources'],['tools','Tools & films'],['career-hub','Career hub'],['resume-studio','Resume'],['job-hub','Jobs'],['labs','Labs'],['concepts','Basics']].map(([key,label]) => <button key={key} className={`nav-link ${page === key || (page === 'path-detail' && key === 'roadmap') || (page === 'application-demo' && key === 'job-hub') ? 'active' : ''}`} onClick={() => { if (key === 'systems-academy') setAcademyPathId('all'); navigate(key); }}>{label}</button>)}
+        {[['home','Home'],['roadmap','Paths'],['certifications','Certs & Exams'],['systems-academy','OS + Networks'],['resources','Resources'],['tools','Tools & films'],['career-hub','Career hub'],['resume-studio','Resume'],['job-hub','Jobs'],['labs','Labs'],['concepts','Basics']].map(([key,label]) => <button key={key} className={`nav-link ${page === key || (page === 'path-detail' && key === 'roadmap') || (page === 'application-demo' && key === 'job-hub') ? 'active' : ''}`} onClick={() => { if (key === 'systems-academy') setAcademyPathId('all'); navigate(key); }}>{label}</button>)}
       </nav>
       <div className="header-actions"><label className="header-search"><Icon name="search" size={16} /><input value={query} onChange={(e) => { setQuery(e.target.value); if (page !== 'resources') navigate('resources'); }} onFocus={() => { if (page !== 'resources') navigate('resources'); }} placeholder="Search skills, labs, topics…" aria-label="Search resources" /><kbd>Ctrl K</kbd></label><ExternalLink className="github-link" href="https://github.com/hemanthkadiyala01-sentinel/open-cyber-path"><Icon name="network" size={15} /> GitHub</ExternalLink></div>
     </header>
 
     <main>
+      {page === 'certifications' && <Suspense fallback={<p className='section-loading'>Loading certifications and exam roadmaps...</p>}><CertificationsHub onOpenCareerPath={openLearningPath} /></Suspense>}
       {page === 'home' && <>
         <section className="hero">
           <div className="hero-content">
             <div className="eyebrow"><span className="eyebrow-dot" /> OPEN · FREE TO EXPLORE · COMMUNITY BUILT</div>
             <h1>Learn cybersecurity for <em>real skills,</em> real opportunities.</h1>
             <p className="hero-copy">Free learning resources, practical labs, notebook-style notes, and clear learning paths - from first steps to deeper investigation. Learn, practise, build evidence, and help another learner grow.</p>
-            <div className="hero-actions"><button className="button button-primary" onClick={() => document.getElementById('start-here')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Start learning free <Icon name="arrow-right" size={17} /></button><button className="button button-quiet" onClick={() => navigate('resources')}>Explore resources <Icon name="arrow-up-right" size={16} /></button></div>
+            <div className="hero-actions"><button className="button button-primary" onClick={() => document.getElementById('start-here')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Start learning free <Icon name="arrow-right" size={17} /></button><button className="button button-quiet" onClick={() => navigate('resources')}>Explore resources <Icon name="arrow-up-right" size={16} /></button><button className="button button-quiet" onClick={() => navigate('certifications')}>Certs &amp; exams <Icon name="arrow-up-right" size={16} /></button></div>
             <div className="hero-note"><Icon name="users" size={17} /> No fake ratings or job promises. Start with useful material and build at your own pace.</div>
           </div>
           <div className="hero-visual"><img className="hero-image" src="/images/learning/detection-engineering-lab.webp" alt="Analyst reviewing detection outcomes, event charts, and alert logic" onError={handleArtworkError} /><div className="hero-image-vignette"/><div className="hero-sticker sticker-top"><Icon name="book-open" size={19} /><span><small>LEARN</small><b>Understand the basics</b></span></div><div className="hero-sticker sticker-bottom"><Icon name="target" size={19} /><span><small>PRACTISE</small><b>Build evidence of skill</b></span></div><div className="hero-quote"><Icon name="spark" size={19} /><p>Learn it.<br />Practise it.<br /><b>Share what you discover.</b></p></div></div>
@@ -864,9 +869,11 @@ function App() {
         <div className="attack-grid concept-grid">{attackPatterns.map((attack) => <article className={`attack-card attack-${slugify(attack.title)}`} key={attack.title}><div className="attack-illustration"><img src={attack.image} alt={`${attack.title} concept illustration`} loading="lazy" onError={handleArtworkError}/><div className="attack-art-shade"/><span className="attack-icon"><Icon name={attack.icon === 'code' ? 'terminal' : attack.icon} size={22} /></span></div><div className="concept-identifiers"><span>{attack.family}</span><span>{attack.level}</span></div><h3>{attack.title}</h3><p>{attack.short}</p><div className="concept-section"><small>WHY IT HAPPENS</small><p>{attack.cause}</p></div><div className="concept-section"><small>EVERYDAY EXAMPLE</small><p>{attack.example}</p></div><div className="concept-next-step"><small>TRY THIS NEXT</small><p>{attack.nextStep}</p></div><div className="attack-defense"><Icon name="shield-check" size={17} /><span>{attack.defend}</span></div></article>)}</div>
         <div className="verification-note"><Icon name="alert-triangle" size={19} /><p><b>For awareness and defence.</b> These examples are intentionally high level. For hands-on learning, use the official training environments listed in the resource directory and follow their current rules.</p></div>
       </section>}
+      {page === 'creator' && <Suspense fallback={<p className="section-loading">Loading creator profile...</p>}><CreatorIdentity /></Suspense>}
     </main>
 
-    <footer className="site-footer"><div className="footer-top"><Logo onClick={navigate} /><p>A learner-built guide to resources that already exist. Learn openly. Practise responsibly. Help the next learner.</p><div className="footer-links"><button onClick={() => navigate('resources')}>Resources</button><button onClick={() => navigate('roadmap')}>Learning paths</button><button onClick={() => navigate('career-hub')}>Career hub</button><button onClick={() => navigate('resume-studio')}>Resume studio</button><button onClick={() => navigate('job-hub')}>Jobs</button><button onClick={() => navigate('labs')}>Labs & notes</button><button onClick={() => navigate('concepts')}>Attack basics</button><button onClick={() => navigate('tools')}>Tools & film case studies</button><ExternalLink href="https://github.com/hemanthkadiyala01-sentinel/open-cyber-path">Contribute <Icon name="arrow-up-right" size={13} /></ExternalLink></div></div><div className="copyright"><span>Independent community learning project</span><span>External resources belong to their providers · Verify current terms · No job or reward guarantees</span></div></footer>
+    <footer className="site-footer"><div className="footer-top"><Logo onClick={navigate} /><p>A learner-built guide to resources that already exist. Learn openly. Practise responsibly. Help the next learner.</p><div className="footer-links"><button onClick={() => navigate('resources')}>Resources</button><button onClick={() => navigate('certifications')}>Certifications &amp; exams</button><button onClick={() => navigate('roadmap')}>Learning paths</button><button onClick={() => navigate('career-hub')}>Career hub</button><button onClick={() => navigate('resume-studio')}>Resume studio</button><button onClick={() => navigate('job-hub')}>Jobs</button><button onClick={() => navigate('labs')}>Labs & notes</button><button onClick={() => navigate('concepts')}>Attack basics</button><button onClick={() => navigate('tools')}>Tools & film case studies</button><button onClick={() => navigate('creator')}>About the creator</button>
+<ExternalLink href="https://github.com/hemanthkadiyala01-sentinel/open-cyber-path">Contribute <Icon name="arrow-up-right" size={13} /></ExternalLink></div></div><div className="copyright"><span>Independent community learning project</span><span className="footer-creator-credit">Built by Hemanth Kadiyala Â· NYXOVAR</span><span>External resources belong to their providers · Verify current terms · No job or reward guarantees</span></div></footer>
   </div>;
 }
 

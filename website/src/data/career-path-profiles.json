@@ -1,0 +1,110 @@
+[
+  {
+    "id": "foundations",
+    "title": "Cybersecurity foundations",
+    "track": "Foundations",
+    "summary": "Build the common security, networking and operating-system knowledge that makes later specialisation easier.",
+    "credentialIds": ["cisco-ccst-cybersecurity", "microsoft-sc-900", "comptia-security-plus"],
+    "itStartAt": 1,
+    "handsOnStartAt": 2,
+    "learningIds": ["netacad-cybersecurity", "microsoft-learn-security", "isc2-exam-outlines"],
+    "skills": ["TCP/IP, DNS and core networking", "Windows/Linux fundamentals and logs", "Identity, access control and security principles", "Clear technical notes and safe lab practice"],
+    "portfolioEvidence": ["Publish a network diagram and a short hardening checklist.", "Write a repeatable lab report with commands, expected results and limitations.", "Explain one security alert from evidence to conclusion without exposing private data."]
+  },
+  {
+    "id": "soc-blue-team",
+    "title": "SOC / Blue Team Analyst",
+    "track": "SOC & Blue Team",
+    "summary": "Prioritise security monitoring, alert triage, query skills, incident handling and reproducible detection evidence.",
+    "credentialIds": ["cisco-ccst-cybersecurity", "microsoft-sc-200", "btl1", "comptia-cysa", "cisco-ccna-cybersecurity"],
+    "itStartAt": 1,
+    "handsOnStartAt": 2,
+    "learningIds": ["microsoft-learn-security", "netacad-cybersecurity", "isc2-exam-outlines"],
+    "skills": ["Alert triage and incident escalation", "SIEM searches and query logic", "Endpoint, identity and cloud telemetry", "Detection validation, false-positive analysis and clear reporting"],
+    "portfolioEvidence": ["Build a small detection rule with benign and suspicious test events.", "Publish a sanitised incident timeline and triage note.", "Document detection logic, expected events, false positives and repeatable test results."]
+  },
+  {
+    "id": "penetration-testing",
+    "title": "Penetration Testing / Security Assessment",
+    "track": "Penetration Testing",
+    "summary": "Develop networking and web-security fundamentals before progressing to structured, authorised assessments and reporting.",
+    "credentialIds": ["comptia-security-plus", "ejpt", "pnpt", "oscp-plus"],
+    "itStartAt": 1,
+    "handsOnStartAt": 2,
+    "learningIds": ["portswigger-academy", "netacad-cybersecurity", "isc2-exam-outlines"],
+    "skills": ["Networking, HTTP and authentication fundamentals", "Web application security testing in designated labs", "Evidence-backed severity and impact assessment", "Reproducible reports with practical remediation"],
+    "portfolioEvidence": ["Write a lab-only finding with scope, impact, safe reproduction and fix guidance.", "Create a web-security learning log that cites authorised training labs.", "Show a remediation verification report rather than only tool output."]
+  },
+  {
+    "id": "cloud-security",
+    "title": "Cloud Security Engineer",
+    "track": "Cloud Security",
+    "summary": "Learn cloud identity, logging, data protection and configuration review before committing to an advanced vendor-specific exam.",
+    "credentialIds": ["microsoft-sc-900", "aws-security-specialty", "isc2-ccsp"],
+    "itStartAt": 1,
+    "handsOnStartAt": 1,
+    "learningIds": ["aws-skill-builder", "microsoft-learn-security", "isc2-exam-outlines"],
+    "skills": ["Cloud identity and least privilege", "Logging, monitoring and incident response", "Data protection and network boundaries", "Secure configuration, governance and cost awareness"],
+    "portfolioEvidence": ["Create a cloud threat model and identity-policy review using sample configuration.", "Analyse synthetic cloud audit events and document detection opportunities.", "Publish a remediation checklist; avoid incurring cloud charges without a budget and supervision."]
+  },
+  {
+    "id": "dfir-incident-response",
+    "title": "Digital Forensics & Incident Response",
+    "track": "DFIR & Incident Response",
+    "summary": "Prioritise evidence handling, logs, timeline reconstruction and repeatable defensive investigation before advanced specialist credentials.",
+    "credentialIds": ["comptia-security-plus", "microsoft-sc-200", "btl1", "giac-gcih", "giac-gcfa"],
+    "itStartAt": 1,
+    "handsOnStartAt": 2,
+    "learningIds": ["microsoft-learn-security", "netacad-cybersecurity", "isc2-exam-outlines"],
+    "skills": ["Evidence handling and scope documentation", "Authentication and endpoint-log triage", "Timeline construction and incident containment concepts", "Findings, uncertainty and chain-of-custody documentation"],
+    "portfolioEvidence": ["Investigate a provided or synthetic log set and produce a timestamped timeline.", "Document evidence sources, handling steps, assumptions and gaps.", "Separate observed facts from hypotheses and give a defensible next-step recommendation."]
+  },
+  {
+    "id": "grc-audit",
+    "title": "GRC / IT Audit / Risk",
+    "track": "GRC & Audit",
+    "summary": "Focus on security controls, risk analysis, evidence quality, audit communication and experience-dependent professional credentials.",
+    "credentialIds": ["isc2-cc", "isaca-cisa", "isaca-crisc", "isaca-cism"],
+    "itStartAt": 1,
+    "handsOnStartAt": 1,
+    "learningIds": ["isc2-exam-outlines", "microsoft-learn-security", "netacad-cybersecurity"],
+    "skills": ["Risk identification and treatment", "Control mapping and evidence collection", "Audit-ready documentation and change management", "Communicating business impact and exceptions"],
+    "portfolioEvidence": ["Create a fictional risk register with likelihood, impact and treatments.", "Map a small set of security controls to evidence items and known gaps.", "Write an audit finding with condition, criteria, impact and corrective action."]
+  },
+  {
+    "id": "application-security",
+    "title": "Application Security / DevSecOps",
+    "track": "Application Security",
+    "summary": "Combine secure development basics with threat modelling, code review, testing and evidence of fixes.",
+    "credentialIds": ["comptia-security-plus", "ejpt", "isc2-csslp"],
+    "itStartAt": 1,
+    "handsOnStartAt": 2,
+    "learningIds": ["portswigger-academy", "microsoft-learn-security", "netacad-cybersecurity"],
+    "skills": ["HTTP, sessions, access control and common web risks", "Threat modelling and secure design", "Code review, test results and remediation", "Security checks integrated into development workflows"],
+    "portfolioEvidence": ["Document a threat model for a small demo app.", "Fix a deliberately vulnerable training example and record a regression test.", "Create a simple CI security-check note with its limits and follow-up steps."]
+  },
+  {
+    "id": "threat-intelligence-malware",
+    "title": "Threat Intelligence / Malware Analysis",
+    "track": "Threat Intelligence & Malware",
+    "summary": "Start with trustworthy intelligence sources, observable evidence and defensive detections before specialist threat-research credentials.",
+    "credentialIds": ["comptia-security-plus", "microsoft-sc-200", "giac-gcti", "giac-grem"],
+    "itStartAt": 1,
+    "handsOnStartAt": 2,
+    "learningIds": ["microsoft-learn-security", "netacad-cybersecurity", "isc2-exam-outlines"],
+    "skills": ["Indicator context, source quality and confidence", "Event correlation and behaviour-focused detection", "Threat actor technique mapping", "Safe, defensive reporting and reproducible evidence"],
+    "portfolioEvidence": ["Write a threat brief based on reputable public reports and cite every claim.", "Map observed defensive indicators to ATT&CK techniques with uncertainty stated.", "Create a defensive detection or triage note using synthetic/public training data only."]
+  },
+  {
+    "id": "security-engineering",
+    "title": "Security Engineering / Architecture",
+    "track": "Security Engineering",
+    "summary": "Progress from broad security fundamentals to operational design, identity, hardening, governance and architecture-level decisions.",
+    "credentialIds": ["cisco-ccst-cybersecurity", "microsoft-sc-200", "microsoft-sc-100", "isc2-cissp"],
+    "itStartAt": 1,
+    "handsOnStartAt": 2,
+    "learningIds": ["microsoft-learn-security", "aws-skill-builder", "isc2-exam-outlines"],
+    "skills": ["Security requirements and threat modelling", "Identity, segmentation and secure configuration", "Monitoring, response and secure cloud design", "Architecture trade-offs, governance and technical communication"],
+    "portfolioEvidence": ["Publish a threat model and architecture decision record for a lab system.", "Build a hardening baseline with testable controls and exception notes.", "Demonstrate one repeatable security check and document what it cannot detect."]
+  }
+]
