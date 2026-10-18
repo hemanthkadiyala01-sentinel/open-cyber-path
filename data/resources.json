@@ -703,5 +703,215 @@
       "Security baselines",
       "Control validation"
     ]
+  },
+  {
+    "id": "owasp-zap",
+    "name": "OWASP ZAP",
+    "provider": "OWASP",
+    "category": "Penetration Testing",
+    "kind": "Open source tool",
+    "level": "Beginner → Intermediate",
+    "description": "Learn to intercept, spider, and scan web applications with OWASP ZAP\\u2019s guided automated and manual testing workflows in a lab you control.",
+    "url": "https://github.com/zaproxy/zaproxy",
+    "account": "Local installation recommended",
+    "note": "Configure scan scope to targets you own or are authorised to test. Scanning can be disruptive; use ZAP against intentionally vulnerable lab applications only.",
+    "image": "/images/learning/web-security.svg",
+    "icon": "bug",
+    "skills": [
+      "Web security",
+      "Vulnerability scanning",
+      "Intercepting proxy"
+    ],
+    "practiceUrl": "https://www.zaproxy.org/docs/",
+    "monogram": "ZAP"
+  },
+  {
+    "id": "ffuf",
+    "name": "ffuf",
+    "provider": "ffuf",
+    "category": "Penetration Testing",
+    "kind": "Open source CLI tool",
+    "level": "Intermediate",
+    "description": "Practise web fuzzing for directories, virtual hosts, and parameters with ffuf, starting from a local target you own.",
+    "url": "https://github.com/ffuf/ffuf",
+    "account": "Local installation needed",
+    "note": "Fuzzing generates many requests and can disrupt a target. Run it only against local lab instances you control.",
+    "image": "/images/learning/command-cheatsheet.svg",
+    "icon": "terminal",
+    "skills": [
+      "Fuzzing",
+      "Web applications",
+      "Command line"
+    ],
+    "practiceUrl": "https://github.com/ffuf/ffuf#readme",
+    "monogram": "FF"
+  },
+  {
+    "id": "nuclei",
+    "name": "Nuclei",
+    "provider": "ProjectDiscovery",
+    "category": "Penetration Testing",
+    "kind": "Open source scanner",
+    "level": "Intermediate",
+    "description": "Run community-maintained vulnerability templates against lab targets and learn how scanner findings map to real weaknesses.",
+    "url": "https://github.com/projectdiscovery/nuclei",
+    "account": "Local installation needed",
+    "note": "Template-based scanning can be disruptive. Restrict scans to authorised lab targets and review templates before running them.",
+    "image": "/images/learning/detection-engineering.svg",
+    "icon": "bug",
+    "skills": [
+      "Vulnerability scanning",
+      "Templates",
+      "Web security"
+    ],
+    "practiceUrl": "https://nuclei.projectdiscovery.io/",
+    "monogram": "NU"
+  },
+  {
+    "id": "sqlmap",
+    "name": "SQLMap",
+    "provider": "SQLMap project",
+    "category": "Penetration Testing",
+    "kind": "Open source tool",
+    "level": "Intermediate → Advanced",
+    "description": "Study SQL injection detection and safe testing approaches with SQLMap against intentionally vulnerable databases in a lab.",
+    "url": "https://github.com/sqlmapproject/sqlmap",
+    "account": "Local installation needed",
+    "note": "Injection testing can alter or damage data. Use it only on deliberately vulnerable databases you own or on assigned lab targets.",
+    "image": "/images/learning/web-security.svg",
+    "icon": "code",
+    "skills": [
+      "SQL injection",
+      "Database security",
+      "Testing methodology"
+    ],
+    "practiceUrl": "https://sqlmap.org/",
+    "monogram": "SM"
+  },
+  {
+    "id": "gobuster",
+    "name": "Gobuster",
+    "provider": "Gobuster",
+    "category": "Penetration Testing",
+    "kind": "Open source CLI tool",
+    "level": "Intermediate",
+    "description": "Learn directory and DNS enumeration with Gobuster, beginning with local lab applications you are authorised to scan.",
+    "url": "https://github.com/OJ/gobuster",
+    "account": "Local installation needed",
+    "note": "Directory enumeration produces many requests. Confine it to local lab applications and respect rate limits.",
+    "image": "/images/learning/command-cheatsheet.svg",
+    "icon": "terminal",
+    "skills": [
+      "Enumeration",
+      "Command line",
+      "Web applications"
+    ],
+    "practiceUrl": "https://github.com/OJ/gobuster#readme",
+    "monogram": "GB"
+  },
+  {
+    "id": "subfinder",
+    "name": "Subfinder",
+    "provider": "ProjectDiscovery",
+    "category": "Penetration Testing",
+    "kind": "Open source tool",
+    "level": "Intermediate",
+    "description": "Practise passive subdomain discovery with Subfinder against domains you own or assigned lab targets.",
+    "url": "https://github.com/projectdiscovery/subfinder",
+    "account": "Local installation needed",
+    "note": "Enumerate only domains you own or targets assigned by a training provider. Public sources still return data about real domains, so stay within the agreed scope.",
+    "image": "/images/learning/command-cheatsheet.svg",
+    "icon": "network",
+    "skills": [
+      "Subdomain enumeration",
+      "Reconnaissance",
+      "Network fundamentals"
+    ],
+    "practiceUrl": "https://projectdiscovery.io/docs/tools/subfinder",
+    "monogram": "SF"
+  },
+  {
+    "id": "metasploit-framework",
+    "name": "Metasploit Framework",
+    "provider": "Rapid7",
+    "category": "Penetration Testing",
+    "kind": "Open source framework",
+    "level": "Advanced",
+    "description": "Explore the Metasploit Framework\\u2019s modules and workflows in an isolated lab, focused on authorised testing and detection validation.",
+    "url": "https://github.com/rapid7/metasploit-framework",
+    "account": "Local installation needed",
+    "note": "Metasploit includes exploitation modules that change system state. Use it only in an isolated lab with explicit authorisation, and never against systems you do not own.",
+    "image": "/images/learning/attack-patterns.svg",
+    "icon": "bug",
+    "skills": [
+      "Exploitation concepts",
+      "Lab safety",
+      "Authorised testing"
+    ],
+    "practiceUrl": "https://docs.metasploit.com/",
+    "monogram": "MSF"
+  },
+  {
+    "id": "dvwa",
+    "name": "DVWA",
+    "provider": "DVWA",
+    "category": "Penetration Testing",
+    "kind": "Open source training app",
+    "level": "Beginner → Intermediate",
+    "description": "Learn web application testing in Damn Vulnerable Web Application, a deliberately vulnerable PHP/MySQL lab you run locally.",
+    "url": "https://github.com/digininja/DVWA",
+    "account": "Local setup recommended",
+    "note": "DVWA is intentionally vulnerable. Run it locally and isolated from your network; never expose it to the public internet.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "bug",
+    "skills": [
+      "Web security",
+      "App testing",
+      "Lab setup"
+    ],
+    "practiceUrl": "https://github.com/digininja/DVWA#readme",
+    "monogram": "DVW"
+  },
+  {
+    "id": "owasp-crapi",
+    "name": "OWASP crAPI",
+    "provider": "OWASP",
+    "category": "Penetration Testing",
+    "kind": "Open source training app",
+    "level": "Intermediate",
+    "description": "Study API security testing with OWASP crAPI, an intentionally vulnerable API covering the OWASP API Security Top 10.",
+    "url": "https://github.com/OWASP/crAPI",
+    "account": "Local setup recommended",
+    "note": "crAPI is deliberately vulnerable. Run it in a local isolated lab and do not expose it to the internet or test it against other APIs.",
+    "image": "/images/learning/web-security.svg",
+    "icon": "code",
+    "skills": [
+      "API security",
+      "Web security",
+      "Testing methodology"
+    ],
+    "practiceUrl": "https://owasp.org/www-project-crapi/",
+    "monogram": "CR"
+  },
+  {
+    "id": "mitmproxy",
+    "name": "mitmproxy",
+    "provider": "mitmproxy",
+    "category": "Penetration Testing",
+    "kind": "Open source proxy",
+    "level": "Intermediate → Advanced",
+    "description": "Learn to intercept, inspect, and replay HTTP/HTTPS traffic with mitmproxy on traffic from your own lab devices.",
+    "url": "https://github.com/mitmproxy/mitmproxy",
+    "account": "Local installation needed",
+    "note": "An intercepting proxy reads and can modify traffic. Use it only on devices and lab traffic you control; capturing other people\\u2019s traffic without consent is unauthorised.",
+    "image": "/images/learning/command-cheatsheet.svg",
+    "icon": "network",
+    "skills": [
+      "Traffic interception",
+      "HTTP",
+      "Network fundamentals"
+    ],
+    "practiceUrl": "https://docs.mitmproxy.org/",
+    "monogram": "MP"
   }
 ]
