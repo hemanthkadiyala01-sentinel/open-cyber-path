@@ -1,15 +1,15 @@
 # OpenCyberPath Weekly Resource Review
 
-Generated: 2026-10-18T12:14:18.471267+00:00
+Generated: 2026-10-18T13:50:21.052404+00:00
 
 > This is a discovery and link-health report, not an auto-approved curriculum list. Newly discovered items are not inserted into the learner-facing catalogue automatically. Check learning value, source credibility, free/access terms, direct URL, content freshness, and safety/authorization notes before adding them.
 
 ## Existing catalogue link health
 
-- Unique URLs checked: **233**
-- Responded to HTTP request: **201**
+- Unique URLs checked: **242**
+- Responded to HTTP request: **209**
 - Possible broken links (404/410): **0**
-- Manual review required (blocked/transient/unknown): **32**
+- Manual review required (blocked/transient/unknown): **33**
 
 A responding URL is not proof that the content is accurate, relevant, free, or still the intended resource. A blocked or transient response is not automatically considered broken.
 
@@ -24,9 +24,10 @@ No items in this category for this run.
 - [Zeek in Action: monitoring wireless networks — official documentation](https://docs.zeek.org/) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
 - [How to Monitor Network Traffic with TShark, Zeek & Suricata — official documentation](https://docs.zeek.org/en/current/) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
 - [Zeek Network Monitoring Tutorial](https://docs.zeek.org/en/current/tutorial/index.html) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
-- [Boss of the SOC v3 dataset](https://github.com/splunk/botsv3) — HTTP 502; transient errors, bot protection, or access rules may apply (HTTP 502)
 - [Network Packet Flow Simulator (lab for these notes)](https://labs.networkershome.com/) — Could not confirm reachability (TypeError); manual review recommended
+- [Cryptographic clue analysis (lab for these notes)](https://nightjar-ctf.onrender.com/) — HTTP 503; transient errors, bot protection, or access rules may apply (HTTP 503)
 - [Nmap: Network Discovery & Auditing Guide](https://nmap.org/book/) — Could not confirm reachability (TypeError); manual review recommended
+- [DNS and network-log correlation (lab for these notes)](https://operation-ghost-route.onrender.com/) — HTTP 503; transient errors, bot protection, or access rules may apply (HTTP 503)
 - [Azure cloud defence practice (lab for these notes)](https://tryhackme.com/path/outline/azuresecurity) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
 - [Beginner malware-analysis and defensive-tooling practice (lab for these notes)](https://tryhackme.com/path/outline/cybersecurity101) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
 - [Penetration-testing learning path (lab for these notes)](https://tryhackme.com/path/outline/jrpenetrationtester) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
@@ -72,6 +73,8 @@ No items in this category for this run.
   - I'm delighted to introduce Alex, my fellow swigger who I've collaborated with in the past with tools like DOM Invader. He showed me that it's possible to exfiltrate larger tokens than demonstrated in
 - **[​​Secure what’s next: Your guide to Microsoft Security at Microsoft Ignite 2026](https://www.microsoft.com/en-us/security/blog/2026/09/30/secure-whats-next-your-guide-to-microsoft-security-at-microsoft-ignite-2026/)** — Microsoft Security Blog; 2026-09-30T19:31:00+00:00; topic hints: Web Security. Not verified; confirm that the page is useful learning material and check current free/account terms.
   - This year at Microsoft Ignite, we spotlight our AI-first, end-to-end security platform designed to protect identities, devices, data, applications, clouds, infrastructure, and the AI agents now working alongside your teams. The post ​​Secure what&#8217;s next: Your guide to Microsoft Security at Microsoft Ignite 2026 appeared first on Microsoft Security Blog .
+- **[Orphaned VBA Projects Inside DWG Files: YARA Rule, (Sun, Oct 18th)](https://isc.sans.edu/diary/rss/33434)** — SANS Internet Storm Center; 2026-10-18T12:59:30+00:00; topic hints: Malware Analysis. Not verified; confirm that the page is useful learning material and check current free/account terms.
+  - Here is the YARA rule I used to detect "Orphaned VBA Projects Inside DWG Files".&#xd;
 - **[GuardDuty Extended Threat Detection has added five new indicators to surface attack sequences](https://aws.amazon.com/blogs/security/guardduty-extended-threat-detection-has-added-five-new-indicators-to-surface-attack-sequences/)** — AWS Security Blog; 2026-10-12T21:58:44+00:00; topic hints: Review topic manually. Not verified; confirm that the page is useful learning material and check current free/account terms.
   - Amazon GuardDuty Extended Threat Detection correlates weak GuardDuty signals into a single, critical-severity attack sequence finding when their composition crosses a threshold of credibility. On May 20, 2026, the service started attaching five new indicator types to those sequences: MALICIOUS_PACKAGE, MISCONFIGURATION, REACHABILITY, SENSITIVE_DATA, and VULNERABILITY. For more
 - **[Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570](https://www.microsoft.com/en-us/security/blog/2026/09/30/unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570/)** — Microsoft Security Blog; 2026-09-30T14:00:00+00:00; topic hints: Web Security, Threat Intelligence / OSINT. Not verified; confirm that the page is useful learning material and check current free/account terms.
