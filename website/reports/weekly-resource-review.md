@@ -1,15 +1,15 @@
 # OpenCyberPath Weekly Resource Review
 
-Generated: 2026-10-18T09:26:01.901961+00:00
+Generated: 2026-10-18T12:14:18.471267+00:00
 
 > This is a discovery and link-health report, not an auto-approved curriculum list. Newly discovered items are not inserted into the learner-facing catalogue automatically. Check learning value, source credibility, free/access terms, direct URL, content freshness, and safety/authorization notes before adding them.
 
 ## Existing catalogue link health
 
-- Unique URLs checked: **204**
-- Responded to HTTP request: **173**
+- Unique URLs checked: **233**
+- Responded to HTTP request: **201**
 - Possible broken links (404/410): **0**
-- Manual review required (blocked/transient/unknown): **31**
+- Manual review required (blocked/transient/unknown): **32**
 
 A responding URL is not proof that the content is accurate, relevant, free, or still the intended resource. A blocked or transient response is not automatically considered broken.
 
@@ -23,9 +23,10 @@ No items in this category for this run.
 - [Cisco IOS CLI Simulator (lab for these notes)](https://cisco-sim.networkershome.com/) — Could not confirm reachability (TypeError); manual review recommended
 - [Zeek in Action: monitoring wireless networks — official documentation](https://docs.zeek.org/) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
 - [How to Monitor Network Traffic with TShark, Zeek & Suricata — official documentation](https://docs.zeek.org/en/current/) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
+- [Zeek Network Monitoring Tutorial](https://docs.zeek.org/en/current/tutorial/index.html) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
+- [Boss of the SOC v3 dataset](https://github.com/splunk/botsv3) — HTTP 502; transient errors, bot protection, or access rules may apply (HTTP 502)
 - [Network Packet Flow Simulator (lab for these notes)](https://labs.networkershome.com/) — Could not confirm reachability (TypeError); manual review recommended
-- [Cryptographic clue analysis (lab for these notes)](https://nightjar-ctf.onrender.com/) — HTTP 503; transient errors, bot protection, or access rules may apply (HTTP 503)
-- [DNS and network-log correlation (lab for these notes)](https://operation-ghost-route.onrender.com/) — HTTP 503; transient errors, bot protection, or access rules may apply (HTTP 503)
+- [Nmap: Network Discovery & Auditing Guide](https://nmap.org/book/) — Could not confirm reachability (TypeError); manual review recommended
 - [Azure cloud defence practice (lab for these notes)](https://tryhackme.com/path/outline/azuresecurity) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
 - [Beginner malware-analysis and defensive-tooling practice (lab for these notes)](https://tryhackme.com/path/outline/cybersecurity101) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
 - [Penetration-testing learning path (lab for these notes)](https://tryhackme.com/path/outline/jrpenetrationtester) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
@@ -90,10 +91,10 @@ No items in this category for this run.
 - **[Cyber Security Kya Hai? 🔐 Complete Beginner’s Guide in Hindi \| CyberNexa](https://www.youtube.com/watch?v=XIl3EizJ41Q)** — channel: CyberNexa; 2026-10-17T11:18:17Z; topic hints: Foundations. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
 - **[Learn the Linux echo Command in 20 Seconds! 🐧 #shorts #cybersecurity #linuxcommandlinetutorial](https://www.youtube.com/watch?v=bEgls-GNzBg)** — channel: MICHAEL BLACK; 2026-10-17T10:38:41Z; topic hints: Foundations. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
 - **[How to Write Your First Reverse Shell in C \| Cybersecurity for Beginners](https://www.youtube.com/watch?v=YWILU1G1QKY)** — channel: Apna Code; 2026-10-17T04:49:56Z; topic hints: Foundations. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
-- **[How to Install Kali Linux on Windows](https://www.youtube.com/watch?v=D6u26K2B4Tk)** — channel: VNX; 2026-10-17T03:41:47Z; topic hints: Review topic manually. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
 - **[PortSwigger Lab: Username Enumeration via Different Responses \| PortSwigger Lab Tutorial](https://www.youtube.com/watch?v=5n4McXlZM9g)** — channel: Sam Shield; 2026-10-17T03:00:02Z; topic hints: Web Security. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
 - **[Build a Random Password Generator Using Python 🔐🐍 #developer #coding #python #project #password](https://www.youtube.com/watch?v=HEKvHBRe2Rc)** — channel: Python Expert; 2026-10-17T01:13:29Z; topic hints: Review topic manually. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
 - **[Análisis de redes con Wireshark Lección 2 #short](https://www.youtube.com/watch?v=ScUESbLN7R4)** — channel: Tutoriales de Pablo Hidalgo; 2026-10-17T00:38:05Z; topic hints: Networking. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
+- **[DHCP Failover Explained: What Happens When Redundancy Breaks?](https://www.youtube.com/watch?v=BSCuZIT1Rz4)** — channel: Techmatician \| IT Tutorials; 2026-10-16T23:00:23Z; topic hints: Review topic manually. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
 - **[Windows Registry Forensics in Hindi \| Keys, Values &amp; Timestamps \| Ethical Hacking EP 65](https://www.youtube.com/watch?v=mwHoRcwXdPE)** — channel: GlobalTech Infosystems; 2026-10-16T19:56:40Z; topic hints: DFIR, Foundations. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
 - **[Windows Registry Forensics in Hindi \| Keys, Values &amp; Timestamps \| Ethical Hacking EP 65](https://www.youtube.com/watch?v=eB3Vhz3xKQ4)** — channel: GlobalTech Infosystems; 2026-10-16T19:56:21Z; topic hints: DFIR, Foundations. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
 - **[Windows Persistence Explained in Hindi \| Services, Scheduled Tasks &amp; Startup \| Ethical Hacking EP 64](https://www.youtube.com/watch?v=U_k57dV0SFw)** — channel: GlobalTech Infosystems; 2026-10-16T19:54:42Z; topic hints: Foundations. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
