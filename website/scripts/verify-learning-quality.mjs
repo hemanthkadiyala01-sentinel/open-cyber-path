@@ -213,7 +213,7 @@ if (process.argv.includes('--online')) {
       let detail = '';
       try {
         let response = await fetch(url, { method: 'HEAD', redirect: 'follow', signal: AbortSignal.timeout(6500), headers: { 'user-agent': 'OpenCyberPath-Link-Audit/1.0 (student-project quality check)' } });
-        if ([405, 501].includes(response.status)) {
+        if ([404, 405, 501].includes(response.status)) {
           response = await fetch(url, { method: 'GET', redirect: 'follow', signal: AbortSignal.timeout(6500), headers: { range: 'bytes=0-0', 'user-agent': 'OpenCyberPath-Link-Audit/1.0 (student-project quality check)' } });
           if (response.body) await response.body.cancel().catch(() => {});
         }
