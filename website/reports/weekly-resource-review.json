@@ -1,0 +1,3936 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-18T07:55:39.359194+00:00",
+  "reviewWindowDays": 21,
+  "linkHealth": {
+    "schemaVersion": 1,
+    "generatedAt": "2026-10-18T07:55:39.082Z",
+    "note": "HTTP reachability is not proof that the page content is accurate, suitable, or free. 401/403/429 and transient failures are sent for manual review, not labelled broken.",
+    "summary": {
+      "checkedUrls": 204,
+      "healthy": 171,
+      "broken": 2,
+      "review": 31
+    },
+    "resources": [
+      {
+        "url": "https://academy.hackthebox.com/path/preview/cracking-into-hack-the-box",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://academy.hackthebox.com/path/preview/cracking-into-hack-the-box",
+        "checkedAt": "2026-10-18T07:55:27.400Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "pentest-htb-cracking",
+            "title": "Authentication and credential-security practice (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Hack The Box Academy"
+          }
+        ]
+      },
+      {
+        "url": "https://atlas.mitre.org/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://atlas.mitre.org/",
+        "checkedAt": "2026-10-18T07:55:27.472Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "intel-atlas",
+            "title": "AI threat-model mapping exercise (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "MITRE"
+          }
+        ]
+      },
+      {
+        "url": "https://attack.mitre.org/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://attack.mitre.org/",
+        "checkedAt": "2026-10-18T07:55:27.473Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "mitre-attack",
+            "title": "MITRE ATT&CK knowledge base",
+            "type": "resource",
+            "provider": "MITRE"
+          },
+          {
+            "id": "threat-hunting-ibm-official-docs",
+            "title": "Cybersecurity Threat Hunting Explained — official documentation",
+            "type": "official-reference",
+            "provider": "IBM Technology"
+          },
+          {
+            "id": "mitre-attck-video-official-docs",
+            "title": "MITRE ATT&CK framework explained — official video — official documentation",
+            "type": "official-reference",
+            "provider": "MITRE"
+          },
+          {
+            "id": "external-note-link-20",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://attack.mitre.org/resources/learn-more-about-attack/training/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://attack.mitre.org/resources/learn-more-about-attack/training/",
+        "checkedAt": "2026-10-18T07:55:27.474Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "intel-mitre-cti",
+            "title": "Threat-intelligence mapping exercise (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "MITRE ATT&CK"
+          }
+        ]
+      },
+      {
+        "url": "https://attack.mitre.org/resources/learn-more-about-attack/training/threat-hunting/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://attack.mitre.org/resources/learn-more-about-attack/training/threat-hunting/",
+        "checkedAt": "2026-10-18T07:55:27.475Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "hunt-mitre-training",
+            "title": "Threat-hunting and detection practice (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "MITRE ATT&CK"
+          }
+        ]
+      },
+      {
+        "url": "https://attacksim.networkershome.com/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://attacksim.networkershome.com/",
+        "checkedAt": "2026-10-18T07:55:27.476Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "eng-attack-defense-sim",
+            "title": "Incident-containment decisions (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Networkers Home"
+          }
+        ]
+      },
+      {
+        "url": "https://aws.amazon.com/training/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://aws.amazon.com/training/",
+        "checkedAt": "2026-10-18T07:55:27.477Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "aws-security-learning",
+            "title": "AWS training and security learning",
+            "type": "resource",
+            "provider": "Amazon Web Services"
+          },
+          {
+            "id": "aws-security-services-official-docs",
+            "title": "AWS Security Services: IAM, WAF, KMS and Shield — official documentation",
+            "type": "official-reference",
+            "provider": "Great Learning"
+          }
+        ]
+      },
+      {
+        "url": "https://bvtech.org/cyber-range/challenges/wargames/level1",
+        "status": "review",
+        "statusCode": 403,
+        "finalUrl": "https://bvtech.org/cyber-range/challenges/wargames/level1",
+        "checkedAt": "2026-10-18T07:55:27.478Z",
+        "detail": "HTTP 403; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "pentest-bv-gate",
+            "title": "Web page-source inspection (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "BVTech Cyber Range"
+          }
+        ]
+      },
+      {
+        "url": "https://cfreds.nist.gov/all",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://cfreds.nist.gov/all",
+        "checkedAt": "2026-10-18T07:55:27.844Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "hunt-cfreds",
+            "title": "Evidence-led hunting (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "NIST CFReDS"
+          },
+          {
+            "id": "dfir-nist-cfreds",
+            "title": "Forensic evidence dataset exercise (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "NIST"
+          },
+          {
+            "id": "mal-cfreds-hunt",
+            "title": "Memory-artifact reasoning (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "NIST CFReDS"
+          }
+        ]
+      },
+      {
+        "url": "https://cisco-sim.networkershome.com/",
+        "status": "review",
+        "statusCode": null,
+        "finalUrl": null,
+        "checkedAt": "2026-10-18T07:55:28.136Z",
+        "detail": "Could not confirm reachability (TypeError); manual review recommended",
+        "entries": [
+          {
+            "id": "eng-cisco-ios",
+            "title": "Cisco IOS CLI Simulator (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Networkers Home"
+          }
+        ]
+      },
+      {
+        "url": "https://csrc.nist.gov/Projects/incident-response/life-cycle-resources",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://csrc.nist.gov/Projects/incident-response/life-cycle-resources",
+        "checkedAt": "2026-10-18T07:55:28.487Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "nist-incident-response",
+            "title": "NIST incident response lifecycle resources",
+            "type": "resource",
+            "provider": "NIST"
+          }
+        ]
+      },
+      {
+        "url": "https://csrc.nist.gov/pubs/sp/800/86/final",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://csrc.nist.gov/pubs/sp/800/86/final",
+        "checkedAt": "2026-10-18T07:55:28.496Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "nist-digital-evidence",
+            "title": "NIST SP 800-86: forensic techniques in incident response",
+            "type": "resource",
+            "provider": "NIST"
+          },
+          {
+            "id": "dfir-scope-nist-sp80086",
+            "title": "Evidence scope and handling checklist (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "NIST"
+          }
+        ]
+      },
+      {
+        "url": "https://ctf.aquilacyber.org/auth/register",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://ctf.aquilacyber.org/auth/register",
+        "checkedAt": "2026-10-18T07:55:28.504Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "intel-aquila",
+            "title": "OSINT case investigation (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "AquilaCyber Defenders Portal"
+          }
+        ]
+      },
+      {
+        "url": "https://ctf.owasp.org/challenges",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://ctf.owasp.org/challenges",
+        "checkedAt": "2026-10-18T07:55:28.542Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "appsec-owasp-ctf",
+            "title": "Web security challenge suite (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "OWASP"
+          }
+        ]
+      },
+      {
+        "url": "https://ctf.pkcert.gov.pk/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://ctf.pkcert.gov.pk/",
+        "checkedAt": "2026-10-18T07:55:28.578Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "pentest-ctfsquare",
+            "title": "Multi-domain CTF practice (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "PKCERT"
+          }
+        ]
+      },
+      {
+        "url": "https://cyberdefenders.org/blue-team-labs/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://cyberdefenders.org/blue-team-labs/",
+        "checkedAt": "2026-10-18T07:55:28.639Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "cyberdefenders",
+            "title": "CyberDefenders blue-team labs",
+            "type": "resource",
+            "provider": "CyberDefenders"
+          }
+        ]
+      },
+      {
+        "url": "https://cyberdefenders.org/blueteam-ctf-challenges/amadey-apt-c-36/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://cyberdefenders.org/blueteam-ctf-challenges/amadey-apt-c-36/",
+        "checkedAt": "2026-10-18T07:55:28.754Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "dfir-amadey",
+            "title": "Endpoint and memory forensics (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "CyberDefenders"
+          },
+          {
+            "id": "dfir-project-obsidian",
+            "title": "Memory-forensics investigation (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "CyberDefenders"
+          },
+          {
+            "id": "mal-amadey",
+            "title": "Endpoint and memory forensics (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "CyberDefenders"
+          },
+          {
+            "id": "mal-btv-obsidian",
+            "title": "Malware behavior and defense (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "CyberDefenders"
+          }
+        ]
+      },
+      {
+        "url": "https://cyberdefenders.org/blueteam-ctf-challenges/gh0stnet-intrusion/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://cyberdefenders.org/blueteam-ctf-challenges/gh0stnet-intrusion/",
+        "checkedAt": "2026-10-18T07:55:28.799Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "soc-project-obsidian",
+            "title": "Incident timeline and reporting (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "CyberDefenders"
+          }
+        ]
+      },
+      {
+        "url": "https://cyberdefenders.org/blueteam-ctf-challenges/intel101/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://cyberdefenders.org/blueteam-ctf-challenges/intel101/",
+        "checkedAt": "2026-10-18T07:55:28.939Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "intel-project-obsidian",
+            "title": "Source-based threat intelligence (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "CyberDefenders"
+          }
+        ]
+      },
+      {
+        "url": "https://cyberdefenders.org/blueteam-ctf-challenges/packetdetective/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://cyberdefenders.org/blueteam-ctf-challenges/packetdetective/",
+        "checkedAt": "2026-10-18T07:55:28.995Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "soc-packetdetective",
+            "title": "Network traffic analysis (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "CyberDefenders"
+          },
+          {
+            "id": "hunt-packetdetective",
+            "title": "PCAP-based detection practice (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "CyberDefenders"
+          }
+        ]
+      },
+      {
+        "url": "https://cyberdefenders.org/blueteam-ctf-challenges/resourcepacks/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://cyberdefenders.org/blueteam-ctf-challenges/resourcepacks/",
+        "checkedAt": "2026-10-18T07:55:29.034Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "external-note-link-35",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://cyberdefenders.org/blueteam-ctf-challenges/sigma-101/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://cyberdefenders.org/blueteam-ctf-challenges/sigma-101/",
+        "checkedAt": "2026-10-18T07:55:29.729Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "external-note-link-6",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          },
+          {
+            "id": "external-note-link-14",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://cyberdefenders.org/blueteam-ctf-challenges/t1110003/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://cyberdefenders.org/blueteam-ctf-challenges/t1110003/",
+        "checkedAt": "2026-10-18T07:55:29.770Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "external-note-link-15",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://cyberdefenders.org/blueteam-ctf-challenges/yara-wizards/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://cyberdefenders.org/blueteam-ctf-challenges/yara-wizards/",
+        "checkedAt": "2026-10-18T07:55:29.844Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "mal-ost2",
+            "title": "YARA-based malware analysis (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "CyberDefenders"
+          },
+          {
+            "id": "external-note-link-13",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://cyberdefenders.org/blueteam-ctf-challenges/yara101/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://cyberdefenders.org/blueteam-ctf-challenges/yara101/",
+        "checkedAt": "2026-10-18T07:55:29.887Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "hunt-blue-team-village",
+            "title": "Narrow detection-rule practice (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "CyberDefenders"
+          },
+          {
+            "id": "mal-bv-hidden-task",
+            "title": "Static malware triage (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "CyberDefenders"
+          }
+        ]
+      },
+      {
+        "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
+        "checkedAt": "2026-10-18T07:55:29.925Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "aws-iam-roles-official-docs",
+            "title": "What is AWS IAM? Roles, policies and use cases — official documentation",
+            "type": "official-reference",
+            "provider": "learn by doing it"
+          },
+          {
+            "id": "aws-iam-explained-official-docs",
+            "title": "AWS IAM explained for beginners: users, groups, roles and permissions — official documentation",
+            "type": "official-reference",
+            "provider": "CodeSnippet"
+          },
+          {
+            "id": "aws-iam-cyberpodium-2025-official-docs",
+            "title": "AWS IAM Tutorial for Beginners (2025) — official documentation",
+            "type": "official-reference",
+            "provider": "CyberPodium"
+          }
+        ]
+      },
+      {
+        "url": "https://docs.bugcrowd.com/researchers/engagement-management/details/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://docs.bugcrowd.com/researchers/engagement-management/details/",
+        "checkedAt": "2026-10-18T07:55:29.995Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "bugcrowd-briefs",
+            "title": "Bugcrowd: review a program brief",
+            "type": "resource",
+            "provider": "Bugcrowd"
+          }
+        ]
+      },
+      {
+        "url": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://docs.github.com/en/actions/reference/security/secure-use",
+        "checkedAt": "2026-10-18T07:55:30.088Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "devsecops-python-pipeline-official-docs",
+            "title": "DevSecOps Pipeline: SAST and Container Image Scanning — official documentation",
+            "type": "official-reference",
+            "provider": "TechWorld with Nana"
+          }
+        ]
+      },
+      {
+        "url": "https://docs.github.com/en/code-security",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://docs.github.com/en/code-security",
+        "checkedAt": "2026-10-18T07:55:30.200Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "github-code-security-official-docs",
+            "title": "What is GitHub Code Security? — official documentation",
+            "type": "official-reference",
+            "provider": "GitHub"
+          }
+        ]
+      },
+      {
+        "url": "https://docs.hackerone.com/en/articles/8475116-quality-reports",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://docs.hackerone.com/en/articles/8475116-quality-reports",
+        "checkedAt": "2026-10-18T07:55:30.300Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "pentest-quality-report-hackerone",
+            "title": "Reproducible finding report (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "HackerOne Help Center"
+          }
+        ]
+      },
+      {
+        "url": "https://docs.hackerone.com/en/articles/8494552-defining-scope",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://docs.hackerone.com/en/articles/8494552-defining-scope",
+        "checkedAt": "2026-10-18T07:55:30.462Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "hackerone-scope",
+            "title": "HackerOne: understanding scope",
+            "type": "resource",
+            "provider": "HackerOne"
+          },
+          {
+            "id": "appsec-scope-hackerone",
+            "title": "Scope and rules review (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "HackerOne Help Center"
+          },
+          {
+            "id": "pentest-permission-hackerone-scope",
+            "title": "Authorization and scope checklist (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "HackerOne Help Center"
+          },
+          {
+            "id": "external-note-link-22",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://docs.zeek.org/",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://docs.zeek.org/",
+        "checkedAt": "2026-10-18T07:55:30.531Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "zeek-wireless-monitoring-official-docs",
+            "title": "Zeek in Action: monitoring wireless networks — official documentation",
+            "type": "official-reference",
+            "provider": "Zeek Project"
+          }
+        ]
+      },
+      {
+        "url": "https://docs.zeek.org/en/current/",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://docs.zeek.org/en/current/",
+        "checkedAt": "2026-10-18T07:55:30.538Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "soc-network-monitoring-zeek-suricata-official-docs",
+            "title": "How to Monitor Network Traffic with TShark, Zeek & Suricata — official documentation",
+            "type": "official-reference",
+            "provider": "TechSky - Ethical Hacking"
+          }
+        ]
+      },
+      {
+        "url": "https://documentation.wazuh.com/current/getting-started/index.html",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://documentation.wazuh.com/current/getting-started/index.html",
+        "checkedAt": "2026-10-18T07:55:30.586Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "wazuh-getting-started",
+            "title": "Wazuh documentation",
+            "type": "resource",
+            "provider": "Wazuh"
+          },
+          {
+            "id": "wazuh-home-lab-official-docs",
+            "title": "Build a small Wazuh SIEM home lab — official documentation",
+            "type": "official-reference",
+            "provider": "The Social Dork · Cyber Security"
+          },
+          {
+            "id": "external-note-link-10",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://ethernaut.openzeppelin.com/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://ethernaut.openzeppelin.com/",
+        "checkedAt": "2026-10-18T07:55:30.684Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "appsec-ethernaut",
+            "title": "Smart-contract security (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "OpenZeppelin"
+          }
+        ]
+      },
+      {
+        "url": "https://fortinet.networkershome.com/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://fortinet.networkershome.com/",
+        "checkedAt": "2026-10-18T07:55:30.715Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "eng-fortigate",
+            "title": "FortiGate Simulator (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Networkers Home"
+          }
+        ]
+      },
+      {
+        "url": "https://fortivox.cloud/ctf/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://fortivox.cloud/ctf/",
+        "checkedAt": "2026-10-18T07:55:30.728Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "pentest-fortihack",
+            "title": "Simulated reconnaissance (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "FortiVox FortiHack"
+          }
+        ]
+      },
+      {
+        "url": "https://gandalf.lakera.ai/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://play.lakera.ai/agent-breaker",
+        "checkedAt": "2026-10-18T07:55:30.753Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "appsec-gandalf",
+            "title": "AI prompt-injection awareness (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Lakera"
+          }
+        ]
+      },
+      {
+        "url": "https://github.com/juice-shop/juice-shop",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://github.com/juice-shop/juice-shop",
+        "checkedAt": "2026-10-18T07:55:30.821Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "external-note-link-32",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://github.com/madhuakula/kubernetes-goat",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://github.com/madhuakula/kubernetes-goat",
+        "checkedAt": "2026-10-18T07:55:30.857Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "eng-k8s-goat",
+            "title": "Container security (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Open-source Kubernetes Goat"
+          }
+        ]
+      },
+      {
+        "url": "https://github.com/mandiant/capa/blob/master/doc/usage.md",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://github.com/mandiant/capa/blob/master/doc/usage.md",
+        "checkedAt": "2026-10-18T07:55:31.077Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "mal-capa-report-capstone",
+            "title": "Capability-analysis report (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Mandiant capa"
+          }
+        ]
+      },
+      {
+        "url": "https://github.com/ossf/scorecard",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://github.com/ossf/scorecard",
+        "checkedAt": "2026-10-18T07:55:31.126Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "devsecops-scorecard-design-review",
+            "title": "Repository security design review (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "OpenSSF"
+          }
+        ]
+      },
+      {
+        "url": "https://github.com/OWASP/crAPI",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://github.com/OWASP/crAPI",
+        "checkedAt": "2026-10-18T07:55:31.187Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "appsec-crapi",
+            "title": "API security (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "OWASP"
+          }
+        ]
+      },
+      {
+        "url": "https://github.com/RhinoSecurityLabs/cloudgoat",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://github.com/RhinoSecurityLabs/cloudgoat",
+        "checkedAt": "2026-10-18T07:55:31.433Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "cloud-cloudgoat",
+            "title": "Vulnerable-by-design cloud scenarios (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Rhino Security Labs"
+          },
+          {
+            "id": "eng-cloudgoat",
+            "title": "Cloud security scenarios (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Rhino Security Labs"
+          }
+        ]
+      },
+      {
+        "url": "https://github.com/SigmaHQ/sigma",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://github.com/SigmaHQ/sigma",
+        "checkedAt": "2026-10-18T07:55:31.540Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "sigma-rules",
+            "title": "Sigma detection rules",
+            "type": "resource",
+            "provider": "SigmaHQ"
+          },
+          {
+            "id": "sigma-rule-walkthrough-official-docs",
+            "title": "Detection Engineering with SIGMA Rule — official documentation",
+            "type": "official-reference",
+            "provider": "Arda Büyükkaya"
+          },
+          {
+            "id": "hunt-sigma",
+            "title": "Rule review and tuning (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "SigmaHQ"
+          }
+        ]
+      },
+      {
+        "url": "https://github.com/splunk/botsv3",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://github.com/splunk/botsv3",
+        "checkedAt": "2026-10-18T07:55:31.721Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "splunk-botsv3-dataset",
+            "title": "Boss of the SOC v3 dataset",
+            "type": "resource",
+            "provider": "Splunk (GitHub)"
+          }
+        ]
+      },
+      {
+        "url": "https://github.com/stuxnet999/MemLabs",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://github.com/stuxnet999/MemLabs",
+        "checkedAt": "2026-10-18T07:55:31.757Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "dfir-memlabs",
+            "title": "Memory forensics (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Open-source MemLabs"
+          },
+          {
+            "id": "mal-memlabs",
+            "title": "Memory forensics (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "MemLabs"
+          }
+        ]
+      },
+      {
+        "url": "https://github.com/VirusTotal/yara",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://github.com/VirusTotal/yara",
+        "checkedAt": "2026-10-18T07:55:31.798Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "mal-yara",
+            "title": "Signature-rule concepts (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "VirusTotal"
+          }
+        ]
+      },
+      {
+        "url": "https://help.hackthebox.com/en/articles/6007919-introduction-to-starting-point",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://help.hackthebox.com/en/articles/6007919-introduction-to-starting-point",
+        "checkedAt": "2026-10-18T07:55:31.828Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "pentest-htb-startingpoint",
+            "title": "Beginner penetration-testing machines (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Hack The Box"
+          }
+        ]
+      },
+      {
+        "url": "https://ise.networkershome.com/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://ise.networkershome.com/",
+        "checkedAt": "2026-10-18T07:55:31.935Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "eng-cisco-ise",
+            "title": "Cisco ISE Simulator (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Networkers Home"
+          }
+        ]
+      },
+      {
+        "url": "https://lab.techclick.in/lab/dns-tunnel-detect",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://lab.techclick.in/lab/dns-tunnel-detect",
+        "checkedAt": "2026-10-18T07:55:31.946Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "soc-techclick-dns",
+            "title": "DNS-log triage (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Techclick HackBox"
+          },
+          {
+            "id": "hunt-techclick-dns",
+            "title": "DNS-hunting practice (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Techclick HackBox"
+          }
+        ]
+      },
+      {
+        "url": "https://labs.cyfotok.com/labs/phishing",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://labs.cyfotok.com/labs/phishing",
+        "checkedAt": "2026-10-18T07:55:32.091Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "intel-cyfotok-phishing",
+            "title": "Email and source analysis (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Cyfotok Labs"
+          },
+          {
+            "id": "intel-cyfotok-phishing-osint",
+            "title": "Source and social-engineering analysis (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Cyfotok Labs"
+          }
+        ]
+      },
+      {
+        "url": "https://labs.networkershome.com/",
+        "status": "review",
+        "statusCode": null,
+        "finalUrl": null,
+        "checkedAt": "2026-10-18T07:55:32.097Z",
+        "detail": "Could not confirm reachability (TypeError); manual review recommended",
+        "entries": [
+          {
+            "id": "eng-packet-flow",
+            "title": "Network Packet Flow Simulator (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Networkers Home"
+          }
+        ]
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://learn.microsoft.com/en-us/azure/sentinel/",
+        "checkedAt": "2026-10-18T07:55:32.144Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "cloud-sentinel-training",
+            "title": "Cloud SIEM training (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Microsoft Learn"
+          }
+        ]
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/hunting",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://learn.microsoft.com/en-us/azure/sentinel/hunting",
+        "checkedAt": "2026-10-18T07:55:32.168Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "sentinel-hunting-kql-official-docs",
+            "title": "Threat Hunting in Microsoft Sentinel: KQL and hunting queries — official documentation",
+            "type": "official-reference",
+            "provider": "CyberPlatter"
+          }
+        ]
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/azure/sentinel/skill-up-resources",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://learn.microsoft.com/en-us/azure/sentinel/skill-up-resources",
+        "checkedAt": "2026-10-18T07:55:32.188Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "sentinel-overview-official-docs",
+            "title": "Microsoft Sentinel: features and functionality deep dive — official documentation",
+            "type": "official-reference",
+            "provider": "Microsoft Learn resource"
+          },
+          {
+            "id": "sentinel-accelerator-official-docs",
+            "title": "Microsoft Sentinel accelerator walkthrough — official documentation",
+            "type": "official-reference",
+            "provider": "Microsoft Learn resource"
+          },
+          {
+            "id": "external-note-link-12",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/defender-xdr/hunting-overview",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://learn.microsoft.com/en-us/defender-xdr/hunting-overview",
+        "checkedAt": "2026-10-18T07:55:32.299Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "microsoft-threat-hunting",
+            "title": "Microsoft threat hunting overview",
+            "type": "resource",
+            "provider": "Microsoft Learn"
+          },
+          {
+            "id": "external-note-link-17",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/shows/mvp-windows-and-devices-for-it/powershell-beginners",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://learn.microsoft.com/en-us/shows/mvp-windows-and-devices-for-it/powershell-beginners",
+        "checkedAt": "2026-10-18T07:55:32.330Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "powershell-mslearn",
+            "title": "PowerShell for Beginners — Microsoft Learn video series",
+            "type": "learning-video",
+            "provider": "Microsoft Learn"
+          }
+        ]
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/training/browse/?products=azure&subjects=security",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://learn.microsoft.com/en-us/training/browse/?products=azure&subjects=security",
+        "checkedAt": "2026-10-18T07:55:32.334Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "azure-security-learning",
+            "title": "Microsoft Learn: Azure security training",
+            "type": "resource",
+            "provider": "Microsoft Learn"
+          }
+        ]
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/training/modules/evaluate-regulatory-compliance/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://learn.microsoft.com/en-us/training/modules/evaluate-regulatory-compliance/",
+        "checkedAt": "2026-10-18T07:55:32.446Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "external-note-link-39",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/training/modules/identify-security-risks-posture-management/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://learn.microsoft.com/en-us/training/modules/identify-security-risks-posture-management/",
+        "checkedAt": "2026-10-18T07:55:32.459Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "external-note-link-36",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/training/modules/manage-cloud-security-posture-management/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://learn.microsoft.com/en-us/training/modules/manage-cloud-security-posture-management/",
+        "checkedAt": "2026-10-18T07:55:32.502Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "external-note-link-37",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/training/paths/get-started-windows-powershell/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://learn.microsoft.com/en-us/training/paths/get-started-windows-powershell/",
+        "checkedAt": "2026-10-18T07:55:32.549Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "powershell-beginners-official-docs",
+            "title": "PowerShell for Beginners: first commands — official documentation",
+            "type": "official-reference",
+            "provider": "Shane Young"
+          },
+          {
+            "id": "powershell-mslearn-official-docs",
+            "title": "PowerShell for Beginners — Microsoft Learn video series — official documentation",
+            "type": "official-reference",
+            "provider": "Microsoft Learn"
+          }
+        ]
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/",
+        "checkedAt": "2026-10-18T07:55:32.568Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "microsoft-learn",
+            "title": "Microsoft Learn: Sentinel and KQL",
+            "type": "resource",
+            "provider": "Microsoft"
+          }
+        ]
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/basic-audit-process-creation",
+        "status": "broken",
+        "statusCode": 404,
+        "finalUrl": "https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/basic-audit-process-creation",
+        "checkedAt": "2026-10-18T07:55:32.568Z",
+        "detail": "HTTP 404; check the provider page manually before removing the entry",
+        "entries": [
+          {
+            "id": "windows-security-auditing",
+            "title": "Windows process-creation auditing",
+            "type": "resource",
+            "provider": "Microsoft Learn"
+          },
+          {
+            "id": "event-viewer-audit-official-docs",
+            "title": "Use Windows Event Viewer for a security audit — official documentation",
+            "type": "official-reference",
+            "provider": "Jon Good"
+          },
+          {
+            "id": "external-note-link-5",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://linuxcommand.org/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://linuxcommand.org/",
+        "checkedAt": "2026-10-18T07:55:32.583Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "linux-cli-2026-official-docs",
+            "title": "Linux Command Line for Beginners: command-line foundations — official documentation",
+            "type": "official-reference",
+            "provider": "EdxPath"
+          },
+          {
+            "id": "linux-cli-learnlinux-official-docs",
+            "title": "Linux Commands for Beginners — official documentation",
+            "type": "official-reference",
+            "provider": "Learn Linux TV"
+          }
+        ]
+      },
+      {
+        "url": "https://mas.owasp.org/MASTG/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://mas.owasp.org/MASTG/",
+        "checkedAt": "2026-10-18T07:55:32.640Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "appsec-mobile",
+            "title": "Mobile application security testing (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "OWASP"
+          },
+          {
+            "id": "eng-owasp-mastg",
+            "title": "Mobile application security testing (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "OWASP"
+          }
+        ]
+      },
+      {
+        "url": "https://mitre-attack.github.io/attack-navigator/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://mitre-attack.github.io/attack-navigator/",
+        "checkedAt": "2026-10-18T07:55:32.674Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "intel-attack-navigator-capstone",
+            "title": "Threat-intelligence mapping and peer review (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "MITRE ATT&CK"
+          }
+        ]
+      },
+      {
+        "url": "https://nightjar-ctf.onrender.com/",
+        "status": "review",
+        "statusCode": 503,
+        "finalUrl": "https://nightjar-ctf.onrender.com/",
+        "checkedAt": "2026-10-18T07:55:32.743Z",
+        "detail": "HTTP 503; transient errors, bot protection, or access rules may apply",
+        "entries": [
+          {
+            "id": "intel-nightjar",
+            "title": "Cryptographic clue analysis (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Community CTF Labs"
+          }
+        ]
+      },
+      {
+        "url": "https://operation-ghost-route.onrender.com/",
+        "status": "review",
+        "statusCode": 503,
+        "finalUrl": "https://operation-ghost-route.onrender.com/",
+        "checkedAt": "2026-10-18T07:55:32.794Z",
+        "detail": "HTTP 503; transient errors, bot protection, or access rules may apply",
+        "entries": [
+          {
+            "id": "hunt-ghost-route",
+            "title": "DNS and network-log correlation (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Open-source CTF Labs"
+          },
+          {
+            "id": "intel-ghost-route",
+            "title": "DNS-intelligence correlation (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Community CTF Labs"
+          }
+        ]
+      },
+      {
+        "url": "https://osintframework.com/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://osintframework.com/",
+        "checkedAt": "2026-10-18T07:55:32.887Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "osint-full-course-official-docs",
+            "title": "Open-Source Intelligence (OSINT): full video course — official documentation",
+            "type": "official-reference",
+            "provider": "The Cyber Mentor / Class Central"
+          }
+        ]
+      },
+      {
+        "url": "https://overthewire.org/wargames/bandit/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://overthewire.org/wargames/bandit/",
+        "checkedAt": "2026-10-18T07:55:32.897Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "overthewire",
+            "title": "OverTheWire Bandit",
+            "type": "resource",
+            "provider": "OverTheWire"
+          },
+          {
+            "id": "pentest-bandit",
+            "title": "Linux command-line basics (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "OverTheWire"
+          }
+        ]
+      },
+      {
+        "url": "https://overthewire.org/wargames/bandit/bandit0.html",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://overthewire.org/wargames/bandit/bandit0.html",
+        "checkedAt": "2026-10-18T07:55:32.910Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "external-note-link-9",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          },
+          {
+            "id": "external-note-link-29",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://overthewire.org/wargames/natas/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://overthewire.org/wargames/natas/",
+        "checkedAt": "2026-10-18T07:55:32.958Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "pentest-natas",
+            "title": "Web security foundations (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "OverTheWire"
+          }
+        ]
+      },
+      {
+        "url": "https://owasp.org/projects/iot-security-testing-guide",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://owasp.org/projects/iot-security-testing-guide",
+        "checkedAt": "2026-10-18T07:55:32.960Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "appsec-iot",
+            "title": "IoT security testing (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "OWASP"
+          },
+          {
+            "id": "eng-owasp-iot",
+            "title": "IoT security testing (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "OWASP"
+          }
+        ]
+      },
+      {
+        "url": "https://owasp.org/projects/juice-shop",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://owasp.org/projects/juice-shop",
+        "checkedAt": "2026-10-18T07:55:32.987Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "juice-shop",
+            "title": "OWASP Juice Shop",
+            "type": "resource",
+            "provider": "OWASP"
+          }
+        ]
+      },
+      {
+        "url": "https://owasp.org/www-project-devsecops-guideline/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://owasp.org/projects/devsecops-guideline",
+        "checkedAt": "2026-10-18T07:55:32.994Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "eng-devsecops-guide",
+            "title": "Pipeline-control mapping (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "OWASP"
+          }
+        ]
+      },
+      {
+        "url": "https://owasp.org/www-project-top-ten/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://owasp.org/projects/top-ten",
+        "checkedAt": "2026-10-18T07:55:33.010Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "owasp-top10",
+            "title": "OWASP Top 10",
+            "type": "resource",
+            "provider": "OWASP"
+          }
+        ]
+      },
+      {
+        "url": "https://owasp.org/www-project-web-security-testing-guide/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://owasp.org/projects/web-security-testing-guide",
+        "checkedAt": "2026-10-18T07:55:33.120Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "owasp-wstg",
+            "title": "OWASP Web Security Testing Guide",
+            "type": "resource",
+            "provider": "OWASP"
+          },
+          {
+            "id": "external-note-link-23",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://owasp.org/www-project-webgoat/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://owasp.org/projects/webgoat",
+        "checkedAt": "2026-10-18T07:55:33.122Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "appsec-webgoat",
+            "title": "Web security and secure coding (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "OWASP"
+          }
+        ]
+      },
+      {
+        "url": "https://paloalto-fw.networkershome.com/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://paloalto-fw.networkershome.com/",
+        "checkedAt": "2026-10-18T07:55:33.203Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "eng-paloalto",
+            "title": "Palo Alto Firewall Simulator (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Networkers Home"
+          }
+        ]
+      },
+      {
+        "url": "https://portswigger.net/web-security",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://portswigger.net/web-security",
+        "checkedAt": "2026-10-18T07:55:33.208Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "portswigger-academy",
+            "title": "Web Security Academy",
+            "type": "resource",
+            "provider": "PortSwigger"
+          },
+          {
+            "id": "ethical-hacking-full-course-official-docs",
+            "title": "Full Ethical Hacking Course: network penetration testing for beginners — official documentation",
+            "type": "official-reference",
+            "provider": "freeCodeCamp.org / The Cyber Mentor"
+          },
+          {
+            "id": "portswigger-video-tutorials-official-docs",
+            "title": "Burp Suite video tutorials and Web Security Academy — official documentation",
+            "type": "official-reference",
+            "provider": "PortSwigger"
+          },
+          {
+            "id": "external-note-link-26",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://portswigger.net/web-security/access-control",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://portswigger.net/web-security/access-control",
+        "checkedAt": "2026-10-18T07:55:33.289Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "appsec-access",
+            "title": "Access Control labs (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "PortSwigger Web Security Academy"
+          }
+        ]
+      },
+      {
+        "url": "https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality",
+        "checkedAt": "2026-10-18T07:55:33.331Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "external-note-link-21",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://portswigger.net/web-security/api-testing",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://portswigger.net/web-security/api-testing",
+        "checkedAt": "2026-10-18T07:55:33.585Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "appsec-api",
+            "title": "API Testing labs (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "PortSwigger Web Security Academy"
+          }
+        ]
+      },
+      {
+        "url": "https://portswigger.net/web-security/authentication",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://portswigger.net/web-security/authentication",
+        "checkedAt": "2026-10-18T07:55:33.589Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "appsec-auth",
+            "title": "Authentication labs (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "PortSwigger Web Security Academy"
+          }
+        ]
+      },
+      {
+        "url": "https://portswigger.net/web-security/cross-site-scripting",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://portswigger.net/web-security/cross-site-scripting",
+        "checkedAt": "2026-10-18T07:55:33.591Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "appsec-xss",
+            "title": "Cross-Site Scripting labs (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "PortSwigger Web Security Academy"
+          }
+        ]
+      },
+      {
+        "url": "https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded",
+        "checkedAt": "2026-10-18T07:55:33.599Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "external-note-link-31",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://portswigger.net/web-security/csrf",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://portswigger.net/web-security/csrf",
+        "checkedAt": "2026-10-18T07:55:33.817Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "appsec-csrf",
+            "title": "Cross-Site Request Forgery labs (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "PortSwigger Web Security Academy"
+          }
+        ]
+      },
+      {
+        "url": "https://portswigger.net/web-security/file-path-traversal",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://portswigger.net/web-security/file-path-traversal",
+        "checkedAt": "2026-10-18T07:55:33.855Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "appsec-path-traversal",
+            "title": "Path Traversal labs (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "PortSwigger Web Security Academy"
+          }
+        ]
+      },
+      {
+        "url": "https://portswigger.net/web-security/file-upload",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://portswigger.net/web-security/file-upload",
+        "checkedAt": "2026-10-18T07:55:33.971Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "appsec-upload",
+            "title": "File Upload Vulnerabilities labs (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "PortSwigger Web Security Academy"
+          }
+        ]
+      },
+      {
+        "url": "https://portswigger.net/web-security/getting-started",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://portswigger.net/web-security/getting-started",
+        "checkedAt": "2026-10-18T07:55:34.053Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "portswigger-video-tutorials",
+            "title": "Burp Suite video tutorials and Web Security Academy",
+            "type": "learning-video",
+            "provider": "PortSwigger"
+          }
+        ]
+      },
+      {
+        "url": "https://portswigger.net/web-security/information-disclosure/exploiting/lab-infoleak-on-debug-page",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://portswigger.net/web-security/information-disclosure/exploiting/lab-infoleak-on-debug-page",
+        "checkedAt": "2026-10-18T07:55:34.083Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "pentest-bv-robots",
+            "title": "Information-disclosure practice (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "PortSwigger Web Security Academy"
+          }
+        ]
+      },
+      {
+        "url": "https://portswigger.net/web-security/learning-paths/sql-injection",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://portswigger.net/web-security/learning-paths/sql-injection",
+        "checkedAt": "2026-10-18T07:55:34.121Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "appsec-sqli",
+            "title": "SQL Injection learning path and labs (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "PortSwigger Web Security Academy"
+          }
+        ]
+      },
+      {
+        "url": "https://portswigger.net/web-security/sql-injection",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://portswigger.net/web-security/sql-injection",
+        "checkedAt": "2026-10-18T07:55:34.148Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "portswigger-sqli-official-docs",
+            "title": "SQL injection: retrieve hidden data — practice lab — official documentation",
+            "type": "official-reference",
+            "provider": "PortSwigger Web Security Academy"
+          },
+          {
+            "id": "pentest-portswigger-sqli",
+            "title": "SQL Injection labs (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "PortSwigger Web Security Academy"
+          }
+        ]
+      },
+      {
+        "url": "https://portswigger.net/web-security/sql-injection/lab-login-bypass",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://portswigger.net/web-security/sql-injection/lab-login-bypass",
+        "checkedAt": "2026-10-18T07:55:34.195Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "pentest-portswigger-sqli-capstone",
+            "title": "Final training-lab assessment and report (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "PortSwigger Web Security Academy"
+          }
+        ]
+      },
+      {
+        "url": "https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data",
+        "checkedAt": "2026-10-18T07:55:34.231Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "portswigger-sqli",
+            "title": "SQL injection: retrieve hidden data — practice lab",
+            "type": "learning-video",
+            "provider": "PortSwigger Web Security Academy"
+          },
+          {
+            "id": "pentest-bv-webgame",
+            "title": "SQL injection practice (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "PortSwigger Web Security Academy"
+          },
+          {
+            "id": "external-note-link-30",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://portswigger.net/web-security/ssrf",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://portswigger.net/web-security/ssrf",
+        "checkedAt": "2026-10-18T07:55:34.378Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "appsec-ssrf",
+            "title": "Server-Side Request Forgery labs (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "PortSwigger Web Security Academy"
+          }
+        ]
+      },
+      {
+        "url": "https://portswigger.net/web-security/websockets",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://portswigger.net/web-security/websockets",
+        "checkedAt": "2026-10-18T07:55:34.425Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "appsec-websockets",
+            "title": "WebSockets security labs (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "PortSwigger Web Security Academy"
+          }
+        ]
+      },
+      {
+        "url": "https://prime-suspect-crypto-ctf.onrender.com/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://prime-suspect-crypto-ctf.onrender.com/",
+        "checkedAt": "2026-10-18T07:55:34.446Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "intel-prime-suspect",
+            "title": "RSA-key reasoning (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Community CTF Labs"
+          }
+        ]
+      },
+      {
+        "url": "https://pwn.college/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://pwn.college/",
+        "checkedAt": "2026-10-18T07:55:34.447Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "pwn-college",
+            "title": "pwn.college learning platform",
+            "type": "resource",
+            "provider": "Arizona State University / pwn.college"
+          }
+        ]
+      },
+      {
+        "url": "https://rangewx.com/en/labs/analyser-artefacts-navigation",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://rangewx.com/en/labs/analyser-artefacts-navigation",
+        "checkedAt": "2026-10-18T07:55:34.457Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "dfir-browser-artifacts",
+            "title": "Browser artefact investigation (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          }
+        ]
+      },
+      {
+        "url": "https://rangewx.com/en/labs/analyser-donnees-cloud-mobile",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://rangewx.com/en/labs/analyser-donnees-cloud-mobile",
+        "checkedAt": "2026-10-18T07:55:34.475Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "dfir-cloud-mobile",
+            "title": "Cloud and mobile forensics practice (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          },
+          {
+            "id": "cloud-rangewx-mobile",
+            "title": "Cloud and mobile evidence analysis (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          }
+        ]
+      },
+      {
+        "url": "https://rangewx.com/en/labs/analyser-emails-forensiques",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://rangewx.com/en/labs/analyser-emails-forensiques",
+        "checkedAt": "2026-10-18T07:55:34.476Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "dfir-email-meta",
+            "title": "Email artefact investigation (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          },
+          {
+            "id": "intel-rangewx-email",
+            "title": "Email and Metadata Analysis (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          }
+        ]
+      },
+      {
+        "url": "https://rangewx.com/en/labs/analyser-geolocalisation-medias",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://rangewx.com/en/labs/analyser-geolocalisation-medias",
+        "checkedAt": "2026-10-18T07:55:34.485Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "dfir-geo-media",
+            "title": "Geolocation and media-forensics practice (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          },
+          {
+            "id": "intel-rangewx-geo",
+            "title": "Geolocation and Digital Media Analysis (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          }
+        ]
+      },
+      {
+        "url": "https://rangewx.com/en/labs/analyser-journaux-securite",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://rangewx.com/en/labs/analyser-journaux-securite",
+        "checkedAt": "2026-10-18T07:55:34.593Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "soc-rangewx-security-logs",
+            "title": "Security log analysis (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          },
+          {
+            "id": "hunt-rangewx-logs",
+            "title": "Security log analysis (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          }
+        ]
+      },
+      {
+        "url": "https://rangewx.com/en/labs/analyser-trafic-reseau",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://rangewx.com/en/labs/analyser-trafic-reseau",
+        "checkedAt": "2026-10-18T07:55:34.627Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "hunt-rangewx-network",
+            "title": "Network traffic analysis (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          }
+        ]
+      },
+      {
+        "url": "https://rangewx.com/en/labs/auditer-posture-cloud-openstack-m1",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://rangewx.com/en/labs/auditer-posture-cloud-openstack-m1",
+        "checkedAt": "2026-10-18T07:55:34.780Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "cloud-rangewx-audit",
+            "title": "Cloud posture assessment (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          },
+          {
+            "id": "grc-openstack-audit",
+            "title": "Audit the Posture of a Cloud Project (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          },
+          {
+            "id": "eng-rangewx-cloud-audit",
+            "title": "Audit the Posture of a Cloud Project (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          }
+        ]
+      },
+      {
+        "url": "https://rangewx.com/en/labs/chaine-attaque-multi-etapes-k8s-m1",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://rangewx.com/en/labs/chaine-attaque-multi-etapes-k8s-m1",
+        "checkedAt": "2026-10-18T07:55:34.987Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "eng-rangewx-k8s-chain",
+            "title": "Kubernetes access-control investigation (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          }
+        ]
+      },
+      {
+        "url": "https://rangewx.com/en/labs/configurer-roles-acces-cloud",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://rangewx.com/en/labs/configurer-roles-acces-cloud",
+        "checkedAt": "2026-10-18T07:55:35.150Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "cloud-rangewx-roles",
+            "title": "Cloud IAM least-privilege practice (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          },
+          {
+            "id": "cloud-range-multicloud",
+            "title": "Cloud IAM least-privilege practice (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          },
+          {
+            "id": "eng-rangewx-roles",
+            "title": "Configure Access Roles in a Cloud (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          }
+        ]
+      },
+      {
+        "url": "https://rangewx.com/en/labs/corriger-fuite-stockage-objet-openstack-m1",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://rangewx.com/en/labs/corriger-fuite-stockage-objet-openstack-m1",
+        "checkedAt": "2026-10-18T07:55:35.187Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "cloud-rangewx-storage",
+            "title": "Object-storage permissions review (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          }
+        ]
+      },
+      {
+        "url": "https://rangewx.com/en/labs/corriger-groupe-securite-permissif-openstack-m1",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://rangewx.com/en/labs/corriger-groupe-securite-permissif-openstack-m1",
+        "checkedAt": "2026-10-18T07:55:35.213Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "cloud-rangewx-sg",
+            "title": "Cloud network-rule review (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          }
+        ]
+      },
+      {
+        "url": "https://rangewx.com/en/labs/corriger-rbac-moindre-privilege-k8s-m1",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://rangewx.com/en/labs/corriger-rbac-moindre-privilege-k8s-m1",
+        "checkedAt": "2026-10-18T07:55:35.237Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "eng-rangewx-rbac",
+            "title": "Kubernetes least-privilege remediation (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          }
+        ]
+      },
+      {
+        "url": "https://rangewx.com/en/labs/decouverte-compte-cloud-m1",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://rangewx.com/en/labs/decouverte-compte-cloud-m1",
+        "checkedAt": "2026-10-18T07:55:35.281Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "cloud-rangewx-discovery",
+            "title": "Cloud account discovery (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          }
+        ]
+      },
+      {
+        "url": "https://rangewx.com/en/labs/detecter-attaques-live-wazuh",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://rangewx.com/en/labs/detecter-attaques-live-wazuh",
+        "checkedAt": "2026-10-18T07:55:35.327Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "soc-rangewx-live-wazuh",
+            "title": "Live SIEM incident practice (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          },
+          {
+            "id": "hunt-rangewx-wazuh",
+            "title": "SIEM detection practice (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          }
+        ]
+      },
+      {
+        "url": "https://rangewx.com/en/labs/investiguer-endpoint-windows-compromis-m1",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://rangewx.com/en/labs/investiguer-endpoint-windows-compromis-m1",
+        "checkedAt": "2026-10-18T07:55:35.383Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "soc-rangewx-win-endpoint",
+            "title": "Windows endpoint investigation (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          }
+        ]
+      },
+      {
+        "url": "https://rangewx.com/en/labs/investiguer-routeur-linux-compromis",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://rangewx.com/en/labs/investiguer-routeur-linux-compromis",
+        "checkedAt": "2026-10-18T07:55:35.634Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "dfir-linux-router",
+            "title": "Linux router incident investigation (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          }
+        ]
+      },
+      {
+        "url": "https://rangewx.com/en/labs/investiguer-serveur-compromis",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://rangewx.com/en/labs/investiguer-serveur-compromis",
+        "checkedAt": "2026-10-18T07:55:35.793Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "dfir-compromised-server",
+            "title": "Compromised-server investigation (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          }
+        ]
+      },
+      {
+        "url": "https://rangewx.com/en/scenarios/audit-cloud-gouvernance-capstone-m1",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://rangewx.com/en/scenarios/audit-cloud-gouvernance-capstone-m1",
+        "checkedAt": "2026-10-18T07:55:35.836Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "cloud-rangewx-governance",
+            "title": "Cloud governance review exercise (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          },
+          {
+            "id": "grc-cloud-board",
+            "title": "Cloud governance review exercise (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          }
+        ]
+      },
+      {
+        "url": "https://rangewx.com/en/scenarios/phishing-fausse-facture",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://rangewx.com/en/scenarios/phishing-fausse-facture",
+        "checkedAt": "2026-10-18T07:55:35.860Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "grc-bv-social-engineering",
+            "title": "The urgent fake invoice (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "RangeWX"
+          }
+        ]
+      },
+      {
+        "url": "https://remnux.org/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://remnux.org/",
+        "checkedAt": "2026-10-18T07:55:35.934Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "mal-remnux",
+            "title": "Isolated malware-analysis workstation (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "REMnux"
+          }
+        ]
+      },
+      {
+        "url": "https://top10.owasp.org/2025/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://top10.owasp.org/2025/",
+        "checkedAt": "2026-10-18T07:55:35.973Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "owasp-top-10-2025",
+            "title": "OWASP Top 10:2025 official risk overview",
+            "type": "learning-video",
+            "provider": "OWASP Foundation"
+          },
+          {
+            "id": "owasp-top-10-2025-official-docs",
+            "title": "OWASP Top 10:2025 official risk overview — official documentation",
+            "type": "official-reference",
+            "provider": "OWASP Foundation"
+          }
+        ]
+      },
+      {
+        "url": "https://tryhackme.com/path/outline/azuresecurity",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://tryhackme.com/path/outline/azuresecurity",
+        "checkedAt": "2026-10-18T07:55:35.991Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "cloud-thm-azure",
+            "title": "Azure cloud defence practice (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "TryHackMe"
+          }
+        ]
+      },
+      {
+        "url": "https://tryhackme.com/path/outline/cybersecurity101",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://tryhackme.com/path/outline/cybersecurity101",
+        "checkedAt": "2026-10-18T07:55:36.026Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "mal-thm-foundations",
+            "title": "Beginner malware-analysis and defensive-tooling practice (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "TryHackMe"
+          }
+        ]
+      },
+      {
+        "url": "https://tryhackme.com/path/outline/jrpenetrationtester",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://tryhackme.com/path/outline/jrpenetrationtester",
+        "checkedAt": "2026-10-18T07:55:36.028Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "pentest-thm-jrpt",
+            "title": "Penetration-testing learning path (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "TryHackMe"
+          }
+        ]
+      },
+      {
+        "url": "https://tryhackme.com/path/outline/soclevel1",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://tryhackme.com/path/outline/soclevel1",
+        "checkedAt": "2026-10-18T07:55:36.068Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "soc-thm-soc-l1",
+            "title": "SOC analyst learning path (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "TryHackMe"
+          }
+        ]
+      },
+      {
+        "url": "https://tryhackme.com/r/rooms",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://tryhackme.com/r/rooms",
+        "checkedAt": "2026-10-18T07:55:36.080Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "tryhackme-free-rooms",
+            "title": "TryHackMe rooms",
+            "type": "resource",
+            "provider": "TryHackMe"
+          }
+        ]
+      },
+      {
+        "url": "https://tryhackme.com/room/alerttriagewithsplunk",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://tryhackme.com/room/alerttriagewithsplunk",
+        "checkedAt": "2026-10-18T07:55:36.089Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "soc-bv-inside-job",
+            "title": "Account-compromise triage (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "TryHackMe"
+          }
+        ]
+      },
+      {
+        "url": "https://tryhackme.com/room/btautopsye0",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://tryhackme.com/room/btautopsye0",
+        "checkedAt": "2026-10-18T07:55:36.287Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "external-note-link-33",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://tryhackme.com/room/dnsindetail",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://tryhackme.com/room/dnsindetail",
+        "checkedAt": "2026-10-18T07:55:36.293Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "external-note-link-18",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://tryhackme.com/room/httpindetail",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://tryhackme.com/room/httpindetail",
+        "checkedAt": "2026-10-18T07:55:36.306Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "external-note-link-24",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://tryhackme.com/room/linuxfundamentalspart1",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://tryhackme.com/room/linuxfundamentalspart1",
+        "checkedAt": "2026-10-18T07:55:36.320Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "external-note-link-8",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://tryhackme.com/room/linuxloggingforsoc",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://tryhackme.com/room/linuxloggingforsoc",
+        "checkedAt": "2026-10-18T07:55:36.322Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "external-note-link-34",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://tryhackme.com/room/loganalysiswithsiem",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://tryhackme.com/room/loganalysiswithsiem",
+        "checkedAt": "2026-10-18T07:55:36.405Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "external-note-link-1",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://tryhackme.com/room/loglesshunt",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://tryhackme.com/room/loglesshunt",
+        "checkedAt": "2026-10-18T07:55:36.407Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "hunt-bv-knocking",
+            "title": "Timeline-based threat hunting (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "TryHackMe"
+          }
+        ]
+      },
+      {
+        "url": "https://tryhackme.com/room/splunkexploringspl",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://tryhackme.com/room/splunkexploringspl",
+        "checkedAt": "2026-10-18T07:55:36.444Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "external-note-link-2",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          },
+          {
+            "id": "external-note-link-7",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://tryhackme.com/room/windowscommandline",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://tryhackme.com/room/windowscommandline",
+        "checkedAt": "2026-10-18T07:55:36.450Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "external-note-link-27",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://tryhackme.com/room/windowseventlogs",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://tryhackme.com/room/windowseventlogs",
+        "checkedAt": "2026-10-18T07:55:36.459Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "external-note-link-3",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://tryhackme.com/room/windowsloggingforsoc",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://tryhackme.com/room/windowsloggingforsoc",
+        "checkedAt": "2026-10-18T07:55:36.498Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "soc-bv-whos-knocking",
+            "title": "Authentication-log triage (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "TryHackMe"
+          },
+          {
+            "id": "external-note-link-4",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://tryhackme.com/room/windowspowershell",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://tryhackme.com/room/windowspowershell",
+        "checkedAt": "2026-10-18T07:55:36.500Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "external-note-link-28",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://tryhackme.com/room/windowsthreatdetection1",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://tryhackme.com/room/windowsthreatdetection1",
+        "checkedAt": "2026-10-18T07:55:36.536Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "dfir-bv-hidden-task",
+            "title": "Endpoint-artifact review (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "TryHackMe"
+          },
+          {
+            "id": "external-note-link-16",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://tryhackme.com/room/wiresharkthebasics",
+        "status": "review",
+        "statusCode": 429,
+        "finalUrl": "https://tryhackme.com/room/wiresharkthebasics",
+        "checkedAt": "2026-10-18T07:55:36.617Z",
+        "detail": "HTTP 429; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "external-note-link-19",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          },
+          {
+            "id": "external-note-link-25",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://volatility3.readthedocs.io/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://volatility3.readthedocs.io/en/stable/",
+        "checkedAt": "2026-10-18T07:55:36.624Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "volatility-memory-official-docs",
+            "title": "Introduction to Memory Forensics with Volatility 3 — official documentation",
+            "type": "official-reference",
+            "provider": "DFIRScience"
+          }
+        ]
+      },
+      {
+        "url": "https://www.athena-ctf.com/practice",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://www.athena-ctf.com/practice",
+        "checkedAt": "2026-10-18T07:55:36.653Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "pentest-athena-web",
+            "title": "Web Exploitation practice category (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Athena CTF"
+          },
+          {
+            "id": "intel-athena-osint",
+            "title": "OSINT practice category (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Athena CTF"
+          },
+          {
+            "id": "mal-athena-rev",
+            "title": "Reverse-engineering practice (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Athena CTF"
+          }
+        ]
+      },
+      {
+        "url": "https://www.autopsy.com/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.autopsy.com/",
+        "checkedAt": "2026-10-18T07:55:36.660Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "autopsy-forensics",
+            "title": "Autopsy digital forensics platform",
+            "type": "resource",
+            "provider": "The Sleuth Kit / Autopsy"
+          }
+        ]
+      },
+      {
+        "url": "https://www.autopsy.com/support/training/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.autopsy.com/training/",
+        "checkedAt": "2026-10-18T07:55:36.663Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "autopsy-forensics-official-docs",
+            "title": "Digital Forensics with Autopsy: step-by-step investigation — official documentation",
+            "type": "official-reference",
+            "provider": "Hackavis"
+          }
+        ]
+      },
+      {
+        "url": "https://www.cisa.gov/resources-tools",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.cisa.gov/resources-tools",
+        "checkedAt": "2026-10-18T07:55:36.697Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "grc-cisa",
+            "title": "CISA Cybersecurity Resources (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "CISA"
+          }
+        ]
+      },
+      {
+        "url": "https://www.cisa.gov/resources-tools/programs/industrial-control-systems",
+        "status": "broken",
+        "statusCode": 404,
+        "finalUrl": "https://www.cisa.gov/resources-tools/programs/industrial-control-systems",
+        "checkedAt": "2026-10-18T07:55:36.708Z",
+        "detail": "HTTP 404; check the provider page manually before removing the entry",
+        "entries": [
+          {
+            "id": "grc-cisa-ics",
+            "title": "CISA Industrial Control Systems training (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "CISA"
+          }
+        ]
+      },
+      {
+        "url": "https://www.cisa.gov/sites/default/files/publications/19_1106_cisa_CISA_Cyber_Essentials_S508C_1.pdf",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://www.cisa.gov/sites/default/files/publications/19_1106_cisa_CISA_Cyber_Essentials_S508C_1.pdf",
+        "checkedAt": "2026-10-18T07:55:36.747Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "cisa-cyber-essentials",
+            "title": "CISA Cyber Essentials",
+            "type": "resource",
+            "provider": "CISA"
+          }
+        ]
+      },
+      {
+        "url": "https://www.cisecurity.org/controls",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.cisecurity.org/controls",
+        "checkedAt": "2026-10-18T07:55:36.796Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "cis-controls",
+            "title": "CIS Critical Security Controls",
+            "type": "resource",
+            "provider": "Center for Internet Security"
+          }
+        ]
+      },
+      {
+        "url": "https://www.classcentral.com/course/youtube-but-is-it-malware-431619",
+        "status": "review",
+        "statusCode": 403,
+        "finalUrl": "https://www.classcentral.com/course/youtube-but-is-it-malware-431619",
+        "checkedAt": "2026-10-18T07:55:36.958Z",
+        "detail": "HTTP 403; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "malware-analysis-johnhammond",
+            "title": "But is it malware? — Malware analysis and detection techniques",
+            "type": "learning-video",
+            "provider": "John Hammond"
+          }
+        ]
+      },
+      {
+        "url": "https://www.classcentral.com/course/youtube-detecting-malicious-files-with-yara-rules-as-they-traverse-the-network-163574",
+        "status": "review",
+        "statusCode": 403,
+        "finalUrl": "https://www.classcentral.com/course/youtube-detecting-malicious-files-with-yara-rules-as-they-traverse-the-network-163574",
+        "checkedAt": "2026-10-18T07:55:36.977Z",
+        "detail": "HTTP 403; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "yara-network-detection",
+            "title": "Detecting malicious files with YARA rules as they traverse a network",
+            "type": "learning-video",
+            "provider": "Black Hat conference talk"
+          }
+        ]
+      },
+      {
+        "url": "https://www.cloudflare.com/learning/dns/what-is-dns/",
+        "status": "review",
+        "statusCode": 403,
+        "finalUrl": "https://www.cloudflare.com/learning/dns/what-is-dns/",
+        "checkedAt": "2026-10-18T07:55:37.060Z",
+        "detail": "HTTP 403; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "dns-basics-official-docs",
+            "title": "DNS explained: how name resolution works — official documentation",
+            "type": "official-reference",
+            "provider": "Cyber Guard"
+          }
+        ]
+      },
+      {
+        "url": "https://www.damnvulnerabledefi.xyz/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://www.damnvulnerabledefi.xyz/",
+        "checkedAt": "2026-10-18T07:55:37.070Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "appsec-damn-vulnerable-defi",
+            "title": "DeFi security (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Damn Vulnerable DeFi"
+          },
+          {
+            "id": "appsec-defi",
+            "title": "Smart-contract security (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Damn Vulnerable DeFi"
+          }
+        ]
+      },
+      {
+        "url": "https://www.isea.gov.in/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.isea.gov.in/",
+        "checkedAt": "2026-10-18T07:55:37.072Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "grc-isea",
+            "title": "Cybersecurity awareness exercise (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "ISEA / MeitY"
+          }
+        ]
+      },
+      {
+        "url": "https://www.malware-traffic-analysis.net/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://www.malware-traffic-analysis.net/",
+        "checkedAt": "2026-10-18T07:55:37.073Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "mal-pcap",
+            "title": "Malware-traffic PCAP investigation (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Malware-Traffic-Analysis.net"
+          }
+        ]
+      },
+      {
+        "url": "https://www.nist.gov/cyberframework",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://www.nist.gov/cyberframework",
+        "checkedAt": "2026-10-18T07:55:37.117Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "nist-csf-2",
+            "title": "NIST Cybersecurity Framework 2.0",
+            "type": "resource",
+            "provider": "NIST"
+          },
+          {
+            "id": "nist-csf-video-official-docs",
+            "title": "NIST Cybersecurity Framework 2.0: functions, tiers and profiles — official documentation",
+            "type": "official-reference",
+            "provider": "CyberPlatter"
+          },
+          {
+            "id": "nist-official-video-series-official-docs",
+            "title": "NIST-produced Cybersecurity Framework 2.0 video series — official documentation",
+            "type": "official-reference",
+            "provider": "NIST"
+          }
+        ]
+      },
+      {
+        "url": "https://www.nist.gov/cyberframework/profiles",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://www.nist.gov/cyberframework/profiles",
+        "checkedAt": "2026-10-18T07:55:37.128Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "grc-nist-profile",
+            "title": "Cybersecurity Framework Profile exercise (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "NIST"
+          },
+          {
+            "id": "grc-cytrain",
+            "title": "Risk and control profile (guided exercise for these notes)",
+            "type": "career-path-exercise",
+            "provider": "NIST"
+          },
+          {
+            "id": "external-note-link-38",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://www.nist.gov/cyberframework/quick-start-guides",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://www.nist.gov/cyberframework/quick-start-guides",
+        "checkedAt": "2026-10-18T07:55:37.270Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "nist-csf-quickstart",
+            "title": "NIST CSF 2.0 Quick-Start Guides",
+            "type": "resource",
+            "provider": "NIST"
+          }
+        ]
+      },
+      {
+        "url": "https://www.nist.gov/cyberframework/videos",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://www.nist.gov/cyberframework/videos",
+        "checkedAt": "2026-10-18T07:55:37.359Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "nist-official-video-series",
+            "title": "NIST-produced Cybersecurity Framework 2.0 video series",
+            "type": "learning-video",
+            "provider": "NIST"
+          },
+          {
+            "id": "nist-csf-2-official-explainer-official-docs",
+            "title": "The NIST Cybersecurity Framework (CSF) 2.0 — official documentation",
+            "type": "official-reference",
+            "provider": "National Institute of Standards and Technology (NIST)"
+          }
+        ]
+      },
+      {
+        "url": "https://www.practicalnetworking.net/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://www.practicalnetworking.net/",
+        "checkedAt": "2026-10-18T07:55:37.426Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "networking-basics-official-docs",
+            "title": "Subnetting Mastery: seven-part video series — official documentation",
+            "type": "official-reference",
+            "provider": "Practical Networking"
+          }
+        ]
+      },
+      {
+        "url": "https://www.practicalnetworking.net/stand-alone/subnetting-mastery/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://www.practicalnetworking.net/stand-alone/subnetting-mastery/",
+        "checkedAt": "2026-10-18T07:55:37.434Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "subnetting-mastery-official-docs",
+            "title": "What is Subnetting? — Subnetting Mastery Part 1 — official documentation",
+            "type": "official-reference",
+            "provider": "Practical Networking"
+          }
+        ]
+      },
+      {
+        "url": "https://www.splunk.com/en_us/blog/learn/splunk-tutorials.html",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://www.splunk.com/en_us/blog/learn/splunk-tutorials.html",
+        "checkedAt": "2026-10-18T07:55:37.501Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "splunk-search-basics-official-docs",
+            "title": "Getting started with Splunk: search basics — official documentation",
+            "type": "official-reference",
+            "provider": "Grey Dziuba / Splunk"
+          }
+        ]
+      },
+      {
+        "url": "https://www.splunk.com/en_us/training/free-courses/overview.html",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.splunk.com/en_us/training/free-courses/overview.html",
+        "checkedAt": "2026-10-18T07:55:37.582Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "splunk-free-courses",
+            "title": "Splunk free courses",
+            "type": "resource",
+            "provider": "Splunk"
+          },
+          {
+            "id": "siem-explained-official-docs",
+            "title": "What is SIEM? — official documentation",
+            "type": "official-reference",
+            "provider": "IBM Technology"
+          },
+          {
+            "id": "external-note-link-11",
+            "title": "External lab companion link",
+            "type": "lab-note-link",
+            "provider": "External training provider"
+          }
+        ]
+      },
+      {
+        "url": "https://www.srxlabs.com/learning/",
+        "status": "review",
+        "statusCode": 403,
+        "finalUrl": "https://www.srxlabs.com/learning/",
+        "checkedAt": "2026-10-18T07:55:37.603Z",
+        "detail": "HTTP 403; access restriction or automated-request blocking may apply",
+        "entries": [
+          {
+            "id": "grc-srx",
+            "title": "Governance and risk learning exercise (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "SRXLABS"
+          }
+        ]
+      },
+      {
+        "url": "https://www.stratosphereips.org/datasets-ctu13",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://www.stratosphereips.org/datasets-ctu13",
+        "checkedAt": "2026-10-18T07:55:37.649Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "ctu13-labeled-flows",
+            "title": "CTU-13 labelled botnet-flow dataset",
+            "type": "resource",
+            "provider": "Stratosphere Laboratory"
+          }
+        ]
+      },
+      {
+        "url": "https://www.unb.ca/cic/datasets/ids-2017.html",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://www.unb.ca/cic/datasets/ids-2017.html",
+        "checkedAt": "2026-10-18T07:55:37.663Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "cicids2017-labeled-flows",
+            "title": "CIC-IDS2017 labelled network-flow dataset",
+            "type": "resource",
+            "provider": "Canadian Institute for Cybersecurity (UNB)"
+          }
+        ]
+      },
+      {
+        "url": "https://www.wireshark.org/docs/",
+        "status": "healthy",
+        "statusCode": 206,
+        "finalUrl": "https://www.wireshark.org/docs/",
+        "checkedAt": "2026-10-18T07:55:37.712Z",
+        "detail": "HTTP range request responded; content not inspected",
+        "entries": [
+          {
+            "id": "wireshark-beginner-2026-official-docs",
+            "title": "Wireshark Tutorial for Beginners: packet analysis — official documentation",
+            "type": "official-reference",
+            "provider": "LanWanNinja"
+          },
+          {
+            "id": "wireshark-protocols-official-docs",
+            "title": "Wireshark: inspect HTTP, DNS, ARP, ICMP and TCP — official documentation",
+            "type": "official-reference",
+            "provider": "Concepts & Tricks"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/playlist?list=PLIFyRwBY_4bQUE4IB5c4VPRyDoLgOdExE",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/playlist?list=PLIFyRwBY_4bQUE4IB5c4VPRyDoLgOdExE",
+        "checkedAt": "2026-10-18T07:55:37.763Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "networking-basics",
+            "title": "Subnetting Mastery: seven-part video series",
+            "type": "learning-video",
+            "provider": "Practical Networking"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=-fV7jZwZuGQ",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=-fV7jZwZuGQ",
+        "checkedAt": "2026-10-18T07:55:37.764Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "event-viewer-audit",
+            "title": "Use Windows Event Viewer for a security audit",
+            "type": "learning-video",
+            "provider": "Jon Good"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=-jhZwIRIIrc",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=-jhZwIRIIrc",
+        "checkedAt": "2026-10-18T07:55:37.780Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "aws-iam-roles",
+            "title": "What is AWS IAM? Roles, policies and use cases",
+            "type": "learning-video",
+            "provider": "learn by doing it"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=2SYknklVHqU",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=2SYknklVHqU",
+        "checkedAt": "2026-10-18T07:55:37.953Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "wireshark-protocols",
+            "title": "Wireshark: inspect HTTP, DNS, ARP, ICMP and TCP",
+            "type": "learning-video",
+            "provider": "Concepts & Tricks"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=3Kq1MIfTWCE",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=3Kq1MIfTWCE",
+        "checkedAt": "2026-10-18T07:55:38.057Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "ethical-hacking-full-course",
+            "title": "Full Ethical Hacking Course: network penetration testing for beginners",
+            "type": "learning-video",
+            "provider": "freeCodeCamp.org / The Cyber Mentor"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=6ZvyZhk84ts",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=6ZvyZhk84ts",
+        "checkedAt": "2026-10-18T07:55:38.065Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "dns-basics",
+            "title": "DNS explained: how name resolution works",
+            "type": "learning-video",
+            "provider": "Cyber Guard"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=7An7BB-CcQI",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=7An7BB-CcQI",
+        "checkedAt": "2026-10-18T07:55:38.071Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "sentinel-overview",
+            "title": "Microsoft Sentinel: features and functionality deep dive",
+            "type": "learning-video",
+            "provider": "Microsoft Learn resource"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=9RfsRn7m7OE",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=9RfsRn7m7OE",
+        "checkedAt": "2026-10-18T07:55:38.087Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "siem-explained",
+            "title": "What is SIEM?",
+            "type": "learning-video",
+            "provider": "IBM Technology"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=AJ1XS_3Waas",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=AJ1XS_3Waas",
+        "checkedAt": "2026-10-18T07:55:38.153Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "linux-cli-2026",
+            "title": "Linux Command Line for Beginners: command-line foundations",
+            "type": "learning-video",
+            "provider": "EdxPath"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=B-MwKnNBh5s",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=B-MwKnNBh5s",
+        "checkedAt": "2026-10-18T07:55:38.155Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "aws-iam-explained",
+            "title": "AWS IAM explained for beginners: users, groups, roles and permissions",
+            "type": "learning-video",
+            "provider": "CodeSnippet"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=BWZ-MHIhqjM",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=BWZ-MHIhqjM",
+        "checkedAt": "2026-10-18T07:55:38.164Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "subnetting-mastery",
+            "title": "What is Subnetting? — Subnetting Mastery Part 1",
+            "type": "learning-video",
+            "provider": "Practical Networking"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=gLJdrXPn0ns",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=gLJdrXPn0ns",
+        "checkedAt": "2026-10-18T07:55:38.191Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "devsecops-python-pipeline",
+            "title": "DevSecOps Pipeline: SAST and Container Image Scanning",
+            "type": "learning-video",
+            "provider": "TechWorld with Nana"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=gWclBdzBzDM",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=gWclBdzBzDM",
+        "checkedAt": "2026-10-18T07:55:38.193Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "autopsy-forensics",
+            "title": "Digital Forensics with Autopsy: step-by-step investigation",
+            "type": "learning-video",
+            "provider": "Hackavis"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=IHrGresKu2w",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=IHrGresKu2w",
+        "checkedAt": "2026-10-18T07:55:38.196Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "powershell-beginners",
+            "title": "PowerShell for Beginners: first commands",
+            "type": "learning-video",
+            "provider": "Shane Young"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=JB73TuX9DVs",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=JB73TuX9DVs",
+        "checkedAt": "2026-10-18T07:55:38.219Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "sentinel-accelerator",
+            "title": "Microsoft Sentinel accelerator walkthrough",
+            "type": "learning-video",
+            "provider": "Microsoft Learn resource"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=jnM0KoRNO8o",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=jnM0KoRNO8o",
+        "checkedAt": "2026-10-18T07:55:38.235Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "yara-intro",
+            "title": "YARA rules: an introductory detection walkthrough",
+            "type": "learning-video",
+            "provider": "Tech Secured"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=JSP-yOBRbrg",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=JSP-yOBRbrg",
+        "checkedAt": "2026-10-18T07:55:38.246Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "soc-network-monitoring-zeek-suricata",
+            "title": "How to Monitor Network Traffic with TShark, Zeek & Suricata",
+            "type": "learning-video",
+            "provider": "TechSky - Ethical Hacking"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=lvSoxOMg5_c",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=lvSoxOMg5_c",
+        "checkedAt": "2026-10-18T07:55:38.249Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "linux-cli-learnlinux",
+            "title": "Linux Commands for Beginners",
+            "type": "learning-video",
+            "provider": "Learn Linux TV"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=NdTu3bDTBbo",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=NdTu3bDTBbo",
+        "checkedAt": "2026-10-18T07:55:38.254Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "wireshark-beginner-2026",
+            "title": "Wireshark Tutorial for Beginners: packet analysis",
+            "type": "learning-video",
+            "provider": "LanWanNinja"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=pPPiaGU12Og",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=pPPiaGU12Og",
+        "checkedAt": "2026-10-18T07:55:38.276Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "nist-csf-2-official-explainer",
+            "title": "The NIST Cybersecurity Framework (CSF) 2.0",
+            "type": "learning-video",
+            "provider": "National Institute of Standards and Technology (NIST)"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=pZ2Nu8LqJvE",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=pZ2Nu8LqJvE",
+        "checkedAt": "2026-10-18T07:55:38.286Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "github-code-security",
+            "title": "What is GitHub Code Security?",
+            "type": "learning-video",
+            "provider": "GitHub"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=QT81wcuoRFY",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=QT81wcuoRFY",
+        "checkedAt": "2026-10-18T07:55:38.291Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "wazuh-home-lab",
+            "title": "Build a small Wazuh SIEM home lab",
+            "type": "learning-video",
+            "provider": "The Social Dork · Cyber Security"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=qwA6MmbeGNo",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=qwA6MmbeGNo",
+        "checkedAt": "2026-10-18T07:55:38.310Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "osint-full-course",
+            "title": "Open-Source Intelligence (OSINT): full video course",
+            "type": "learning-video",
+            "provider": "The Cyber Mentor / Class Central"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=qyNWK6k-W1Y",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=qyNWK6k-W1Y",
+        "checkedAt": "2026-10-18T07:55:38.328Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "aws-iam-cyberpodium-2025",
+            "title": "AWS IAM Tutorial for Beginners (2025)",
+            "type": "learning-video",
+            "provider": "CyberPodium"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=sZgYmie-DpY",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=sZgYmie-DpY",
+        "checkedAt": "2026-10-18T07:55:38.340Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "zeek-wireless-monitoring",
+            "title": "Zeek in Action: monitoring wireless networks",
+            "type": "learning-video",
+            "provider": "Zeek Project"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=tDgxcJ52Dg8",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=tDgxcJ52Dg8",
+        "checkedAt": "2026-10-18T07:55:38.345Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "nist-csf-video",
+            "title": "NIST Cybersecurity Framework 2.0: functions, tiers and profiles",
+            "type": "learning-video",
+            "provider": "CyberPlatter"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=Uk3DEgY5Ue8",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=Uk3DEgY5Ue8",
+        "checkedAt": "2026-10-18T07:55:38.357Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "volatility-memory",
+            "title": "Introduction to Memory Forensics with Volatility 3",
+            "type": "learning-video",
+            "provider": "DFIRScience"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=vnlF4nZ2AL4",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=vnlF4nZ2AL4",
+        "checkedAt": "2026-10-18T07:55:38.375Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "sigma-rule-walkthrough",
+            "title": "Detection Engineering with SIGMA Rule",
+            "type": "learning-video",
+            "provider": "Arda Büyükkaya"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=VNp35Uw_bSM",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=VNp35Uw_bSM",
+        "checkedAt": "2026-10-18T07:55:38.381Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "threat-hunting-ibm",
+            "title": "Cybersecurity Threat Hunting Explained",
+            "type": "learning-video",
+            "provider": "IBM Technology"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=wtu-rAqk3ag",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=wtu-rAqk3ag",
+        "checkedAt": "2026-10-18T07:55:38.392Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "sentinel-hunting-kql",
+            "title": "Threat Hunting in Microsoft Sentinel: KQL and hunting queries",
+            "type": "learning-video",
+            "provider": "CyberPlatter"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=XRwI88i7Hjw",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=XRwI88i7Hjw",
+        "checkedAt": "2026-10-18T07:55:38.407Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "aws-security-services",
+            "title": "AWS Security Services: IAM, WAF, KMS and Shield",
+            "type": "learning-video",
+            "provider": "Great Learning"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=YM3UWuvIJyc",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=YM3UWuvIJyc",
+        "checkedAt": "2026-10-18T07:55:38.427Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "splunk-search-basics",
+            "title": "Getting started with Splunk: search basics",
+            "type": "learning-video",
+            "provider": "Grey Dziuba / Splunk"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=Yxv1suJYMI8",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=Yxv1suJYMI8",
+        "checkedAt": "2026-10-18T07:55:38.428Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "mitre-attck-video",
+            "title": "MITRE ATT&CK framework explained — official video",
+            "type": "learning-video",
+            "provider": "MITRE"
+          }
+        ]
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=zzpz3VYKzUw",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://www.youtube.com/watch?v=zzpz3VYKzUw",
+        "checkedAt": "2026-10-18T07:55:38.437Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "yara-malware-detection-guided-hacking",
+            "title": "YARA: The Malware Detection Tool You Need to Know",
+            "type": "learning-video",
+            "provider": "Guided Hacking"
+          }
+        ]
+      },
+      {
+        "url": "https://yara.readthedocs.io/en/stable/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://yara.readthedocs.io/en/stable/",
+        "checkedAt": "2026-10-18T07:55:38.445Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "yara-intro-official-docs",
+            "title": "YARA rules: an introductory detection walkthrough — official documentation",
+            "type": "official-reference",
+            "provider": "Tech Secured"
+          },
+          {
+            "id": "malware-analysis-johnhammond-official-docs",
+            "title": "But is it malware? — Malware analysis and detection techniques — official documentation",
+            "type": "official-reference",
+            "provider": "John Hammond"
+          },
+          {
+            "id": "yara-network-detection-official-docs",
+            "title": "Detecting malicious files with YARA rules as they traverse a network — official documentation",
+            "type": "official-reference",
+            "provider": "Black Hat conference talk"
+          },
+          {
+            "id": "yara-malware-detection-guided-hacking-official-docs",
+            "title": "YARA: The Malware Detection Tool You Need to Know — official documentation",
+            "type": "official-reference",
+            "provider": "Guided Hacking"
+          }
+        ]
+      },
+      {
+        "url": "https://zscaler.networkershome.com/",
+        "status": "healthy",
+        "statusCode": 200,
+        "finalUrl": "https://zscaler.networkershome.com/",
+        "checkedAt": "2026-10-18T07:55:38.461Z",
+        "detail": "HTTP 200; content and access terms not verified",
+        "entries": [
+          {
+            "id": "eng-zscaler",
+            "title": "Zscaler ZIA Simulator (lab for these notes)",
+            "type": "career-path-exercise",
+            "provider": "Networkers Home"
+          }
+        ]
+      }
+    ]
+  },
+  "candidates": {
+    "rss": [
+      {
+        "kind": "publisher-feed",
+        "title": "Sign in quickly and securely with passkeys.",
+        "url": "https://blog.google/innovation-and-ai/technology/safety-security/how-to-set-up-passkey/",
+        "source": "Google Safety & Security",
+        "publishedAt": "2026-10-08T15:00:00+00:00",
+        "publishedDateStatus": "date found in feed",
+        "sourceCategory": "security foundations / privacy",
+        "sourceTrust": "official vendor blog",
+        "summary": " Learn how to set up a passkey for your Google Account.",
+        "suggestedTopics": [
+          "SOC & SIEM",
+          "Web Security"
+        ],
+        "learningRelevanceScore": 4,
+        "accessStatus": "Not verified; confirm that the page is useful learning material and check current free/account terms."
+      },
+      {
+        "kind": "publisher-feed",
+        "title": "Configuring your AI vulnerability harness, Part 2: The steering file",
+        "url": "https://aws.amazon.com/blogs/security/configuring-your-ai-vulnerability-harness-part-2-the-steering-file/",
+        "source": "AWS Security Blog",
+        "publishedAt": "2026-10-07T21:49:50+00:00",
+        "publishedDateStatus": "date found in feed",
+        "sourceCategory": "cloud security",
+        "sourceTrust": "official vendor blog",
+        "summary": "This post shows you how to configure an AI model to perform structured, evidence-based vulnerability triage with the consistency of a seasoned security analyst. You’ll learn the design decisions behind five configuration sections that enforce structural verification, evidence-based scoring, and infrastructure-aware prioritization across every analysis session. Our companion pos",
+        "suggestedTopics": [
+          "Review topic manually"
+        ],
+        "learningRelevanceScore": 4,
+        "accessStatus": "Not verified; confirm that the page is useful learning material and check current free/account terms."
+      },
+      {
+        "kind": "publisher-feed",
+        "title": "The hidden network: Inside the phishing infrastructure ecosystem powering global cybercrime",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/10/14/the-hidden-network-inside-the-phishing-infrastructure-ecosystem-powering-global-cybercrime/",
+        "source": "Microsoft Security Blog",
+        "publishedAt": "2026-10-14T13:00:00+00:00",
+        "publishedDateStatus": "date found in feed",
+        "sourceCategory": "SOC / cloud / identity",
+        "sourceTrust": "official vendor blog",
+        "summary": " Microsoft uncovered a Chinese-language cybercriminal ecosystem, an interconnected network of phishing kit operators (tracked as Storm-2990), and an illicit marketplace (tracked as Storm-3119) selling tools and infrastructure for large-scale phishing. In collaboration with law enforcement agencies and other partners worldwide, Microsoft’s Digital Crimes Unit (DCU) facilitated a",
+        "suggestedTopics": [
+          "Web Security"
+        ],
+        "learningRelevanceScore": 3,
+        "accessStatus": "Not verified; confirm that the page is useful learning material and check current free/account terms."
+      },
+      {
+        "kind": "publisher-feed",
+        "title": "Part 2 – Cybersecurity journeys: What even is this job?",
+        "url": "https://aws.amazon.com/blogs/security/part-2-cybersecurity-journeys-what-even-is-this-job/",
+        "source": "AWS Security Blog",
+        "publishedAt": "2026-10-13T20:58:01+00:00",
+        "publishedDateStatus": "date found in feed",
+        "sourceCategory": "cloud security",
+        "sourceTrust": "official vendor blog",
+        "summary": "If you’ve ever looked at a list of cybersecurity jobs and felt like none of them fit you, you might just be looking at a short list. Most career guides cover the same few roles, like the analyst watching alerts or the pen tester (penetration tester, someone hired to legally break into systems to find […]",
+        "suggestedTopics": [
+          "Review topic manually"
+        ],
+        "learningRelevanceScore": 3,
+        "accessStatus": "Not verified; confirm that the page is useful learning material and check current free/account terms."
+      },
+      {
+        "kind": "publisher-feed",
+        "title": "Post-quantum authentication: Why organizations should start testing certificate ecosystems now",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/10/08/post-quantum-authentication-why-organizations-should-start-testing-certificate-ecosystems-now/",
+        "source": "Microsoft Security Blog",
+        "publishedAt": "2026-10-08T20:44:28+00:00",
+        "publishedDateStatus": "date found in feed",
+        "sourceCategory": "SOC / cloud / identity",
+        "sourceTrust": "official vendor blog",
+        "summary": " Prepare for post-quantum authentication by testing certificate ecosystems now. Learn how Microsoft’s PQC TLS Pilot Program helps advance future readiness. The post Post-quantum authentication: Why organizations should start testing certificate ecosystems now appeared first on Microsoft Security Blog . ",
+        "suggestedTopics": [
+          "Web Security"
+        ],
+        "learningRelevanceScore": 3,
+        "accessStatus": "Not verified; confirm that the page is useful learning material and check current free/account terms."
+      },
+      {
+        "kind": "publisher-feed",
+        "title": "3 lessons from frontier AI vulnerability research",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/10/07/3-lessons-from-frontier-ai-vulnerability-research/",
+        "source": "Microsoft Security Blog",
+        "publishedAt": "2026-10-07T16:00:00+00:00",
+        "publishedDateStatus": "date found in feed",
+        "sourceCategory": "SOC / cloud / identity",
+        "sourceTrust": "official vendor blog",
+        "summary": " Read how How Microsoft Security's FORGE Lab is scaling vulnerability research from Windows to the Linux kernel. The post 3 lessons from frontier AI vulnerability research appeared first on Microsoft Security Blog . ",
+        "suggestedTopics": [
+          "Web Security"
+        ],
+        "learningRelevanceScore": 3,
+        "accessStatus": "Not verified; confirm that the page is useful learning material and check current free/account terms."
+      },
+      {
+        "kind": "publisher-feed",
+        "title": "CISO perspectives on managing vulnerability risks in the age of AI",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/10/06/ciso-perspectives-on-managing-vulnerability-risks-in-the-age-of-ai/",
+        "source": "Microsoft Security Blog",
+        "publishedAt": "2026-10-06T16:00:00+00:00",
+        "publishedDateStatus": "date found in feed",
+        "sourceCategory": "SOC / cloud / identity",
+        "sourceTrust": "official vendor blog",
+        "summary": " Learn how CISOs can mitigate cybersecurity risks and increase resilience in the age of AI-powered vulnerability management. The post CISO perspectives on managing vulnerability risks in the age of AI appeared first on Microsoft Security Blog . ",
+        "suggestedTopics": [
+          "Web Security"
+        ],
+        "learningRelevanceScore": 3,
+        "accessStatus": "Not verified; confirm that the page is useful learning material and check current free/account terms."
+      },
+      {
+        "kind": "publisher-feed",
+        "title": "Smashing the token limit with overlapping fragments",
+        "url": "https://portswigger.net/research/smashing-the-token-limit",
+        "source": "PortSwigger Research",
+        "publishedAt": "2026-10-05T15:04:55+00:00",
+        "publishedDateStatus": "date found in feed",
+        "sourceCategory": "web security",
+        "sourceTrust": "security training/research provider",
+        "summary": "I'm delighted to introduce Alex, my fellow swigger who I've collaborated with in the past with tools like DOM Invader. He showed me that it's possible to exfiltrate larger tokens than demonstrated in",
+        "suggestedTopics": [
+          "Review topic manually"
+        ],
+        "learningRelevanceScore": 3,
+        "accessStatus": "Not verified; confirm that the page is useful learning material and check current free/account terms."
+      },
+      {
+        "kind": "publisher-feed",
+        "title": "​​Secure what’s next: Your guide to Microsoft Security at Microsoft Ignite 2026",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/09/30/secure-whats-next-your-guide-to-microsoft-security-at-microsoft-ignite-2026/",
+        "source": "Microsoft Security Blog",
+        "publishedAt": "2026-09-30T19:31:00+00:00",
+        "publishedDateStatus": "date found in feed",
+        "sourceCategory": "SOC / cloud / identity",
+        "sourceTrust": "official vendor blog",
+        "summary": " This year at Microsoft Ignite, we spotlight our AI-first, end-to-end security platform designed to protect identities, devices, data, applications, clouds, infrastructure, and the AI agents now working alongside your teams. The post ​​Secure what&#8217;s next: Your guide to Microsoft Security at Microsoft Ignite 2026 appeared first on Microsoft Security Blog . ",
+        "suggestedTopics": [
+          "Web Security"
+        ],
+        "learningRelevanceScore": 3,
+        "accessStatus": "Not verified; confirm that the page is useful learning material and check current free/account terms."
+      },
+      {
+        "kind": "publisher-feed",
+        "title": "GuardDuty Extended Threat Detection has added five new indicators to surface attack sequences",
+        "url": "https://aws.amazon.com/blogs/security/guardduty-extended-threat-detection-has-added-five-new-indicators-to-surface-attack-sequences/",
+        "source": "AWS Security Blog",
+        "publishedAt": "2026-10-12T21:58:44+00:00",
+        "publishedDateStatus": "date found in feed",
+        "sourceCategory": "cloud security",
+        "sourceTrust": "official vendor blog",
+        "summary": "Amazon GuardDuty Extended Threat Detection correlates weak GuardDuty signals into a single, critical-severity attack sequence finding when their composition crosses a threshold of credibility. On May 20, 2026, the service started attaching five new indicator types to those sequences: MALICIOUS_PACKAGE, MISCONFIGURATION, REACHABILITY, SENSITIVE_DATA, and VULNERABILITY. For more ",
+        "suggestedTopics": [
+          "Review topic manually"
+        ],
+        "learningRelevanceScore": 1,
+        "accessStatus": "Not verified; confirm that the page is useful learning material and check current free/account terms."
+      },
+      {
+        "kind": "publisher-feed",
+        "title": "Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570",
+        "url": "https://www.microsoft.com/en-us/security/blog/2026/09/30/unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570/",
+        "source": "Microsoft Security Blog",
+        "publishedAt": "2026-09-30T14:00:00+00:00",
+        "publishedDateStatus": "date found in feed",
+        "sourceCategory": "SOC / cloud / identity",
+        "sourceTrust": "official vendor blog",
+        "summary": " Microsoft Threat Intelligence examines CVE-2026-73570 exploitation in Zimbra, including observed attack paths, detection opportunities, and mitigation guidance. The post Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570 appeared first on Microsoft Security Blog . ",
+        "suggestedTopics": [
+          "Web Security",
+          "Threat Intelligence / OSINT"
+        ],
+        "learningRelevanceScore": 1,
+        "accessStatus": "Not verified; confirm that the page is useful learning material and check current free/account terms."
+      },
+      {
+        "kind": "publisher-feed",
+        "title": "AWS European Sovereign Cloud: Demonstrating an independent operation",
+        "url": "https://aws.amazon.com/blogs/security/aws-european-sovereign-cloud-demonstrating-an-independent-operation/",
+        "source": "AWS Security Blog",
+        "publishedAt": "2026-09-28T17:05:12+00:00",
+        "publishedDateStatus": "date found in feed",
+        "sourceCategory": "cloud security",
+        "sourceTrust": "official vendor blog",
+        "summary": "On Saturday, October 24, 2026, we will conduct an exercise demonstrating that the AWS European Sovereign Cloud can operate without depending on any infrastructure outside of the European Union (EU). For several hours, the AWS European Sovereign Cloud will operate without a connection to the AWS Global Network backbone. The backbone is the private network […]",
+        "suggestedTopics": [
+          "Cloud Security"
+        ],
+        "learningRelevanceScore": 1,
+        "accessStatus": "Not verified; confirm that the page is useful learning material and check current free/account terms."
+      }
+    ],
+    "youtube": []
+  },
+  "feedErrors": [],
+  "youtubeErrors": [
+    "YOUTUBE_API_KEY repository secret is not configured; YouTube search was skipped."
+  ],
+  "publicationPolicy": "Candidates are not auto-inserted into resources.js or learningVideos.js; manual approval is needed for learning quality, access terms, and safety."
+}
