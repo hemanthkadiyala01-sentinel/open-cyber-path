@@ -293,7 +293,7 @@
     "kind": "Free documentation",
     "level": "Intermediate",
     "description": "Understand Windows process-creation auditing concepts and the meaning of event fields.",
-    "url": "https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/basic-audit-process-creation",
+    "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-Audit#detailedtracking_auditprocesscreation",
     "account": "No account for docs",
     "note": "Do not change audit policy on managed devices without permission. Sample events are enough to begin.",
     "image": "/images/learning/windows-telemetry.svg",

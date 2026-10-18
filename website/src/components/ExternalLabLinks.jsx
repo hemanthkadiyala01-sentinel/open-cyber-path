@@ -17,7 +17,7 @@ const REAL_LABS = {
     links: [
       { title: 'Windows event-log analysis (lab for these notes)', url: 'https://tryhackme.com/room/windowseventlogs', kind: 'Guided Windows log room', note: 'Direct room link for Windows event logs; account and current access tier may apply.' },
       { title: 'Windows logging practice (lab for these notes)', url: 'https://tryhackme.com/room/windowsloggingforsoc', kind: 'Guided SOC room', note: 'Practice Windows logging from a defensive analyst perspective. Check provider prerequisites and access.' },
-      { title: 'Process creation auditing (official companion)', url: 'https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/basic-audit-process-creation', kind: 'Official documentation', note: 'Reference for event fields and audit policy; it does not provision a Windows VM.' }
+      { title: 'Process creation auditing (official companion)', url: 'https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-Audit#detailedtracking_auditprocesscreation', kind: 'Official documentation', note: 'Reference for event fields and audit policy; it does not provision a Windows VM.' }
     ]
   },
   'lab-eval': {
