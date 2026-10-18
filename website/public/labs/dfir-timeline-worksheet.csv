@@ -1,0 +1,4 @@
+evidence_id,source_type,source_reference,collected_by,collected_at_utc,integrity_note,event_time_utc,host_or_user,observed_fact,interpretation_or_unknown
+EV-001,Synthetic endpoint event,sample-row-01,Learner,2026-10-17T09:00:00Z,Fictional sample; no original system touched,2026-10-17T08:42:10Z,LAB-WS-01,A process-start event exists in the training file,What else would you need to establish intent?
+EV-002,Synthetic sign-in event,sample-row-02,Learner,2026-10-17T09:00:00Z,Fictional sample; no original system touched,2026-10-17T08:47:30Z,student-demo,A sign-in outcome is recorded,Does this share a reliable entity/time link to EV-001?
+EV-003,Analyst note,case-notes,Learner,2026-10-17T09:00:00Z,Derived note; keep source references,2026-10-17T08:00:00Z,case-demo,Record a question for follow-up,Separate facts from hypothesis and unknowns.

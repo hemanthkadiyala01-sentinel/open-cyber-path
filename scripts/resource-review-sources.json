@@ -1,0 +1,22 @@
+{
+  "reviewWindowDays": 21,
+  "maxCandidates": 30,
+  "rssSources": [
+    { "name": "Microsoft Security Blog", "url": "https://www.microsoft.com/en-us/security/blog/feed/", "category": "SOC / cloud / identity", "trust": "official vendor blog" },
+    { "name": "AWS Security Blog", "url": "https://aws.amazon.com/blogs/security/feed/", "category": "cloud security", "trust": "official vendor blog" },
+    { "name": "Google Safety & Security", "url": "https://blog.google/technology/safety-security/rss/", "category": "security foundations / privacy", "trust": "official vendor blog" },
+    { "name": "PortSwigger Research", "url": "https://portswigger.net/research/rss", "category": "web security", "trust": "security training/research provider" },
+    { "name": "Wazuh Blog", "url": "https://wazuh.com/blog/feed/", "category": "SOC / SIEM / endpoint security", "trust": "official vendor blog" },
+    { "name": "SANS Internet Storm Center", "url": "https://isc.sans.edu/rssfeed.xml", "category": "networking / incident response", "trust": "security education and research" }
+  ],
+  "youtubeQueries": [
+    { "query": "cybersecurity beginner tutorial", "category": "Foundations" },
+    { "query": "SOC analyst SIEM tutorial", "category": "SOC & SIEM" },
+    { "query": "threat hunting tutorial defensive security", "category": "Threat Hunting" },
+    { "query": "digital forensics DFIR tutorial", "category": "DFIR" },
+    { "query": "Wireshark network analysis tutorial", "category": "Networking" },
+    { "query": "OWASP web security academy tutorial", "category": "Web Security" },
+    { "query": "cloud security fundamentals training", "category": "Cloud Security" },
+    { "query": "YARA malware analysis educational tutorial safe lab", "category": "Malware Analysis" }
+  ]
+}

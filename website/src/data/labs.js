@@ -1,9 +1,9 @@
 export const labs = [
   {
-    id: 'soc-notes', title: 'SOC & SIEM fundamentals notebook', level: 'Beginner', kind: 'Handwritten-style notes', category: 'Foundations', icon: 'notebook-pen',
-    summary: 'A visual notebook for events vs alerts, telemetry flow, key log fields, triage, and detection metrics.',
+    id: 'soc-notes', title: 'SOC & SIEM fundamentals: beginner to advanced', level: 'Beginner → Advanced', kind: 'Handwritten-script reference notes', category: 'Foundations', icon: 'notebook-pen',
+    summary: 'A 13-page connected-cursive notebook with illustrated telemetry and triage flowcharts, plain-English SOC/SIEM basics, synthetic log examples, detection metrics, threat hunting, exercises, answers, and reference links.',
     pdf: 'notes/handwritten-style-soc-siem-fundamentals.pdf', docx: 'notes/handwritten-style-soc-siem-fundamentals.docx',
-    image: '/images/learning/notebook-notes.svg', estimated: '20–30 min', skill: 'SOC fundamentals', tags: ['Notes', 'SOC', 'SIEM']
+    image: '/images/learning/notebook-notes.svg', estimated: '90–120 min', skill: 'SOC investigations and detection fundamentals', tags: ['Handwritten script', 'Beginner', 'Intermediate', 'Advanced', 'SOC', 'SIEM']
   },
   {
     id: 'lab-win-event', title: 'Lab 01: Windows process-event triage', level: 'Beginner', kind: 'Guided lab', category: 'Threat Hunting', icon: 'monitor-check',
@@ -60,9 +60,28 @@ export const labs = [
     image: '/images/learning/command-cheatsheet.svg', estimated: '10–20 min', skill: 'Command-line confidence', tags: ['PowerShell', 'Linux', 'Networking']
   },
   {
-    id: 'lab-attack-patterns', title: 'Common attack patterns: a beginner guide', level: 'Beginner', kind: 'Friendly explainer', category: 'Attack Basics', icon: 'shield-check',
-    summary: 'Understand common attack patterns in plain language: why they happen, everyday examples, warning signs, and defenses.',
+    id: 'lab-attack-patterns', title: 'Common attack patterns: beginner to advanced', level: 'Beginner → Advanced', kind: 'Handwritten-script reference notes', category: 'Attack Basics', icon: 'shield-check',
+    summary: 'A 15-page connected-cursive notebook with attack-story, phishing, web-request, evidence-correlation, and defense-layer diagrams; plain-English attack patterns; synthetic examples; defensive signals; mitigations; safe exercises; and answer checks.',
     pdf: 'notes/common-attack-patterns-beginner-guide.pdf', docx: 'notes/common-attack-patterns-beginner-guide.docx',
-    image: '/images/learning/attack-patterns.svg', estimated: '25–35 min', skill: 'Security awareness', tags: ['Examples', 'Causes', 'Defenses']
-  }
+    image: '/images/learning/attack-patterns.svg', estimated: '120–150 min', skill: 'Attack-pattern recognition and defensive analysis', tags: ['Handwritten script', 'Beginner', 'Intermediate', 'Advanced', 'Attack types', 'Examples', 'Defenses']
+  },
+  {
+    id: 'lab-dfir-timeline', title: 'Lab 08: DFIR evidence register and timeline', level: 'Beginner → Intermediate', kind: 'Evidence worksheet', category: 'DFIR', icon: 'clipboard',
+    summary: 'Practise scope notes, evidence provenance, timestamp normalisation, and fact-versus-hypothesis reporting with fictional records.',
+    pdf: 'notes/dfir-evidence-timeline-starter.pdf', docx: 'notes/dfir-evidence-timeline-starter.docx',
+    worksheet: 'labs/dfir-timeline-worksheet.csv', image: '/images/learning/dfir-evidence-timeline.svg', estimated: '35–50 min', skill: 'Evidence handling and timeline analysis', tags: ['Synthetic data', 'Evidence', 'Timeline']
+  },
+  {
+    id: 'lab-cloud-posture', title: 'Lab 09: Cloud security posture review', level: 'Beginner → Intermediate', kind: 'Architecture review', category: 'Cloud Security', icon: 'network',
+    summary: 'Review a fictional cloud diagram for identity, network, storage, logging, and recovery gaps without creating or changing real cloud resources.',
+    pdf: 'notes/cloud-security-posture-review.pdf', docx: 'notes/cloud-security-posture-review.docx',
+    worksheet: 'labs/cloud-security-posture-checklist.csv', image: '/images/learning/career-cloud-security.webp', estimated: '30–45 min', skill: 'Cloud security review', tags: ['Least privilege', 'Configuration', 'Logging']
+  },
+  {
+    id: 'lab-grc-risk-register', title: 'Lab 10: GRC risk register starter', level: 'Beginner', kind: 'Risk worksheet', category: 'GRC & Security Fundamentals', icon: 'file-text',
+    summary: 'Turn fictional assets and security concerns into prioritised risks with clear rationale, owners, treatments, and evidence requests.',
+    pdf: 'notes/grc-risk-register-starter.pdf', docx: 'notes/grc-risk-register-starter.docx',
+    worksheet: 'labs/grc-risk-register-starter.csv', image: '/images/learning/grc-risk-map.svg', estimated: '30–45 min', skill: 'Risk analysis and control mapping', tags: ['GRC', 'Risk register', 'Evidence']
+  },
+
 ];

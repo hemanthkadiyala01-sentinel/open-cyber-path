@@ -1,0 +1,1850 @@
+{
+  "generatedAt": "2026-10-17T18:47:47.698Z",
+  "total": 196,
+  "summary": {
+    "OK": 151,
+    "REVIEW": 30,
+    "BROKEN": 15
+  },
+  "outcomes": [
+    {
+      "url": "https://csrc.nist.gov/Projects/incident-response/life-cycle-resources",
+      "labels": [
+        "resource nist-incident-response"
+      ],
+      "status": 404,
+      "verdict": "BROKEN",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/basic-audit-process-creation",
+      "labels": [
+        "resource windows-security-auditing",
+        "video docs event-viewer-audit",
+        "note link 5"
+      ],
+      "status": 404,
+      "verdict": "BROKEN",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/access-control",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-access"
+      ],
+      "status": 404,
+      "verdict": "BROKEN",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality",
+      "labels": [
+        "note link 21"
+      ],
+      "status": 404,
+      "verdict": "BROKEN",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/api-testing",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-api"
+      ],
+      "status": 404,
+      "verdict": "BROKEN",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/authentication",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-auth"
+      ],
+      "status": 404,
+      "verdict": "BROKEN",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded",
+      "labels": [
+        "note link 31"
+      ],
+      "status": 404,
+      "verdict": "BROKEN",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/csrf",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-csrf"
+      ],
+      "status": 404,
+      "verdict": "BROKEN",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/file-upload",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-upload"
+      ],
+      "status": 404,
+      "verdict": "BROKEN",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/getting-started",
+      "labels": [
+        "video portswigger-video-tutorials"
+      ],
+      "status": 404,
+      "verdict": "BROKEN",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/learning-paths/sql-injection",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-sqli"
+      ],
+      "status": 404,
+      "verdict": "BROKEN",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data",
+      "labels": [
+        "note link 30"
+      ],
+      "status": 404,
+      "verdict": "BROKEN",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/ssrf",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-ssrf"
+      ],
+      "status": 404,
+      "verdict": "BROKEN",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/websockets",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-websockets"
+      ],
+      "status": 404,
+      "verdict": "BROKEN",
+      "detail": ""
+    },
+    {
+      "url": "https://www.cisa.gov/resources-tools/programs/industrial-control-systems",
+      "labels": [
+        "career lab grc-security-fundamentals/grc-cisa-ics"
+      ],
+      "status": 404,
+      "verdict": "BROKEN",
+      "detail": ""
+    },
+    {
+      "url": "https://academy.hackthebox.com/path/preview/cracking-into-hack-the-box",
+      "labels": [
+        "career lab penetration-testing-red-team/pentest-htb-cracking"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://atlas.mitre.org/",
+      "labels": [
+        "career lab threat-intelligence-ethical-osint/intel-atlas"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://attack.mitre.org/",
+      "labels": [
+        "resource mitre-attack",
+        "video docs threat-hunting-ibm",
+        "video docs mitre-attck-video",
+        "note link 20"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://attack.mitre.org/resources/learn-more-about-attack/training/",
+      "labels": [
+        "career lab threat-intelligence-ethical-osint/intel-mitre-cti"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://attack.mitre.org/resources/learn-more-about-attack/training/threat-hunting/",
+      "labels": [
+        "career lab threat-hunting-detection-engineering/hunt-mitre-training"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://attacksim.networkershome.com/",
+      "labels": [
+        "career lab security-engineering-devsecops-iam/eng-attack-defense-sim"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://aws.amazon.com/training/",
+      "labels": [
+        "resource aws-security-learning",
+        "video docs aws-security-services"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://cfreds.nist.gov/all",
+      "labels": [
+        "career lab threat-hunting-detection-engineering/hunt-cfreds",
+        "career lab digital-forensics-incident-response/dfir-nist-cfreds",
+        "career lab malware-analysis-reverse-engineering/mal-cfreds-hunt"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://csrc.nist.gov/pubs/sp/800/86/final",
+      "labels": [
+        "resource nist-digital-evidence"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://ctf.aquilacyber.org/auth/register",
+      "labels": [
+        "career lab threat-intelligence-ethical-osint/intel-aquila"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://ctf.owasp.org/challenges",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-owasp-ctf"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://ctf.pkcert.gov.pk/",
+      "labels": [
+        "career lab penetration-testing-red-team/pentest-ctfsquare"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://cyberdefenders.org/blue-team-labs/",
+      "labels": [
+        "resource cyberdefenders"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://cyberdefenders.org/blueteam-ctf-challenges/amadey-apt-c-36/",
+      "labels": [
+        "career lab digital-forensics-incident-response/dfir-amadey",
+        "career lab malware-analysis-reverse-engineering/mal-amadey"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://cyberdefenders.org/blueteam-ctf-challenges/packetdetective/",
+      "labels": [
+        "career lab soc-blue-team/soc-packetdetective",
+        "career lab threat-hunting-detection-engineering/hunt-packetdetective"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://cyberdefenders.org/blueteam-ctf-challenges/resourcepacks/",
+      "labels": [
+        "note link 35"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://cyberdefenders.org/blueteam-ctf-challenges/sigma-101/",
+      "labels": [
+        "note link 6",
+        "note link 14"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://cyberdefenders.org/blueteam-ctf-challenges/t1110003/",
+      "labels": [
+        "note link 15"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://cyberdefenders.org/blueteam-ctf-challenges/yara-wizards/",
+      "labels": [
+        "note link 13"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://cytrain.ncrb.gov.in/course/index.php?lang=en",
+      "labels": [
+        "career lab grc-security-fundamentals/grc-cytrain"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
+      "labels": [
+        "video docs aws-iam-roles",
+        "video docs aws-iam-explained",
+        "video docs aws-iam-cyberpodium-2025"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://docs.bugcrowd.com/researchers/engagement-management/details/",
+      "labels": [
+        "resource bugcrowd-briefs"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions",
+      "labels": [
+        "video docs devsecops-python-pipeline"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": "redirected to https://docs.github.com/en/actions/reference/security/secure-use"
+    },
+    {
+      "url": "https://docs.github.com/en/code-security",
+      "labels": [
+        "video docs github-code-security"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://docs.hackerone.com/en/articles/8494552-defining-scope",
+      "labels": [
+        "resource hackerone-scope",
+        "note link 22"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://docs.zeek.org/",
+      "labels": [
+        "video docs zeek-wireless-monitoring"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": "redirected to https://docs.zeek.org/en/current/"
+    },
+    {
+      "url": "https://docs.zeek.org/en/current/",
+      "labels": [
+        "video docs soc-network-monitoring-zeek-suricata"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://documentation.wazuh.com/current/getting-started/index.html",
+      "labels": [
+        "resource wazuh-getting-started",
+        "video docs wazuh-home-lab",
+        "note link 10"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://ethernaut.openzeppelin.com/",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-ethernaut"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://fortinet.networkershome.com/",
+      "labels": [
+        "career lab security-engineering-devsecops-iam/eng-fortigate"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://fortivox.cloud/ctf/",
+      "labels": [
+        "career lab penetration-testing-red-team/pentest-fortihack"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://gandalf.lakera.ai/",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-gandalf"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": "redirected to https://play.lakera.ai/agent-breaker"
+    },
+    {
+      "url": "https://github.com/juice-shop/juice-shop",
+      "labels": [
+        "note link 32"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://github.com/madhuakula/kubernetes-goat",
+      "labels": [
+        "career lab security-engineering-devsecops-iam/eng-k8s-goat"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://github.com/OWASP/crAPI",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-crapi"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://github.com/RhinoSecurityLabs/cloudgoat",
+      "labels": [
+        "career lab cloud-security/cloud-cloudgoat",
+        "career lab security-engineering-devsecops-iam/eng-cloudgoat"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://github.com/SigmaHQ/sigma",
+      "labels": [
+        "career lab threat-hunting-detection-engineering/hunt-sigma",
+        "resource sigma-rules",
+        "video docs sigma-rule-walkthrough"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://github.com/splunk/botsv3",
+      "labels": [
+        "resource splunk-botsv3-dataset"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://github.com/stuxnet999/MemLabs",
+      "labels": [
+        "career lab digital-forensics-incident-response/dfir-memlabs",
+        "career lab malware-analysis-reverse-engineering/mal-memlabs"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://github.com/VirusTotal/yara",
+      "labels": [
+        "career lab malware-analysis-reverse-engineering/mal-yara"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://help.hackthebox.com/en/articles/6007919-introduction-to-starting-point",
+      "labels": [
+        "career lab penetration-testing-red-team/pentest-htb-startingpoint"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://ise.networkershome.com/",
+      "labels": [
+        "career lab security-engineering-devsecops-iam/eng-cisco-ise"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://lab.techclick.in/lab/dns-tunnel-detect",
+      "labels": [
+        "career lab soc-blue-team/soc-techclick-dns",
+        "career lab threat-hunting-detection-engineering/hunt-techclick-dns"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://labs.cyfotok.com/labs/phishing",
+      "labels": [
+        "career lab threat-intelligence-ethical-osint/intel-cyfotok-phishing",
+        "career lab threat-intelligence-ethical-osint/intel-cyfotok-phishing-osint"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/",
+      "labels": [
+        "career lab cloud-security/cloud-sentinel-training"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/hunting",
+      "labels": [
+        "video docs sentinel-hunting-kql"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/sentinel/skill-up-resources",
+      "labels": [
+        "video docs sentinel-overview",
+        "video docs sentinel-accelerator",
+        "note link 12"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/hunting-overview",
+      "labels": [
+        "resource microsoft-threat-hunting",
+        "note link 17"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/shows/mvp-windows-and-devices-for-it/powershell-beginners",
+      "labels": [
+        "video powershell-mslearn"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/training/browse/?products=azure&subjects=security",
+      "labels": [
+        "resource azure-security-learning"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/training/modules/evaluate-regulatory-compliance/",
+      "labels": [
+        "note link 39"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/training/modules/identify-security-risks-posture-management/",
+      "labels": [
+        "note link 36"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/training/modules/manage-cloud-security-posture-management/",
+      "labels": [
+        "note link 37"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/training/paths/get-started-windows-powershell/",
+      "labels": [
+        "video docs powershell-beginners",
+        "video docs powershell-mslearn"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/",
+      "labels": [
+        "resource microsoft-learn"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://linuxcommand.org/",
+      "labels": [
+        "video docs linux-cli-2026",
+        "video docs linux-cli-learnlinux"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://mas.owasp.org/MASTG/",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-mobile",
+        "career lab security-engineering-devsecops-iam/eng-owasp-mastg"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://osintframework.com/",
+      "labels": [
+        "video docs osint-full-course"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://overthewire.org/wargames/bandit/",
+      "labels": [
+        "career lab penetration-testing-red-team/pentest-bandit",
+        "resource overthewire"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://overthewire.org/wargames/bandit/bandit0.html",
+      "labels": [
+        "note link 9",
+        "note link 29"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://overthewire.org/wargames/natas/",
+      "labels": [
+        "career lab penetration-testing-red-team/pentest-natas"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://owasp.org/projects/iot-security-testing-guide",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-iot",
+        "career lab security-engineering-devsecops-iam/eng-owasp-iot"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://owasp.org/projects/juice-shop",
+      "labels": [
+        "resource juice-shop"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://owasp.org/www-project-devsecops-guideline/",
+      "labels": [
+        "career lab security-engineering-devsecops-iam/eng-devsecops-guide"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": "redirected to https://owasp.org/projects/devsecops-guideline"
+    },
+    {
+      "url": "https://owasp.org/www-project-top-ten/",
+      "labels": [
+        "resource owasp-top10"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": "redirected to https://owasp.org/projects/top-ten"
+    },
+    {
+      "url": "https://owasp.org/www-project-web-security-testing-guide/",
+      "labels": [
+        "resource owasp-wstg",
+        "note link 23"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": "redirected to https://owasp.org/projects/web-security-testing-guide"
+    },
+    {
+      "url": "https://owasp.org/www-project-webgoat/",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-webgoat"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": "redirected to https://owasp.org/projects/webgoat"
+    },
+    {
+      "url": "https://p.ost2.fyi/",
+      "labels": [
+        "career lab malware-analysis-reverse-engineering/mal-ost2"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://paloalto-fw.networkershome.com/",
+      "labels": [
+        "career lab security-engineering-devsecops-iam/eng-paloalto"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security",
+      "labels": [
+        "resource portswigger-academy",
+        "video docs ethical-hacking-full-course",
+        "video docs portswigger-video-tutorials",
+        "note link 26"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/cross-site-scripting",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-xss"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/file-path-traversal",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-path-traversal"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/sql-injection",
+      "labels": [
+        "career lab penetration-testing-red-team/pentest-portswigger-sqli",
+        "video portswigger-sqli",
+        "video docs portswigger-sqli"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://prime-suspect-crypto-ctf.onrender.com/",
+      "labels": [
+        "career lab threat-intelligence-ethical-osint/intel-prime-suspect"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://pwn.college/",
+      "labels": [
+        "resource pwn-college"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://rangewx.com/en/labs/analyser-artefacts-navigation",
+      "labels": [
+        "career lab digital-forensics-incident-response/dfir-browser-artifacts"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://rangewx.com/en/labs/analyser-donnees-cloud-mobile",
+      "labels": [
+        "career lab digital-forensics-incident-response/dfir-cloud-mobile",
+        "career lab cloud-security/cloud-rangewx-mobile"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://rangewx.com/en/labs/analyser-emails-forensiques",
+      "labels": [
+        "career lab digital-forensics-incident-response/dfir-email-meta",
+        "career lab threat-intelligence-ethical-osint/intel-rangewx-email"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://rangewx.com/en/labs/analyser-geolocalisation-medias",
+      "labels": [
+        "career lab digital-forensics-incident-response/dfir-geo-media",
+        "career lab threat-intelligence-ethical-osint/intel-rangewx-geo"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://rangewx.com/en/labs/analyser-journaux-securite",
+      "labels": [
+        "career lab soc-blue-team/soc-rangewx-security-logs",
+        "career lab threat-hunting-detection-engineering/hunt-rangewx-logs"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://rangewx.com/en/labs/analyser-trafic-reseau",
+      "labels": [
+        "career lab threat-hunting-detection-engineering/hunt-rangewx-network"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://rangewx.com/en/labs/auditer-posture-cloud-openstack-m1",
+      "labels": [
+        "career lab cloud-security/cloud-rangewx-audit",
+        "career lab grc-security-fundamentals/grc-openstack-audit",
+        "career lab security-engineering-devsecops-iam/eng-rangewx-cloud-audit"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://rangewx.com/en/labs/chaine-attaque-multi-etapes-k8s-m1",
+      "labels": [
+        "career lab security-engineering-devsecops-iam/eng-rangewx-k8s-chain"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://rangewx.com/en/labs/configurer-roles-acces-cloud",
+      "labels": [
+        "career lab cloud-security/cloud-rangewx-roles",
+        "career lab cloud-security/cloud-range-multicloud",
+        "career lab security-engineering-devsecops-iam/eng-rangewx-roles"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://rangewx.com/en/labs/corriger-fuite-stockage-objet-openstack-m1",
+      "labels": [
+        "career lab cloud-security/cloud-rangewx-storage"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://rangewx.com/en/labs/corriger-groupe-securite-permissif-openstack-m1",
+      "labels": [
+        "career lab cloud-security/cloud-rangewx-sg"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://rangewx.com/en/labs/corriger-rbac-moindre-privilege-k8s-m1",
+      "labels": [
+        "career lab security-engineering-devsecops-iam/eng-rangewx-rbac"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://rangewx.com/en/labs/decouverte-compte-cloud-m1",
+      "labels": [
+        "career lab cloud-security/cloud-rangewx-discovery"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://rangewx.com/en/labs/detecter-attaques-live-wazuh",
+      "labels": [
+        "career lab soc-blue-team/soc-rangewx-live-wazuh",
+        "career lab threat-hunting-detection-engineering/hunt-rangewx-wazuh"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://rangewx.com/en/labs/investiguer-endpoint-windows-compromis-m1",
+      "labels": [
+        "career lab soc-blue-team/soc-rangewx-win-endpoint"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://rangewx.com/en/labs/investiguer-routeur-linux-compromis",
+      "labels": [
+        "career lab digital-forensics-incident-response/dfir-linux-router"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://rangewx.com/en/labs/investiguer-serveur-compromis",
+      "labels": [
+        "career lab digital-forensics-incident-response/dfir-compromised-server"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://rangewx.com/en/scenarios/audit-cloud-gouvernance-capstone-m1",
+      "labels": [
+        "career lab cloud-security/cloud-rangewx-governance",
+        "career lab grc-security-fundamentals/grc-cloud-board"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://rangewx.com/en/scenarios/phishing-fausse-facture",
+      "labels": [
+        "career lab grc-security-fundamentals/grc-bv-social-engineering"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://remnux.org/",
+      "labels": [
+        "career lab malware-analysis-reverse-engineering/mal-remnux"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://top10.owasp.org/2025/",
+      "labels": [
+        "video owasp-top-10-2025",
+        "video docs owasp-top-10-2025"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://volatility3.readthedocs.io/",
+      "labels": [
+        "video docs volatility-memory"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": "redirected to https://volatility3.readthedocs.io/en/stable/"
+    },
+    {
+      "url": "https://www.athena-ctf.com/practice",
+      "labels": [
+        "career lab penetration-testing-red-team/pentest-athena-web",
+        "career lab threat-intelligence-ethical-osint/intel-athena-osint",
+        "career lab malware-analysis-reverse-engineering/mal-athena-rev"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.autopsy.com/",
+      "labels": [
+        "resource autopsy-forensics"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.autopsy.com/support/training/",
+      "labels": [
+        "video docs autopsy-forensics"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": "redirected to https://www.autopsy.com/training/"
+    },
+    {
+      "url": "https://www.blueteamvillage.org/programs/project-obsidian",
+      "labels": [
+        "career lab soc-blue-team/soc-project-obsidian",
+        "career lab threat-hunting-detection-engineering/hunt-blue-team-village",
+        "career lab digital-forensics-incident-response/dfir-project-obsidian",
+        "career lab threat-intelligence-ethical-osint/intel-project-obsidian",
+        "career lab malware-analysis-reverse-engineering/mal-btv-obsidian"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.cisa.gov/resources-tools",
+      "labels": [
+        "career lab grc-security-fundamentals/grc-cisa"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.cisa.gov/sites/default/files/publications/19_1106_cisa_CISA_Cyber_Essentials_S508C_1.pdf",
+      "labels": [
+        "resource cisa-cyber-essentials"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.cisecurity.org/controls",
+      "labels": [
+        "resource cis-controls"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.damnvulnerabledefi.xyz/",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-damn-vulnerable-defi",
+        "career lab application-security-bug-bounty/appsec-defi"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.malware-traffic-analysis.net/",
+      "labels": [
+        "career lab malware-analysis-reverse-engineering/mal-pcap"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.mitre.org/news-insights/video/mitre-attckr-framework",
+      "labels": [
+        "video mitre-attck-video"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.nist.gov/cyberframework",
+      "labels": [
+        "resource nist-csf-2",
+        "video docs nist-csf-video",
+        "video docs nist-official-video-series"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.nist.gov/cyberframework/profiles",
+      "labels": [
+        "career lab grc-security-fundamentals/grc-nist-profile",
+        "note link 38"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.nist.gov/cyberframework/quick-start-guides",
+      "labels": [
+        "resource nist-csf-quickstart"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.nist.gov/cyberframework/videos",
+      "labels": [
+        "video nist-official-video-series",
+        "video docs nist-csf-2-official-explainer"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.practicalnetworking.net/",
+      "labels": [
+        "video docs networking-basics"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.practicalnetworking.net/stand-alone/subnetting-mastery/",
+      "labels": [
+        "video docs subnetting-mastery",
+        "video networking-basics"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.splunk.com/en_us/blog/learn/splunk-tutorials.html",
+      "labels": [
+        "video docs splunk-search-basics"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.splunk.com/en_us/training/free-courses/overview.html",
+      "labels": [
+        "resource splunk-free-courses",
+        "video docs siem-explained",
+        "note link 11"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.srxlabs.com/learning/",
+      "labels": [
+        "career lab grc-security-fundamentals/grc-srx"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.stratosphereips.org/datasets-ctu13",
+      "labels": [
+        "resource ctu13-labeled-flows"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.unb.ca/cic/datasets/ids-2017.html",
+      "labels": [
+        "resource cicids2017-labeled-flows"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.wireshark.org/docs/",
+      "labels": [
+        "video docs wireshark-beginner-2026",
+        "video docs wireshark-protocols"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=-fV7jZwZuGQ",
+      "labels": [
+        "video event-viewer-audit"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=-jhZwIRIIrc",
+      "labels": [
+        "video aws-iam-roles"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2SYknklVHqU",
+      "labels": [
+        "video wireshark-protocols"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=3Kq1MIfTWCE",
+      "labels": [
+        "video ethical-hacking-full-course"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=6ZvyZhk84ts",
+      "labels": [
+        "video dns-basics"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7An7BB-CcQI",
+      "labels": [
+        "video sentinel-overview"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9RfsRn7m7OE",
+      "labels": [
+        "video siem-explained"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=AJ1XS_3Waas",
+      "labels": [
+        "video linux-cli-2026"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=B-MwKnNBh5s",
+      "labels": [
+        "video aws-iam-explained"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BWZ-MHIhqjM",
+      "labels": [
+        "video subnetting-mastery"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=gLJdrXPn0ns",
+      "labels": [
+        "video devsecops-python-pipeline"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=gWclBdzBzDM",
+      "labels": [
+        "video autopsy-forensics"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=IHrGresKu2w",
+      "labels": [
+        "video powershell-beginners"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JB73TuX9DVs",
+      "labels": [
+        "video sentinel-accelerator"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=jnM0KoRNO8o",
+      "labels": [
+        "video yara-intro"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JSP-yOBRbrg",
+      "labels": [
+        "video soc-network-monitoring-zeek-suricata"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=lvSoxOMg5_c",
+      "labels": [
+        "video linux-cli-learnlinux"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=NdTu3bDTBbo",
+      "labels": [
+        "video wireshark-beginner-2026"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=pPPiaGU12Og",
+      "labels": [
+        "video nist-csf-2-official-explainer"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=pZ2Nu8LqJvE",
+      "labels": [
+        "video github-code-security"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=QT81wcuoRFY",
+      "labels": [
+        "video wazuh-home-lab"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=qyNWK6k-W1Y",
+      "labels": [
+        "video aws-iam-cyberpodium-2025"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=tDgxcJ52Dg8",
+      "labels": [
+        "video nist-csf-video"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Uk3DEgY5Ue8",
+      "labels": [
+        "video volatility-memory"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=vnlF4nZ2AL4",
+      "labels": [
+        "video sigma-rule-walkthrough"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=VNp35Uw_bSM",
+      "labels": [
+        "video threat-hunting-ibm"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=wtu-rAqk3ag",
+      "labels": [
+        "video sentinel-hunting-kql"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=YM3UWuvIJyc",
+      "labels": [
+        "video splunk-search-basics"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=zzpz3VYKzUw",
+      "labels": [
+        "video yara-malware-detection-guided-hacking"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://yara.readthedocs.io/en/stable/",
+      "labels": [
+        "video docs yara-intro",
+        "video docs malware-analysis-johnhammond",
+        "video docs yara-network-detection",
+        "video docs yara-malware-detection-guided-hacking"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://zeek.org/2021/07/zeek-in-action-video-6-how-to-monitor-wireless-networks/",
+      "labels": [
+        "video zeek-wireless-monitoring"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://zscaler.networkershome.com/",
+      "labels": [
+        "career lab security-engineering-devsecops-iam/eng-zscaler"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://bvtech.org/cyber-range/challenges/",
+      "labels": [
+        "career lab soc-blue-team/soc-bv-whos-knocking",
+        "career lab soc-blue-team/soc-bv-inside-job",
+        "career lab threat-hunting-detection-engineering/hunt-bv-knocking",
+        "career lab digital-forensics-incident-response/dfir-bv-hidden-task",
+        "career lab penetration-testing-red-team/pentest-bv-robots",
+        "career lab penetration-testing-red-team/pentest-bv-webgame",
+        "career lab malware-analysis-reverse-engineering/mal-bv-hidden-task"
+      ],
+      "status": 403,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://bvtech.org/cyber-range/challenges/wargames/level1",
+      "labels": [
+        "career lab penetration-testing-red-team/pentest-bv-gate"
+      ],
+      "status": 403,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://cisco-sim.networkershome.com/",
+      "labels": [
+        "career lab security-engineering-devsecops-iam/eng-cisco-ios"
+      ],
+      "status": "ERROR",
+      "verdict": "REVIEW",
+      "detail": "fetch failed"
+    },
+    {
+      "url": "https://labs.networkershome.com/",
+      "labels": [
+        "career lab security-engineering-devsecops-iam/eng-packet-flow"
+      ],
+      "status": "ERROR",
+      "verdict": "REVIEW",
+      "detail": "fetch failed"
+    },
+    {
+      "url": "https://nightjar-ctf.onrender.com/",
+      "labels": [
+        "career lab threat-intelligence-ethical-osint/intel-nightjar"
+      ],
+      "status": "ERROR",
+      "verdict": "REVIEW",
+      "detail": "timeout"
+    },
+    {
+      "url": "https://operation-ghost-route.onrender.com/",
+      "labels": [
+        "career lab threat-hunting-detection-engineering/hunt-ghost-route",
+        "career lab threat-intelligence-ethical-osint/intel-ghost-route"
+      ],
+      "status": "ERROR",
+      "verdict": "REVIEW",
+      "detail": "timeout"
+    },
+    {
+      "url": "https://tryhackme.com/path/outline/azuresecurity",
+      "labels": [
+        "career lab cloud-security/cloud-thm-azure"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://tryhackme.com/path/outline/cybersecurity101",
+      "labels": [
+        "career lab malware-analysis-reverse-engineering/mal-thm-foundations"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://tryhackme.com/path/outline/jrpenetrationtester",
+      "labels": [
+        "career lab penetration-testing-red-team/pentest-thm-jrpt"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://tryhackme.com/path/outline/soclevel1",
+      "labels": [
+        "career lab soc-blue-team/soc-thm-soc-l1"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://tryhackme.com/r/rooms",
+      "labels": [
+        "resource tryhackme-free-rooms"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://tryhackme.com/room/btautopsye0",
+      "labels": [
+        "note link 33"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://tryhackme.com/room/dnsindetail",
+      "labels": [
+        "note link 18"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://tryhackme.com/room/httpindetail",
+      "labels": [
+        "note link 24"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://tryhackme.com/room/linuxfundamentalspart1",
+      "labels": [
+        "note link 8"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://tryhackme.com/room/linuxloggingforsoc",
+      "labels": [
+        "note link 34"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://tryhackme.com/room/loganalysiswithsiem",
+      "labels": [
+        "note link 1"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://tryhackme.com/room/splunkexploringspl",
+      "labels": [
+        "note link 2",
+        "note link 7"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://tryhackme.com/room/windowscommandline",
+      "labels": [
+        "note link 27"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://tryhackme.com/room/windowseventlogs",
+      "labels": [
+        "note link 3"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://tryhackme.com/room/windowsloggingforsoc",
+      "labels": [
+        "note link 4"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://tryhackme.com/room/windowspowershell",
+      "labels": [
+        "note link 28"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://tryhackme.com/room/windowsthreatdetection1",
+      "labels": [
+        "note link 16"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://tryhackme.com/room/wiresharkthebasics",
+      "labels": [
+        "note link 19",
+        "note link 25"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://www.classcentral.com/course/youtube-aws-security-services-aws-waf-aws-kms-aws-shield-great-learning-95232",
+      "labels": [
+        "video aws-security-services"
+      ],
+      "status": 403,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://www.classcentral.com/course/youtube-but-is-it-malware-431619",
+      "labels": [
+        "video malware-analysis-johnhammond"
+      ],
+      "status": 403,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://www.classcentral.com/course/youtube-detecting-malicious-files-with-yara-rules-as-they-traverse-the-network-163574",
+      "labels": [
+        "video yara-network-detection"
+      ],
+      "status": 403,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://www.classcentral.com/course/youtube-open-source-intelligence-osint-in-5-hours-full-course-learn-osint-80388",
+      "labels": [
+        "video osint-full-course"
+      ],
+      "status": 403,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://www.cloudflare.com/learning/dns/what-is-dns/",
+      "labels": [
+        "video docs dns-basics"
+      ],
+      "status": 403,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://www.isea.gov.in/",
+      "labels": [
+        "career lab grc-security-fundamentals/grc-isea"
+      ],
+      "status": 403,
+      "verdict": "REVIEW",
+      "detail": ""
+    }
+  ]
+}

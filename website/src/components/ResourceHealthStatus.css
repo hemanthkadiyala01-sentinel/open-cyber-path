@@ -1,0 +1,21 @@
+.resource-health-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 100%;
+  margin: 8px 0 2px;
+  padding: 5px 8px;
+  border: 1px solid var(--line, rgba(148, 163, 184, .28));
+  border-radius: 999px;
+  color: var(--muted, #94a3b8);
+  background: rgba(100, 116, 139, .08);
+  font-size: 11px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+.resource-health-dot { width: 6px; height: 6px; flex: 0 0 6px; border-radius: 50%; background: currentColor; }
+.resource-health-status.is-healthy { color: #0f9f80; background: rgba(16, 185, 129, .07); border-color: rgba(16, 185, 129, .22); }
+.resource-health-status.is-broken { color: #dc5555; background: rgba(239, 68, 68, .07); border-color: rgba(239, 68, 68, .22); }
+.resource-health-status.is-review { color: #b98326; background: rgba(245, 158, 11, .07); border-color: rgba(245, 158, 11, .22); }
+.resource-health-status.is-pending { color: var(--muted, #94a3b8); }
+@media (prefers-reduced-motion: reduce) { .resource-health-status { transition: none; } }

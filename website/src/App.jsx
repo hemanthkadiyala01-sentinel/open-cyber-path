@@ -1,7 +1,27 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+﻿import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import { categories, resources } from './data/resources.js';
 import { labs } from './data/labs.js';
-import { learningVideos } from './data/learningVideos.js';
+
+import { careerPaths as learningPaths } from './data/careerPaths.js';
+import { cybersecurityPillars, isc2CisspDomains } from './data/cybersecurityDomains.js';
+import StartHereGuide from './components/StartHereGuide.jsx';
+import ResourceHealthStatus from './components/ResourceHealthStatus.jsx';
+import { buildResourceReportUrl } from './utils/resourceFeedback.js';
+
+
+
+const CareerPathLabDirectory = lazy(() => import('./components/CareerPathLabDirectory.jsx'));
+const ApplicationLab = lazy(() => import('./components/CareerExperience.jsx').then((m) => ({ default: m.ApplicationLab })));
+const CareerHub = lazy(() => import('./components/CareerExperience.jsx').then((m) => ({ default: m.CareerHub })));
+const JobsHub = lazy(() => import('./components/CareerExperience.jsx').then((m) => ({ default: m.JobsHub })));
+const ResumeStudio = lazy(() => import('./components/CareerExperience.jsx').then((m) => ({ default: m.ResumeStudio })));
+const ToolsThreats = lazy(() => import('./components/ToolsThreats.jsx').then((m) => ({ default: m.ToolsThreats })));
+const SystemsAcademy = lazy(() => import('./components/SystemsAcademy.jsx').then((m) => ({ default: m.SystemsAcademy })));
+const ExternalLabLinks = lazy(() => import('./components/ExternalLabLinks.jsx'));
+
+const InteractiveLabWorkbench = lazy(() => import('./components/InteractiveLabWorkbench.jsx'));
+const CuratedVideosLibrary = lazy(() => import('./components/CuratedVideosLibrary.jsx'));
+const CareerVideoLibrary = lazy(() => import('./components/CareerVideoLibrary.jsx'));
 
 const levelRanks = { beginner: 1, intermediate: 2, advanced: 3 };
 function matchesLevel(label, selected, allLabel) {
@@ -48,6 +68,10 @@ const iconArt = {
   lock: <><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14v3"/></>,
   spark: <><path d="m12 2 1.9 7.1L21 12l-7.1 1.9L12 21l-1.9-7.1L3 12l7.1-2.9z"/><path d="m19 2 .8 2.2L22 5l-2.2.8L19 8l-.8-2.2L16 5l2.2-.8z"/></>,
   'check-circle': <><circle cx="12" cy="12" r="9"/><path d="m8 12 2.5 2.5L16 9"/></>,
+  'film': <><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 4v16M17 4v16M3 9h4M3 15h4M17 9h4M17 15h4"/></>,
+  'minus': <path d="M5 12h14"/>,
+  'flask-conical': <><path d="M9 3h6M10 3v6L4.5 18a2 2 0 0 0 1.7 3h11.6a2 2 0 0 0 1.7-3L14 9V3"/><path d="M7 15h10"/></>,
+  'shield-alert': <><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"/><path d="M12 8v5M12 16h.01"/></>,
   'alert-triangle': <><path d="m10.3 3.9-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3.1l-8-14a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></>,
   share: <><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 10.7 6.8-4.4M8.6 13.3l6.8 4.4"/></>,
   copy: <><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></>,
@@ -55,42 +79,173 @@ const iconArt = {
   globe: <><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></>,
   eye: <><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="2.5"/></>,
   lightbulb: <><path d="M9 18h6M10 22h4M8.2 14.5A6 6 0 1 1 15.8 14.5c-.9.7-1.4 1.5-1.6 2.5h-4.4c-.2-1-.7-1.8-1.6-2.5z"/><path d="M12 2v2M4.9 4.9l1.4 1.4M19.1 4.9l-1.4 1.4"/></>,
+  'briefcase-business': <><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2"/></>,
+  'scan-text': <><path d="M4 7V5a2 2 0 0 1 2-2h2M16 3h2a2 2 0 0 1 2 2v2M20 17v2a2 2 0 0 1-2 2h-2M8 21H6a2 2 0 0 1-2-2v-2"/><path d="M8 9h8M8 12h6M8 15h8"/></>,
+  circle: <circle cx="12" cy="12" r="9"/>,
+  plus: <><path d="M12 5v14M5 12h14"/></>,
+  save: <><path d="M5 3h12l4 4v14H3V3z"/><path d="M7 3v6h9V3M7 21v-8h10v8"/></>,
+  'git-compare-arrows': <><path d="M7 3v18M7 3l-3 3M7 3l3 3M17 21V3M17 21l-3-3M17 21l3-3M7 8h7a3 3 0 0 1 3 3v2M17 13l-3-3M17 13l3-3"/></>,
 };
 function Icon({ name = 'spark', size = 20, className = '' }) {
   return <svg className={`icon ${className}`} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{iconArt[name] || iconArt.spark}</svg>;
 }
 
-const learningPaths = [
-  {
-    id: 'foundations', number: '01', title: 'Build the foundation', level: 'Beginner', icon: 'book-open', image: '/images/learning/foundations-network.webp',
-    desc: 'Learn networking, Linux, Windows, HTTP, and the language of security before choosing a specialisation.',
-    topics: ['Networking and DNS', 'Linux and Windows basics', 'HTTP and logs', 'Command-line confidence'], outcome: 'Explain a basic event and navigate a local learning lab.', target: 'labs'
-  },
-  {
-    id: 'threat-hunting', number: '02', title: 'Think like a threat hunter', level: 'Beginner → Intermediate', icon: 'radar', image: '/images/learning/soc-investigation.webp',
-    desc: 'Turn log records into a focused hypothesis, find patterns, test alternative explanations, and document evidence.',
-    topics: ['Windows and sign-in events', 'Hypotheses and baselines', 'Timeline building', 'Evidence notes'], outcome: 'Write a small, reproducible hunting report.', target: 'labs'
-  },
-  {
-    id: 'bug-bounty', number: '03', title: 'Explore web security responsibly', level: 'Beginner → Intermediate', icon: 'bug', image: '/images/learning/bug-bounty-research.webp',
-    desc: 'Understand HTTP and common web risks while learning scope, safe practice, and clear vulnerability reporting.',
-    topics: ['HTTP and access control', 'Official training labs', 'Scope and exclusions', 'Responsible reporting'], outcome: 'Complete a training-lab write-up with evidence and a defensive fix.', target: 'labs'
-  },
-  {
-    id: 'detection', number: '04', title: 'Engineer and validate detections', level: 'Intermediate → Advanced', icon: 'terminal', image: '/images/learning/detection-engineering.svg',
-    desc: 'Learn what makes a useful rule, how to test it with labelled samples, and how to explain its limitations.',
-    topics: ['Detection logic', 'Synthetic event data', 'False-positive review', 'Precision and recall'], outcome: 'Publish a report with evidence and reproducible metrics.', target: 'labs'
-  },
-];
+function handleArtworkError(event) {
+  const image = event.currentTarget;
+  if (image.dataset.fallbackApplied === 'true') {
+    image.style.visibility = 'hidden';
+    return;
+  }
+  image.dataset.fallbackApplied = 'true';
+  image.src = '/images/learning/cyber-foundations.svg';
+  image.classList.add('artwork-fallback');
+}
 
 const attackPatterns = [
-  { icon: 'mail', title: 'Phishing & social engineering', short: 'Messages that impersonate a trusted service and try to rush a person into clicking or sharing information.', cause: 'Urgency, impersonation, and hard-to-verify sender details.', example: 'A fake delivery notice points to an unfamiliar sign-in page.', defend: 'Use the official app/site, verify unexpected requests another way, and enable MFA or passkeys.', image: '/images/learning/attack-patterns.svg' },
-  { icon: 'lock', title: 'Password reuse', short: 'A password exposed on one site is tried on another account.', cause: 'People reuse passwords and services can suffer breaches.', example: 'A password used on a low-risk forum is reused on an email account.', defend: 'Use unique passwords, a password manager, and MFA/passkeys.', image: '/images/learning/identity-passwords.svg' },
-  { icon: 'code', title: 'Injection flaws', short: 'An application treats input like part of a command or query rather than ordinary data.', cause: 'Unsafe query construction and poor separation of code from data.', example: 'A search form behaves unexpectedly because input is concatenated into a database query.', defend: 'Use parameterized queries, safe output handling, least privilege, and tests.', image: '/images/learning/web-security.svg' },
-  { icon: 'code', title: 'Cross-site scripting (XSS)', short: 'A page handles untrusted content unsafely, so a browser may interpret it as active page content.', cause: 'Unsafe HTML insertion or missing context-aware output encoding.', example: 'A comment appears as markup instead of being displayed as plain text.', defend: 'Use safe templating and context-aware output encoding; treat security headers as defence in depth.', image: '/images/learning/web-security.svg' },
-  { icon: 'shield-check', title: 'Misconfiguration & exposed data', short: 'A service or storage location permits more access than the owner intended.', cause: 'Default settings, broad permissions, or forgotten resources.', example: 'A project backup is placed in a shared location anyone with the link can read.', defend: 'Use least privilege, private-by-default storage, inventory, and configuration reviews.', image: '/images/learning/cloud-security.svg' },
-  { icon: 'shield-check', title: 'Malware & ransomware', short: 'Unwanted software may steal information, disrupt systems, or make data unavailable.', cause: 'Unsafe downloads, exploited weaknesses, stolen credentials, or excessive permissions.', example: 'An unexpected attachment causes a workstation to behave abnormally.', defend: 'Patch systems, limit privileges, use endpoint protection, and maintain tested backups.', image: '/images/learning/digital-forensics.svg' },
-  { icon: 'network', title: 'Supply-chain compromise', short: 'A trusted dependency, update path, or supplier is misused to affect downstream users.', cause: 'Projects rely on many packages, build systems, and external services.', example: 'A project receives an unexpected dependency version with suspicious changes.', defend: 'Review and pin dependencies, monitor advisories, restrict build permissions, and track components.', image: '/images/learning/supply-chain.svg' },
+  {
+    id: "basics-phishing", icon: "mail", title: "Phishing & social engineering", family: "IDENTITY & TRUST", level: "Beginner",
+    short: "Messages impersonate a trusted person or service and try to rush someone into clicking, paying, or sharing information.",
+    cause: "Attackers exploit urgency, authority, familiar branding, and sender details that are difficult to verify at a glance.",
+    example: "A fake delivery notice links to a sign-in page on an unrelated domain.",
+    defend: "Open the official app or type the known address yourself, verify unexpected requests through a second channel, and use MFA or passkeys.",
+    nextStep: "Inspect a fictional message: mark the sender domain, requested action, urgency language, and a safe way to verify it.",
+    image: "/images/learning/basics/basics-phishing.webp"
+  },
+  {
+    id: "basics-password-reuse", icon: "lock", title: "Password reuse", family: "IDENTITY & TRUST", level: "Beginner",
+    short: "A password exposed on one service can be tried against another account where the same person reused it.",
+    cause: "Password reuse turns a breach at one service into a risk for other accounts; weak recovery controls can add exposure.",
+    example: "A password used on a low-risk forum is reused on the person's primary email account.",
+    defend: "Use unique passwords stored in a password manager, enable MFA or passkeys, and secure the email account used for recovery.",
+    nextStep: "Make a fictional account-security checklist: unique credential, MFA, recovery method, and breach-response plan.",
+    image: "/images/learning/basics/basics-password-reuse.webp"
+  },
+  {
+    id: "basics-mfa-fatigue", icon: "shield-check", title: "Multi-factor authentication fatigue", family: "IDENTITY & TRUST", level: "Beginner",
+    short: "Repeated approval prompts may pressure a person into approving a sign-in they did not initiate.",
+    cause: "Repeated prompts, unclear context, and weak rate limits can make an unexpected request look routine.",
+    example: "A user receives several push notifications while not trying to sign in.",
+    defend: "Deny and report unexpected prompts, review account sessions, rate-limit challenges, and prefer phishing-resistant MFA where available.",
+    nextStep: "Write the three actions a user should take after an unsolicited MFA prompt: deny, report, and review the account through the official service.",
+    image: "/images/learning/basics/basics-mfa.webp"
+  },
+  {
+    id: "basics-credential-stuffing", icon: "lock", title: "Credential stuffing & brute-force attempts", family: "IDENTITY & TRUST", level: "Beginner → Intermediate",
+    short: "Repeated sign-in attempts may reuse leaked credentials or guess weak passwords at scale.",
+    cause: "Weak passwords, reused credentials, missing rate limits, and limited sign-in monitoring make account attacks easier to miss.",
+    example: "A sample sign-in log contains many failed attempts followed by a success that needs investigation.",
+    defend: "Use unique passwords and MFA; monitor failure patterns, apply risk-aware rate limits, and review successful sign-ins after unusual failures.",
+    nextStep: "With a supplied synthetic log, group failures by account and time window, compare with normal activity, and document uncertainty before concluding.",
+    image: "/images/learning/basics/basics-credential-stuffing.webp"
+  },
+  {
+    id: "basics-injection", icon: "code", title: "Injection flaws", family: "WEB APPLICATIONS", level: "Beginner → Intermediate",
+    short: "An application treats untrusted input as part of a command or query instead of ordinary data.",
+    cause: "Unsafe string concatenation blurs the boundary between program instructions and user-supplied values.",
+    example: "A search page builds a database query by joining raw user input into the query string.",
+    defend: "Use parameterized queries, safe APIs, least-privilege database accounts, and tests that cover unusual input.",
+    nextStep: "Compare a toy vulnerable query with a parameterized version in a local or designated training lab; do not test a live application without permission.",
+    image: "/images/learning/basics/basics-injection.webp"
+  },
+  {
+    id: "basics-xss", icon: "code", title: "Cross-site scripting (XSS)", family: "WEB APPLICATIONS", level: "Beginner → Intermediate",
+    short: "A browser interprets untrusted page content as active markup or script instead of displaying it as data.",
+    cause: "Unsafe HTML insertion and missing context-aware output encoding can let user content alter a page's behaviour.",
+    example: "A comment is rendered as markup when it should have appeared as plain text.",
+    defend: "Use safe templating, context-aware output encoding, careful HTML sanitization where needed, and defence-in-depth security headers.",
+    nextStep: "In a deliberately vulnerable training page, compare how plain text and safely encoded output render. Record the fix, not only the symptom.",
+    image: "/images/learning/basics/basics-xss.webp"
+  },
+  {
+    id: "basics-access-control", icon: "users", title: "Broken access control", family: "WEB APPLICATIONS", level: "Beginner → Intermediate",
+    short: "A user can access a record or action outside the permissions assigned to their role or account.",
+    cause: "The server may trust a client-supplied record identifier or check authentication without enforcing authorization.",
+    example: "A user who owns one training record can view another fictional user's record by changing an identifier.",
+    defend: "Check authorization on the server for every sensitive action, deny by default, and test owner/other-user and low/high-privilege cases.",
+    nextStep: "Build a small access-control test matrix for owner, peer, and administrator roles in an intentionally vulnerable lab.",
+    image: "/images/learning/basics/basics-access-control.webp"
+  },
+  {
+    id: "basics-session-cookies", icon: "lock", title: "Session & cookie security", family: "WEB APPLICATIONS", level: "Beginner → Intermediate",
+    short: "A stolen or poorly protected session token can let someone act as a logged-in user.",
+    cause: "Insecure transport, permissive cookie settings, long-lived tokens, and weak session rotation increase risk.",
+    example: "A session remains active on a shared computer after the user walks away.",
+    defend: "Use HTTPS, appropriate Secure/HttpOnly/SameSite cookie attributes, sensible expiration, session rotation, and a working logout/revocation flow.",
+    nextStep: "Review cookie attributes in developer tools on an application you own or an authorized training instance; never share real session tokens in notes.",
+    image: "/images/learning/basics/basics-session-cookies.webp"
+  },
+  {
+    id: "basics-csrf", icon: "shield-check", title: "Cross-site request forgery (CSRF)", family: "WEB APPLICATIONS", level: "Beginner → Intermediate",
+    short: "A browser may send an unwanted state-changing request while a person is already authenticated to a service.",
+    cause: "Browsers can attach credentials automatically, while an application may fail to verify that the action was intentionally initiated.",
+    example: "A signed-in training account receives an unexpected settings-change request from another page.",
+    defend: "Use anti-CSRF tokens or equivalent framework protections, appropriate SameSite cookies, and re-authentication for high-risk actions.",
+    nextStep: "In a controlled web-security lab, compare a protected state-changing request with the lab's intentionally unprotected example.",
+    image: "/images/learning/basics/basics-csrf.webp"
+  },
+  {
+    id: "basics-dns", icon: "globe", title: "DNS resolution risks", family: "NETWORKING", level: "Beginner",
+    short: "DNS translates names into records such as IP addresses; incorrect or manipulated answers can misdirect clients.",
+    cause: "Untrusted resolver settings, spoofed answers, or misconfiguration can produce results that differ from expectations.",
+    example: "A known training hostname resolves to an unexpected address, prompting a careful second check.",
+    defend: "Use trusted resolvers, maintain DNS configuration, validate HTTPS certificates, and consider DNSSEC where supported; one lookup alone is not proof of compromise.",
+    nextStep: "Use nslookup or dig on a known public training domain, record the resolver and timestamp, and compare results without targeting private systems.",
+    image: "/images/learning/basics/basics-dns-resolution.webp"
+  },
+  {
+    id: "basics-tls", icon: "shield-check", title: "Secure transport & TLS", family: "NETWORKING", level: "Beginner",
+    short: "Without properly validated encryption, network intermediaries may observe or alter traffic in transit.",
+    cause: "Plaintext protocols, certificate mistakes, or ignored browser warnings undermine transport protection.",
+    example: "A login form is submitted over an unencrypted connection on a public network.",
+    defend: "Use HTTPS/TLS, keep certificates valid, fix certificate warnings rather than bypassing them, and remember that a VPN does not replace TLS validation.",
+    nextStep: "Inspect HTTPS and certificate status on a site you own or an authorized practice service and note the issuer, validity, and warning state.",
+    image: "/images/learning/basics/basics-secure-transport.webp"
+  },
+  {
+    id: "basics-cloud-exposure", icon: "shield-check", title: "Misconfiguration & exposed data", family: "CLOUD & CONFIGURATION", level: "Beginner → Intermediate",
+    short: "A service, storage location, or account permits more access than its owner intended.",
+    cause: "Default settings, broad permissions, forgotten resources, and weak identity boundaries can expose data.",
+    example: "A fictional project backup is stored in a shared location that anyone with the link can read.",
+    defend: "Apply least privilege, private-by-default storage, asset inventory, logging, and periodic configuration reviews.",
+    nextStep: "Review a fictional cloud policy and mark which permissions should be narrowed before deployment; avoid creating real cloud resources for this exercise.",
+    image: "/images/learning/basics/basics-cloud-exposure.webp"
+  },
+  {
+    id: "basics-ransomware", icon: "shield-alert", title: "Malware & ransomware", family: "ENDPOINT SECURITY", level: "Beginner",
+    short: "Unwanted software can steal information, disrupt systems, or make data unavailable.",
+    cause: "Unsafe downloads, exploited weaknesses, stolen credentials, or excessive permissions may enable an incident.",
+    example: "A workstation shows unexpected file changes and endpoint protection generates an alert.",
+    defend: "Patch systems, limit privileges, use reputable endpoint protection, maintain tested offline or immutable backups, and rehearse recovery.",
+    nextStep: "Use a benign sample report or synthetic alert to record the detection source, host, timestamp, containment question, and recovery evidence. Do not download unknown samples.",
+    image: "/images/learning/basics/basics-ransomware.webp"
+  },
+  {
+    id: "basics-supply-chain", icon: "git-compare-arrows", title: "Supply-chain compromise", family: "SOFTWARE SECURITY", level: "Beginner → Intermediate",
+    short: "A trusted dependency, update path, build service, or supplier is misused to affect downstream users.",
+    cause: "Projects depend on packages, build systems, credentials, and services maintained by many parties.",
+    example: "A project receives an unexpected dependency version with unexplained changes.",
+    defend: "Review and pin dependencies, validate provenance where available, monitor advisories, restrict build permissions, and keep a component inventory or SBOM.",
+    nextStep: "Inspect a public project's lockfile or SBOM and write down one dependency, its pinned version, and a trusted place to check advisories.",
+    image: "/images/learning/basics/basics-supply-chain.webp"
+  },
+  {
+    id: "basics-dos", icon: "network", title: "Denial of service (DoS)", family: "RESILIENCE", level: "Beginner → Intermediate",
+    short: "Excessive or expensive requests can exhaust a service's capacity and reduce availability for legitimate users.",
+    cause: "Limited capacity, unbounded expensive operations, or insufficient upstream protection can amplify traffic spikes.",
+    example: "A service's synthetic metrics show a sudden rise in requests and latency while successful responses fall.",
+    defend: "Use rate limits, sensible quotas, caching/CDN protection, upstream DDoS mitigation, alerting, and a documented incident plan.",
+    nextStep: "Review fictional request-rate and latency graphs; distinguish a traffic spike from confirmed malicious activity before escalating.",
+    image: "/images/learning/basics/basics-denial-of-service.webp"
+  },
+  {
+    id: "basics-incident-response", icon: "radar", title: "Logging & incident response", family: "DETECTION & RESPONSE", level: "Beginner → Intermediate",
+    short: "Useful, time-aligned logs help teams reconstruct events, test hypotheses, and explain what remains unknown.",
+    cause: "Disabled logging, inconsistent timestamps, narrow retention, or missing context can leave investigators with gaps.",
+    example: "An alert exists, but the team cannot tell which account or process produced the surrounding activity.",
+    defend: "Centralize relevant logs, synchronize time, restrict log access, set appropriate retention, and maintain tested response playbooks.",
+    nextStep: "Create a timeline from five synthetic events and label each statement as an observed fact, an inference, or an unanswered question.",
+    image: "/images/learning/basics/basics-incident-response.webp"
+  }
 ];
 
 // Original, action-oriented learner encouragement written for OpenCyberPath.
@@ -124,7 +279,7 @@ function ResourceCard({ resource }) {
   const kind = resource.kind.toLowerCase();
   const accessClass = kind.includes('open source') ? 'open' : kind.includes('tier') || kind.includes('varies') ? 'limited' : kind.includes('dataset') ? 'research' : 'free';
   return <article className={`resource-card resource-${slugify(resource.category)}`}>
-    <div className="resource-art"><img src={resource.image || '/images/learning/command-cheatsheet.jpg'} alt="" loading="lazy" /><span className="art-icon"><Icon name={resource.icon || 'book'} size={20} /></span><span className="level-label">{resource.level}</span></div>
+    <div className="resource-art"><img src={resource.image || '/images/learning/command-cheatsheet.jpg'} alt="" loading="lazy" onError={handleArtworkError} /><span className="art-icon"><Icon name={resource.icon || 'book'} size={20} /></span><span className="level-label">{resource.level}</span></div>
     <div className="resource-card-body">
       <div className="card-category">{resource.category}</div><h3>{resource.name}</h3><div className="provider-name">BY {resource.provider.toUpperCase()}</div>
       <p className="card-description">{resource.description}</p>
@@ -132,12 +287,14 @@ function ResourceCard({ resource }) {
       <div className="access-line"><span className={`access-badge ${accessClass}`}><Icon name={accessClass === 'open' ? 'check-circle' : accessClass === 'limited' ? 'alert-triangle' : 'book'} size={13} />{resource.kind}</span><span className="account-note">{resource.account}</span></div>
       <p className="resource-note">{resource.note}</p>
       <ExternalLink className="card-link" href={resource.url}>Visit original resource <Icon name="arrow-up-right" size={16} /></ExternalLink>
+      <ResourceHealthStatus url={resource.url} />
+      <a className="resource-report-link" href={buildResourceReportUrl({ id: resource.id, title: resource.name, provider: resource.provider, url: resource.url, type: resource.kind })} target="_blank" rel="noreferrer">Report a link or access problem ↗</a>
     </div>
   </article>;
 }
 function PathCard({ path, onClick }) {
   return <article className={`path-card path-${path.id}`}>
-    <div className="path-art"><img src={path.image} alt="" loading="lazy" /><div className="path-art-shade"/><span className="path-icon"><Icon name={path.icon} size={23} /></span><span className="path-number">{path.number} / LEARNING PATH</span></div>
+    <div className="path-art"><img src={path.image} alt={`${path.title} concept illustration`} loading="lazy" onError={handleArtworkError} /><div className="path-art-shade"/><span className="path-icon"><Icon name={path.icon} size={23} /></span><span className="path-number">{path.number} / LEARNING PATH</span></div>
     <div className="path-body"><div className="path-card-top"><span className="level-label">{path.level}</span><Icon name="arrow-up-right" size={18} /></div>
       <h3>{path.title}</h3><p>{path.desc}</p><div className="topic-list">{path.topics.map((topic) => <span key={topic}><Icon name="check-circle" size={14} />{topic}</span>)}</div>
       <div className="path-outcome"><small>YOUR MILESTONE</small><p>{path.outcome}</p></div>
@@ -147,13 +304,14 @@ function PathCard({ path, onClick }) {
 }
 function LabCard({ lab, compact = false }) {
   return <article className={`lab-card lab-${slugify(lab.category || 'notes')} lab-item-${slugify(lab.id)} ${compact ? 'lab-card-compact' : ''}`}>
-    <div className="lab-art"><img src={lab.image || '/images/learning/handwritten-notes.jpg'} alt="" loading="lazy" /><div className="lab-art-shade"/><span className="lab-icon"><Icon name={lab.icon || 'file-text'} size={23} /></span><span className="lab-kind">{lab.kind}</span></div>
+    <div className="lab-art"><img src={lab.image || '/images/learning/handwritten-notes.jpg'} alt="" loading="lazy" onError={handleArtworkError} /><div className="lab-art-shade"/><span className="lab-icon"><Icon name={lab.icon || 'file-text'} size={23} /></span><span className="lab-kind">{lab.kind}</span></div>
     <div className="lab-body"><div className="lab-card-top"><span className="lab-category">{lab.category || 'Learning notes'}</span><span className="level-label">{lab.level}</span></div>
       <h3>{lab.title}</h3><p className="card-description">{lab.summary}</p>
       <div className="lab-meta"><span><Icon name="clock" size={13} />{lab.estimated}</span><span><Icon name="target" size={13} />{lab.skill}</span></div>
       <div className="lab-tags">{(lab.tags || []).map((tag) => <span key={tag}>{tag}</span>)}</div>
       <div className="download-row"><a className="download-button primary-download" href={publicPath(lab.pdf)} download><Icon name="download" size={15} />PDF</a><a className="download-button" href={publicPath(lab.docx)} download><Icon name="download" size={15} />DOCX</a></div>
       {(lab.dataset || lab.script || lab.worksheet) && <div className="lab-extra">{lab.dataset && <a href={publicPath(lab.dataset)} download>Sample data <Icon name="arrow-up-right" size={13} /></a>}{lab.script && <a href={publicPath(lab.script)} download>Evaluation script <Icon name="arrow-up-right" size={13} /></a>}{lab.worksheet && <a href={publicPath(lab.worksheet)} download>Scope worksheet <Icon name="arrow-up-right" size={13} /></a>}</div>}
+      <Suspense fallback={<p className="section-loading">Loading related lab links...</p>}><ExternalLabLinks labId={lab.id} /></Suspense>
     </div>
   </article>;
 }
@@ -214,15 +372,65 @@ function evaluateSampleRule(rows) {
   return result;
 }
 
+
+const MODULE_PROGRESS_STORAGE_KEY = 'open-cyber-path-module-checkpoints-v1';
+const MODULE_CHECKPOINT_FIELDS = ['understood', 'practised', 'evidence'];
+
+function moduleProgressKey(pathId, moduleTitle) {
+  return `${pathId}::${moduleTitle}`;
+}
+
+function readModuleProgress() {
+  if (typeof window === 'undefined') return {};
+  try {
+    const saved = JSON.parse(window.localStorage.getItem(MODULE_PROGRESS_STORAGE_KEY) || '{}');
+    const raw = saved && typeof saved === 'object' ? (saved.modules || saved) : {};
+    const known = new Set(learningPaths.flatMap((path) => path.modules.map((item) => moduleProgressKey(path.id, item.title))));
+    const safe = {};
+    for (const [key, value] of Object.entries(raw || {})) {
+      if (!known.has(key) || !value || typeof value !== 'object') continue;
+      safe[key] = Object.fromEntries(MODULE_CHECKPOINT_FIELDS.map((field) => [field, value[field] === true]));
+    }
+    return safe;
+  } catch {
+    return {};
+  }
+}
+
+function LearningModuleCard({ pathId, module, index, progress = {}, onCheckpointChange }) {
+  const allDone = MODULE_CHECKPOINT_FIELDS.every((field) => progress[field] === true);
+  const inputPrefix = `${pathId}-${slugify(module.title)}`;
+  return <article className={`career-module ${allDone ? 'is-checkpoint-complete' : ''}`}>
+    <div className="career-module-head"><span className="career-module-number">{String(index + 1).padStart(2, '0')}</span><div><small>MODULE {String(index + 1).padStart(2, '0')}</small><h3>{module.title}</h3><p>{module.objective}</p></div><span className={`career-module-status ${allDone ? 'is-complete' : ''}`}>{allDone ? 'SELF-CHECK COMPLETE' : 'IN PROGRESS'}</span></div>
+    <div className="career-module-grid">
+      <div><span><Icon name="book-open" size={14}/> LEARN</span><ul>{module.learn.map((item) => <li key={item}>{item}</li>)}</ul></div>
+      <div><span><Icon name="target" size={14}/> PRACTISE</span><p>{module.practice}</p></div>
+      <div><span><Icon name="file-text" size={14}/> EVIDENCE TO SAVE</span><p>{module.evidence}</p></div>
+    </div>
+    <div className="career-module-checkpoints" aria-label={`Self-reported checkpoints for ${module.title}`}>
+      <div className="career-module-checkpoints-heading"><div><b>Learning checkpoints</b><small>Mark each item after you complete it. These are personal notes, not a grade or certification.</small></div><span>{MODULE_CHECKPOINT_FIELDS.filter((field) => progress[field] === true).length}/3</span></div>
+      <div className="career-module-checkpoint-list">
+        <label htmlFor={`${inputPrefix}-understood`}><input id={`${inputPrefix}-understood`} type="checkbox" checked={progress.understood === true} onChange={(event) => onCheckpointChange(pathId, module.title, 'understood', event.target.checked)} /><span><b>I can explain it</b><small>In my own words, without copying the lesson.</small></span></label>
+        <label htmlFor={`${inputPrefix}-practised`}><input id={`${inputPrefix}-practised`} type="checkbox" checked={progress.practised === true} onChange={(event) => onCheckpointChange(pathId, module.title, 'practised', event.target.checked)} /><span><b>I practised it</b><small>Using the supplied sample, local lab, or explicitly authorised environment.</small></span></label>
+        <label htmlFor={`${inputPrefix}-evidence`}><input id={`${inputPrefix}-evidence`} type="checkbox" checked={progress.evidence === true} onChange={(event) => onCheckpointChange(pathId, module.title, 'evidence', event.target.checked)} /><span><b>I recorded evidence</b><small>I saved my observation and noted a limitation or next check.</small></span></label>
+      </div>
+      <details className="career-module-reflection"><summary>Knowledge check & reflection</summary><ol><li>What does this module teach you to identify or decide?</li><li>Which observation, source, or exercise supports your answer?</li><li>What could that evidence not prove on its own, and what would you check next?</li></ol><p>Explain the answers in your own words. OpenCyberPath does not grade these reflections automatically.</p></details>
+    </div>
+  </article>;
+}
+
 function App() {
   const [page, setPage] = useState('home');
+  const [moduleProgress, setModuleProgress] = useState(() => readModuleProgress());
+  const [activeLearningPathId, setActiveLearningPathId] = useState('soc-blue-team');
+  const [academyPathId, setAcademyPathId] = useState('all');
+  const [domainQuery, setDomainQuery] = useState('');
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('All resources');
   const [cost, setCost] = useState('All access types');
   const [level, setLevel] = useState('All levels');
   const [labLevel, setLabLevel] = useState('All labs');
   const [labCategory, setLabCategory] = useState('All topics');
-  const [videoTopic, setVideoTopic] = useState('All videos');
   const [shareNotice, setShareNotice] = useState('');
   const [copiedGratitudeQuote, setCopiedGratitudeQuote] = useState('');
   const [gratitudeCopyNotice, setGratitudeCopyNotice] = useState('');
@@ -242,6 +450,14 @@ function App() {
     window.addEventListener('keydown', handleShortcut);
     return () => window.removeEventListener('keydown', handleShortcut);
   }, []);
+
+  useEffect(() => {
+    try {
+      window.localStorage.setItem(MODULE_PROGRESS_STORAGE_KEY, JSON.stringify({ version: 1, modules: moduleProgress, savedAt: new Date().toISOString() }));
+    } catch {
+      // Checkpoints still work in memory if the browser disables local storage.
+    }
+  }, [moduleProgress]);
 
   useEffect(() => {
     let active = true;
@@ -292,15 +508,30 @@ function App() {
   }), [query, category, cost, level]);
 
   const visibleLabs = labs.filter((lab) => matchesLevel(lab.level, labLevel, 'All labs') && (labCategory === 'All topics' || lab.category === labCategory));
-  const visibleVideos = learningVideos.filter((video) => videoTopic === 'All videos' || video.topic === videoTopic || video.level === videoTopic);
+  const visibleCybersecurityPillars = useMemo(() => {
+    const term = domainQuery.trim().toLowerCase();
+    if (!term) return cybersecurityPillars;
+    return cybersecurityPillars.filter((pillar) => [pillar.title, pillar.summary, pillar.level, ...pillar.specializations.flatMap((item) => [item.name, item.description, item.firstStep])].join(' ').toLowerCase().includes(term));
+  }, [domainQuery]);
   const navigate = (next) => {
     setPage(next);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   const clearFilters = () => { setQuery(''); setCategory('All resources'); setCost('All access types'); setLevel('All levels'); };
   const openLearningPath = (pathId) => {
-    const categoriesByPath = { foundations: 'Foundations', 'threat-hunting': 'Threat Hunting', 'bug-bounty': 'Bug Bounty', detection: 'Detection Engineering' };
-    setLabCategory(categoriesByPath[pathId] || 'All topics');
+    setActiveLearningPathId(pathId);
+    navigate('path-detail');
+  };
+  const updateModuleCheckpoint = (pathId, moduleTitle, field, checked) => {
+    if (!MODULE_CHECKPOINT_FIELDS.includes(field)) return;
+    const key = moduleProgressKey(pathId, moduleTitle);
+    setModuleProgress((current) => ({ ...current, [key]: { ...(current[key] || {}), [field]: checked === true } }));
+  };
+  const openPathAcademy = (pathId) => { setAcademyPathId(pathId); navigate('systems-academy'); };
+  const openPathLabs = (path) => {
+    const matched = labs.filter((lab) => path.labIds.includes(lab.id));
+    const topics = [...new Set(matched.map((lab) => lab.category))];
+    setLabCategory(topics.length === 1 ? topics[0] : 'All topics');
     setLabLevel('All labs');
     navigate('labs');
   };
@@ -328,12 +559,16 @@ function App() {
   const featuredResources = resources.filter((r) => ['portswigger-academy', 'wazuh-getting-started', 'microsoft-threat-hunting', 'mitre-attack'].includes(r.id));
   const featuredLabs = labs.filter((l) => ['lab-threat-hunt', 'lab-bugbounty', 'lab-cheatsheet', 'lab-attack-patterns'].includes(l.id));
   const publicDatasetResources = resources.filter((r) => ['cicids2017-labeled-flows', 'ctu13-labeled-flows', 'splunk-botsv3-dataset'].includes(r.id));
+  const activeLearningPath = learningPaths.find((path) => path.id === activeLearningPathId) || learningPaths[0];
+  const activePathResources = resources.filter((resource) => activeLearningPath.resourceIds.includes(resource.id));
+  const activePathLabs = labs.filter((lab) => activeLearningPath.labIds.includes(lab.id));
+  const suggestedNextPaths = learningPaths.filter((path) => activeLearningPath.nextPathIds.includes(path.id));
 
   return <div className="app-shell" id="top">
     <header className="site-header">
       <Logo onClick={navigate} />
       <nav className="nav-links" aria-label="Main navigation">
-        {[['home','Home'],['resources','Resources'],['roadmap','Learning paths'],['labs','Labs & notes'],['concepts','Attack basics']].map(([key,label]) => <button key={key} className={`nav-link ${page === key ? 'active' : ''}`} onClick={() => navigate(key)}>{label}</button>)}
+        {[['home','Home'],['roadmap','Paths'],['systems-academy','OS + Networks'],['resources','Resources'],['tools','Tools & films'],['career-hub','Career hub'],['resume-studio','Resume'],['job-hub','Jobs'],['labs','Labs'],['concepts','Basics']].map(([key,label]) => <button key={key} className={`nav-link ${page === key || (page === 'path-detail' && key === 'roadmap') || (page === 'application-demo' && key === 'job-hub') ? 'active' : ''}`} onClick={() => { if (key === 'systems-academy') setAcademyPathId('all'); navigate(key); }}>{label}</button>)}
       </nav>
       <div className="header-actions"><label className="header-search"><Icon name="search" size={16} /><input value={query} onChange={(e) => { setQuery(e.target.value); if (page !== 'resources') navigate('resources'); }} onFocus={() => { if (page !== 'resources') navigate('resources'); }} placeholder="Search skills, labs, topics…" aria-label="Search resources" /><kbd>Ctrl K</kbd></label><ExternalLink className="github-link" href="https://github.com/hemanthkadiyala01-sentinel/open-cyber-path"><Icon name="network" size={15} /> GitHub</ExternalLink></div>
     </header>
@@ -345,16 +580,37 @@ function App() {
             <div className="eyebrow"><span className="eyebrow-dot" /> OPEN · FREE TO EXPLORE · COMMUNITY BUILT</div>
             <h1>Learn cybersecurity for <em>real skills,</em> real opportunities.</h1>
             <p className="hero-copy">Free learning resources, practical labs, notebook-style notes, and clear learning paths - from first steps to deeper investigation. Learn, practise, build evidence, and help another learner grow.</p>
-            <div className="hero-actions"><button className="button button-primary" onClick={() => navigate('roadmap')}>Start learning free <Icon name="arrow-right" size={17} /></button><button className="button button-quiet" onClick={() => navigate('resources')}>Explore resources <Icon name="arrow-up-right" size={16} /></button></div>
+            <div className="hero-actions"><button className="button button-primary" onClick={() => document.getElementById('start-here')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Start learning free <Icon name="arrow-right" size={17} /></button><button className="button button-quiet" onClick={() => navigate('resources')}>Explore resources <Icon name="arrow-up-right" size={16} /></button></div>
             <div className="hero-note"><Icon name="users" size={17} /> No fake ratings or job promises. Start with useful material and build at your own pace.</div>
           </div>
-          <div className="hero-visual"><img className="hero-image" src="/images/learning/detection-engineering-lab.webp" alt="Analyst reviewing detection outcomes, event charts, and alert logic" /><div className="hero-image-vignette"/><div className="hero-sticker sticker-top"><Icon name="book-open" size={19} /><span><small>LEARN</small><b>Understand the basics</b></span></div><div className="hero-sticker sticker-bottom"><Icon name="target" size={19} /><span><small>PRACTISE</small><b>Build evidence of skill</b></span></div><div className="hero-quote"><Icon name="spark" size={19} /><p>Learn it.<br />Practise it.<br /><b>Share what you discover.</b></p></div></div>
+          <div className="hero-visual"><img className="hero-image" src="/images/learning/detection-engineering-lab.webp" alt="Analyst reviewing detection outcomes, event charts, and alert logic" onError={handleArtworkError} /><div className="hero-image-vignette"/><div className="hero-sticker sticker-top"><Icon name="book-open" size={19} /><span><small>LEARN</small><b>Understand the basics</b></span></div><div className="hero-sticker sticker-bottom"><Icon name="target" size={19} /><span><small>PRACTISE</small><b>Build evidence of skill</b></span></div><div className="hero-quote"><Icon name="spark" size={19} /><p>Learn it.<br />Practise it.<br /><b>Share what you discover.</b></p></div></div>
         </section>
         <section className="principle-strip" aria-label="What learners can expect">
           <div><span className="principle-icon"><Icon name="book-open" /></span><span><b>Free to explore</b><small>Clear access labels and caveats</small></span></div>
           <div><span className="principle-icon"><Icon name="terminal" /></span><span><b>Practice-first</b><small>Samples, worksheets, and labs</small></span></div>
           <div><span className="principle-icon"><Icon name="route" /></span><span><b>Choose your path</b><small>Learn foundations then specialise</small></span></div>
           <div><span className="principle-icon"><Icon name="shield-check" /></span><span><b>Practise responsibly</b><small>Authorised environments only</small></span></div>
+        </section>
+
+        <StartHereGuide paths={learningPaths} onOpenPath={openLearningPath} />
+
+        <section className="quote-spotlight" aria-labelledby="quote-spotlight-title">
+          <div className="quote-spotlight-mark" aria-hidden="true">“</div>
+          <div className="quote-spotlight-copy">
+            <div className="quote-spotlight-kicker"><Icon name="spark" size={15} /> A NOTE FOR THE BEGINNING</div>
+            <h2 id="quote-spotlight-title">You do not need to learn <em>everything today.</em></h2>
+            <blockquote>Choose one path. Practise one safe lab. Save one piece of evidence that shows what you learned.</blockquote>
+          </div>
+          <div className="quote-spotlight-action">
+            <span>YOUR NEXT STEP</span>
+            <p>Start small and make your learning visible. That is how a portfolio begins.</p>
+            <div><button className="button button-primary" type="button" onClick={() => navigate('roadmap')}>Choose a path <Icon name="arrow-right" size={15}/></button><button className="button button-quiet" type="button" onClick={() => navigate('labs')}>Try a safe lab <Icon name="flask-conical" size={15}/></button></div>
+          </div>
+        </section>
+
+        <section className="home-career-toolkit">
+          <div className="home-career-toolkit-copy"><div className="section-kicker">NEW · LEARNING TO CAREER TOOLKIT</div><h2>From first concepts<br /><em>to your first application.</em></h2><p>Follow a beginner checklist, compare security roles, build an ATS-friendly resume, explore job-search platforms, and rehearse the application process with a fictional demo.</p><button className="button button-primary" onClick={() => navigate('career-hub')}>Explore the career journey <Icon name="arrow-right" size={16}/></button></div>
+          <div className="home-career-toolkit-cards"><button onClick={() => navigate('career-hub')}><Icon name="route" size={21}/><span><b>Career explorer</b><small>Red, Blue, Purple and specialist paths</small></span><Icon name="arrow-up-right" size={15}/></button><button onClick={() => navigate('resume-studio')}><Icon name="file-text" size={21}/><span><b>Free resume studio</b><small>Local-first editor and keyword review</small></span><Icon name="arrow-up-right" size={15}/></button><button onClick={() => navigate('job-hub')}><Icon name="briefcase-business" size={21}/><span><b>Job search hub</b><small>Curated external internship and junior-role links</small></span><Icon name="arrow-up-right" size={15}/></button><button onClick={() => navigate('application-demo')}><Icon name="clipboard" size={21}/><span><b>Application practice</b><small>Fictional demo and private tracker</small></span><Icon name="arrow-up-right" size={15}/></button><button onClick={() => navigate('tools')}><Icon name="terminal" size={21}/><span><b>Tools & movie cases</b><small>Real tool literacy, safe use, and film fact-checks</small></span><Icon name="arrow-up-right" size={15}/></button></div>
         </section>
 
         <section className="section-wrap home-paths">
@@ -473,7 +729,7 @@ function App() {
       {page === 'resources' && <section className="section-wrap resource-page">
         <PageHeading kicker="THE RESOURCE LIBRARY" title="Good resources." emphasis="All in one place." description="Explore official documentation, free learning, open-source tools, threat-hunting references, and authorised web-security training. We link to the original providers and explain access limits." />
         <div className="search-row"><label className="search-box"><Icon name="search" size={19} /><input ref={searchInputRef} value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search skills, tools, topics, providers…" aria-label="Search resources" /><kbd>Ctrl K</kbd></label><label className="select-wrap"><span className="sr-only">Access type</span><select value={cost} onChange={(e) => setCost(e.target.value)}><option>All access types</option><option>Free</option><option>Open source</option><option>Free tier / varies</option></select></label><label className="select-wrap"><span className="sr-only">Skill level</span><select value={level} onChange={(e) => setLevel(e.target.value)}><option>All levels</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></label></div>
-        <div className="category-row" role="group" aria-label="Filter by category">{categories.map((c) => <button key={c} className={`category-chip ${category === c ? 'chosen' : ''}`} onClick={() => setCategory(c)}>{c === 'Threat Hunting' ? <Icon name="radar" size={14} /> : c === 'Bug Bounty' ? <Icon name="bug" size={14} /> : c === 'Foundations' ? <Icon name="book-open" size={14} /> : c === 'Security Concepts' ? <Icon name="shield-check" size={14} /> : c === 'Detection Engineering' ? <Icon name="terminal" size={14} /> : c === 'SOC & SIEM' ? <Icon name="chart" size={14} /> : c === 'Hands-on Labs' ? <Icon name="target" size={14} /> : <Icon name="spark" size={14} />}{c}</button>)}</div>
+        <div className="category-row" role="group" aria-label="Filter by category">{categories.map((c) => <button key={c} className={`category-chip ${category === c ? 'chosen' : ''}`} onClick={() => setCategory(c)}>{c === 'Threat Hunting' ? <Icon name="radar" size={14} /> : c === 'Bug Bounty' ? <Icon name="bug" size={14} /> : c === 'Foundations' ? <Icon name="book-open" size={14} /> : c === 'Security Concepts' ? <Icon name="shield-check" size={14} /> : c === 'Detection Engineering' ? <Icon name="terminal" size={14} /> : c === 'SOC & SIEM' ? <Icon name="chart" size={14} /> : c === 'Hands-on Labs' ? <Icon name="target" size={14} /> : c === 'DFIR' ? <Icon name="clipboard" size={14} /> : c === 'Cloud Security' ? <Icon name="network" size={14} /> : c === 'GRC & Security Fundamentals' ? <Icon name="file-text" size={14} /> : <Icon name="spark" size={14} />}{c}</button>)}</div>
         <div className="results-caption"><span><b>{visibleResources.length}</b> resources to explore</span><span>External links open the original provider <Icon name="arrow-up-right" size={13} /></span></div>
         <div className="resource-grid">{visibleResources.map((resource) => <ResourceCard key={resource.id} resource={resource} />)}</div>
         {visibleResources.length === 0 && <div className="empty-state"><Icon name="search" size={28} /><h3>No matching resources yet</h3><p>Try another topic or remove a filter.</p><button className="button button-primary" onClick={clearFilters}>Clear filters</button></div>}
@@ -481,43 +737,87 @@ function App() {
       </section>}
 
       {page === 'roadmap' && <section className="section-wrap roadmap-section">
-        <PageHeading kicker="LEARNING PATHS" title="Choose the next" emphasis="skill to build." description="Start with the path that fits your interests. You can switch directions later; foundations make every specialisation easier." />
+        <PageHeading kicker="THE CYBERSECURITY DOMAIN MAP" title="Explore the complete cybersecurity" emphasis="landscape." description="Start with the 8 broad pillars, then choose from 10 career visions with guided modules, safe practice, portfolio evidence, and a capstone. You do not need to learn every area at once." />
+        <section className="domain-quick-map" aria-labelledby="domain-quick-map-title"><div className="domain-quick-map-heading"><div><div className="section-kicker">THE COMPLETE FIELD AT A GLANCE</div><h2 id="domain-quick-map-title">All <em>8 cybersecurity pillars</em></h2><p>These are eight OpenCyberPath career-exploration categories. Select any card to open the specialisations and beginner first steps below.</p></div><div className="domain-quick-map-stats"><strong>08</strong><span>PILLARS</span><i>↘</i><strong>10</strong><span>CAREER VISIONS</span></div></div><div className="domain-quick-card-grid">{cybersecurityPillars.map((pillar) => <button className={`domain-quick-card domain-tone-${pillar.tone}`} key={pillar.id} type="button" onClick={() => { const target = document.getElementById(`pillar-${pillar.id}`); if (target) { target.open = true; target.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }}><span className="domain-quick-number">{pillar.number}</span><span className="domain-quick-card-main"><b>{pillar.title}</b><small>{pillar.specializations.length} specialisations · {pillar.level}</small></span><Icon name="arrow-right" size={17}/></button>)}</div></section>
+        <div className="domain-framework-note"><div className="domain-framework-icon"><Icon name="book-open" size={20}/></div><div><b>A quick framework distinction</b><p>These eight pillars are OpenCyberPath’s practical career-exploration map. They are <strong>not</strong> the official (ISC)² CISSP exam-domain list. (ISC)² currently lists the following eight CISSP domains:</p><details className="isc2-domain-reference"><summary>View the official CISSP domain names <Icon name="arrow-right" size={13}/></summary><ol>{isc2CisspDomains.map((domain) => <li key={domain}>{domain}</li>)}</ol><ExternalLink href="https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline" className="domain-official-link">Check the current (ISC)² exam outline <Icon name="arrow-up-right" size={13}/></ExternalLink></details></div></div>
+        <label className="domain-search"><Icon name="search" size={17}/><input value={domainQuery} onChange={(event) => setDomainQuery(event.target.value)} placeholder="Search pillars or specialisations…" aria-label="Search cybersecurity pillars and specialisations"/><span>{visibleCybersecurityPillars.length} of 8 pillars</span></label>
+        <div className="domain-pillars-grid">{visibleCybersecurityPillars.map((pillar) => <details id={`pillar-${pillar.id}`} className={`domain-pillar domain-tone-${pillar.tone}`} key={pillar.id}>
+          <summary className="domain-pillar-summary"><span className="domain-pillar-icon"><Icon name={pillar.icon} size={21}/></span><span className="domain-pillar-heading"><small>PILLAR {pillar.number} · {pillar.level}</small><strong>{pillar.title}</strong><em>{pillar.summary}</em><span className="domain-pillar-count">{pillar.specializations.length} specialisations <Icon name="plus" size={13}/></span></span></summary>
+          <div className="domain-pillar-content"><div className="domain-specializations">{pillar.specializations.map((specialty) => <article className="domain-specialty" key={specialty.name}><h4>{specialty.name}</h4><p>{specialty.description}</p><div className="domain-first-step"><b>Beginner first step</b><span>{specialty.firstStep}</span></div></article>)}</div><div className="domain-related"><b>Related OpenCyberPath routes</b><p>{pillar.relatedPathNote}</p><div>{pillar.relatedPathIds.map((pathId) => { const related = learningPaths.find((path) => path.id === pathId); return related ? <button type="button" key={pathId} onClick={() => openLearningPath(pathId)}>{related.shortTitle} <Icon name="arrow-up-right" size={13}/></button> : null; })}</div></div></div>
+        </details>)}</div>
+        {visibleCybersecurityPillars.length === 0 && <div className="empty-state"><Icon name="search" size={26}/><h3>No matching pillar found</h3><p>Try another specialisation or clear your search.</p><button className="button button-primary" type="button" onClick={() => setDomainQuery('')}>Clear search</button></div>}
+        <div className="domain-career-path-heading"><div className="section-kicker">GUIDED LEARNING ROUTES</div><h2>Choose one of the <em>10 career visions.</em></h2><p>The eight pillars are a broad map of the field. Each vision provides sequenced learning modules, safe practice, evidence to keep, and a capstone. The paths overlap by design; choose one main route and add adjacent skills as you progress.</p></div>
         <div className="path-grid roadmap-path-grid">{learningPaths.map((path) => <PathCard key={path.id} path={path} onClick={openLearningPath} />)}</div>
-        <div className="section-heading roadmap-detail-heading"><div><div className="section-kicker">A SAMPLE SOC ROADMAP</div><h2>From first concepts<br /><em>to useful evidence.</em></h2></div><p>A suggested sequence, not a job guarantee. Learn one idea, practise it safely, and document the outcome before moving on.</p></div>
-        <div className="roadmap-list">{[
-          ['01','Build foundations','Networking, DNS, HTTP, Windows, Linux, processes, and permissions.','Explain a core concept in your own words.','book-open'],
-          ['02','Read and organise logs','Recognise timestamps, users, hosts, outcomes, and JSON/CSV fields.','Explain what a sample event does and does not prove.','file-text'],
-          ['03','Explore a SIEM workflow','Learn event collection, searches, filters, rules, dashboards, and alerts.','Trace a supplied sample from event to finding.','chart'],
-          ['04','Practise a hunt','Create a hypothesis, query sample events, compare baseline activity, and note uncertainty.','Write a concise, evidence-based hunting note.','radar'],
-          ['05','Evaluate a detection','Review false positives and missed cases, then publish reproducible metrics.','Explain the limits of a rule and its test data.','shield-check'],
-          ['06','Document a portfolio project','Show the goal, setup, evidence, tests, result, limitations, and lessons learned.','Demonstrate what you actually built and understood.','terminal'],
-        ].map(([number,title,desc,outcome,icon]) => <article className="roadmap-stage" key={number}><span className="stage-icon"><Icon name={icon} size={20} /></span><div className="stage-main"><div className="stage-number">STAGE {number}</div><h3>{title}</h3><p>{desc}</p><span className="stage-outcome"><b>Milestone:</b> {outcome}</span></div><Icon name="arrow-up-right" className="stage-arrow" size={19} /></article>)}</div>
-        <div className="roadmap-footer"><Icon name="lightbulb" size={21} /><p><b>Keep the evidence honest.</b> A completed roadmap is not proof of professional experience or a job guarantee. Save your notes, disclose limitations, and share a portfolio that matches what you actually did.</p></div>
-        <button className="button button-primary" onClick={() => navigate('labs')}>Choose a lab to practise <Icon name="arrow-right" size={16} /></button>
+        <div className="path-model-heading"><div><div className="section-kicker">ONE CONSISTENT LEARNING MODEL</div><h2>Every path ends with <em>evidence, not just a checklist.</em></h2></div><p>Each roadmap uses the same module contract. The subject, diagram, resources, worksheets, and capstone change to fit the path.</p></div>
+        <div className="path-model-grid">
+          {[['01','Understand','Learn the concept, vocabulary, and prerequisites.','book-open'],['02','Practise safely','Use supplied samples, local exercises, or the provider’s authorised training lab.','target'],['03','Save evidence','Keep notes, steps, outputs, assumptions, and limitations.','file-text'],['04','Explain the result','Describe what you learned, what remains unknown, and the next useful step.','check-circle']].map(([number,title,description,icon]) => <article className="path-model-card" key={number}><span><Icon name={icon} size={20}/></span><small>STEP {number}</small><h3>{title}</h3><p>{description}</p></article>)}
+        </div>
+        <div className="roadmap-footer"><Icon name="lightbulb" size={21}/><p><b>Keep the claims honest.</b> The time estimates are suggested study pacing, not guarantees. A roadmap or completed lab does not guarantee a job, client, certification, or bounty reward. Publish work you can reproduce and explain.</p></div>
       </section>}
+
+      {page === 'path-detail' && activeLearningPath && <section className={`section-wrap career-detail career-tone-${activeLearningPath.tone}`}>
+        <div className="career-back-row"><button className="back-to-paths" onClick={() => navigate('roadmap')}><Icon name="arrow-right" size={15} /> All 10 career visions</button><span>{activeLearningPath.number} / 10 CAREER VISIONS</span></div>
+        <header className="career-detail-hero">
+          <div className="career-detail-copy">
+            <div className="career-detail-kicker"><span className="career-detail-icon"><Icon name={activeLearningPath.icon} size={20}/></span><span>{activeLearningPath.badge}</span></div>
+            <h1>{activeLearningPath.title}</h1>
+            <p className="career-detail-desc">{activeLearningPath.desc}</p>
+            <div className="career-detail-meta"><span>{activeLearningPath.level}</span><span>{activeLearningPath.pace}</span><span>{activeLearningPath.modules.length} guided modules</span></div>
+            <div className="career-prereq"><b>Before you start</b><p>{activeLearningPath.prerequisites}</p></div>
+            <div className="career-hero-actions"><button className="button button-primary" onClick={() => openPathLabs(activeLearningPath)}>Open matching labs <Icon name="arrow-right" size={16}/></button><button className="button button-quiet" onClick={() => openPathAcademy(activeLearningPath.id)}>OS + Networks for this path <Icon name="network" size={15}/></button><button className="button button-quiet" onClick={() => shareSite()}><Icon name="share" size={15}/> Share OpenCyberPath</button></div>
+          </div>
+          <div className="career-detail-art"><img src={activeLearningPath.image} alt={`${activeLearningPath.title} concept illustration`} loading="lazy" onError={handleArtworkError}/><div className="career-art-label"><Icon name="target" size={16}/><span><small>PORTFOLIO OUTCOME</small><b>{activeLearningPath.outcome}</b></span></div></div>
+        </header>
+        <div className="career-path-principle"><Icon name="shield-check" size={19}/><p><b>Safe, evidence-led practice.</b> Use the sample data included with OpenCyberPath, local labs, or explicitly authorised provider environments. Do not test arbitrary public systems or put real sensitive data into practice reports.</p></div>
+        <div className="career-learning-progress" aria-live="polite"><div><span className="section-kicker">YOUR LOCAL LEARNING CHECKPOINTS</span><b>{activeLearningPath.modules.filter((item) => MODULE_CHECKPOINT_FIELDS.every((field) => moduleProgress[moduleProgressKey(activeLearningPath.id, item.title)]?.[field] === true)).length} of {activeLearningPath.modules.length} modules self-checked</b><p>Checkpoints are saved in this browser only. They reflect your own progress and are not externally verified.</p></div><div className="career-learning-progress-track" role="progressbar" aria-label="Completed self-checks for this path" aria-valuemin={0} aria-valuemax={activeLearningPath.modules.length} aria-valuenow={activeLearningPath.modules.filter((item) => MODULE_CHECKPOINT_FIELDS.every((field) => moduleProgress[moduleProgressKey(activeLearningPath.id, item.title)]?.[field] === true)).length}><span style={{ width: `${activeLearningPath.modules.length ? (activeLearningPath.modules.filter((item) => MODULE_CHECKPOINT_FIELDS.every((field) => moduleProgress[moduleProgressKey(activeLearningPath.id, item.title)]?.[field] === true)).length / activeLearningPath.modules.length) * 100 : 0}%` }} /></div></div>
+        <div className="career-section-header"><div><div className="section-kicker">THE ROADMAP</div><h2>Learn it in <em>small, connected steps.</em></h2></div><p>Each module tells you what to learn, what to try, and what evidence to keep. Work at your own pace and skip nothing you need for safe practice.</p></div>
+        <div className="career-module-list">{activeLearningPath.modules.map((module, index) => <LearningModuleCard key={module.title} pathId={activeLearningPath.id} module={module} index={index} progress={moduleProgress[moduleProgressKey(activeLearningPath.id, module.title)] || {}} onCheckpointChange={updateModuleCheckpoint} />)}</div>
+        <Suspense fallback={<p className="section-loading">Loading career-path video lessons...</p>}>
+          <CareerVideoLibrary pathId={activeLearningPath.id} pathTitle={activeLearningPath.shortTitle || activeLearningPath.title} />
+        </Suspense>
+                <Suspense fallback={<div className="career-lab-directory-loading">Loading external labs for this path...</div>}>
+          <CareerPathLabDirectory path={activeLearningPath} />
+        </Suspense>
+        <section className="career-capstone"><div className="career-capstone-mark"><Icon name="graduation" size={27}/></div><div className="career-capstone-copy"><div className="section-kicker">CAPSTONE / PORTFOLIO EVIDENCE</div><h2>{activeLearningPath.capstoneTitle}</h2><p>{activeLearningPath.capstone}</p><div className="career-deliverables">{activeLearningPath.deliverables.map((item) => <span key={item}><Icon name="check-circle" size={14}/>{item}</span>)}</div></div></section>
+        <section className="career-related-section"><div className="career-section-header"><div><div className="section-kicker">TRUSTED STARTING POINTS</div><h2>Resources for <em>this path.</em></h2></div><p>These cards link to their original providers. Access labels and lab requirements can change, so check current terms and costs before signing up.</p></div>
+          <div className="resource-grid career-resource-grid">{activePathResources.map((resource) => <ResourceCard key={resource.id} resource={resource}/>)}</div>
+          {activePathResources.length===0 && <div className="empty-state"><p>Resource links for this path are being curated. Start with the modules above and browse the full resource library.</p><button className="button button-primary" onClick={() => navigate('resources')}>Browse resources</button></div>}
+        </section>
+        <section className="career-related-section"><div className="career-section-header"><div><div className="section-kicker">PRACTICE & WORKSHEETS</div><h2>Build something <em>you can explain.</em></h2></div><p>Use these OpenCyberPath handouts and sample exercises to turn reading into reproducible practice.</p></div>
+          <div className="lab-grid career-lab-grid">{activePathLabs.map((lab) => <LabCard key={lab.id} lab={lab}/>)}</div>
+          {activePathLabs.length===0 && <div className="empty-state"><p>There are no dedicated handouts yet for this path. Browse the complete lab library for related practice material.</p><button className="button button-primary" onClick={() => navigate('labs')}>Browse labs & notes</button></div>}
+        </section>
+        <section className="career-next-section"><div className="career-section-header"><div><div className="section-kicker">WHERE TO GO NEXT</div><h2>Related <em>career paths.</em></h2></div><p>Specialisations overlap. Continue with a related path once you can explain the current capstone and the evidence behind it.</p></div><div className="path-grid career-next-grid">{suggestedNextPaths.map((path) => <PathCard key={path.id} path={path} onClick={openLearningPath}/>)}</div></section>
+      </section>}
+
+      {page === 'career-hub' && <Suspense fallback={<p className='section-loading'>Loading career hub...</p>}><CareerHub Icon={Icon} onOpenPath={openLearningPath} onOpenResume={() => navigate('resume-studio')} onOpenJobs={() => navigate('job-hub')} onOpenDemo={() => navigate('application-demo')} /></Suspense>}
+      {page === 'resume-studio' && <Suspense fallback={<p className='section-loading'>Loading resume studio...</p>}><ResumeStudio Icon={Icon} onOpenJobs={() => navigate('job-hub')} /></Suspense>}
+      {page === 'job-hub' && <Suspense fallback={<p className='section-loading'>Loading job hub...</p>}><JobsHub Icon={Icon} onOpenResume={() => navigate('resume-studio')} onOpenDemo={() => navigate('application-demo')} onOpenTracker={() => { navigate('application-demo'); window.setTimeout(() => document.getElementById('application-tracker')?.scrollIntoView({ behavior: 'smooth' }), 180); }} /></Suspense>}
+      {page === 'application-demo' && <Suspense fallback={<p className='section-loading'>Loading application lab...</p>}><ApplicationLab Icon={Icon} onOpenResume={() => navigate('resume-studio')} onOpenJobs={() => navigate('job-hub')} /></Suspense>}
+      {page === 'tools' && <Suspense fallback={<p className='section-loading'>Loading security tools...</p>}><ToolsThreats Icon={Icon} /></Suspense>}
+      {page === 'systems-academy' && <Suspense fallback={<p className='section-loading'>Loading OS and networks academy...</p>}><SystemsAcademy Icon={Icon} careerPaths={learningPaths} initialPathId={academyPathId} onOpenLabs={() => navigate('labs')} /></Suspense>}
 
       {page === 'labs' && <section className="section-wrap labs-section">
         <PageHeading kicker="PRACTISE AT YOUR OWN PACE" title="Notes, labs &" emphasis="field guides." description="Start with a notebook, use supplied sample data, and practise in a local or explicitly authorised training environment. Each guide is available as a PDF and editable DOCX." />
-        <div className="notes-banner"><img src="/images/learning/handwritten-notes-study.svg" alt="Notebook-style SOC triage notes with event, context, evidence, and decision steps"/><div className="notes-banner-copy"><div className="section-kicker">NOTEBOOK MODE</div><h3>Notes that feel easier to revise.</h3><p>Handwriting-inspired typeset notes, crisp topic icons, checklists, practice sheets, and quick references. You do not need a full SIEM installation to begin learning.</p></div><span className="notes-format"><Icon name="notebook-pen" size={18} /> PDF + DOCX</span></div>
+        <div className="notes-banner"><img src="/images/learning/handwritten-notes-study.svg" alt="Notebook-style SOC triage notes with event, context, evidence, and decision steps" onError={handleArtworkError}/><div className="notes-banner-copy"><div className="section-kicker">NOTEBOOK MODE</div><h3>Notes that feel easier to revise.</h3><p>Handwritten-script notebook pages on ruled paper, plain-language definitions, worked examples, checklists, practice questions, and answer checks. Start with fictional records; you do not need a full SIEM installation to begin learning.</p></div><span className="notes-format"><Icon name="notebook-pen" size={18} /> PDF + DOCX</span></div>
+        <Suspense fallback={<p className="section-loading">Loading interactive lab workbench...</p>}><InteractiveLabWorkbench /></Suspense>
         <div className="lab-filter-panel"><div><div className="section-kicker">LAB & NOTE LIBRARY</div><p>Filter by experience level or learning topic.</p></div><div className="lab-filter-controls"><label className="select-wrap"><span className="sr-only">Filter labs by topic</span><select value={labCategory} onChange={(e) => setLabCategory(e.target.value)}><option>All topics</option>{[...new Set(labs.map((lab) => lab.category))].map((topic) => <option key={topic}>{topic}</option>)}</select></label><label className="select-wrap"><span className="sr-only">Filter labs by level</span><select value={labLevel} onChange={(e) => setLabLevel(e.target.value)}><option>All labs</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></label></div></div>
         <div className="lab-results-caption">Showing <b>{visibleLabs.length}</b> learning items <span>•</span> every guide has PDF + DOCX</div>
         <div className="lab-grid">{visibleLabs.map((lab) => <LabCard key={lab.id} lab={lab} />)}</div>
         {visibleLabs.length === 0 && <div className="empty-state"><Icon name="search" size={26} /><h3>No labs in this filter</h3><button className="button button-primary" onClick={() => { setLabCategory('All topics'); setLabLevel('All labs'); }}>Show all labs</button></div>}
-        <div className="section-heading video-heading"><div><div className="section-kicker">WATCH & LEARN</div><h2>Curated video<br /><em>walkthroughs.</em></h2></div><p>Videos support concepts and demonstrations. Installation details can go out of date, so use current official documentation for version-specific steps.</p></div>
-        <div className="video-filter-row"><div className="video-filter-chips">{['All videos','SOC & SIEM','Lab environment','SIEM & cloud','Beginner','Intermediate'].map((item) => <button key={item} className={`category-chip ${videoTopic === item ? 'chosen' : ''}`} onClick={() => setVideoTopic(item)}>{item}</button>)}</div><span className="account-note">Links open on YouTube or official docs</span></div>
-        <div className="video-list">{visibleVideos.map((video) => <article className={`video-card video-${slugify(video.topic)} video-level-${slugify(video.level)}`} key={video.id}><div className="video-play"><Icon name="book-open" size={22} /></div><div className="video-content"><div className="video-meta"><span>{video.level}</span><span>{video.creator}</span><span>{video.type}</span></div><h3>{video.title}</h3><p>{video.note}</p><div className="video-actions"><ExternalLink className="card-link" href={video.url}>Watch video <Icon name="arrow-up-right" size={15} /></ExternalLink><ExternalLink className="docs-link" href={video.officialDocs}>Official docs <Icon name="arrow-up-right" size={14} /></ExternalLink></div></div></article>)}{visibleVideos.length === 0 && <div className="empty-state"><h3>No videos match that filter</h3><button className="button button-primary" onClick={() => setVideoTopic('All videos')}>Show all videos</button></div>}</div>
+        <Suspense fallback={<p className="section-loading">Loading curated concept videos...</p>}><CuratedVideosLibrary /></Suspense>
         <div className="verification-note"><Icon name="alert-triangle" size={19} /><p><b>Practice safely.</b> Threat-hunting data shipped here is synthetic. Bug-bounty activities must stay inside an explicitly authorised scope or the designated training lab. Do not test random public systems.</p></div>
       </section>}
 
       {page === 'concepts' && <section className="section-wrap concepts-section">
-        <PageHeading kicker="SECURITY IN PLAIN LANGUAGE" title="Understand the cause." emphasis="Learn the defence." description="Security words can sound intimidating. These simple examples explain common patterns, why they happen, what may be observed, and which controls help reduce risk." />
+        <PageHeading kicker="SECURITY IN PLAIN LANGUAGE" title="Understand the cause." emphasis="Learn the defence." description="Explore 16 illustrated security basics. Each card explains the cause, a real-world example, defensive controls, and a safe next step for beginners." />
         <div className="concept-intro"><Icon name="book-open" size={24} /><div><b>Think in patterns, not movie scenes.</b><p>Each topic is a starting point for learning. An indicator is not proof by itself; use evidence and authorised practice.</p></div><a className="download-button" href="/notes/common-attack-patterns-beginner-guide.pdf" download><Icon name="download" size={15} /> Full guide</a></div>
-        <div className="attack-grid concept-grid">{attackPatterns.map((attack) => <article className={`attack-card attack-${slugify(attack.title)}`} key={attack.title}><div className="attack-illustration"><img src={attack.image} alt="" loading="lazy"/><div className="attack-art-shade"/><span className="attack-icon"><Icon name={attack.icon === 'code' ? 'terminal' : attack.icon} size={22} /></span></div><h3>{attack.title}</h3><p>{attack.short}</p><div className="concept-section"><small>WHY IT HAPPENS</small><p>{attack.cause}</p></div><div className="concept-section"><small>EVERYDAY EXAMPLE</small><p>{attack.example}</p></div><div className="attack-defense"><Icon name="shield-check" size={17} /><span>{attack.defend}</span></div></article>)}</div>
+        <div className="attack-grid concept-grid">{attackPatterns.map((attack) => <article className={`attack-card attack-${slugify(attack.title)}`} key={attack.title}><div className="attack-illustration"><img src={attack.image} alt={`${attack.title} concept illustration`} loading="lazy" onError={handleArtworkError}/><div className="attack-art-shade"/><span className="attack-icon"><Icon name={attack.icon === 'code' ? 'terminal' : attack.icon} size={22} /></span></div><div className="concept-identifiers"><span>{attack.family}</span><span>{attack.level}</span></div><h3>{attack.title}</h3><p>{attack.short}</p><div className="concept-section"><small>WHY IT HAPPENS</small><p>{attack.cause}</p></div><div className="concept-section"><small>EVERYDAY EXAMPLE</small><p>{attack.example}</p></div><div className="concept-next-step"><small>TRY THIS NEXT</small><p>{attack.nextStep}</p></div><div className="attack-defense"><Icon name="shield-check" size={17} /><span>{attack.defend}</span></div></article>)}</div>
         <div className="verification-note"><Icon name="alert-triangle" size={19} /><p><b>For awareness and defence.</b> These examples are intentionally high level. For hands-on learning, use the official training environments listed in the resource directory and follow their current rules.</p></div>
       </section>}
     </main>
 
-    <footer className="site-footer"><div className="footer-top"><Logo onClick={navigate} /><p>A learner-built guide to resources that already exist. Learn openly. Practise responsibly. Help the next learner.</p><div className="footer-links"><button onClick={() => navigate('resources')}>Resources</button><button onClick={() => navigate('roadmap')}>Learning paths</button><button onClick={() => navigate('labs')}>Labs & notes</button><button onClick={() => navigate('concepts')}>Attack basics</button><ExternalLink href="https://github.com/hemanthkadiyala01-sentinel/open-cyber-path">Contribute <Icon name="arrow-up-right" size={13} /></ExternalLink></div></div><div className="copyright"><span>Independent community learning project</span><span>External resources belong to their providers · Verify current terms · No job or reward guarantees</span></div></footer>
+    <footer className="site-footer"><div className="footer-top"><Logo onClick={navigate} /><p>A learner-built guide to resources that already exist. Learn openly. Practise responsibly. Help the next learner.</p><div className="footer-links"><button onClick={() => navigate('resources')}>Resources</button><button onClick={() => navigate('roadmap')}>Learning paths</button><button onClick={() => navigate('career-hub')}>Career hub</button><button onClick={() => navigate('resume-studio')}>Resume studio</button><button onClick={() => navigate('job-hub')}>Jobs</button><button onClick={() => navigate('labs')}>Labs & notes</button><button onClick={() => navigate('concepts')}>Attack basics</button><button onClick={() => navigate('tools')}>Tools & film case studies</button><ExternalLink href="https://github.com/hemanthkadiyala01-sentinel/open-cyber-path">Contribute <Icon name="arrow-up-right" size={13} /></ExternalLink></div></div><div className="copyright"><span>Independent community learning project</span><span>External resources belong to their providers · Verify current terms · No job or reward guarantees</span></div></footer>
   </div>;
 }
 

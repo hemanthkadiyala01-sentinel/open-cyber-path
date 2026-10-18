@@ -41,3 +41,7 @@ The following original AI-assisted illustrations were created for OpenCyberPath 
 New conceptual diagrams: `learning/hunt-sample-timeline.svg` and `learning/http-exchange.svg`. Their labels describe example workflows; the bundled CSV remains the source of truth for the actual sample rows.
 
 The notebook SVG uses project-authored readable labels instead of generated pseudo-text. It teaches a simple evidence workflow; always rely on source logs and the linked handouts for the full lesson.
+
+## Original OpenCyberPath concept artwork (2026-10-17)
+
+The `career-*.webp` files are cropped panels from an original AI-generated cybersecurity concept illustration created for OpenCyberPath. They are illustrative artwork, not screenshots of a real security product, real telemetry, or a real incident. They are used to differentiate the ten learning paths and must not be interpreted as real-world evidence.

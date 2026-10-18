@@ -1,0 +1,87 @@
+name: Weekly resource maintenance
+
+on:
+  schedule:
+    # Mondays at 09:00 India Standard Time (03:30 UTC).
+    - cron: '30 3 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-resource-maintenance-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  maintain:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Check out default branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: website/package-lock.json
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install website dependencies
+        working-directory: website
+        run: npm ci
+
+      - name: Refresh the resource link-health snapshot
+        run: node website/scripts/refresh-resource-health.mjs
+
+      - name: Discover new learning resources and YouTube videos
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python scripts/weekly_resource_discovery.py
+
+      - name: Validate static learning data
+        working-directory: website
+        run: npm run check:static
+
+      - name: Verify production build
+        working-directory: website
+        run: npm run build
+
+      - name: Run repository quality checks
+        run: |
+          python scripts/quality_checks.py
+          python -m unittest discover -s tests -v
+
+      - name: Commit refreshed site health and weekly review report
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add website/src/data/resourceHealth.generated.json website/reports/weekly-resource-review.json website/reports/weekly-resource-review.md
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: weekly resource health and discovery refresh"
+          git push origin "HEAD:${DEFAULT_BRANCH}"
+
+      - name: Upload weekly review artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: open-cyber-path-weekly-resource-review
+          path: |
+            website/reports/weekly-resource-review.md
+            website/reports/weekly-resource-review.json
+          if-no-files-found: warn
+          retention-days: 60
