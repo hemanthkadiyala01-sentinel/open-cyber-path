@@ -6,7 +6,7 @@
   "summary": {
     "checked": 65,
     "reachable": 63,
-    "needsReview": 11,
+    "needsReview": 5,
     "alertsThisRun": 7
   },
   "sources": [
@@ -524,13 +524,14 @@
       "etag": null,
       "lastModified": null,
       "contentFingerprint": "b9186d6075559766f35a267bfaf20fd23d2fcda80092ab4021c818b1e14a053c",
-      "reviewedFingerprint": null,
-      "reviewRequired": true,
-      "changedThisRun": true,
+      "reviewedFingerprint": "b9186d6075559766f35a267bfaf20fd23d2fcda80092ab4021c818b1e14a053c",
+      "reviewRequired": false,
+      "changedThisRun": false,
       "alertThisRun": true,
       "error": null,
       "lastStateChangeAt": "2026-10-18T20:44:33.582Z",
-      "note": "Public page fingerprint changed; verify exam details manually."
+      "note": "A reviewer acknowledged this page fingerprint; booking availability still requires checking the official portal.",
+      "reviewedAt": "2026-10-18T20:51:13.893Z"
     },
     {
       "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccnacbr.html",
@@ -542,13 +543,14 @@
       "etag": null,
       "lastModified": null,
       "contentFingerprint": "000ed95cad025dda6ab3ebc842121b09ce031bb2d4f052d89b36d7c9d0a283b2",
-      "reviewedFingerprint": null,
-      "reviewRequired": true,
-      "changedThisRun": true,
+      "reviewedFingerprint": "000ed95cad025dda6ab3ebc842121b09ce031bb2d4f052d89b36d7c9d0a283b2",
+      "reviewRequired": false,
+      "changedThisRun": false,
       "alertThisRun": true,
       "error": null,
       "lastStateChangeAt": "2026-10-18T20:44:33.640Z",
-      "note": "Public page fingerprint changed; verify exam details manually."
+      "note": "A reviewer acknowledged this page fingerprint; booking availability still requires checking the official portal.",
+      "reviewedAt": "2026-10-18T20:51:15.093Z"
     },
     {
       "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-cybersecurity.html",
@@ -560,13 +562,14 @@
       "etag": null,
       "lastModified": null,
       "contentFingerprint": "8ff89d8e78b39a3f615d9f0c64dc5806ef609785667d08402db3b566fc8de55c",
-      "reviewedFingerprint": null,
-      "reviewRequired": true,
-      "changedThisRun": true,
+      "reviewedFingerprint": "8ff89d8e78b39a3f615d9f0c64dc5806ef609785667d08402db3b566fc8de55c",
+      "reviewRequired": false,
+      "changedThisRun": false,
       "alertThisRun": true,
       "error": null,
       "lastStateChangeAt": "2026-10-18T20:44:33.696Z",
-      "note": "Public page fingerprint changed; verify exam details manually."
+      "note": "A reviewer acknowledged this page fingerprint; booking availability still requires checking the official portal.",
+      "reviewedAt": "2026-10-18T20:51:16.628Z"
     },
     {
       "url": "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/",
@@ -596,13 +599,14 @@
       "etag": null,
       "lastModified": null,
       "contentFingerprint": "afd77ce218859e79a68e44a4470d0b0f4263f0d92ebdabb4316522a2b2fe97f8",
-      "reviewedFingerprint": null,
-      "reviewRequired": true,
+      "reviewedFingerprint": "afd77ce218859e79a68e44a4470d0b0f4263f0d92ebdabb4316522a2b2fe97f8",
+      "reviewRequired": false,
       "changedThisRun": false,
       "alertThisRun": false,
       "error": null,
       "lastStateChangeAt": "2026-10-18T20:38:39.369Z",
-      "note": "Public page fingerprint changed; verify exam details manually."
+      "note": "A reviewer acknowledged this page fingerprint; booking availability still requires checking the official portal.",
+      "reviewedAt": "2026-10-18T20:51:17.948Z"
     },
     {
       "url": "https://www.coursera.org/professional-certificates/google-cybersecurity",
@@ -614,13 +618,14 @@
       "etag": "W/\"103566-CQ7RH41JIkv/exYoBizCgY/jOwY\"",
       "lastModified": null,
       "contentFingerprint": "b3dfe9ac6d35973ec9f8a9967ff1f0ad865a1480f4c08fb7ae6321fca87b61cc",
-      "reviewedFingerprint": null,
-      "reviewRequired": true,
-      "changedThisRun": true,
+      "reviewedFingerprint": "b3dfe9ac6d35973ec9f8a9967ff1f0ad865a1480f4c08fb7ae6321fca87b61cc",
+      "reviewRequired": false,
+      "changedThisRun": false,
       "alertThisRun": true,
       "error": null,
       "lastStateChangeAt": "2026-10-18T20:44:33.750Z",
-      "note": "Public page fingerprint changed; verify exam details manually."
+      "note": "A reviewer acknowledged this page fingerprint; booking availability still requires checking the official portal.",
+      "reviewedAt": "2026-10-18T20:51:19.048Z"
     },
     {
       "url": "https://www.credly.com/org/cisco/badge/cybersecurity-essentials",
@@ -668,13 +673,14 @@
       "etag": null,
       "lastModified": "Sun, 18 Oct 2026 19:30:57 GMT",
       "contentFingerprint": "6561431472e0a1d82421838590c2b08a843fcaea170d8c700249ebe3062534f4",
-      "reviewedFingerprint": null,
-      "reviewRequired": true,
+      "reviewedFingerprint": "6561431472e0a1d82421838590c2b08a843fcaea170d8c700249ebe3062534f4",
+      "reviewRequired": false,
       "changedThisRun": false,
       "alertThisRun": false,
       "error": null,
       "lastStateChangeAt": "2026-10-18T20:38:40.287Z",
-      "note": "Public page fingerprint changed; verify exam details manually."
+      "note": "A reviewer acknowledged this page fingerprint; booking availability still requires checking the official portal.",
+      "reviewedAt": "2026-10-18T20:51:20.076Z"
     },
     {
       "url": "https://www.fortinet.com/training/cybersecurity-professionals",
