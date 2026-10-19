@@ -1,15 +1,15 @@
 # OpenCyberPath Weekly Resource Review
 
-Generated: 2026-10-18T13:50:21.052404+00:00
+Generated: 2026-10-19T04:04:40.729107+00:00
 
 > This is a discovery and link-health report, not an auto-approved curriculum list. Newly discovered items are not inserted into the learner-facing catalogue automatically. Check learning value, source credibility, free/access terms, direct URL, content freshness, and safety/authorization notes before adding them.
 
 ## Existing catalogue link health
 
 - Unique URLs checked: **242**
-- Responded to HTTP request: **209**
+- Responded to HTTP request: **190**
 - Possible broken links (404/410): **0**
-- Manual review required (blocked/transient/unknown): **33**
+- Manual review required (blocked/transient/unknown): **52**
 
 A responding URL is not proof that the content is accurate, relevant, free, or still the intended resource. A blocked or transient response is not automatically considered broken.
 
@@ -21,13 +21,32 @@ No items in this category for this run.
 
 - [Web page-source inspection (lab for these notes)](https://bvtech.org/cyber-range/challenges/wargames/level1) — HTTP 403; access restriction or automated-request blocking may apply (HTTP 403)
 - [Cisco IOS CLI Simulator (lab for these notes)](https://cisco-sim.networkershome.com/) — Could not confirm reachability (TypeError); manual review recommended
-- [Zeek in Action: monitoring wireless networks — official documentation](https://docs.zeek.org/) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
-- [How to Monitor Network Traffic with TShark, Zeek & Suricata — official documentation](https://docs.zeek.org/en/current/) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
-- [Zeek Network Monitoring Tutorial](https://docs.zeek.org/en/current/tutorial/index.html) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
+- [Incident timeline and reporting (lab for these notes)](https://cyberdefenders.org/blueteam-ctf-challenges/gh0stnet-intrusion/) — Timed out after 10000 ms; manual review recommended
+- [Source-based threat intelligence (lab for these notes)](https://cyberdefenders.org/blueteam-ctf-challenges/intel101/) — Timed out after 10000 ms; manual review recommended
+- [Network traffic analysis (lab for these notes)](https://cyberdefenders.org/blueteam-ctf-challenges/packetdetective/) — Timed out after 10000 ms; manual review recommended
+- [External lab companion link](https://cyberdefenders.org/blueteam-ctf-challenges/resourcepacks/) — Timed out after 10000 ms; manual review recommended
+- [External lab companion link](https://cyberdefenders.org/blueteam-ctf-challenges/sigma-101/) — Timed out after 10000 ms; manual review recommended
+- [External lab companion link](https://cyberdefenders.org/blueteam-ctf-challenges/t1110003/) — Timed out after 10000 ms; manual review recommended
+- [YARA-based malware analysis (lab for these notes)](https://cyberdefenders.org/blueteam-ctf-challenges/yara-wizards/) — Timed out after 10000 ms; manual review recommended
+- [Narrow detection-rule practice (lab for these notes)](https://cyberdefenders.org/blueteam-ctf-challenges/yara101/) — Timed out after 10000 ms; manual review recommended
+- [What is AWS IAM? Roles, policies and use cases — official documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) — Timed out after 10000 ms; manual review recommended
+- [Bugcrowd: review a program brief](https://docs.bugcrowd.com/researchers/engagement-management/details/) — Timed out after 10000 ms; manual review recommended
+- [DevSecOps Pipeline: SAST and Container Image Scanning — official documentation](https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions) — Timed out after 10000 ms; manual review recommended
+- [What is GitHub Code Security? — official documentation](https://docs.github.com/en/code-security) — Timed out after 10000 ms; manual review recommended
+- [Reproducible finding report (lab for these notes)](https://docs.hackerone.com/en/articles/8475116-quality-reports) — Timed out after 10000 ms; manual review recommended
+- [HackerOne: understanding scope](https://docs.hackerone.com/en/articles/8494552-defining-scope) — Timed out after 10000 ms; manual review recommended
+- [REMnux: Malware Analysis Toolkit](https://docs.remnux.org/) — Timed out after 10000 ms; manual review recommended
+- [Zeek in Action: monitoring wireless networks — official documentation](https://docs.zeek.org/) — Timed out after 10000 ms; manual review recommended
 - [Network Packet Flow Simulator (lab for these notes)](https://labs.networkershome.com/) — Could not confirm reachability (TypeError); manual review recommended
 - [Cryptographic clue analysis (lab for these notes)](https://nightjar-ctf.onrender.com/) — HTTP 503; transient errors, bot protection, or access rules may apply (HTTP 503)
 - [Nmap: Network Discovery & Auditing Guide](https://nmap.org/book/) — Could not confirm reachability (TypeError); manual review recommended
 - [DNS and network-log correlation (lab for these notes)](https://operation-ghost-route.onrender.com/) — HTTP 503; transient errors, bot protection, or access rules may apply (HTTP 503)
+- [OverTheWire Bandit](https://overthewire.org/wargames/bandit/) — Timed out after 10000 ms; manual review recommended
+- [OWASP Application Security Verification Standard](https://owasp.org/projects/asvs) — Timed out after 10000 ms; manual review recommended
+- [IoT security testing (lab for these notes)](https://owasp.org/projects/iot-security-testing-guide) — Timed out after 10000 ms; manual review recommended
+- [OWASP Juice Shop](https://owasp.org/projects/juice-shop) — Timed out after 10000 ms; manual review recommended
+- [Pipeline-control mapping (lab for these notes)](https://owasp.org/www-project-devsecops-guideline/) — Timed out after 10000 ms; manual review recommended
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/) — Timed out after 10000 ms; manual review recommended
 - [Azure cloud defence practice (lab for these notes)](https://tryhackme.com/path/outline/azuresecurity) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
 - [Beginner malware-analysis and defensive-tooling practice (lab for these notes)](https://tryhackme.com/path/outline/cybersecurity101) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
 - [Penetration-testing learning path (lab for these notes)](https://tryhackme.com/path/outline/jrpenetrationtester) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
@@ -40,18 +59,6 @@ No items in this category for this run.
 - [External lab companion link](https://tryhackme.com/room/linuxfundamentalspart1) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
 - [External lab companion link](https://tryhackme.com/room/linuxloggingforsoc) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
 - [External lab companion link](https://tryhackme.com/room/loganalysiswithsiem) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
-- [Timeline-based threat hunting (lab for these notes)](https://tryhackme.com/room/loglesshunt) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
-- [External lab companion link](https://tryhackme.com/room/splunkexploringspl) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
-- [External lab companion link](https://tryhackme.com/room/windowscommandline) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
-- [External lab companion link](https://tryhackme.com/room/windowseventlogs) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
-- [Authentication-log triage (lab for these notes)](https://tryhackme.com/room/windowsloggingforsoc) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
-- [External lab companion link](https://tryhackme.com/room/windowspowershell) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
-- [Endpoint-artifact review (lab for these notes)](https://tryhackme.com/room/windowsthreatdetection1) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
-- [External lab companion link](https://tryhackme.com/room/wiresharkthebasics) — HTTP 429; access restriction or automated-request blocking may apply (HTTP 429)
-- [But is it malware? — Malware analysis and detection techniques](https://www.classcentral.com/course/youtube-but-is-it-malware-431619) — HTTP 403; access restriction or automated-request blocking may apply (HTTP 403)
-- [Detecting malicious files with YARA rules as they traverse a network](https://www.classcentral.com/course/youtube-detecting-malicious-files-with-yara-rules-as-they-traverse-the-network-163574) — HTTP 403; access restriction or automated-request blocking may apply (HTTP 403)
-- [DNS explained: how name resolution works — official documentation](https://www.cloudflare.com/learning/dns/what-is-dns/) — HTTP 403; access restriction or automated-request blocking may apply (HTTP 403)
-- [Governance and risk learning exercise (lab for these notes)](https://www.srxlabs.com/learning/) — HTTP 403; access restriction or automated-request blocking may apply (HTTP 403)
 
 ## New publisher-feed candidates
 
@@ -73,8 +80,6 @@ No items in this category for this run.
   - I'm delighted to introduce Alex, my fellow swigger who I've collaborated with in the past with tools like DOM Invader. He showed me that it's possible to exfiltrate larger tokens than demonstrated in
 - **[​​Secure what’s next: Your guide to Microsoft Security at Microsoft Ignite 2026](https://www.microsoft.com/en-us/security/blog/2026/09/30/secure-whats-next-your-guide-to-microsoft-security-at-microsoft-ignite-2026/)** — Microsoft Security Blog; 2026-09-30T19:31:00+00:00; topic hints: Web Security. Not verified; confirm that the page is useful learning material and check current free/account terms.
   - This year at Microsoft Ignite, we spotlight our AI-first, end-to-end security platform designed to protect identities, devices, data, applications, clouds, infrastructure, and the AI agents now working alongside your teams. The post ​​Secure what&#8217;s next: Your guide to Microsoft Security at Microsoft Ignite 2026 appeared first on Microsoft Security Blog .
-- **[Orphaned VBA Projects Inside DWG Files: YARA Rule, (Sun, Oct 18th)](https://isc.sans.edu/diary/rss/33434)** — SANS Internet Storm Center; 2026-10-18T12:59:30+00:00; topic hints: Malware Analysis. Not verified; confirm that the page is useful learning material and check current free/account terms.
-  - Here is the YARA rule I used to detect "Orphaned VBA Projects Inside DWG Files".&#xd;
 - **[GuardDuty Extended Threat Detection has added five new indicators to surface attack sequences](https://aws.amazon.com/blogs/security/guardduty-extended-threat-detection-has-added-five-new-indicators-to-surface-attack-sequences/)** — AWS Security Blog; 2026-10-12T21:58:44+00:00; topic hints: Review topic manually. Not verified; confirm that the page is useful learning material and check current free/account terms.
   - Amazon GuardDuty Extended Threat Detection correlates weak GuardDuty signals into a single, critical-severity attack sequence finding when their composition crosses a threshold of credibility. On May 20, 2026, the service started attaching five new indicator types to those sequences: MALICIOUS_PACKAGE, MISCONFIGURATION, REACHABILITY, SENSITIVE_DATA, and VULNERABILITY. For more
 - **[Unauthenticated command injection on internet-facing mail servers: tracking CVE-2026-73570](https://www.microsoft.com/en-us/security/blog/2026/09/30/unauthenticated-command-injection-on-internet-facing-mail-servers-tracking-cve-2026-73570/)** — Microsoft Security Blog; 2026-09-30T14:00:00+00:00; topic hints: Web Security, Threat Intelligence / OSINT. Not verified; confirm that the page is useful learning material and check current free/account terms.
@@ -84,20 +89,20 @@ No items in this category for this run.
 
 ## New YouTube candidates
 
-- **[Unprotected admin functionality with unpredictable URL \| Lab # 2 Access Control](https://www.youtube.com/watch?v=PqqJiqV9PDg)** — channel: CSPupil; 2026-10-17T16:03:48Z; topic hints: Web Security. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
+- **[Cybersecurity &amp; Ethical Hacking Full Course 2026 \| Zero to Hero 10 Hours](https://www.youtube.com/watch?v=eIVhcK3_kv0)** — channel: 1trust security; 2026-10-19T03:04:54Z; topic hints: Foundations. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
+- **[Authentication &amp; Password Security in Telugu \| Cyber Security Course EP 6](https://www.youtube.com/watch?v=2KRD3G_TsNg)** — channel: Ruchitha Career Updates; 2026-10-19T02:44:44Z; topic hints: Review topic manually. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
+- **[How to Start Learning Cybersecurity in 2026 🔐 #shortsfeed #onlinesafety #cybersecurity #byteirl](https://www.youtube.com/watch?v=YPlWc0fF2zo)** — channel: Byte IRL; 2026-10-19T00:45:38Z; topic hints: Review topic manually. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
+- **[Clean Your Linux Terminal + See EVERY Command You Typed 🧹 \| Linux in 30 Days – Day 3 #learnlinux](https://www.youtube.com/watch?v=kcToK7zXblQ)** — channel: ByteBastion; 2026-10-18T16:00:06Z; topic hints: Review topic manually. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
+- **[Cybersecurity for Beginners 🔐 \| Stay Safe Online &amp; Learn Ethical Hacking #Shorts](https://www.youtube.com/watch?v=CfxNc3UJgG8)** — channel: EthicalHackLab; 2026-10-18T15:15:32Z; topic hints: Foundations. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
+- **[How to Install Kali Linux on VMware \| Step-by-Step Tutorial for Beginners](https://www.youtube.com/watch?v=4a9b-AFRX-w)** — channel: ISTE HIT SC; 2026-10-18T14:35:01Z; topic hints: Foundations. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
+- **[How to Download &amp; Install VMware Workstation Pro on Windows 10/11 \| Beginner&#39;s Guide](https://www.youtube.com/watch?v=45LeE8C5byc)** — channel: not premps; 2026-10-18T12:00:08Z; topic hints: Foundations. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
 - **[Kali Linux Basic Commands for Beginners \| Practical Linux Tutorial in Telugu \| Part 3 2026](https://www.youtube.com/watch?v=j0o3_TtnTaA)** — channel: VAPT NEXUS; 2026-10-17T16:02:49Z; topic hints: Foundations. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
 - **[HDD Virtual Image Drive Analysis Using FTK Imager \| Digital Forensics Practical](https://www.youtube.com/watch?v=xRf3_bSx1ls)** — channel: Forensic Academy; 2026-10-17T16:00:03Z; topic hints: DFIR. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
 - **[How Soc Analyst Interview: What Is A Siem &amp; Log Correlation? ACTUALLY Works #Shorts](https://www.youtube.com/watch?v=IW2rcQOdbeQ)** — channel: CyberBruhArmy; 2026-10-17T15:30:10Z; topic hints: SOC & SIEM. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
 - **[Build a Strong Password Generator in Python🔐\| secrets Module #python #coding #learnpython #dsa #code](https://www.youtube.com/watch?v=sqXbFj24zk0)** — channel: CodeCraftX; 2026-10-17T15:15:33Z; topic hints: Review topic manually. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
-- **[Day 02 of my Learning Cbersecurity #cybersecurity](https://www.youtube.com/watch?v=sOkYBOV53GA)** — channel: Hex-Hunter; 2026-10-17T13:18:14Z; topic hints: Review topic manually. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
-- **[Hydra Tool in Termux \| Cyber Security Tutorial for Beginners \| Hackspot](https://www.youtube.com/watch?v=MYIjJykhxPA)** — channel: Hack Spot; 2026-10-17T11:30:18Z; topic hints: Foundations. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
-- **[Cyber Security Kya Hai? 🔐 Complete Beginner’s Guide in Hindi \| CyberNexa](https://www.youtube.com/watch?v=XIl3EizJ41Q)** — channel: CyberNexa; 2026-10-17T11:18:17Z; topic hints: Foundations. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
-- **[Learn the Linux echo Command in 20 Seconds! 🐧 #shorts #cybersecurity #linuxcommandlinetutorial](https://www.youtube.com/watch?v=bEgls-GNzBg)** — channel: MICHAEL BLACK; 2026-10-17T10:38:41Z; topic hints: Foundations. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
-- **[How to Write Your First Reverse Shell in C \| Cybersecurity for Beginners](https://www.youtube.com/watch?v=YWILU1G1QKY)** — channel: Apna Code; 2026-10-17T04:49:56Z; topic hints: Foundations. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
+- **[How to Install Kali Linux on Windows in One Click 🔥 (Beginner Guide)](https://www.youtube.com/watch?v=2Jrji2D1mWY)** — channel: Cyber Pathshala; 2026-10-17T14:00:19Z; topic hints: Foundations. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
 - **[PortSwigger Lab: Username Enumeration via Different Responses \| PortSwigger Lab Tutorial](https://www.youtube.com/watch?v=5n4McXlZM9g)** — channel: Sam Shield; 2026-10-17T03:00:02Z; topic hints: Web Security. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
-- **[Build a Random Password Generator Using Python 🔐🐍 #developer #coding #python #project #password](https://www.youtube.com/watch?v=HEKvHBRe2Rc)** — channel: Python Expert; 2026-10-17T01:13:29Z; topic hints: Review topic manually. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
 - **[Análisis de redes con Wireshark Lección 2 #short](https://www.youtube.com/watch?v=ScUESbLN7R4)** — channel: Tutoriales de Pablo Hidalgo; 2026-10-17T00:38:05Z; topic hints: Networking. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
-- **[DHCP Failover Explained: What Happens When Redundancy Breaks?](https://www.youtube.com/watch?v=BSCuZIT1Rz4)** — channel: Techmatician \| IT Tutorials; 2026-10-16T23:00:23Z; topic hints: Review topic manually. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
 - **[Windows Registry Forensics in Hindi \| Keys, Values &amp; Timestamps \| Ethical Hacking EP 65](https://www.youtube.com/watch?v=mwHoRcwXdPE)** — channel: GlobalTech Infosystems; 2026-10-16T19:56:40Z; topic hints: DFIR, Foundations. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
 - **[Windows Registry Forensics in Hindi \| Keys, Values &amp; Timestamps \| Ethical Hacking EP 65](https://www.youtube.com/watch?v=eB3Vhz3xKQ4)** — channel: GlobalTech Infosystems; 2026-10-16T19:56:21Z; topic hints: DFIR, Foundations. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
 - **[Windows Persistence Explained in Hindi \| Services, Scheduled Tasks &amp; Startup \| Ethical Hacking EP 64](https://www.youtube.com/watch?v=U_k57dV0SFw)** — channel: GlobalTech Infosystems; 2026-10-16T19:54:42Z; topic hints: Foundations. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
@@ -114,6 +119,10 @@ No items in this category for this run.
 - **[Windows Threat Hunting in Hindi 🔥 Event IDs 4624, 4625, 4688 \| Episode 53 \| GlobalTech Infosystems](https://www.youtube.com/watch?v=htZaCNV1y84)** — channel: GlobalTech Infosystems; 2026-10-16T19:25:37Z; topic hints: Threat Hunting. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
 - **[SOC Analyst Full Course in Hindi 🔥 SIEM Alerts &amp; Event Correlation \| Episode 50](https://www.youtube.com/watch?v=nrFHJ44p7io)** — channel: GlobalTech Infosystems; 2026-10-16T19:16:29Z; topic hints: SOC & SIEM. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
 - **[SOC Analyst Full Course in Hindi 🔥 SIEM Alerts &amp; Event Correlation \| Episode 50](https://www.youtube.com/watch?v=9tTEv5BFyiU)** — channel: GlobalTech Infosystems; 2026-10-16T19:15:59Z; topic hints: SOC & SIEM. Not verified; confirm channel credibility, video content, public availability, and whether the video is useful for the selected learning path.
+
+## Sources that could not be checked
+
+- SANS Internet Storm Center: XML parse error: syntax error: line 1, column 0
 
 ## Recommended review checklist
 
