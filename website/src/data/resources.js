@@ -368,7 +368,7 @@ export const resources = [
     description: 'Practise passive subdomain discovery with Subfinder against domains you own or assigned lab targets.',
     skills: ['Subdomain enumeration', 'Reconnaissance', 'Network fundamentals'], url: 'https://github.com/projectdiscovery/subfinder',
     account: 'Local installation needed', note: 'Enumerate only domains you own or targets assigned by a training provider. Public sources still return data about real domains, so stay within the agreed scope.',
-    image: '/images/learning/command-cheatsheet.svg', icon: 'network', monogram: 'SF', practiceUrl: 'https://projectdiscovery.io/docs/tools/subfinder'
+    image: '/images/learning/command-cheatsheet.svg', icon: 'network', monogram: 'SF', practiceUrl: 'https://docs.projectdiscovery.io/opensource/subfinder/overview'
   },
   {
     id: 'metasploit-framework',
