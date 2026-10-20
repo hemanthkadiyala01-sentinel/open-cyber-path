@@ -1,0 +1,68 @@
+name: OpenCyberPath CyberPulse refresh
+
+on:
+  schedule:
+    # Every six hours; scheduled GitHub Actions jobs can be delayed.
+    - cron: '43 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: opencyberpath-cyberpulse-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh-public-feeds:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out default branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run offline parser and privacy checks
+        run: |
+          python tools/cyberpulse/refresh_feeds.py --self-test
+          python -m unittest tools.cyberpulse.test_refresh_feeds -v
+
+      - name: Refresh approved public news and advisory feeds
+        id: refresh
+        shell: bash
+        run: |
+          set +e
+          python tools/cyberpulse/refresh_feeds.py
+          refresh_exit=$?
+          echo "exit_code=${refresh_exit}" >> "$GITHUB_OUTPUT"
+          # Continue so the stale/unavailable state can be committed for the website.
+          exit 0
+
+      - name: Validate published JSON schemas and identity exclusion
+        run: python tools/cyberpulse/refresh_feeds.py --self-test
+
+      - name: Commit refreshed feed snapshots
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add website/public/data/cyberpulse-feed.json website/public/data/site-freshness.json
+          if git diff --cached --quiet; then
+            echo 'Feed snapshot unchanged; no commit needed.'
+            exit 0
+          fi
+          git commit -m 'chore: refresh CyberPulse news and site freshness'
+          git push
+
+      - name: Fail the run if all sources failed
+        if: steps.refresh.outputs.exit_code != '0'
+        run: |
+          echo 'Every configured feed failed. Previous records were retained and the public status snapshot was updated; inspect source availability before treating the run as healthy.'
+          exit 1
