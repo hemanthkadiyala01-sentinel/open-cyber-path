@@ -19,3 +19,6 @@
 .ocp-video-disclaimer{color:#7996ad;font-size:.75rem;line-height:1.6;margin:15px 0 0}
 @media(max-width:1050px){.ocp-curated-video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ocp-video-controls{grid-template-columns:repeat(2,minmax(0,1fr))}.ocp-video-results{justify-self:start;padding:0}}
 @media(max-width:680px){.ocp-curated-video-heading{display:block}.ocp-curated-video-count{margin-top:16px;width:100%;display:grid;grid-template-columns:auto 1fr;column-gap:10px;align-items:center}.ocp-curated-video-count b{grid-row:span 2}.ocp-curated-video-count span,.ocp-curated-video-count small{margin-top:0}.ocp-curated-video-grid,.ocp-video-controls{grid-template-columns:1fr}}
+
+/* ADDITIVE OCP BRAND ICON FIX4 */
+.ocp-curated-video-byline{display:flex;align-items:center;gap:7px}.ocp-curated-video-byline .ocp-brand-icon{width:25px;height:25px;border-radius:8px}.ocp-curated-video-byline>span:last-child{min-width:0}

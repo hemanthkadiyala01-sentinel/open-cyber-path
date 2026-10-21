@@ -913,5 +913,1689 @@
     ],
     "practiceUrl": "https://docs.mitmproxy.org/",
     "monogram": "MP"
+  },
+  {
+    "id": "adv-nist-nice-roles",
+    "name": "NIST NICE Framework: work roles and skills",
+    "provider": "NIST",
+    "category": "Career Resources",
+    "kind": "Free official reference",
+    "level": "Beginner to Advanced",
+    "description": "Map cybersecurity tasks, knowledge, skills and work roles to career pathways and learning goals.",
+    "url": "https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center",
+    "account": "No account required",
+    "note": "Free public framework. It is a US-origin framework used more broadly; local job titles and requirements can differ.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "compass",
+    "skills": [
+      "Career planning",
+      "Work roles",
+      "Skills mapping"
+    ]
+  },
+  {
+    "id": "adv-nist-low-cost-learning",
+    "name": "NIST free and low-cost cybersecurity learning list",
+    "provider": "NIST NICE",
+    "category": "Foundations",
+    "kind": "Free resource directory",
+    "level": "Beginner to Advanced",
+    "description": "A government-maintained starting point for discovering cybersecurity education and low-cost training providers.",
+    "url": "https://www.nist.gov/itl/applied-cybersecurity/nice/resources/online-learning-content",
+    "account": "No account required",
+    "note": "Some listed providers are commercial; confirm current access and terms at the original provider.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "book-open",
+    "skills": [
+      "Learning research",
+      "Career exploration"
+    ]
+  },
+  {
+    "id": "adv-cisco-skillsforall-cyber-path",
+    "name": "Cisco Skills for All cybersecurity learning",
+    "provider": "Cisco Networking Academy",
+    "category": "Foundations",
+    "kind": "Free training; awards vary by course",
+    "level": "Beginner to Intermediate",
+    "description": "Explore self-paced networking and cybersecurity courses and role-oriented learning options.",
+    "url": "https://skillsforall.com/",
+    "account": "Account may be required",
+    "note": "Course availability, language, badge eligibility and regional offerings can vary. Course completion is not the same as passing a Cisco certification exam.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "graduation-cap",
+    "skills": [
+      "Networking",
+      "Security fundamentals",
+      "Network defence"
+    ]
+  },
+  {
+    "id": "adv-linuxjourney",
+    "name": "Linux Journey",
+    "provider": "Community resource",
+    "category": "Networking & Linux",
+    "kind": "Free learning reference",
+    "level": "Beginner to Intermediate",
+    "description": "Learn Linux command-line concepts, processes, permissions, filesystems and system administration basics.",
+    "url": "https://linuxjourney.com/",
+    "account": "No account required",
+    "note": "Free community learning resource; practise commands in a machine you control.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "terminal",
+    "skills": [
+      "Linux",
+      "Command line",
+      "System administration"
+    ]
+  },
+  {
+    "id": "adv-picoctf-picogym",
+    "name": "picoCTF and picoGym",
+    "provider": "Carnegie Mellon University",
+    "category": "Hands-on Labs",
+    "kind": "Free CTF learning",
+    "level": "Beginner to Advanced",
+    "description": "Practice computer-security concepts through intentionally designed challenges and a self-paced practice area.",
+    "url": "https://picoctf.org/",
+    "account": "Account may be required",
+    "note": "Use the hosted practice environment and follow its terms; not a licence to test other systems.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "terminal",
+    "skills": [
+      "CTF",
+      "Cryptography",
+      "Forensics",
+      "Web security"
+    ]
+  },
+  {
+    "id": "adv-cryptohack",
+    "name": "CryptoHack",
+    "provider": "CryptoHack community",
+    "category": "Cryptography",
+    "kind": "Free interactive challenges",
+    "level": "Beginner to Advanced",
+    "description": "Learn applied cryptography through guided explanations and progressively harder challenges.",
+    "url": "https://cryptohack.org/",
+    "account": "Account may be required",
+    "note": "Educational puzzle platform. Use only its intended challenges and environments.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "key-round",
+    "skills": [
+      "Cryptography",
+      "Python",
+      "Mathematics"
+    ]
+  },
+  {
+    "id": "adv-cryptool",
+    "name": "CrypTool learning resources",
+    "provider": "CrypTool",
+    "category": "Cryptography",
+    "kind": "Free educational tools and materials",
+    "level": "Beginner to Advanced",
+    "description": "Explore cryptography concepts, demonstrations and educational exercises.",
+    "url": "https://www.cryptool.org/en/",
+    "account": "Usually no account required",
+    "note": "Educational tools are not a substitute for current production cryptographic guidance.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "key-round",
+    "skills": [
+      "Cryptography",
+      "Encryption",
+      "Security mathematics"
+    ]
+  },
+  {
+    "id": "adv-cloudflare-learning",
+    "name": "Cloudflare Learning Center",
+    "provider": "Cloudflare",
+    "category": "Foundations",
+    "kind": "Free educational reference",
+    "level": "Beginner to Intermediate",
+    "description": "Plain-language explanations of DNS, TLS, DDoS, web performance and common internet-security concepts.",
+    "url": "https://www.cloudflare.com/learning/",
+    "account": "No account required",
+    "note": "Free learning articles; some linked product features are commercial.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "globe",
+    "skills": [
+      "DNS",
+      "TLS",
+      "Web security",
+      "Networking"
+    ]
+  },
+  {
+    "id": "adv-mdn-http",
+    "name": "MDN Web Docs: HTTP",
+    "provider": "Mozilla",
+    "category": "Web Security",
+    "kind": "Free technical reference",
+    "level": "Beginner to Advanced",
+    "description": "Use authoritative developer documentation to understand HTTP requests, responses, headers, cookies and web platform behaviour.",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP",
+    "account": "No account required",
+    "note": "Free documentation. Pair it with authorised web-security labs for practical learning.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "code",
+    "skills": [
+      "HTTP",
+      "Web development",
+      "Web security"
+    ]
+  },
+  {
+    "id": "adv-nist-csf2",
+    "name": "NIST Cybersecurity Framework 2.0",
+    "provider": "NIST",
+    "category": "Governance & Risk",
+    "kind": "Free official framework",
+    "level": "Intermediate to Advanced",
+    "description": "Learn to describe, assess and improve cybersecurity risk management using CSF 2.0 outcomes.",
+    "url": "https://www.nist.gov/cyberframework",
+    "account": "No account required",
+    "note": "Free framework and supporting resources; implementation tools or consulting may be paid.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "shield-check",
+    "skills": [
+      "Risk management",
+      "Governance",
+      "Security programme"
+    ]
+  },
+  {
+    "id": "adv-cisa-cpgs",
+    "name": "CISA Cross-Sector Cybersecurity Performance Goals",
+    "provider": "CISA",
+    "category": "Governance & Risk",
+    "kind": "Free official guidance",
+    "level": "Beginner to Advanced",
+    "description": "Prioritise practical baseline security improvements for organisations using CISA guidance.",
+    "url": "https://www.cisa.gov/cross-sector-cybersecurity-performance-goals",
+    "account": "No account required",
+    "note": "Free guidance. Adapt recommendations to the organisation, threat model and applicable local requirements.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "shield-check",
+    "skills": [
+      "Cyber hygiene",
+      "Risk prioritisation",
+      "Defensive controls"
+    ]
+  },
+  {
+    "id": "adv-cisa-secure-by-design",
+    "name": "CISA Secure by Design",
+    "provider": "CISA",
+    "category": "Security Engineering",
+    "kind": "Free official guidance",
+    "level": "Intermediate to Advanced",
+    "description": "Study secure product design, default security, accountability and ways product teams can reduce customer risk.",
+    "url": "https://www.cisa.gov/securebydesign",
+    "account": "No account required",
+    "note": "Free guidance, not a certification.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "shield-check",
+    "skills": [
+      "Secure development",
+      "Product security",
+      "Risk reduction"
+    ]
+  },
+  {
+    "id": "adv-mitre-attack-training",
+    "name": "MITRE ATT&CK training collection",
+    "provider": "MITRE",
+    "category": "Threat Hunting",
+    "kind": "Free training and references",
+    "level": "Intermediate to Advanced",
+    "description": "Learn ATT&CK fundamentals, adversary emulation, purple teaming, threat hunting and detection engineering.",
+    "url": "https://attack.mitre.org/resources/learn-more-about-attack/training/",
+    "account": "No account required for public materials",
+    "note": "Free public training resources. ATT&CK is a knowledge base, not a complete incident-response methodology by itself.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "target",
+    "skills": [
+      "MITRE ATT&CK",
+      "Threat hunting",
+      "Detection engineering"
+    ]
+  },
+  {
+    "id": "adv-mitre-cti-training",
+    "name": "MITRE ATT&CK Cyber Threat Intelligence training",
+    "provider": "MITRE",
+    "category": "Threat Intelligence",
+    "kind": "Free modular training",
+    "level": "Intermediate to Advanced",
+    "description": "Practice mapping reports and raw data to ATT&CK and deriving defensive recommendations from intelligence.",
+    "url": "https://attack.mitre.org/resources/training/cti/",
+    "account": "No account required",
+    "note": "The training assumes familiarity with core ATT&CK concepts; complete the fundamentals first.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "search",
+    "skills": [
+      "Threat intelligence",
+      "ATT&CK mapping",
+      "Analytical writing"
+    ]
+  },
+  {
+    "id": "adv-mitre-ics-matrix",
+    "name": "MITRE ATT&CK for ICS",
+    "provider": "MITRE",
+    "category": "OT / ICS Security",
+    "kind": "Free official reference",
+    "level": "Intermediate to Advanced",
+    "description": "Understand adversary behaviour patterns relevant to industrial control systems and operational technology.",
+    "url": "https://attack.mitre.org/matrices/ics/",
+    "account": "No account required",
+    "note": "Reference material only; industrial environments require strict authorisation and safety controls.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "factory",
+    "skills": [
+      "ICS security",
+      "OT defence",
+      "Threat modelling"
+    ]
+  },
+  {
+    "id": "adv-nvd-cve",
+    "name": "NIST National Vulnerability Database",
+    "provider": "NIST",
+    "category": "Threat Intelligence",
+    "kind": "Free public database",
+    "level": "Intermediate to Advanced",
+    "description": "Research CVEs, CVSS-related data and vulnerability metadata from a public reference database.",
+    "url": "https://nvd.nist.gov/",
+    "account": "No account required for browsing",
+    "note": "Use the source record and vendor advisory; a CVSS score alone does not determine business risk.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "database",
+    "skills": [
+      "CVE research",
+      "Vulnerability management",
+      "Risk triage"
+    ]
+  },
+  {
+    "id": "adv-cisa-kev",
+    "name": "CISA Known Exploited Vulnerabilities Catalog",
+    "provider": "CISA",
+    "category": "Threat Intelligence",
+    "kind": "Free official catalogue",
+    "level": "Intermediate to Advanced",
+    "description": "Prioritise vulnerabilities known to have been exploited in the wild using a maintained government catalogue.",
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "account": "No account required",
+    "note": "Free public data; check the latest entry and due dates rather than relying on a downloaded stale copy.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "database",
+    "skills": [
+      "Vulnerability prioritisation",
+      "Patch management",
+      "Threat intelligence"
+    ]
+  },
+  {
+    "id": "adv-nice-career-pathways",
+    "name": "NIST cybersecurity career pathway resources",
+    "provider": "NIST NICE",
+    "category": "Career Resources",
+    "kind": "Free career-planning references",
+    "level": "Beginner to Advanced",
+    "description": "Explore role pathways, educational options and certification-planning resources mapped to cybersecurity work.",
+    "url": "https://www.nist.gov/itl/applied-cybersecurity/nice/resources/cyber-careers",
+    "account": "No account required",
+    "note": "Includes US-focused datasets and tools; do not present them as local salary or vacancy data for other countries.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "compass",
+    "skills": [
+      "Career planning",
+      "Role mapping",
+      "Skills gaps"
+    ]
+  },
+  {
+    "id": "adv-owasp-wstg",
+    "name": "OWASP Web Security Testing Guide",
+    "provider": "OWASP",
+    "category": "Web Security",
+    "kind": "Free technical guide",
+    "level": "Intermediate to Advanced",
+    "description": "Use a structured testing methodology for web applications, with test areas and reporting guidance.",
+    "url": "https://owasp.org/projects/web-security-testing-guide",
+    "account": "No account required",
+    "note": "Use only on systems you own or are explicitly authorised to assess.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "bug",
+    "skills": [
+      "Web application security",
+      "Testing methodology",
+      "Reporting"
+    ]
+  },
+  {
+    "id": "adv-owasp-asvs",
+    "name": "OWASP Application Security Verification Standard",
+    "provider": "OWASP",
+    "category": "Web Security",
+    "kind": "Free verification standard",
+    "level": "Intermediate to Advanced",
+    "description": "Turn application-security requirements into a structured verification checklist for design, implementation and testing.",
+    "url": "https://owasp.org/www-project-application-security-verification-standard/",
+    "account": "No account required",
+    "note": "Free standard. Treat the version number as important and verify the current release.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "clipboard-check",
+    "skills": [
+      "Secure design",
+      "Verification",
+      "AppSec"
+    ]
+  },
+  {
+    "id": "adv-owasp-api-top10",
+    "name": "OWASP API Security Top 10",
+    "provider": "OWASP",
+    "category": "Web Security",
+    "kind": "Free official reference",
+    "level": "Intermediate to Advanced",
+    "description": "Understand common API security risk categories and use them to guide secure design and authorised testing.",
+    "url": "https://owasp.org/www-project-api-security/",
+    "account": "No account required",
+    "note": "Use with the current project material and controlled training APIs.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "code",
+    "skills": [
+      "API security",
+      "Authentication",
+      "Access control"
+    ]
+  },
+  {
+    "id": "adv-owasp-cheatsheets",
+    "name": "OWASP Cheat Sheet Series",
+    "provider": "OWASP",
+    "category": "Security Engineering",
+    "kind": "Free practical reference",
+    "level": "Beginner to Advanced",
+    "description": "Find concise implementation-oriented guidance on authentication, sessions, input validation, logging and other security topics.",
+    "url": "https://cheatsheetseries.owasp.org/",
+    "account": "No account required",
+    "note": "Recommendations need context; check the referenced technology and version.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "book-open",
+    "skills": [
+      "Secure coding",
+      "AppSec",
+      "Implementation guidance"
+    ]
+  },
+  {
+    "id": "adv-owasp-webgoat",
+    "name": "OWASP WebGoat",
+    "provider": "OWASP",
+    "category": "Hands-on Labs",
+    "kind": "Free intentionally vulnerable training app",
+    "level": "Intermediate",
+    "description": "Learn web application security in an application designed for security training.",
+    "url": "https://owasp.org/www-project-webgoat/",
+    "account": "No account required for docs; local setup required for practice",
+    "note": "Run only in an isolated local lab. Never expose a deliberately vulnerable instance to the public internet.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "bug",
+    "skills": [
+      "Web security",
+      "Secure coding",
+      "Lab reporting"
+    ]
+  },
+  {
+    "id": "adv-owasp-crapi",
+    "name": "OWASP crAPI API security lab",
+    "provider": "OWASP",
+    "category": "Hands-on Labs",
+    "kind": "Free open-source local lab",
+    "level": "Intermediate to Advanced",
+    "description": "Practice API security concepts using a deliberately vulnerable microservices application designed for education.",
+    "url": "https://owasp.org/www-project-crapi/",
+    "account": "Local setup required",
+    "note": "Run locally or in a dedicated lab you control and follow the project instructions.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "code",
+    "skills": [
+      "API security",
+      "Access control",
+      "Threat modelling"
+    ]
+  },
+  {
+    "id": "adv-owasp-samm",
+    "name": "OWASP Software Assurance Maturity Model (SAMM)",
+    "provider": "OWASP",
+    "category": "Security Engineering",
+    "kind": "Free framework",
+    "level": "Intermediate to Advanced",
+    "description": "Plan and measure a software security programme across governance, design, implementation, verification and operations.",
+    "url": "https://owaspsamm.org/",
+    "account": "No account required",
+    "note": "Free model and guidance; implementation services may cost money.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "layers",
+    "skills": [
+      "Secure SDLC",
+      "Maturity assessment",
+      "DevSecOps"
+    ]
+  },
+  {
+    "id": "adv-zap-docs",
+    "name": "OWASP ZAP documentation and getting started",
+    "provider": "OWASP ZAP",
+    "category": "Web Security",
+    "kind": "Free open-source tool documentation",
+    "level": "Beginner to Advanced",
+    "description": "Learn how to set up and use a web application security testing proxy in permitted test environments.",
+    "url": "https://www.zaproxy.org/docs/",
+    "account": "No account required",
+    "note": "Only scan applications you own or have explicit permission to test; follow the tool and target rules.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "bug",
+    "skills": [
+      "Web security",
+      "Testing tools",
+      "Proxy fundamentals"
+    ]
+  },
+  {
+    "id": "adv-codeql-docs",
+    "name": "CodeQL documentation and query learning",
+    "provider": "GitHub",
+    "category": "Security Engineering",
+    "kind": "Free documentation; product access varies",
+    "level": "Intermediate to Advanced",
+    "description": "Learn code scanning concepts and how CodeQL queries can identify classes of code vulnerabilities.",
+    "url": "https://codeql.github.com/docs/",
+    "account": "GitHub account may be required for some features",
+    "note": "Product availability depends on repository type, plan and current GitHub terms.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "code",
+    "skills": [
+      "Code review",
+      "Static analysis",
+      "Secure software"
+    ]
+  },
+  {
+    "id": "adv-github-actions-hardening",
+    "name": "GitHub Actions security hardening",
+    "provider": "GitHub",
+    "category": "Security Engineering",
+    "kind": "Free official documentation",
+    "level": "Intermediate to Advanced",
+    "description": "Harden CI/CD workflows through least privilege, protected secrets, pinned actions and supply-chain-aware practices.",
+    "url": "https://docs.github.com/en/actions/security-for-github-actions/security-guides/security-hardening-for-github-actions",
+    "account": "No account required",
+    "note": "Free documentation. Validate recommendations against the current workflow and organisation policy.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "shield-check",
+    "skills": [
+      "CI/CD",
+      "Secrets management",
+      "Supply-chain security"
+    ]
+  },
+  {
+    "id": "adv-github-securitylab",
+    "name": "GitHub Security Lab research and training",
+    "provider": "GitHub",
+    "category": "Security Engineering",
+    "kind": "Free research and learning",
+    "level": "Intermediate to Advanced",
+    "description": "Explore secure-code research, vulnerability analysis and tutorials from GitHub Security Lab.",
+    "url": "https://securitylab.github.com/",
+    "account": "No account required",
+    "note": "Research material may assume programming experience; practice only in assigned labs or owned code.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "code",
+    "skills": [
+      "Secure coding",
+      "Vulnerability research",
+      "CodeQL"
+    ]
+  },
+  {
+    "id": "adv-btlo",
+    "name": "Blue Team Labs Online",
+    "provider": "Blue Team Labs Online",
+    "category": "SOC & SIEM",
+    "kind": "Free / paid access varies by challenge",
+    "level": "Intermediate to Advanced",
+    "description": "Practice defensive investigation scenarios and blue-team challenge workflows.",
+    "url": "https://blueteamlabs.online/",
+    "account": "Account required",
+    "note": "Free and paid access can differ by challenge and plan; verify before starting.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "shield",
+    "skills": [
+      "SOC analysis",
+      "Incident investigation",
+      "Digital forensics"
+    ]
+  },
+  {
+    "id": "adv-splunk-free-courses",
+    "name": "Splunk free training courses",
+    "provider": "Splunk",
+    "category": "SOC & SIEM",
+    "kind": "Free training; certification separate",
+    "level": "Beginner to Advanced",
+    "description": "Learn Splunk fundamentals, fields, dashboards, searches and data-analysis concepts through official free courses.",
+    "url": "https://www.splunk.com/en_us/training/free-courses/overview.html",
+    "account": "Account or registration may be required",
+    "note": "Free learning content does not mean every Splunk product, lab, certification or exam is free.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "activity",
+    "skills": [
+      "SIEM",
+      "Log analysis",
+      "Search"
+    ]
+  },
+  {
+    "id": "adv-microsoft-sentinel-kql",
+    "name": "Microsoft Sentinel KQL learning path",
+    "provider": "Microsoft Learn",
+    "category": "SOC & SIEM",
+    "kind": "Free official training; cloud usage may cost",
+    "level": "Intermediate",
+    "description": "Practise Kusto Query Language concepts for Microsoft Sentinel security operations and investigation.",
+    "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-configure-azure-sentinel-environment/",
+    "account": "Microsoft account may be required for some exercises",
+    "note": "Training is free; deploying or running Azure resources can incur charges. Review subscription, region and cleanup steps first.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "activity",
+    "skills": [
+      "KQL",
+      "SIEM",
+      "Threat hunting"
+    ]
+  },
+  {
+    "id": "adv-microsoft-defender-training",
+    "name": "Microsoft Defender security training",
+    "provider": "Microsoft Learn",
+    "category": "SOC & SIEM",
+    "kind": "Free official training; product access varies",
+    "level": "Beginner to Advanced",
+    "description": "Explore learning paths for Microsoft Defender XDR, endpoint protection, identity protection and incident investigation.",
+    "url": "https://learn.microsoft.com/en-us/training/defender/",
+    "account": "Microsoft account may be required for some features",
+    "note": "Training and product licences are different; advanced exercises may need an appropriate tenant or licence.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "shield",
+    "skills": [
+      "Endpoint security",
+      "XDR",
+      "Incident response"
+    ]
+  },
+  {
+    "id": "adv-elastic-security-labs",
+    "name": "Elastic Security Labs research",
+    "provider": "Elastic",
+    "category": "Threat Hunting",
+    "kind": "Free research and technical references",
+    "level": "Intermediate to Advanced",
+    "description": "Read threat research, detection analysis and technical investigations that can help analysts understand attacker behaviour.",
+    "url": "https://www.elastic.co/security-labs",
+    "account": "No account required for public research",
+    "note": "Research articles are not a substitute for testing detections against your own representative telemetry.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "search",
+    "skills": [
+      "Threat research",
+      "Detection engineering",
+      "Malware analysis"
+    ]
+  },
+  {
+    "id": "adv-wazuh-docs",
+    "name": "Wazuh documentation and deployment guides",
+    "provider": "Wazuh",
+    "category": "SOC & SIEM",
+    "kind": "Free open-source documentation",
+    "level": "Beginner to Advanced",
+    "description": "Learn endpoint monitoring, alerting, rules, agents and security event collection with an open-source security platform.",
+    "url": "https://documentation.wazuh.com/current/",
+    "account": "No account required for docs",
+    "note": "The software and docs are open source; infrastructure, hosting and operations still require resources.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "server",
+    "skills": [
+      "SIEM",
+      "Endpoint monitoring",
+      "Detection"
+    ]
+  },
+  {
+    "id": "adv-sigmahq-rules",
+    "name": "Sigma detection rules and specification",
+    "provider": "SigmaHQ",
+    "category": "Threat Hunting",
+    "kind": "Free community rules and specification",
+    "level": "Intermediate to Advanced",
+    "description": "Study portable detection logic, threat-hunting rules, compliance rules and detection engineering conventions.",
+    "url": "https://github.com/SigmaHQ/sigma",
+    "account": "GitHub account optional for browsing",
+    "note": "Review rule metadata, backend compatibility, false positives and repository licence before reusing.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "file-search",
+    "skills": [
+      "Sigma",
+      "SIEM",
+      "Detection engineering"
+    ]
+  },
+  {
+    "id": "adv-yara-rules",
+    "name": "YARA rule collection",
+    "provider": "YARA-Rules community",
+    "category": "Malware Analysis",
+    "kind": "Free community rules; licence applies",
+    "level": "Intermediate to Advanced",
+    "description": "Explore rule categories used to help identify patterns in files for defensive malware analysis.",
+    "url": "https://github.com/Yara-Rules/rules",
+    "account": "GitHub account optional for browsing",
+    "note": "Rules may produce false positives; validate in a controlled lab and comply with the repository licence.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "scan",
+    "skills": [
+      "YARA",
+      "Malware triage",
+      "Detection"
+    ]
+  },
+  {
+    "id": "adv-wireshark-guide",
+    "name": "Wireshark User Guide",
+    "provider": "Wireshark Foundation",
+    "category": "Network Security",
+    "kind": "Free official documentation",
+    "level": "Beginner to Advanced",
+    "description": "Learn packet capture concepts, display filters, protocol analysis and troubleshooting with the official guide.",
+    "url": "https://www.wireshark.org/docs/wsug_html_chunked/",
+    "account": "No account required",
+    "note": "Use captures you own or are authorised to inspect; protect sensitive packet contents.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "network",
+    "skills": [
+      "Packet analysis",
+      "TCP/IP",
+      "Network forensics"
+    ]
+  },
+  {
+    "id": "adv-zeek-docs",
+    "name": "Zeek network security monitoring documentation",
+    "provider": "Zeek Project",
+    "category": "Network Security",
+    "kind": "Free open-source documentation",
+    "level": "Intermediate to Advanced",
+    "description": "Learn network security monitoring concepts, logs, scripting and protocol analysis with Zeek.",
+    "url": "https://docs.zeek.org/en/current/",
+    "account": "No account required",
+    "note": "Use sample PCAPs or networks you are authorised to monitor.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "network",
+    "skills": [
+      "NSM",
+      "Network telemetry",
+      "Detection"
+    ]
+  },
+  {
+    "id": "adv-suricata-docs",
+    "name": "Suricata documentation",
+    "provider": "OISF / Suricata",
+    "category": "Network Security",
+    "kind": "Free open-source documentation",
+    "level": "Intermediate to Advanced",
+    "description": "Study network IDS/IPS concepts, rules, alerts and traffic inspection using official Suricata documentation.",
+    "url": "https://docs.suricata.io/en/latest/",
+    "account": "No account required",
+    "note": "Run detection tests only on systems and datasets you are permitted to use.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "network",
+    "skills": [
+      "IDS/IPS",
+      "Network defence",
+      "Rules"
+    ]
+  },
+  {
+    "id": "adv-securityonion-docs",
+    "name": "Security Onion documentation",
+    "provider": "Security Onion Solutions",
+    "category": "SOC & SIEM",
+    "kind": "Free documentation; deployment resources vary",
+    "level": "Intermediate to Advanced",
+    "description": "Learn how a security monitoring platform combines network visibility, detection and investigation workflows.",
+    "url": "https://docs.securityonion.net/en/2.4/",
+    "account": "No account required for docs",
+    "note": "Plan VM/storage requirements before deploying. Follow current installation guidance and licence terms.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "server",
+    "skills": [
+      "SOC",
+      "Network monitoring",
+      "Incident investigation"
+    ]
+  },
+  {
+    "id": "adv-ocsf-schema",
+    "name": "Open Cybersecurity Schema Framework (OCSF)",
+    "provider": "OCSF community",
+    "category": "Security Engineering",
+    "kind": "Free open schema",
+    "level": "Intermediate to Advanced",
+    "description": "Understand a vendor-agnostic event schema used to normalise security telemetry across products and systems.",
+    "url": "https://schema.ocsf.io/",
+    "account": "No account required",
+    "note": "Schema mappings require validation; normalisation does not guarantee that two events have equivalent meaning.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "database",
+    "skills": [
+      "Log normalisation",
+      "Data engineering",
+      "Security analytics"
+    ]
+  },
+  {
+    "id": "adv-atomic-red-team",
+    "name": "Atomic Red Team testing library",
+    "provider": "Red Canary / Atomic Red Team",
+    "category": "Threat Hunting",
+    "kind": "Free open-source test library",
+    "level": "Advanced",
+    "description": "Learn how defenders can validate analytics and controls with small, documented tests in a controlled environment.",
+    "url": "https://atomicredteam.io/",
+    "account": "No account required for docs",
+    "note": "Run only in isolated test systems with authorisation, a rollback plan and an understanding of each test’s effects.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "flask-conical",
+    "skills": [
+      "Detection validation",
+      "Purple teaming",
+      "ATT&CK mapping"
+    ]
+  },
+  {
+    "id": "adv-malware-traffic-pcaps",
+    "name": "Malware-Traffic-Analysis.net PCAP exercises",
+    "provider": "Malware-Traffic-Analysis.net",
+    "category": "Digital Forensics",
+    "kind": "Free educational PCAPs and walkthroughs",
+    "level": "Intermediate to Advanced",
+    "description": "Practice traffic analysis using curated packet captures and educational malware-traffic investigations.",
+    "url": "https://www.malware-traffic-analysis.net/",
+    "account": "No account required for public materials",
+    "note": "Treat samples as potentially malicious; analyse offline in a controlled environment and follow the site’s terms.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "network",
+    "skills": [
+      "PCAP analysis",
+      "Network forensics",
+      "Incident response"
+    ]
+  },
+  {
+    "id": "adv-remnux-docs",
+    "name": "REMnux malware analysis toolkit documentation",
+    "provider": "REMnux",
+    "category": "Malware Analysis",
+    "kind": "Free toolkit and documentation",
+    "level": "Advanced",
+    "description": "Build a malware-analysis environment with curated tools for static analysis, behavioural analysis and network artefact review.",
+    "url": "https://docs.remnux.org/",
+    "account": "No account required for docs",
+    "note": "Use a dedicated isolated VM; never run unknown samples on a personal or production system.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "terminal",
+    "skills": [
+      "Malware analysis",
+      "Reverse engineering",
+      "Forensics"
+    ]
+  },
+  {
+    "id": "adv-flare-vm",
+    "name": "FLARE-VM malware-analysis environment",
+    "provider": "Mandiant",
+    "category": "Malware Analysis",
+    "kind": "Free open-source setup scripts; environment costs vary",
+    "level": "Advanced",
+    "description": "Learn about a Windows-based reverse-engineering and malware-analysis environment for controlled research.",
+    "url": "https://github.com/mandiant/flare-vm",
+    "account": "GitHub account optional for browsing",
+    "note": "Install in a dedicated disposable VM and follow the project’s isolation and setup guidance.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "monitor",
+    "skills": [
+      "Windows analysis",
+      "Reverse engineering",
+      "Malware triage"
+    ]
+  },
+  {
+    "id": "adv-ghidra-docs",
+    "name": "Ghidra software reverse-engineering documentation",
+    "provider": "Ghidra / NSA",
+    "category": "Malware Analysis",
+    "kind": "Free open-source tool and documentation",
+    "level": "Advanced",
+    "description": "Study disassembly, decompilation, binary navigation and software analysis through Ghidra documentation.",
+    "url": "https://ghidra-sre.org/",
+    "account": "No account required for docs",
+    "note": "Use only samples and binaries you have rights to analyse; reverse-engineering activity may be constrained by law or contract.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "code",
+    "skills": [
+      "Reverse engineering",
+      "Binary analysis",
+      "Code comprehension"
+    ]
+  },
+  {
+    "id": "adv-volatility3-docs",
+    "name": "Volatility 3 memory forensics documentation",
+    "provider": "Volatility Foundation",
+    "category": "Digital Forensics",
+    "kind": "Free open-source documentation",
+    "level": "Advanced",
+    "description": "Learn memory-forensics concepts and how to approach analysis of memory images using the Volatility framework.",
+    "url": "https://volatility3.readthedocs.io/en/latest/",
+    "account": "No account required",
+    "note": "Practise with supplied or authorised memory images; memory dumps can contain personal and confidential information.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "database",
+    "skills": [
+      "Memory forensics",
+      "Incident response",
+      "Windows artefacts"
+    ]
+  },
+  {
+    "id": "adv-autopsy-docs",
+    "name": "Autopsy digital forensics documentation",
+    "provider": "Autopsy",
+    "category": "Digital Forensics",
+    "kind": "Free tool documentation; services vary",
+    "level": "Intermediate to Advanced",
+    "description": "Explore digital investigation workflows and forensic case analysis using Autopsy.",
+    "url": "https://www.autopsy.com/support/",
+    "account": "No account required for docs",
+    "note": "Maintain evidence integrity and legal authority to examine every dataset.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "file-search",
+    "skills": [
+      "Digital forensics",
+      "Evidence review",
+      "Case documentation"
+    ]
+  },
+  {
+    "id": "adv-velociraptor-docs",
+    "name": "Velociraptor DFIR documentation",
+    "provider": "Velociraptor",
+    "category": "Digital Forensics",
+    "kind": "Free open-source documentation",
+    "level": "Advanced",
+    "description": "Learn endpoint visibility, collection and investigation workflows for defensive response.",
+    "url": "https://docs.velociraptor.app/",
+    "account": "No account required for docs",
+    "note": "Use only on endpoints you own or administer with explicit permission and a privacy-aware collection plan.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "search",
+    "skills": [
+      "DFIR",
+      "Endpoint investigation",
+      "Telemetry"
+    ]
+  },
+  {
+    "id": "adv-misp-book",
+    "name": "MISP threat-intelligence sharing book",
+    "provider": "MISP Project / CIRCL",
+    "category": "Threat Intelligence",
+    "kind": "Free technical documentation",
+    "level": "Intermediate to Advanced",
+    "description": "Learn threat-information sharing concepts, event structures, taxonomies and intelligence workflows.",
+    "url": "https://www.circl.lu/doc/misp/",
+    "account": "No account required",
+    "note": "The platform can handle sensitive indicators; follow sharing restrictions, confidence labels and privacy rules.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "share-2",
+    "skills": [
+      "Threat intelligence",
+      "Indicators",
+      "Information sharing"
+    ]
+  },
+  {
+    "id": "adv-opencti-docs",
+    "name": "OpenCTI documentation",
+    "provider": "OpenCTI",
+    "category": "Threat Intelligence",
+    "kind": "Free docs; hosted or enterprise services may be paid",
+    "level": "Intermediate to Advanced",
+    "description": "Learn about structuring, linking and analysing cyber threat intelligence knowledge.",
+    "url": "https://docs.opencti.io/latest/",
+    "account": "No account required for docs",
+    "note": "Self-hosting requires compute and maintenance; hosted offerings may have separate commercial terms.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "network",
+    "skills": [
+      "Threat intelligence",
+      "STIX",
+      "Knowledge graph"
+    ]
+  },
+  {
+    "id": "adv-threatfox",
+    "name": "ThreatFox malware indicator database",
+    "provider": "abuse.ch",
+    "category": "Threat Intelligence",
+    "kind": "Free public threat-intelligence feed; terms apply",
+    "level": "Intermediate to Advanced",
+    "description": "Explore public indicators of compromise and learn how to record source, context and confidence for threat research.",
+    "url": "https://threatfox.abuse.ch/",
+    "account": "Account/API token may be required for some features",
+    "note": "Validate freshness and context before taking action; indicators can be incomplete or falsely attributed.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "database",
+    "skills": [
+      "Indicators",
+      "Threat intelligence",
+      "IOC enrichment"
+    ]
+  },
+  {
+    "id": "adv-urlscan-docs",
+    "name": "urlscan.io documentation",
+    "provider": "urlscan.io",
+    "category": "Threat Intelligence",
+    "kind": "Free public access; limits and API terms apply",
+    "level": "Intermediate to Advanced",
+    "description": "Learn to analyse public web-scan results and understand URL, domain and page metadata.",
+    "url": "https://urlscan.io/docs/",
+    "account": "Account may be required for some features",
+    "note": "Uploads can expose URLs and related information publicly depending on scan visibility settings. Do not submit private links or sensitive tokens.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "search",
+    "skills": [
+      "URL analysis",
+      "OSINT",
+      "Web artefacts"
+    ]
+  },
+  {
+    "id": "adv-virustotal-docs",
+    "name": "VirusTotal documentation",
+    "provider": "VirusTotal",
+    "category": "Threat Intelligence",
+    "kind": "Free limited access; commercial use/quotas vary",
+    "level": "Intermediate to Advanced",
+    "description": "Understand how to interpret multi-engine file, URL, domain and indicator results for defensive triage.",
+    "url": "https://docs.virustotal.com/reference/overview",
+    "account": "Account/API key may be required",
+    "note": "Public submissions and API terms have privacy implications; never upload confidential files without approval.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "shield",
+    "skills": [
+      "Threat intelligence",
+      "IOC triage",
+      "File analysis"
+    ]
+  },
+  {
+    "id": "adv-nist-ir-80061r3",
+    "name": "NIST incident response recommendations (SP 800-61 Rev. 3)",
+    "provider": "NIST",
+    "category": "Digital Forensics",
+    "kind": "Free official publication",
+    "level": "Intermediate to Advanced",
+    "description": "Study incident-response recommendations integrated with cybersecurity risk management and CSF 2.0.",
+    "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "account": "No account required",
+    "note": "Free publication. Check publication date and errata before using in policy work.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "file-text",
+    "skills": [
+      "Incident response",
+      "Preparation",
+      "Recovery"
+    ]
+  },
+  {
+    "id": "adv-nist-80053",
+    "name": "NIST SP 800-53 security and privacy controls",
+    "provider": "NIST",
+    "category": "Governance & Risk",
+    "kind": "Free official publication",
+    "level": "Advanced",
+    "description": "Explore a control catalogue for information systems and organisations.",
+    "url": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
+    "account": "No account required",
+    "note": "Large reference set; use appropriate tailoring and applicable legal/regulatory requirements.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "clipboard-check",
+    "skills": [
+      "Security controls",
+      "Compliance",
+      "Risk management"
+    ]
+  },
+  {
+    "id": "adv-cis-controls",
+    "name": "CIS Critical Security Controls",
+    "provider": "Center for Internet Security",
+    "category": "Governance & Risk",
+    "kind": "Free public overview; detailed resources may vary",
+    "level": "Beginner to Advanced",
+    "description": "Use prioritised safeguards as a practical baseline for organisational cyber hygiene.",
+    "url": "https://www.cisecurity.org/controls",
+    "account": "No account required for overview",
+    "note": "Check current version and access conditions for benchmarks or related resources.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "shield-check",
+    "skills": [
+      "Controls",
+      "Hardening",
+      "Risk assessment"
+    ]
+  },
+  {
+    "id": "adv-csa-ccm",
+    "name": "Cloud Security Alliance Cloud Controls Matrix",
+    "provider": "Cloud Security Alliance",
+    "category": "Cloud Security",
+    "kind": "Free framework; optional paid services vary",
+    "level": "Intermediate to Advanced",
+    "description": "Map cloud-security controls, assurance requirements and compliance considerations across cloud environments.",
+    "url": "https://cloudsecurityalliance.org/research/cloud-controls-matrix",
+    "account": "No account required for public resources",
+    "note": "The matrix is a framework, not a substitute for the contracts, laws or assurance requirements relevant to an organisation.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "cloud",
+    "skills": [
+      "Cloud governance",
+      "Compliance",
+      "Control mapping"
+    ]
+  },
+  {
+    "id": "adv-nist-privacy-framework",
+    "name": "NIST Privacy Framework",
+    "provider": "NIST",
+    "category": "Governance & Risk",
+    "kind": "Free official framework",
+    "level": "Intermediate to Advanced",
+    "description": "Learn a risk-based approach to identifying and managing privacy risks alongside cybersecurity work.",
+    "url": "https://www.nist.gov/privacy-framework",
+    "account": "No account required",
+    "note": "Free framework; applicable privacy law differs by jurisdiction.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "lock",
+    "skills": [
+      "Privacy risk",
+      "Governance",
+      "Data lifecycle"
+    ]
+  },
+  {
+    "id": "adv-aws-security-ramp-up",
+    "name": "AWS Security Learning Plan and Ramp-Up Guide",
+    "provider": "Amazon Web Services",
+    "category": "Cloud Security",
+    "kind": "Free digital courses; live training may be paid",
+    "level": "Beginner to Advanced",
+    "description": "Follow AWS-authored learning sequences for IAM, workload protection, monitoring, governance and cloud security.",
+    "url": "https://aws.amazon.com/training/learn-about/security/",
+    "account": "AWS account may be needed for some exercises",
+    "note": "Free digital learning is distinct from paid classroom training, certification exams and usage-based AWS resources.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "cloud",
+    "skills": [
+      "AWS security",
+      "IAM",
+      "Cloud operations"
+    ]
+  },
+  {
+    "id": "adv-aws-security-pillar",
+    "name": "AWS Well-Architected Security Pillar",
+    "provider": "Amazon Web Services",
+    "category": "Cloud Security",
+    "kind": "Free official technical reference",
+    "level": "Intermediate to Advanced",
+    "description": "Review AWS design principles and best practices for identity, detection, infrastructure protection and data protection.",
+    "url": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html",
+    "account": "No account required for docs",
+    "note": "Free documentation; implementing examples in a live account may incur charges.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "cloud",
+    "skills": [
+      "Cloud architecture",
+      "IAM",
+      "Security design"
+    ]
+  },
+  {
+    "id": "adv-microsoft-security-career",
+    "name": "Microsoft Security Engineer learning path",
+    "provider": "Microsoft Learn",
+    "category": "Cloud Security",
+    "kind": "Free official training; exam/product costs separate",
+    "level": "Intermediate to Advanced",
+    "description": "Explore a role-oriented learning route across identity, cloud, threat protection and security operations.",
+    "url": "https://learn.microsoft.com/en-us/training/career-paths/security-engineer",
+    "account": "Microsoft account may be required for some labs",
+    "note": "Training does not include every exam, lab service or commercial product licence.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "cloud",
+    "skills": [
+      "Azure security",
+      "Identity",
+      "Security engineering"
+    ]
+  },
+  {
+    "id": "adv-google-cloud-cyber-cert",
+    "name": "Google Cloud Cybersecurity Certificate",
+    "provider": "Google Cloud / Google Skills",
+    "category": "Cloud Security",
+    "kind": "Paid subscription path; regional rates vary",
+    "level": "Beginner to Intermediate",
+    "description": "Learn foundational Google Cloud cybersecurity concepts through a multi-course pathway with labs and assessments.",
+    "url": "https://cloud.google.com/learn/certificates",
+    "account": "Google Skills account required",
+    "note": "The listed subscription price and programme availability can change by region; confirm current price and included credential at enrolment.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "graduation-cap",
+    "skills": [
+      "Cloud security",
+      "Google Cloud",
+      "Security operations"
+    ]
+  },
+  {
+    "id": "adv-kubernetes-security",
+    "name": "Kubernetes security documentation",
+    "provider": "Kubernetes",
+    "category": "Cloud Security",
+    "kind": "Free official documentation",
+    "level": "Intermediate to Advanced",
+    "description": "Study cluster security concepts including authentication, authorisation, secrets, workload isolation and policy.",
+    "url": "https://kubernetes.io/docs/concepts/security/",
+    "account": "No account required",
+    "note": "Run practice clusters locally or in authorised accounts; hosted infrastructure may cost money.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "server",
+    "skills": [
+      "Kubernetes",
+      "Container security",
+      "Cloud-native security"
+    ]
+  },
+  {
+    "id": "adv-slsa-framework",
+    "name": "SLSA software supply-chain security framework",
+    "provider": "SLSA community",
+    "category": "Security Engineering",
+    "kind": "Free open framework",
+    "level": "Intermediate to Advanced",
+    "description": "Learn how to improve build integrity and provenance across software supply chains.",
+    "url": "https://slsa.dev/",
+    "account": "No account required",
+    "note": "A framework and implementation guide, not a certification. Match controls to the actual build system.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "package-check",
+    "skills": [
+      "Supply-chain security",
+      "Build provenance",
+      "CI/CD"
+    ]
+  },
+  {
+    "id": "adv-openssf-scorecard",
+    "name": "OpenSSF Scorecard",
+    "provider": "OpenSSF",
+    "category": "Security Engineering",
+    "kind": "Free open-source tool and documentation",
+    "level": "Intermediate to Advanced",
+    "description": "Assess selected open-source project security practices using automated checks and documented criteria.",
+    "url": "https://securityscorecards.dev/",
+    "account": "No account required",
+    "note": "Scorecards are signals, not definitive security ratings. Check the underlying findings and limitations.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "shield-check",
+    "skills": [
+      "Open-source security",
+      "Supply chain",
+      "Repository hygiene"
+    ]
+  },
+  {
+    "id": "adv-owasp-llm-top10",
+    "name": "OWASP Top 10 for LLM Applications",
+    "provider": "OWASP GenAI Security Project",
+    "category": "AI Security",
+    "kind": "Free technical reference",
+    "level": "Intermediate to Advanced",
+    "description": "Study common risk categories in LLM-based applications and use them to plan defensive design and evaluation.",
+    "url": "https://owasp.org/projects/top-10-for-large-language-model-applications",
+    "account": "No account required",
+    "note": "Use as a risk-awareness reference and pair it with safe testing, secure design and current project guidance.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "brain-circuit",
+    "skills": [
+      "LLM security",
+      "Application security",
+      "Risk assessment"
+    ]
+  },
+  {
+    "id": "adv-mitre-atlas",
+    "name": "MITRE ATLAS AI threat landscape",
+    "provider": "MITRE",
+    "category": "AI Security",
+    "kind": "Free official knowledge base",
+    "level": "Intermediate to Advanced",
+    "description": "Explore adversary tactics and techniques relevant to AI-enabled systems and machine-learning security.",
+    "url": "https://atlas.mitre.org/",
+    "account": "No account required",
+    "note": "Knowledge base for threat-informed defence; validate context for the specific AI system and deployment.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "brain-circuit",
+    "skills": [
+      "AI security",
+      "Threat modelling",
+      "Red/blue team analysis"
+    ]
+  },
+  {
+    "id": "adv-nist-ai-rmf",
+    "name": "NIST AI Risk Management Framework",
+    "provider": "NIST",
+    "category": "AI Security",
+    "kind": "Free official framework",
+    "level": "Intermediate to Advanced",
+    "description": "Organise AI risk management activities around governance, mapping, measurement and management.",
+    "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+    "account": "No account required",
+    "note": "Framework guidance, not a guarantee that an AI system is safe or compliant.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "brain-circuit",
+    "skills": [
+      "AI governance",
+      "Risk management",
+      "Model evaluation"
+    ]
+  },
+  {
+    "id": "adv-cisa-ics-training",
+    "name": "CISA Industrial Control Systems training calendar",
+    "provider": "CISA",
+    "category": "OT / ICS Security",
+    "kind": "Training access varies by course and cohort",
+    "level": "Intermediate to Advanced",
+    "description": "Find official ICS cybersecurity training events and self-paced virtual course options.",
+    "url": "https://www.cisa.gov/ics-training-calendar",
+    "account": "Registration may be required",
+    "note": "Eligibility and course dates vary. Confirm current registration requirements and lab availability with CISA.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "factory",
+    "skills": [
+      "ICS security",
+      "OT incident response",
+      "Industrial networks"
+    ]
+  },
+  {
+    "id": "adv-swayam-nptel",
+    "name": "SWAYAM / NPTEL course directory",
+    "provider": "Government of India / NPTEL",
+    "category": "Certification Prep",
+    "kind": "Free learning; optional proctored exams are paid",
+    "level": "Beginner to Advanced",
+    "description": "Find university-level courses, including relevant computing and security subjects, from India’s national online learning initiatives.",
+    "url": "https://www.swayam.gov.in/",
+    "account": "Account required to enrol",
+    "note": "SWAYAM learning is free; optional certification exams have fees. The NPTEL page currently lists ₹1,000 per course exam; recheck the specific semester before showing a price.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "graduation-cap",
+    "skills": [
+      "Computer science",
+      "Cybersecurity foundations",
+      "University learning"
+    ]
+  },
+  {
+    "id": "adv-futureskills-prime",
+    "name": "FutureSkills Prime digital-skills and cybersecurity catalogue",
+    "provider": "FutureSkills Prime",
+    "category": "Certification Prep",
+    "kind": "Free and paid programme terms vary",
+    "level": "Beginner to Advanced",
+    "description": "Search India-focused digital-skills, cybersecurity and role-aligned learning programmes.",
+    "url": "https://futureskillsprime.in/",
+    "account": "Account may be required",
+    "note": "Programme price, subsidy, eligibility and certificate outcomes differ by course; verify each current listing.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "graduation-cap",
+    "skills": [
+      "Cybersecurity training",
+      "Digital skills",
+      "Career planning"
+    ]
+  },
+  {
+    "id": "adv-google-cybersecurity-coursera",
+    "name": "Google Cybersecurity Professional Certificate",
+    "provider": "Google / Coursera",
+    "category": "Certification Prep",
+    "kind": "Paid subscription; financial aid/region options vary",
+    "level": "Beginner to Intermediate",
+    "description": "Follow a multi-course introductory cybersecurity curriculum with practical tasks and a shareable programme certificate.",
+    "url": "https://www.coursera.org/professional-certificates/google-cybersecurity",
+    "account": "Coursera account required",
+    "note": "Subscription pricing, trial terms, financial aid and certificate eligibility can vary. This is a course-based professional certificate, not an exam-based vendor certification.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "graduation-cap",
+    "skills": [
+      "Security operations",
+      "Linux",
+      "Python",
+      "SIEM basics"
+    ]
+  },
+  {
+    "id": "adv-isc2-cc-path",
+    "name": "ISC2 Certified in Cybersecurity (CC) credential information",
+    "provider": "ISC2",
+    "category": "Certification Prep",
+    "kind": "Official certification; exam and maintenance terms apply",
+    "level": "Beginner",
+    "description": "Review the official credential requirements, exam outline and current enrolment options for the CC certification.",
+    "url": "https://www.isc2.org/certifications/cc",
+    "account": "Account required for registration",
+    "note": "Do not label the exam universally free. Check the current exam fee, available promotions, eligibility and annual maintenance fee on the official issuer site.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "award",
+    "skills": [
+      "Security fundamentals",
+      "Access control",
+      "Network security"
+    ]
+  },
+  {
+    "id": "adv-cisco-ccna-path",
+    "name": "Cisco CCNA official certification path",
+    "provider": "Cisco",
+    "category": "Certification Prep",
+    "kind": "Paid exam; training costs vary",
+    "level": "Intermediate",
+    "description": "Review the official CCNA exam outline and training recommendations for networking fundamentals, access, IP connectivity, services and security basics.",
+    "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html",
+    "account": "Account required for some registrations",
+    "note": "Separate free learning, commercial training and exam voucher costs. Confirm current regional exam price and exam version before purchase.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "award",
+    "skills": [
+      "Networking",
+      "Routing",
+      "Switching",
+      "Network security"
+    ]
+  },
+  {
+    "id": "adv-comptia-securityplus",
+    "name": "CompTIA Security+ certification and exam objectives",
+    "provider": "CompTIA",
+    "category": "Certification Prep",
+    "kind": "Paid certification; training options vary",
+    "level": "Beginner to Intermediate",
+    "description": "Use the official objectives to plan study across threats, architecture, operations, programme management and security controls.",
+    "url": "https://www.comptia.org/certifications/security",
+    "account": "Account may be required for registration",
+    "note": "Exam and training costs vary by country, voucher, bundle and promotion; verify current version and regional price.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "award",
+    "skills": [
+      "Security fundamentals",
+      "Certification preparation",
+      "Risk"
+    ]
+  },
+  {
+    "id": "adv-cyberseek",
+    "name": "CyberSeek workforce and career explorer",
+    "provider": "CyberSeek",
+    "category": "Career Resources",
+    "kind": "Free tool; primarily US labour-market data",
+    "level": "Beginner to Advanced",
+    "description": "Explore US cybersecurity job categories, workforce demand and career pathways.",
+    "url": "https://www.cyberseek.org/",
+    "account": "No account required",
+    "note": "The labour-market data is US-focused; do not present it as a local estimate for India or another region.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "chart-no-axes-combined",
+    "skills": [
+      "Career research",
+      "Workforce data",
+      "Role exploration"
+    ]
+  },
+  {
+    "id": "adv-enisa-skills",
+    "name": "ENISA cybersecurity skills and competence resources",
+    "provider": "ENISA",
+    "category": "Career Resources",
+    "kind": "Free public reference",
+    "level": "Intermediate to Advanced",
+    "description": "Explore European cybersecurity skills and role frameworks for comparing capability requirements.",
+    "url": "https://www.enisa.europa.eu/topics/skills-and-competences",
+    "account": "No account required",
+    "note": "European context; compare with local employer requirements and frameworks.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "compass",
+    "skills": [
+      "Skills frameworks",
+      "European cybersecurity",
+      "Career mapping"
+    ]
+  },
+  {
+    "id": "adv-bellingcat-toolkit",
+    "name": "Bellingcat Online Investigation Toolkit",
+    "provider": "Bellingcat",
+    "category": "Threat Intelligence",
+    "kind": "Free public reference; tool terms vary",
+    "level": "Intermediate to Advanced",
+    "description": "Discover open-source investigation tools and methods for documenting online research.",
+    "url": "https://bellingcat.gitbook.io/toolkit",
+    "account": "No account required",
+    "note": "Use lawfully available public information; protect privacy, avoid doxxing and respect platform terms.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "search",
+    "skills": [
+      "OSINT",
+      "Source evaluation",
+      "Research documentation"
+    ]
+  },
+  {
+    "id": "adv-picoctf-practice",
+    "name": "picoGym practice library",
+    "provider": "Carnegie Mellon University",
+    "category": "Hands-on Labs",
+    "kind": "Free practice challenges",
+    "level": "Beginner to Advanced",
+    "description": "Build skills through self-paced security puzzles across multiple topic categories.",
+    "url": "https://play.picoctf.org/practice",
+    "account": "Account may be required",
+    "note": "Use the practice service only; do not transfer challenge techniques to systems without permission.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "terminal",
+    "skills": [
+      "CTF",
+      "Problem solving",
+      "Security fundamentals"
+    ]
+  },
+  {
+    "id": "adv-cwe-top25",
+    "name": "CWE Top 25 Most Dangerous Software Weaknesses",
+    "provider": "MITRE CWE",
+    "category": "Security Engineering",
+    "kind": "Free official reference",
+    "level": "Intermediate to Advanced",
+    "description": "Use a maintained weakness taxonomy to learn common software defect classes and prioritise secure-code review.",
+    "url": "https://cwe.mitre.org/top25/",
+    "account": "No account required",
+    "note": "Check the year/version named on the page; lists change and should not be treated as the only weaknesses to consider.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "code",
+    "skills": [
+      "Secure coding",
+      "Vulnerability taxonomy",
+      "Code review"
+    ]
+  },
+  {
+    "id": "adv-nist-nice-international",
+    "name": "NIST international cybersecurity workforce resources",
+    "provider": "NIST NICE",
+    "category": "Career Resources",
+    "kind": "Free global workforce reference",
+    "level": "Beginner to Advanced",
+    "description": "Compare cybersecurity workforce frameworks and career-planning resources used in different regions.",
+    "url": "https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center/international-cybersecurity-workforce",
+    "account": "No account required",
+    "note": "Frameworks and titles are not identical across countries; local job postings remain essential.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "globe",
+    "skills": [
+      "International career planning",
+      "Skills framework"
+    ]
+  },
+  {
+    "id": "adv-nist-learner-resources",
+    "name": "NIST NICE learner resources",
+    "provider": "NIST NICE",
+    "category": "Career Resources",
+    "kind": "Free learner resource directory",
+    "level": "Beginner to Advanced",
+    "description": "Discover career profiles, work-role videos and learning tools mapped to cybersecurity workforce capabilities.",
+    "url": "https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center/resources/learner-resources",
+    "account": "No account required",
+    "note": "Some tools are US-centred and third-party access terms can change.",
+    "image": "/images/learning/hands-on-lab.svg",
+    "icon": "graduation-cap",
+    "skills": [
+      "Career exploration",
+      "Work roles",
+      "Learning planning"
+    ]
+  },
+  {
+    "id": "grqz-ssl-imp-tls-fingerprint-research",
+    "name": "TLS Client Fingerprinting Research — ssl_imp",
+    "provider": "grqz · open-source research project",
+    "category": "Network Security",
+    "kind": "Advanced research reference",
+    "level": "Advanced",
+    "description": "Study how TLS client handshake characteristics can create observable fingerprints, using a C/OpenSSL research project that imitates a Chrome-like fingerprint. Pair it with defensive research on traffic attribution and the limits of fingerprinting.",
+    "url": "https://github.com/grqz/ssl_imp",
+    "account": "No account required to browse",
+    "note": "Use as a research reference for defensive analysis and interoperability experiments on systems you control. It is not permission to evade access controls or disguise abusive traffic; a fingerprint alone is not proof of identity.",
+    "image": "/images/learning/detection-tuning.svg",
+    "icon": "network",
+    "skills": [
+      "TLS",
+      "Client fingerprinting",
+      "Network traffic analysis",
+      "C/OpenSSL"
+    ],
+    "monogram": "TLS"
+  },
+  {
+    "id": "stevietv-bearly-secure-go-web-security-lab",
+    "name": "Bearly Secure — Go Web Security Starter Lab",
+    "provider": "StevieTV fork · Boot.dev upstream",
+    "category": "Application Security",
+    "kind": "Intentionally vulnerable training app",
+    "level": "Intermediate",
+    "description": "An intentionally vulnerable Go web application with a separate browser-based attacker lab for learning authentication, authorization, injection, session handling, and browser trust boundaries.",
+    "url": "https://github.com/stevietv/learn-web-security-golang-starter",
+    "account": "Local Go environment required",
+    "note": "This repository is a fork of the Boot.dev starter project. Use only in an isolated local training environment; never deploy it publicly or use real accounts, credentials, or customer data. Check the upstream source, licence, and course terms before reuse.",
+    "image": "/images/learning/web-security.svg",
+    "icon": "bug",
+    "skills": [
+      "Go",
+      "Web application security",
+      "Authentication",
+      "Authorization",
+      "Secure coding"
+    ],
+    "practiceUrl": "https://github.com/stevietv/learn-web-security-golang-starter",
+    "monogram": "GO"
+  },
+  {
+    "id": "witherornot-warbird-obfuscation-documentation",
+    "name": "Warbird Obfuscation — Windows Reverse Engineering Notes",
+    "provider": "WitherOrNot · community research documentation",
+    "category": "Reverse Engineering",
+    "kind": "Advanced documentation",
+    "level": "Advanced",
+    "description": "Community-written documentation about Microsoft Warbird obfuscation, useful as a reference for advanced Windows internals and controlled reverse-engineering study.",
+    "url": "https://github.com/WitherOrNot/warbird-docs",
+    "account": "No account required to browse",
+    "note": "This is community documentation, not official Microsoft documentation. Corroborate claims and keep practical analysis to harmless sample binaries in a controlled lab. Useful prerequisites include executable-format basics, assembly, debugging, and static-analysis concepts.",
+    "image": "/images/learning/career-malware-analysis.webp",
+    "icon": "terminal",
+    "skills": [
+      "Windows internals",
+      "Reverse engineering",
+      "Obfuscation analysis",
+      "Static analysis"
+    ],
+    "monogram": "WRB"
+  },
+  {
+    "id": "smarttube-supply-chain-disclosure-case-study",
+    "name": "SmartTube Maintainer Disclosure — Supply-Chain Security Case Study",
+    "provider": "SmartTube maintainers · public repository disclosure",
+    "category": "Security Engineering & DevSecOps",
+    "kind": "Public incident case study",
+    "level": "Intermediate → Advanced",
+    "description": "Use the public project disclosure as a case study in development-environment security, release integrity, signing-key response, artifact verification, recovery, and user communication.",
+    "url": "https://github.com/yuliskov/SmartTube",
+    "account": "No account required to browse",
+    "note": "SmartTube is a media application, not a security tool. Attribute findings to the public disclosure and distinguish confirmed findings from potential impact; do not claim every build was compromised when the source does not establish that. Suggested output: an incident timeline and a release-hardening checklist.",
+    "image": "/images/learning/supply-chain.svg",
+    "icon": "shield-check",
+    "skills": [
+      "Software supply-chain security",
+      "Code signing",
+      "Release integrity",
+      "Incident response"
+    ],
+    "monogram": "SC"
   }
 ]

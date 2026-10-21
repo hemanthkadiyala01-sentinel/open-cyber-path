@@ -1,4 +1,5 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
+import BrandIcon from './BrandIcon.jsx';
 import './tools-threats.css';
 
 const baseToolCatalog = [
@@ -367,10 +368,39 @@ const threatReading = [
 ];
 
 const filters = ['All tools', 'Start here', 'Blue Team', 'Red Team', 'DFIR', 'Foundations', 'OSINT & Threat Intel', 'Cloud & DevSecOps'];
+function toolArtwork(tool) {
+  const text = `${tool.id || ''} ${tool.name || ''} ${tool.family || ''}`.toLowerCase();
+  if (/wireshark/.test(text)) return '/images/opc-visuals/wireshark-ui.webp';
+  if (/\bnmap\b|network discovery|asset discovery/.test(text)) return '/images/opc-visuals/network-discovery-ui.webp';
+  if (/owasp zap|burp suite|mitmproxy|web application testing|sqlmap|ffuf|gobuster|nuclei|subfinder|dvwa|crapi/.test(text)) return '/images/opc-visuals/web-app-testing-ui.webp';
+  if (/autopsy|volatility|sleuth kit|forensic|zimmerman/.test(text)) return '/images/opc-visuals/digital-forensics-ui.webp';
+  if (/ghidra|reverse.engineering|malware analysis|disassembler/.test(text)) return '/images/opc-visuals/reverse-engineering-ui.webp';
+  if (/metasploit|penetration testing|pentest/.test(text)) return '/images/opc-visuals/pentest-lab.webp';
+  if (/defender|edr|xdr|sysmon|osquery/.test(text)) return '/images/opc-visuals/endpoint-defense.webp';
+  if (/wazuh|splunk|sentinel|grafana|prometheus|siem|soc|event log/.test(text)) return '/images/opc-visuals/soc-monitoring.webp';
+  if (/zeek|network analysis|network monitoring|packet/.test(text)) return '/images/opc-visuals/wireshark-ui.webp';
+  if (/cloud|aws|azure|prowler|devsecops|kubernetes/.test(text)) return '/images/opc-visuals/cloud-security.webp';
+  if (/cyberchef|crypt|hash|encoding|password/.test(text)) return '/images/opc-visuals/cryptography.webp';
+  if (/python|visual studio|vscode|github|codeql|source code|secure code/.test(text)) return '/images/opc-visuals/secure-code.webp';
+  if (/greynoise|shodan|virustotal|abuseipdb|otx|osint|crt\.sh|threat intel|mitre attack|breach|pwned/.test(text)) return '/images/opc-visuals/threat-intelligence.webp';
+  if (/linux|windows|operating system|kernel/.test(text)) return '/images/opc-visuals/linux-admin.webp';
+  if (/endpoint|edr|xdr|host telemetry/.test(text)) return '/images/opc-visuals/endpoint-defense.webp';
+  if (/governance|risk|framework|compliance/.test(text)) return '/images/opc-visuals/governance-risk.webp';
+  return '/images/opc-visuals/cyber-learning.webp';
+}
+
+function filmArtwork(title) {
+  const name = String(title || '').toLowerCase();
+  if (name.includes('mr. robot')) return '/images/opc-visuals/soc-monitoring.webp';
+  if (name.includes('hackers')) return '/images/opc-visuals/network-discovery-ui.webp';
+  if (name.includes('blackhat')) return '/images/opc-visuals/reverse-engineering-ui.webp';
+  return '/images/opc-visuals/case-study-workstation.webp';
+}
 function ToolCard({ tool, Icon }) {
   return <article className="tt-tool-card">
+    <div className="tt-tool-art"><img src={toolArtwork(tool)} alt={`${tool.name} workspace illustration`} loading="lazy" decoding="async" /><span className="tt-tool-art-shade" aria-hidden="true" /><span className="tt-tool-art-label">{tool.family}</span></div>
     <div className="tt-tool-top"><span className="tt-tool-kind">{tool.family}</span><span className={`tt-risk tt-risk-${tool.risk.toLowerCase().replace(/[^a-z]+/g, '-')}`}>Misuse risk: {tool.risk}</span></div>
-    <h3>{tool.name}</h3><div className="tt-level">{tool.level}</div>
+    <div className="tt-tool-brand"><BrandIcon id={tool.id} name={tool.name} url={tool.get} size={46} className="tt-brand-icon" /><div className="tt-tool-brand-copy"><h3>{tool.name}</h3><div className="tt-level">{tool.level}</div></div></div>
     <div className="tt-meta-strip"><span className={`tt-fit tt-fit-${tool.fit.toLowerCase().replace(/[^a-z]+/g, '-')}`}>{tool.fit}</span><span>{tool.cost}</span><span>{tool.setup}</span></div>
     <p className="tt-what">{tool.what}</p>
     <div className="tt-info-block"><small>WHY IT IS WORTH LEARNING</small><p>{tool.worth}</p></div>
@@ -423,6 +453,7 @@ export function ToolsThreats({ Icon }) {
 
     <div className="tt-section-title tt-movie-heading"><div><div className="section-kicker">FICTION AS A STARTING POINT, NOT A MANUAL</div><h2>Movie scenes, <em>real lessons.</em></h2></div><p>These are short educational interpretations, not instructions copied from the films. A dramatic scene can help raise a question, but the evidence—not the screenplay—must guide a real investigation.</p></div>
     <div className="tt-film-grid">{filmCases.map((film) => <article className={`tt-film-card ${openFilm === film.title ? 'is-open' : ''}`} key={film.title}>
+      <div className="tt-film-art"><img src={filmArtwork(film.title)} alt={`${film.title} case-study illustration`} loading="lazy" decoding="async" /><span className="tt-film-art-shade" aria-hidden="true" /></div>
       <button className="tt-film-toggle" type="button" aria-expanded={openFilm === film.title} onClick={() => setOpenFilm(openFilm === film.title ? '' : film.title)}><span className="tt-film-icon"><Icon name="film" size={22}/></span><span><small>{film.type.toUpperCase()} · CASE STUDY</small><b>{film.title}</b><em>{film.lens}</em></span><Icon name={openFilm === film.title ? 'minus' : 'plus'} size={18}/></button>
       {openFilm === film.title && <div className="tt-film-content"><p>{film.synopsis}</p><div className="tt-info-block"><small>REALITY CHECK</small><p>{film.realism}</p></div><div className="tt-info-block"><small>DEFENSIVE LESSON</small><p>{film.lesson}</p></div><div className="tt-film-exercise"><Icon name="lightbulb" size={17}/><div><small>TRY THIS WITHOUT ATTACKING ANY SYSTEM</small><p>{film.exercise}</p></div></div><a className="tt-source-link" href={film.source} target="_blank" rel="noreferrer">{film.sourceLabel} <Icon name="arrow-up-right" size={13}/></a></div>}
     </article>)}</div>

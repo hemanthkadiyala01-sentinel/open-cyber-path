@@ -1,0 +1,54 @@
+/* LiveOps has its own restrained indigo / ice / amber identity. All selectors are scoped to this page. */
+.liveops-wrap{--mint:#c2aaff;--green:#c2aaff;--cyan:#8bd6ff;--line:#39334e;--line2:#60527e;--muted:#b5bdd0;--text:#edf2ff}
+.liveops-wrap .section-kicker{color:#8dd9ff}
+.liveops-wrap em{color:#c3adff}
+.liveops-wrap .liveops-pulse{background:#ffc16b;box-shadow:0 0 14px #ffc16b66}
+.liveops-wrap .liveops-hero-panel{border-color:#51446d;background:radial-gradient(ellipse at 50% 35%,#392952 0,transparent 61%),linear-gradient(145deg,#171729,#0a1928);box-shadow:inset 0 0 45px #a88bff08}
+.liveops-wrap .liveops-orbit{border-color:#74659b}
+.liveops-wrap .liveops-orbit-b{border-color:#47627d}
+.liveops-wrap .liveops-orbit-core{background:linear-gradient(140deg,#332852,#14283b);border-color:#9d89cf;color:#cbbaff;box-shadow:0 0 35px #9f83ff20}
+.liveops-wrap .liveops-art-node{border-color:#524567;background:#151c2e;color:#d0d9f0}
+.liveops-wrap .liveops-feed-ok{border-color:#3e6e7f;background:#102936;color:#a2dcf5}
+.liveops-wrap .liveops-feed-ok p{color:#bed7e9}
+.liveops-wrap .liveops-mode-tabs button.is-active{background:#29203d;border-color:#77649f;color:#d5c4ff}
+.liveops-wrap .liveops-filterbar{border-color:#363a51;background:linear-gradient(110deg,#111d2c,#17182a)}
+.liveops-wrap .liveops-filterbar input:focus,.liveops-wrap .liveops-filterbar select:focus{border-color:#b39bff;box-shadow:0 0 0 3px #b39bff18}
+.liveops-wrap .liveops-challenge-card{border-color:#343c54;background:linear-gradient(150deg,#161a2c,#0a1928 80%)}
+.liveops-wrap .liveops-challenge-card:nth-child(3n + 2){border-color:#3d4562;background:linear-gradient(150deg,#1b1b35,#0a1928 80%)}
+.liveops-wrap .liveops-challenge-card:nth-child(3n){border-color:#3c4c5d;background:linear-gradient(150deg,#122632,#0a1928 80%)}
+.liveops-wrap .liveops-challenge-card:hover{border-color:#9a87ce;box-shadow:0 14px 36px #0004}
+.liveops-wrap .liveops-card-eyebrow{color:#a7dfff}
+.liveops-wrap .liveops-card-meta{border-color:#30384d}
+.liveops-wrap .liveops-skill-tags span{border-color:#414766;background:#141e31;color:#c3cbed}
+.liveops-wrap .liveops-card-source{border-color:#30394c}
+.liveops-wrap .liveops-save{border-color:#414561;background:#121b2b;color:#b6c5d9}
+.liveops-wrap .liveops-save.is-saved{color:#c6b4ff;border-color:#8068b0;background:#29203d}
+.liveops-wrap .liveops-source-view{border-color:#3b3d55;background:linear-gradient(150deg,#111d2c,#0a1827)}
+.liveops-wrap .liveops-source-tile{border-color:#374057;background:#111e2d}
+.liveops-wrap .liveops-source-tile:nth-child(4n + 2){background:#171b32;border-color:#4b456e}
+.liveops-wrap .liveops-source-tile:nth-child(4n + 3){background:#102532;border-color:#34556b}
+.liveops-wrap .liveops-source-tile:nth-child(4n){background:#282018;border-color:#68513a}
+.liveops-wrap .liveops-source-tile-bottom{border-color:#334056}
+.liveops-wrap .liveops-source-tile-bottom a,.liveops-wrap .liveops-source-open{color:#8edcff}
+.liveops-wrap .liveops-source-record{border-color:#30394e}
+.liveops-wrap .liveops-source-open{border-color:#48516d}
+.liveops-wrap .liveops-method-strip>div{border-color:#3b3b54;background:#101d2c}
+.liveops-wrap .liveops-method-strip svg{color:#c5b2ff}
+.liveops-wrap .liveops-modal{border-color:#51466e;background:#0d1928}
+.liveops-wrap .liveops-modal-header{border-color:#39344e;background:radial-gradient(ellipse at 10% 0,#3a2b56 0,transparent 60%),#111b2b}
+.liveops-wrap .liveops-modal-close{border-color:#51466e;background:#17243a;color:#e1d8ff}
+.liveops-wrap .liveops-task-callout{border-color:#69578e;background:linear-gradient(120deg,#251d3b,#102332)}
+.liveops-wrap .liveops-task-callout>b,.liveops-wrap .liveops-evidence-panel-top,.liveops-wrap .liveops-evidence-panel>a{color:#c6b4ff}
+.liveops-wrap .liveops-evidence-panel,.liveops-wrap .liveops-skill-panel{border-color:#3a4960;background:#101e2d}
+.liveops-wrap .liveops-rubric{border-color:#3b435a}
+.liveops-wrap .liveops-rubric>div{border-color:#303c51}
+.liveops-wrap .liveops-rubric b{color:#c7b5ff}
+.liveops-wrap .liveops-rubric .liveops-rubric-total{background:#241e37}
+.liveops-wrap .liveops-solution-workspace{border-color:#393950}
+.liveops-wrap .liveops-solution-field textarea{border-color:#3a4860;background:#071522}
+.liveops-wrap .liveops-solution-field textarea:focus{border-color:#b39bff;box-shadow:0 0 0 3px #b39bff18}
+.liveops-wrap .liveops-review-checks{border-color:#3b445b;background:#101e2e}
+.liveops-wrap .liveops-review-checks>b{color:#c6b5ff}
+.liveops-wrap .liveops-review-checks input{accent-color:#bba5ff}
+.liveops-wrap .liveops-notice{border-color:#6c5a8f;background:#241e38;color:#e0d3ff}
+@media(max-width:760px){.liveops-wrap .liveops-challenge-card:nth-child(n){background:linear-gradient(150deg,#151b2d,#0a1928 80%)}}

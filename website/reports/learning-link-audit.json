@@ -1,153 +1,43 @@
 {
-  "generatedAt": "2026-10-17T18:47:47.698Z",
-  "total": 196,
+  "generatedAt": "2026-10-19T03:12:54.117Z",
+  "total": 307,
   "summary": {
-    "OK": 151,
-    "REVIEW": 30,
-    "BROKEN": 15
+    "OK": 274,
+    "REVIEW": 33,
+    "BROKEN": 0
   },
   "outcomes": [
     {
-      "url": "https://csrc.nist.gov/Projects/incident-response/life-cycle-resources",
+      "url": "https://academy.hackthebox.com/faq",
       "labels": [
-        "resource nist-incident-response"
+        "free learning htb-academy-free-fundamentals"
       ],
-      "status": 404,
-      "verdict": "BROKEN",
-      "detail": ""
-    },
-    {
-      "url": "https://learn.microsoft.com/en-us/windows/security/threat-protection/auditing/basic-audit-process-creation",
-      "labels": [
-        "resource windows-security-auditing",
-        "video docs event-viewer-audit",
-        "note link 5"
-      ],
-      "status": 404,
-      "verdict": "BROKEN",
-      "detail": ""
-    },
-    {
-      "url": "https://portswigger.net/web-security/access-control",
-      "labels": [
-        "career lab application-security-bug-bounty/appsec-access"
-      ],
-      "status": 404,
-      "verdict": "BROKEN",
-      "detail": ""
-    },
-    {
-      "url": "https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality",
-      "labels": [
-        "note link 21"
-      ],
-      "status": 404,
-      "verdict": "BROKEN",
-      "detail": ""
-    },
-    {
-      "url": "https://portswigger.net/web-security/api-testing",
-      "labels": [
-        "career lab application-security-bug-bounty/appsec-api"
-      ],
-      "status": 404,
-      "verdict": "BROKEN",
-      "detail": ""
-    },
-    {
-      "url": "https://portswigger.net/web-security/authentication",
-      "labels": [
-        "career lab application-security-bug-bounty/appsec-auth"
-      ],
-      "status": 404,
-      "verdict": "BROKEN",
-      "detail": ""
-    },
-    {
-      "url": "https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded",
-      "labels": [
-        "note link 31"
-      ],
-      "status": 404,
-      "verdict": "BROKEN",
-      "detail": ""
-    },
-    {
-      "url": "https://portswigger.net/web-security/csrf",
-      "labels": [
-        "career lab application-security-bug-bounty/appsec-csrf"
-      ],
-      "status": 404,
-      "verdict": "BROKEN",
-      "detail": ""
-    },
-    {
-      "url": "https://portswigger.net/web-security/file-upload",
-      "labels": [
-        "career lab application-security-bug-bounty/appsec-upload"
-      ],
-      "status": 404,
-      "verdict": "BROKEN",
-      "detail": ""
-    },
-    {
-      "url": "https://portswigger.net/web-security/getting-started",
-      "labels": [
-        "video portswigger-video-tutorials"
-      ],
-      "status": 404,
-      "verdict": "BROKEN",
-      "detail": ""
-    },
-    {
-      "url": "https://portswigger.net/web-security/learning-paths/sql-injection",
-      "labels": [
-        "career lab application-security-bug-bounty/appsec-sqli"
-      ],
-      "status": 404,
-      "verdict": "BROKEN",
-      "detail": ""
-    },
-    {
-      "url": "https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data",
-      "labels": [
-        "note link 30"
-      ],
-      "status": 404,
-      "verdict": "BROKEN",
-      "detail": ""
-    },
-    {
-      "url": "https://portswigger.net/web-security/ssrf",
-      "labels": [
-        "career lab application-security-bug-bounty/appsec-ssrf"
-      ],
-      "status": 404,
-      "verdict": "BROKEN",
-      "detail": ""
-    },
-    {
-      "url": "https://portswigger.net/web-security/websockets",
-      "labels": [
-        "career lab application-security-bug-bounty/appsec-websockets"
-      ],
-      "status": 404,
-      "verdict": "BROKEN",
-      "detail": ""
-    },
-    {
-      "url": "https://www.cisa.gov/resources-tools/programs/industrial-control-systems",
-      "labels": [
-        "career lab grc-security-fundamentals/grc-cisa-ics"
-      ],
-      "status": 404,
-      "verdict": "BROKEN",
+      "status": 200,
+      "verdict": "OK",
       "detail": ""
     },
     {
       "url": "https://academy.hackthebox.com/path/preview/cracking-into-hack-the-box",
       "labels": [
         "career lab penetration-testing-red-team/pentest-htb-cracking"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://app.letsdefend.io/pricing",
+      "labels": [
+        "free learning letsdefend-basic"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://assets.ctfassets.net/82ripq7fjls2/6TYWUym0Nudqa8nGEnegjG/0f9b974d3b1837fe85ab8e6553f4d623/CompTIA-Security-Plus-SY0-701-Exam-Objectives.pdf",
+      "labels": [
+        "credential comptia-security-plus syllabus/objectives"
       ],
       "status": 200,
       "verdict": "OK",
@@ -168,6 +58,7 @@
         "resource mitre-attack",
         "video docs threat-hunting-ibm",
         "video docs mitre-attck-video",
+        "video docs advanced-mitre-attckcon-risk-informed-defense",
         "note link 20"
       ],
       "status": 200,
@@ -202,10 +93,47 @@
       "detail": ""
     },
     {
+      "url": "https://aws.amazon.com/certification/certified-security-specialty/",
+      "labels": [
+        "credential aws-security-specialty official page"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://aws.amazon.com/detective/",
+      "labels": [
+        "video docs advanced-aws-guardduty-detective-investigation"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://aws.amazon.com/guardduty/",
+      "labels": [
+        "video docs advanced-aws-guardduty-extended-threat-detection"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://aws.amazon.com/training/",
       "labels": [
         "resource aws-security-learning",
         "video docs aws-security-services"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://certifications.tcm-sec.com/pnpt/",
+      "labels": [
+        "credential pnpt official page",
+        "credential pnpt syllabus/objectives"
       ],
       "status": 200,
       "verdict": "OK",
@@ -223,8 +151,18 @@
       "detail": ""
     },
     {
+      "url": "https://csrc.nist.gov/Projects/incident-response/life-cycle-resources",
+      "labels": [
+        "resource nist-incident-response"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://csrc.nist.gov/pubs/sp/800/86/final",
       "labels": [
+        "career lab digital-forensics-incident-response/dfir-scope-nist-sp80086",
         "resource nist-digital-evidence"
       ],
       "status": 200,
@@ -268,10 +206,39 @@
       "detail": ""
     },
     {
+      "url": "https://cyberdefenders.org/blueteam-ctf-challenges/",
+      "labels": [
+        "free learning cyberdefenders-community-labs"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://cyberdefenders.org/blueteam-ctf-challenges/amadey-apt-c-36/",
       "labels": [
         "career lab digital-forensics-incident-response/dfir-amadey",
-        "career lab malware-analysis-reverse-engineering/mal-amadey"
+        "career lab digital-forensics-incident-response/dfir-project-obsidian",
+        "career lab malware-analysis-reverse-engineering/mal-amadey",
+        "career lab malware-analysis-reverse-engineering/mal-btv-obsidian"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://cyberdefenders.org/blueteam-ctf-challenges/gh0stnet-intrusion/",
+      "labels": [
+        "career lab soc-blue-team/soc-project-obsidian"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://cyberdefenders.org/blueteam-ctf-challenges/intel101/",
+      "labels": [
+        "career lab threat-intelligence-ethical-osint/intel-project-obsidian"
       ],
       "status": 200,
       "verdict": "OK",
@@ -318,6 +285,7 @@
     {
       "url": "https://cyberdefenders.org/blueteam-ctf-challenges/yara-wizards/",
       "labels": [
+        "career lab malware-analysis-reverse-engineering/mal-ost2",
         "note link 13"
       ],
       "status": 200,
@@ -325,9 +293,19 @@
       "detail": ""
     },
     {
-      "url": "https://cytrain.ncrb.gov.in/course/index.php?lang=en",
+      "url": "https://cyberdefenders.org/blueteam-ctf-challenges/yara101/",
       "labels": [
-        "career lab grc-security-fundamentals/grc-cytrain"
+        "career lab threat-hunting-detection-engineering/hunt-blue-team-village",
+        "career lab malware-analysis-reverse-engineering/mal-bv-hidden-task"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/security-specialty-03.html",
+      "labels": [
+        "credential aws-security-specialty syllabus/objectives"
       ],
       "status": 200,
       "verdict": "OK",
@@ -372,10 +350,30 @@
       "detail": ""
     },
     {
+      "url": "https://docs.hackerone.com/en/articles/8475116-quality-reports",
+      "labels": [
+        "career lab penetration-testing-red-team/pentest-quality-report-hackerone"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://docs.hackerone.com/en/articles/8494552-defining-scope",
       "labels": [
+        "career lab application-security-bug-bounty/appsec-scope-hackerone",
+        "career lab penetration-testing-red-team/pentest-permission-hackerone-scope",
         "resource hackerone-scope",
         "note link 22"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://docs.remnux.org/",
+      "labels": [
+        "resource advanced-remnux-malware-analysis"
       ],
       "status": 200,
       "verdict": "OK",
@@ -394,6 +392,15 @@
       "url": "https://docs.zeek.org/en/current/",
       "labels": [
         "video docs soc-network-monitoring-zeek-suricata"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://docs.zeek.org/en/current/tutorial/index.html",
+      "labels": [
+        "resource advanced-zeek-network-monitoring"
       ],
       "status": 200,
       "verdict": "OK",
@@ -447,6 +454,24 @@
       "detail": "redirected to https://play.lakera.ai/agent-breaker"
     },
     {
+      "url": "https://github.com/digininja/DVWA",
+      "labels": [
+        "resource dvwa"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://github.com/ffuf/ffuf",
+      "labels": [
+        "resource ffuf"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://github.com/juice-shop/juice-shop",
       "labels": [
         "note link 32"
@@ -465,9 +490,82 @@
       "detail": ""
     },
     {
+      "url": "https://github.com/mandiant/capa/blob/master/doc/usage.md",
+      "labels": [
+        "career lab malware-analysis-reverse-engineering/mal-capa-report-capstone"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://github.com/mitmproxy/mitmproxy",
+      "labels": [
+        "resource mitmproxy"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "labels": [
+        "resource advanced-ghidra-reverse-engineering"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://github.com/OJ/gobuster",
+      "labels": [
+        "resource gobuster"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://github.com/ossf/scorecard",
+      "labels": [
+        "career lab security-engineering-devsecops-iam/devsecops-scorecard-design-review"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://github.com/OWASP/crAPI",
       "labels": [
-        "career lab application-security-bug-bounty/appsec-crapi"
+        "career lab application-security-bug-bounty/appsec-crapi",
+        "resource owasp-crapi"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://github.com/projectdiscovery/nuclei",
+      "labels": [
+        "resource nuclei"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://github.com/projectdiscovery/subfinder",
+      "labels": [
+        "resource subfinder"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://github.com/rapid7/metasploit-framework",
+      "labels": [
+        "resource metasploit-framework"
       ],
       "status": 200,
       "verdict": "OK",
@@ -504,6 +602,15 @@
       "detail": ""
     },
     {
+      "url": "https://github.com/sqlmapproject/sqlmap",
+      "labels": [
+        "resource sqlmap"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://github.com/stuxnet999/MemLabs",
       "labels": [
         "career lab digital-forensics-incident-response/dfir-memlabs",
@@ -517,6 +624,15 @@
       "url": "https://github.com/VirusTotal/yara",
       "labels": [
         "career lab malware-analysis-reverse-engineering/mal-yara"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://github.com/zaproxy/zaproxy",
+      "labels": [
+        "resource owasp-zap"
       ],
       "status": 200,
       "verdict": "OK",
@@ -590,6 +706,73 @@
       "detail": ""
     },
     {
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert/",
+      "labels": [
+        "credential microsoft-sc-100 official page"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-900/",
+      "labels": [
+        "credential microsoft-sc-900 syllabus/objectives"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/SC-100",
+      "labels": [
+        "credential microsoft-sc-100 syllabus/objectives"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/SC-200",
+      "labels": [
+        "credential microsoft-sc-200 syllabus/objectives",
+        "certification update sc200-outline"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-compliance-and-identity-fundamentals/",
+      "labels": [
+        "credential microsoft-sc-900 official page"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/credentials/certifications/security-operations-analyst/",
+      "labels": [
+        "credential microsoft-sc-200 official page"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-expert-training",
+      "labels": [
+        "video docs advanced-defender-kql-incident-tracking",
+        "video docs advanced-defender-hunting-optimization",
+        "video docs advanced-defender-suspicious-signins-exfiltration",
+        "video docs advanced-defender-hunting-external-data-partitioning"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://learn.microsoft.com/en-us/defender-xdr/hunting-overview",
       "labels": [
         "resource microsoft-threat-hunting",
@@ -612,6 +795,43 @@
       "url": "https://learn.microsoft.com/en-us/training/browse/?products=azure&subjects=security",
       "labels": [
         "resource azure-security-learning"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/training/browse/?terms=cybersecurity%20architecture",
+      "labels": [
+        "credential microsoft-sc-100 preparation"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/training/browse/?terms=SC-200",
+      "labels": [
+        "credential microsoft-sc-200 preparation"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/training/browse/?terms=security",
+      "labels": [
+        "credential microsoft-learn-security-achievements syllabus/objectives",
+        "credential microsoft-learn-security-achievements preparation"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/training/browse/?terms=security%20fundamentals",
+      "labels": [
+        "credential microsoft-sc-900 preparation"
       ],
       "status": 200,
       "verdict": "OK",
@@ -645,6 +865,15 @@
       "detail": ""
     },
     {
+      "url": "https://learn.microsoft.com/en-us/training/paths/describe-basic-concepts-of-cybersecurity/",
+      "labels": [
+        "free learning microsoft-cyber-basics"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://learn.microsoft.com/en-us/training/paths/get-started-windows-powershell/",
       "labels": [
         "video docs powershell-beginners",
@@ -655,9 +884,56 @@
       "detail": ""
     },
     {
+      "url": "https://learn.microsoft.com/en-us/training/paths/introduction-student-security-operations-centers/",
+      "labels": [
+        "free learning microsoft-student-soc"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/",
       "labels": [
         "resource microsoft-learn"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/training/support/faq",
+      "labels": [
+        "credential microsoft-learn-security-achievements official page"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/training/topics/sci",
+      "labels": [
+        "free learning microsoft-learn-security"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-Audit#detailedtracking_auditprocesscreation",
+      "labels": [
+        "resource windows-security-auditing",
+        "video docs event-viewer-audit",
+        "note link 5"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": "redirected to https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-Audit"
+    },
+    {
+      "url": "https://learningnetwork.cisco.com/s/ccst-cybersecurity-exam-topics",
+      "labels": [
+        "credential cisco-ccst-cybersecurity syllabus/objectives"
       ],
       "status": 200,
       "verdict": "OK",
@@ -678,6 +954,24 @@
       "labels": [
         "career lab application-security-bug-bounty/appsec-mobile",
         "career lab security-engineering-devsecops-iam/eng-owasp-mastg"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://mitre-attack.github.io/attack-navigator/",
+      "labels": [
+        "career lab threat-intelligence-ethical-osint/intel-attack-navigator-capstone"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://my.ine.com/CyberSecurity/learning-paths/61f88d91-79ff-4d8f-af68-873883dbbd8c/penetration-testing-student-v2",
+      "labels": [
+        "credential ejpt preparation"
       ],
       "status": 200,
       "verdict": "OK",
@@ -722,6 +1016,15 @@
       "detail": ""
     },
     {
+      "url": "https://owasp.org/projects/asvs",
+      "labels": [
+        "resource advanced-owasp-asvs"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://owasp.org/projects/iot-security-testing-guide",
       "labels": [
         "career lab application-security-bug-bounty/appsec-iot",
@@ -734,7 +1037,8 @@
     {
       "url": "https://owasp.org/projects/juice-shop",
       "labels": [
-        "resource juice-shop"
+        "resource juice-shop",
+        "free learning owasp-juice-shop"
       ],
       "status": 200,
       "verdict": "OK",
@@ -778,15 +1082,6 @@
       "detail": "redirected to https://owasp.org/projects/webgoat"
     },
     {
-      "url": "https://p.ost2.fyi/",
-      "labels": [
-        "career lab malware-analysis-reverse-engineering/mal-ost2"
-      ],
-      "status": 200,
-      "verdict": "OK",
-      "detail": ""
-    },
-    {
       "url": "https://paloalto-fw.networkershome.com/",
       "labels": [
         "career lab security-engineering-devsecops-iam/eng-paloalto"
@@ -799,9 +1094,46 @@
       "url": "https://portswigger.net/web-security",
       "labels": [
         "resource portswigger-academy",
+        "free learning portswigger-academy",
         "video docs ethical-hacking-full-course",
         "video docs portswigger-video-tutorials",
         "note link 26"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/access-control",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-access"
+      ],
+      "status": 206,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality",
+      "labels": [
+        "note link 21"
+      ],
+      "status": 206,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/api-testing",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-api"
+      ],
+      "status": 206,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/authentication",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-auth"
       ],
       "status": 200,
       "verdict": "OK",
@@ -817,11 +1149,74 @@
       "detail": ""
     },
     {
+      "url": "https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded",
+      "labels": [
+        "note link 31"
+      ],
+      "status": 206,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/csrf",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-csrf"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://portswigger.net/web-security/file-path-traversal",
       "labels": [
         "career lab application-security-bug-bounty/appsec-path-traversal"
       ],
+      "status": 206,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/file-upload",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-upload"
+      ],
+      "status": 206,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/getting-started",
+      "labels": [
+        "video portswigger-video-tutorials"
+      ],
+      "status": 206,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/information-disclosure/exploiting/lab-infoleak-on-debug-page",
+      "labels": [
+        "career lab penetration-testing-red-team/pentest-bv-robots"
+      ],
+      "status": 206,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/learning-paths/sql-injection",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-sqli"
+      ],
       "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/request-smuggling/advanced",
+      "labels": [
+        "video docs advanced-appsec-request-smuggling-research"
+      ],
+      "status": 206,
       "verdict": "OK",
       "detail": ""
     },
@@ -829,10 +1224,47 @@
       "url": "https://portswigger.net/web-security/sql-injection",
       "labels": [
         "career lab penetration-testing-red-team/pentest-portswigger-sqli",
-        "video portswigger-sqli",
         "video docs portswigger-sqli"
       ],
       "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/sql-injection/lab-login-bypass",
+      "labels": [
+        "career lab penetration-testing-red-team/pentest-portswigger-sqli-capstone"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data",
+      "labels": [
+        "career lab penetration-testing-red-team/pentest-bv-webgame",
+        "video portswigger-sqli",
+        "note link 30"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/ssrf",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-ssrf"
+      ],
+      "status": 206,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://portswigger.net/web-security/websockets",
+      "labels": [
+        "career lab application-security-bug-bounty/appsec-websockets"
+      ],
+      "status": 206,
       "verdict": "OK",
       "detail": ""
     },
@@ -1045,6 +1477,53 @@
       "detail": ""
     },
     {
+      "url": "https://security.ine.com/certifications/ejpt-certification/",
+      "labels": [
+        "credential ejpt official page",
+        "credential ejpt syllabus/objectives"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": "redirected to https://ine.com/security/certifications/ejpt-certification"
+    },
+    {
+      "url": "https://skillbuilder.aws/",
+      "labels": [
+        "credential aws-security-specialty preparation",
+        "free learning aws-skill-builder"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://skillsbuild.org/",
+      "labels": [
+        "credential ibm-skillsbuild-cybersecurity-fundamentals preparation"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://slsa.dev/",
+      "labels": [
+        "video docs advanced-devsecops-slsa-sigstore-sbom"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://tcm-sec.com/",
+      "labels": [
+        "credential pnpt preparation"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://top10.owasp.org/2025/",
       "labels": [
         "video owasp-top-10-2025",
@@ -1057,7 +1536,8 @@
     {
       "url": "https://volatility3.readthedocs.io/",
       "labels": [
-        "video docs volatility-memory"
+        "video docs volatility-memory",
+        "video docs advanced-dfir-filesystem-memory-timeline"
       ],
       "status": 200,
       "verdict": "OK",
@@ -1069,6 +1549,15 @@
         "career lab penetration-testing-red-team/pentest-athena-web",
         "career lab threat-intelligence-ethical-osint/intel-athena-osint",
         "career lab malware-analysis-reverse-engineering/mal-athena-rev"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.atomicredteam.io/docs/atomic-red-team",
+      "labels": [
+        "resource advanced-atomic-red-team"
       ],
       "status": 200,
       "verdict": "OK",
@@ -1093,19 +1582,6 @@
       "detail": "redirected to https://www.autopsy.com/training/"
     },
     {
-      "url": "https://www.blueteamvillage.org/programs/project-obsidian",
-      "labels": [
-        "career lab soc-blue-team/soc-project-obsidian",
-        "career lab threat-hunting-detection-engineering/hunt-blue-team-village",
-        "career lab digital-forensics-incident-response/dfir-project-obsidian",
-        "career lab threat-intelligence-ethical-osint/intel-project-obsidian",
-        "career lab malware-analysis-reverse-engineering/mal-btv-obsidian"
-      ],
-      "status": 200,
-      "verdict": "OK",
-      "detail": ""
-    },
-    {
       "url": "https://www.cisa.gov/resources-tools",
       "labels": [
         "career lab grc-security-fundamentals/grc-cisa"
@@ -1124,9 +1600,95 @@
       "detail": ""
     },
     {
+      "url": "https://www.cisa.gov/topics/industrial-control-systems/ics-training-calendar",
+      "labels": [
+        "career lab grc-security-fundamentals/grc-cisa-ics"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/cybersecurity/ccna-cybersecurity/index.html",
+      "labels": [
+        "credential cisco-ccna-cybersecurity official page"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccnacbr.html",
+      "labels": [
+        "credential cisco-ccna-cybersecurity syllabus/objectives"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.cisco.com/site/us/en/learn/training-certifications/exams/ccst-cybersecurity.html",
+      "labels": [
+        "credential cisco-ccst-cybersecurity official page"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.cisecurity.org/cis-benchmarks",
+      "labels": [
+        "resource advanced-cis-benchmarks"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://www.cisecurity.org/controls",
       "labels": [
         "resource cis-controls"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.comptia.org/en-us/certifications/cybersecurity-analyst/",
+      "labels": [
+        "credential comptia-cysa official page",
+        "credential comptia-cysa syllabus/objectives",
+        "credential comptia-cysa preparation"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.comptia.org/en-us/certifications/security/",
+      "labels": [
+        "credential comptia-security-plus official page",
+        "credential comptia-security-plus preparation"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.coursera.org/professional-certificates/google-cybersecurity",
+      "labels": [
+        "credential google-cybersecurity-certificate official page",
+        "credential google-cybersecurity-certificate syllabus/objectives",
+        "credential google-cybersecurity-certificate preparation"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.credly.com/org/cisco/badge/cybersecurity-essentials",
+      "labels": [
+        "free learning cisco-cybersecurity-essentials-badge"
       ],
       "status": 200,
       "verdict": "OK",
@@ -1143,6 +1705,242 @@
       "detail": ""
     },
     {
+      "url": "https://www.eccouncil.org/train-certify/",
+      "labels": [
+        "credential ceh preparation"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.eccouncil.org/train-certify/certified-ethical-hacker-ceh/",
+      "labels": [
+        "credential ceh official page",
+        "credential ceh syllabus/objectives"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.fortinet.com/training/cybersecurity-professionals",
+      "labels": [
+        "free learning fortinet-free-training"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.giac.org/certifications/certified-forensic-analyst-gcfa/",
+      "labels": [
+        "credential giac-gcfa official page",
+        "credential giac-gcfa syllabus/objectives"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": "redirected to https://www.giac.org/certifications/certified-forensic-analyst-gcfa"
+    },
+    {
+      "url": "https://www.giac.org/certifications/certified-incident-handler-gcih/",
+      "labels": [
+        "credential giac-gcih official page",
+        "credential giac-gcih syllabus/objectives"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": "redirected to https://www.giac.org/certifications/certified-incident-handler-gcih"
+    },
+    {
+      "url": "https://www.giac.org/certifications/cyber-threat-intelligence-gcti/",
+      "labels": [
+        "credential giac-gcti official page",
+        "credential giac-gcti syllabus/objectives"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": "redirected to https://www.giac.org/certifications/cyber-threat-intelligence-gcti"
+    },
+    {
+      "url": "https://www.giac.org/certifications/reverse-engineering-malware-grem/",
+      "labels": [
+        "credential giac-grem official page",
+        "credential giac-grem syllabus/objectives"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": "redirected to https://www.giac.org/certifications/reverse-engineering-malware-grem"
+    },
+    {
+      "url": "https://www.giac.org/pricing/",
+      "labels": [
+        "credential giac-gcih preparation",
+        "credential giac-gcfa preparation",
+        "credential giac-gcti preparation",
+        "credential giac-grem preparation"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": "redirected to https://www.giac.org/pricing"
+    },
+    {
+      "url": "https://www.ibm.com/training/badge/cybersecurity-fundamentals/",
+      "labels": [
+        "credential ibm-skillsbuild-cybersecurity-fundamentals official page",
+        "credential ibm-skillsbuild-cybersecurity-fundamentals syllabus/objectives",
+        "free learning ibm-skillsbuild-cybersecurity"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.isaca.org/credentialing/cisa",
+      "labels": [
+        "credential isaca-cisa official page",
+        "credential isaca-cisa preparation"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.isaca.org/credentialing/cisa/cisa-exam-content-outline",
+      "labels": [
+        "credential isaca-cisa syllabus/objectives"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.isaca.org/credentialing/cism",
+      "labels": [
+        "credential isaca-cism official page",
+        "credential isaca-cism preparation"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.isaca.org/credentialing/cism/cism-exam-content-outline",
+      "labels": [
+        "credential isaca-cism syllabus/objectives",
+        "certification update cism-outline"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.isaca.org/credentialing/crisc",
+      "labels": [
+        "credential isaca-crisc official page",
+        "credential isaca-crisc preparation"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.isaca.org/credentialing/crisc/crisc-exam-content-outline",
+      "labels": [
+        "credential isaca-crisc syllabus/objectives"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.isc2.org/certifications/cc",
+      "labels": [
+        "credential isc2-cc official page"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.isc2.org/certifications/cc/cc-certification-exam-outline",
+      "labels": [
+        "credential isc2-cc syllabus/objectives",
+        "certification update cc-outline"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.isc2.org/certifications/ccsp",
+      "labels": [
+        "credential isc2-ccsp official page"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.isc2.org/certifications/ccsp/ccsp-certification-exam-outline",
+      "labels": [
+        "credential isc2-ccsp syllabus/objectives"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.isc2.org/certifications/cissp",
+      "labels": [
+        "credential isc2-cissp official page"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline",
+      "labels": [
+        "credential isc2-cissp syllabus/objectives",
+        "certification update cissp-outline"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.isc2.org/certifications/csslp",
+      "labels": [
+        "credential isc2-csslp official page"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.isc2.org/certifications/csslp/csslp-certification-exam-outline",
+      "labels": [
+        "credential isc2-csslp syllabus/objectives"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.isc2.org/certifications/exam-outlines",
+      "labels": [
+        "credential isc2-cc preparation",
+        "credential isc2-cissp preparation",
+        "credential isc2-ccsp preparation",
+        "credential isc2-csslp preparation",
+        "free learning isc2-exam-outlines"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://www.malware-traffic-analysis.net/",
       "labels": [
         "career lab malware-analysis-reverse-engineering/mal-pcap"
@@ -1152,9 +1950,23 @@
       "detail": ""
     },
     {
-      "url": "https://www.mitre.org/news-insights/video/mitre-attckr-framework",
+      "url": "https://www.netacad.com/career-paths/cybersecurity",
       "labels": [
-        "video mitre-attck-video"
+        "credential cisco-ccst-cybersecurity preparation",
+        "credential cisco-ccna-cybersecurity preparation",
+        "credential cisco-netacad-intro-cybersecurity-badges preparation",
+        "free learning netacad-cybersecurity"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.netacad.com/courses/introduction-to-cybersecurity",
+      "labels": [
+        "credential cisco-netacad-intro-cybersecurity-badges official page",
+        "credential cisco-netacad-intro-cybersecurity-badges syllabus/objectives",
+        "free learning cisco-introduction-to-cybersecurity-badge"
       ],
       "status": 200,
       "verdict": "OK",
@@ -1175,6 +1987,7 @@
       "url": "https://www.nist.gov/cyberframework/profiles",
       "labels": [
         "career lab grc-security-fundamentals/grc-nist-profile",
+        "career lab grc-security-fundamentals/grc-cytrain",
         "note link 38"
       ],
       "status": 200,
@@ -1201,6 +2014,16 @@
       "detail": ""
     },
     {
+      "url": "https://www.offsec.com/courses/pen-200/",
+      "labels": [
+        "credential oscp-plus official page",
+        "credential oscp-plus preparation"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://www.practicalnetworking.net/",
       "labels": [
         "video docs networking-basics"
@@ -1212,12 +2035,30 @@
     {
       "url": "https://www.practicalnetworking.net/stand-alone/subnetting-mastery/",
       "labels": [
-        "video docs subnetting-mastery",
-        "video networking-basics"
+        "video docs subnetting-mastery"
       ],
       "status": 200,
       "verdict": "OK",
       "detail": ""
+    },
+    {
+      "url": "https://www.securityblue.team/",
+      "labels": [
+        "credential btl1 preparation"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": "redirected to https://www.centri.org/"
+    },
+    {
+      "url": "https://www.securityblue.team/certifications/blue-team-level-1",
+      "labels": [
+        "credential btl1 official page",
+        "credential btl1 syllabus/objectives"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": "redirected to https://www.centri.org/certifications/blue-team-level-1"
     },
     {
       "url": "https://www.splunk.com/en_us/blog/learn/splunk-tutorials.html",
@@ -1232,6 +2073,7 @@
       "url": "https://www.splunk.com/en_us/training/free-courses/overview.html",
       "labels": [
         "resource splunk-free-courses",
+        "free learning splunk-free-training",
         "video docs siem-explained",
         "note link 11"
       ],
@@ -1277,6 +2119,15 @@
       "detail": ""
     },
     {
+      "url": "https://www.wireshark.org/resources",
+      "labels": [
+        "resource advanced-wireshark-packet-analysis"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://www.youtube.com/watch?v=-fV7jZwZuGQ",
       "labels": [
         "video event-viewer-audit"
@@ -1289,6 +2140,24 @@
       "url": "https://www.youtube.com/watch?v=-jhZwIRIIrc",
       "labels": [
         "video aws-iam-roles"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2EUxOc_LNd8",
+      "labels": [
+        "video advanced-defender-kql-incident-tracking"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2SSZs7coCKQ",
+      "labels": [
+        "video advanced-dfir-filesystem-memory-timeline"
       ],
       "status": 200,
       "verdict": "OK",
@@ -1358,9 +2227,36 @@
       "detail": ""
     },
     {
+      "url": "https://www.youtube.com/watch?v=Bw__xplbx1o",
+      "labels": [
+        "video advanced-zeek-file-extraction-malware-analysis"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://www.youtube.com/watch?v=BWZ-MHIhqjM",
       "labels": [
         "video subnetting-mastery"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=dHthJNFt-NI",
+      "labels": [
+        "video advanced-zeek-real-world-logging"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=F61G2CMbkos",
+      "labels": [
+        "video advanced-zeek-telemetry-framework"
       ],
       "status": 200,
       "verdict": "OK",
@@ -1379,6 +2275,24 @@
       "url": "https://www.youtube.com/watch?v=gWclBdzBzDM",
       "labels": [
         "video autopsy-forensics"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=hF95PiItWtM",
+      "labels": [
+        "video advanced-devsecops-slsa-sigstore-sbom"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=hqfmOaFGDoo",
+      "labels": [
+        "video advanced-aws-guardduty-extended-threat-detection"
       ],
       "status": 200,
       "verdict": "OK",
@@ -1439,6 +2353,15 @@
       "detail": ""
     },
     {
+      "url": "https://www.youtube.com/watch?v=nMGbK-ALaVg",
+      "labels": [
+        "video advanced-defender-hunting-optimization"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://www.youtube.com/watch?v=pPPiaGU12Og",
       "labels": [
         "video nist-csf-2-official-explainer"
@@ -1457,6 +2380,33 @@
       "detail": ""
     },
     {
+      "url": "https://www.youtube.com/watch?v=QaUxdtNfbd8",
+      "labels": [
+        "video advanced-defender-suspicious-signins-exfiltration"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=QgLkJ_J2pp4",
+      "labels": [
+        "video advanced-zeek-meta-scale-detections"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=QjPFjd8GJWY",
+      "labels": [
+        "video advanced-appsec-request-smuggling-research"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://www.youtube.com/watch?v=QT81wcuoRFY",
       "labels": [
         "video wazuh-home-lab"
@@ -1466,9 +2416,36 @@
       "detail": ""
     },
     {
+      "url": "https://www.youtube.com/watch?v=qwA6MmbeGNo",
+      "labels": [
+        "video osint-full-course"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://www.youtube.com/watch?v=qyNWK6k-W1Y",
       "labels": [
         "video aws-iam-cyberpodium-2025"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Sopg0HJsk78",
+      "labels": [
+        "video advanced-aws-guardduty-detective-investigation"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=sZgYmie-DpY",
+      "labels": [
+        "video zeek-wireless-monitoring"
       ],
       "status": 200,
       "verdict": "OK",
@@ -1487,6 +2464,15 @@
       "url": "https://www.youtube.com/watch?v=Uk3DEgY5Ue8",
       "labels": [
         "video volatility-memory"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=vd5lgIJKmYs",
+      "labels": [
+        "video advanced-defender-hunting-external-data-partitioning"
       ],
       "status": 200,
       "verdict": "OK",
@@ -1520,9 +2506,45 @@
       "detail": ""
     },
     {
+      "url": "https://www.youtube.com/watch?v=xiUvOGr7Zfg",
+      "labels": [
+        "video advanced-mitre-attckcon-risk-informed-defense"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=XRwI88i7Hjw",
+      "labels": [
+        "video aws-security-services"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
       "url": "https://www.youtube.com/watch?v=YM3UWuvIJyc",
       "labels": [
         "video splunk-search-basics"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=YTnyeyrFWdE",
+      "labels": [
+        "video advanced-zeek-ml-analysis"
+      ],
+      "status": 200,
+      "verdict": "OK",
+      "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Yxv1suJYMI8",
+      "labels": [
+        "video mitre-attck-video"
       ],
       "status": 200,
       "verdict": "OK",
@@ -1550,9 +2572,13 @@
       "detail": ""
     },
     {
-      "url": "https://zeek.org/2021/07/zeek-in-action-video-6-how-to-monitor-wireless-networks/",
+      "url": "https://zeek.org/events/webinars/",
       "labels": [
-        "video zeek-wireless-monitoring"
+        "video docs advanced-zeek-meta-scale-detections",
+        "video docs advanced-zeek-file-extraction-malware-analysis",
+        "video docs advanced-zeek-ml-analysis",
+        "video docs advanced-zeek-telemetry-framework",
+        "video docs advanced-zeek-real-world-logging"
       ],
       "status": 200,
       "verdict": "OK",
@@ -1565,21 +2591,6 @@
       ],
       "status": 200,
       "verdict": "OK",
-      "detail": ""
-    },
-    {
-      "url": "https://bvtech.org/cyber-range/challenges/",
-      "labels": [
-        "career lab soc-blue-team/soc-bv-whos-knocking",
-        "career lab soc-blue-team/soc-bv-inside-job",
-        "career lab threat-hunting-detection-engineering/hunt-bv-knocking",
-        "career lab digital-forensics-incident-response/dfir-bv-hidden-task",
-        "career lab penetration-testing-red-team/pentest-bv-robots",
-        "career lab penetration-testing-red-team/pentest-bv-webgame",
-        "career lab malware-analysis-reverse-engineering/mal-bv-hidden-task"
-      ],
-      "status": 403,
-      "verdict": "REVIEW",
       "detail": ""
     },
     {
@@ -1601,6 +2612,15 @@
       "detail": "fetch failed"
     },
     {
+      "url": "https://help.offsec.com/hc/en-us/articles/360040165632-OSCP-Exam-Guide",
+      "labels": [
+        "credential oscp-plus syllabus/objectives"
+      ],
+      "status": 403,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
       "url": "https://labs.networkershome.com/",
       "labels": [
         "career lab security-engineering-devsecops-iam/eng-packet-flow"
@@ -1619,6 +2639,15 @@
       "detail": "timeout"
     },
     {
+      "url": "https://nmap.org/book/",
+      "labels": [
+        "resource advanced-nmap-network-auditing"
+      ],
+      "status": "ERROR",
+      "verdict": "REVIEW",
+      "detail": "fetch failed"
+    },
+    {
       "url": "https://operation-ghost-route.onrender.com/",
       "labels": [
         "career lab threat-hunting-detection-engineering/hunt-ghost-route",
@@ -1632,6 +2661,15 @@
       "url": "https://tryhackme.com/path/outline/azuresecurity",
       "labels": [
         "career lab cloud-security/cloud-thm-azure"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://tryhackme.com/path/outline/beginner",
+      "labels": [
+        "free learning tryhackme-pre-security"
       ],
       "status": 429,
       "verdict": "REVIEW",
@@ -1668,6 +2706,15 @@
       "url": "https://tryhackme.com/r/rooms",
       "labels": [
         "resource tryhackme-free-rooms"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
+      "url": "https://tryhackme.com/room/alerttriagewithsplunk",
+      "labels": [
+        "career lab soc-blue-team/soc-bv-inside-job"
       ],
       "status": 429,
       "verdict": "REVIEW",
@@ -1728,6 +2775,15 @@
       "detail": ""
     },
     {
+      "url": "https://tryhackme.com/room/loglesshunt",
+      "labels": [
+        "career lab threat-hunting-detection-engineering/hunt-bv-knocking"
+      ],
+      "status": 429,
+      "verdict": "REVIEW",
+      "detail": ""
+    },
+    {
       "url": "https://tryhackme.com/room/splunkexploringspl",
       "labels": [
         "note link 2",
@@ -1758,6 +2814,7 @@
     {
       "url": "https://tryhackme.com/room/windowsloggingforsoc",
       "labels": [
+        "career lab soc-blue-team/soc-bv-whos-knocking",
         "note link 4"
       ],
       "status": 429,
@@ -1776,6 +2833,7 @@
     {
       "url": "https://tryhackme.com/room/windowsthreatdetection1",
       "labels": [
+        "career lab digital-forensics-incident-response/dfir-bv-hidden-task",
         "note link 16"
       ],
       "status": 429,
@@ -1789,15 +2847,6 @@
         "note link 25"
       ],
       "status": 429,
-      "verdict": "REVIEW",
-      "detail": ""
-    },
-    {
-      "url": "https://www.classcentral.com/course/youtube-aws-security-services-aws-waf-aws-kms-aws-shield-great-learning-95232",
-      "labels": [
-        "video aws-security-services"
-      ],
-      "status": 403,
       "verdict": "REVIEW",
       "detail": ""
     },
@@ -1820,15 +2869,6 @@
       "detail": ""
     },
     {
-      "url": "https://www.classcentral.com/course/youtube-open-source-intelligence-osint-in-5-hours-full-course-learn-osint-80388",
-      "labels": [
-        "video osint-full-course"
-      ],
-      "status": 403,
-      "verdict": "REVIEW",
-      "detail": ""
-    },
-    {
       "url": "https://www.cloudflare.com/learning/dns/what-is-dns/",
       "labels": [
         "video docs dns-basics"
@@ -1845,6 +2885,15 @@
       "status": 403,
       "verdict": "REVIEW",
       "detail": ""
+    },
+    {
+      "url": "https://www.youtube.com/playlist?list=PLIFyRwBY_4bQUE4IB5c4VPRyDoLgOdExE",
+      "labels": [
+        "video networking-basics"
+      ],
+      "status": "ERROR",
+      "verdict": "REVIEW",
+      "detail": "timeout"
     }
   ]
 }

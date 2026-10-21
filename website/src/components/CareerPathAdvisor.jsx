@@ -1,4 +1,5 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useId, useMemo, useRef, useState } from 'react';
+import BrandIcon from './BrandIcon.jsx';
 import { certifications, freeLearningOptions } from '../data/certifications.js';
 import careerPathProfiles from '../data/career-path-profiles.json';
 import './CareerPathAdvisor.css';
@@ -6,6 +7,98 @@ import './CareerPathAdvisor.css';
 function OfficialLink({ href, children }) {
   return <a className="cert-link" href={href} target="_blank" rel="noreferrer">{children}<span aria-hidden="true"> ↗</span></a>;
 }
+
+function AdvisorPicker({ label, value, options, onChange }) {
+  const [open, setOpen] = useState(false);
+  const pickerId = useId();
+  const rootRef = useRef(null);
+  const triggerRef = useRef(null);
+  const optionRefs = useRef([]);
+  const selectedIndex = Math.max(0, options.findIndex((option) => option.value === value));
+  const selectedOption = options[selectedIndex];
+
+  useEffect(() => {
+    if (!open) return undefined;
+    const handlePointerDown = (event) => {
+      if (!rootRef.current?.contains(event.target)) setOpen(false);
+    };
+    const handleEscape = (event) => {
+      if (event.key === 'Escape') {
+        setOpen(false);
+        triggerRef.current?.focus();
+      }
+    };
+    document.addEventListener('pointerdown', handlePointerDown);
+    document.addEventListener('keydown', handleEscape);
+    return () => {
+      document.removeEventListener('pointerdown', handlePointerDown);
+      document.removeEventListener('keydown', handleEscape);
+    };
+  }, [open]);
+
+  useEffect(() => {
+    if (open) optionRefs.current[selectedIndex]?.focus();
+  }, [open, selectedIndex]);
+
+  const moveFocus = (index, direction) => {
+    const nextIndex = (index + direction + options.length) % options.length;
+    optionRefs.current[nextIndex]?.focus();
+  };
+
+  return (
+    <div className="advisor-picker" ref={rootRef}>
+      <button
+        ref={triggerRef}
+        type="button"
+        className="advisor-picker-trigger"
+        aria-label={label}
+        aria-haspopup="listbox"
+        aria-expanded={open}
+        aria-controls={pickerId}
+        onClick={() => setOpen((current) => !current)}
+        onKeyDown={(event) => {
+          if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+            event.preventDefault();
+            if (!open) setOpen(true);
+            else moveFocus(selectedIndex, event.key === 'ArrowDown' ? 1 : -1);
+          }
+        }}
+      >
+        <span>{selectedOption?.label ?? String(value)}</span>
+        <span className={`advisor-picker-chevron${open ? ' is-open' : ''}`} aria-hidden="true">⌄</span>
+      </button>
+      {open && (
+        <div className="advisor-picker-options" id={pickerId} role="listbox" aria-label={`${label} options`}>
+          {options.map((option, index) => (
+            <button
+              ref={(element) => { optionRefs.current[index] = element; }}
+              key={option.value}
+              type="button"
+              className={`advisor-picker-option${option.value === value ? ' is-selected' : ''}`}
+              role="option"
+              aria-selected={option.value === value}
+              onClick={() => {
+                onChange(option.value);
+                setOpen(false);
+                triggerRef.current?.focus();
+              }}
+              onKeyDown={(event) => {
+                if (event.key === 'ArrowDown') { event.preventDefault(); moveFocus(index, 1); }
+                if (event.key === 'ArrowUp') { event.preventDefault(); moveFocus(index, -1); }
+                if (event.key === 'Home') { event.preventDefault(); optionRefs.current[0]?.focus(); }
+                if (event.key === 'End') { event.preventDefault(); optionRefs.current[options.length - 1]?.focus(); }
+              }}
+            >
+              <span>{option.label}</span>
+              <span className="advisor-picker-check" aria-hidden="true">{option.value === value ? '✓' : ''}</span>
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
 
 const experienceOptions = [
   { value: 'new', label: 'New to cybersecurity' },
@@ -51,28 +144,22 @@ export default function CareerPathAdvisor({ onSelectCertification }) {
       </div>
 
       <div className="career-advisor-controls">
-        <label><span>Target role</span>
-          <select value={trackId} onChange={(event) => setTrackId(event.target.value)}>
-            {careerPathProfiles.map((item) => <option key={item.id} value={item.track}>{item.title}</option>)}
-          </select>
-        </label>
-        <label><span>Your starting point</span>
-          <select value={experience} onChange={(event) => setExperience(event.target.value)}>
-            {experienceOptions.map((item) => <option key={item.value} value={item.value}>{item.label}</option>)}
-          </select>
-        </label>
-        <label><span>Exam budget</span>
-          <select value={budget} onChange={(event) => setBudget(event.target.value)}>
-            {budgetOptions.map((item) => <option key={item.value} value={item.value}>{item.label}</option>)}
-          </select>
-        </label>
-        <label><span>Study time each week</span>
-          <select value={hours} onChange={(event) => setHours(event.target.value)}>
-            <option value="5">About 5 hours</option>
-            <option value="10">About 10 hours</option>
-            <option value="15">15+ hours</option>
-          </select>
-        </label>
+        <div className="career-advisor-control"><span className="career-advisor-control-label">Target role</span>
+          <AdvisorPicker label="Target role" value={trackId} options={careerPathProfiles.map((item) => ({ value: item.track, label: item.title }))} onChange={setTrackId} />
+        </div>
+        <div className="career-advisor-control"><span className="career-advisor-control-label">Your starting point</span>
+          <AdvisorPicker label="Your starting point" value={experience} options={experienceOptions} onChange={setExperience} />
+        </div>
+        <div className="career-advisor-control"><span className="career-advisor-control-label">Exam budget</span>
+          <AdvisorPicker label="Exam budget" value={budget} options={budgetOptions} onChange={setBudget} />
+        </div>
+        <div className="career-advisor-control"><span className="career-advisor-control-label">Study time each week</span>
+          <AdvisorPicker label="Study time each week" value={hours} options={[
+            { value: '5', label: 'About 5 hours' },
+            { value: '10', label: 'About 10 hours' },
+            { value: '15', label: '15+ hours' },
+          ]} onChange={setHours} />
+        </div>
       </div>
 
       <div className="career-advisor-summary">
@@ -95,7 +182,7 @@ export default function CareerPathAdvisor({ onSelectCertification }) {
                   <div className="career-stage-number">{String(index + 1).padStart(2, '0')}</div>
                   <div className="career-stage-content">
                     <div className="career-stage-meta"><span>{stageLabels[index]}</span><span className={holdForBudget ? 'career-budget-hold' : paid ? 'career-paid' : 'career-free'}>{holdForBudget ? 'Study now · defer exam spend' : paid ? 'Paid exam · verify local price' : 'Course / learning credential'}</span></div>
-                    <h3>{item.name}</h3>
+                    <div className="career-stage-title"><BrandIcon name={item.issuer} url={item.officialUrl} size={30} /><h3>{item.name}</h3></div>
                     <p>{item.overview}</p>
                     <p className="career-stage-cost">{item.costLabel}</p>
                     <div className="career-stage-actions">

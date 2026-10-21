@@ -12,6 +12,7 @@ import { resources } from '../src/data/resources.js';
 import { labs } from '../src/data/labs.js';
 import { learningVideos } from '../src/data/learningVideos.js';
 import { careerPathLabMap } from '../src/data/careerPathLabs.js';
+import { certifications, freeLearningOptions, certificationHubNotes } from '../src/data/certifications.js';
 
 const websiteRoot = process.cwd();
 const errors = [];
@@ -65,6 +66,12 @@ for (const resource of resources) {
   validUrl(resource.url, `Resource '${resource.id}'`);
   if (!resource.name || !resource.description || !resource.category) errors.push(`Resource '${resource.id}' is missing catalogue metadata`);
 }
+for (const credential of certifications) {
+  for (const field of ['officialUrl', 'syllabusUrl', 'prepUrl']) validUrl(credential[field], `Certification '${credential.id}' ${field}`);
+}
+for (const option of freeLearningOptions) validUrl(option.url, `Free learning option '${option.id}'`);
+for (const note of certificationHubNotes) validUrl(note.url, `Certification update '${note.id}'`);
+
 for (const video of learningVideos) {
   validUrl(video.url, `Video '${video.id}'`);
   if (video.officialDocs) validUrl(video.officialDocs, `Video reference '${video.id}'`);
@@ -197,6 +204,13 @@ if (process.argv.includes('--online')) {
   };
   for (const [pathId, entries] of Object.entries(careerPathLabMap)) for (const item of entries) add(item.url, `career lab ${pathId}/${item.id}`);
   for (const resource of resources) add(resource.url, `resource ${resource.id}`);
+  for (const credential of certifications) {
+    if (credential.officialUrl) add(credential.officialUrl, `credential ${credential.id} official page`);
+    if (credential.syllabusUrl) add(credential.syllabusUrl, `credential ${credential.id} syllabus/objectives`);
+    if (credential.prepUrl) add(credential.prepUrl, `credential ${credential.id} preparation`);
+  }
+  for (const option of freeLearningOptions) add(option.url, `free learning ${option.id}`);
+  for (const note of certificationHubNotes) add(note.url, `certification update ${note.id}`);
   for (const video of learningVideos) { add(video.url, `video ${video.id}`); if (video.officialDocs) add(video.officialDocs, `video docs ${video.id}`); }
   if (fs.existsSync(externalLinksPath)) {
     const externalSource = fs.readFileSync(externalLinksPath, 'utf8');

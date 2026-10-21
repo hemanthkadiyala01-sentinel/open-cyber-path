@@ -1,0 +1,55 @@
+/* A compact navigation hierarchy; all original destinations remain available in More. */
+.site-header .nav-links-compact{display:flex;align-items:center;gap:3px;flex:1 1 auto;min-width:0;overflow:visible!important;flex-wrap:nowrap}
+.site-header .nav-links-compact>.nav-link{flex:0 0 auto;white-space:nowrap;padding:10px 8px;font-size:10px;border-radius:8px}
+.site-header .nav-more-menu{position:relative;flex:0 0 auto}
+.site-header .nav-more-menu>summary{display:flex;align-items:center;gap:7px;list-style:none;cursor:pointer;white-space:nowrap;user-select:none}
+.site-header .nav-more-menu>summary::-webkit-details-marker{display:none}
+.site-header .nav-more-menu>summary>span:last-child{font-size:12px;color:#9fb9cb}
+.site-header .nav-more-menu[open]>summary{color:var(--mint);border-color:var(--line2);background:#0b2631}
+.site-header .nav-more-panel{position:absolute;top:calc(100% + 7px);right:0;z-index:80;display:grid;grid-template-columns:repeat(2,minmax(155px,1fr));gap:4px;width:min(420px,82vw);padding:9px;border:1px solid #355266;border-radius:13px;background:linear-gradient(145deg,#0c1d2b,#11172a);box-shadow:0 18px 55px #0009;max-height:min(70vh,520px);overflow:auto}
+.site-header .nav-more-panel .nav-link{display:flex;align-items:center;width:100%;min-width:0;text-align:left;white-space:normal;border:1px solid transparent;border-radius:8px;padding:10px;font-size:10px;color:#bdd0df;background:transparent}
+.site-header .nav-more-panel .nav-link:hover,.site-header .nav-more-panel .nav-link.active{border-color:#3c596e;background:#172b3b;color:#8bdcff}
+.site-header .nav-more-panel .nav-link.active:after{display:none}
+@media(max-width:1350px){.site-header .nav-links-compact{gap:2px}.site-header .nav-links-compact>.nav-link{padding:9px 6px;font-size:9px}.site-header .nav-more-panel .nav-link{font-size:10px;padding:9px}}
+@media(max-width:1100px){.site-header .nav-links-compact{order:3;width:100%;flex:1 0 100%;overflow:visible!important;flex-wrap:wrap}.site-header .nav-more-panel{left:0;right:auto}.site-header .nav-links-compact>.nav-link{font-size:10px;padding:9px 8px}}
+@media(max-width:650px){.site-header .nav-links-compact{gap:3px}.site-header .nav-links-compact>.nav-link,.site-header .nav-more-menu>summary{font-size:9px;padding:8px 7px}.site-header .nav-more-panel{position:absolute;left:auto;right:0;width:min(360px,calc(100vw - 24px));grid-template-columns:1fr}.site-header .header-actions{flex-wrap:wrap}}
+
+/* Keep the site identity, but give each major learning destination a distinct visual cue. */
+.home-paths{background:radial-gradient(ellipse at 8% 20%,#357fff1b,transparent 42%),radial-gradient(ellipse at 90% 85%,#b28a4e0d,transparent 45%)}
+.home-resources,.resource-page{background:radial-gradient(ellipse at 88% 12%,#4387ff1c,transparent 43%),radial-gradient(ellipse at 6% 82%,#4d5dcc0c,transparent 47%)}
+.home-labs,.labs-section{background:radial-gradient(ellipse at 12% 15%,#2ee0b40e,transparent 42%),radial-gradient(ellipse at 90% 82%,#e4b05a0c,transparent 45%)}
+.attack-preview,.concepts-section{background:radial-gradient(ellipse at 92% 18%,#ff6f7a17,transparent 44%),radial-gradient(ellipse at 10% 88%,#b18aff0d,transparent 42%)}
+.career-video-library{border-color:#3d3654;background:radial-gradient(ellipse at 8% 0,#8c70db15,transparent 45%),linear-gradient(145deg,rgba(15,26,44,.94),rgba(8,18,32,.97))}
+.career-video-heading h2 em{color:#bba8ff}
+.career-video-count{border-color:#51436e;background:rgba(112,82,164,.12)}
+.career-video-count b{color:#c6b5ff}
+.career-video-pick.is-active,.career-video-pick:hover{border-color:#8270b4;background:rgba(109,80,165,.18)}
+.career-video-index{background:rgba(120,93,183,.17);color:#cabaff}
+.career-video-open-mark{color:#c1afff}
+.ocp-curated-video-heading h2 em{color:#c0a9ff}
+.ocp-curated-video-count{border-color:#554474;background:rgba(127,91,187,.1)}
+.ocp-curated-video-count b,.ocp-curated-video-results b{color:#c9b6ff}
+.ocp-curated-video-card{border-color:rgba(132,122,172,.22);background:linear-gradient(150deg,rgba(22,25,46,.93),rgba(8,20,34,.98))}
+.ocp-curated-video-card:nth-child(4n + 1){border-color:#4e4679;background:linear-gradient(150deg,#211c3c,#0a1b2b 74%)}
+.ocp-curated-video-card:nth-child(4n + 2){border-color:#315e76;background:linear-gradient(150deg,#102a3b,#091a2a 74%)}
+.ocp-curated-video-card:nth-child(4n + 3){border-color:#76513f;background:linear-gradient(150deg,#302117,#0c1a27 74%)}
+.ocp-curated-video-card:nth-child(4n){border-color:#356457;background:linear-gradient(150deg,#102d2c,#091a29 74%)}
+.ocp-curated-video-art{background:radial-gradient(ellipse at 50% 10%,rgba(181,150,255,.26),transparent 66%),linear-gradient(130deg,#1c2941,#10182a)}
+.ocp-curated-video-card:nth-child(4n + 2) .ocp-curated-video-art{background:radial-gradient(ellipse at 50% 10%,rgba(111,212,255,.28),transparent 66%),linear-gradient(130deg,#133443,#10182a)}
+.ocp-curated-video-card:nth-child(4n + 3) .ocp-curated-video-art{background:radial-gradient(ellipse at 50% 10%,rgba(255,180,117,.22),transparent 66%),linear-gradient(130deg,#3a261a,#10182a)}
+.ocp-curated-video-card:nth-child(4n) .ocp-curated-video-art{background:radial-gradient(ellipse at 50% 10%,rgba(93,232,191,.22),transparent 66%),linear-gradient(130deg,#13332e,#10182a)}
+.ocp-curated-video-card .ocp-curated-topic{color:#c1afff}
+.ocp-curated-video-card:nth-child(4n + 2) .ocp-curated-topic{color:#86dcff}
+.ocp-curated-video-card:nth-child(4n + 3) .ocp-curated-topic{color:#ffc68d}
+.ocp-curated-video-card:nth-child(4n) .ocp-curated-topic{color:#83e4c2}
+.ocp-video-player-card{border-color:#4b426c;background:linear-gradient(145deg,#151d30,#0a1928)}
+.ocp-video-frame{background:radial-gradient(ellipse at 50% 20%,#4d387730,transparent 62%),#071521}
+.ocp-video-player-info{background:linear-gradient(120deg,#17172e,#0c1d2b)}
+.ocp-video-player-info .section-kicker{color:#bda8ff}
+.video-card{border-top:2px solid var(--video-accent,#bca3ff)}
+.resource-card{border-left:2px solid color-mix(in srgb,var(--resource-accent,#82c9ff) 58%,transparent)}
+.lab-card{border-left:2px solid color-mix(in srgb,var(--lab-accent,#70d8c0) 58%,transparent)}
+.path-card{border-top:2px solid color-mix(in srgb,var(--card-accent,#70e4ca) 64%,transparent)}
+
+/* Keyboard and touch friendliness for the compact menu and additional practice UI. */
+.site-header .nav-more-menu>summary:focus-visible,.ctf-arcade button:focus-visible,.ctf-arcade input:focus-visible,.ctf-arcade textarea:focus-visible{outline:2px solid #c3adff;outline-offset:3px}

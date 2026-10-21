@@ -1,4 +1,5 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
+import BrandIcon from './BrandIcon.jsx';
 import { learningVideos } from '../data/learningVideos.js';
 import ResourceHealthStatus from './ResourceHealthStatus.jsx';
 import './CuratedVideosLibrary.css';
@@ -37,7 +38,7 @@ export default function CuratedVideosLibrary() {
     <div className="ocp-curated-video-grid">
       {visible.map((video) => <article className="ocp-curated-video-card" key={video.id}>
         <div className="ocp-curated-video-art"><span>▶</span><small>{video.level.toUpperCase()}</small></div>
-        <div className="ocp-curated-video-content"><span className="ocp-curated-topic">{topicLabel(video.topic)}</span><h3>{video.title}</h3><div className="ocp-curated-video-byline">{video.creator} · {video.type}</div><ResourceHealthStatus url={video.url} /><p>{video.note}</p>
+        <div className="ocp-curated-video-content"><span className="ocp-curated-topic">{topicLabel(video.topic)}</span><h3>{video.title}</h3><div className="ocp-curated-video-byline"><BrandIcon id={video.id} name={video.creator} url={video.url} size={25} /><span>{video.creator} · {video.type}</span></div><ResourceHealthStatus url={video.url} /><p>{video.note}</p>
           <div className="ocp-curated-video-actions"><a href={video.url} target="_blank" rel="noreferrer">{learningActionLabel(video.contentKind)} <span>↗</span></a>{video.officialDocs && <a className="ocp-curated-docs" href={video.officialDocs} target="_blank" rel="noreferrer">Reference docs ↗</a>}</div>
         </div>
       </article>)}

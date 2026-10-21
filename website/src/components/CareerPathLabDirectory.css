@@ -47,3 +47,6 @@
 @media(max-width:700px){.career-external-labs{padding:16px;border-radius:16px}.career-external-labs-heading{display:block}.career-external-labs-count{margin-top:15px;max-width:none;display:grid;grid-template-columns:auto 1fr;column-gap:11px;align-items:center}.career-external-labs-count strong{grid-row:span 2}.career-external-labs-count span{margin:0}.career-external-labs-count small{margin-top:2px}.career-external-labs-controls{grid-template-columns:1fr}.career-external-labs-grid{grid-template-columns:1fr}.career-external-lab-card{padding:14px}}
 @media(prefers-reduced-motion:reduce){.career-external-lab-card{transition:none}.career-external-lab-card:hover{transform:none}}
 .career-external-lab-report{display:inline-flex;align-self:flex-start;margin-top:8px;color:#89a8bd;font-size:.67rem;line-height:1.5;text-decoration:underline;text-decoration-color:rgba(137,168,189,.4);text-underline-offset:3px}.career-external-lab-report:hover{color:#85e5ef}.career-external-lab-report:focus-visible{outline:2px solid #d7fbff;outline-offset:3px}
+
+/* ADDITIVE OCP BRAND ICON FIX4 */
+.career-external-lab-provider{display:flex;align-items:center;gap:8px}.career-external-lab-provider .ocp-brand-icon{border-radius:8px}.career-external-lab-provider>span:last-child{min-width:0}

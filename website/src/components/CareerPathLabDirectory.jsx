@@ -1,4 +1,5 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
+import BrandIcon from './BrandIcon.jsx';
 import { careerPathLabMap } from '../data/careerPathLabs.js';
 import { buildResourceReportUrl } from '../utils/resourceFeedback.js';
 import ResourceHealthStatus from './ResourceHealthStatus.jsx';
@@ -50,7 +51,7 @@ export default function CareerPathLabDirectory({ path }) {
     <div className="career-external-labs-grid">
       {visible.map((item, index) => <article key={item.id} className={`career-external-lab-card career-external-lab-${toneNames[index % toneNames.length]}`}>
         <div className="career-external-lab-top"><span className="career-external-lab-format">{item.format}</span><span className={`career-external-lab-tier ${item.tier === 'Core' ? 'is-core' : ''}`}>{item.tier === 'Core' ? 'CORE PRACTICE' : 'EXTENSION'}</span></div>
-        <div className="career-external-lab-provider">{item.provider}</div>
+        <div className="career-external-lab-provider"><BrandIcon name={item.provider} url={item.url} size={27} /><span>{item.provider}</span></div>
         <h3>{item.displayTitle || item.title}</h3>
         <p className="career-external-lab-objective">{item.objective}</p>
         <div className="career-external-lab-module"><small>PATH MODULE</small><strong>{item.module}</strong></div>

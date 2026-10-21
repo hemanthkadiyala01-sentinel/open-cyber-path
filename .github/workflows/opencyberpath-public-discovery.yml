@@ -1,0 +1,84 @@
+name: OpenCyberPath public discovery refresh
+
+on:
+  schedule:
+    # Keep the unified discovery/status snapshot in step with the six-hour CyberPulse refresh.
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: opencyberpath-public-discovery-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  refresh-public-discovery:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out default branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Refresh unified public discovery and connector health
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          REDDIT_USER_AGENT: ${{ secrets.REDDIT_USER_AGENT }}
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_IG_USER_ID: ${{ secrets.INSTAGRAM_IG_USER_ID }}
+          INSTAGRAM_GRAPH_API_VERSION: ${{ vars.INSTAGRAM_GRAPH_API_VERSION }}
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          LINKEDIN_ORG_URN: ${{ vars.LINKEDIN_ORG_URN }}
+          LINKEDIN_VERSION: ${{ vars.LINKEDIN_VERSION }}
+        run: |
+          python tools/opencyberpath_automation/refresh_discovery.py --self-test
+          python tools/opencyberpath_automation/refresh_discovery.py
+          python -m unittest discover -s tests -p "test_opencyberpath_automation.py" -v
+
+      - name: Run project quality checks
+        run: |
+          python scripts/quality_checks.py
+          python -m unittest discover -s tests -v
+
+      - name: Verify website production build
+        working-directory: website
+        run: |
+          npm ci
+          npm run build
+
+      - name: Commit updated public snapshots only
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add website/public/data/opencyberpath-discovery.json website/public/data/opencyberpath-automation-status.json
+          if git diff --cached --quiet; then
+            echo 'Discovery snapshots unchanged; no commit needed.'
+            exit 0
+          fi
+          git commit -m 'chore: refresh public discovery and source health'
+          git push origin "HEAD:${DEFAULT_BRANCH}"
+
+      - name: Upload discovery artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: opencyberpath-public-discovery
+          path: |
+            website/public/data/opencyberpath-discovery.json
+            website/public/data/opencyberpath-automation-status.json
+          if-no-files-found: warn
+          retention-days: 30
