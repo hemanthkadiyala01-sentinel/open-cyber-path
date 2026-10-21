@@ -3,9 +3,9 @@
   "generatedAt": "2026-10-21T17:38:13Z",
   "status": "ready",
   "summary": {
-    "sections": 4,
+    "sections": 11,
     "automated": 4,
-    "reviewDue": 0,
+    "reviewDue": 7,
     "freshnessIsReachabilityNotQuality": true
   },
   "sections": [
@@ -23,8 +23,8 @@
       "label": "LiveOps public problem-source radar",
       "mode": "automatic",
       "cadence": "Every 6 hours after workflow is enabled",
-      "lastCheckedAt": null,
-      "status": "not-recorded",
+      "lastCheckedAt": "2026-10-20T06:45:13Z",
+      "status": "fresh",
       "summary": "Source discovery and candidate records; these are not automatically certified as publish-ready challenges."
     },
     {
@@ -44,6 +44,69 @@
       "lastCheckedAt": "2026-10-21T04:44:33.864Z",
       "status": "fresh",
       "summary": "Monitors page reachability and content change signals; exam terms and pricing still require issuer confirmation."
+    },
+    {
+      "id": "learning-paths",
+      "label": "Career paths, modules and prerequisites",
+      "mode": "editorial-review",
+      "cadence": "Every 90 days",
+      "lastCheckedAt": null,
+      "status": "review-due",
+      "summary": "Check new skill requirements, outdated tools, role expectations, prerequisite order, and original-source references. Record a date only after a human review."
+    },
+    {
+      "id": "os-distrosea",
+      "label": "Operating systems and DistroSea catalogue",
+      "mode": "editorial-review",
+      "cadence": "Every 60 days",
+      "lastCheckedAt": null,
+      "status": "review-due",
+      "summary": "Review supported OS names, versions and online availability against the provider. A prior catalogue snapshot is not proof that a session is currently available."
+    },
+    {
+      "id": "videos",
+      "label": "Video and tutorial accuracy (separate from link health)",
+      "mode": "editorial-review",
+      "cadence": "Every 30 days",
+      "lastCheckedAt": null,
+      "status": "review-due",
+      "summary": "Check whether instructions and screenshots still match current versions; a working URL alone is not an accuracy review."
+    },
+    {
+      "id": "ctf-directory",
+      "label": "CTF learning-directory access notes and rules",
+      "mode": "editorial-review",
+      "cadence": "Every 30 days",
+      "lastCheckedAt": null,
+      "status": "review-due",
+      "summary": "Review access conditions, platform rules and official links. Do not label a time-sensitive event live without current organizer data."
+    },
+    {
+      "id": "lab-content",
+      "label": "CyberRange, CTF Arcade and lab fixtures",
+      "mode": "editorial-review",
+      "cadence": "Every 90 days",
+      "lastCheckedAt": null,
+      "status": "review-due",
+      "summary": "Re-run challenge checks, verify answer keys, keep sample data synthetic, and test that solutions remain reproducible."
+    },
+    {
+      "id": "offline-study",
+      "label": "Offline study pack and cached learning material",
+      "mode": "editorial-review",
+      "cadence": "Every 180 days",
+      "lastCheckedAt": null,
+      "status": "review-due",
+      "summary": "Verify that standalone packs match current lessons and that the deployed app refreshes the cache after releases."
+    },
+    {
+      "id": "public-safety",
+      "label": "Public cyber-safety guidance and reporting references",
+      "mode": "editorial-review",
+      "cadence": "Every 30 days",
+      "lastCheckedAt": null,
+      "status": "review-due",
+      "summary": "Recheck official reporting channels and guidance; keep emergency/financial-fraud instructions sourced from official agencies."
     }
   ]
 }

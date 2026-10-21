@@ -1,14 +1,24 @@
+import './styles/path-aesthetic-v1.css';
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
+import { App as CapacitorApp } from '@capacitor/app';
+import { Capacitor } from '@capacitor/core';
 import { categories, resources } from './data/resources.js';
 import { labs } from './data/labs.js';
 
 import { careerPaths as learningPaths } from './data/careerPaths.js';
 import { cybersecurityPillars, isc2CisspDomains } from './data/cybersecurityDomains.js';
 import StartHereGuide from './components/StartHereGuide.jsx';
+import AdaptiveLearningPlanner from './components/AdaptiveLearningPlanner.jsx'; // adaptive-learning-engine-v1
+import FirstVisitTour from './components/FirstVisitTour.jsx';
 import ResourceHealthStatus from './components/ResourceHealthStatus.jsx';
+import LearningProgressBackup from './components/LearningProgressBackup.jsx';
 import { buildResourceReportUrl } from './utils/resourceFeedback.js';
+import './utils/registerOfflineServiceWorker.js'; // offline-learning-v1
 
 import './components/CreatorIdentity.css';
+import './components/TemporaryAnimeBrand.css'; // temporary-anime-brand-v1.1
+import './components/VisualRhythm.css'; // opencyberpath-visual-rhythm-ctf-v1
+import SiteGuideAssistant from './components/SiteGuideAssistant.jsx';
 
 
 
@@ -22,6 +32,13 @@ const SystemsAcademy = lazy(() => import('./components/SystemsAcademy.jsx').then
 const ExternalLabLinks = lazy(() => import('./components/ExternalLabLinks.jsx'));
 
 const InteractiveLabWorkbench = lazy(() => import('./components/InteractiveLabWorkbench.jsx'));
+const OfflineLearning = lazy(() => import('./components/OfflineLearning.jsx'));
+const LiveOps = lazy(() => import('./components/LiveOps.jsx')); // cyberpath-liveops-v1
+const CyberPulse = lazy(() => import('./components/CyberPulse.jsx')); // cyberpulse-auto-freshness-v1
+const YouTubeLiveLearning = lazy(() => import('./components/YouTubeLiveLearning.jsx')); // youtube-live-learning-v1
+const CTFArcade = lazy(() => import('./components/CTFArcade.jsx')); // ctf-arcade-v1
+const SkillProof = lazy(() => import('./components/SkillProof.jsx')); // skillproof-portfolio-v1 // offline-learning-v1
+const CyberRange = lazy(() => import('./components/CyberRange.jsx')); // cyberrange-v1
 const CuratedVideosLibrary = lazy(() => import('./components/CuratedVideosLibrary.jsx'));
 const CareerVideoLibrary = lazy(() => import('./components/CareerVideoLibrary.jsx'));
  const CreatorIdentity = lazy(() => import('./components/CreatorIdentity.jsx'));
@@ -286,31 +303,156 @@ function publicPath(path) {
 }
 function Logo({ onClick }) {
   return <a className="brand" href="#top" onClick={(event) => { event.preventDefault(); onClick('home'); }} aria-label="OpenCyberPath home">
-    <span className="brand-mark">O<span><Icon name="arrow-up-right" size={12} /></span></span>
+    <span className="brand-mark brand-mark-temporary-anime"><img className="brand-mark-image" src="/images/temporary-anime-icon.png" alt="" aria-hidden="true" /></span>
     <span className="brand-name">OpenCyberPath<small>LEARN · PRACTISE · GROW TOGETHER</small></span>
   </a>;
 }
+/* OCP RESOURCE VISUAL UPGRADE V2 */
+const RESOURCE_CARD_ART = {
+  soc: '/images/resource-cards/soc-dashboard.webp',
+  cloud: '/images/resource-cards/cloud-security.webp',
+  appsec: '/images/resource-cards/appsec-proxy.webp',
+  learning: '/images/resource-cards/cyber-learning.webp',
+  pentest: '/images/resource-cards/pentest-lab.webp',
+  packets: '/images/resource-cards/packet-analysis.webp',
+  network: '/images/resource-cards/network-operations.webp',
+  endpoint: '/images/resource-cards/endpoint-defense.webp',
+  forensics: '/images/resource-cards/forensics-timeline.webp',
+  grc: '/images/resource-cards/governance-risk.webp',
+  intel: '/images/resource-cards/threat-intelligence.webp',
+  code: '/images/resource-cards/secure-code.webp',
+  crypto: '/images/resource-cards/cryptography.webp',
+  linux: '/images/resource-cards/linux-admin.webp',
+  architecture: '/images/resource-cards/cloud-architecture.webp',
+  malware: '/images/resource-cards/malware-reverse.webp'
+};
+
+function resourceCardArtwork(resource) {
+  const text = `${resource?.id || ''} ${resource?.name || ''} ${resource?.provider || ''} ${resource?.category || ''} ${resource?.kind || ''} ${(resource?.skills || []).join(' ')}`.toLowerCase();
+  if (/microsoft defender|endpoint protection|endpoint detection|wazuh/.test(text)) return RESOURCE_CARD_ART.endpoint;
+  if (/wireshark|packet analysis|pcap|netflow|network-flow|zeek network/.test(text)) return RESOURCE_CARD_ART.packets;
+  if (/nmap|subfinder|nuclei|network discovery|port scan|dns enumeration/.test(text)) return RESOURCE_CARD_ART.network;
+  if (/splunk|sigma detection|\bsiem\b|soc & siem|detection engineering/.test(text)) return RESOURCE_CARD_ART.soc;
+  if (/sentinel|kql|azure security|aws security|cloudflare learning|cloud security training/.test(text)) return RESOURCE_CARD_ART.cloud;
+  if (/tryhackme|hack the box|pwn\.college|over.?the.?wire|cyberdefenders|juice shop|webgoat|crapi|ctf platform/.test(text)) return RESOURCE_CARD_ART.learning;
+  if (/owasp zap|mitmproxy|web security academy|hackerone|bugcrowd|proxy|application security verification|api security top 10/.test(text)) return RESOURCE_CARD_ART.appsec;
+  if (/sqlmap|metasploit|penetration testing|pentest|ffuf|exploit framework/.test(text)) return RESOURCE_CARD_ART.pentest;
+  if (/remnux|malware analysis|reverse engineering|ghidra|yara|disassembly/.test(text)) return RESOURCE_CARD_ART.malware;
+  if (/autopsy|digital forensic|incident response|\bdfir\b|evidence handling|forensic technique/.test(text)) return RESOURCE_CARD_ART.forensics;
+  if (/threat intelligence|mitre att&ck|known exploited vulnerabilit|vulnerability database|botnet|intel feed/.test(text)) return RESOURCE_CARD_ART.intel;
+  if (/secure coding|codeql|github actions|devsecops|software assurance|secure development|source code review/.test(text)) return RESOURCE_CARD_ART.code;
+  if (/cryptograph|cryptohack|cryptool|encryption|cipher|hash algorithm/.test(text)) return RESOURCE_CARD_ART.crypto;
+  if (/linux|powershell|command line|shell basics|system administration|over.?the.?wire bandit/.test(text)) return RESOURCE_CARD_ART.linux;
+  if (/governance|risk management|\bgrc\b|nist cybersecurity framework|nist csf|cis controls|compliance|policy framework/.test(text)) return RESOURCE_CARD_ART.grc;
+  if (/cloud|aws|azure|gcp|kubernetes|identity and access|infrastructure security/.test(text)) return RESOURCE_CARD_ART.architecture;
+  const category = (resource?.category || '').toLowerCase();
+  if (category.includes('soc') || category.includes('detection')) return RESOURCE_CARD_ART.soc;
+  if (category.includes('cloud')) return RESOURCE_CARD_ART.cloud;
+  if (category.includes('bug bounty') || category.includes('web') || category.includes('penetration')) return RESOURCE_CARD_ART.appsec;
+  if (category.includes('hands-on') || category.includes('lab')) return RESOURCE_CARD_ART.learning;
+  if (category.includes('dfir') || category.includes('forensic')) return RESOURCE_CARD_ART.forensics;
+  if (category.includes('grc') || category.includes('governance')) return RESOURCE_CARD_ART.grc;
+  if (category.includes('threat hunting') || category.includes('threat intelligence')) return RESOURCE_CARD_ART.intel;
+  if (category.includes('engineering')) return RESOURCE_CARD_ART.code;
+  if (category.includes('crypt')) return RESOURCE_CARD_ART.crypto;
+  if (category.includes('foundation') || category.includes('networking')) return RESOURCE_CARD_ART.linux;
+  if (category.includes('security concepts')) return RESOURCE_CARD_ART.code;
+  return RESOURCE_CARD_ART.learning;
+}
+
+function resourceMatchesAccess(resource, selected) {
+  if (selected === 'All access types') return true;
+  const kind = (resource?.kind || '').toLowerCase();
+  const account = (resource?.account || '').toLowerCase();
+  const note = (resource?.note || '').toLowerCase();
+  if (selected === 'Free') return kind.includes('free') && !kind.includes('tier') && !kind.includes('varies');
+  if (selected === 'Free (account needed)') return kind.includes('free') && /account|sign.?in|registration|required/.test(account);
+  if (selected === 'Open source') return kind.includes('open source');
+  if (selected === 'Free tier / varies') return kind.includes('tier') || kind.includes('varies') || /access varies|free tier/.test(note);
+  if (selected === 'Paid / Subscription') return /paid|subscription|commercial|exam fee|voucher fee/.test(`${kind} ${account} ${note}`);
+  return true;
+}
+
+function resourceMatchesType(resource, selected) {
+  if (!selected || selected === 'All') return true;
+  const text = `${resource?.name || ''} ${resource?.provider || ''} ${resource?.category || ''} ${resource?.kind || ''} ${resource?.description || ''}`.toLowerCase();
+  if (selected === 'Courses') return /course|training|learning path|curriculum|tutorial series/.test(text);
+  if (selected === 'Labs') return /\blab\b|hands-on|interactive exercise|sandbox|training app|practice room/.test(text);
+  if (selected === 'Documentation') return /documentation|official reference|technical guide|quick-start|getting started|standard|knowledge base/.test(text);
+  if (selected === 'Tools') return /open source tool|open-source tool|scanner|proxy|framework|command-line tool|toolkit/.test(text);
+  if (selected === 'Practice Platforms') return /tryhackme|hack the box|pwn\.college|over.?the.?wire|cyberdefenders|web security academy|practice platform/.test(text);
+  if (selected === 'Certifications') return /certification|certificate|credential|exam voucher|professional exam|digital badge/.test(text);
+  if (selected === 'Datasets') return /dataset|research data|benchmark capture|netflow|pcap archive/.test(text);
+  if (selected === 'Frameworks') return /framework|standard|critical security controls|attack framework|maturity model/.test(text);
+  if (selected === 'Career') return /career|job role|work role|skills framework|career pathway|resume/.test(text);
+  if (selected === 'Videos') return /video|webinar|lecture recording|youtube/.test(text);
+  return true;
+}
 function ResourceCard({ resource }) {
   const kind = resource.kind.toLowerCase();
+  const providerFavicon = (() => {
+    try {
+      const host = new URL(resource.url).hostname;
+      return `https://www.google.com/s2/favicons?domain=${encodeURIComponent(host)}&sz=128`;
+    } catch {
+      return '';
+    }
+  })();
   const accessClass = kind.includes('open source') ? 'open' : kind.includes('tier') || kind.includes('varies') ? 'limited' : kind.includes('dataset') ? 'research' : 'free';
   return <article className={`resource-card resource-${slugify(resource.category)}`}>
-    <div className="resource-art"><img src={resource.image || '/images/learning/command-cheatsheet.jpg'} alt="" loading="lazy" onError={handleArtworkError} /><span className="art-icon"><Icon name={resource.icon || 'book'} size={20} /></span><span className="level-label">{resource.level}</span></div>
+    <div className="resource-art"><img src={resourceCardArtwork(resource)} alt="" loading="lazy" onError={handleArtworkError} /><span className="art-icon"><Icon name={resource.icon || 'book'} size={20} /></span><span className="level-label">{resource.level}</span>
+      <div className="resource-art-heading">
+        <span className="resource-provider-logo" title={resource.provider} aria-label={`${resource.provider} official site`}>
+          {providerFavicon && <img src={providerFavicon} alt="" loading="lazy" referrerPolicy="no-referrer" onLoad={(event) => event.currentTarget.parentElement?.classList.add('has-favicon')} onError={(event) => { event.currentTarget.hidden = true; }} />}
+          <span className="resource-provider-fallback">{resource.monogram || resourceMonogram(resource.provider || resource.name)}</span>
+        </span>
+        <div className="resource-art-title">
+          <span className="resource-art-category">{resource.category}</span>
+          <h3>{resource.name}</h3>
+          <div className="provider-name">BY {resource.provider.toUpperCase()}</div>
+        </div>
+      </div></div>
     <div className="resource-card-body">
-      <div className="card-category">{resource.category}</div><span className="resource-monogram" title={resource.provider}>{resource.monogram || resourceMonogram(resource.name)}</span><h3>{resource.name}</h3><div className="provider-name">BY {resource.provider.toUpperCase()}</div>
+      <div className="card-category">{resource.category}</div><span className="resource-provider-logo" title={resource.provider} aria-label={`${resource.provider} official site`}>
+        {providerFavicon && <img src={providerFavicon} alt="" loading="lazy" referrerPolicy="no-referrer" onLoad={(event) => event.currentTarget.parentElement?.classList.add('has-favicon')} onError={(event) => { event.currentTarget.hidden = true; }} />}
+        <span className="resource-provider-fallback">{resource.monogram || resourceMonogram(resource.provider || resource.name)}</span>
+      </span><h3>{resource.name}</h3><div className="provider-name">BY {resource.provider.toUpperCase()}</div>
       <p className="card-description">{resource.description}</p>
       <div className="skill-tags">{resource.skills.slice(0, 3).map((skill) => <span key={skill}>{skill}</span>)}</div>
       <div className="access-line"><span className={`access-badge ${accessClass}`}><Icon name={accessClass === 'open' ? 'check-circle' : accessClass === 'limited' ? 'alert-triangle' : 'book'} size={13} />{resource.kind}</span><span className="account-note">{resource.account}</span></div>
       <p className="resource-note">{resource.note}</p>
-      <ExternalLink className="card-link" href={resource.url}>Visit original resource <Icon name="arrow-up-right" size={16} /></ExternalLink>
+      <details className="resource-detail-panel">
+        <summary><span className="resource-detail-summary-copy"><small>RESOURCE FIELD GUIDE</small><strong>What you will learn &amp; how to begin</strong></span><span className="resource-detail-chevron" aria-hidden="true">+</span></summary>
+        <div className="resource-detail-body">
+          <section className="resource-detail-section"><small>SKILLS COVERED</small><div className="resource-detail-skill-list">{(resource.skills || []).map((skill) => <span key={`${resource.id}-${skill}`}>{skill}</span>)}</div></section>
+          <section className="resource-detail-section"><small>ACCESS &amp; SETUP</small><p><b>{resource.kind}</b> · {resource.account || 'Check the provider page for current sign-in requirements.'}</p></section>
+          <section className="resource-detail-section"><small>PROVIDER NOTE</small><p>{resource.note || 'Review the provider page for current prerequisites, terms, and setup instructions.'}</p></section>
+          <section className="resource-detail-section"><small>HOW TO BEGIN</small><ol className="resource-detail-steps"><li>Review the provider page for its intended audience, current structure, and prerequisites.</li><li>Start with the overview or introductory material the provider recommends for your level.</li><li>Before hands-on work, check any account, cost, lab-permission, and environment requirements.</li></ol></section>
+          <p className="resource-detail-disclaimer">This is an external resource. OpenCyberPath does not host or control the provider’s content, access policy, prices, or availability. Always check the original page.</p>
+        </div>
+      </details>
+      <ExternalLink className="card-link" href={resource.url}>Open resource <Icon name="arrow-up-right" size={16} /></ExternalLink>
       {resource.practiceUrl && <ExternalLink className="card-link card-link-practice" href={resource.practiceUrl} title={`Guided practice for ${resource.name}`}>Guided practice <Icon name="arrow-up-right" size={16} /></ExternalLink>}
       <ResourceHealthStatus url={resource.url} />
       <a className="resource-report-link" href={buildResourceReportUrl({ id: resource.id, title: resource.name, provider: resource.provider, url: resource.url, type: resource.kind })} target="_blank" rel="noreferrer">Report a link or access problem ↗</a>
     </div>
   </article>;
 }
+// path-artwork-explicit-by-id-v1.3: card artwork must honor these two path-specific illustrations.
+function pathArtwork(path) {
+  const pathSpecificArtwork = {
+    'soc-blue-team': '/images/learning/career-soc-blue-team-distinct-v1.svg',
+    'threat-hunting-detection-engineering': '/images/learning/career-threat-hunting-distinct-v1.svg',
+  };
+  if (path?.id && pathSpecificArtwork[path.id]) return pathSpecificArtwork[path.id];
+  return resourceCardArtwork({ ...path, name: path?.title || path?.name || '', category: path?.title || path?.category || '', skills: path?.topics || [], kind: 'learning path' });
+}
+function labArtwork(lab) {
+  return resourceCardArtwork({ ...lab, name: lab?.title || lab?.name || '', description: lab?.summary || lab?.description || '', skills: lab?.tags || [], category: lab?.category || '', kind: lab?.kind || 'practice lab' });
+}
 function PathCard({ path, onClick }) {
   return <article className={`path-card path-${path.id}`}>
-    <div className="path-art"><img src={path.image} alt={`${path.title} concept illustration`} loading="lazy" onError={handleArtworkError} /><div className="path-art-shade"/><span className="path-icon"><Icon name={path.icon} size={23} /></span><span className="path-number">{path.number} / LEARNING PATH</span></div>
+    <div className="path-art"><img src={pathArtwork(path)} alt={`${path.title} learning path`} loading="lazy" onError={handleArtworkError} /><div className="path-art-shade"/><span className="path-icon"><Icon name={path.icon} size={23} /></span><span className="path-number">{path.number} / LEARNING PATH</span></div>
     <div className="path-body"><div className="path-card-top"><span className="level-label">{path.level}</span><Icon name="arrow-up-right" size={18} /></div>
       <h3>{path.title}</h3><p>{path.desc}</p><div className="topic-list">{path.topics.map((topic) => <span key={topic}><Icon name="check-circle" size={14} />{topic}</span>)}</div>
       <div className="path-outcome"><small>YOUR MILESTONE</small><p>{path.outcome}</p></div>
@@ -320,7 +462,7 @@ function PathCard({ path, onClick }) {
 }
 function LabCard({ lab, compact = false }) {
   return <article className={`lab-card lab-${slugify(lab.category || 'notes')} lab-item-${slugify(lab.id)} ${compact ? 'lab-card-compact' : ''}`}>
-    <div className="lab-art"><img src={lab.image || '/images/learning/handwritten-notes.jpg'} alt="" loading="lazy" onError={handleArtworkError} /><div className="lab-art-shade"/><span className="lab-icon"><Icon name={lab.icon || 'file-text'} size={23} /></span><span className="lab-kind">{lab.kind}</span></div>
+    <div className="lab-art"><img src={labArtwork(lab)} alt="" loading="lazy" onError={handleArtworkError} /><div className="lab-art-shade"/><span className="lab-icon"><Icon name={lab.icon || 'file-text'} size={23} /></span><span className="lab-kind">{lab.kind}</span></div>
     <div className="lab-body"><div className="lab-card-top"><span className="lab-category">{lab.category || 'Learning notes'}</span><span className="level-label">{lab.level}</span></div>
       <h3>{lab.title}</h3><p className="card-description">{lab.summary}</p>
       <div className="lab-meta"><span><Icon name="clock" size={13} />{lab.estimated}</span><span><Icon name="target" size={13} />{lab.skill}</span></div>
@@ -437,12 +579,50 @@ function LearningModuleCard({ pathId, module, index, progress = {}, onCheckpoint
 
 function App() {
   const [page, setPage] = useState('home');
+  // The introduction is opt-in: first-time learners get a quiet invitation, not a blocking modal.
+  const [showWelcomeTour, setShowWelcomeTour] = useState(false);
+  const [showTourInvitation, setShowTourInvitation] = useState(() => {
+    try {
+      return typeof window !== 'undefined'
+        && window.localStorage.getItem('opencyberpath-discovery-tour-v2') !== 'done'
+        && window.localStorage.getItem('opencyberpath-discovery-tour-invitation-dismissed-v1') !== 'done';
+    } catch {
+      return false;
+    }
+  });
+  const dismissWelcomeTour = () => {
+    try {
+      window.localStorage.setItem('opencyberpath-discovery-tour-v2', 'done');
+    } catch {
+      // The tour can still be dismissed in memory if storage is unavailable.
+    }
+    setShowWelcomeTour(false);
+    setShowTourInvitation(false);
+  };
+  const openWelcomeTour = () => {
+    setShowTourInvitation(false);
+    setShowWelcomeTour(true);
+  };
+  const dismissTourInvitation = () => {
+    try {
+      window.localStorage.setItem('opencyberpath-discovery-tour-invitation-dismissed-v1', 'done');
+    } catch {
+      // The invitation remains dismissed for this render even when storage is unavailable.
+    }
+    setShowTourInvitation(false);
+  };
+  const handleTourNavigate = (destination) => {
+    dismissWelcomeTour();
+    navigate(destination);
+  };
   const [moduleProgress, setModuleProgress] = useState(() => readModuleProgress());
   const [activeLearningPathId, setActiveLearningPathId] = useState('soc-blue-team');
   const [academyPathId, setAcademyPathId] = useState('all');
   const [domainQuery, setDomainQuery] = useState('');
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('All resources');
+  const [resourceType, setResourceType] = useState('All');
+  const [sortBy, setSortBy] = useState('relevance');
   const [cost, setCost] = useState('All access types');
   const [level, setLevel] = useState('All levels');
   const [labLevel, setLabLevel] = useState('All labs');
@@ -454,12 +634,78 @@ function App() {
   const [ruleMetrics, setRuleMetrics] = useState(null);
   const [datasetState, setDatasetState] = useState('Loading the included training files…');
   const searchInputRef = useRef(null);
+  const navigationHistoryRef = useRef([]);
+  const currentNavigationRef = useRef(null);
+  currentNavigationRef.current = { page, activeLearningPathId, academyPathId };
+
+  useEffect(() => {
+    if (!Capacitor.isNativePlatform()) return undefined;
+
+    let listenerHandle;
+    let disposed = false;
+
+    const registerBackButton = async () => {
+      const handle = await CapacitorApp.addListener('backButton', async ({ canGoBack }) => {
+        // Let the WebView handle real browser history when it exists.
+        if (canGoBack) {
+          window.history.back();
+          return;
+        }
+
+        // Otherwise navigate through OpenCyberPath's internal screens.
+        const previous = navigationHistoryRef.current.pop();
+        if (previous) {
+          currentNavigationRef.current = previous;
+          setPage(previous.page);
+          setActiveLearningPathId(previous.activeLearningPathId);
+          setAcademyPathId(previous.academyPathId);
+          window.scrollTo({ top: 0, behavior: 'auto' });
+          return;
+        }
+
+        // If no earlier screen exists, go home before allowing exit.
+        const current = currentNavigationRef.current;
+        if (current && current.page !== 'home') {
+          const home = {
+            page: 'home',
+            activeLearningPathId: current.activeLearningPathId,
+            academyPathId: current.academyPathId,
+          };
+          navigationHistoryRef.current = [];
+          currentNavigationRef.current = home;
+          setPage(home.page);
+          setActiveLearningPathId(home.activeLearningPathId);
+          setAcademyPathId(home.academyPathId);
+          window.scrollTo({ top: 0, behavior: 'auto' });
+          return;
+        }
+
+        // Exit only when already at Home with no earlier screen.
+        await CapacitorApp.exitApp();
+      });
+
+      if (disposed) {
+        await handle.remove();
+      } else {
+        listenerHandle = handle;
+      }
+    };
+
+    registerBackButton().catch((error) => {
+      console.error('Unable to register Android back-button handler:', error);
+    });
+
+    return () => {
+      disposed = true;
+      if (listenerHandle) void listenerHandle.remove();
+    };
+  }, []);
 
   useEffect(() => {
     const handleShortcut = (event) => {
       if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {
         event.preventDefault();
-        setPage('resources');
+        navigate('resources');
         window.setTimeout(() => searchInputRef.current?.focus(), 0);
       }
     };
@@ -511,39 +757,78 @@ function App() {
     };
   }, [huntRows]);
 
-  const visibleResources = useMemo(() => resources.filter((r) => {
-    const searchable = `${r.name} ${r.provider} ${r.category} ${r.description} ${r.skills.join(' ')} ${r.note} ${r.practiceUrl || ''}`.toLowerCase();
-    const matchesQuery = searchable.includes(query.trim().toLowerCase());
-    const matchesCategory = category === 'All resources' || r.category === category;
-    const kind = r.kind.toLowerCase();
-    const matchesCost = cost === 'All access types'
-      || (cost === 'Free' && kind.includes('free') && !kind.includes('tier') && !kind.includes('varies'))
-      || (cost === 'Open source' && kind.includes('open source'))
-      || (cost === 'Free tier / varies' && (kind.includes('tier') || kind.includes('varies')));
-    return matchesQuery && matchesCategory && matchesCost && matchesLevel(r.level, level, 'All levels');
-  }), [query, category, cost, level]);
-
+  const visibleResources = useMemo(() => {
+    const filtered = resources.filter((r) => {
+      const searchable = `${r.name} ${r.provider} ${r.category} ${r.description} ${r.skills.join(' ')} ${r.note} ${r.practiceUrl || ''}`.toLowerCase();
+      const matchesQuery = searchable.includes(query.trim().toLowerCase());
+      const matchesCategory = category === 'All resources' || r.category === category;
+      const matchesCost = resourceMatchesAccess(r, cost);
+      const matchesSelectedLevel = matchesLevel(r.level, level, 'All levels');
+      const matchesType = resourceMatchesType(r, resourceType);
+      return matchesQuery && matchesCategory && matchesCost && matchesSelectedLevel && matchesType;
+    });
+    return filtered.sort((a, b) => {
+      if (sortBy === 'name') return a.name.localeCompare(b.name);
+      if (sortBy === 'beginner') {
+        const rank = (item) => /beginner/i.test(item.level) ? 0 : /intermediate/i.test(item.level) ? 1 : 2;
+        return rank(a) - rank(b) || a.name.localeCompare(b.name);
+      }
+      return 0;
+    });
+  }, [query, category, cost, level, resourceType, sortBy]);
   const visibleLabs = labs.filter((lab) => matchesLevel(lab.level, labLevel, 'All labs') && (labCategory === 'All topics' || lab.category === labCategory));
   const visibleCybersecurityPillars = useMemo(() => {
     const term = domainQuery.trim().toLowerCase();
     if (!term) return cybersecurityPillars;
     return cybersecurityPillars.filter((pillar) => [pillar.title, pillar.summary, pillar.level, ...pillar.specializations.flatMap((item) => [item.name, item.description, item.firstStep])].join(' ').toLowerCase().includes(term));
   }, [domainQuery]);
-  const navigate = (next) => {
-    setPage(next);
+  const navigate = (next, options = {}) => {
+    const current = currentNavigationRef.current || {
+      page,
+      activeLearningPathId,
+      academyPathId,
+    };
+
+    const target = {
+      page: next,
+      activeLearningPathId: options.activeLearningPathId ?? current.activeLearningPathId,
+      academyPathId: options.academyPathId ?? current.academyPathId,
+    };
+
+    const changed =
+      current.page !== target.page ||
+      current.activeLearningPathId !== target.activeLearningPathId ||
+      current.academyPathId !== target.academyPathId;
+
+    // Home is the root screen, so clear previous navigation when returning there.
+    if (target.page === 'home') {
+      navigationHistoryRef.current = [];
+    } else if (changed) {
+      navigationHistoryRef.current.push(current);
+    }
+
+    currentNavigationRef.current = target;
+    setPage(target.page);
+
+    if (options.activeLearningPathId !== undefined) {
+      setActiveLearningPathId(options.activeLearningPathId);
+    }
+    if (options.academyPathId !== undefined) {
+      setAcademyPathId(options.academyPathId);
+    }
+
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-  const clearFilters = () => { setQuery(''); setCategory('All resources'); setCost('All access types'); setLevel('All levels'); };
+  const clearFilters = () => { setQuery(''); setCategory('All resources'); setCost('All access types'); setLevel('All levels'); setResourceType('All'); setSortBy('relevance'); };
   const openLearningPath = (pathId) => {
-    setActiveLearningPathId(pathId);
-    navigate('path-detail');
+    navigate('path-detail', { activeLearningPathId: pathId });
   };
   const updateModuleCheckpoint = (pathId, moduleTitle, field, checked) => {
     if (!MODULE_CHECKPOINT_FIELDS.includes(field)) return;
     const key = moduleProgressKey(pathId, moduleTitle);
     setModuleProgress((current) => ({ ...current, [key]: { ...(current[key] || {}), [field]: checked === true } }));
   };
-  const openPathAcademy = (pathId) => { setAcademyPathId(pathId); navigate('systems-academy'); };
+  const openPathAcademy = (pathId) => navigate('systems-academy', { academyPathId: pathId });
   const openPathLabs = (path) => {
     const matched = labs.filter((lab) => path.labIds.includes(lab.id));
     const topics = [...new Set(matched.map((lab) => lab.category))];
@@ -583,8 +868,14 @@ function App() {
   return <div className="app-shell" id="top">
     <header className="site-header">
       <Logo onClick={navigate} />
-      <nav className="nav-links" aria-label="Main navigation">
-        {[['home','Home'],['roadmap','Paths'],['certifications','Certs & Exams'],['systems-academy','OS + Networks'],['resources','Resources'],['tools','Tools & films'],['career-hub','Career hub'],['resume-studio','Resume'],['job-hub','Jobs'],['labs','Labs'],['concepts','Basics']].map(([key,label]) => <button key={key} className={`nav-link ${page === key || (page === 'path-detail' && key === 'roadmap') || (page === 'application-demo' && key === 'job-hub') ? 'active' : ''}`} onClick={() => { if (key === 'systems-academy') setAcademyPathId('all'); navigate(key); }}>{label}</button>)}
+            <nav className="nav-links nav-links-compact" aria-label="Main navigation">
+        {[['home','Home'],['roadmap','Paths'],['resources','Resources'],['labs','Labs'],['ctf-lab','CTF Practice'],['liveops','LiveOps']].map(([key,label]) => <button key={key} className={`nav-link ${page === key || (page === 'path-detail' && key === 'roadmap') || (page === 'application-demo' && key === 'job-hub') ? 'active' : ''}`} onClick={() => { if (key === 'systems-academy') setAcademyPathId('all'); navigate(key); }}>{label}</button>)}
+        <details className="nav-more-menu">
+          <summary className={`nav-link nav-more-summary ${page === 'cyber-pulse' || ['certifications','systems-academy','tools','career-hub','resume-studio','job-hub','cyberrange','offline-learning','skillproof','concepts'].includes(page) || (page === 'application-demo' && ['certifications','systems-academy','tools','career-hub','resume-studio','job-hub','cyberrange','offline-learning','skillproof','concepts'].includes('job-hub')) ? 'active' : ''}`}><span>More</span><span aria-hidden="true">⌄</span></summary>
+          <div className="nav-more-panel" role="group" aria-label="More site sections">
+            {[['certifications','Certs & Exams'],['systems-academy','OS + Networks'],['tools','Tools & films'],['career-hub','Career hub'],['resume-studio','Resume'],['job-hub','Jobs'],['cyberrange','CyberRange'],['offline-learning','Offline learning'],['skillproof','SkillProof'],['concepts','Basics']].map(([key,label]) => <button type="button" key={key} className={`nav-link ${page === key || (page === 'application-demo' && key === 'job-hub') ? 'active' : ''}`} onClick={(event) => { event.currentTarget.closest('details')?.removeAttribute('open'); if (key === 'systems-academy') setAcademyPathId('all'); navigate(key); }}>{label}</button>)}
+                      <button type="button" className={`nav-link ${page === 'cyber-pulse' ? 'active' : ''}`} onClick={(event) => { event.currentTarget.closest('details')?.removeAttribute('open'); navigate('cyber-pulse'); }}>CyberPulse Â· News & freshness</button>            <button type="button" className={`nav-link ${page === 'youtube-live-learning' ? 'active' : ''}`} onClick={(event) => { event.currentTarget.closest('details')?.removeAttribute('open'); navigate('youtube-live-learning'); }}>YouTube Live Learning</button></div>
+        </details>
       </nav>
       <div className="header-actions"><label className="header-search"><Icon name="search" size={16} /><input value={query} onChange={(e) => { setQuery(e.target.value); if (page !== 'resources') navigate('resources'); }} onFocus={() => { if (page !== 'resources') navigate('resources'); }} placeholder="Search skills, labs, topics…" aria-label="Search resources" /><kbd>Ctrl K</kbd></label><ExternalLink className="github-link" href="https://github.com/hemanthkadiyala01-sentinel/open-cyber-path"><Icon name="network" size={15} /> GitHub</ExternalLink></div>
     </header>
@@ -597,11 +888,16 @@ function App() {
             <div className="eyebrow"><span className="eyebrow-dot" /> OPEN · FREE TO EXPLORE · COMMUNITY BUILT</div>
             <h1>Learn cybersecurity for <em>real skills,</em> real opportunities.</h1>
             <p className="hero-copy">Free learning resources, practical labs, notebook-style notes, and clear learning paths - from first steps to deeper investigation. Learn, practise, build evidence, and help another learner grow.</p>
-            <div className="hero-actions"><button className="button button-primary" onClick={() => document.getElementById('start-here')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Start learning free <Icon name="arrow-right" size={17} /></button><button className="button button-quiet" onClick={() => navigate('resources')}>Explore resources <Icon name="arrow-up-right" size={16} /></button><button className="button button-quiet" onClick={() => navigate('certifications')}>Certs &amp; exams <Icon name="arrow-up-right" size={16} /></button></div>
+            <div className="hero-actions"><button className="button button-primary" onClick={() => document.getElementById('start-here')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Start learning free <Icon name="arrow-right" size={17} /></button><button className="button button-quiet" onClick={() => navigate('resources')}>Explore resources <Icon name="arrow-up-right" size={16} /></button><button className="button button-quiet" onClick={() => navigate('certifications')}>Certs &amp; exams <Icon name="arrow-up-right" size={16} /></button><button type="button" className="button button-quiet" onClick={openWelcomeTour}><Icon name="spark" size={16} /> Take guided tour</button></div>
             <div className="hero-note"><Icon name="users" size={17} /> No fake ratings or job promises. Start with useful material and build at your own pace.</div>
           </div>
           <div className="hero-visual"><img className="hero-image" src="/images/learning/detection-engineering-lab.webp" alt="Analyst reviewing detection outcomes, event charts, and alert logic" onError={handleArtworkError} /><div className="hero-image-vignette"/><div className="hero-sticker sticker-top"><Icon name="book-open" size={19} /><span><small>LEARN</small><b>Understand the basics</b></span></div><div className="hero-sticker sticker-bottom"><Icon name="target" size={19} /><span><small>PRACTISE</small><b>Build evidence of skill</b></span></div><div className="hero-quote"><Icon name="spark" size={19} /><p>Learn it.<br />Practise it.<br /><b>Share what you discover.</b></p></div></div>
         </section>
+        {showTourInvitation && <section className="tour-invitation" aria-labelledby="tour-invitation-title">
+          <div className="tour-invitation-art" aria-hidden="true"><span className="tour-invitation-art-symbol">✦</span><small>SCENE 01 — PLAY INTRO</small></div>
+          <div className="tour-invitation-copy"><div className="tour-invitation-kicker">OPTIONAL · 7-SCENE DISCOVERY TOUR</div><h2 id="tour-invitation-title">Find the part of cybersecurity that calls to you.</h2><p>A short, cinematic guide to the main sections—learning paths, resources, exams, labs, tools, and career support. It will suggest a starting point based on your interest, without locking you into a route.</p></div>
+          <div className="tour-invitation-actions"><button type="button" className="tour-invitation-play" onClick={openWelcomeTour}><span aria-hidden="true">▶</span> Play the intro <span aria-hidden="true">↗</span></button><button type="button" className="tour-invitation-later" onClick={dismissTourInvitation}>Not now</button></div>
+        </section>}
         <section className="principle-strip" aria-label="What learners can expect">
           <div><span className="principle-icon"><Icon name="book-open" /></span><span><b>Free to explore</b><small>Clear access labels and caveats</small></span></div>
           <div><span className="principle-icon"><Icon name="terminal" /></span><span><b>Practice-first</b><small>Samples, worksheets, and labs</small></span></div>
@@ -610,6 +906,7 @@ function App() {
         </section>
 
         <StartHereGuide paths={learningPaths} onOpenPath={openLearningPath} />
+        <AdaptiveLearningPlanner paths={learningPaths} moduleProgress={moduleProgress} onOpenPath={openLearningPath} />
 
         <section className="quote-spotlight" aria-labelledby="quote-spotlight-title">
           <div className="quote-spotlight-mark" aria-hidden="true">“</div>
@@ -744,10 +1041,70 @@ function App() {
       </>}
 
       {page === 'resources' && <section className="section-wrap resource-page">
-        <PageHeading kicker="THE RESOURCE LIBRARY" title="Good resources." emphasis="All in one place." description="Explore official documentation, free learning, open-source tools, threat-hunting references, and authorised web-security training. We link to the original providers and explain access limits." />
-        <div className="search-row"><label className="search-box"><Icon name="search" size={19} /><input ref={searchInputRef} value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search skills, tools, topics, providers…" aria-label="Search resources" /><kbd>Ctrl K</kbd></label><label className="select-wrap"><span className="sr-only">Access type</span><select value={cost} onChange={(e) => setCost(e.target.value)}><option>All access types</option><option>Free</option><option>Open source</option><option>Free tier / varies</option></select></label><label className="select-wrap"><span className="sr-only">Skill level</span><select value={level} onChange={(e) => setLevel(e.target.value)}><option>All levels</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></label></div>
-        <div className="category-row" role="group" aria-label="Filter by category">{categories.map((c) => <button key={c} className={`category-chip ${category === c ? 'chosen' : ''}`} onClick={() => setCategory(c)}>{c === 'Threat Hunting' ? <Icon name="radar" size={14} /> : c === 'Bug Bounty' ? <Icon name="bug" size={14} /> : c === 'Foundations' ? <Icon name="book-open" size={14} /> : c === 'Security Concepts' ? <Icon name="shield-check" size={14} /> : c === 'Detection Engineering' ? <Icon name="terminal" size={14} /> : c === 'SOC & SIEM' ? <Icon name="chart" size={14} /> : c === 'Hands-on Labs' ? <Icon name="target" size={14} /> : c === 'DFIR' ? <Icon name="clipboard" size={14} /> : c === 'Cloud Security' ? <Icon name="network" size={14} />         : c === 'Penetration Testing' ? <Icon name="bug" size={14} /> : <Icon name="spark" size={14} />}{c}</button>)}</div>
+        <div className="resource-directory-layout">
+        <aside className="resource-directory-sidebar" aria-label="Resource directory filters">
+          <div className="resource-sidebar-intro">
+            <span className="resource-sidebar-mark"><Icon name="box" size={21} /></span>
+            <div><strong>Resource Directory</strong><span>{resources.length} learning resources</span></div>
+          </div>
+          <nav className="resource-sidebar-topics" aria-label="Resource topics">
+            <button type="button" className={`resource-sidebar-link ${category === 'All resources' ? 'is-active' : ''}`} onClick={() => { setCategory('All resources'); setResourceType('All'); }}>
+              <Icon name="grid" size={15} /><span>All Resources</span><b>{resources.length}</b>
+            </button>
+            {categories.filter((item) => item !== 'All resources').map((item) => (
+              <button type="button" key={item} className={`resource-sidebar-link ${category === item ? 'is-active' : ''}`} onClick={() => { setCategory(item); setResourceType('All'); }}>
+                <Icon name={item === 'SOC & SIEM' ? 'chart' : item === 'Threat Hunting' ? 'radar' : item === 'Bug Bounty' || item === 'Penetration Testing' ? 'bug' : item === 'Foundations' ? 'book-open' : item === 'Security Concepts' ? 'shield-check' : item === 'Detection Engineering' ? 'terminal' : item === 'Hands-on Labs' ? 'target' : item === 'DFIR' ? 'clipboard' : item === 'Cloud Security' ? 'cloud' : 'layers'} size={15} />
+                <span>{item}</span><b>{resources.filter((resource) => resource.category === item).length}</b>
+              </button>
+            ))}
+          </nav>
+          <div className="resource-sidebar-filter">
+            <h3>Filter by Access</h3>
+            {[
+              { label: 'Free', value: 'Free' },
+              { label: 'Free (account needed)', value: 'Free (account needed)' },
+              { label: 'Open source', value: 'Open source' },
+              { label: 'Paid / Subscription', value: 'Paid / Subscription' },
+              { label: 'Varies by tier or lab', value: 'Free tier / varies' }
+            ].map((option) => (
+              <button type="button" key={option.value} className={`resource-filter-choice ${cost === option.value ? 'is-active' : ''}`} aria-pressed={cost === option.value} onClick={() => setCost(cost === option.value ? 'All access types' : option.value)}>
+                <span className="resource-filter-box" /> <span>{option.label}</span><b>{resources.filter((resource) => resourceMatchesAccess(resource, option.value)).length}</b>
+              </button>
+            ))}
+          </div>
+          <div className="resource-sidebar-filter">
+            <h3>Filter by Level</h3>
+            {[
+              { label: 'Beginner', value: 'Beginner', tone: 'beginner' },
+              { label: 'Intermediate', value: 'Intermediate', tone: 'intermediate' },
+              { label: 'Advanced', value: 'Advanced', tone: 'advanced' }
+            ].map((option) => (
+              <button type="button" key={option.value} className={`resource-filter-choice resource-level-choice ${level === option.value ? 'is-active' : ''}`} aria-pressed={level === option.value} onClick={() => setLevel(level === option.value ? 'All levels' : option.value)}>
+                <span className={`resource-level-dot ${option.tone}`} /> <span>{option.label}</span><b>{resources.filter((resource) => matchesLevel(resource.level, option.value, 'All levels')).length}</b>
+              </button>
+            ))}
+          </div>
+          <button className="resource-sidebar-reset" type="button" onClick={clearFilters}><Icon name="rotate-ccw" size={14} /> Reset filters</button>
+        </aside>
+        <main className="resource-directory-main">
+          <div className="resource-directory-hero">
+            <PageHeading kicker="CYBERSECURITY RESOURCE DIRECTORY" title="Cybersecurity Learning" emphasis="Resources" description="Curated courses, labs, documentation, tools, and official learning platforms to help you build real skills." />
+          </div>
+        <div className="resource-search-toolbar">
+          <label className="search-box"><Icon name="search" size={19} /><input ref={searchInputRef} value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search resources, tools, topicsâ€¦" aria-label="Search resources" /><kbd>Ctrl K</kbd></label>
+          <label className="select-wrap resource-sort-wrap"><span className="sr-only">Sort resources</span><select value={sortBy} onChange={(e) => setSortBy(e.target.value)} aria-label="Sort resources"><option value="relevance">Most Relevant</option><option value="name">Name Aâ€“Z</option><option value="beginner">Beginner First</option></select></label>
+        </div>
+        <div className="resource-type-filters" role="group" aria-label="Filter resource types">
+          {['All', 'Courses', 'Labs', 'Documentation', 'Tools', 'Practice Platforms', 'Certifications', 'Datasets', 'Frameworks', 'Career', 'Videos'].map((item) => (
+            <button type="button" key={item} className={`resource-type-chip ${resourceType === item ? 'is-active' : ''}`} aria-pressed={resourceType === item} onClick={() => { setResourceType(item); setCategory('All resources'); }}>{item}</button>
+          ))}
+        </div>
         <div className="results-caption"><span><b>{visibleResources.length}</b> resources to explore</span><span>External links open the original provider <Icon name="arrow-up-right" size={13} /></span></div>
+        
+        <div className="resource-grid">{visibleResources.map((resource) => <ResourceCard key={resource.id} resource={resource} />)}</div>
+        {visibleResources.length === 0 && <div className="empty-state"><Icon name="search" size={28} /><h3>No matching resources yet</h3><p>Try another topic or remove a filter.</p><button className="button button-primary" onClick={clearFilters}>Clear filters</button></div>}
+        <div className="verification-note"><Icon name="alert-triangle" size={19} /><p><b>Access can change.</b> Providers may change free tiers, account requirements, lab availability, or terms. Check the original site before signing up; OpenCyberPath does not control external services or promise jobs or bounty rewards.</p></div>
+      
         <section className="section-wrap resource-workflow" aria-labelledby="workflow-heading">
           <div className="section-heading">
             <div>
@@ -783,11 +1140,10 @@ function App() {
             </li>
           </ol>
           <div className="workflow-reminder"><Icon name="shield-alert" size={17} /><div><b>Authorisation comes first.</b><p>Public websites, school networks, college networks, workplace systems, and third-party services are not automatically authorised testing targets. Only test what you own or what a provider has expressly assigned to you.</p></div></div>
-          <div className="workflow-practice"><b>Designated practice.</b>Set up a local lab such as <ExternalLink href="https://owasp.org/projects/juice-shop/">OWASP Juice Shop</ExternalLink> or complete guided labs at <ExternalLink href="https://portswigger.net/web-security">PortSwigger Web Security Academy</ExternalLink>. Do not scan or test targets you have not been authorised to assess.</div>
+          <div className="workflow-practice"><div className="workflow-practice-label"><b>DESIGNATED PRACTICE</b><span>LEARN IN AN AUTHORISED ENVIRONMENT</span></div><div className="workflow-practice-copy"><p>Set up a local lab such as <ExternalLink href="https://owasp.org/projects/juice-shop/">OWASP Juice Shop</ExternalLink> or complete guided labs at <ExternalLink href="https://portswigger.net/web-security">PortSwigger Web Security Academy</ExternalLink>.</p><p className="workflow-practice-safety">Only test systems you own or targets a provider has expressly assigned to you. Do not scan or test unrelated public systems.</p></div></div>
         </section>
-        <div className="resource-grid">{visibleResources.map((resource) => <ResourceCard key={resource.id} resource={resource} />)}</div>
-        {visibleResources.length === 0 && <div className="empty-state"><Icon name="search" size={28} /><h3>No matching resources yet</h3><p>Try another topic or remove a filter.</p><button className="button button-primary" onClick={clearFilters}>Clear filters</button></div>}
-        <div className="verification-note"><Icon name="alert-triangle" size={19} /><p><b>Access can change.</b> Providers may change free tiers, account requirements, lab availability, or terms. Check the original site before signing up; OpenCyberPath does not control external services or promise jobs or bounty rewards.</p></div>
+        </main>
+      </div>
       </section>}
 
       {page === 'roadmap' && <section className="section-wrap roadmap-section">
@@ -826,6 +1182,22 @@ function App() {
         <div className="career-learning-progress" aria-live="polite"><div><span className="section-kicker">YOUR LOCAL LEARNING CHECKPOINTS</span><b>{activeLearningPath.modules.filter((item) => MODULE_CHECKPOINT_FIELDS.every((field) => moduleProgress[moduleProgressKey(activeLearningPath.id, item.title)]?.[field] === true)).length} of {activeLearningPath.modules.length} modules self-checked</b><p>Checkpoints are saved in this browser only. They reflect your own progress and are not externally verified.</p></div><div className="career-learning-progress-track" role="progressbar" aria-label="Completed self-checks for this path" aria-valuemin={0} aria-valuemax={activeLearningPath.modules.length} aria-valuenow={activeLearningPath.modules.filter((item) => MODULE_CHECKPOINT_FIELDS.every((field) => moduleProgress[moduleProgressKey(activeLearningPath.id, item.title)]?.[field] === true)).length}><span style={{ width: `${activeLearningPath.modules.length ? (activeLearningPath.modules.filter((item) => MODULE_CHECKPOINT_FIELDS.every((field) => moduleProgress[moduleProgressKey(activeLearningPath.id, item.title)]?.[field] === true)).length / activeLearningPath.modules.length) * 100 : 0}%` }} /></div></div>
         <div className="career-section-header"><div><div className="section-kicker">THE ROADMAP</div><h2>Learn it in <em>small, connected steps.</em></h2></div><p>Each module tells you what to learn, what to try, and what evidence to keep. Work at your own pace and skip nothing you need for safe practice.</p></div>
         <div className="career-module-list">{activeLearningPath.modules.map((module, index) => <LearningModuleCard key={module.title} pathId={activeLearningPath.id} module={module} index={index} progress={moduleProgress[moduleProgressKey(activeLearningPath.id, module.title)] || {}} onCheckpointChange={updateModuleCheckpoint} />)}</div>
+        <LearningProgressBackup
+          paths={learningPaths}
+          moduleProgress={moduleProgress}
+          onImport={(imported) => setModuleProgress((current) => {
+            const merged = { ...current };
+            for (const [key, value] of Object.entries(imported)) {
+              const before = merged[key] || {};
+              merged[key] = {
+                understood: before.understood === true || value.understood === true,
+                practised: before.practised === true || value.practised === true,
+                evidence: before.evidence === true || value.evidence === true,
+              };
+            }
+            return merged;
+          })}
+        />
         <Suspense fallback={<p className="section-loading">Loading career-path video lessons...</p>}>
           <CareerVideoLibrary pathId={activeLearningPath.id} pathTitle={activeLearningPath.shortTitle || activeLearningPath.title} />
         </Suspense>
@@ -851,6 +1223,8 @@ function App() {
       {page === 'tools' && <Suspense fallback={<p className='section-loading'>Loading security tools...</p>}><ToolsThreats Icon={Icon} /></Suspense>}
       {page === 'systems-academy' && <Suspense fallback={<p className='section-loading'>Loading OS and networks academy...</p>}><SystemsAcademy Icon={Icon} careerPaths={learningPaths} initialPathId={academyPathId} onOpenLabs={() => navigate('labs')} /></Suspense>}
 
+      {page === 'cyberrange' && <Suspense fallback={<p className="section-loading">Loading CyberRange practice cases...</p>}><CyberRange /></Suspense>}
+
       {page === 'labs' && <section className="section-wrap labs-section">
         <PageHeading kicker="PRACTISE AT YOUR OWN PACE" title="Notes, labs &" emphasis="field guides." description="Start with a notebook, use supplied sample data, and practise in a local or explicitly authorised training environment. Each guide is available as a PDF and editable DOCX." />
         <div className="notes-banner"><img src="/images/learning/handwritten-notes-study.svg" alt="Notebook-style SOC triage notes with event, context, evidence, and decision steps" onError={handleArtworkError}/><div className="notes-banner-copy"><div className="section-kicker">NOTEBOOK MODE</div><h3>Notes that feel easier to revise.</h3><p>Handwritten-script notebook pages on ruled paper, plain-language definitions, worked examples, checklists, practice questions, and answer checks. Start with fictional records; you do not need a full SIEM installation to begin learning.</p></div><span className="notes-format"><Icon name="notebook-pen" size={18} /> PDF + DOCX</span></div>
@@ -863,6 +1237,18 @@ function App() {
         <div className="verification-note"><Icon name="alert-triangle" size={19} /><p><b>Practice safely.</b> Threat-hunting data shipped here is synthetic. Bug-bounty activities must stay inside an explicitly authorised scope or the designated training lab. Do not test random public systems.</p></div>
       </section>}
 
+      {page === 'offline-learning' && <Suspense fallback={<p className="section-loading">Loading Offline Learning...</p>}><OfflineLearning /></Suspense>}
+
+      {page === 'skillproof' && <Suspense fallback={<p className="section-loading">Loading SkillProof portfolio builder...</p>}><SkillProof /></Suspense>}
+
+      {page === 'liveops' && <Suspense fallback={<p className="section-loading">Loading LiveOps problem statements...</p>}><LiveOps Icon={Icon} /></Suspense>}
+
+      {page === 'ctf-lab' && <Suspense fallback={<p className="section-loading">Loading CTF Arcade...</p>}><CTFArcade /></Suspense>}
+
+      {page === 'cyber-pulse' && <Suspense fallback={<p className="section-loading">Loading CyberPulse news and freshness status...</p>}><CyberPulse /></Suspense>}
+
+      {page === 'youtube-live-learning' && <Suspense fallback={<p className="section-loading">Loading YouTube Live Learning...</p>}><YouTubeLiveLearning /></Suspense>}
+
       {page === 'concepts' && <section className="section-wrap concepts-section">
         <PageHeading kicker="SECURITY IN PLAIN LANGUAGE" title="Understand the cause." emphasis="Learn the defence." description="Explore 16 illustrated security basics. Each card explains the cause, a real-world example, defensive controls, and a safe next step for beginners." />
         <div className="concept-intro"><Icon name="book-open" size={24} /><div><b>Think in patterns, not movie scenes.</b><p>Each topic is a starting point for learning. An indicator is not proof by itself; use evidence and authorised practice.</p></div><a className="download-button" href="/notes/common-attack-patterns-beginner-guide.pdf" download><Icon name="download" size={15} /> Full guide</a></div>
@@ -872,8 +1258,11 @@ function App() {
       {page === 'creator' && <Suspense fallback={<p className="section-loading">Loading creator profile...</p>}><CreatorIdentity /></Suspense>}
     </main>
 
+    {showWelcomeTour && page === 'home' && <FirstVisitTour onClose={dismissWelcomeTour} onNavigate={handleTourNavigate} />}
+
     <footer className="site-footer"><div className="footer-top"><Logo onClick={navigate} /><p>A learner-built guide to resources that already exist. Learn openly. Practise responsibly. Help the next learner.</p><div className="footer-links"><button onClick={() => navigate('resources')}>Resources</button><button onClick={() => navigate('certifications')}>Certifications &amp; exams</button><button onClick={() => navigate('roadmap')}>Learning paths</button><button onClick={() => navigate('career-hub')}>Career hub</button><button onClick={() => navigate('resume-studio')}>Resume studio</button><button onClick={() => navigate('job-hub')}>Jobs</button><button onClick={() => navigate('labs')}>Labs & notes</button><button onClick={() => navigate('concepts')}>Attack basics</button><button onClick={() => navigate('tools')}>Tools & film case studies</button><button onClick={() => navigate('creator')}>About the creator</button>
 <ExternalLink href="https://github.com/hemanthkadiyala01-sentinel/open-cyber-path">Contribute <Icon name="arrow-up-right" size={13} /></ExternalLink></div></div><div className="copyright"><span>Independent community learning project</span><span className="footer-creator-credit">Built by Hemanth Kadiyala Â· NYXOVAR</span><span>External resources belong to their providers · Verify current terms · No job or reward guarantees</span></div></footer>
+    <SiteGuideAssistant onOpenPage={navigate} onOpenPath={openLearningPath} />
   </div>;
 }
 

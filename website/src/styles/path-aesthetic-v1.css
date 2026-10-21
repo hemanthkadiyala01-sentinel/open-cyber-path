@@ -1,0 +1,203 @@
+/* OpenCyberPath premium learning-path cards; scoped to path cards only. */
+.path-card {
+  --opc-path-accent: #68cfff;
+  --opc-path-accent-soft: rgba(72, 190, 255, .14);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid rgba(96, 180, 226, .34);
+  border-top: 2px solid var(--opc-path-accent);
+  border-radius: 19px;
+  background:
+    radial-gradient(ellipse at 88% 0%, var(--opc-path-accent-soft), transparent 46%),
+    linear-gradient(148deg, rgba(8, 25, 43, .98), rgba(4, 13, 26, .99) 72%);
+  box-shadow: 0 15px 34px rgba(0, 0, 0, .24), inset 0 1px 0 rgba(255, 255, 255, .035);
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.path-card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,.025), transparent 38%);
+  pointer-events: none;
+}
+
+.path-card:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--opc-path-accent) 72%, transparent);
+  box-shadow: 0 20px 42px rgba(0, 0, 0, .34), 0 0 24px var(--opc-path-accent-soft), inset 0 1px 0 rgba(255,255,255,.06);
+}
+
+.path-card:focus-within {
+  outline: 2px solid var(--opc-path-accent);
+  outline-offset: 3px;
+}
+
+.path-card .path-art {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 3 / 1;
+  background: #061424;
+  border-bottom: 1px solid color-mix(in srgb, var(--opc-path-accent) 38%, transparent);
+}
+
+.path-card .path-art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(1.12) contrast(1.045);
+  transition: transform 420ms cubic-bezier(.2,.7,.2,1), filter 420ms ease;
+}
+
+.path-card:hover .path-art img {
+  transform: scale(1.035);
+  filter: saturate(1.2) contrast(1.06);
+}
+
+.path-card .path-art-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(1, 9, 19, .06) 16%, rgba(2, 10, 21, .05) 50%, rgba(2, 10, 21, .72) 100%);
+  pointer-events: none;
+}
+
+.path-card .path-icon {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  top: 16px;
+  left: 16px;
+  color: var(--opc-path-accent);
+  border: 1px solid color-mix(in srgb, var(--opc-path-accent) 80%, transparent);
+  border-radius: 50%;
+  background: rgba(3, 14, 28, .76);
+  box-shadow: 0 0 22px var(--opc-path-accent-soft), inset 0 0 14px rgba(255,255,255,.025);
+  backdrop-filter: blur(10px);
+}
+
+.path-card .path-number {
+  right: 12px;
+  bottom: 12px;
+  padding: 6px 9px;
+  border: 1px solid rgba(207, 232, 255, .17);
+  border-radius: 7px;
+  color: #ecf7ff;
+  background: rgba(2, 11, 22, .72);
+  font-size: 9px;
+  font-weight: 750;
+  letter-spacing: .12em;
+  backdrop-filter: blur(9px);
+}
+
+.path-card .path-body {
+  position: relative;
+  padding: 18px 20px 20px;
+}
+
+.path-card .path-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.path-card .path-card-top .level-label {
+  max-width: 100%;
+  border: 1px solid color-mix(in srgb, var(--opc-path-accent) 65%, transparent);
+  border-radius: 999px;
+  color: color-mix(in srgb, var(--opc-path-accent) 72%, white);
+  background: var(--opc-path-accent-soft);
+  padding: 5px 10px;
+  font-size: 10px;
+  line-height: 1.35;
+}
+
+.path-card .path-card-top > svg {
+  flex: 0 0 auto;
+  color: var(--opc-path-accent);
+  filter: drop-shadow(0 0 6px var(--opc-path-accent-soft));
+}
+
+.path-card .path-body h3,
+.path-card .path-body > h3 {
+  color: #f1f7ff;
+  letter-spacing: -.025em;
+  line-height: 1.23;
+  text-wrap: balance;
+}
+
+.path-card .path-body > p {
+  color: #b8cadd;
+  line-height: 1.58;
+}
+
+.path-card .topic-list {
+  gap: 9px 14px;
+}
+
+.path-card .topic-list > span {
+  color: #d1e0ef;
+  line-height: 1.42;
+}
+
+.path-card .topic-list > span svg {
+  flex: 0 0 auto;
+  color: var(--opc-path-accent);
+  filter: drop-shadow(0 0 4px var(--opc-path-accent-soft));
+}
+
+/* Distinct accent systems for the six built-in paths. */
+.path-card.path-soc-blue-team {
+  --opc-path-accent: #35baff;
+  --opc-path-accent-soft: rgba(36, 163, 255, .15);
+  border-color: rgba(53, 186, 255, .4);
+}
+.path-card.path-threat-hunting-detection-engineering {
+  --opc-path-accent: #2fe2d0;
+  --opc-path-accent-soft: rgba(31, 224, 208, .14);
+  border-color: rgba(47, 226, 208, .38);
+}
+.path-card.path-digital-forensics-incident-response {
+  --opc-path-accent: #ff657e;
+  --opc-path-accent-soft: rgba(255, 65, 103, .14);
+  border-color: rgba(255, 101, 126, .36);
+}
+.path-card.path-application-security-bug-bounty {
+  --opc-path-accent: #b787ff;
+  --opc-path-accent-soft: rgba(169, 102, 255, .15);
+  border-color: rgba(183, 135, 255, .36);
+}
+.path-card.path-cloud-security {
+  --opc-path-accent: #ffc45e;
+  --opc-path-accent-soft: rgba(255, 174, 61, .15);
+  border-color: rgba(255, 196, 94, .36);
+}
+.path-card.path-grc-security-fundamentals {
+  --opc-path-accent: #35e2ad;
+  --opc-path-accent-soft: rgba(30, 218, 157, .14);
+  border-color: rgba(53, 226, 173, .36);
+}
+
+@media (max-width: 680px) {
+  .path-card { border-radius: 15px; }
+  .path-card .path-art { height: auto; min-height: 0; aspect-ratio: 2.25 / 1; }
+  .path-card .path-body { padding: 15px 16px 17px; }
+  .path-card .path-icon { width: 44px; height: 44px; top: 12px; left: 12px; }
+  .path-card .path-number { font-size: 8px; letter-spacing: .08em; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .path-card,
+  .path-card .path-art img { transition: none !important; }
+  .path-card:hover,
+  .path-card:hover .path-art img { transform: none !important; }
+}

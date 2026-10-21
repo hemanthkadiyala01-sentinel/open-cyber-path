@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { operatingSystems, networkModules, practiceExercises } from '../data/systemsAcademy.js';
 import { OperatingSystemsExplorer } from './OperatingSystemsExplorer.jsx';
+import { DistroSeaDirectory } from './DistroSeaDirectory.jsx'; // distrosea-directory-v1
 
 export function SystemsAcademy({ Icon, careerPaths = [], initialPathId = 'all', onOpenLabs }) {
   const [track, setTrack] = useState('os');
@@ -58,7 +59,10 @@ export function SystemsAcademy({ Icon, careerPaths = [], initialPathId = 'all', 
         <p>Study operating systems and networking as connected foundations. Choose a career path to surface the most relevant modules, learn from safe command examples, then test your understanding with browser-based practice.</p>
         <div className="systems-hero-stats"><span><b>{operatingSystems.length}</b> OS guides</span><span><b>{networkModules.length}</b> networking modules</span><span><b>{practiceExercises.length}</b> practice checks</span></div>
       </div>
-      <div className="systems-hero-art" aria-hidden="true"><div className="systems-orbit orbit-one"/><div className="systems-orbit orbit-two"/><div className="systems-core"><Icon name="network" size={34}/><span>OS + NET</span></div><i className="systems-node node-one">KERNEL</i><i className="systems-node node-two">TCP/IP</i><i className="systems-node node-three">LOGS</i></div>
+      <div className="systems-hero-art" aria-hidden="true">
+        <img className="systems-hero-photo" src="/images/opc-visuals/systems-network-overview.webp" alt="" loading="lazy" decoding="async" />
+        <span className="systems-hero-photo-shade" aria-hidden="true" />
+        <div className="systems-orbit orbit-one"/><div className="systems-orbit orbit-two"/><div className="systems-core"><Icon name="network" size={34}/><span>OS + NET</span></div><i className="systems-node node-one">KERNEL</i><i className="systems-node node-two">TCP/IP</i><i className="systems-node node-three">LOGS</i></div>
     </div>
 
     <div className="systems-filterbar">
@@ -68,12 +72,13 @@ export function SystemsAcademy({ Icon, careerPaths = [], initialPathId = 'all', 
 
     <div className="systems-track-switch" role="tablist" aria-label="Academy track">
       <button role="tab" aria-selected={track === 'explorer'} className={track === 'explorer' ? 'is-active' : ''} onClick={() => setTrack('explorer')}><Icon name="layers" size={18}/> OS Explorer <small>Visual guide & comparisons</small></button>
-      <button role="tab" aria-selected={track === 'os'} className={track === 'os' ? 'is-active' : ''} onClick={() => setTrack('os')}><Icon name="monitor-check" size={18}/> Operating Systems <small>Learn the platform</small></button>
+      <button role="tab" aria-selected={track === 'distrosea'} className={track === 'distrosea' ? 'is-active' : ''} onClick={() => setTrack('distrosea')}><Icon name="globe" size={18}/> Try OS Online <small>85 DistroSea listings</small></button>      <button role="tab" aria-selected={track === 'os'} className={track === 'os' ? 'is-active' : ''} onClick={() => setTrack('os')}><Icon name="monitor-check" size={18}/> Operating Systems <small>Learn the platform</small></button>
       <button role="tab" aria-selected={track === 'network'} className={track === 'network' ? 'is-active' : ''} onClick={() => setTrack('network')}><Icon name="network" size={18}/> Computer Networks <small>Learn how systems connect</small></button>
       <button role="tab" aria-selected={track === 'practice'} className={track === 'practice' ? 'is-active' : ''} onClick={() => setTrack('practice')}><Icon name="target" size={18}/> Practice zone <small>Check your understanding</small></button>
     </div>
 
     {track === 'explorer' && <OperatingSystemsExplorer />}
+    {track === 'distrosea' && <DistroSeaDirectory Icon={Icon} />}
 
     {track === 'os' && <div className="systems-os-layout">
       <aside className="systems-os-list"><div className="systems-list-heading"><span>OS CATALOGUE</span><b>{visibleOS.length} shown</b></div>{visibleOS.map((os) => <button key={os.id} className={`systems-os-choice ${selectedOS === os.id ? 'is-active' : ''}`} onClick={() => setSelectedOS(os.id)}><span className="systems-os-glyph"><Icon name={os.id === 'windows' ? 'monitor-check' : os.id === 'macos' ? 'laptop' : 'terminal'} size={17}/></span><span><b>{os.name}</b><small>{os.family}</small></span><Icon name="arrow-right" size={15}/></button>)}{visibleOS.length === 0 && <p className="systems-empty">No OS matches. Clear the search or choose another career path.</p>}</aside>

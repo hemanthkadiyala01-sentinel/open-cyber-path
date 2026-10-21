@@ -86,11 +86,50 @@ function writeStudyPlans(next) {
 }
 
 function OfficialLink({ href, children, className = '' }) {
+  if (!href) return null;
+  try {
+    if (new URL(href).protocol !== 'https:') return null;
+  } catch {
+    return null;
+  }
   return (
     <a className={`cert-link ${className}`} href={href} target="_blank" rel="noreferrer">
       {children}<span aria-hidden="true"> ↗</span>
     </a>
   );
+}
+
+function normaliseCredentialHref(value) {
+  try {
+    const url = new URL(value);
+    if (url.protocol !== 'https:') return '';
+    url.hash = '';
+    url.pathname = url.pathname.replace(/\/+$/, '') || '/';
+    return url.href;
+  } catch {
+    return '';
+  }
+}
+
+function getCredentialLinkGroups(item) {
+  const isCourse = item.costClass === 'course-certificate';
+  const candidates = [
+    { href: item.officialUrl, label: isCourse ? 'Official course / badge page' : 'Official credential page' },
+    { href: item.syllabusUrl, label: isCourse ? 'Course outline / topics' : 'Official syllabus / exam objectives' },
+    { href: item.prepUrl, label: 'Official preparation resources' },
+  ];
+  const groups = new Map();
+  for (const candidate of candidates) {
+    const key = normaliseCredentialHref(candidate.href);
+    if (!key) continue;
+    const group = groups.get(key) || { href: candidate.href, labels: [] };
+    if (!group.labels.includes(candidate.label)) group.labels.push(candidate.label);
+    groups.set(key, group);
+  }
+  return [...groups.values()].map((group) => ({
+    href: group.href,
+    label: group.labels.length === 1 ? group.labels[0] : `${group.labels.join(' · ')} — same destination`,
+  }));
 }
 
 function Tag({ children, tone = 'default' }) {
@@ -170,9 +209,9 @@ function CertificationDetail({ item, progress, onTogglePlan, onToggleStep, onCle
           <button type="button" className={`cert-primary-button${isPlanned ? ' is-saved' : ''}`} onClick={onTogglePlan} aria-pressed={isPlanned}>
             {isPlanned ? '✓ Added to my plan' : '+ Add to my study plan'}
           </button>
-          <OfficialLink href={item.officialUrl}>Official credential page</OfficialLink>
-          <OfficialLink href={item.syllabusUrl}>Official syllabus / exam objectives</OfficialLink>
-          <OfficialLink href={item.prepUrl}>Official preparation resources</OfficialLink>
+          {getCredentialLinkGroups(item).map((link) => (
+            <OfficialLink key={link.href} href={link.href}>{link.label}</OfficialLink>
+          ))}
           {onOpenCareerPath && item.careerPathIds?.[0] && <button type="button" className="cert-secondary-button cert-roadmap-link" onClick={() => onOpenCareerPath(item.careerPathIds[0])}>Open matching career roadmap ↗</button>}
         </div>
       </div>
@@ -243,7 +282,7 @@ function CertificationDetail({ item, progress, onTogglePlan, onToggleStep, onCle
       </div>
 
       {item.updateNote && <aside className="cert-update-note"><strong>Version note:</strong> {item.updateNote}</aside>}
-      <div className="cert-detail-footer"><span>Official issuer pages control exam versions, fees, eligibility and renewal.</span><OfficialLink href={item.syllabusUrl}>Recheck official objectives</OfficialLink></div>
+      <div className="cert-detail-footer"><span>Official issuer pages control exam versions, fees, eligibility and renewal.</span>{normaliseCredentialHref(item.syllabusUrl) && normaliseCredentialHref(item.syllabusUrl) !== normaliseCredentialHref(item.officialUrl) && <OfficialLink href={item.syllabusUrl}>Recheck official objectives</OfficialLink>}</div>
     </section>
   );
 }

@@ -35,3 +35,12 @@ OpenCyberPath links learners to source owners instead of rehosting external cour
 - CISA Cyber Essentials: https://www.cisa.gov/sites/default/files/publications/19_1106_cisa_CISA_Cyber_Essentials_S508C_1.pdf — introductory cyber-readiness guidance. Check the CISA site for newer guidance before treating a static document as current.
 
 The v0.6 DFIR, Cloud Security, and GRC worksheets use fictional scenarios. They help practise how to reason and document; they are not a forensic certification, cloud compliance assessment, or formal audit.
+
+## Additional open-source references: TLS, application security, Windows reversing, and supply-chain security (checked 21 October 2026)
+
+- **grqz/ssl_imp — TLS client fingerprint research:** https://github.com/grqz/ssl_imp — advanced C/OpenSSL reference for studying TLS client-handshake fingerprints. Treat fingerprints as signals, not proof of identity, and keep experiments within systems you control.
+- **StevieTV / Bearly Secure Go web-security starter:** https://github.com/stevietv/learn-web-security-golang-starter — intentionally vulnerable Go web application plus a browser-based attacker lab. Use locally and in isolation; do not deploy it publicly or enter real credentials. Review upstream licences and course terms before redistribution.
+- **WitherOrNot / Warbird documentation:** https://github.com/WitherOrNot/warbird-docs — community documentation relevant to advanced Windows internals and reverse engineering. It is not official Microsoft documentation; corroborate technical claims and use controlled sample analysis.
+- **SmartTube public disclosure — software supply-chain case study:** https://github.com/yuliskov/SmartTube — study development-environment security, signing material, release integrity, artifact verification, recovery, and incident communication. SmartTube is a media app, not a security tool; do not infer that every release was affected when source disclosures do not establish that.
+
+These links are external references, not endorsements or copied course content. Confirm the source owner, release notes, licence, dependencies, and current safety information before use or redistribution.

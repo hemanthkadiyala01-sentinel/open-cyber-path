@@ -4,7 +4,7 @@ export const careerPaths = [
   {
     id: 'soc-blue-team', number: '01', title: 'SOC Analyst / Blue Team', shortTitle: 'SOC Analyst / Blue Team',
     level: 'Beginner to Intermediate', icon: 'shield-check', tone: 'blue', badge: 'DEFEND & INVESTIGATE',
-    image: '/images/learning/career-soc-blue-team.webp', pace: 'Suggested pace: 6-10 weeks, 3-5 focused hours per week',
+    image: '/images/learning/career-soc-blue-team-distinct-v1.svg', pace: 'Suggested pace: 6-10 weeks, 3-5 focused hours per week',
     desc: 'Learn to read telemetry, triage alerts, explain evidence, and communicate a careful defensive decision without claiming more than the data proves.',
     prerequisites: 'No previous cybersecurity job experience is required. Be comfortable using files and folders; the opening modules introduce networking and operating-system concepts.',
     topics: ['Networking & operating systems', 'Logs and SIEM concepts', 'Alert triage', 'Incident notes and escalation'],
@@ -26,7 +26,7 @@ export const careerPaths = [
   {
     id: 'threat-hunting-detection-engineering', number: '02', title: 'Threat Hunting & Detection Engineering', shortTitle: 'Threat Hunting & Detection Engineering',
     level: 'Beginner to Advanced', icon: 'radar', tone: 'cyan', badge: 'FORM A HYPOTHESIS',
-    image: '/images/learning/career-threat-hunting.webp', pace: 'Suggested pace: 8-12 weeks, with repeated investigation practice',
+    image: '/images/learning/career-threat-hunting-distinct-v1.svg', pace: 'Suggested pace: 8-12 weeks, with repeated investigation practice',
     desc: 'Move from curiosity to testable hunting hypotheses, then turn useful patterns into detections that are evaluated against labelled examples.',
     prerequisites: 'Basic networking, log fields, and command-line familiarity help. Start with the Foundations sections in the SOC path if those ideas are new.',
     topics: ['Hypotheses and baselines', 'Event correlation', 'Detection logic and Sigma', 'False positives and missed detections'],

@@ -105,3 +105,24 @@
 .tt-lab-meta { margin-bottom:5px; color:#72d9c4!important; font:8px var(--mono); }
 @media(max-width:800px) { .tt-start-route { grid-template-columns:1fr; } }
 @media(max-width:600px) { .tt-start-route ol { grid-template-columns:1fr; } .tt-meta-strip span { font-size:7px; } }
+
+/* OPC NON-RESOURCE VISUALS V1 */
+.tt-tool-card { overflow: hidden; border-radius: 15px; border-color: #204f63; box-shadow: 0 12px 30px #0002; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+.tt-tool-card:hover { transform: translateY(-3px); border-color: #2c9ab5; box-shadow: 0 18px 38px #0004; }
+.tt-tool-art { position: relative; height: 156px; margin: -17px -17px 16px; overflow: hidden; border-bottom: 1px solid #2b5b6d; background: #061522; }
+.tt-tool-art img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; filter: saturate(.92) contrast(1.04); transition: transform .35s ease; }
+.tt-tool-card:hover .tt-tool-art img { transform: scale(1.035); }
+.tt-tool-art-shade { position: absolute; inset: 0; background: linear-gradient(0deg, #081722 0%, #08172200 62%), linear-gradient(90deg, #0615225c, transparent 76%); pointer-events: none; }
+.tt-tool-art-label { position: absolute; z-index: 1; left: 12px; bottom: 10px; max-width: calc(100% - 24px); padding: 5px 8px; overflow: hidden; border: 1px solid #39819a; border-radius: 7px; background: #061722d9; color: #a8efff; font: 8px var(--mono, Consolas, monospace); letter-spacing: .65px; text-overflow: ellipsis; text-transform: uppercase; white-space: nowrap; backdrop-filter: blur(8px); }
+.tt-film-card { overflow: hidden; border-color: #27566b; box-shadow: 0 10px 26px #0002; }
+.tt-film-art { position: relative; height: 126px; overflow: hidden; border-bottom: 1px solid #254758; background: #061522; }
+.tt-film-art img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+.tt-film-card:hover .tt-film-art img { transform: scale(1.035); }
+.tt-film-art-shade { position: absolute; inset: 0; background: linear-gradient(0deg, #091722 0%, #09172208 78%); pointer-events: none; }
+.tt-film-toggle { position: relative; }
+@media (min-width: 1500px) { .tt-tool-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 15px; } }
+@media (max-width: 640px) { .tt-tool-art { height: 174px; } .tt-film-art { height: 150px; } }
+@media (prefers-reduced-motion: reduce) { .tt-tool-card, .tt-tool-art img, .tt-film-art img { transition: none; } .tt-tool-card:hover { transform: none; } .tt-tool-card:hover .tt-tool-art img, .tt-film-card:hover .tt-film-art img { transform: none; } }
+
+/* ADDITIVE OCP BRAND ICON FIX4 */
+.tt-tool-brand{display:flex;align-items:center;gap:10px;min-width:0;margin:10px 0 4px}.tt-tool-brand-copy{min-width:0}.tt-tool-brand-copy h3{margin:0 0 4px;overflow-wrap:anywhere}.tt-tool-brand .tt-level{margin-top:0}.tt-tool-brand .ocp-brand-icon{border-radius:11px}

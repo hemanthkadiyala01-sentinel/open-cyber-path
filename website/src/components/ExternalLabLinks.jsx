@@ -1,4 +1,5 @@
-import './ExternalLabLinks.css';
+import './ExternalLabLinks.css';
+import BrandIcon from './BrandIcon.jsx';
 import ResourceHealthStatus from './ResourceHealthStatus.jsx';
 
 // These links match the topics and provider destinations documented in the
@@ -129,7 +130,7 @@ export function ExternalLabLinks({ labId }) {
     <div className="external-labs-list">
       {resource.links.map((link) => <div className="external-lab-link-wrap" key={link.url}>
         <a className="external-lab-link" href={link.url} target="_blank" rel="noopener noreferrer">
-          <span className="external-lab-copy"><strong>{link.title}</strong><small className="external-lab-kind">{link.kind}</small><small className="external-lab-note">{link.note}</small></span>
+          <span className="external-lab-copy"><strong className="external-lab-title"><BrandIcon name={link.title} url={link.url} size={25} /><span>{link.title}</span></strong><small className="external-lab-kind">{link.kind}</small><small className="external-lab-note">{link.note}</small></span>
           <span className="external-lab-action">Open ↗</span>
         </a>
         <ResourceHealthStatus url={link.url} />

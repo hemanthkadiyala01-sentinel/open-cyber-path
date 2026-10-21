@@ -48,3 +48,31 @@
 @media(max-width:1100px){.career-advisor-controls{grid-template-columns:repeat(2,minmax(0,1fr))}.career-advisor-body{grid-template-columns:1fr}.career-advisor-evidence{grid-template-columns:repeat(2,minmax(0,1fr))}.career-evidence-block:last-child{grid-column:1/-1}}
 @media(max-width:720px){.career-advisor{padding:15px;border-radius:17px}.career-advisor-head{display:block}.career-advisor-badge{margin-top:13px;text-align:left}.career-advisor-controls,.career-advisor-summary{grid-template-columns:1fr 1fr}.career-advisor-evidence{grid-template-columns:1fr}.career-evidence-block:last-child{grid-column:auto}.career-stage-card{grid-template-columns:29px minmax(0,1fr);gap:9px;padding:11px}.career-stage-number{width:28px;height:28px;font-size:10px}.career-stage-meta{display:grid}.career-stage-meta span:last-child{justify-self:start}}
 @media(max-width:440px){.career-advisor-controls,.career-advisor-summary{grid-template-columns:1fr}.career-stage-actions{align-items:flex-start;flex-direction:column}}
+
+/* Mobile-safe in-page dropdowns for the certification path advisor. */
+.career-advisor-control { display:grid; align-content:start; gap:6px; min-width:0; }
+.career-advisor-control-label { color:#8fc8d5; font-size:10px; font-weight:800; letter-spacing:.3px; }
+.advisor-picker { position:relative; min-width:0; }
+.advisor-picker-trigger { display:flex; align-items:center; justify-content:space-between; gap:10px; width:100%; min-height:46px; padding:10px 12px; border:1px solid #2b566a; border-radius:10px; background:#0b2433; color:#edfaff; font-family:inherit; font-size:11px; font-weight:600; line-height:1.45; text-align:left; cursor:pointer; }
+.advisor-picker-trigger > span:first-child { min-width:0; overflow-wrap:anywhere; }
+.advisor-picker-trigger:focus-visible,.advisor-picker-option:focus-visible { outline:2px solid #42d9ef; outline-offset:2px; }
+.advisor-picker-chevron { flex:0 0 auto; color:#b7dbe5; font-size:18px; line-height:1; transition:transform .16s ease; }
+.advisor-picker-chevron.is-open { transform:rotate(180deg); }
+.advisor-picker-options { display:grid; gap:5px; max-height:min(38vh,280px); overflow-y:auto; overscroll-behavior:contain; margin-top:6px; padding:6px; border:1px solid #2c778a; border-radius:11px; background:#071a27; box-shadow:0 12px 28px #0004; }
+.advisor-picker-option { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; width:100%; min-height:44px; padding:10px; border:1px solid transparent; border-radius:8px; background:transparent; color:#c4dce4; font-family:inherit; font-size:11px; font-weight:500; line-height:1.45; text-align:left; white-space:normal; overflow-wrap:anywhere; cursor:pointer; }
+.advisor-picker-option:hover { border-color:#24586b; background:#0b2a3a; }
+.advisor-picker-option.is-selected { border-color:#2c7f91; background:#0c3444; color:#f0fdff; }
+.advisor-picker-check { flex:0 0 17px; min-width:17px; color:#71f0d0; font-weight:900; text-align:center; }
+@media(prefers-reduced-motion:reduce) { .advisor-picker-chevron { transition:none; } }
+
+/* OPC CAREER ADVISOR VISUAL V1 */
+.career-advisor { position: relative; overflow: hidden; border-color: #286781; }
+.career-advisor::before { content: ""; position: absolute; top: 0; right: 0; width: 47%; height: 245px; background: linear-gradient(90deg, #0a1e2d 0%, #0a1e2d42 53%, #0a1e2d20 100%), url('/images/opc-visuals/certification-planner.webp') center 43% / cover no-repeat; opacity: .31; pointer-events: none; }
+.career-advisor > * { position: relative; z-index: 1; }
+.career-advisor-head { align-items: center; }
+.career-advisor-badge { box-shadow: 0 10px 30px #0003; backdrop-filter: blur(10px); }
+.career-stage-card { background: linear-gradient(135deg, #0b2536, #071925); box-shadow: 0 8px 22px #0002; }
+@media (max-width: 760px) { .career-advisor::before { width: 100%; height: 190px; opacity: .15; } .career-advisor-head { align-items: flex-start; } }
+
+/* ADDITIVE OCP BRAND ICON FIX4 */
+.career-stage-title{display:flex;align-items:center;gap:10px;min-width:0;margin:8px 0 6px}.career-stage-title h3{min-width:0;margin:0}.career-stage-title .ocp-brand-icon{border-radius:9px}

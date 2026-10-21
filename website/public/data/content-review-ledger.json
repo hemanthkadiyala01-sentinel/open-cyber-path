@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Editorial review schedule. A null lastReviewedAt means no human review date has been recorded; automated link checks do not count as content approval.",
+  "sections": [
+    {"id":"learning-paths","label":"Career paths, modules and prerequisites","cadenceDays":90,"lastReviewedAt":null,"note":"Check new skill requirements, outdated tools, role expectations, prerequisite order, and original-source references. Record a date only after a human review."},
+    {"id":"os-distrosea","label":"Operating systems and DistroSea catalogue","cadenceDays":60,"lastReviewedAt":null,"note":"Review supported OS names, versions and online availability against the provider. A prior catalogue snapshot is not proof that a session is currently available."},
+    {"id":"videos","label":"Video and tutorial accuracy (separate from link health)","cadenceDays":30,"lastReviewedAt":null,"note":"Check whether instructions and screenshots still match current versions; a working URL alone is not an accuracy review."},
+    {"id":"ctf-directory","label":"CTF learning-directory access notes and rules","cadenceDays":30,"lastReviewedAt":null,"note":"Review access conditions, platform rules and official links. Do not label a time-sensitive event live without current organizer data."},
+    {"id":"lab-content","label":"CyberRange, CTF Arcade and lab fixtures","cadenceDays":90,"lastReviewedAt":null,"note":"Re-run challenge checks, verify answer keys, keep sample data synthetic, and test that solutions remain reproducible."},
+    {"id":"offline-study","label":"Offline study pack and cached learning material","cadenceDays":180,"lastReviewedAt":null,"note":"Verify that standalone packs match current lessons and that the deployed app refreshes the cache after releases."},
+    {"id":"public-safety","label":"Public cyber-safety guidance and reporting references","cadenceDays":30,"lastReviewedAt":null,"note":"Recheck official reporting channels and guidance; keep emergency/financial-fraud instructions sourced from official agencies."}
+  ]
+}

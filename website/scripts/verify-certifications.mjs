@@ -36,6 +36,7 @@ if (certifications.length < 20) fail(`Expected at least 20 initial certification
 const mappedBadgeImages = [...componentText.matchAll(/images\.credly\.com\/images\//g)].length;
 if (mappedBadgeImages < 11) fail(`Expected at least 11 matching issuer badge image mappings; found ${mappedBadgeImages}`);
 if (!componentText.includes('cert-card-art') || !componentText.includes('cert-learning-art')) fail('Credential and free-resource cards must include visual image headers');
+if (!componentText.includes('getCredentialLinkGroups') || !componentText.includes('same destination')) fail('Repeated credential URLs must be grouped into one clear action instead of duplicated buttons');
 if (componentText.includes('cert-source-watch') || componentText.includes('Official page monitor')) fail('The official-source monitor must remain maintainer tooling, not learner-facing UI');
 if (componentText.includes('freeResourceFilter') && !styleText.includes('cert-learning-filters')) fail('Free-resource category filters need visible CSS styling');
 if (certificationTracks.length < 8) fail(`Expected at least 8 career tracks; found ${certificationTracks.length}`);
