@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "status": "not-configured",
+  "generatedAt": null,
+  "refreshIntervalMinutes": 30,
+  "source": "YouTube Data API v3",
+  "note": "The live index has not been configured yet. Set the repository Actions secret YOUTUBE_API_KEY and enable YouTube Data API v3.",
+  "results": []
+}

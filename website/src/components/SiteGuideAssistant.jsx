@@ -9,6 +9,7 @@ import './SiteGuideAssistant.css';
 
 const ROUTES = [
   { page: 'home', label: 'Home', terms: ['home', 'homepage', 'start'] },
+  { page: 'learning-studio', label: 'My Learning Studio', terms: ['learning studio', 'my learning', 'study plan', 'weekly plan', 'next lesson', 'learning dashboard', 'personalised learning', 'personalized learning'] },
   { page: 'discover', label: 'Discover', terms: ['discover', 'discovery', 'latest', 'news', 'cyberpulse', 'videos', 'video', 'public posts'] },
   { page: 'resources', label: 'Resources', terms: ['resource', 'resources', 'documentation', 'website', 'open source', 'repository', 'github'] },
   { page: 'roadmap', label: 'Learning paths', terms: ['roadmap', 'learning path', 'career path', 'path', 'curriculum'] },

@@ -1,0 +1,408 @@
+/* OpenCyberPath Responsive Experience v1
+   Loaded after styles.css so layout tokens and breakpoints remain authoritative. */
+:root {
+  --ocp-layout-gutter: clamp(14px, 3.6vw, 58px);
+  --ocp-mobile-nav-height: 66px;
+  --ocp-safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: 88px;
+}
+
+html, body, #root {
+  width: 100%;
+  min-width: 0;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow-x: clip;
+  overscroll-behavior-x: none;
+}
+
+#root { min-height: 100svh; min-height: 100dvh; }
+img, video, canvas, svg { max-width: 100%; }
+.app-shell { width: 100%; max-width: 100%; min-width: 0; overflow-x: clip; overflow-y: visible; }
+main { min-width: 0; }
+main > * { min-width: 0; max-width: 100%; }
+
+/* Dropdowns are deliberately styled instead of falling back to a block of page content. */
+.site-header .nav-links { min-width: 0; }
+.nav-more-menu { position: relative; flex: 0 0 auto; min-width: 0; }
+.nav-more-summary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  list-style: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.nav-more-summary::-webkit-details-marker { display: none; }
+.nav-more-panel { display: none; }
+.nav-more-menu[open] > .nav-more-panel {
+  position: absolute;
+  z-index: 1200;
+  top: calc(100% + 9px);
+  right: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 4px;
+  width: min(310px, calc(100vw - 24px));
+  max-height: min(68vh, 540px);
+  overflow: auto;
+  padding: 8px;
+  border: 1px solid #245e7e;
+  border-radius: 15px;
+  background: linear-gradient(160deg, #0a2033, #06111e 74%);
+  box-shadow: 0 24px 70px #000b, 0 0 0 1px #06101a;
+  overscroll-behavior: contain;
+}
+.nav-more-panel .nav-link {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  min-height: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 12px;
+  border-radius: 9px;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  font-size: 12px;
+}
+/* These destinations are inside More on the compact Android tab bar, not duplicated on desktop. */
+.web-app-shell .nav-more-panel .nav-key-resources,
+.web-app-shell .nav-more-panel .nav-key-ctf-lab,
+.web-app-shell .nav-more-panel .nav-key-liveops,
+.native-app-shell .nav-more-panel .nav-key-resources,
+.native-app-shell .nav-more-panel .nav-key-ctf-lab,
+.native-app-shell .nav-more-panel .nav-key-liveops { display: none; }
+
+/* Large desktop / college lab systems: use the available width without stretching line lengths. */
+@media (min-width: 1440px) {
+  .site-header {
+    gap: clamp(14px, 1.5vw, 26px);
+    padding-inline: max(32px, calc((100vw - 1600px) / 2));
+  }
+  .site-header > .brand { flex: 0 0 auto; min-width: 190px; }
+  .site-header .nav-links { flex: 1 1 auto; flex-wrap: nowrap; justify-content: center; gap: 4px; }
+  .site-header .nav-link { font-size: 11px; padding-inline: clamp(8px, .72vw, 13px); }
+  .site-header .header-actions { flex: 0 1 380px; min-width: 260px; }
+  .site-header .header-search { flex: 1 1 auto; min-width: 0; }
+  .hero { grid-template-columns: minmax(0, 1.04fr) minmax(360px, .96fr); gap: clamp(40px, 4.2vw, 76px); padding-inline: clamp(42px, 5vw, 84px); }
+  .section-wrap { padding-inline: clamp(28px, 4vw, 68px); }
+}
+
+/* Laptops: two-row navigation leaves enough room for search and avoids 9px labels. */
+@media (min-width: 901px) and (max-width: 1439px) {
+  .site-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, .92fr);
+    grid-template-areas: "brand actions" "navigation navigation";
+    align-items: center;
+    gap: 10px 20px;
+    padding: 12px clamp(22px, 3.2vw, 46px);
+  }
+  .site-header > .brand { grid-area: brand; min-width: 0; }
+  .site-header .header-actions { grid-area: actions; display: flex; width: 100%; min-width: 0; }
+  .site-header .header-search { flex: 1 1 auto; min-width: 0; }
+  .site-header { backdrop-filter: none; }
+  .site-header .nav-links {
+    grid-area: navigation;
+    order: initial;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 4px;
+    padding: 1px 0 3px;
+    scrollbar-width: thin;
+    scrollbar-color: #225773 transparent;
+  }
+  .site-header .nav-link { flex: 0 0 auto; padding: 9px 11px; font-size: 11px; }
+  .site-header .nav-more-menu { flex: 0 0 auto; }
+  .nav-more-menu[open] > .nav-more-panel { position: fixed; top: auto; right: 16px; bottom: 20px; max-height: min(64dvh, 520px); }
+  .hero { grid-template-columns: minmax(0, 1.05fr) minmax(300px, .95fr); gap: clamp(24px, 3vw, 42px); padding: 54px clamp(28px, 4vw, 56px) 48px; }
+  .hero h1 { font-size: clamp(42px, 4.2vw, 59px); letter-spacing: -2.1px; }
+  .section-wrap { padding-inline: clamp(24px, 3.3vw, 48px); }
+}
+
+/* Tablet / smaller laptops: explicit rows and touch targets; cards use two columns. */
+@media (min-width: 641px) and (max-width: 900px) {
+  .site-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "brand" "actions" "navigation";
+    gap: 10px;
+    padding: 12px 18px;
+  }
+  .site-header > .brand { grid-area: brand; min-width: 0; }
+  .site-header .header-actions { grid-area: actions; display: flex; width: 100%; min-width: 0; }
+  .site-header .header-search { flex: 1 1 auto; min-width: 0; }
+  .site-header { backdrop-filter: none; }
+  .site-header .nav-links {
+    grid-area: navigation;
+    order: initial;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 5px;
+    padding: 2px 0 4px;
+    scrollbar-width: thin;
+    scrollbar-color: #225773 transparent;
+  }
+  .site-header .nav-link { flex: 0 0 auto; min-height: 40px; padding: 9px 12px; font-size: 12px; }
+  .nav-more-menu[open] > .nav-more-panel { position: fixed; top: auto; right: 16px; bottom: 20px; max-height: min(64dvh, 520px); }
+  .hero { grid-template-columns: minmax(0, 1fr); gap: 24px; padding: 42px 26px 36px; }
+  .hero-content { max-width: 760px; }
+  .hero h1 { font-size: clamp(39px, 5.8vw, 52px); letter-spacing: -1.8px; }
+  .hero-visual { min-height: 260px; }
+  .section-wrap { padding-inline: 22px; }
+  .path-grid, .resource-grid, .home-resource-grid, .home-lab-grid, .lab-grid, .attack-grid, .concept-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* Phones: compact, one-column reading flow, no wrapped nav overflow or squeezed controls. */
+@media (max-width: 640px) {
+  html { scroll-padding-top: 138px; }
+  .site-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "brand" "actions" "navigation";
+    align-items: center;
+    gap: 9px;
+    min-height: 0;
+    padding: calc(8px + env(safe-area-inset-top, 0px)) 12px 9px;
+    background: rgba(3, 11, 22, .98);
+    backdrop-filter: none;
+    box-shadow: 0 8px 28px rgb(0 0 0 / 22%);
+  }
+  .site-header > .brand { grid-area: brand; min-width: 0; gap: 9px; }
+  .brand-mark { flex: 0 0 38px; width: 38px; height: 38px; }
+  .brand-name { min-width: 0; font-size: 14px; line-height: 1.25; }
+  .brand-name small { display: none; }
+  .site-header .header-actions { grid-area: actions; order: initial; display: flex; align-items: stretch; gap: 8px; width: 100%; min-width: 0; }
+  .site-header .header-search { flex: 1 1 auto; width: 0; min-width: 0; min-height: 44px; padding-inline: 11px; gap: 8px; }
+  .header-search input { width: 100%; min-width: 0; font-size: 13px; }
+  .header-search kbd { display: none; }
+  .site-header .github-link { flex: 0 0 auto; justify-content: center; min-height: 44px; padding: 9px 11px; font-size: 11px; }
+  .site-header .nav-links {
+    grid-area: navigation;
+    order: initial;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    gap: 4px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 1px 0 3px;
+    margin: 0;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+  }
+  .site-header .nav-links::-webkit-scrollbar { display: none; }
+  .site-header .nav-link { flex: 0 0 auto; min-height: 38px; padding: 8px 11px; font-size: 11px; white-space: nowrap; }
+  .nav-more-menu { position: static; }
+  .nav-more-summary { min-height: 38px; padding: 8px 11px; }
+  .nav-more-menu[open] > .nav-more-panel {
+    position: fixed;
+    top: auto;
+    right: 12px;
+    bottom: calc(82px + env(safe-area-inset-bottom, 0px));
+    left: 12px;
+    width: auto;
+    max-height: min(62dvh, 500px);
+    padding: 9px;
+    border-radius: 16px;
+  }
+  .nav-more-panel .nav-link { min-height: 44px; padding: 11px 12px; font-size: 13px; }
+  .hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    width: 100%;
+    max-width: 100%;
+    min-height: 0;
+    margin: 0;
+    padding: 25px 16px 24px;
+  }
+  .hero-content { width: 100%; min-width: 0; max-width: none; }
+  .eyebrow, .section-kicker { flex-wrap: wrap; gap: 7px; font-size: 9px; letter-spacing: .9px; line-height: 1.7; }
+  .eyebrow { margin-bottom: 13px; }
+  .hero h1 { max-width: 17ch; font-size: clamp(31px, 8.3vw, 39px); line-height: 1.07; letter-spacing: -1.3px; overflow-wrap: anywhere; }
+  .hero-copy { max-width: 100%; margin-top: 13px; font-size: 13px; line-height: 1.68; overflow-wrap: anywhere; }
+  .hero-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 17px; }
+  .hero-actions .button { display: inline-flex; width: 100%; min-width: 0; min-height: 48px; justify-content: center; padding: 10px 8px; font-size: 11px; line-height: 1.3; text-align: center; overflow-wrap: anywhere; }
+  .hero-note { align-items: flex-start; margin-top: 15px; font-size: 10px; line-height: 1.65; }
+  .hero-visual { min-height: 180px; max-height: 220px; border-radius: 16px; }
+  .hero-sticker { max-width: 76%; padding: 8px; }
+  .hero-sticker b { font-size: 10px; }
+  .hero-quote { right: 9px; bottom: 9px; width: min(145px, 54%); padding: 8px; }
+  .tour-invitation { grid-template-columns: minmax(0, 1fr); margin-inline: 12px; gap: 12px; }
+  .section-wrap { width: 100%; max-width: 100%; padding: 32px 14px 40px; }
+  .section-heading { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .section-heading h2 { font-size: clamp(24px, 6.8vw, 31px); line-height: 1.12; letter-spacing: -1px; overflow-wrap: anywhere; }
+  .section-heading > p, .section-lede { font-size: 12px; line-height: 1.7; }
+  .path-grid, .resource-grid, .home-resource-grid, .home-lab-grid, .lab-grid, .attack-grid, .concept-grid, .roadmap-path-grid { grid-template-columns: minmax(0, 1fr); }
+  .principle-strip { grid-template-columns: minmax(0, 1fr); gap: 10px; margin: 0 12px; padding: 14px; }
+  .community-band { margin-inline: 12px; padding: 15px; }
+  .footer-top { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .footer-links { grid-column: auto; justify-content: flex-start; }
+  .learning-progress-backup { grid-template-columns: minmax(0, 1fr); padding: 14px; }
+  .learning-progress-backup-preview-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .resource-directory-layout { grid-template-columns: minmax(0, 1fr); }
+  .resource-directory-sidebar { min-width: 0; }
+  .resource-directory-main .resource-grid { grid-template-columns: minmax(0, 1fr); }
+  .ocp-guide-assistant { right: 12px; bottom: 12px; }
+  .ocp-guide-panel { right: -2px; width: min(390px, calc(100vw - 24px)); max-height: calc(100dvh - 84px); }
+  .app-shell main { padding-bottom: 12px; }
+}
+
+/* The Android Capacitor build gets app navigation and app-sized home content. */
+@media (max-width: 640px) {
+  .native-app-shell { overflow-x: clip; }
+  .native-app-shell .site-header { z-index: 1200; }
+  .native-app-shell .site-header .github-link { display: none; }
+  .native-app-shell .site-header .header-search { min-height: 42px; }
+  .native-app-shell .site-header .nav-links {
+    position: fixed !important;
+    z-index: 1100;
+    top: auto !important;
+    right: 0;
+    bottom: 0 !important;
+    left: 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin: 0;
+    padding: 7px 6px calc(7px + env(safe-area-inset-bottom, 0px));
+    gap: 3px;
+    border-top: 1px solid #1a5274;
+    background: #030e1dfc;
+    box-shadow: 0 -10px 30px rgb(0 0 0 / 34%);
+    backdrop-filter: none;
+    overflow-x: auto;
+    overflow-y: visible;
+    scrollbar-width: none;
+  }
+  .native-app-shell .site-header .nav-links::-webkit-scrollbar { display: none; }
+  .native-app-shell .site-header .nav-links > .nav-link,
+  .native-app-shell .site-header .nav-more-menu { flex: 1 1 0; min-width: 0; }
+  .native-app-shell .site-header .nav-links > .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    min-height: 49px;
+    padding: 5px 3px;
+    border-radius: 11px;
+    font-size: clamp(9px, 2.65vw, 11px);
+    line-height: 1.1;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .native-app-shell .site-header .nav-links > .nav-link::before,
+  .native-app-shell .site-header .nav-more-summary::before {
+    display: block;
+    min-height: 17px;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 17px;
+    color: #7ce5ff;
+  }
+  .native-app-shell .site-header .nav-key-home::before { content: "⌂"; }
+  .native-app-shell .site-header .nav-key-learning-studio::before { content: "▤"; }
+  .native-app-shell .site-header .nav-key-roadmap::before { content: "◇"; }
+  .native-app-shell .site-header .nav-key-labs::before { content: "⌘"; }
+  .native-app-shell .site-header .nav-more-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    width: 100%;
+    min-height: 49px;
+    padding: 5px 3px;
+    border-radius: 11px;
+    font-size: clamp(9px, 2.65vw, 11px);
+    line-height: 1.1;
+  }
+  .native-app-shell .site-header .nav-more-summary > span:last-child { display: none; }
+  .native-app-shell .site-header .nav-more-summary::before { content: "⋯"; }
+  .native-app-shell .site-header .nav-links > .nav-key-resources,
+  .native-app-shell .site-header .nav-links > .nav-key-ctf-lab,
+  .native-app-shell .site-header .nav-links > .nav-key-liveops { display: none; }
+  .native-app-shell .nav-more-panel .nav-key-resources,
+  .native-app-shell .nav-more-panel .nav-key-ctf-lab,
+  .native-app-shell .nav-more-panel .nav-key-liveops { display: flex; }
+  .native-app-shell .nav-more-menu[open] > .nav-more-panel {
+    position: fixed;
+    z-index: 1201;
+    top: auto;
+    right: 12px;
+    bottom: calc(var(--ocp-mobile-nav-height) + 15px + var(--ocp-safe-bottom));
+    left: 12px;
+    width: auto;
+    max-height: min(62dvh, 500px);
+  }
+  .native-app-shell main { padding-bottom: calc(var(--ocp-mobile-nav-height) + var(--ocp-safe-bottom) + 10px); }
+  .native-app-shell .hero {
+    gap: 14px;
+    padding: 22px 16px 20px;
+    background: radial-gradient(ellipse at 80% 0%, rgb(0 123 255 / 13%), transparent 58%);
+    border-bottom: 1px solid #12364e;
+  }
+  .native-app-shell .hero h1 { max-width: 15ch; font-size: clamp(30px, 8vw, 36px); letter-spacing: -1.15px; }
+  .native-app-shell .hero-copy { font-size: 12px; line-height: 1.65; margin-top: 11px; }
+  .native-app-shell .hero-visual { display: none; }
+  .native-app-shell .hero-note { margin-top: 12px; font-size: 9px; }
+  .native-app-shell .hero-actions { margin-top: 15px; }
+  .native-app-shell .hero-actions .button { min-height: 49px; font-size: 10.5px; }
+  .native-app-shell .ocp-guide-assistant { right: 12px; bottom: calc(var(--ocp-mobile-nav-height) + 9px + var(--ocp-safe-bottom)); }
+  .native-app-shell .ocp-guide-panel { max-height: calc(100dvh - 170px - var(--ocp-safe-bottom)); }
+  .native-app-shell .section-wrap { padding-top: 28px; padding-bottom: 32px; }
+}
+
+/* Small handsets and landscape phones. */
+@media (max-width: 380px) {
+  .site-header { padding-inline: 10px; }
+  .brand-name { font-size: 13px; }
+  .site-header .nav-link { padding-inline: 9px; font-size: 10px; }
+  .hero { padding-inline: 13px; }
+  .hero h1 { font-size: clamp(29px, 8.3vw, 33px); }
+  .hero-actions { grid-template-columns: minmax(0, 1fr); }
+  .hero-actions .button { min-height: 45px; }
+  .native-app-shell .site-header .nav-links { gap: 1px; padding-inline: 3px; }
+  .native-app-shell .site-header .nav-links > .nav-link,
+  .native-app-shell .site-header .nav-more-summary { padding-inline: 2px; font-size: 9px; }
+  .native-app-shell .hero-actions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-height: 560px) and (max-width: 900px) {
+  .native-app-shell .hero { padding-top: 15px; padding-bottom: 14px; }
+  .native-app-shell .hero-visual { display: none; }
+  .native-app-shell .hero-note { display: none; }
+  .native-app-shell .ocp-guide-panel { max-height: calc(100dvh - 125px - var(--ocp-safe-bottom)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
