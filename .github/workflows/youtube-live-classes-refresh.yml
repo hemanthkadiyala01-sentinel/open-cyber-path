@@ -1,0 +1,68 @@
+name: OpenCyberPath YouTube live classes refresh
+
+on:
+  schedule:
+    # One YouTube search call per run, about 48 calls/day. Scheduled jobs can be delayed by GitHub.
+    - cron: '7,37 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: youtube-live-classes-refresh-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  refresh-live-classes:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Check out default branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate the live-class refresh logic
+        run: python scripts/refresh_youtube_live_classes.py --self-test
+
+      - name: Refresh the public active-live snapshot
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: python scripts/refresh_youtube_live_classes.py --refresh
+
+      - name: Commit only when the live snapshot changes
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add website/public/data/youtube-live-classes.json
+          if git diff --cached --quiet; then
+            echo 'Live-class snapshot unchanged; no commit needed.'
+            exit 0
+          fi
+          git commit -m 'chore: refresh active YouTube cybersecurity classes'
+          git push origin "HEAD:${DEFAULT_BRANCH}"
+
+      - name: Publish refresh summary
+        if: always()
+        run: |
+          if [ -f website/public/data/youtube-live-classes.json ]; then
+            python - <<'PY'
+          import json
+          from pathlib import Path
+          payload = json.loads(Path('website/public/data/youtube-live-classes.json').read_text(encoding='utf-8'))
+          print('### OpenCyberPath YouTube Live Classes')
+          print(f"- Feed status: `{payload.get('status', 'unknown')}`")
+          print(f"- Active indexed streams: {len(payload.get('results', []))}")
+          print(f"- Snapshot last changed: `{payload.get('generatedAt') or 'not yet published'}`")
+          print(f"- Next scheduled scan: approximately 30 minutes; GitHub may delay scheduled runs.")
+          PY
+          fi

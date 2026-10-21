@@ -9,6 +9,7 @@ import { careerPaths as learningPaths } from './data/careerPaths.js';
 import { cybersecurityPillars, isc2CisspDomains } from './data/cybersecurityDomains.js';
 import StartHereGuide from './components/StartHereGuide.jsx';
 import AdaptiveLearningPlanner from './components/AdaptiveLearningPlanner.jsx'; // adaptive-learning-engine-v1
+import LearningStudio from './components/LearningStudio.jsx';
 import FirstVisitTour from './components/FirstVisitTour.jsx';
 import ResourceHealthStatus from './components/ResourceHealthStatus.jsx';
 import LearningProgressBackup from './components/LearningProgressBackup.jsx';
@@ -34,7 +35,8 @@ const ExternalLabLinks = lazy(() => import('./components/ExternalLabLinks.jsx'))
 const InteractiveLabWorkbench = lazy(() => import('./components/InteractiveLabWorkbench.jsx'));
 const OfflineLearning = lazy(() => import('./components/OfflineLearning.jsx'));
 const LiveOps = lazy(() => import('./components/LiveOps.jsx')); // cyberpath-liveops-v1
-const CyberPulse = lazy(() => import('./components/CyberPulse.jsx')); // cyberpulse-auto-freshness-v1
+const CyberPulse = lazy(() => import('./components/CyberPulse.jsx')); // cyberpulse-auto-freshness-v1
+
 const YouTubeLiveLearning = lazy(() => import('./components/YouTubeLiveLearning.jsx')); // youtube-live-learning-v1
 const CTFArcade = lazy(() => import('./components/CTFArcade.jsx')); // ctf-arcade-v1
 const SkillProof = lazy(() => import('./components/SkillProof.jsx')); // skillproof-portfolio-v1 // offline-learning-v1
@@ -865,15 +867,15 @@ function App() {
   const activePathLabs = labs.filter((lab) => activeLearningPath.labIds.includes(lab.id));
   const suggestedNextPaths = learningPaths.filter((path) => activeLearningPath.nextPathIds.includes(path.id));
 
-  return <div className="app-shell" id="top">
+  return <div className={`app-shell ${Capacitor.isNativePlatform() ? 'native-app-shell' : 'web-app-shell'}`} id="top">
     <header className="site-header">
       <Logo onClick={navigate} />
             <nav className="nav-links nav-links-compact" aria-label="Main navigation">
-        {[['home','Home'],['roadmap','Paths'],['resources','Resources'],['labs','Labs'],['ctf-lab','CTF Practice'],['liveops','LiveOps']].map(([key,label]) => <button key={key} className={`nav-link ${page === key || (page === 'path-detail' && key === 'roadmap') || (page === 'application-demo' && key === 'job-hub') ? 'active' : ''}`} onClick={() => { if (key === 'systems-academy') setAcademyPathId('all'); navigate(key); }}>{label}</button>)}
+        {[['home','Home'],['learning-studio','Learn'],['roadmap','Paths'],['resources','Resources'],['labs','Labs'],['ctf-lab','CTF Practice'],['liveops','LiveOps']].map(([key,label]) => <button key={key} className={`nav-link nav-key-${key} ${page === key || (page === 'path-detail' && key === 'roadmap') || (page === 'application-demo' && key === 'job-hub') ? 'active' : ''}`} onClick={() => { if (key === 'systems-academy') setAcademyPathId('all'); navigate(key); }}>{label}</button>)}
         <details className="nav-more-menu">
-          <summary className={`nav-link nav-more-summary ${page === 'cyber-pulse' || ['certifications','systems-academy','tools','career-hub','resume-studio','job-hub','cyberrange','offline-learning','skillproof','concepts'].includes(page) || (page === 'application-demo' && ['certifications','systems-academy','tools','career-hub','resume-studio','job-hub','cyberrange','offline-learning','skillproof','concepts'].includes('job-hub')) ? 'active' : ''}`}><span>More</span><span aria-hidden="true">⌄</span></summary>
+          <summary className={`nav-link nav-more-summary ${page === 'cyber-pulse' || ['resources','ctf-lab','liveops','certifications','systems-academy','tools','career-hub','resume-studio','job-hub','cyberrange','offline-learning','skillproof','concepts'].includes(page) || (page === 'application-demo' && ['certifications','systems-academy','tools','career-hub','resume-studio','job-hub','cyberrange','offline-learning','skillproof','concepts'].includes('job-hub')) ? 'active' : ''}`}><span>More</span><span aria-hidden="true">⌄</span></summary>
           <div className="nav-more-panel" role="group" aria-label="More site sections">
-            {[['certifications','Certs & Exams'],['systems-academy','OS + Networks'],['tools','Tools & films'],['career-hub','Career hub'],['resume-studio','Resume'],['job-hub','Jobs'],['cyberrange','CyberRange'],['offline-learning','Offline learning'],['skillproof','SkillProof'],['concepts','Basics']].map(([key,label]) => <button type="button" key={key} className={`nav-link ${page === key || (page === 'application-demo' && key === 'job-hub') ? 'active' : ''}`} onClick={(event) => { event.currentTarget.closest('details')?.removeAttribute('open'); if (key === 'systems-academy') setAcademyPathId('all'); navigate(key); }}>{label}</button>)}
+            {[['resources','Resources'],['ctf-lab','CTF Practice'],['liveops','LiveOps'],['certifications','Certs & Exams'],['systems-academy','OS + Networks'],['tools','Tools & films'],['career-hub','Career hub'],['resume-studio','Resume'],['job-hub','Jobs'],['cyberrange','CyberRange'],['offline-learning','Offline learning'],['skillproof','SkillProof'],['concepts','Basics']].map(([key,label]) => <button type="button" key={key} className={`nav-link nav-key-${key} ${page === key || (page === 'application-demo' && key === 'job-hub') ? 'active' : ''}`} onClick={(event) => { event.currentTarget.closest('details')?.removeAttribute('open'); if (key === 'systems-academy') setAcademyPathId('all'); navigate(key); }}>{label}</button>)}
                       <button type="button" className={`nav-link ${page === 'cyber-pulse' ? 'active' : ''}`} onClick={(event) => { event.currentTarget.closest('details')?.removeAttribute('open'); navigate('cyber-pulse'); }}>CyberPulse Â· News & freshness</button>            <button type="button" className={`nav-link ${page === 'youtube-live-learning' ? 'active' : ''}`} onClick={(event) => { event.currentTarget.closest('details')?.removeAttribute('open'); navigate('youtube-live-learning'); }}>YouTube Live Learning</button></div>
         </details>
       </nav>
@@ -882,13 +884,14 @@ function App() {
 
     <main>
       {page === 'certifications' && <Suspense fallback={<p className='section-loading'>Loading certifications and exam roadmaps...</p>}><CertificationsHub onOpenCareerPath={openLearningPath} /></Suspense>}
+      {page === 'learning-studio' && <LearningStudio paths={learningPaths} moduleProgress={moduleProgress} onCheckpointChange={updateModuleCheckpoint} onOpenPath={openLearningPath} onOpenLabs={() => navigate('labs')} />}
       {page === 'home' && <>
         <section className="hero">
           <div className="hero-content">
             <div className="eyebrow"><span className="eyebrow-dot" /> OPEN · FREE TO EXPLORE · COMMUNITY BUILT</div>
             <h1>Learn cybersecurity for <em>real skills,</em> real opportunities.</h1>
             <p className="hero-copy">Free learning resources, practical labs, notebook-style notes, and clear learning paths - from first steps to deeper investigation. Learn, practise, build evidence, and help another learner grow.</p>
-            <div className="hero-actions"><button className="button button-primary" onClick={() => document.getElementById('start-here')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Start learning free <Icon name="arrow-right" size={17} /></button><button className="button button-quiet" onClick={() => navigate('resources')}>Explore resources <Icon name="arrow-up-right" size={16} /></button><button className="button button-quiet" onClick={() => navigate('certifications')}>Certs &amp; exams <Icon name="arrow-up-right" size={16} /></button><button type="button" className="button button-quiet" onClick={openWelcomeTour}><Icon name="spark" size={16} /> Take guided tour</button></div>
+            <div className="hero-actions"><button className="button button-primary" onClick={() => document.getElementById('start-here')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Start learning free <Icon name="arrow-right" size={17} /></button><button type="button" className="button button-quiet" onClick={() => navigate('learning-studio')}><Icon name="route" size={16} /> My Learning</button><button className="button button-quiet" onClick={() => navigate('resources')}>Explore resources <Icon name="arrow-up-right" size={16} /></button><button className="button button-quiet" onClick={() => navigate('certifications')}>Certs &amp; exams <Icon name="arrow-up-right" size={16} /></button><button type="button" className="button button-quiet" onClick={openWelcomeTour}><Icon name="spark" size={16} /> Take guided tour</button></div>
             <div className="hero-note"><Icon name="users" size={17} /> No fake ratings or job promises. Start with useful material and build at your own pace.</div>
           </div>
           <div className="hero-visual"><img className="hero-image" src="/images/learning/detection-engineering-lab.webp" alt="Analyst reviewing detection outcomes, event charts, and alert logic" onError={handleArtworkError} /><div className="hero-image-vignette"/><div className="hero-sticker sticker-top"><Icon name="book-open" size={19} /><span><small>LEARN</small><b>Understand the basics</b></span></div><div className="hero-sticker sticker-bottom"><Icon name="target" size={19} /><span><small>PRACTISE</small><b>Build evidence of skill</b></span></div><div className="hero-quote"><Icon name="spark" size={19} /><p>Learn it.<br />Practise it.<br /><b>Share what you discover.</b></p></div></div>
