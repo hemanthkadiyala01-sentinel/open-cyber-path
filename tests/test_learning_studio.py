@@ -17,7 +17,11 @@ class LearningStudioIntegrationTests(unittest.TestCase):
         cls.guide = GUIDE.read_text(encoding="utf-8")
 
     def test_learning_studio_is_integrated_into_navigation_and_home(self):
-        self.assertIn("import LearningStudio from './components/LearningStudio.jsx'", self.app)
+        self.assertTrue(
+            "import LearningStudio from './components/LearningStudio.jsx'" in self.app
+            or "const LearningStudio = lazy(() => import('./components/LearningStudio.jsx'));" in self.app,
+            "LearningStudio must remain available via a static import or React.lazy()",
+        )
         self.assertIn("['learning-studio','Learn']", self.app)
         self.assertIn("navigate('learning-studio')", self.app)
         self.assertIn("page === 'learning-studio'", self.app)

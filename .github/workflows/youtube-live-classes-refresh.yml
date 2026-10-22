@@ -2,7 +2,7 @@ name: OpenCyberPath YouTube live classes refresh
 
 on:
   schedule:
-    # One YouTube search call per run, about 48 calls/day. Scheduled jobs can be delayed by GitHub.
+    # One worldwide search call per run; rotate English/Hindi/Telugu, about 48 calls/day. GitHub may delay jobs.
     - cron: '7,37 * * * *'
   workflow_dispatch:
 
@@ -60,8 +60,10 @@ jobs:
           from pathlib import Path
           payload = json.loads(Path('website/public/data/youtube-live-classes.json').read_text(encoding='utf-8'))
           print('### OpenCyberPath YouTube Live Classes')
+          print('- Search scope: worldwide')
+          print('- Rotating search languages: English, Hindi, Telugu')
           print(f"- Feed status: `{payload.get('status', 'unknown')}`")
-          print(f"- Active indexed streams: {len(payload.get('results', []))}")
+          print(f"- Recently matched streams: {len(payload.get('results', []))}")
           print(f"- Snapshot last changed: `{payload.get('generatedAt') or 'not yet published'}`")
           print(f"- Next scheduled scan: approximately 30 minutes; GitHub may delay scheduled runs.")
           PY

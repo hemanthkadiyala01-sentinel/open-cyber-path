@@ -516,8 +516,20 @@ function buildCatalogueItems() {
 
 function routeLabel(page) { return ROUTES.find((item) => item.page === page)?.label || 'Open section'; }
 
-export default function SiteGuideAssistant({ onOpenPage = () => {}, onOpenPath = () => {} }) {
-  const [opened, setOpened] = useState(false);
+export default function SiteGuideAssistant({
+  onOpenPage = () => {},
+  onOpenPath = () => {},
+  opened: controlledOpened,
+  onDismiss = () => {},
+  hideLauncher = false,
+}) {
+  const [internalOpened, setInternalOpened] = useState(false);
+  const opened = typeof controlledOpened === 'boolean' ? controlledOpened : internalOpened;
+  const setOpened = (nextValue) => {
+    const nextOpened = typeof nextValue === 'function' ? nextValue(opened) : nextValue;
+    if (typeof controlledOpened !== 'boolean') setInternalOpened(nextOpened);
+    if (!nextOpened) onDismiss();
+  };
   const [query, setQuery] = useState('');
   const [message, setMessage] = useState('');
   const [feed, setFeed] = useState([]);
@@ -691,7 +703,7 @@ export default function SiteGuideAssistant({ onOpenPage = () => {}, onOpenPath =
   };
   const sourceStatusText = sourceStatus?.status === 'fresh' ? 'Source snapshots are fresh' : sourceStatus?.status === 'partial' ? 'Some sources are unavailable or need access' : sourceStatus ? 'Source coverage is partial or stale' : 'Using indexed site content while live discovery status loads';
 
-  return <div className="ocp-guide-assistant">
+  return <div className={hideLauncher ? 'ocp-guide-panel-host' : 'ocp-guide-assistant'}>
     {opened && <section className="ocp-guide-panel" role="dialog" aria-modal="false" aria-labelledby="ocp-guide-title" aria-describedby="ocp-guide-description">
       <header className="ocp-guide-head">
         <div className="ocp-guide-avatar" aria-hidden="true">OCP</div>
@@ -727,6 +739,6 @@ export default function SiteGuideAssistant({ onOpenPage = () => {}, onOpenPath =
       </form>
       <footer className="ocp-guide-foot">Public sources only · Candidate posts are not endorsements · Authorized learning environments</footer>
     </section>}
-    <button className={`ocp-guide-launcher ${opened ? 'is-open' : ''}`} type="button" aria-expanded={opened} aria-controls="ocp-guide-title" onClick={() => setOpened((value) => !value)}><span className="ocp-guide-launcher-mark">{opened ? '×' : '⌕'}</span><span>{opened ? 'Close guide' : 'Ask OpenCyberPath'}</span></button>
+    <button className={`ocp-guide-launcher ${opened ? 'is-open' : ''} ${hideLauncher ? 'is-hidden' : ''}`} type="button" aria-expanded={opened} aria-controls="ocp-guide-title" onClick={() => setOpened((value) => !value)}><span className="ocp-guide-launcher-mark">{opened ? '×' : '⌕'}</span><span>{opened ? 'Close guide' : 'Ask OpenCyberPath'}</span></button>
   </div>;
 }

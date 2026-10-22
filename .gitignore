@@ -30,3 +30,6 @@ keystore.properties
 
 # Generated certification review alert
 website/source-review-alert.md
+infra/.env
+backend/.env
+website/.env.local

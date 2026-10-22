@@ -1,0 +1,200 @@
+{
+    "realm":  "opencyberpath",
+    "enabled":  true,
+    "displayName":  "OpenCyberPath (Local Dev)",
+    "registrationAllowed":  true,
+    "registrationEmailAsUsername":  true,
+    "loginWithEmailAllowed":  true,
+    "duplicateEmailsAllowed":  false,
+    "verifyEmail":  true,
+    "resetPasswordAllowed":  true,
+    "rememberMe":  true,
+    "bruteForceProtected":  true,
+    "failureFactor":  5,
+    "waitIncrementSeconds":  60,
+    "quickLoginCheckMilliSeconds":  1000,
+    "minimumQuickLoginWaitSeconds":  60,
+    "maxFailureWaitSeconds":  900,
+    "permanentLockout":  false,
+    "smtpServer":  {
+                       "host":  "mailpit",
+                       "port":  "1025",
+                       "from":  "noreply@opencyberpath.local",
+                       "fromDisplayName":  "OpenCyberPath Dev",
+                       "auth":  "false",
+                       "ssl":  "false",
+                       "starttls":  "false"
+                   },
+    "clientScopes":  [
+                         {
+                             "name":  "opencyberpath-api-audience",
+                             "description":  "Add the API audience to access tokens",
+                             "protocol":  "openid-connect",
+                             "attributes":  {
+                                                "display.on.consent.screen":  "false",
+                                                "include.in.token.scope":  "true"
+                                            },
+                             "protocolMappers":  [
+                                                     {
+                                                         "name":  "opencyberpath-api-audience",
+                                                         "protocol":  "openid-connect",
+                                                         "protocolMapper":  "oidc-audience-mapper",
+                                                         "consentRequired":  false,
+                                                         "config":  {
+                                                                        "included.custom.audience":  "opencyberpath-api",
+                                                                        "id.token.claim":  "false",
+                                                                        "access.token.claim":  "true",
+                                                                        "lightweight.claim":  "false"
+                                                                    }
+                                                     }
+                                                 ]
+                         },
+                         {
+                             "id":  "e28cbda6-5418-4cf7-8f5f-e754f226d64a",
+                             "name":  "email",
+                             "description":  "OpenID Connect email claims, including verified-email status",
+                             "protocolMappers":  [
+                                                     {
+                                                         "consentRequired":  false,
+                                                         "id":  "dd9178ab-99e2-4b05-961e-2e4f52944cfb",
+                                                         "protocolMapper":  "oidc-usermodel-property-mapper",
+                                                         "config":  {
+                                                                        "access.token.claim":  "true",
+                                                                        "user.attribute":  "email",
+                                                                        "userinfo.token.claim":  "true",
+                                                                        "jsonType.label":  "String",
+                                                                        "id.token.claim":  "true",
+                                                                        "claim.name":  "email"
+                                                                    },
+                                                         "name":  "email",
+                                                         "protocol":  "openid-connect"
+                                                     },
+                                                     {
+                                                         "consentRequired":  false,
+                                                         "id":  "8b7b1bf9-992e-40e0-9962-466012bebf5b",
+                                                         "protocolMapper":  "oidc-usermodel-property-mapper",
+                                                         "config":  {
+                                                                        "access.token.claim":  "true",
+                                                                        "user.attribute":  "emailVerified",
+                                                                        "userinfo.token.claim":  "true",
+                                                                        "jsonType.label":  "boolean",
+                                                                        "id.token.claim":  "true",
+                                                                        "claim.name":  "email_verified"
+                                                                    },
+                                                         "name":  "email verified",
+                                                         "protocol":  "openid-connect"
+                                                     }
+                                                 ],
+                             "attributes":  {
+                                                "display.on.consent.screen":  "false",
+                                                "include.in.token.scope":  "true"
+                                            },
+                             "protocol":  "openid-connect"
+                         },
+                         {
+                             "id":  "c1c95d03-e480-4f9e-8f96-fea3714b1237",
+                             "name":  "profile",
+                             "description":  "OpenID Connect basic profile claims",
+                             "protocolMappers":  [
+                                                     {
+                                                         "consentRequired":  false,
+                                                         "id":  "724ef540-97c9-456f-b658-466a7c87bb9a",
+                                                         "protocolMapper":  "oidc-usermodel-property-mapper",
+                                                         "config":  {
+                                                                        "access.token.claim":  "true",
+                                                                        "user.attribute":  "username",
+                                                                        "userinfo.token.claim":  "true",
+                                                                        "jsonType.label":  "String",
+                                                                        "id.token.claim":  "true",
+                                                                        "claim.name":  "preferred_username"
+                                                                    },
+                                                         "name":  "preferred username",
+                                                         "protocol":  "openid-connect"
+                                                     },
+                                                     {
+                                                         "consentRequired":  false,
+                                                         "id":  "4eabf3f5-0448-4890-b894-b2e83d39f797",
+                                                         "protocolMapper":  "oidc-usermodel-property-mapper",
+                                                         "config":  {
+                                                                        "access.token.claim":  "true",
+                                                                        "user.attribute":  "firstName",
+                                                                        "userinfo.token.claim":  "true",
+                                                                        "jsonType.label":  "String",
+                                                                        "id.token.claim":  "true",
+                                                                        "claim.name":  "given_name"
+                                                                    },
+                                                         "name":  "given name",
+                                                         "protocol":  "openid-connect"
+                                                     },
+                                                     {
+                                                         "consentRequired":  false,
+                                                         "id":  "d1fdc45b-a8ed-4a32-9c51-6ded9e4b8760",
+                                                         "protocolMapper":  "oidc-usermodel-property-mapper",
+                                                         "config":  {
+                                                                        "access.token.claim":  "true",
+                                                                        "user.attribute":  "lastName",
+                                                                        "userinfo.token.claim":  "true",
+                                                                        "jsonType.label":  "String",
+                                                                        "id.token.claim":  "true",
+                                                                        "claim.name":  "family_name"
+                                                                    },
+                                                         "name":  "family name",
+                                                         "protocol":  "openid-connect"
+                                                     },
+                                                     {
+                                                         "consentRequired":  false,
+                                                         "id":  "68b44b70-b006-401f-8ec6-740c28bbc47d",
+                                                         "protocolMapper":  "oidc-full-name-mapper",
+                                                         "config":  {
+                                                                        "id.token.claim":  "true",
+                                                                        "access.token.claim":  "true",
+                                                                        "userinfo.token.claim":  "true"
+                                                                    },
+                                                         "name":  "full name",
+                                                         "protocol":  "openid-connect"
+                                                     }
+                                                 ],
+                             "attributes":  {
+                                                "display.on.consent.screen":  "false",
+                                                "include.in.token.scope":  "true"
+                                            },
+                             "protocol":  "openid-connect"
+                         }
+                     ],
+    "clients":  [
+                    {
+                        "clientId":  "opencyberpath-web",
+                        "name":  "OpenCyberPath Web",
+                        "enabled":  true,
+                        "protocol":  "openid-connect",
+                        "publicClient":  true,
+                        "standardFlowEnabled":  true,
+                        "implicitFlowEnabled":  false,
+                        "directAccessGrantsEnabled":  false,
+                        "serviceAccountsEnabled":  false,
+                        "frontchannelLogout":  true,
+                        "redirectUris":  [
+                                             "http://localhost:5173/*",
+                                             "http://127.0.0.1:5173/*",
+                                             "https://localhost/*"
+                                         ],
+                        "webOrigins":  [
+                                           "http://localhost:5173",
+                                           "http://127.0.0.1:5173",
+                                           "https://localhost"
+                                       ],
+                        "attributes":  {
+                                           "pkce.code.challenge.method":  "S256",
+                                           "post.logout.redirect.uris":  "http://localhost:5173/*##http://127.0.0.1:5173/*##https://localhost/*"
+                                       },
+                        "defaultClientScopes":  [
+                                                    "email",
+                                                    "profile",
+                                                    "opencyberpath-api-audience"
+                                                ]
+                    }
+                ],
+    "users":  [
+
+              ]
+}
