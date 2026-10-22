@@ -37,7 +37,8 @@ class LearningStudioIntegrationTests(unittest.TestCase):
         self.assertIn("opencyberpath-learning-studio-profile-v1", self.component)
         self.assertIn("opencyberpath-learning-studio-reflections-v1", self.component)
         self.assertIn("not synced to an online account", self.component)
-        self.assertIn("do not synchronise to a cloud account", self.component)
+        self.assertIn("Your learning plan is saved on this device. It is not synced to an online account.", self.component)
+        self.assertIn("Profile preferences, reflections, and knowledge-check attempts remain on this device in this version; cloud sync for those items is not yet enabled.", self.component)
 
     def test_all_ten_existing_career_paths_have_formative_checks(self):
         expected = [

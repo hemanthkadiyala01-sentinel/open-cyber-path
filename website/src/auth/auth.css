@@ -42,3 +42,54 @@
 }
 .ocp-account-api-status-ok { color: #6ee7b7; }
 .ocp-account-api-status-error { color: #fda4af; }
+
+
+/* Account-required learning gate: public discovery remains accessible. */
+.ocp-learning-gate {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.72fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+  min-height: 58vh;
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 1.5rem;
+  padding: clamp(1.5rem, 5vw, 4rem);
+  background: radial-gradient(ellipse at 86% 18%, rgba(34, 211, 238, 0.11), transparent 45%), rgba(8, 15, 31, 0.96);
+}
+.ocp-learning-gate-content { position: relative; z-index: 1; max-width: 48rem; }
+.ocp-learning-gate-kicker { color: #8be9f2; font-size: 0.76rem; font-weight: 800; letter-spacing: 0.18em; }
+.ocp-learning-gate h1 { margin: 0.75rem 0 1rem; font-size: clamp(2rem, 4.5vw, 3.7rem); line-height: 1.06; }
+.ocp-learning-gate h1 em { color: #b8f36b; font-style: normal; }
+.ocp-learning-gate-intro { max-width: 48rem; color: #c4cedd; line-height: 1.75; }
+.ocp-learning-gate-benefits { display: grid; gap: 0.9rem; margin: 1.75rem 0; }
+.ocp-learning-gate-benefits > div { display: flex; gap: 0.85rem; align-items: flex-start; }
+.ocp-learning-gate-benefits > div > span { display: grid; place-items: center; flex: 0 0 2rem; height: 2rem; border: 1px solid rgba(139, 233, 242, 0.35); border-radius: 0.65rem; color: #8be9f2; font-size: 0.75rem; font-weight: 800; }
+.ocp-learning-gate-benefits b, .ocp-learning-gate-benefits small { display: block; }
+.ocp-learning-gate-benefits b { color: #f1f5f9; }
+.ocp-learning-gate-benefits small { margin-top: 0.15rem; color: #9ba9bc; line-height: 1.55; }
+.ocp-learning-gate-orbit { position: relative; display: grid; place-items: center; justify-self: center; width: min(22rem, 100%); aspect-ratio: 1; border: 1px solid rgba(139, 233, 242, 0.18); border-radius: 50%; background: radial-gradient(circle, rgba(34, 211, 238, 0.08), transparent 65%); }
+.ocp-learning-gate-orbit::before, .ocp-learning-gate-orbit::after { position: absolute; content: ''; border: 1px solid rgba(139, 233, 242, 0.18); border-radius: 50%; }
+.ocp-learning-gate-orbit::before { inset: 13%; }
+.ocp-learning-gate-orbit::after { inset: 28%; }
+.ocp-learning-gate-orbit span { position: absolute; width: 0.65rem; height: 0.65rem; border-radius: 50%; background: #b8f36b; box-shadow: 0 0 24px rgba(184, 243, 107, 0.5); }
+.ocp-learning-gate-orbit span:nth-child(1) { top: 14%; left: 34%; }
+.ocp-learning-gate-orbit span:nth-child(2) { right: 12%; bottom: 38%; background: #8be9f2; }
+.ocp-learning-gate-orbit span:nth-child(3) { bottom: 18%; left: 25%; }
+.ocp-learning-gate-actions { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-top: 1rem; }
+.ocp-learning-gate-actions .ocp-account-button { min-height: 2.8rem; }
+.ocp-learning-gate-return { margin-top: 1rem; padding: 0.45rem 0; border: 0; background: transparent; color: #b7c4d7; font: inherit; text-decoration: underline; text-underline-offset: 0.2rem; cursor: pointer; }
+.ocp-learning-gate-footnote, .ocp-learning-gate-status, .ocp-learning-gate-warning { max-width: 48rem; color: #9ba9bc; font-size: 0.82rem; line-height: 1.6; }
+.ocp-learning-gate-warning { color: #f6c875; }
+.ocp-learning-sync-note { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin: 0 0 1.1rem; padding: 0.8rem 1rem; border: 1px solid rgba(148, 163, 184, 0.22); border-radius: 0.85rem; background: rgba(15, 23, 42, 0.72); color: #c4cedd; font-size: 0.85rem; line-height: 1.5; }
+.ocp-learning-sync-synced { border-color: rgba(184, 243, 107, 0.25); }
+.ocp-learning-sync-error { border-color: rgba(246, 200, 117, 0.42); }
+.ocp-learning-sync-note button { flex: 0 0 auto; border: 1px solid currentColor; border-radius: 999px; padding: 0.4rem 0.75rem; background: transparent; color: inherit; font: inherit; cursor: pointer; }
+@media (max-width: 760px) {
+  .ocp-learning-gate { grid-template-columns: minmax(0, 1fr); min-height: 0; }
+  .ocp-learning-gate-orbit { width: 8rem; grid-row: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ocp-learning-gate * { scroll-behavior: auto !important; }
+}

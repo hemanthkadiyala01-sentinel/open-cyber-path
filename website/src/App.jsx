@@ -1,5 +1,8 @@
 import './auth/auth.css';
 import AccountActions from './auth/AccountActions.jsx';
+import LearningAccessGate from './auth/LearningAccessGate.jsx';
+import { useAuth } from './auth/AuthProvider.jsx';
+import { cloudProgressSignature, mergeModuleProgress, moduleProgressCloudBaseline, moduleProgressFromCloudItems, moduleProgressToCloudRecords } from './auth/learningProgressSync.js';
 import './styles/path-aesthetic-v1.css';
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import { App as CapacitorApp } from '@capacitor/app';
@@ -540,6 +543,9 @@ function evaluateSampleRule(rows) {
 
 const MODULE_PROGRESS_STORAGE_KEY = 'open-cyber-path-module-checkpoints-v1';
 const MODULE_CHECKPOINT_FIELDS = ['understood', 'practised', 'evidence'];
+const ACCOUNT_REQUIRED_PAGES = new Set(['learning-studio', 'path-detail', 'labs', 'ctf-lab', 'systems-academy', 'cyberrange', 'skillproof', 'offline-learning']);
+const ACCOUNT_REQUIRED_LABELS = { 'learning-studio': 'My Learning', 'path-detail': 'this learning path', labs: 'the lab library', 'ctf-lab': 'CTF Practice', 'systems-academy': 'Systems Academy', cyberrange: 'CyberRange', skillproof: 'SkillProof', 'offline-learning': 'Offline Learning' };
+const PENDING_LEARNING_ROUTE_KEY = 'opencyberpath-pending-learning-route-v1';
 
 function moduleProgressKey(pathId, moduleTitle) {
   return `${pathId}::${moduleTitle}`;
@@ -554,7 +560,10 @@ function readModuleProgress() {
     const safe = {};
     for (const [key, value] of Object.entries(raw || {})) {
       if (!known.has(key) || !value || typeof value !== 'object') continue;
-      safe[key] = Object.fromEntries(MODULE_CHECKPOINT_FIELDS.map((field) => [field, value[field] === true]));
+      safe[key] = {
+        ...Object.fromEntries(MODULE_CHECKPOINT_FIELDS.map((field) => [field, value[field] === true])),
+        ...(typeof value.updatedAt === 'string' && Number.isFinite(Date.parse(value.updatedAt)) ? { updatedAt: value.updatedAt } : {}),
+      };
     }
     return safe;
   } catch {
@@ -585,7 +594,9 @@ function LearningModuleCard({ pathId, module, index, progress = {}, onCheckpoint
 }
 
 function App() {
+  const auth = useAuth();
   const [page, setPage] = useState('home');
+  const [pendingLearningDestination, setPendingLearningDestination] = useState(null);
   const [labCatalogue, setLabCatalogue] = useState(null);
   const [labCatalogueError, setLabCatalogueError] = useState(false);
   useEffect(() => {
@@ -662,6 +673,15 @@ function App() {
     navigate(destination);
   };
   const [moduleProgress, setModuleProgress] = useState(() => readModuleProgress());
+  const [cloudProgressStatus, setCloudProgressStatus] = useState('idle');
+  const [cloudProgressReady, setCloudProgressReady] = useState(false);
+  const [cloudRetryNonce, setCloudRetryNonce] = useState(0);
+  const [cloudSyncNonce, setCloudSyncNonce] = useState(0);
+  const moduleProgressRef = useRef(moduleProgress);
+  moduleProgressRef.current = moduleProgress;
+  const cloudProgressReadyRef = useRef(false);
+  const cloudBaselineRef = useRef(new Map());
+  const cloudInFlightRef = useRef(new Map());
   const [activeLearningPathId, setActiveLearningPathId] = useState('soc-blue-team');
   const [academyPathId, setAcademyPathId] = useState('all');
   const [domainQuery, setDomainQuery] = useState('');
@@ -768,6 +788,109 @@ function App() {
   }, [moduleProgress]);
 
   useEffect(() => {
+    if (auth.status !== 'authenticated') {
+      cloudProgressReadyRef.current = false;
+      setCloudProgressReady(false);
+      setCloudProgressStatus('idle');
+      cloudBaselineRef.current = new Map();
+      cloudInFlightRef.current = new Map();
+      return undefined;
+    }
+    if (auth.apiStatus !== 'ready') {
+      cloudProgressReadyRef.current = false;
+      setCloudProgressReady(false);
+      setCloudProgressStatus(auth.apiStatus === 'error' ? 'error' : 'loading');
+      return undefined;
+    }
+
+    let active = true;
+    const controller = new AbortController();
+    cloudProgressReadyRef.current = false;
+    setCloudProgressReady(false);
+    setCloudProgressStatus('loading');
+
+    async function loadAccountProgress() {
+      try {
+        const apiBaseUrl = import.meta.env.VITE_API_BASE_URL?.trim();
+        if (!apiBaseUrl) throw new Error('api_base_url_missing');
+        const token = await auth.getAccessToken();
+        const response = await fetch(`${apiBaseUrl.replace(/\/+$/, '')}/v1/progress`, {
+          headers: { Authorization: `Bearer ${token}`, Accept: 'application/json' },
+          credentials: 'omit',
+          signal: controller.signal,
+        });
+        const body = await response.json().catch(() => null);
+        if (!response.ok || !Array.isArray(body?.items)) throw new Error('progress_load_failed');
+        if (!active) return;
+        const remote = moduleProgressFromCloudItems(body.items, learningPaths);
+        const merged = mergeModuleProgress(moduleProgressRef.current, remote);
+        cloudBaselineRef.current = moduleProgressCloudBaseline(body.items, learningPaths);
+        moduleProgressRef.current = merged;
+        setModuleProgress(merged);
+        cloudProgressReadyRef.current = true;
+        setCloudProgressReady(true);
+        setCloudProgressStatus('synced');
+      } catch {
+        if (!active || controller.signal.aborted) return;
+        cloudProgressReadyRef.current = false;
+        setCloudProgressReady(false);
+        setCloudProgressStatus('error');
+      }
+    }
+
+    void loadAccountProgress();
+    return () => { active = false; controller.abort(); };
+  }, [auth.status, auth.user?.id, auth.apiStatus, cloudRetryNonce]);
+
+  useEffect(() => {
+    if (auth.status !== 'authenticated' || auth.apiStatus !== 'ready' || !cloudProgressReady || !cloudProgressReadyRef.current) return undefined;
+    const records = moduleProgressToCloudRecords(moduleProgress);
+    const dirty = records.filter((record) => cloudBaselineRef.current.get(record.localKey) !== cloudProgressSignature(record.payload) && !cloudInFlightRef.current.has(record.localKey));
+    if (!dirty.length) return undefined;
+
+    setCloudProgressStatus('syncing');
+    // Mark the whole batch before the first await to prevent duplicate uploads under StrictMode/rerenders.
+    for (const record of dirty) cloudInFlightRef.current.set(record.localKey, cloudProgressSignature(record.payload));
+    async function uploadDirtyRecords() {
+      let failed = false;
+      try {
+        const apiBaseUrl = import.meta.env.VITE_API_BASE_URL?.trim();
+        if (!apiBaseUrl) throw new Error('api_base_url_missing');
+        const token = await auth.getAccessToken();
+        let index = 0;
+        const worker = async () => {
+          while (index < dirty.length) {
+            const record = dirty[index++];
+            const signature = cloudProgressSignature(record.payload);
+            try {
+              const response = await fetch(`${apiBaseUrl.replace(/\/+$/, '')}/v1/progress/${encodeURIComponent(record.itemId)}`, {
+                method: 'PUT',
+                headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json', Accept: 'application/json' },
+                credentials: 'omit',
+                body: JSON.stringify({ status: record.payload.status, percent: record.payload.percent, metadata: record.payload.metadata }),
+              });
+              if (!response.ok) throw new Error('progress_save_failed');
+              cloudBaselineRef.current.set(record.localKey, signature);
+            } catch {
+              failed = true;
+            } finally {
+              cloudInFlightRef.current.delete(record.localKey);
+            }
+          }
+        };
+        await Promise.all(Array.from({ length: Math.min(4, dirty.length) }, () => worker()));
+        setCloudProgressStatus(failed ? 'error' : 'synced');
+        if (!failed) setCloudSyncNonce((value) => value + 1);
+      } catch {
+        for (const record of dirty) cloudInFlightRef.current.delete(record.localKey);
+        setCloudProgressStatus('error');
+      }
+    }
+    void uploadDirtyRecords();
+    return undefined;
+  }, [auth.status, auth.user?.id, auth.apiStatus, cloudProgressReady, moduleProgress, cloudSyncNonce]);
+
+  useEffect(() => {
     let active = true;
     const fetchCsv = async (path) => {
       const response = await fetch(path);
@@ -828,7 +951,30 @@ function App() {
     if (!term) return cybersecurityPillars;
     return cybersecurityPillars.filter((pillar) => [pillar.title, pillar.summary, pillar.level, ...pillar.specializations.flatMap((item) => [item.name, item.description, item.firstStep])].join(' ').toLowerCase().includes(term));
   }, [domainQuery]);
+  const showLearningAccessGate = (destination, options = {}) => {
+    const pending = {
+      page: destination,
+      options: {
+        ...(typeof options.activeLearningPathId === 'string' ? { activeLearningPathId: options.activeLearningPathId } : {}),
+        ...(typeof options.academyPathId === 'string' ? { academyPathId: options.academyPathId } : {}),
+      },
+    };
+    setPendingLearningDestination(pending);
+    try { window.sessionStorage.setItem(PENDING_LEARNING_ROUTE_KEY, JSON.stringify(pending)); } catch { /* In-memory gate still works if session storage is unavailable. */ }
+    setPage('learning-access');
+    currentNavigationRef.current = { page: 'learning-access', activeLearningPathId, academyPathId };
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const navigate = (next, options = {}) => {
+    if (!Capacitor.isNativePlatform() && ACCOUNT_REQUIRED_PAGES.has(next) && auth.status !== 'authenticated') {
+      showLearningAccessGate(next, options);
+      return;
+    }
+    if (next === 'home') {
+      try { window.sessionStorage.removeItem(PENDING_LEARNING_ROUTE_KEY); } catch { /* Storage may be unavailable. */ }
+      setPendingLearningDestination(null);
+    }
     const current = currentNavigationRef.current || {
       page,
       activeLearningPathId,
@@ -865,6 +1011,29 @@ function App() {
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+  useEffect(() => {
+    if (Capacitor.isNativePlatform() || auth.status === 'loading') return;
+    let pending = pendingLearningDestination;
+    try {
+      const stored = window.sessionStorage.getItem(PENDING_LEARNING_ROUTE_KEY);
+      if (stored) pending = JSON.parse(stored);
+    } catch { /* Keep the in-memory pending destination when possible. */ }
+    if (!pending || !ACCOUNT_REQUIRED_PAGES.has(pending.page)) return;
+    if (auth.status === 'authenticated') {
+      try { window.sessionStorage.removeItem(PENDING_LEARNING_ROUTE_KEY); } catch { /* Storage may be unavailable. */ }
+      setPendingLearningDestination(null);
+      navigate(pending.page, pending.options || {});
+    } else if (page !== 'learning-access') {
+      setPendingLearningDestination(pending);
+      setPage('learning-access');
+    }
+  }, [auth.status, page, pendingLearningDestination]);
+
+  useEffect(() => {
+    if (Capacitor.isNativePlatform() || auth.status === 'authenticated' || auth.status === 'loading') return;
+    if (ACCOUNT_REQUIRED_PAGES.has(page)) showLearningAccessGate(page, { activeLearningPathId, academyPathId });
+  }, [auth.status, page, activeLearningPathId, academyPathId]);
+
   const clearFilters = () => { setQuery(''); setCategory('All resources'); setCost('All access types'); setLevel('All levels'); setResourceType('All'); setSortBy('relevance'); };
   const openLearningPath = (pathId) => {
     navigate('path-detail', { activeLearningPathId: pathId });
@@ -872,7 +1041,7 @@ function App() {
   const updateModuleCheckpoint = (pathId, moduleTitle, field, checked) => {
     if (!MODULE_CHECKPOINT_FIELDS.includes(field)) return;
     const key = moduleProgressKey(pathId, moduleTitle);
-    setModuleProgress((current) => ({ ...current, [key]: { ...(current[key] || {}), [field]: checked === true } }));
+    setModuleProgress((current) => ({ ...current, [key]: { ...(current[key] || {}), [field]: checked === true, updatedAt: new Date().toISOString() } }));
   };
   const openPathAcademy = (pathId) => navigate('systems-academy', { academyPathId: pathId });
   const openPathLabs = (path) => {
@@ -929,8 +1098,9 @@ function App() {
     <main>
       {(page === 'labs' || (page === 'path-detail' && resourceCatalogue)) && !labCatalogue && <section className="section-wrap" role="status"><p className="section-loading">{labCatalogueError ? 'The lab catalogue could not be loaded. Refresh this page to retry.' : 'Loading the lab catalogue...'}</p></section>}
       {(page === 'resources' || page === 'path-detail') && !resourceCatalogue && <section className="section-wrap" role="status"><p className="section-loading">{resourceCatalogueError ? 'The resource catalogue could not be loaded. Refresh this page to retry.' : 'Loading the resource catalogue...'}</p></section>}
+      {page === 'learning-access' && <LearningAccessGate destinationLabel={ACCOUNT_REQUIRED_LABELS[pendingLearningDestination?.page] || 'this learning workspace'} onReturnToDiscovery={() => navigate('home')} />}
       {page === 'certifications' && <Suspense fallback={<p className='section-loading'>Loading certifications and exam roadmaps...</p>}><CertificationsHub onOpenCareerPath={openLearningPath} /></Suspense>}
-      {page === 'learning-studio' && <Suspense fallback={<p className='section-loading'>Loading learning studio...</p>}><LearningStudio paths={learningPaths} moduleProgress={moduleProgress} onCheckpointChange={updateModuleCheckpoint} onOpenPath={openLearningPath} onOpenLabs={() => navigate('labs')} /></Suspense>}
+      {page === 'learning-studio' && <><section className={`ocp-learning-sync-note ocp-learning-sync-${cloudProgressStatus}`} role="status"><span>{cloudProgressStatus === 'loading' ? 'Loading progress from your account…' : cloudProgressStatus === 'syncing' ? 'Saving checkpoints to your account…' : cloudProgressStatus === 'synced' ? 'Your module checkpoints are synced with your account when the API is available.' : cloudProgressStatus === 'error' ? 'Cloud sync is unavailable. Your checkpoints remain saved on this device; retry when your connection is restored.' : 'Sign in to sync module checkpoints across sessions.'}</span>{cloudProgressStatus === 'error' && <button type="button" onClick={() => { auth.retryApiConnection(); setCloudRetryNonce((value) => value + 1); }}>Retry sync</button>}</section><Suspense fallback={<p className='section-loading'>Loading learning studio...</p>}><LearningStudio paths={learningPaths} moduleProgress={moduleProgress} onCheckpointChange={updateModuleCheckpoint} onOpenPath={openLearningPath} onOpenLabs={() => navigate('labs')} /></Suspense></>}
       {page === 'home' && <>
         <section className="hero">
           <div className="hero-content">
