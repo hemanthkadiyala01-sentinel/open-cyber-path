@@ -1,5 +1,14 @@
 import { createContext, useContext, useEffect, useMemo, useState } from 'react';
 import Keycloak from 'keycloak-js';
+import { Capacitor } from '@capacitor/core';
+import { App as CapacitorApp } from '@capacitor/app';
+import { Browser } from '@capacitor/browser';
+import {
+  beginNativeSignIn,
+  getNativeAccessToken,
+  isNativeLogoutRedirect,
+  signOutNative,
+} from './nativeKeycloakAuth.js';
 
 const oidcConfig = {
   url: import.meta.env.VITE_OIDC_URL,
@@ -7,8 +16,10 @@ const oidcConfig = {
   clientId: import.meta.env.VITE_OIDC_CLIENT_ID,
 };
 const configured = Boolean(oidcConfig.url && oidcConfig.realm && oidcConfig.clientId);
-
-const identity = configured ? new Keycloak(oidcConfig) : null;
+const nativeRuntime = Capacitor.isNativePlatform();
+// keycloak-js is used for ordinary web sessions only. Capacitor Android uses an external-browser
+// Authorization Code + PKCE flow through AppAuth, then calls the same authenticated API.
+const identity = configured && !nativeRuntime ? new Keycloak(oidcConfig) : null;
 const AuthContext = createContext(null);
 let initPromise;
 
@@ -27,7 +38,7 @@ async function initializeIdentity() {
 }
 
 export function AuthProvider({ children }) {
-  const [status, setStatus] = useState(configured ? 'loading' : 'disabled');
+  const [status, setStatus] = useState(configured ? (nativeRuntime ? 'anonymous' : 'loading') : 'disabled');
   const [user, setUser] = useState(null);
   const [error, setError] = useState(false);
   const [apiStatus, setApiStatus] = useState('idle');
@@ -44,6 +55,72 @@ export function AuthProvider({ children }) {
       setStatus('error');
     }
   };
+
+  const getCurrentAccessToken = async () => {
+    if (nativeRuntime) {
+      try {
+        return await getNativeAccessToken();
+      } catch (caught) {
+        setUser(null);
+        setStatus('anonymous');
+        setError(true);
+        throw caught;
+      }
+    }
+    if (!identity || !identity.authenticated) throw new Error('Please sign in first.');
+    await identity.updateToken(30);
+    if (!identity.token) throw new Error('Session expired. Please sign in again.');
+    return identity.token;
+  };
+
+  const runNativeAuthAction = async () => {
+    setError(false);
+    try {
+      const nativeUser = await beginNativeSignIn();
+      setUser(nativeUser);
+      setStatus('authenticated');
+    } catch (caught) {
+      const reason = String(caught?.message || caught || '');
+      if (reason.includes('USER_CANCELLED') || reason.toLowerCase().includes('cancelled')) {
+        setStatus('anonymous');
+        return;
+      }
+      setError(true);
+      setStatus('error');
+    }
+  };
+
+  const runNativeLogoutAction = async () => {
+    setUser(null);
+    setApiProfile(null);
+    setApiStatus('idle');
+    setApiError(null);
+    setError(false);
+    setStatus('anonymous');
+    try {
+      await signOutNative();
+    } catch {
+      // The app session is cleared even if the identity-provider logout browser cannot open.
+      setError(true);
+    }
+  };
+
+  useEffect(() => {
+    if (!nativeRuntime) return undefined;
+    let active = true;
+    let listenerHandle;
+    CapacitorApp.addListener('appUrlOpen', async ({ url }) => {
+      if (!isNativeLogoutRedirect(url)) return;
+      try { await Browser.close(); } catch { /* The system tab may already be closed. */ }
+    }).then((handle) => {
+      if (active) listenerHandle = handle;
+      else void handle.remove();
+    }).catch(() => { /* External logout remains best-effort if listener registration fails. */ });
+    return () => {
+      active = false;
+      if (listenerHandle) void listenerHandle.remove();
+    };
+  }, []);
 
   useEffect(() => {
     if (!identity) return undefined;
@@ -69,7 +146,7 @@ export function AuthProvider({ children }) {
   }, []);
 
   useEffect(() => {
-    if (status !== 'authenticated' || !identity) {
+    if (status !== 'authenticated') {
       setApiStatus('idle');
       setApiProfile(null);
       setApiError(null);
@@ -86,13 +163,12 @@ export function AuthProvider({ children }) {
         const apiBaseUrl = import.meta.env.VITE_API_BASE_URL?.trim();
         if (!apiBaseUrl) throw new Error('api_base_url_missing');
 
-        await identity.updateToken(30);
-        if (!identity.token) throw new Error('access_token_missing');
+        const accessToken = await getCurrentAccessToken();
 
         const response = await fetch(`${apiBaseUrl.replace(/\/+$/, '')}/v1/me`, {
           method: 'GET',
           headers: {
-            Authorization: `Bearer ${identity.token}`,
+            Authorization: `Bearer ${accessToken}`,
             Accept: 'application/json',
           },
           credentials: 'omit',
@@ -132,16 +208,11 @@ export function AuthProvider({ children }) {
     apiProfile,
     apiError,
     retryApiConnection: () => setApiRetryNonce((value) => value + 1),
-    login: () => identity ? runAuthAction(() => identity.login({ redirectUri: window.location.href })) : Promise.resolve(),
-    register: () => identity ? runAuthAction(() => identity.register({ redirectUri: window.location.href })) : Promise.resolve(),
-    logout: () => identity ? runAuthAction(() => identity.logout({ redirectUri: window.location.origin })) : Promise.resolve(),
-    getAccessToken: async () => {
-      if (!identity || !identity.authenticated) throw new Error('Please sign in first.');
-      // Tokens stay in the adapter's memory; do not write them to localStorage.
-      await identity.updateToken(30);
-      if (!identity.token) throw new Error('Session expired. Please sign in again.');
-      return identity.token;
-    },
+    login: () => nativeRuntime ? runNativeAuthAction() : identity ? runAuthAction(() => identity.login({ redirectUri: window.location.href })) : Promise.resolve(),
+    // On Android, the Keycloak system-browser page exposes its Register link when realm registration is enabled.
+    register: () => nativeRuntime ? runNativeAuthAction() : identity ? runAuthAction(() => identity.register({ redirectUri: window.location.href })) : Promise.resolve(),
+    logout: () => nativeRuntime ? runNativeLogoutAction() : identity ? runAuthAction(() => identity.logout({ redirectUri: window.location.origin })) : Promise.resolve(),
+    getAccessToken: getCurrentAccessToken,
   }), [status, user, error, apiStatus, apiProfile, apiError, apiRetryNonce]);
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;

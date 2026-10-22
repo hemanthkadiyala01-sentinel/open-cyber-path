@@ -21,8 +21,10 @@
     "review:resources": "python ../scripts/weekly_resource_discovery.py"
   },
   "dependencies": {
+    "@capacitor-community/generic-oauth2": "^7.1.0",
     "@capacitor/android": "^8.5.3",
     "@capacitor/app": "^8.1.2",
+    "@capacitor/browser": "^8.0.5",
     "@capacitor/core": "^8.5.3",
     "keycloak-js": "^26.2.4",
     "react": "19.2.6",

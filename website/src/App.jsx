@@ -967,7 +967,7 @@ function App() {
   };
 
   const navigate = (next, options = {}) => {
-    if (!Capacitor.isNativePlatform() && ACCOUNT_REQUIRED_PAGES.has(next) && auth.status !== 'authenticated') {
+    if (ACCOUNT_REQUIRED_PAGES.has(next) && auth.status !== 'authenticated') {
       showLearningAccessGate(next, options);
       return;
     }
@@ -1012,7 +1012,7 @@ function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   useEffect(() => {
-    if (Capacitor.isNativePlatform() || auth.status === 'loading') return;
+    if (auth.status === 'loading') return;
     let pending = pendingLearningDestination;
     try {
       const stored = window.sessionStorage.getItem(PENDING_LEARNING_ROUTE_KEY);
@@ -1030,7 +1030,7 @@ function App() {
   }, [auth.status, page, pendingLearningDestination]);
 
   useEffect(() => {
-    if (Capacitor.isNativePlatform() || auth.status === 'authenticated' || auth.status === 'loading') return;
+    if (auth.status === 'authenticated' || auth.status === 'loading') return;
     if (ACCOUNT_REQUIRED_PAGES.has(page)) showLearningAccessGate(page, { activeLearningPathId, academyPathId });
   }, [auth.status, page, activeLearningPathId, academyPathId]);
 
