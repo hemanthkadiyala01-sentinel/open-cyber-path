@@ -33,6 +33,7 @@ export function AuthProvider({ children }) {
   const [apiStatus, setApiStatus] = useState('idle');
   const [apiProfile, setApiProfile] = useState(null);
   const [apiError, setApiError] = useState(null);
+  const [apiRetryNonce, setApiRetryNonce] = useState(0);
 
   const runAuthAction = async (action) => {
     setError(false);
@@ -120,7 +121,7 @@ export function AuthProvider({ children }) {
       active = false;
       controller.abort();
     };
-  }, [status, user]);
+  }, [status, user, apiRetryNonce]);
 
   const value = useMemo(() => ({
     status,
@@ -130,6 +131,7 @@ export function AuthProvider({ children }) {
     apiStatus,
     apiProfile,
     apiError,
+    retryApiConnection: () => setApiRetryNonce((value) => value + 1),
     login: () => identity ? runAuthAction(() => identity.login({ redirectUri: window.location.href })) : Promise.resolve(),
     register: () => identity ? runAuthAction(() => identity.register({ redirectUri: window.location.href })) : Promise.resolve(),
     logout: () => identity ? runAuthAction(() => identity.logout({ redirectUri: window.location.origin })) : Promise.resolve(),
@@ -140,7 +142,7 @@ export function AuthProvider({ children }) {
       if (!identity.token) throw new Error('Session expired. Please sign in again.');
       return identity.token;
     },
-  }), [status, user, error, apiStatus, apiProfile, apiError]);
+  }), [status, user, error, apiStatus, apiProfile, apiError, apiRetryNonce]);
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
 }
