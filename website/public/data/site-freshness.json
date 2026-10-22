@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T17:37:11Z",
+  "generatedAt": "2026-10-22T21:54:49Z",
   "status": "ready",
   "summary": {
     "sections": 11,
@@ -14,7 +14,7 @@
       "label": "Cybersecurity news & advisories",
       "mode": "automatic",
       "cadence": "Every 6 hours",
-      "lastCheckedAt": "2026-10-22T17:37:11Z",
+      "lastCheckedAt": "2026-10-22T21:54:49Z",
       "status": "partial",
       "summary": "6/8 public sources refreshed successfully in the latest run; community posts are labelled unverified signals."
     },
@@ -41,7 +41,7 @@
       "label": "Certification and exam source links",
       "mode": "automatic",
       "cadence": "Daily source monitor; weekly resource review",
-      "lastCheckedAt": "2026-10-22T09:25:13.399Z",
+      "lastCheckedAt": "2026-10-22T19:34:39.100Z",
       "status": "fresh",
       "summary": "Monitors page reachability and content change signals; exam terms and pricing still require issuer confirmation."
     },

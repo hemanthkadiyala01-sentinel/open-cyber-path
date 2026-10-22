@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "status": "partial",
-  "generatedAt": "2026-10-22T17:37:11Z",
-  "lastSuccessfulSyncAt": "2026-10-22T17:37:11Z",
+  "generatedAt": "2026-10-22T21:54:49Z",
+  "lastSuccessfulSyncAt": "2026-10-22T21:54:49Z",
   "sourceCount": 8,
   "successfulSources": 6,
   "itemCount": 400,
@@ -13,8 +13,8 @@
       "label": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/feed/",
       "status": "fresh",
-      "checkedAt": "2026-10-22T17:37:11Z",
-      "lastSuccessAt": "2026-10-22T17:37:11Z",
+      "checkedAt": "2026-10-22T21:54:49Z",
+      "lastSuccessAt": "2026-10-22T21:54:49Z",
       "itemsFetched": 15,
       "note": "Headlines/brief summaries only; open the original source for context."
     },
@@ -23,8 +23,8 @@
       "label": "The Hacker News",
       "url": "https://feeds.feedburner.com/TheHackersNews",
       "status": "fresh",
-      "checkedAt": "2026-10-22T17:37:11Z",
-      "lastSuccessAt": "2026-10-22T17:37:11Z",
+      "checkedAt": "2026-10-22T21:54:49Z",
+      "lastSuccessAt": "2026-10-22T21:54:49Z",
       "itemsFetched": 50,
       "note": "Headlines/brief summaries only; open the original source for context."
     },
@@ -33,8 +33,8 @@
       "label": "Hacker News · security-filtered posts",
       "url": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "status": "fresh",
-      "checkedAt": "2026-10-22T17:37:11Z",
-      "lastSuccessAt": "2026-10-22T17:37:11Z",
+      "checkedAt": "2026-10-22T21:54:49Z",
+      "lastSuccessAt": "2026-10-22T21:54:49Z",
       "itemsFetched": 30,
       "note": "Headlines/brief summaries only; open the original source for context."
     },
@@ -43,8 +43,8 @@
       "label": "CERT-In advisories",
       "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADVLIST02",
       "status": "fresh",
-      "checkedAt": "2026-10-22T17:37:11Z",
-      "lastSuccessAt": "2026-10-22T17:37:11Z",
+      "checkedAt": "2026-10-22T21:54:49Z",
+      "lastSuccessAt": "2026-10-22T21:54:49Z",
       "itemsFetched": 15,
       "note": "Headlines/brief summaries only; open the original source for context."
     },
@@ -53,7 +53,7 @@
       "label": "CISA Cybersecurity Advisories",
       "url": "https://www.cisa.gov/news-events/cybersecurity-advisories?feed=rss",
       "status": "unavailable",
-      "checkedAt": "2026-10-22T17:37:11Z",
+      "checkedAt": "2026-10-22T21:54:49Z",
       "lastSuccessAt": null,
       "itemsFetched": 0,
       "note": "Refresh failed; previous records retained (HTTPError)."
@@ -63,8 +63,8 @@
       "label": "CISA Known Exploited Vulnerabilities",
       "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "status": "fresh",
-      "checkedAt": "2026-10-22T17:37:11Z",
-      "lastSuccessAt": "2026-10-22T17:37:11Z",
+      "checkedAt": "2026-10-22T21:54:49Z",
+      "lastSuccessAt": "2026-10-22T21:54:49Z",
       "itemsFetched": 100,
       "note": "Headlines/brief summaries only; open the original source for context."
     },
@@ -73,8 +73,8 @@
       "label": "GitHub reviewed security advisories",
       "url": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "status": "fresh",
-      "checkedAt": "2026-10-22T17:37:11Z",
-      "lastSuccessAt": "2026-10-22T17:37:11Z",
+      "checkedAt": "2026-10-22T21:54:49Z",
+      "lastSuccessAt": "2026-10-22T21:54:49Z",
       "itemsFetched": 100,
       "note": "Headlines/brief summaries only; open the original source for context."
     },
@@ -83,7 +83,7 @@
       "label": "Debian security advisories",
       "url": "https://www.debian.org/security/dsa.en.rdf",
       "status": "unavailable",
-      "checkedAt": "2026-10-22T17:37:11Z",
+      "checkedAt": "2026-10-22T21:54:49Z",
       "lastSuccessAt": null,
       "itemsFetched": 0,
       "note": "Refresh failed; previous records retained (HTTPError)."
@@ -103,7 +103,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -121,7 +121,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -139,7 +139,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -157,7 +157,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -175,7 +175,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -193,7 +193,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -211,7 +211,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -229,7 +229,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -247,7 +247,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -265,7 +265,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -283,7 +283,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -301,7 +301,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -319,7 +319,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -337,7 +337,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -355,10 +355,244 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T12:22:54Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
+    },
+    {
+      "id": "hackernews-security:29685bb50619c311f5ee6100",
+      "sourceId": "hackernews-security",
+      "source": "Hacker News · security-filtered posts",
+      "type": "community-signal",
+      "topic": "Community signal",
+      "title": "Coordinated Vulnerability Disclosure: How to do it and why it matters",
+      "summary": "Article URL: https://coordinated-vulnerability-disclosure.github.io/en-us/ Comments URL: https://news.ycombinator.com/item?id=50201508 Points: 1 # Comments: 1",
+      "url": "https://coordinated-vulnerability-disclosure.github.io/en-us/",
+      "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
+      "publishedAt": "2026-10-22T21:47:21Z",
+      "updatedAt": null,
+      "firstSeenAt": "2026-10-22T21:54:49Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
+      "confidence": "Community discussion; not an independently verified security claim",
+      "cveId": null,
+      "status": "NEW"
+    },
+    {
+      "id": "bleepingcomputer:ea40ccd76acf9cc833cdc4d4",
+      "sourceId": "bleepingcomputer",
+      "source": "BleepingComputer",
+      "type": "news",
+      "topic": "Security news",
+      "title": "Railway warns devs to rotate secrets after potential breach",
+      "summary": "Cloud platform Railway published an urgent warning to users after detecting suspicious activity on its systems that store customer environment variables earlier this week. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/railway-warns-devs-to-rotate-secrets-after-potential-breach/",
+      "sourceUrl": "https://www.bleepingcomputer.com/feed/",
+      "publishedAt": "2026-10-22T21:25:31Z",
+      "updatedAt": null,
+      "firstSeenAt": "2026-10-22T21:54:49Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
+      "confidence": "Publisher news; verify details in the original article",
+      "cveId": null,
+      "status": "NEW"
+    },
+    {
+      "id": "bleepingcomputer:1e6095c6e828de757f9a2eee",
+      "sourceId": "bleepingcomputer",
+      "source": "BleepingComputer",
+      "type": "news",
+      "topic": "Security news",
+      "title": "Capcom confirms data breach affecting 11.7 million accounts",
+      "summary": "Japanese gaming giant Capcom has confirmed that hackers breached its membership service, CAPCOM ID, exposing more than 11.7 million customer email addresses and associated information. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/capcom-confirms-data-breach-affecting-117-million-accounts/",
+      "sourceUrl": "https://www.bleepingcomputer.com/feed/",
+      "publishedAt": "2026-10-22T20:22:45Z",
+      "updatedAt": null,
+      "firstSeenAt": "2026-10-22T21:54:49Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
+      "confidence": "Publisher news; verify details in the original article",
+      "cveId": null,
+      "status": "NEW"
+    },
+    {
+      "id": "hackernews-security:e41b66149e8d88bf0e61e472",
+      "sourceId": "hackernews-security",
+      "source": "Hacker News · security-filtered posts",
+      "type": "community-signal",
+      "topic": "Community signal",
+      "title": "Critical Qdrant vulnerability allows unauthenticated access to clusters",
+      "summary": "Article URL: https://github.com/qdrant/qdrant/security/advisories/GHSA-frc7-44gm-99qq Comments URL: https://news.ycombinator.com/item?id=50199927 Points: 1 # Comments: 0",
+      "url": "https://github.com/qdrant/qdrant/security/advisories/GHSA-frc7-44gm-99qq",
+      "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
+      "publishedAt": "2026-10-22T19:31:47Z",
+      "updatedAt": null,
+      "firstSeenAt": "2026-10-22T21:54:49Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
+      "confidence": "Community discussion; not an independently verified security claim",
+      "cveId": null,
+      "status": "NEW"
+    },
+    {
+      "id": "bleepingcomputer:37f56369e2ff40e06833d0b8",
+      "sourceId": "bleepingcomputer",
+      "source": "BleepingComputer",
+      "type": "news",
+      "topic": "Security news",
+      "title": "LiteLLM release pipeline hacked to distribute info-stealer malware",
+      "summary": "Hackers compromised the LiteLLM project's PyPI package and published malicious Docker images with a payload that steals credentials, secrets, and environment variables. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/",
+      "sourceUrl": "https://www.bleepingcomputer.com/feed/",
+      "publishedAt": "2026-10-22T19:12:51Z",
+      "updatedAt": null,
+      "firstSeenAt": "2026-10-22T21:54:49Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
+      "confidence": "Publisher news; verify details in the original article",
+      "cveId": null,
+      "status": "NEW"
+    },
+    {
+      "id": "thehackernews:63d6bc3687b50b5c1b6fba6b",
+      "sourceId": "thehackernews",
+      "source": "The Hacker News",
+      "type": "news",
+      "topic": "Security news",
+      "title": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat",
+      "summary": "Right now, there is probably an AI agent running on a laptop somewhere in your network. It stores API keys and database passwords, can access your internal systems, and works without anyone watching. Nobody reviewed its access. Nobody owns it. If an employee…",
+      "url": "https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html",
+      "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
+      "publishedAt": "2026-10-22T19:05:35Z",
+      "updatedAt": null,
+      "firstSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
+      "confidence": "Publisher news; verify details in the original article",
+      "cveId": null,
+      "status": "NEW"
+    },
+    {
+      "id": "thehackernews:5a34460990741de0ec2f306d",
+      "sourceId": "thehackernews",
+      "source": "The Hacker News",
+      "type": "news",
+      "topic": "Security news",
+      "title": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
+      "summary": "Attackers are exploiting a zero-day SQL injection flaw in Arista's VeloCloud Orchestrator (VCO), the central management system for VeloCloud SD-WAN networks, the company said in an advisory on October 22. The flaw lets anyone who can log in to the…",
+      "url": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
+      "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
+      "publishedAt": "2026-10-22T19:05:17Z",
+      "updatedAt": null,
+      "firstSeenAt": "2026-10-22T21:54:49Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
+      "confidence": "Publisher news; verify details in the original article",
+      "cveId": null,
+      "status": "NEW"
+    },
+    {
+      "id": "hackernews-security:f9139a3950ac0bb8b78073a8",
+      "sourceId": "hackernews-security",
+      "source": "Hacker News · security-filtered posts",
+      "type": "community-signal",
+      "topic": "Community signal",
+      "title": "eMudhra exits website security business after flaws trigger global alarm",
+      "summary": "Article URL: https://www.reuters.com/legal/litigation/indian-firm-emudhra-exits-global-digital-certificates-business-after-2026-10-22/ Comments URL: https://news.ycombinator.com/item?id=50199645 Points: 2 # Comments: 1",
+      "url": "https://www.reuters.com/legal/litigation/indian-firm-emudhra-exits-global-digital-certificates-business-after-2026-10-22/",
+      "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
+      "publishedAt": "2026-10-22T19:04:43Z",
+      "updatedAt": null,
+      "firstSeenAt": "2026-10-22T21:54:49Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
+      "confidence": "Community discussion; not an independently verified security claim",
+      "cveId": null,
+      "status": "NEW"
+    },
+    {
+      "id": "hackernews-security:9ac3cb15835cf7adb9fe4d82",
+      "sourceId": "hackernews-security",
+      "source": "Hacker News · security-filtered posts",
+      "type": "community-signal",
+      "topic": "Community signal",
+      "title": "Vulnerability Discovery and Exploitation Trends in the AI Era",
+      "summary": "Article URL: https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era Comments URL: https://news.ycombinator.com/item?id=50199206 Points: 2 # Comments: 0",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/vulnerability-discovery-and-exploitation-trends-in-the-ai-era",
+      "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
+      "publishedAt": "2026-10-22T18:26:23Z",
+      "updatedAt": null,
+      "firstSeenAt": "2026-10-22T21:54:49Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
+      "confidence": "Community discussion; not an independently verified security claim",
+      "cveId": null,
+      "status": "NEW"
+    },
+    {
+      "id": "thehackernews:23aef87bc264519996321572",
+      "sourceId": "thehackernews",
+      "source": "The Hacker News",
+      "type": "news",
+      "topic": "Security news",
+      "title": "eMudhra to Exit Global SSL/TLS Business After 8 Intermediate CA Keys Found Easily Guessable",
+      "summary": "eMudhra, an Indian certificate authority (CA), will withdraw from its global SSL/TLS certificate business, its board decided on Thursday. The decision came five days after a researcher reported recovering the private keys of eight of its intermediate CA…",
+      "url": "https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html",
+      "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
+      "publishedAt": "2026-10-22T18:12:43Z",
+      "updatedAt": null,
+      "firstSeenAt": "2026-10-22T21:54:49Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
+      "confidence": "Publisher news; verify details in the original article",
+      "cveId": null,
+      "status": "NEW"
+    },
+    {
+      "id": "hackernews-security:7f2dff1c139cf3be53f07909",
+      "sourceId": "hackernews-security",
+      "source": "Hacker News · security-filtered posts",
+      "type": "community-signal",
+      "topic": "Community signal",
+      "title": "Security Sweet: Get your AI agents on a leash for security patch",
+      "summary": "Article URL: https://github.com/blencorp/security-sweep Comments URL: https://news.ycombinator.com/item?id=50199010 Points: 2 # Comments: 0",
+      "url": "https://github.com/blencorp/security-sweep",
+      "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
+      "publishedAt": "2026-10-22T18:10:38Z",
+      "updatedAt": null,
+      "firstSeenAt": "2026-10-22T21:54:49Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
+      "confidence": "Community discussion; not an independently verified security claim",
+      "cveId": null,
+      "status": "NEW"
+    },
+    {
+      "id": "thehackernews:d99ba89c8964f8cde6f533ec",
+      "sourceId": "thehackernews",
+      "source": "The Hacker News",
+      "type": "news",
+      "topic": "Security news",
+      "title": "ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More",
+      "summary": "This week has already been rough for cybersecurity. Critical PHP and GitLab RCE flaws, serious Linux security bugs, compromised eMudhra certificates, a Node.js RCE flaw, a hacked LiteLLM release, and hundreds of hijacked Tor relays. That's a lot to deal with…",
+      "url": "https://thehackernews.com/2026/10/threatsday-ai-secrets-leak-pingcap.html",
+      "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
+      "publishedAt": "2026-10-22T17:45:44Z",
+      "updatedAt": null,
+      "firstSeenAt": "2026-10-22T21:54:49Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
+      "confidence": "Publisher news; verify details in the original article",
+      "cveId": null,
+      "status": "NEW"
+    },
+    {
+      "id": "hackernews-security:7295082db5917a98c0617ee4",
+      "sourceId": "hackernews-security",
+      "source": "Hacker News · security-filtered posts",
+      "type": "community-signal",
+      "topic": "Community signal",
+      "title": "Using OpenEngine to continuously discover security vulnerabilities",
+      "summary": "Article URL: https://openengine.cc/blog/continuous-security-review/ Comments URL: https://news.ycombinator.com/item?id=50198651 Points: 3 # Comments: 1",
+      "url": "https://openengine.cc/blog/continuous-security-review/",
+      "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
+      "publishedAt": "2026-10-22T17:42:37Z",
+      "updatedAt": null,
+      "firstSeenAt": "2026-10-22T21:54:49Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
+      "confidence": "Community discussion; not an independently verified security claim",
+      "cveId": null,
+      "status": "NEW"
     },
     {
       "id": "hackernews-security:9001111ff0743acb004daa83",
@@ -373,10 +607,10 @@
       "publishedAt": "2026-10-22T17:30:22Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "bleepingcomputer:1ed4b6e940bacb9a350a44c1",
@@ -391,10 +625,10 @@
       "publishedAt": "2026-10-22T17:18:22Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-558c-9hv2-4prj",
@@ -409,10 +643,28 @@
       "publishedAt": "2026-10-22T17:03:12Z",
       "updatedAt": "2026-10-22T17:03:13Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-113721",
       "severity": "MEDIUM",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "thehackernews:7c53f743c08237d2727ca65e",
+      "sourceId": "thehackernews",
+      "source": "The Hacker News",
+      "type": "news",
+      "topic": "Security news",
+      "title": "Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes",
+      "summary": "Linux servers running KSMBD, the kernel's built-in SMB server, are exposed to two publicly reported remote code execution flaws rated 9.0 by Trend Micro's Zero Day Initiative, with no fix yet in the mainline kernel. One of them, ZDI-CAN-33774, can be…",
+      "url": "https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html",
+      "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
+      "publishedAt": "2026-10-22T17:01:53Z",
+      "updatedAt": null,
+      "firstSeenAt": "2026-10-22T21:54:49Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
+      "confidence": "Publisher news; verify details in the original article",
+      "cveId": null,
       "status": "NEW"
     },
     {
@@ -428,11 +680,11 @@
       "publishedAt": "2026-10-22T17:01:08Z",
       "updatedAt": "2026-10-22T17:01:19Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": null,
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-vjh5-4x84-xrqp",
@@ -447,11 +699,11 @@
       "publishedAt": "2026-10-22T16:59:55Z",
       "updatedAt": "2026-10-22T16:59:57Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114132",
       "severity": "MEDIUM",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-xfq5-w38q-pc2x",
@@ -466,11 +718,11 @@
       "publishedAt": "2026-10-22T16:58:00Z",
       "updatedAt": "2026-10-22T16:58:02Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114133",
       "severity": "MEDIUM",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-jjm6-p2m9-9w4x",
@@ -485,11 +737,11 @@
       "publishedAt": "2026-10-22T16:51:37Z",
       "updatedAt": "2026-10-22T16:51:39Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114130",
       "severity": "LOW",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-6gq8-jgmh-3ffp",
@@ -504,11 +756,11 @@
       "publishedAt": "2026-10-22T16:50:53Z",
       "updatedAt": "2026-10-22T16:50:54Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114131",
       "severity": "MEDIUM",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-6vvc-x485-93v7",
@@ -523,11 +775,11 @@
       "publishedAt": "2026-10-22T16:49:56Z",
       "updatedAt": "2026-10-22T16:50:09Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-113789",
       "severity": "MEDIUM",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-f54x-cmq8-qg57",
@@ -542,11 +794,11 @@
       "publishedAt": "2026-10-22T16:49:40Z",
       "updatedAt": "2026-10-22T16:49:41Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-113790",
       "severity": "MEDIUM",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-cgf9-327m-v77c",
@@ -561,11 +813,11 @@
       "publishedAt": "2026-10-22T16:49:22Z",
       "updatedAt": "2026-10-22T16:49:24Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-113791",
       "severity": "MEDIUM",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-2p8c-gr87-2676",
@@ -580,11 +832,11 @@
       "publishedAt": "2026-10-22T16:47:54Z",
       "updatedAt": "2026-10-22T16:47:55Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-113796",
       "severity": "MEDIUM",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-x562-297c-g43g",
@@ -599,11 +851,11 @@
       "publishedAt": "2026-10-22T16:47:15Z",
       "updatedAt": "2026-10-22T16:47:18Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-113798",
       "severity": "MEDIUM",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-98mx-cjp9-gchm",
@@ -618,11 +870,11 @@
       "publishedAt": "2026-10-22T16:46:33Z",
       "updatedAt": "2026-10-22T16:46:35Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-113797",
       "severity": "LOW",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-3qxv-5xgr-q7w9",
@@ -637,11 +889,11 @@
       "publishedAt": "2026-10-22T16:46:06Z",
       "updatedAt": "2026-10-22T16:46:07Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114122",
       "severity": "LOW",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-h3v5-h239-pg29",
@@ -656,11 +908,11 @@
       "publishedAt": "2026-10-22T16:44:33Z",
       "updatedAt": "2026-10-22T16:44:34Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114124",
       "severity": "LOW",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-997q-gvvc-jwmx",
@@ -675,11 +927,11 @@
       "publishedAt": "2026-10-22T16:43:59Z",
       "updatedAt": "2026-10-22T16:44:01Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114121",
       "severity": "MEDIUM",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-673q-mjm6-r5xr",
@@ -694,11 +946,11 @@
       "publishedAt": "2026-10-22T16:42:31Z",
       "updatedAt": "2026-10-22T16:42:32Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": null,
       "severity": "CRITICAL",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-83vg-56qc-22m7",
@@ -713,11 +965,11 @@
       "publishedAt": "2026-10-22T16:41:14Z",
       "updatedAt": "2026-10-22T16:41:15Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114145",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-389g-gv7q-r4x8",
@@ -732,11 +984,11 @@
       "publishedAt": "2026-10-22T16:40:35Z",
       "updatedAt": "2026-10-22T16:40:37Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-107832",
       "severity": "LOW",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-h895-cgqg-jf52",
@@ -751,11 +1003,11 @@
       "publishedAt": "2026-10-22T16:39:55Z",
       "updatedAt": "2026-10-22T16:39:57Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114142",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-4qx8-w7c3-pj3p",
@@ -770,11 +1022,11 @@
       "publishedAt": "2026-10-22T16:38:44Z",
       "updatedAt": "2026-10-22T16:38:47Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114141",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-9j65-hcg3-gc64",
@@ -789,11 +1041,11 @@
       "publishedAt": "2026-10-22T16:38:06Z",
       "updatedAt": "2026-10-22T16:38:06Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114143",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-9qmh-m7c6-f92p",
@@ -808,11 +1060,11 @@
       "publishedAt": "2026-10-22T16:36:50Z",
       "updatedAt": "2026-10-22T16:36:51Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114144",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-px85-f4q5-jh77",
@@ -827,11 +1079,11 @@
       "publishedAt": "2026-10-22T16:31:40Z",
       "updatedAt": "2026-10-22T16:31:42Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114126",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-98hj-9722-w3j8",
@@ -846,11 +1098,11 @@
       "publishedAt": "2026-10-22T16:30:26Z",
       "updatedAt": "2026-10-22T16:30:27Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114128",
       "severity": "MEDIUM",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-mpr7-6m5w-76rw",
@@ -865,11 +1117,11 @@
       "publishedAt": "2026-10-22T16:29:28Z",
       "updatedAt": "2026-10-22T16:29:29Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114127",
       "severity": "LOW",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-c4qx-w738-7hr3",
@@ -884,11 +1136,11 @@
       "publishedAt": "2026-10-22T16:28:31Z",
       "updatedAt": "2026-10-22T16:28:32Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114604",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-r77w-qph3-7vf8",
@@ -903,11 +1155,11 @@
       "publishedAt": "2026-10-22T16:27:14Z",
       "updatedAt": "2026-10-22T16:27:14Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-75508",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-vj8h-fx38-h3vc",
@@ -922,11 +1174,11 @@
       "publishedAt": "2026-10-22T16:26:40Z",
       "updatedAt": "2026-10-22T16:26:42Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-75507",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-cg2g-xh64-v4q7",
@@ -941,11 +1193,11 @@
       "publishedAt": "2026-10-22T16:25:31Z",
       "updatedAt": "2026-10-22T16:25:32Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": null,
       "severity": "CRITICAL",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-mrv2-3pqr-j5jr",
@@ -960,11 +1212,11 @@
       "publishedAt": "2026-10-22T16:24:52Z",
       "updatedAt": "2026-10-22T16:24:53Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": null,
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-c6gr-qvv4-5v3f",
@@ -979,11 +1231,11 @@
       "publishedAt": "2026-10-22T16:24:23Z",
       "updatedAt": "2026-10-22T16:24:24Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": null,
       "severity": "LOW",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-pjvx-prjx-h659",
@@ -998,11 +1250,11 @@
       "publishedAt": "2026-10-22T16:23:28Z",
       "updatedAt": "2026-10-22T16:23:29Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114140",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-xcq7-p3pf-p88h",
@@ -1017,11 +1269,11 @@
       "publishedAt": "2026-10-22T16:22:07Z",
       "updatedAt": "2026-10-22T16:22:08Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114603",
       "severity": "MEDIUM",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-rxp7-6hxx-x8q5",
@@ -1036,11 +1288,11 @@
       "publishedAt": "2026-10-22T16:19:39Z",
       "updatedAt": "2026-10-22T16:19:41Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-111997",
       "severity": "MEDIUM",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-cg8m-r9f2-5wm2",
@@ -1055,11 +1307,11 @@
       "publishedAt": "2026-10-22T16:18:57Z",
       "updatedAt": "2026-10-22T16:18:58Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114134",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-xw6w-gcfp-cf8m",
@@ -1074,11 +1326,11 @@
       "publishedAt": "2026-10-22T16:18:05Z",
       "updatedAt": "2026-10-22T16:18:06Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114137",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-33wh-fxxf-88vv",
@@ -1093,11 +1345,11 @@
       "publishedAt": "2026-10-22T16:17:13Z",
       "updatedAt": "2026-10-22T16:17:15Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114138",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-3547-9m27-7rxg",
@@ -1112,11 +1364,11 @@
       "publishedAt": "2026-10-22T16:16:09Z",
       "updatedAt": "2026-10-22T16:16:56Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114136",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "thehackernews:56940b672a75469b8a4bb9fb",
@@ -1131,10 +1383,10 @@
       "publishedAt": "2026-10-22T16:12:31Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-h694-7cp9-m8p3",
@@ -1149,11 +1401,11 @@
       "publishedAt": "2026-10-22T16:08:40Z",
       "updatedAt": "2026-10-22T16:08:41Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-103004",
       "severity": "MEDIUM",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-39m8-27wv-hr27",
@@ -1168,11 +1420,11 @@
       "publishedAt": "2026-10-22T16:07:04Z",
       "updatedAt": "2026-10-22T16:07:06Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-110871",
       "severity": "MEDIUM",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-g7cr-3p24-7wf7",
@@ -1187,11 +1439,11 @@
       "publishedAt": "2026-10-22T16:05:39Z",
       "updatedAt": "2026-10-22T16:05:41Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-96778",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-9v9v-9qvf-h2hj",
@@ -1206,11 +1458,11 @@
       "publishedAt": "2026-10-22T16:03:14Z",
       "updatedAt": "2026-10-22T16:03:16Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-96644",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-g4qv-2jxx-769h",
@@ -1225,11 +1477,11 @@
       "publishedAt": "2026-10-22T16:02:39Z",
       "updatedAt": "2026-10-22T16:02:41Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-96643",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-3j72-p6qg-6xp7",
@@ -1244,11 +1496,11 @@
       "publishedAt": "2026-10-22T16:01:46Z",
       "updatedAt": "2026-10-22T16:01:48Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-96642",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-4rm8-3hmm-39fg",
@@ -1263,11 +1515,11 @@
       "publishedAt": "2026-10-22T16:01:14Z",
       "updatedAt": "2026-10-22T16:01:15Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-96641",
       "severity": "MEDIUM",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-mrfp-p49p-3hf2",
@@ -1282,11 +1534,11 @@
       "publishedAt": "2026-10-22T16:00:47Z",
       "updatedAt": "2026-10-22T16:00:47Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-96640",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-v9pv-5gc8-w2m6",
@@ -1301,11 +1553,11 @@
       "publishedAt": "2026-10-22T16:00:15Z",
       "updatedAt": "2026-10-22T16:00:15Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-96639",
       "severity": "CRITICAL",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-24rc-8hj2-v98c",
@@ -1320,11 +1572,11 @@
       "publishedAt": "2026-10-22T15:59:35Z",
       "updatedAt": "2026-10-22T15:59:36Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-96638",
       "severity": "MEDIUM",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-g842-9rc4-69pw",
@@ -1339,11 +1591,11 @@
       "publishedAt": "2026-10-22T15:57:17Z",
       "updatedAt": "2026-10-22T15:57:18Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-96637",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-p8hx-v2p6-rp84",
@@ -1358,11 +1610,11 @@
       "publishedAt": "2026-10-22T15:56:37Z",
       "updatedAt": "2026-10-22T15:56:39Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-96636",
       "severity": "MEDIUM",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-mchm-gjx6-7h55",
@@ -1377,11 +1629,11 @@
       "publishedAt": "2026-10-22T15:55:07Z",
       "updatedAt": "2026-10-22T15:55:08Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114139",
       "severity": "CRITICAL",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-2464-fhr4-w9xw",
@@ -1396,11 +1648,11 @@
       "publishedAt": "2026-10-22T15:52:53Z",
       "updatedAt": "2026-10-22T15:52:56Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": null,
       "severity": "CRITICAL",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-cpvr-w4j5-2mpg",
@@ -1415,11 +1667,11 @@
       "publishedAt": "2026-10-22T15:52:48Z",
       "updatedAt": "2026-10-22T15:52:50Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-96889",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-p3m5-59mp-jv5r",
@@ -1434,11 +1686,11 @@
       "publishedAt": "2026-10-22T15:50:34Z",
       "updatedAt": "2026-10-22T15:50:35Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-94482",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-jj87-hc4r-jwfw",
@@ -1453,11 +1705,11 @@
       "publishedAt": "2026-10-22T15:49:54Z",
       "updatedAt": "2026-10-22T15:49:55Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114129",
       "severity": "MEDIUM",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "bleepingcomputer:665c4ee64aacf4aeb9d3c444",
@@ -1472,10 +1724,10 @@
       "publishedAt": "2026-10-22T15:49:32Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-pxh4-856f-4h89",
@@ -1490,11 +1742,11 @@
       "publishedAt": "2026-10-22T15:48:04Z",
       "updatedAt": "2026-10-22T15:48:05Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": null,
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-354v-3q48-cv69",
@@ -1509,11 +1761,11 @@
       "publishedAt": "2026-10-22T15:46:31Z",
       "updatedAt": "2026-10-22T15:46:32Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114135",
       "severity": "HIGH",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "hackernews-security:bc90e02e7148a37c8d021078",
@@ -1528,10 +1780,10 @@
       "publishedAt": "2026-10-22T15:32:17Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "hackernews-security:fa9f64c7124ac6b25ab18ce4",
@@ -1546,10 +1798,10 @@
       "publishedAt": "2026-10-22T15:12:36Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-9jh8-v38h-cvhr",
@@ -1564,11 +1816,11 @@
       "publishedAt": "2026-10-22T14:06:10Z",
       "updatedAt": "2026-10-22T14:06:14Z",
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-63430",
       "severity": "MEDIUM",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "bleepingcomputer:32ea969a27fc0c323b056161",
@@ -1583,10 +1835,10 @@
       "publishedAt": "2026-10-22T14:02:12Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "hackernews-security:aea2b9d65eed9cea5f844a21",
@@ -1601,10 +1853,10 @@
       "publishedAt": "2026-10-22T13:57:02Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "hackernews-security:0c958e0e87a31a6454700665",
@@ -1619,10 +1871,10 @@
       "publishedAt": "2026-10-22T13:49:52Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "thehackernews:60f4824a9b3246055d90ea6d",
@@ -1637,10 +1889,10 @@
       "publishedAt": "2026-10-22T13:38:22Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "hackernews-security:607ed3352757975036f4613c",
@@ -1655,10 +1907,10 @@
       "publishedAt": "2026-10-22T13:29:08Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "hackernews-security:fcfa6c88bab905a670fdb0fb",
@@ -1673,10 +1925,10 @@
       "publishedAt": "2026-10-22T13:27:02Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "hackernews-security:b3896304629f8457fb708d86",
@@ -1691,10 +1943,10 @@
       "publishedAt": "2026-10-22T13:15:57Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "bleepingcomputer:8432ce44e6fee1e83709d62f",
@@ -1709,10 +1961,10 @@
       "publishedAt": "2026-10-22T13:09:12Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "hackernews-security:66162df30096083a07ed3359",
@@ -1727,10 +1979,10 @@
       "publishedAt": "2026-10-22T13:03:57Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "hackernews-security:a2c4a9fd96ffc934859f45cd",
@@ -1745,28 +1997,10 @@
       "publishedAt": "2026-10-22T12:11:20Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
-      "status": "NEW"
-    },
-    {
-      "id": "thehackernews:63d6bc3687b50b5c1b6fba6b",
-      "sourceId": "thehackernews",
-      "source": "The Hacker News",
-      "type": "news",
-      "topic": "Security news",
-      "title": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat",
-      "summary": "Right now, there is probably an AI agent running on a laptop somewhere in your network. It stores API keys and database passwords, can access your internal systems, and works without anyone watching. Nobody reviewed its access. Nobody owns it. If an employee…",
-      "url": "https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html",
-      "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
-      "publishedAt": "2026-10-22T11:45:00Z",
-      "updatedAt": null,
-      "firstSeenAt": "2026-10-22T17:37:11Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
-      "confidence": "Publisher news; verify details in the original article",
-      "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "hackernews-security:0a0d6e35ce802ea002195abe",
@@ -1781,7 +2015,7 @@
       "publishedAt": "2026-10-22T11:42:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T12:22:54Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
       "status": "ACTIVE"
@@ -1799,7 +2033,7 @@
       "publishedAt": "2026-10-22T11:41:48Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T12:22:54Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -1817,7 +2051,7 @@
       "publishedAt": "2026-10-22T11:33:58Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T12:22:54Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
       "status": "ACTIVE"
@@ -1835,7 +2069,7 @@
       "publishedAt": "2026-10-22T11:15:42Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T12:22:54Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -1853,7 +2087,7 @@
       "publishedAt": "2026-10-22T10:55:10Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T12:22:54Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
       "status": "ACTIVE"
@@ -1871,7 +2105,7 @@
       "publishedAt": "2026-10-22T10:44:05Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T12:22:54Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -1883,13 +2117,13 @@
       "type": "community-signal",
       "topic": "Community signal",
       "title": "Cyber-security issue hitting sites worldwide prompts 'millions' of hacking...",
-      "summary": "Article URL: https://www.bbc.co.uk/news/live/ckgel5xp2xv9t Comments URL: https://news.ycombinator.com/item?id=50193547 Points: 3 # Comments: 1",
+      "summary": "Article URL: https://www.bbc.co.uk/news/live/ckgel5xp2xv9t Comments URL: https://news.ycombinator.com/item?id=50193547 Points: 4 # Comments: 2",
       "url": "https://www.bbc.co.uk/news/live/ckgel5xp2xv9t",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-22T10:35:42Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T12:22:54Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
       "status": "ACTIVE"
@@ -1907,7 +2141,7 @@
       "publishedAt": "2026-10-22T10:12:25Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T12:22:54Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
       "status": "ACTIVE"
@@ -1925,7 +2159,7 @@
       "publishedAt": "2026-10-22T08:55:23Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T12:22:54Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
       "status": "ACTIVE"
@@ -1943,7 +2177,7 @@
       "publishedAt": "2026-10-22T08:40:16Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T12:22:54Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
       "status": "ACTIVE"
@@ -1961,7 +2195,7 @@
       "publishedAt": "2026-10-22T08:28:48Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T12:22:54Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -1973,13 +2207,13 @@
       "type": "community-signal",
       "topic": "Community signal",
       "title": "Node.js security advisory: Brotli decoder RCE (CVE-2026-111497)",
-      "summary": "Article URL: https://vercel.com/kb/bulletin/node-js-security-advisory Comments URL: https://news.ycombinator.com/item?id=50192733 Points: 12 # Comments: 1",
+      "summary": "Article URL: https://vercel.com/kb/bulletin/node-js-security-advisory Comments URL: https://news.ycombinator.com/item?id=50192733 Points: 13 # Comments: 1",
       "url": "https://vercel.com/kb/bulletin/node-js-security-advisory",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-22T08:27:26Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T12:22:54Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
       "status": "ACTIVE"
@@ -1997,7 +2231,7 @@
       "publishedAt": "2026-10-22T08:27:11Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T12:22:54Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2015,7 +2249,7 @@
       "publishedAt": "2026-10-22T07:47:22Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T12:22:54Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2033,7 +2267,7 @@
       "publishedAt": "2026-10-22T06:56:54Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T12:22:54Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
       "status": "ACTIVE"
@@ -2051,7 +2285,7 @@
       "publishedAt": "2026-10-22T06:38:31Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T12:22:54Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2063,13 +2297,13 @@
       "type": "news",
       "topic": "Security news",
       "title": "Someone Tried to Exploit PHP2Shell 4 Days Before the Vulnerabilities Were Publicly Disclosed",
-      "summary": "Amazon's Threat Intelligence team on Wednesday said it detected an attempt to exploit the newly disclosed PHP2Shell vulnerabilities on October 17, 2026, against its MadPot honeypot service, as the flaws come under broad exploitation in the wild following the…",
+      "summary": "Amazon's Threat Intelligence team on Wednesday said it detected an attempt to exploit the newly disclosed PHP2Shell vulnerabilities dating back to October 17, 2026, against its MadPot honeypot service, as the flaws come under broad exploitation in the wild…",
       "url": "https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-22T06:34:10Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T12:22:54Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2087,7 +2321,7 @@
       "publishedAt": "2026-10-22T04:21:26Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2105,10 +2339,10 @@
       "publishedAt": "2026-10-22T02:02:10Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "hackernews-security:34620bf4f89e279533af7abf",
@@ -2123,7 +2357,7 @@
       "publishedAt": "2026-10-22T01:02:27Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
       "status": "ACTIVE"
@@ -2141,7 +2375,7 @@
       "publishedAt": "2026-10-22T00:46:02Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
       "status": "ACTIVE"
@@ -2153,13 +2387,13 @@
       "type": "community-signal",
       "topic": "Community signal",
       "title": "There isn't an easy exploit for this PHP vulnerability",
-      "summary": "Article URL: https://eliastaylor.com/noexploit/ Comments URL: https://news.ycombinator.com/item?id=50188948 Points: 596 # Comments: 389",
+      "summary": "Article URL: https://eliastaylor.com/noexploit/ Comments URL: https://news.ycombinator.com/item?id=50188948 Points: 607 # Comments: 433",
       "url": "https://eliastaylor.com/noexploit/",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-21T23:13:27Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
       "status": "ACTIVE"
@@ -2177,7 +2411,7 @@
       "publishedAt": "2026-10-21T22:17:19Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Community discussion; not an independently verified security claim",
       "cveId": null,
       "status": "ACTIVE"
@@ -2195,7 +2429,7 @@
       "publishedAt": "2026-10-21T22:16:26Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2249,7 +2483,7 @@
       "publishedAt": "2026-10-21T21:43:27Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T21:58:24Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2267,7 +2501,7 @@
       "publishedAt": "2026-10-21T21:35:56Z",
       "updatedAt": "2026-10-21T21:35:58Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-113716",
       "severity": "MEDIUM",
@@ -2286,7 +2520,7 @@
       "publishedAt": "2026-10-21T21:31:34Z",
       "updatedAt": "2026-10-21T21:31:35Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-113724",
       "severity": "MEDIUM",
@@ -2305,7 +2539,7 @@
       "publishedAt": "2026-10-21T21:30:12Z",
       "updatedAt": "2026-10-21T21:30:13Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-113722",
       "severity": "HIGH",
@@ -2324,7 +2558,7 @@
       "publishedAt": "2026-10-21T21:29:16Z",
       "updatedAt": "2026-10-21T21:29:16Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112902",
       "severity": "HIGH",
@@ -2343,7 +2577,7 @@
       "publishedAt": "2026-10-21T21:28:09Z",
       "updatedAt": "2026-10-21T21:28:09Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112393",
       "severity": "CRITICAL",
@@ -2362,7 +2596,7 @@
       "publishedAt": "2026-10-21T21:24:19Z",
       "updatedAt": "2026-10-21T21:24:20Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112396",
       "severity": "MEDIUM",
@@ -2381,7 +2615,7 @@
       "publishedAt": "2026-10-21T21:21:07Z",
       "updatedAt": "2026-10-21T21:21:09Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112406",
       "severity": "HIGH",
@@ -2400,7 +2634,7 @@
       "publishedAt": "2026-10-21T21:17:56Z",
       "updatedAt": "2026-10-21T21:17:58Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112399",
       "severity": "HIGH",
@@ -2419,7 +2653,7 @@
       "publishedAt": "2026-10-21T21:12:56Z",
       "updatedAt": "2026-10-21T21:12:57Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112892",
       "severity": "HIGH",
@@ -2438,7 +2672,7 @@
       "publishedAt": "2026-10-21T21:11:44Z",
       "updatedAt": "2026-10-21T21:11:47Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112894",
       "severity": "HIGH",
@@ -2457,7 +2691,7 @@
       "publishedAt": "2026-10-21T21:11:07Z",
       "updatedAt": "2026-10-21T21:11:08Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112391",
       "severity": "MEDIUM",
@@ -2476,7 +2710,7 @@
       "publishedAt": "2026-10-21T20:45:06Z",
       "updatedAt": "2026-10-21T20:45:07Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112901",
       "severity": "MEDIUM",
@@ -2495,7 +2729,7 @@
       "publishedAt": "2026-10-21T20:44:07Z",
       "updatedAt": "2026-10-21T20:44:08Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112898",
       "severity": "MEDIUM",
@@ -2514,7 +2748,7 @@
       "publishedAt": "2026-10-21T20:42:11Z",
       "updatedAt": "2026-10-21T20:42:12Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112401",
       "severity": "MEDIUM",
@@ -2533,7 +2767,7 @@
       "publishedAt": "2026-10-21T20:39:49Z",
       "updatedAt": "2026-10-21T20:39:50Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112390",
       "severity": "HIGH",
@@ -2552,7 +2786,7 @@
       "publishedAt": "2026-10-21T20:38:43Z",
       "updatedAt": "2026-10-21T20:38:43Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112891",
       "severity": "MEDIUM",
@@ -2571,7 +2805,7 @@
       "publishedAt": "2026-10-21T20:32:37Z",
       "updatedAt": "2026-10-21T20:32:39Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112392",
       "severity": "HIGH",
@@ -2590,7 +2824,7 @@
       "publishedAt": "2026-10-21T20:31:48Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T21:58:24Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2608,7 +2842,7 @@
       "publishedAt": "2026-10-21T20:30:25Z",
       "updatedAt": "2026-10-21T20:30:26Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112405",
       "severity": "HIGH",
@@ -2627,7 +2861,7 @@
       "publishedAt": "2026-10-21T20:06:34Z",
       "updatedAt": "2026-10-21T20:06:37Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112893",
       "severity": "HIGH",
@@ -2646,7 +2880,7 @@
       "publishedAt": "2026-10-21T20:03:56Z",
       "updatedAt": "2026-10-21T20:03:57Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112402",
       "severity": "HIGH",
@@ -2665,7 +2899,7 @@
       "publishedAt": "2026-10-21T20:00:32Z",
       "updatedAt": "2026-10-21T20:00:36Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112394",
       "severity": "MEDIUM",
@@ -2684,7 +2918,7 @@
       "publishedAt": "2026-10-21T19:58:44Z",
       "updatedAt": "2026-10-21T19:58:45Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112900",
       "severity": "CRITICAL",
@@ -2703,7 +2937,7 @@
       "publishedAt": "2026-10-21T19:58:10Z",
       "updatedAt": "2026-10-21T19:58:11Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-113786",
       "severity": "LOW",
@@ -2722,7 +2956,7 @@
       "publishedAt": "2026-10-21T19:57:00Z",
       "updatedAt": "2026-10-21T19:57:01Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112948",
       "severity": "MEDIUM",
@@ -2741,7 +2975,7 @@
       "publishedAt": "2026-10-21T19:54:26Z",
       "updatedAt": "2026-10-21T19:54:27Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112949",
       "severity": "MEDIUM",
@@ -2760,7 +2994,7 @@
       "publishedAt": "2026-10-21T19:48:38Z",
       "updatedAt": "2026-10-21T19:48:39Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112950",
       "severity": "MEDIUM",
@@ -2779,7 +3013,7 @@
       "publishedAt": "2026-10-21T19:45:03Z",
       "updatedAt": "2026-10-21T19:45:04Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112953",
       "severity": "MEDIUM",
@@ -2816,7 +3050,7 @@
       "publishedAt": "2026-10-21T19:37:42Z",
       "updatedAt": "2026-10-21T19:37:44Z",
       "firstSeenAt": "2026-10-22T05:20:32Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-62197",
       "severity": "MEDIUM",
@@ -2871,7 +3105,7 @@
       "publishedAt": "2026-10-21T18:57:34Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T21:58:24Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2925,7 +3159,7 @@
       "publishedAt": "2026-10-21T18:34:42Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T21:58:24Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2943,7 +3177,7 @@
       "publishedAt": "2026-10-21T18:01:57Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T21:58:24Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2961,7 +3195,7 @@
       "publishedAt": "2026-10-21T17:23:29Z",
       "updatedAt": "2026-10-21T17:23:30Z",
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-114125",
       "severity": "CRITICAL",
@@ -2980,7 +3214,7 @@
       "publishedAt": "2026-10-21T17:21:51Z",
       "updatedAt": "2026-10-21T17:21:53Z",
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-113800",
       "severity": "MEDIUM",
@@ -2999,7 +3233,7 @@
       "publishedAt": "2026-10-21T17:21:15Z",
       "updatedAt": "2026-10-21T17:21:16Z",
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-113731",
       "severity": "LOW",
@@ -3018,7 +3252,7 @@
       "publishedAt": "2026-10-21T17:17:00Z",
       "updatedAt": "2026-10-21T17:17:02Z",
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112952",
       "severity": "MEDIUM",
@@ -3037,7 +3271,7 @@
       "publishedAt": "2026-10-21T17:15:21Z",
       "updatedAt": "2026-10-21T17:15:22Z",
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112957",
       "severity": "MEDIUM",
@@ -3056,7 +3290,7 @@
       "publishedAt": "2026-10-21T17:15:07Z",
       "updatedAt": "2026-10-21T17:15:08Z",
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112958",
       "severity": "MEDIUM",
@@ -3075,7 +3309,7 @@
       "publishedAt": "2026-10-21T17:13:28Z",
       "updatedAt": "2026-10-21T17:13:28Z",
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-113648",
       "severity": "LOW",
@@ -3094,7 +3328,7 @@
       "publishedAt": "2026-10-21T17:12:15Z",
       "updatedAt": "2026-10-21T17:12:17Z",
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112954",
       "severity": "MEDIUM",
@@ -3113,7 +3347,7 @@
       "publishedAt": "2026-10-21T17:05:44Z",
       "updatedAt": "2026-10-21T17:05:44Z",
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112951",
       "severity": "MEDIUM",
@@ -3132,7 +3366,7 @@
       "publishedAt": "2026-10-21T17:05:01Z",
       "updatedAt": "2026-10-21T17:05:02Z",
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-113650",
       "severity": "MEDIUM",
@@ -3151,7 +3385,7 @@
       "publishedAt": "2026-10-21T17:03:03Z",
       "updatedAt": "2026-10-21T17:03:05Z",
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-113649",
       "severity": "MEDIUM",
@@ -3188,7 +3422,7 @@
       "publishedAt": "2026-10-21T16:59:19Z",
       "updatedAt": "2026-10-21T16:59:20Z",
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112956",
       "severity": "MEDIUM",
@@ -3207,7 +3441,7 @@
       "publishedAt": "2026-10-21T16:57:36Z",
       "updatedAt": "2026-10-21T16:57:38Z",
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-112955",
       "severity": "MEDIUM",
@@ -3226,7 +3460,7 @@
       "publishedAt": "2026-10-21T16:55:35Z",
       "updatedAt": "2026-10-21T16:55:37Z",
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-113792",
       "severity": "MEDIUM",
@@ -3472,7 +3706,7 @@
       "publishedAt": "2026-10-21T16:33:47Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -3547,7 +3781,7 @@
       "publishedAt": "2026-10-21T16:26:53Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -3691,7 +3925,7 @@
       "publishedAt": "2026-10-21T14:07:05Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -3727,7 +3961,7 @@
       "publishedAt": "2026-10-21T14:00:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -3854,7 +4088,7 @@
       "publishedAt": "2026-10-21T13:15:09Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -3980,7 +4214,7 @@
       "publishedAt": "2026-10-21T12:05:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -3998,7 +4232,7 @@
       "publishedAt": "2026-10-21T11:53:34Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -4016,7 +4250,7 @@
       "publishedAt": "2026-10-21T10:36:53Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T12:22:10Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -4034,7 +4268,7 @@
       "publishedAt": "2026-10-21T10:32:40Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T12:22:10Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -4052,7 +4286,7 @@
       "publishedAt": "2026-10-21T10:30:27Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T12:22:10Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -4106,7 +4340,7 @@
       "publishedAt": "2026-10-21T09:05:17Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T12:22:10Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -4124,7 +4358,7 @@
       "publishedAt": "2026-10-21T09:01:12Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T12:22:10Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -4160,7 +4394,7 @@
       "publishedAt": "2026-10-21T08:04:17Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T12:22:10Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -4178,7 +4412,7 @@
       "publishedAt": "2026-10-21T07:44:22Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T12:22:10Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -4196,7 +4430,7 @@
       "publishedAt": "2026-10-21T07:26:49Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T12:22:10Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -4214,7 +4448,7 @@
       "publishedAt": "2026-10-21T06:05:15Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T12:22:10Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -5657,7 +5891,7 @@
       "publishedAt": "2026-10-20T17:09:53Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T21:51:31Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -5711,7 +5945,7 @@
       "publishedAt": "2026-10-20T15:38:52Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T21:51:31Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -5729,7 +5963,7 @@
       "publishedAt": "2026-10-20T15:32:27Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T21:51:31Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -5879,7 +6113,7 @@
       "publishedAt": "2026-10-20T14:07:17Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T21:51:31Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -5951,7 +6185,7 @@
       "publishedAt": "2026-10-20T12:59:44Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T13:53:47Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -5987,7 +6221,7 @@
       "publishedAt": "2026-10-20T11:41:06Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T13:37:48Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -6005,7 +6239,7 @@
       "publishedAt": "2026-10-20T11:33:04Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T13:37:48Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -6023,7 +6257,7 @@
       "publishedAt": "2026-10-20T11:32:59Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T13:37:48Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -6095,7 +6329,7 @@
       "publishedAt": "2026-10-20T11:06:25Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T13:37:48Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -6113,7 +6347,7 @@
       "publishedAt": "2026-10-20T10:56:08Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T13:37:48Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -6149,7 +6383,7 @@
       "publishedAt": "2026-10-20T08:21:29Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T13:37:48Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -6167,7 +6401,7 @@
       "publishedAt": "2026-10-20T07:11:45Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -6203,7 +6437,7 @@
       "publishedAt": "2026-10-20T05:53:16Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -6221,7 +6455,7 @@
       "publishedAt": "2026-10-20T04:05:58Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -6239,7 +6473,7 @@
       "publishedAt": "2026-10-20T00:00:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T21:51:31Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government catalog; prioritization input, not a severity score",
       "cveId": "CVE-2026-106931",
       "dateAdded": "2026-10-20",
@@ -6259,7 +6493,7 @@
       "publishedAt": "2026-10-20T00:00:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T21:51:31Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government catalog; prioritization input, not a severity score",
       "cveId": "CVE-2026-96656",
       "dateAdded": "2026-10-20",
@@ -6279,7 +6513,7 @@
       "publishedAt": "2026-10-20T00:00:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T21:51:31Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government catalog; prioritization input, not a severity score",
       "cveId": "CVE-2026-96655",
       "dateAdded": "2026-10-20",
@@ -6299,7 +6533,7 @@
       "publishedAt": "2026-10-20T00:00:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T21:51:31Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government catalog; prioritization input, not a severity score",
       "cveId": "CVE-2026-96654",
       "dateAdded": "2026-10-20",
@@ -6319,7 +6553,7 @@
       "publishedAt": "2026-10-20T00:00:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T21:51:31Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government catalog; prioritization input, not a severity score",
       "cveId": "CVE-2026-96652",
       "dateAdded": "2026-10-20",
@@ -6339,7 +6573,7 @@
       "publishedAt": "2026-10-20T00:00:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T21:51:31Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Official government catalog; prioritization input, not a severity score",
       "cveId": "CVE-2026-110936",
       "dateAdded": "2026-10-20",
@@ -6539,7 +6773,7 @@
       "publishedAt": "2026-10-19T17:32:13Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -6783,7 +7017,7 @@
       "publishedAt": "2026-10-19T16:28:47Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -6856,7 +7090,7 @@
       "publishedAt": "2026-10-19T14:14:07Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -6910,7 +7144,7 @@
       "publishedAt": "2026-10-19T13:05:45Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -6946,7 +7180,7 @@
       "publishedAt": "2026-10-19T11:50:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -6982,7 +7216,7 @@
       "publishedAt": "2026-10-19T10:06:40Z",
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
+      "lastSeenAt": "2026-10-22T21:54:49Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -7256,243 +7490,6 @@
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "NEW"
-    },
-    {
-      "id": "bleepingcomputer:978985bee2a5f3ab64de6a95",
-      "sourceId": "bleepingcomputer",
-      "source": "BleepingComputer",
-      "type": "news",
-      "topic": "Security news",
-      "title": "Drupal patches critical RCE flaws, warns exploits may emerge soon",
-      "summary": "Drupal has patched two critical vulnerabilities that could allow attackers to execute code remotely on websites running any supported version of the content management system. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/",
-      "sourceUrl": "https://www.bleepingcomputer.com/feed/",
-      "publishedAt": "2026-10-17T14:32:48Z",
-      "updatedAt": null,
-      "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-20T09:27:05Z",
-      "confidence": "Publisher news; verify details in the original article",
-      "cveId": null,
-      "status": "NEW"
-    },
-    {
-      "id": "hackernews-security:99d133499e207b3e2a19a58c",
-      "sourceId": "hackernews-security",
-      "source": "Hacker News · security-filtered posts",
-      "type": "community-signal",
-      "topic": "Community signal",
-      "title": "Open and Emergent Problems in Agentic Privacy and Security",
-      "summary": "Article URL: https://research.google/pubs/open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle/ Comments URL: https://news.ycombinator.com/item?id=50131429 Points: 1 # Comments: 0",
-      "url": "https://research.google/pubs/open-and-emergent-problems-in-agentic-privacy-and-security-a-contextual-angle/",
-      "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
-      "publishedAt": "2026-10-17T14:20:54Z",
-      "updatedAt": null,
-      "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-20T13:53:47Z",
-      "confidence": "Community discussion; not an independently verified security claim",
-      "cveId": null,
-      "status": "ACTIVE"
-    },
-    {
-      "id": "hackernews-security:f9c444ecbae9bba0cada0bde",
-      "sourceId": "hackernews-security",
-      "source": "Hacker News · security-filtered posts",
-      "type": "community-signal",
-      "topic": "Community signal",
-      "title": "Amazon's Bee AI devices have a bystander problem, says former security engineer",
-      "summary": "Article URL: https://www.geekwire.com/2026/amazons-new-bee-ai-devices-have-a-bystander-problem-says-former-aws-security-engineer/ Comments URL: https://news.ycombinator.com/item?id=50131320 Points: 1 # Comments: 0",
-      "url": "https://www.geekwire.com/2026/amazons-new-bee-ai-devices-have-a-bystander-problem-says-former-aws-security-engineer/",
-      "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
-      "publishedAt": "2026-10-17T14:08:03Z",
-      "updatedAt": null,
-      "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-20T13:53:47Z",
-      "confidence": "Community discussion; not an independently verified security claim",
-      "cveId": null,
-      "status": "ACTIVE"
-    },
-    {
-      "id": "hackernews-security:51e711de8fbb9766b9dbb445",
-      "sourceId": "hackernews-security",
-      "source": "Hacker News · security-filtered posts",
-      "type": "community-signal",
-      "topic": "Community signal",
-      "title": "American Retirees on Different Incomes Rely on Social Security",
-      "summary": "Article URL: https://www.nytimes.com/2026/10/12/business/social-security-income-retirement-benefits.html Comments URL: https://news.ycombinator.com/item?id=50131257 Points: 4 # Comments: 3",
-      "url": "https://www.nytimes.com/2026/10/12/business/social-security-income-retirement-benefits.html",
-      "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
-      "publishedAt": "2026-10-17T14:01:02Z",
-      "updatedAt": null,
-      "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-20T13:53:47Z",
-      "confidence": "Community discussion; not an independently verified security claim",
-      "cveId": null,
-      "status": "ACTIVE"
-    },
-    {
-      "id": "thehackernews:219fd9eab491daf6e2fa95ed",
-      "sourceId": "thehackernews",
-      "source": "The Hacker News",
-      "type": "news",
-      "topic": "Security news",
-      "title": "MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon",
-      "summary": "Cybersecurity researchers have discovered a malicious npm package that's part of a recently disclosed software supply chain attack campaign dubbed MALFEX. The package, named \"imgdecode,\" was uploaded to the package registry on September 30, 2026, by a user…",
-      "url": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
-      "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
-      "publishedAt": "2026-10-17T11:11:56Z",
-      "updatedAt": null,
-      "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T17:37:11Z",
-      "confidence": "Publisher news; verify details in the original article",
-      "cveId": null,
-      "status": "ACTIVE"
-    },
-    {
-      "id": "hackernews-security:803a6006b36abd7a16badf9b",
-      "sourceId": "hackernews-security",
-      "source": "Hacker News · security-filtered posts",
-      "type": "community-signal",
-      "topic": "Community signal",
-      "title": "Row Level Security in SQLite on Cloudflare",
-      "summary": "Article URL: https://mainbrella.com/blog/row-level-security-in-sqlite-on-cloudflare/ Comments URL: https://news.ycombinator.com/item?id=50128773 Points: 2 # Comments: 0",
-      "url": "https://mainbrella.com/blog/row-level-security-in-sqlite-on-cloudflare/",
-      "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
-      "publishedAt": "2026-10-17T07:23:16Z",
-      "updatedAt": null,
-      "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-20T13:53:47Z",
-      "confidence": "Community discussion; not an independently verified security claim",
-      "cveId": null,
-      "status": "ACTIVE"
-    },
-    {
-      "id": "thehackernews:614eb364146c341c337919f1",
-      "sourceId": "thehackernews",
-      "source": "The Hacker News",
-      "type": "news",
-      "topic": "Security news",
-      "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
-      "summary": "Cybersecurity researchers are sounding the alarm related to an active campaign in which unknown threat actors are abusing a compromised Microsoft 365 (M365) credential belonging to ConnectWise Cloud Backup (formerly SkyKick) to gain unauthorized access to…",
-      "url": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
-      "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
-      "publishedAt": "2026-10-17T06:16:46Z",
-      "updatedAt": null,
-      "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-22T12:22:54Z",
-      "confidence": "Publisher news; verify details in the original article",
-      "cveId": null,
-      "status": "ACTIVE"
-    },
-    {
-      "id": "hackernews-security:0004afb55215f9592cb303e9",
-      "sourceId": "hackernews-security",
-      "source": "Hacker News · security-filtered posts",
-      "type": "community-signal",
-      "topic": "Community signal",
-      "title": "Zeabur discontinues AI Hub after its August security breach",
-      "summary": "Article URL: https://zeabur.com/changelogs/aihub-shutdown Comments URL: https://news.ycombinator.com/item?id=50127877 Points: 2 # Comments: 0",
-      "url": "https://zeabur.com/changelogs/aihub-shutdown",
-      "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
-      "publishedAt": "2026-10-17T04:14:58Z",
-      "updatedAt": null,
-      "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-20T13:53:47Z",
-      "confidence": "Community discussion; not an independently verified security claim",
-      "cveId": null,
-      "status": "ACTIVE"
-    },
-    {
-      "id": "hackernews-security:b6f3353d02c33602bd10b3aa",
-      "sourceId": "hackernews-security",
-      "source": "Hacker News · security-filtered posts",
-      "type": "community-signal",
-      "topic": "Community signal",
-      "title": "Agent Cyber Sentinel: Zero-trust runtime security shield for AI agents",
-      "summary": "Article URL: https://github.com/BenniAlencar/agent-cyber-sentinel Comments URL: https://news.ycombinator.com/item?id=50126612 Points: 3 # Comments: 0",
-      "url": "https://github.com/BenniAlencar/agent-cyber-sentinel",
-      "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
-      "publishedAt": "2026-10-17T00:37:16Z",
-      "updatedAt": null,
-      "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-20T13:53:47Z",
-      "confidence": "Community discussion; not an independently verified security claim",
-      "cveId": null,
-      "status": "ACTIVE"
-    },
-    {
-      "id": "github-advisories:GHSA-pw5q-rjx4-7f7p",
-      "sourceId": "github-advisories",
-      "source": "GitHub reviewed security advisories",
-      "type": "software-advisory",
-      "topic": "Software advisory",
-      "title": "Arcane: Delegated users:update permission allows admin account takeover via password reset (no privilege-hierarchy check)",
-      "summary": "## Summary A user holding the delegated `users:update` permission can reset the global administrator's password and take over the admin account. `UpdateUser` sets the target user's `PasswordHash` from the request body for ANY target with no comparison of…",
-      "url": "https://github.com/advisories/GHSA-pw5q-rjx4-7f7p",
-      "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
-      "publishedAt": "2026-10-16T21:15:03Z",
-      "updatedAt": "2026-10-16T21:15:06Z",
-      "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-21T12:22:10Z",
-      "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
-      "cveId": "CVE-2026-96627",
-      "severity": "HIGH",
-      "status": "ACTIVE"
-    },
-    {
-      "id": "github-advisories:GHSA-mp22-58ff-6fhr",
-      "sourceId": "github-advisories",
-      "source": "GitHub reviewed security advisories",
-      "type": "software-advisory",
-      "topic": "Software advisory",
-      "title": "Arcane: Environment access token bypasses the admin-required authorization gate on `/api/debug/pprof`",
-      "summary": "## Summary Arcane v2.10.2 contains an authorization inconsistency in `AuthMiddleware.managerAuth`. When a request supplies a valid environment access token through the `X-Arcane-Agent-Token` header, `managerAuth` resolves the associated environment, installs…",
-      "url": "https://github.com/advisories/GHSA-mp22-58ff-6fhr",
-      "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
-      "publishedAt": "2026-10-16T21:12:03Z",
-      "updatedAt": "2026-10-16T21:12:05Z",
-      "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-21T12:22:10Z",
-      "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
-      "cveId": "CVE-2026-96628",
-      "severity": "MEDIUM",
-      "status": "ACTIVE"
-    },
-    {
-      "id": "github-advisories:GHSA-w5f2-9q9c-ff4h",
-      "sourceId": "github-advisories",
-      "source": "GitHub reviewed security advisories",
-      "type": "software-advisory",
-      "topic": "Software advisory",
-      "title": "LMCache: Remote code execution via unsafe deserialization in multiprocess mode transport",
-      "summary": "### Summary LMCache is vulnerable to Unauthenticated Remote Code Execution via Pickle Deserialization on the Multiprocess ZMQ Transport ### Details LMCache multiprocess mode, also called distributed mode, opens an unauthenticated ZeroMQ ROUTER so worker…",
-      "url": "https://github.com/advisories/GHSA-w5f2-9q9c-ff4h",
-      "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
-      "publishedAt": "2026-10-16T20:08:44Z",
-      "updatedAt": "2026-10-16T20:09:11Z",
-      "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-21T12:22:10Z",
-      "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
-      "cveId": "CVE-2026-105192",
-      "severity": "CRITICAL",
-      "status": "ACTIVE"
-    },
-    {
-      "id": "bleepingcomputer:eef67d66b352919d991d03da",
-      "sourceId": "bleepingcomputer",
-      "source": "BleepingComputer",
-      "type": "news",
-      "topic": "Security news",
-      "title": "Critical BlockStrap flaw lets hackers run code on Magento servers",
-      "summary": "Researchers warn that hackers could soon exploit a maximum-severity vulnerability (CVE-2026-103849) affecting Magento and Adobe Commerce, potentially allowing them to execute arbitrary PHP code on store servers. [...]",
-      "url": "https://www.bleepingcomputer.com/news/security/critical-blockstrap-flaw-lets-hackers-run-code-on-magento-servers/",
-      "sourceUrl": "https://www.bleepingcomputer.com/feed/",
-      "publishedAt": "2026-10-16T20:00:59Z",
-      "updatedAt": null,
-      "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-10-20T09:27:05Z",
-      "confidence": "Publisher news; verify details in the original article",
-      "cveId": null,
-      "status": "ACTIVE"
     }
   ]
 }
