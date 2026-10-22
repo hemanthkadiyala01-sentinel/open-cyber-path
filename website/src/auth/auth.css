@@ -1,0 +1,44 @@
+.ocp-account-actions {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.ocp-account-button {
+  appearance: none;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.58rem 0.9rem;
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 650;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: transform 120ms ease, opacity 120ms ease;
+}
+.ocp-account-button:hover { transform: translateY(-1px); }
+.ocp-account-button:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+.ocp-account-button-primary { background: #b8f36b; border-color: #b8f36b; color: #14220e; }
+.ocp-account-button-secondary { background: transparent; border-color: currentColor; color: inherit; }
+.ocp-account-identity { max-width: 12rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.84rem; }
+.ocp-account-status { font-size: 0.8rem; opacity: 0.8; max-width: 18rem; }
+@media (max-width: 640px) {
+  .ocp-account-actions { gap: 0.35rem; }
+  .ocp-account-button { padding: 0.5rem 0.7rem; font-size: 0.8rem; }
+  .ocp-account-identity { max-width: 7rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ocp-account-button { transition: none; }
+  .ocp-account-button:hover { transform: none; }
+}
+
+.ocp-account-api-status {
+  font-size: 0.72rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  opacity: 0.9;
+}
+.ocp-account-api-status-ok { color: #6ee7b7; }
+.ocp-account-api-status-error { color: #fda4af; }

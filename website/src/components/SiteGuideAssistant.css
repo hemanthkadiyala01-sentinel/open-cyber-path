@@ -25,3 +25,7 @@
 @media(max-width:560px){.ocp-guide-assistant{right:12px;bottom:12px}.ocp-guide-panel{right:-2px;bottom:55px;width:min(390px,calc(100vw - 24px));height:min(680px,calc(100dvh - 84px));max-height:calc(100dvh - 76px);border-radius:16px}.ocp-guide-launcher{padding-right:12px;font-size:.71rem}.ocp-guide-result{padding:10px}.ocp-guide-quick-grid{gap:6px}.ocp-guide-quick-grid button{font-size:.63rem;padding:9px 7px}.ocp-guide-suggestions{grid-template-columns:1fr}.ocp-guide-log{padding:12px 10px 14px}}
 @media(max-height:560px){.ocp-guide-panel{height:calc(100dvh - 82px);max-height:calc(100dvh - 82px)}.ocp-guide-welcome>p{line-height:1.45}.ocp-guide-quick-grid{margin:9px 0}}
 @media(prefers-reduced-motion:reduce){.ocp-guide-launcher,.ocp-guide-log,.ocp-guide-launcher-mark{transition:none;scroll-behavior:auto}}
+
+/* Lazy-loaded assistant content is positioned against the fixed launcher host. */
+.ocp-guide-panel-host{position:static}
+.ocp-guide-launcher.is-hidden{display:none}
