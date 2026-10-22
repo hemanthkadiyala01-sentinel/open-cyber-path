@@ -1,9 +1,15 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "status": "empty",
-  "generatedAt": "2026-10-21T20:15:12Z",
+  "generatedAt": "2026-10-22T18:09:10Z",
   "refreshIntervalMinutes": 30,
   "source": "YouTube Data API v3",
-  "note": "Only active broadcasts from YouTube's live-search filter are indexed. A stream can end before the next scheduled refresh; verify availability on YouTube.",
+  "searchScope": "worldwide",
+  "supportedSearchLanguages": [
+    "en",
+    "hi",
+    "te"
+  ],
+  "note": "Worldwide discovery rotates English, Hindi, and Telugu searches. Results were returned as active broadcasts at last observation and retained for up to 90 minutes to combine the rotating language sweeps. A stream can end before the next scan; verify availability and captions on YouTube.",
   "results": []
 }
