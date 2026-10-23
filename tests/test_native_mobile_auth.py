@@ -19,9 +19,12 @@ class NativeMobileAuthTests(unittest.TestCase):
 
     def test_native_redirects_are_registered_in_android_manifest(self):
         manifest = self.read("website/android/app/src/main/AndroidManifest.xml")
-        self.assertIn('android:host="oauth"', manifest)
+        auth = self.read("website/src/auth/nativeKeycloakAuth.js")
+        self.assertNotIn('android:host="oauth"', manifest)
         self.assertIn('android:host="logout"', manifest)
-        self.assertIn('android:scheme="@string/custom_url_scheme"', manifest)
+        self.assertIn('android:scheme="org.opencyberpath.app.logout"', manifest)
+        self.assertIn("NATIVE_OAUTH_REDIRECT = 'org.opencyberpath.app://oauth'", auth)
+        self.assertIn("NATIVE_LOGOUT_REDIRECT = 'org.opencyberpath.app.logout://logout'", auth)
         gradle = self.read("website/android/app/build.gradle")
         self.assertIn("appAuthRedirectScheme: 'org.opencyberpath.app'", gradle)
 
@@ -52,6 +55,13 @@ class NativeMobileAuthTests(unittest.TestCase):
         self.assertIn("post_logout_redirect_uri", auth)
         self.assertIn("NATIVE_LOGOUT_REDIRECT", auth)
 
+
+    def test_native_auth_configuration_uses_native_client_id(self):
+        provider = self.read("website/src/auth/AuthProvider.jsx")
+        self.assertIn("const webConfigured = Boolean(oidcConfig.url && oidcConfig.realm && oidcConfig.clientId);", provider)
+        self.assertIn("import.meta.env.VITE_NATIVE_OIDC_CLIENT_ID", provider)
+        self.assertIn("const configured = nativeRuntime ? nativeConfigured : webConfigured;", provider)
+        self.assertIn("const identity = webConfigured && !nativeRuntime ? new Keycloak(oidcConfig) : null;", provider)
 
 if __name__ == "__main__":
     unittest.main()

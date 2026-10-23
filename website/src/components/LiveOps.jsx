@@ -161,6 +161,7 @@ function makeSourceChallenge(item) {
 export function LiveOps({ Icon }) {
   const [feed, setFeed] = useState(null);
   const [feedError, setFeedError] = useState('');
+  const [feedFromOfflineCache, setFeedFromOfflineCache] = useState(false);
   const [tab, setTab] = useState('challenges');
   const [search, setSearch] = useState('');
   const [freshness, setFreshness] = useState('all');
@@ -179,9 +180,13 @@ export function LiveOps({ Icon }) {
     let cancelled = false;
     fetch(FEED_URL, { cache: 'no-store' }).then((response) => {
       if (!response.ok) throw new Error(`Feed returned HTTP ${response.status}`);
-      return response.json();
-    }).then((data) => { if (!cancelled && data && Array.isArray(data.items)) setFeed(data); else if (!cancelled) throw new Error('Feed format was not recognised'); })
-      .catch((error) => { if (!cancelled) setFeedError(safeText(error?.message || 'Unable to load the latest source feed.', 200)); });
+      return response.json().then((data) => ({ data, offlineCache: response.headers.get('X-OpenCyberPath-Data-Source') === 'offline-cache' }));
+    }).then(({ data, offlineCache }) => {
+      if (!cancelled && data && Array.isArray(data.items)) {
+        setFeed(data);
+        setFeedFromOfflineCache(offlineCache);
+      } else if (!cancelled) throw new Error('Feed format was not recognised');
+    }).catch((error) => { if (!cancelled) setFeedError(safeText(error?.message || 'Unable to load the latest source feed.', 200)); });
     return () => { cancelled = true; };
   }, []);
   useEffect(() => { try { localStorage.setItem(DRAFT_KEY, JSON.stringify(drafts)); } catch { setNotice('Browser storage is unavailable. Export your draft to keep it.'); } }, [drafts]);
@@ -255,6 +260,7 @@ export function LiveOps({ Icon }) {
       </div>
     </section>
 
+    {feedFromOfflineCache && <div className="liveops-feed-warning" role="status"><Icon name="lightbulb" size={17}/><div><b>Offline cached source feed.</b><p>A fresh network response was unavailable. Last feed generation: {formatDateTime(feed?.generatedAt || feed?.meta?.generatedAt)}. Reconnect and reload to verify current source records.</p></div></div>}
     {feedIsSnapshot && <div className="liveops-feed-warning" role="status"><Icon name="lightbulb" size={17}/><div><b>Starter snapshot — scheduled refresh is not confirmed yet.</b><p>{feed ? 'The bundled feed is available, but it becomes automatically refreshed only after the project and workflow are pushed to GitHub and the scheduled action runs.' : `The source feed could not be loaded (${feedError || 'waiting for response'}). The reviewed starter challenges remain available.`}</p></div></div>}
     {feedIsManual && <div className="liveops-feed-warning" role="status"><Icon name="lightbulb" size={17}/><div><b>Feed refreshed manually — schedule not yet confirmed.</b><p>Last collector run: {formatDateTime(generatedAt)}. Push the workflow to GitHub and check Actions to enable scheduled refreshes.</p></div></div>}
     {!feedIsSnapshot && !feedIsManual && <div className="liveops-feed-ok" role="status"><Icon name="check-circle" size={17}/><div><b>Scheduled source feed</b><p>Last feed generation: {formatDate(generatedAt)} · this is the collector time, not a guarantee of instant updates.</p></div></div>}

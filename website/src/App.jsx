@@ -547,6 +547,77 @@ const ACCOUNT_REQUIRED_PAGES = new Set(['learning-studio', 'path-detail', 'labs'
 const ACCOUNT_REQUIRED_LABELS = { 'learning-studio': 'My Learning', 'path-detail': 'this learning path', labs: 'the lab library', 'ctf-lab': 'CTF Practice', 'systems-academy': 'Systems Academy', cyberrange: 'CyberRange', skillproof: 'SkillProof', 'offline-learning': 'Offline Learning' };
 const PENDING_LEARNING_ROUTE_KEY = 'opencyberpath-pending-learning-route-v1';
 
+const NAVIGATION_STATE_STORAGE_KEY = 'opencyberpath-current-navigation-v1';
+const NAVIGABLE_PAGES = new Set([
+  'home', 'learning-studio', 'roadmap', 'path-detail', 'resources', 'labs', 'ctf-lab',
+  'liveops', 'cyber-pulse', 'youtube-live-learning', 'certifications', 'systems-academy',
+  'tools', 'career-hub', 'resume-studio', 'job-hub', 'application-demo', 'cyberrange',
+  'offline-learning', 'skillproof', 'concepts', 'creator', 'learning-access',
+]);
+
+function readStoredPendingLearningDestination() {
+  if (typeof window === 'undefined') return null;
+  try {
+    const raw = window.sessionStorage.getItem(PENDING_LEARNING_ROUTE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    if (!parsed || typeof parsed !== 'object' || !ACCOUNT_REQUIRED_PAGES.has(parsed.page)) return null;
+    const options = {};
+    if (typeof parsed.options?.activeLearningPathId === 'string' && parsed.options.activeLearningPathId.length <= 160) {
+      options.activeLearningPathId = parsed.options.activeLearningPathId;
+    }
+    if (typeof parsed.options?.academyPathId === 'string' && parsed.options.academyPathId.length <= 160) {
+      options.academyPathId = parsed.options.academyPathId;
+    }
+    return { page: parsed.page, options };
+  } catch {
+    return null;
+  }
+}
+
+function readSavedNavigation() {
+  const fallback = {
+    page: 'home',
+    pendingLearningDestination: null,
+    activeLearningPathId: 'soc-blue-team',
+    academyPathId: 'all',
+  };
+  if (typeof window === 'undefined') return fallback;
+  try {
+    const raw = window.sessionStorage.getItem(NAVIGATION_STATE_STORAGE_KEY);
+    if (!raw) return fallback;
+    const saved = JSON.parse(raw);
+    if (!saved || typeof saved !== 'object' || Array.isArray(saved)) return fallback;
+
+    const activeLearningPathId = typeof saved.activeLearningPathId === 'string'
+      && learningPaths.some((path) => path.id === saved.activeLearningPathId)
+      ? saved.activeLearningPathId
+      : fallback.activeLearningPathId;
+    const academyPathId = typeof saved.academyPathId === 'string' && saved.academyPathId.length <= 160
+      ? saved.academyPathId
+      : fallback.academyPathId;
+    const storedPending = readStoredPendingLearningDestination();
+    const requestedPage = NAVIGABLE_PAGES.has(saved.page) ? saved.page : 'home';
+
+    // Never render a protected workspace before the current auth state is known.
+    if (requestedPage === 'learning-access') {
+      return storedPending
+        ? { ...fallback, page: 'learning-access', pendingLearningDestination: storedPending, activeLearningPathId, academyPathId }
+        : { ...fallback, activeLearningPathId, academyPathId };
+    }
+    if (ACCOUNT_REQUIRED_PAGES.has(requestedPage)) {
+      const pendingLearningDestination = storedPending || {
+        page: requestedPage,
+        options: { activeLearningPathId, academyPathId },
+      };
+      return { ...fallback, page: 'learning-access', pendingLearningDestination, activeLearningPathId, academyPathId };
+    }
+    return { ...fallback, page: requestedPage, activeLearningPathId, academyPathId };
+  } catch {
+    return fallback;
+  }
+}
+
 function moduleProgressKey(pathId, moduleTitle) {
   return `${pathId}::${moduleTitle}`;
 }
@@ -595,8 +666,9 @@ function LearningModuleCard({ pathId, module, index, progress = {}, onCheckpoint
 
 function App() {
   const auth = useAuth();
-  const [page, setPage] = useState('home');
-  const [pendingLearningDestination, setPendingLearningDestination] = useState(null);
+  const [initialNavigation] = useState(() => readSavedNavigation());
+  const [page, setPage] = useState(initialNavigation.page);
+  const [pendingLearningDestination, setPendingLearningDestination] = useState(initialNavigation.pendingLearningDestination);
   const [labCatalogue, setLabCatalogue] = useState(null);
   const [labCatalogueError, setLabCatalogueError] = useState(false);
   useEffect(() => {
@@ -682,8 +754,8 @@ function App() {
   const cloudProgressReadyRef = useRef(false);
   const cloudBaselineRef = useRef(new Map());
   const cloudInFlightRef = useRef(new Map());
-  const [activeLearningPathId, setActiveLearningPathId] = useState('soc-blue-team');
-  const [academyPathId, setAcademyPathId] = useState('all');
+  const [activeLearningPathId, setActiveLearningPathId] = useState(initialNavigation.activeLearningPathId);
+  const [academyPathId, setAcademyPathId] = useState(initialNavigation.academyPathId);
   const [domainQuery, setDomainQuery] = useState('');
   const [query, setQuery] = useState('');
   const [category, setCategory] = useState('All resources');
@@ -703,6 +775,16 @@ function App() {
   const navigationHistoryRef = useRef([]);
   const currentNavigationRef = useRef(null);
   currentNavigationRef.current = { page, activeLearningPathId, academyPathId };
+
+  // Keep transient navigation within this browser tab so refresh restores the last screen.
+  // Learning progress remains separately stored/synced; this key stores no credentials.
+  useEffect(() => {
+    try {
+      window.sessionStorage.setItem(NAVIGATION_STATE_STORAGE_KEY, JSON.stringify({ page, activeLearningPathId, academyPathId }));
+    } catch {
+      // Navigation restoration is a convenience; the app remains usable if storage is disabled.
+    }
+  }, [page, activeLearningPathId, academyPathId]);
 
   useEffect(() => {
     if (!Capacitor.isNativePlatform()) return undefined;

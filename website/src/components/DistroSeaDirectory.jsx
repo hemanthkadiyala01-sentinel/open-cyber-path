@@ -825,6 +825,232 @@ const DISTROSEA_SYSTEMS = [
   }
 ];
 
+const DISTROSEA_CARD_ACCENTS = [
+  '#67e8f9', '#a78bfa', '#fbbf24', '#f472b6',
+  '#86efac', '#fb923c', '#93c5fd', '#f87171',
+  '#2dd4bf', '#c084fc', '#facc15', '#34d399',
+  '#60a5fa', '#fb7185', '#a3e635', '#22d3ee',
+];
+
+function systemHash(system) {
+  const key = `${system.name} ${(system.tags || []).join(' ')} ${system.family || ''}`;
+  let hash = 0;
+  for (let index = 0; index < key.length; index += 1) {
+    hash = (hash * 31 + key.charCodeAt(index)) >>> 0;
+  }
+  return hash;
+}
+
+function systemAccent(system) {
+  return DISTROSEA_CARD_ACCENTS[systemHash(system) % DISTROSEA_CARD_ACCENTS.length];
+}
+
+function systemAccentSecondary(system) {
+  const offset = (systemHash(system) * 7 + 3) % DISTROSEA_CARD_ACCENTS.length;
+  return DISTROSEA_CARD_ACCENTS[offset];
+}
+
+function systemPattern(system) {
+  return systemHash(system) % 8;
+}
+
+const SIMPLE_ICON_SLUG_BY_NAME = Object.freeze({
+  'Alma Linux': 'almalinux',
+  'Alpine Linux': 'alpinelinux',
+  'Arch Linux': 'archlinux',
+  'Bazzite': 'bazzite',
+  'Big Linux': 'biglinux',
+  'Bodhi Linux': 'bodhilinux',
+  'BunsenLabs Linux': 'bunsenlabs',
+  'CachyOS': 'cachyos',
+  'CentOS Stream': 'centos',
+  'Debian': 'debian',
+  'Deepin Linux': 'deepin',
+  'EndeavourOS': 'endeavouros',
+  'Fedora Linux': 'fedora',
+  'FreeBSD': 'freebsd',
+  'Garuda Linux': 'garudalinux',
+  'Gentoo Linux': 'gentoo',
+  'Kali Linux': 'kalilinux',
+  'KDE Neon': 'kdeneon',
+  'Kubuntu': 'kubuntu',
+  'Linux Mint': 'linuxmint',
+  'Lubuntu': 'lubuntu',
+  'Manjaro': 'manjaro',
+  'MX Linux': 'mxlinux',
+  'NixOS': 'nixos',
+  'openSUSE': 'opensuse',
+  'Pop!_OS': 'popos',
+  'PureOS': 'pureos',
+  'ReactOS': 'reactos',
+  'Rocky Linux': 'rockylinux',
+  'Slackware Linux': 'slackware',
+  'Solus': 'solus',
+  'Tails': 'tails',
+  'Ubuntu': 'ubuntu',
+  'Ubuntu Budgie': 'ubuntu',
+  'Ubuntu Cinnamon': 'ubuntu',
+  'Ubuntu Kylin': 'ubuntu',
+  'Ubuntu MATE': 'ubuntu',
+  'Ubuntu Studio': 'ubuntu',
+  'Ubuntu Unity': 'ubuntu',
+  'Xubuntu': 'ubuntu',
+  'Zorin OS': 'zorin',
+  'Android': 'android',
+  'ChromeOS': 'googlechrome',
+  'Windows': 'windows',
+  'Windows 11': 'windows',
+  'Windows Server': 'windows',
+  'elementary OS': 'elementary',
+  'FreeRTOS': 'freertos',
+  'macOS': 'apple',
+  'AnduinOS': 'anduinos',
+  'antiX Linux': 'antix',
+  'Archcraft': 'archcraft',
+  'Arco Linux': 'arcolinux',
+  'Artix Linux': 'artixlinux',
+  'blendOS': 'blendos',
+  'Chimera Linux': 'chimeralinux',
+  'Devuan Linux': 'devuan',
+  'DragonFlyBSD': 'dragonflybsd',
+  'Emmabuntüs': 'emmabuntus',
+  'Endless OS': 'endless',
+  'Haiku': 'haiku',
+  'HoloISO': 'holoiso',
+  'KolibriOS': 'kolibrios',
+  'Linux Lite': 'linuxlite',
+  'Linux Mint Debian Edition': 'linuxmint',
+  'Mageia': 'mageia',
+  'Nitrux': 'nitrux',
+  'Nobara Linux': 'nobara',
+  'OpenIndiana': 'openindiana',
+  'OpenMandriva': 'openmandriva',
+  'PCLinuxOS': 'pclinuxos',
+  'pearOS': 'pearos',
+  'PeppermintOS': 'peppermintos',
+  'PikaOS': 'pikaos',
+  'Porteus Linux': 'porteus',
+  'PrimTux': 'primtux',
+  'Puppy Linux': 'puppylinux',
+  'Q4OS': 'q4os',
+  'RebornOS': 'rebornos',
+  'Redox OS': 'redox',
+  'Siduction Linux': 'siduction',
+  'Slax': 'slax',
+  'SliTaz': 'slitaz',
+  'SparkyLinux': 'sparkylinux',
+  'SpiralLinux': 'spirallinux',
+  'Tiny Core Linux': 'tinycorelinux',
+  'Trisquel GNU/Linux': 'trisquel',
+  'Tuxedo OS': 'tuxedocomputers',
+  'VanillaOS': 'vanillaos',
+  'Void Linux': 'voidlinux',
+  'Voyager Live': 'voyager',
+});
+
+function distroIconCandidates(system) {
+  const candidates = [];
+  const simpleIconSlug = SIMPLE_ICON_SLUG_BY_NAME[system.name];
+  if (simpleIconSlug) {
+    const colour = systemAccent(system).replace('#', '');
+    candidates.push(`https://cdn.simpleicons.org/${simpleIconSlug}/${colour}`);
+  }
+
+  try {
+    const pathParts = new URL(system.url).pathname.split('/').filter(Boolean);
+    const slug = pathParts[pathParts.length - 1];
+    if (slug) candidates.push(`https://distrosea.com/distro-icons/${slug}.svg`);
+  } catch {
+    // The catalogue URL is validated by source data; keep the styled initials fallback if malformed.
+  }
+
+  return [...new Set(candidates)];
+}
+
+function SystemFallbackMark({ system }) {
+  const pattern = systemPattern(system);
+  const common = {
+    className: 'dsx-logo-fallback',
+    viewBox: '0 0 64 64',
+    focusable: 'false',
+    'aria-hidden': 'true',
+  };
+
+  if (pattern === 0) return <svg {...common}>
+    <circle cx="32" cy="32" r="19" />
+    <circle cx="32" cy="32" r="9" />
+    <ellipse cx="32" cy="32" rx="27" ry="11" transform="rotate(-35 32 32)" />
+    <circle cx="51" cy="19" r="3" fill="currentColor" />
+  </svg>;
+  if (pattern === 1) return <svg {...common}>
+    <path d="M32 7 57 32 32 57 7 32Z" />
+    <path d="M32 18 46 32 32 46 18 32Z" />
+    <path d="M32 7V57M7 32H57M14 14 50 50M50 14 14 50" />
+  </svg>;
+  if (pattern === 2) return <svg {...common}>
+    <path d="M9 19 32 7 55 19 55 45 32 57 9 45Z" />
+    <path d="M18 24 32 17 46 24 46 40 32 47 18 40Z" />
+    <path d="M25 28 32 24 39 28 39 36 32 40 25 36Z" />
+  </svg>;
+  if (pattern === 3) return <svg {...common}>
+    <path d="M10 14H29V25H43V39H54" />
+    <path d="M10 32H21V45H39V54" />
+    <circle cx="10" cy="14" r="4" fill="currentColor" />
+    <circle cx="54" cy="39" r="4" fill="currentColor" />
+    <circle cx="39" cy="54" r="4" fill="currentColor" />
+    <circle cx="21" cy="32" r="4" fill="currentColor" />
+  </svg>;
+  if (pattern === 4) return <svg {...common}>
+    <path d="M5 18C15 3 24 34 34 18S51 4 59 17" />
+    <path d="M5 31C15 16 24 47 34 31S51 17 59 30" />
+    <path d="M5 44C15 29 24 60 34 44S51 30 59 43" />
+  </svg>;
+  if (pattern === 5) return <svg {...common}>
+    <path d="M32 6 52 14V29C52 42 44 52 32 58 20 52 12 42 12 29V14Z" />
+    <path d="M22 32 29 39 43 24" strokeWidth="4" />
+    <circle cx="49" cy="12" r="3" fill="currentColor" />
+  </svg>;
+  if (pattern === 6) return <svg {...common}>
+    <path d="M32 9A23 23 0 1 0 55 32" />
+    <path d="M32 18A14 14 0 1 0 46 32" />
+    <path d="M32 27A5 5 0 1 0 37 32" />
+    <path d="M45 8 56 8 56 19" />
+  </svg>;
+  return <svg {...common}>
+    <rect x="8" y="8" width="17" height="17" rx="3" />
+    <rect x="31" y="8" width="25" height="9" rx="2" fill="currentColor" />
+    <rect x="31" y="22" width="12" height="20" rx="2" />
+    <rect x="8" y="31" width="17" height="25" rx="2" />
+    <rect x="48" y="25" width="8" height="31" rx="2" />
+    <rect x="31" y="48" width="12" height="8" rx="2" fill="currentColor" />
+  </svg>;
+}
+
+function DistroSeaLogo({ system }) {
+  const candidates = distroIconCandidates(system);
+  const [candidateIndex, setCandidateIndex] = useState(0);
+  const [loaded, setLoaded] = useState(false);
+  const currentSource = candidates[candidateIndex];
+
+  return (
+    <span className="dsx-logo-wrap" aria-hidden="true">
+      {!loaded && <SystemFallbackMark system={system} />}
+      {currentSource && (
+        <img
+          className="dsx-logo-image"
+          src={currentSource}
+          alt=""
+          loading="lazy"
+          decoding="async"
+          referrerPolicy="no-referrer"
+          onLoad={() => setLoaded(true)}
+          onError={() => setCandidateIndex((index) => Math.min(index + 1, candidates.length))}
+        />
+      )}
+    </span>
+  );
+}
+
 /**
  * Additive catalogue of the operating-system listings on DistroSea's public directory.
  * OpenCyberPath only links to the third-party tryout pages; it does not host remote OS sessions.
@@ -878,10 +1104,14 @@ export function DistroSeaDirectory({ Icon }) {
 
       <div className="dsx-grid">
         {visibleSystems.map((system) => (
-          <article className="dsx-card" key={system.name}>
-            <div className="dsx-card-top">
-              <span className="dsx-mark" aria-hidden="true">{system.name.replace(/[^A-Za-z0-9]/g, '').slice(0, 2).toUpperCase()}</span>
-              <span className="dsx-card-kicker">DISTROSEA LISTING</span>
+          <article
+            className="dsx-card"
+            key={system.name}
+            style={{ '--dsx-accent': systemAccent(system), '--dsx-secondary': systemAccentSecondary(system) }}
+          >
+            <div className="dsx-card-top dsx-card-art" data-dsx-pattern={systemPattern(system)}>
+              <DistroSeaLogo system={system} />
+              <span className="dsx-card-kicker">{(system.tags?.[0] || "OS DISCOVERY").toUpperCase()}</span>
             </div>
             <h3>{system.name}</h3>
             <p className="dsx-family">{system.family}</p>
