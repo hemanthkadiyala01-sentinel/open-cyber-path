@@ -3,7 +3,7 @@
 ## What this implements
 
 - Native Android uses the system-browser Authorization Code flow with PKCE S256 through AppAuth (`@capacitor-community/generic-oauth2`).
-- `org.opencyberpath.app://oauth` is the login callback and `org.opencyberpath.app://logout` is the Keycloak logout return URI.
+- `org.opencyberpath.app://oauth` is the login callback and `org.opencyberpath.app.logout://logout` is the Keycloak logout return URI.
 - Access and refresh tokens remain in process memory; they are not saved to `localStorage`. If Android terminates the app process, the learner may need to sign in again; the provider's browser session may make this quick.
 - The same authenticated `/v1/me` and `/v1/progress` API calls are used by web and Android. The backend remains responsible for validating token signature, issuer, audience, and user access.
 - Public discovery remains available without sign-in. Destinations listed in `ACCOUNT_REQUIRED_PAGES` require an authenticated session on web and Android.
@@ -14,7 +14,7 @@ Create a separate public Keycloak client for Android (recommended ID: `opencyber
 
 1. Client authentication: **Off** (public client); Standard Flow: **On**.
 2. Require PKCE with **S256** if the Keycloak version exposes that setting.
-3. Add `org.opencyberpath.app://oauth` under **Valid Redirect URIs** and `org.opencyberpath.app://logout` under **Valid post logout redirect URIs**. Keep existing web redirect URIs.
+3. Add `org.opencyberpath.app://oauth` under **Valid Redirect URIs** and `org.opencyberpath.app.logout://logout` under **Valid post logout redirect URIs**. Keep existing web redirect URIs.
 4. Ensure the `openid`, `profile`, and `email` scopes are available. The backend may reject users whose email is not verified.
 5. If the app's Create account action should work, enable user registration for the realm. The native app opens the secure Keycloak page; the learner selects its Register link.
 6. Add the same `opencyberpath-api-audience` mapper/client scope to the Android client so its access token is accepted by the existing backend.

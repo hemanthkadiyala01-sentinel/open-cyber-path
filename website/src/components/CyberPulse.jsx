@@ -24,7 +24,7 @@ function timeAgo(value) {
   return `${days} day${days === 1 ? '' : 's'} ago`;
 }
 function statusText(status) {
-  return ({ ok: 'All feeds refreshed', partial: 'Some feeds refreshed', bootstrap: 'Initial snapshot · not synced', unavailable: 'Feed unavailable', ready: 'Status ready', fresh: 'Fresh', stale: 'Stale', 'not-run': 'Not run yet', 'not-recorded': 'Not recorded', 'review-due': 'Review due', 'review-current': 'Review current' })[status] || status || 'Unknown';
+  return ({ ok: 'All feeds refreshed', partial: 'Some feeds refreshed', bootstrap: 'Initial snapshot · not synced', unavailable: 'Feed unavailable', ready: 'Status ready', fresh: 'Fresh', stale: 'Stale', 'offline-cache': 'Offline cached snapshot - verify freshness', 'not-run': 'Not run yet', 'not-recorded': 'Not recorded', 'review-due': 'Review due', 'review-current': 'Review current' })[status] || status || 'Unknown';
 }
 function sourceClass(item) {
   const id = String(item?.sourceId || '').toLowerCase();
@@ -47,6 +47,7 @@ export default function CyberPulse() {
   const [sortMode, setSortMode] = useState('newest');
   const [loading, setLoading] = useState(true);
   const [reloadKey, setReloadKey] = useState(0);
+  const [usingOfflineCache, setUsingOfflineCache] = useState(false);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -54,12 +55,19 @@ export default function CyberPulse() {
     setLoading(true);
     setError('');
     Promise.all([
-      fetch(`${FEED_URL}?_=${Date.now()}`, { cache: 'no-store', signal: controller.signal }).then((r) => { if (!r.ok) throw new Error(`Feed HTTP ${r.status}`); return r.json(); }),
-      fetch(`${FRESHNESS_URL}?_=${Date.now()}`, { cache: 'no-store', signal: controller.signal }).then((r) => { if (!r.ok) throw new Error(`Freshness HTTP ${r.status}`); return r.json(); }).catch(() => null),
-    ]).then(([feedData, freshnessData]) => {
+      fetch(FEED_URL, { cache: 'no-store', signal: controller.signal }).then((response) => {
+        if (!response.ok) throw new Error(`Feed HTTP ${response.status}`);
+        return response.json().then((data) => ({ data, offlineCache: response.headers.get('X-OpenCyberPath-Data-Source') === 'offline-cache' }));
+      }),
+      fetch(FRESHNESS_URL, { cache: 'no-store', signal: controller.signal }).then((response) => {
+        if (!response.ok) throw new Error(`Freshness HTTP ${response.status}`);
+        return response.json().then((data) => ({ data, offlineCache: response.headers.get('X-OpenCyberPath-Data-Source') === 'offline-cache' }));
+      }).catch(() => null),
+    ]).then(([feedResult, freshnessResult]) => {
       if (!active) return;
-      setFeed(feedData);
-      setFreshness(freshnessData);
+      setFeed(feedResult.data);
+      setFreshness(freshnessResult?.data || null);
+      setUsingOfflineCache(Boolean(feedResult.offlineCache || freshnessResult?.offlineCache));
     }).catch((cause) => {
       if (!active || cause?.name === 'AbortError') return;
       setError('The published news snapshot could not be loaded. Try again later; the original provider websites may still be available.');
@@ -84,7 +92,7 @@ export default function CyberPulse() {
   const sourceRows = feed?.sources || [];
   const refreshedSources = sourceRows.filter((source) => source.status === 'fresh').length;
   const feedAgeHours = (() => { const d = parseDate(feed?.lastSuccessfulSyncAt); return d ? (Date.now() - d.getTime()) / 3600000 : Infinity; })();
-  const overallFeedStatus = !feed?.lastSuccessfulSyncAt ? (feed?.status || 'unavailable') : (feedAgeHours > 12 ? 'stale' : (feed?.status || 'unavailable'));
+  const overallFeedStatus = usingOfflineCache ? 'offline-cache' : (!feed?.lastSuccessfulSyncAt ? (feed?.status || 'unavailable') : (feedAgeHours > 12 ? 'stale' : (feed?.status || 'unavailable')));
 
   return <section className="cyberpulse-page" aria-labelledby="cyberpulse-title">
     <section className="cyberpulse-hero">
@@ -109,6 +117,7 @@ export default function CyberPulse() {
       <div><span>Latest snapshot</span><strong>{feed?.generatedAt ? dateLabel(feed.generatedAt) : '—'}</strong><small>Generation time, not article publication time</small></div>
     </section>
 
+    {usingOfflineCache && <div className="cyberpulse-alert is-notice" role="status"><strong>Offline cached snapshot</strong><p>A fresh network response was unavailable, so this is the last cached copy. Its generation and source timestamps are shown below. Reconnect and reload to verify current data.</p></div>}
     {error && <div className="cyberpulse-alert" role="alert"><strong>Feed unavailable</strong><p>{error}</p><button type="button" onClick={() => setReloadKey((value) => value + 1)}>Retry</button></div>}
     {feed?.status === 'bootstrap' && <div className="cyberpulse-alert is-notice"><strong>Initial snapshot</strong><p>The scheduled feed has not completed a successful refresh yet. Records may be a starter snapshot until the source collector runs with network access.</p></div>}
     {feed?.status === 'partial' && <div className="cyberpulse-alert is-notice"><strong>Partial source refresh</strong><p>Some sources did not respond. Their last-known records are preserved and may be stale. Check each source status below.</p></div>}

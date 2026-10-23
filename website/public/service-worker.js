@@ -37,6 +37,43 @@ async function saveResponse(request, response) {
   await cache.put(request, response.clone());
 }
 
+// Mutable feeds must try the network first. CacheStorage is only a fallback for offline use.
+async function handleMutableData(request) {
+  try {
+    const freshRequest = new Request(request, { cache: 'no-store' });
+    const response = await fetch(freshRequest);
+    if (response.ok && response.type !== 'opaque') {
+      try {
+        const cache = await caches.open(RUNTIME_CACHE);
+        await cache.put(request, response.clone());
+      } catch { /* A cache quota/error must never block a fresh network response. */ }
+    }
+    return response;
+  } catch {
+    try {
+      const cache = await caches.open(RUNTIME_CACHE);
+      const cached = await cache.match(request);
+      if (cached) {
+        const headers = new Headers(cached.headers);
+        headers.set('X-OpenCyberPath-Data-Source', 'offline-cache');
+        return new Response(cached.body, {
+          status: cached.status,
+          statusText: cached.statusText,
+          headers,
+        });
+      }
+    } catch { /* An unavailable cache should fall through to the explicit offline response. */ }
+    return new Response('Live data is unavailable while offline and no cached copy exists.', {
+      status: 503,
+      headers: {
+        'Content-Type': 'text/plain; charset=utf-8',
+        'Cache-Control': 'no-store',
+        'X-OpenCyberPath-Data-Source': 'unavailable',
+      },
+    });
+  }
+}
+
 async function handleNavigation(request) {
   try {
     const response = await fetch(request);
@@ -75,8 +112,15 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  // JSON/CSV/text/XML feeds change over time: never serve their cache before trying the network.
+  const isMutableData = /\.(?:json|csv|txt|xml|rss|ndjson)$/i.test(url.pathname);
+  if (isMutableData) {
+    event.respondWith(handleMutableData(request));
+    return;
+  }
+
   const cacheableAsset = ['script', 'style', 'image', 'font'].includes(request.destination)
-    || /\.(?:js|mjs|css|svg|png|jpe?g|webp|gif|ico|woff2?|ttf|pdf|docx?|csv|json|txt|zip|xlsx?)(?:$|\?)/i.test(url.pathname + url.search);
+    || /\.(?:js|mjs|css|svg|png|jpe?g|webp|gif|ico|woff2?|ttf|pdf|docx?|zip|xlsx?)(?:$|\?)/i.test(url.pathname + url.search);
   if (!cacheableAsset) return;
 
   event.respondWith((async () => {

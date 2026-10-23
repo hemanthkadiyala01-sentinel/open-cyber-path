@@ -15,13 +15,19 @@ const oidcConfig = {
   realm: import.meta.env.VITE_OIDC_REALM,
   clientId: import.meta.env.VITE_OIDC_CLIENT_ID,
 };
-const configured = Boolean(oidcConfig.url && oidcConfig.realm && oidcConfig.clientId);
 const nativeRuntime = Capacitor.isNativePlatform();
+const webConfigured = Boolean(oidcConfig.url && oidcConfig.realm && oidcConfig.clientId);
+const nativeConfigured = Boolean(
+  oidcConfig.url && oidcConfig.realm && import.meta.env.VITE_NATIVE_OIDC_CLIENT_ID
+);
+const configured = nativeRuntime ? nativeConfigured : webConfigured;
 // keycloak-js is used for ordinary web sessions only. Capacitor Android uses an external-browser
 // Authorization Code + PKCE flow through AppAuth, then calls the same authenticated API.
-const identity = configured && !nativeRuntime ? new Keycloak(oidcConfig) : null;
+const identity = webConfigured && !nativeRuntime ? new Keycloak(oidcConfig) : null;
 const AuthContext = createContext(null);
 let initPromise;
+// A silent SSO/session check must not keep the entire app stuck in a loading state.
+const AUTH_INITIALIZATION_TIMEOUT_MS = 10000;
 
 async function initializeIdentity() {
   if (!identity) return false;
@@ -125,7 +131,17 @@ export function AuthProvider({ children }) {
   useEffect(() => {
     if (!identity) return undefined;
     let active = true;
-    initializeIdentity()
+    let timeoutId;
+    // Keycloak's check-sso can be delayed by browser cookie/iframe restrictions or client redirect settings.
+    // Bound the waiting state so sign-in controls become available and the problem is visible to the user.
+    const timeout = new Promise((_, reject) => {
+      timeoutId = window.setTimeout(
+        () => reject(new Error('auth_initialization_timeout')),
+        AUTH_INITIALIZATION_TIMEOUT_MS,
+      );
+    });
+
+    Promise.race([initializeIdentity(), timeout])
       .then((authenticated) => {
         if (!active) return;
         const claims = identity.tokenParsed || {};
@@ -141,8 +157,15 @@ export function AuthProvider({ children }) {
         if (!active) return;
         setError(true);
         setStatus('error');
+      })
+      .finally(() => {
+        if (timeoutId) window.clearTimeout(timeoutId);
       });
-    return () => { active = false; };
+
+    return () => {
+      active = false;
+      if (timeoutId) window.clearTimeout(timeoutId);
+    };
   }, []);
 
   useEffect(() => {

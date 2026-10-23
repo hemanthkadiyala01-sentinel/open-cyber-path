@@ -10,7 +10,7 @@ const config = {
 
 // These reverse-domain callbacks must be registered exactly in the public Keycloak client.
 export const NATIVE_OAUTH_REDIRECT = 'org.opencyberpath.app://oauth';
-export const NATIVE_LOGOUT_REDIRECT = 'org.opencyberpath.app://logout';
+export const NATIVE_LOGOUT_REDIRECT = 'org.opencyberpath.app.logout://logout';
 
 let session = {
   accessToken: null,
@@ -139,7 +139,7 @@ export async function getNativeAccessToken() {
 export function isNativeLogoutRedirect(rawUrl) {
   try {
     const url = new URL(rawUrl);
-    return url.protocol === 'org.opencyberpath.app:' && url.hostname === 'logout';
+    return url.protocol === 'org.opencyberpath.app.logout:' && url.hostname === 'logout';
   } catch {
     return false;
   }
