@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-23T05:19:56Z",
+  "generatedAt": "2026-10-23T12:04:50Z",
   "status": "ready",
   "summary": {
     "sections": 11,
@@ -14,9 +14,9 @@
       "label": "Cybersecurity news & advisories",
       "mode": "automatic",
       "cadence": "Every 6 hours",
-      "lastCheckedAt": "2026-10-23T05:19:56Z",
+      "lastCheckedAt": "2026-10-23T12:04:50Z",
       "status": "partial",
-      "summary": "5/8 public sources refreshed successfully in the latest run; community posts are labelled unverified signals."
+      "summary": "6/8 public sources refreshed successfully in the latest run; community posts are labelled unverified signals."
     },
     {
       "id": "liveops",
@@ -41,7 +41,7 @@
       "label": "Certification and exam source links",
       "mode": "automatic",
       "cadence": "Daily source monitor; weekly resource review",
-      "lastCheckedAt": "2026-10-22T19:34:39.100Z",
+      "lastCheckedAt": "2026-10-23T09:21:23.675Z",
       "status": "fresh",
       "summary": "Monitors page reachability and content change signals; exam terms and pricing still require issuer confirmation."
     },
