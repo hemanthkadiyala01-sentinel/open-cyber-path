@@ -17,7 +17,7 @@ concurrency:
 jobs:
   quality:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -27,7 +27,9 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: website/package-lock.json
+          cache-dependency-path: |
+            website/package-lock.json
+            backend/package-lock.json
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -51,3 +53,15 @@ jobs:
 
       - name: Run quality-check unit tests
         run: python -m unittest discover -s tests -v
+
+      - name: Install backend dependencies
+        working-directory: backend
+        run: npm ci
+
+      - name: Run backend tests
+        working-directory: backend
+        run: npm test
+
+      - name: Build backend TypeScript
+        working-directory: backend
+        run: npm run build
