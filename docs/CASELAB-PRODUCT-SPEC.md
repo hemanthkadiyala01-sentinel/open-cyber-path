@@ -1,6 +1,6 @@
 # OpenCyberPath CaseLab — Product Specification
 
-Status: Proposed next major milestone. This document is a design contract; it does not claim the module or new APIs have been implemented.
+Status: Product specification. The first CaseLab MVP slice implements one candidate case, synthetic evidence, authenticated append-only submissions, and a deterministic formative rubric. The broader multi-case experience and full production release gates remain incomplete; see docs/CASELAB-MVP-IMPLEMENTATION.md.
 
 ## Purpose
 
@@ -40,15 +40,15 @@ Each published case should contain:
 - Hints should teach and permit retries. Progression should encourage continued learning, not permanently trap a learner at beginner level.
 - A rubric score must be explainable. If AI feedback is introduced later, it must be labelled as automated assistance, constrained by a published rubric, reviewable by the learner, and not represented as independent certification.
 
-## Proposed API contract (not implemented yet)
+## API contract status
 
-- `GET /v1/cases`: published case catalogue, with filters/pagination.
-- `GET /v1/cases/:caseId`: case metadata and current published revision.
-- `GET /v1/cases/:caseId/evidence`: authorized or public training pack as appropriate; no secrets or live victim telemetry.
-- `POST /v1/cases/:caseId/submissions`: create a submission for the authenticated `sub`, including case revision, timeline, findings, decisions, validation plan, and evidence references.
-- `GET /v1/me/cases`: current learner's submissions and progress only.
-- `GET /v1/me/cases/:submissionId`: one submission owned by the authenticated learner.
-- `POST /v1/me/cases/:submissionId/revisions`: a new immutable attempt/revision, rather than silently overwriting prior work.
+- `GET /v1/cases`: implemented for the single candidate case; returns its public summary.
+- `GET /v1/cases/:caseId`: implemented for the candidate case; returns its source register, objectives, and response options.
+- `GET /v1/cases/:caseId/evidence`: implemented; returns only the clearly labelled synthetic training pack.
+- `POST /v1/cases/:caseId/submissions`: implemented for the candidate case; requires a verified authenticated account and persists an immutable attempt.
+- `GET /v1/me/cases`: implemented; returns saved attempts for the authenticated learner only.
+- `GET /v1/me/cases/:submissionId`: implemented; returns one submission owned by the authenticated learner.
+- `POST /v1/me/cases/:submissionId/revisions`: not implemented yet; a future revision must create a new immutable attempt rather than overwrite prior work.
 
 Names are provisional and should be reconciled with current backend conventions before implementation. All writes must derive user identity from the verified JWT subject, never a client-supplied `user_id`. Validate request schemas, apply rate limits, use parameterized SQL, keep account isolation enforced, and add tests for cross-user access denial. Do not store bearer/refresh tokens in case records or logs.
 

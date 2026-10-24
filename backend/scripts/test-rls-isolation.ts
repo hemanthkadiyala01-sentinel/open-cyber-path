@@ -43,7 +43,7 @@ const pool = new pg.Pool({
 let client: pg.PoolClient | undefined;
 let transactionStarted = false;
 
-type Counts = { profiles: number; progress_rows: number; notes: number; evidence_rows: number };
+type Counts = { profiles: number; progress_rows: number; notes: number; evidence_rows: number; case_submissions: number };
 
 async function setIdentity(userId: string): Promise<void> {
   const signature = createHmac('sha256', contextSecret!).update(userId, 'utf8').digest('hex');
@@ -63,7 +63,8 @@ async function countsFor(userId: string): Promise<Counts> {
        (SELECT count(*)::int FROM learner_profiles WHERE user_id = $1) AS profiles,
        (SELECT count(*)::int FROM learning_progress WHERE user_id = $1) AS progress_rows,
        (SELECT count(*)::int FROM learner_notes WHERE user_id = $1) AS notes,
-       (SELECT count(*)::int FROM evidence_records WHERE user_id = $1) AS evidence_rows`,
+       (SELECT count(*)::int FROM evidence_records WHERE user_id = $1) AS evidence_rows,
+       (SELECT count(*)::int FROM case_submissions WHERE user_id = $1) AS case_submissions`,
     [userId],
   );
   return result.rows[0] as Counts;
@@ -90,6 +91,22 @@ async function assertCrossAccountInsertRejected(sql: string, values: unknown[], 
     await client!.query('RELEASE SAVEPOINT cross_account_insert');
   }
   assert(rejected, `${label}: RLS did not reject the insert as expected${failure ? ` (code ${(failure as { code?: string }).code ?? 'unknown'})` : ''}.`);
+}
+
+async function assertRuntimeMutationDenied(sql: string, values: unknown[], label: string): Promise<void> {
+  await client!.query('SAVEPOINT runtime_mutation_check');
+  let denied = false;
+  let failure: unknown;
+  try {
+    await client!.query(sql, values);
+  } catch (error) {
+    failure = error;
+    denied = (error as { code?: string })?.code === '42501';
+  } finally {
+    await client!.query('ROLLBACK TO SAVEPOINT runtime_mutation_check');
+    await client!.query('RELEASE SAVEPOINT runtime_mutation_check');
+  }
+  assert(denied, `${label}: runtime role was expected to be denied by grants${failure ? ` (code ${(failure as { code?: string }).code ?? 'unknown'})` : ''}.`);
 }
 
 async function run(): Promise<void> {
@@ -120,6 +137,14 @@ async function run(): Promise<void> {
     [userA, 'Temporary RLS test A', 'Rollback-only test record'],
   );
 
+  await client.query(
+    `INSERT INTO case_submissions
+      (user_id, case_id, case_revision, attempt_no, evidence_refs, hypothesis_id, response_actions, findings, validation_plan, score, rubric_feedback)
+     VALUES ($1, $2, '1.0.0', 1, '[]'::jsonb, 'identity-compromise-suspected', '[]'::jsonb, 'RLS test record', 'Review audit logs and verify token/session revocation.', 10, '[]'::jsonb)
+     RETURNING submission_id`,
+    [userA, `rls-case-${runId}-a`],
+  );
+
   await setIdentity(userB);
   await client.query('INSERT INTO learner_profiles (user_id, display_name) VALUES ($1, $2)', [userB, 'Temporary RLS test B']);
   await client.query(
@@ -135,11 +160,18 @@ async function run(): Promise<void> {
      VALUES ($1, 'security-test', $2, $3, '{}'::jsonb) RETURNING evidence_id`,
     [userB, 'Temporary RLS test B', 'Rollback-only test record'],
   );
+  const caseSubmissionB = await client.query(
+    `INSERT INTO case_submissions
+      (user_id, case_id, case_revision, attempt_no, evidence_refs, hypothesis_id, response_actions, findings, validation_plan, score, rubric_feedback)
+     VALUES ($1, $2, '1.0.0', 1, '[]'::jsonb, 'identity-compromise-suspected', '[]'::jsonb, 'RLS test record', 'Review audit logs and verify token/session revocation.', 10, '[]'::jsonb)
+     RETURNING submission_id`,
+    [userB, `rls-case-${runId}-b`],
+  );
   console.log('PASS: both signed identities accepted and temporary rows created in the test transaction.');
 
   await assertCounts(userB, 1, 'Account B must see its own records');
   await assertCounts(userA, 0, 'Account B must not read Account A records');
-  console.log('PASS: Account B can read its own rows but cannot read Account A rows in all four tables.');
+  console.log('PASS: Account B can read its own rows but cannot read Account A rows in all five tables, including CaseLab submissions.');
 
   const updateCases: Array<{ label: string; sql: string; values: unknown[] }> = [
     { label: 'learner profile', sql: "UPDATE learner_profiles SET display_name = 'unauthorized' WHERE user_id = $1", values: [userA] },
@@ -152,6 +184,16 @@ async function run(): Promise<void> {
     assert(result.rowCount === 0, `Account B unexpectedly updated Account A ${entry.label}.`);
   }
   console.log('PASS: Account B cannot update Account A rows in all four tables.');
+
+  await assertRuntimeMutationDenied(
+    "UPDATE case_submissions SET findings = 'must remain immutable' WHERE submission_id = $1",
+    [caseSubmissionB.rows[0].submission_id], 'CaseLab submission UPDATE',
+  );
+  await assertRuntimeMutationDenied(
+    'DELETE FROM case_submissions WHERE submission_id = $1',
+    [caseSubmissionB.rows[0].submission_id], 'CaseLab submission DELETE',
+  );
+  console.log('PASS: the runtime database role cannot update or delete its own CaseLab submission; attempts remain append-only.');
 
   const deleteCases: Array<{ label: string; sql: string; values: unknown[] }> = [
     { label: 'learner profile', sql: 'DELETE FROM learner_profiles WHERE user_id = $1', values: [userA] },
@@ -183,12 +225,18 @@ async function run(): Promise<void> {
      VALUES ($1, 'security-test', $2, $3, '{}'::jsonb)`,
     [userA, 'Unauthorized evidence', 'Must be rejected'], 'cross-account evidence insert',
   );
-  console.log('PASS: RLS WITH CHECK rejects cross-account inserts into all four tables.');
+  await assertCrossAccountInsertRejected(
+    `INSERT INTO case_submissions
+      (user_id, case_id, case_revision, attempt_no, evidence_refs, hypothesis_id, response_actions, findings, validation_plan, score, rubric_feedback)
+     VALUES ($1, $2, '1.0.0', 1, '[]'::jsonb, 'identity-compromise-suspected', '[]'::jsonb, 'cross-account test', 'Review audit logs and verify token/session revocation.', 10, '[]'::jsonb)`,
+    [userA, `cross-case-${runId}`], 'cross-account CaseLab insert',
+  );
+  console.log('PASS: RLS WITH CHECK rejects cross-account inserts into the protected learner tables, including CaseLab submissions.');
 
   await setIdentity(userA);
   await assertCounts(userA, 1, 'Account A must see its own records');
   await assertCounts(userB, 0, 'Account A must not read Account B records');
-  console.log('PASS: Account A can read its own rows but cannot read Account B rows in all four tables.');
+  console.log('PASS: Account A can read its own rows but cannot read Account B rows in all five tables, including CaseLab submissions.');
 
   const updateB = await client.query("UPDATE learner_notes SET title = 'unauthorized' WHERE note_id = $1", [noteB.rows[0].note_id]);
   assert(updateB.rowCount === 0, 'Account A unexpectedly updated Account B note.');

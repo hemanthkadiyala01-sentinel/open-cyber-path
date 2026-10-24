@@ -93,7 +93,7 @@ class RefreshFeedTests(unittest.TestCase):
         row = {"publishedAt": "2026-10-18T00:00:00Z", "updatedAt": "2026-10-18T00:00:00Z", "contentHash": "abc"}
         self.assertEqual(rf.calc_status(row, None), "NEW")
 
-    def test_all_source_failures_preserve_previous_records_and_snapshot_mode(self):
+    def test_all_source_failures_preserve_previous_records_and_feed_mode(self):
         original_feed = rf.read_existing()
         with tempfile.TemporaryDirectory() as temp_dir:
             test_path = Path(temp_dir) / "liveops-feed.json"
@@ -109,7 +109,7 @@ class RefreshFeedTests(unittest.TestCase):
             result = json.loads(test_path.read_text(encoding="utf-8"))
             self.assertEqual(exit_code, 1)
             self.assertEqual(len(result["items"]), len(original_feed["items"]))
-            self.assertEqual(result["feedMode"], "starter-snapshot")
+            self.assertEqual(result["feedMode"], original_feed["feedMode"])
             self.assertTrue(all(source["status"] == "error" for source in result["sources"]))
 
     def test_validator_rejects_identity_fields(self):
@@ -119,11 +119,11 @@ class RefreshFeedTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "identity fields"):
             rf.validate_feed(data)
 
-    def test_validator_accepts_seed_feed(self):
+    def test_validator_accepts_existing_feed(self):
         feed = rf.read_existing()
         rf.validate_feed(feed)
         self.assertGreaterEqual(len(feed["items"]), 3)
-        self.assertEqual(feed["feedMode"], "starter-snapshot")
+        self.assertIn(feed["feedMode"], {"starter-snapshot", "manual-refresh", "automated-refresh"})
 
 
 if __name__ == "__main__":
