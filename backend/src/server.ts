@@ -6,6 +6,7 @@ import { createRemoteJWKSet, jwtVerify } from 'jose';
 import { loadEnv } from './env.js';
 import { pool, withUserTransaction } from './db.js';
 import { isValidItemId, validateNoteInput, validateProgressInput } from './validation.js';
+import { registerCaseLabRoutes } from './caselab-routes.js';
 
 interface Principal { sub: string; email?: string; name?: string; emailVerified: boolean; }
 declare module 'fastify' { interface FastifyRequest { principal: Principal | null; } }
@@ -162,6 +163,8 @@ app.post<{ Body: unknown }>('/v1/notes', { preHandler: requireAuth }, async (req
   });
   return reply.code(201).send({ note });
 });
+
+await registerCaseLabRoutes(app, db, env.DATABASE_CONTEXT_HMAC_SECRET, requireAuth);
 
 app.setErrorHandler((error, request, reply) => {
   if (

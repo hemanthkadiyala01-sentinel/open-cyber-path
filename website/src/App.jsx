@@ -49,6 +49,7 @@ const YouTubeLiveLearning = lazy(() => import('./components/YouTubeLiveLearning.
 const CTFArcade = lazy(() => import('./components/CTFArcade.jsx')); // ctf-arcade-v1
 const SkillProof = lazy(() => import('./components/SkillProof.jsx')); // skillproof-portfolio-v1 // offline-learning-v1
 const CyberRange = lazy(() => import('./components/CyberRange.jsx')); // cyberrange-v1
+const CaseLab = lazy(() => import('./components/CaseLab.jsx')); // caselab-mvp-v1
 const CuratedVideosLibrary = lazy(() => import('./components/CuratedVideosLibrary.jsx'));
 const CareerVideoLibrary = lazy(() => import('./components/CareerVideoLibrary.jsx'));
  const CreatorIdentity = lazy(() => import('./components/CreatorIdentity.jsx'));
@@ -551,7 +552,7 @@ const NAVIGATION_STATE_STORAGE_KEY = 'opencyberpath-current-navigation-v1';
 const NAVIGABLE_PAGES = new Set([
   'home', 'learning-studio', 'roadmap', 'path-detail', 'resources', 'labs', 'ctf-lab',
   'liveops', 'cyber-pulse', 'youtube-live-learning', 'certifications', 'systems-academy',
-  'tools', 'career-hub', 'resume-studio', 'job-hub', 'application-demo', 'cyberrange',
+  'tools', 'career-hub', 'resume-studio', 'job-hub', 'application-demo', 'cyberrange', 'caselab',
   'offline-learning', 'skillproof', 'concepts', 'creator', 'learning-access',
 ]);
 
@@ -1168,9 +1169,9 @@ function App() {
             <nav className="nav-links nav-links-compact" aria-label="Main navigation">
         {[['home','Home'],['learning-studio','Learn'],['roadmap','Paths'],['resources','Resources'],['labs','Labs'],['ctf-lab','CTF Practice'],['liveops','LiveOps']].map(([key,label]) => <button key={key} className={`nav-link nav-key-${key} ${page === key || (page === 'path-detail' && key === 'roadmap') || (page === 'application-demo' && key === 'job-hub') ? 'active' : ''}`} onClick={() => { if (key === 'systems-academy') setAcademyPathId('all'); navigate(key); }}>{label}</button>)}
         <details className="nav-more-menu">
-          <summary className={`nav-link nav-more-summary ${page === 'cyber-pulse' || ['resources','ctf-lab','liveops','certifications','systems-academy','tools','career-hub','resume-studio','job-hub','cyberrange','offline-learning','skillproof','concepts'].includes(page) || (page === 'application-demo' && ['certifications','systems-academy','tools','career-hub','resume-studio','job-hub','cyberrange','offline-learning','skillproof','concepts'].includes('job-hub')) ? 'active' : ''}`}><span>Discover</span><span aria-hidden="true">⌄</span></summary>
+          <summary className={`nav-link nav-more-summary ${page === 'cyber-pulse' || ['resources','ctf-lab','liveops','certifications','systems-academy','tools','career-hub','resume-studio','job-hub','cyberrange','caselab','offline-learning','skillproof','concepts'].includes(page) || (page === 'application-demo' && ['certifications','systems-academy','tools','career-hub','resume-studio','job-hub','cyberrange','offline-learning','skillproof','concepts'].includes('job-hub')) ? 'active' : ''}`}><span>Discover</span><span aria-hidden="true">⌄</span></summary>
           <div className="nav-more-panel" role="group" aria-label="More site sections">
-            {[['resources','Resources'],['ctf-lab','CTF Practice'],['liveops','LiveOps'],['certifications','Certs & Exams'],['systems-academy','OS + Networks'],['tools','Tools & films'],['career-hub','Career hub'],['resume-studio','Resume'],['job-hub','Jobs'],['cyberrange','CyberRange'],['offline-learning','Offline learning'],['skillproof','SkillProof'],['concepts','Basics']].map(([key,label]) => <button type="button" key={key} className={`nav-link nav-key-${key} ${page === key || (page === 'application-demo' && key === 'job-hub') ? 'active' : ''}`} onClick={(event) => { event.currentTarget.closest('details')?.removeAttribute('open'); if (key === 'systems-academy') setAcademyPathId('all'); navigate(key); }}>{label}</button>)}
+            {[['resources','Resources'],['ctf-lab','CTF Practice'],['liveops','LiveOps'],['certifications','Certs & Exams'],['systems-academy','OS + Networks'],['tools','Tools & films'],['career-hub','Career hub'],['resume-studio','Resume'],['job-hub','Jobs'],['cyberrange','CyberRange'],['caselab','CaseLab'],['offline-learning','Offline learning'],['skillproof','SkillProof'],['concepts','Basics']].map(([key,label]) => <button type="button" key={key} className={`nav-link nav-key-${key} ${page === key || (page === 'application-demo' && key === 'job-hub') ? 'active' : ''}`} onClick={(event) => { event.currentTarget.closest('details')?.removeAttribute('open'); if (key === 'systems-academy') setAcademyPathId('all'); navigate(key); }}>{label}</button>)}
                       <button type="button" className={`nav-link ${page === 'cyber-pulse' ? 'active' : ''}`} onClick={(event) => { event.currentTarget.closest('details')?.removeAttribute('open'); navigate('cyber-pulse'); }}>CyberPulse Ã‚· News & freshness</button>            <button type="button" className={`nav-link ${page === 'youtube-live-learning' ? 'active' : ''}`} onClick={(event) => { event.currentTarget.closest('details')?.removeAttribute('open'); navigate('youtube-live-learning'); }}>YouTube Live Learning</button></div>
         </details>
       </nav>
@@ -1527,6 +1528,8 @@ function App() {
       {page === 'systems-academy' && <Suspense fallback={<p className='section-loading'>Loading OS and networks academy...</p>}><SystemsAcademy Icon={Icon} careerPaths={learningPaths} initialPathId={academyPathId} onOpenLabs={() => navigate('labs')} /></Suspense>}
 
       {page === 'cyberrange' && <Suspense fallback={<p className="section-loading">Loading CyberRange practice cases...</p>}><CyberRange /></Suspense>}
+
+      {page === 'caselab' && <Suspense fallback={<p className="section-loading">Loading CaseLab investigation...</p>}><CaseLab /></Suspense>}
 
       {page === 'labs' && labCatalogue && <section className="section-wrap labs-section">
         <PageHeading kicker="PRACTISE AT YOUR OWN PACE" title="Notes, labs &" emphasis="field guides." description="Start with a notebook, use supplied sample data, and practise in a local or explicitly authorised training environment. Each guide is available as a PDF and editable DOCX." />
