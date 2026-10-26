@@ -1,0 +1,150 @@
+name: opencyberpath-staging
+
+services:
+  postgres:
+    build:
+      context: ../..
+      dockerfile: Dockerfile.staging-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env.staging}
+      KEYCLOAK_DB_PASSWORD: ${KEYCLOAK_DB_PASSWORD:?Set KEYCLOAK_DB_PASSWORD in .env.staging}
+      APP_OWNER_PASSWORD: ${APP_OWNER_PASSWORD:?Set APP_OWNER_PASSWORD in .env.staging}
+      APP_RUNTIME_PASSWORD: ${APP_RUNTIME_PASSWORD:?Set APP_RUNTIME_PASSWORD in .env.staging}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - private
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d postgres"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    security_opt:
+      - no-new-privileges:true
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.8.1
+    command: ["start"]
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      KC_DB: postgres
+      KC_DB_URL: jdbc:postgresql://postgres:5432/keycloak
+      KC_DB_USERNAME: keycloak
+      KC_DB_PASSWORD: ${KEYCLOAK_DB_PASSWORD:?Set KEYCLOAK_DB_PASSWORD in .env.staging}
+      KC_HTTP_ENABLED: "true"
+      KC_PROXY_HEADERS: xforwarded
+      KC_HOSTNAME: https://${AUTH_DOMAIN:?Set AUTH_DOMAIN in .env.staging}
+      KC_HEALTH_ENABLED: "true"
+      KC_BOOTSTRAP_ADMIN_USERNAME: ${KEYCLOAK_ADMIN_USERNAME:?Set KEYCLOAK_ADMIN_USERNAME in .env.staging}
+      KC_BOOTSTRAP_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD:?Set KEYCLOAK_ADMIN_PASSWORD in .env.staging}
+    expose:
+      - "8080"
+    networks:
+      - private
+      - edge
+    security_opt:
+      - no-new-privileges:true
+
+  api:
+    build:
+      context: ../..
+      dockerfile: Dockerfile.staging-api
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      keycloak:
+        condition: service_started
+    environment:
+      NODE_ENV: staging
+      HOST: 0.0.0.0
+      PORT: "3000"
+      CORS_ORIGINS: https://${WEB_DOMAIN:?Set WEB_DOMAIN in .env.staging}
+      DATABASE_URL: postgresql://opencyberpath_runtime:${APP_RUNTIME_PASSWORD:?Set APP_RUNTIME_PASSWORD in .env.staging}@postgres:5432/opencyberpath
+      MIGRATION_DATABASE_URL: postgresql://opencyberpath_owner:${APP_OWNER_PASSWORD:?Set APP_OWNER_PASSWORD in .env.staging}@postgres:5432/opencyberpath
+      DATABASE_SSL: "false"
+      DATABASE_CONTEXT_HMAC_SECRET: ${DATABASE_CONTEXT_HMAC_SECRET:?Set DATABASE_CONTEXT_HMAC_SECRET in .env.staging}
+      OIDC_ISSUER_URL: https://${AUTH_DOMAIN:?Set AUTH_DOMAIN in .env.staging}/realms/opencyberpath
+      OIDC_AUDIENCE: opencyberpath-api
+    expose:
+      - "3000"
+    networks:
+      - private
+      - edge
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/healthz').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 60s
+    security_opt:
+      - no-new-privileges:true
+
+  web:
+    build:
+      context: ../../website
+      dockerfile: Dockerfile.staging-web
+      args:
+        VITE_OIDC_URL: https://${AUTH_DOMAIN:?Set AUTH_DOMAIN in .env.staging}
+        VITE_OIDC_REALM: opencyberpath
+        VITE_OIDC_CLIENT_ID: opencyberpath-web
+        VITE_NATIVE_OIDC_CLIENT_ID: opencyberpath-android
+        VITE_API_BASE_URL: https://${API_DOMAIN:?Set API_DOMAIN in .env.staging}
+    restart: unless-stopped
+    expose:
+      - "8080"
+    networks:
+      - edge
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:8080/healthz').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    security_opt:
+      - no-new-privileges:true
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    depends_on:
+      api:
+        condition: service_healthy
+      web:
+        condition: service_healthy
+      keycloak:
+        condition: service_started
+    environment:
+      ACME_EMAIL: ${ACME_EMAIL:?Set ACME_EMAIL in .env.staging}
+      WEB_DOMAIN: ${WEB_DOMAIN:?Set WEB_DOMAIN in .env.staging}
+      API_DOMAIN: ${API_DOMAIN:?Set API_DOMAIN in .env.staging}
+      AUTH_DOMAIN: ${AUTH_DOMAIN:?Set AUTH_DOMAIN in .env.staging}
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      - edge
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  postgres_data:
+  caddy_data:
+  caddy_config:
+
+networks:
+  private:
+    internal: true
+  edge:
+    driver: bridge

@@ -1,0 +1,25 @@
+# Build Vite assets with the public staging URLs embedded at build time.
+FROM node:22-bookworm-slim AS build
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
+COPY . ./
+ARG VITE_OIDC_URL
+ARG VITE_OIDC_REALM=opencyberpath
+ARG VITE_OIDC_CLIENT_ID=opencyberpath-web
+ARG VITE_NATIVE_OIDC_CLIENT_ID=opencyberpath-android
+ARG VITE_API_BASE_URL
+ENV VITE_OIDC_URL=${VITE_OIDC_URL} \
+    VITE_OIDC_REALM=${VITE_OIDC_REALM} \
+    VITE_OIDC_CLIENT_ID=${VITE_OIDC_CLIENT_ID} \
+    VITE_NATIVE_OIDC_CLIENT_ID=${VITE_NATIVE_OIDC_CLIENT_ID} \
+    VITE_API_BASE_URL=${VITE_API_BASE_URL}
+RUN npm run build
+
+FROM node:22-bookworm-slim
+ENV NODE_ENV=production PORT=8080
+WORKDIR /app
+COPY --from=build /app/dist ./dist
+COPY --from=build /app/scripts/serve-static-staging.mjs ./scripts/serve-static-staging.mjs
+EXPOSE 8080
+CMD ["node", "scripts/serve-static-staging.mjs"]

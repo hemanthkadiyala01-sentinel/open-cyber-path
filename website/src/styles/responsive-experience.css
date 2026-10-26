@@ -406,3 +406,71 @@ main > * { min-width: 0; max-width: 100%; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* OCP-MOBILE-MAINTENANCE-V1 */
+@media (max-width: 600px) {
+  .header-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 8px;
+    width: 100%;
+    min-width: 0;
+  }
+  .header-actions > * { min-width: 0; max-width: 100%; box-sizing: border-box; }
+  .header-actions .header-search {
+    grid-column: 1 / -1;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+  .header-actions .header-search input {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .header-actions button,
+  .header-actions a {
+    width: 100%;
+    min-width: 0;
+    min-height: 44px;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .tour-invitation-art,
+  .tour-invitation-copy {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+  .tour-invitation-copy h2 {
+    font-size: clamp(1.65rem, 7.1vw, 2.25rem);
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+  }
+  .tour-invitation-copy p {
+    font-size: clamp(1rem, 4.2vw, 1.125rem);
+    line-height: 1.65;
+  }
+  .tour-invitation button,
+  .tour-invitation a,
+  .tour-invitation-copy button,
+  .tour-invitation-copy a {
+    min-height: 44px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .tour-invitation .hero-actions,
+  .tour-invitation-copy .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .tour-invitation .hero-actions > *,
+  .tour-invitation-copy .hero-actions > * {
+    flex: 1 1 140px;
+    min-width: 0;
+  }
+  html, body { max-width: 100%; overflow-x: clip; }
+}

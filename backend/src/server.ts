@@ -7,12 +7,14 @@ import { loadEnv } from './env.js';
 import { pool, withUserTransaction } from './db.js';
 import { isValidItemId, validateNoteInput, validateProgressInput } from './validation.js';
 import { registerCaseLabRoutes } from './caselab-routes.js';
+import { createLiveIntelligenceService } from './live-intelligence.js';
 
 interface Principal { sub: string; email?: string; name?: string; emailVerified: boolean; }
 declare module 'fastify' { interface FastifyRequest { principal: Principal | null; } }
 
 const env = loadEnv();
 const db = pool(env);
+const liveIntelligence = createLiveIntelligenceService();
 const app = Fastify({
   logger: { redact: ['req.headers.authorization', 'req.headers.cookie'] },
   bodyLimit: 64 * 1024,
@@ -72,6 +74,37 @@ async function requireAuth(request: FastifyRequest, reply: FastifyReply) {
     await reply.code(401).send({ error: 'invalid_or_expired_token' });
   }
 }
+
+// Public, read-only incident feed endpoint. Each page load gets a no-cache snapshot;
+// an upstream refresh runs in the background only when the snapshot is due.
+app.get('/v1/live-intelligence', {
+  config: { rateLimit: { max: 60, timeWindow: '1 minute' } },
+}, async (_request, reply) => {
+  reply.header('Cache-Control', 'no-store, no-cache, max-age=0, must-revalidate');
+  reply.header('Pragma', 'no-cache');
+  const result = await liveIntelligence.getSnapshot();
+  if (!result.ok) {
+    return reply.code(503).send({ error: 'live_intelligence_unavailable', detail: result.error });
+  }
+  return result.feed;
+});
+
+// Manual provider refresh. Source URLs are fixed and allow-listed in the Python collector;
+// this endpoint accepts no URL or command input and is throttled per client IP.
+app.post('/v1/live-intelligence/refresh', {
+  config: { rateLimit: { max: 1, timeWindow: '60 seconds' } },
+}, async (_request, reply) => {
+  reply.header('Cache-Control', 'no-store, no-cache, max-age=0, must-revalidate');
+  const result = await liveIntelligence.triggerRefresh();
+  if (result.status === 'snapshot-only') {
+    return reply.code(503).send({ status: result.status, error: 'on_demand_refresh_unavailable' });
+  }
+  if (result.status === 'cooldown') {
+    reply.header('Retry-After', String(result.retryAfterSeconds ?? 60));
+    return reply.code(429).send(result);
+  }
+  return reply.code(202).send(result);
+});
 
 app.get('/healthz', async (_request, reply) => {
   try {

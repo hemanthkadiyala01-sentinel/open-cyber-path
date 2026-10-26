@@ -1,0 +1,49 @@
+name: Refresh Live Case Intelligence
+
+on:
+  schedule:
+    - cron: '17 */3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-live-case-intelligence
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout default branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Test feed parsers and preservation rules
+        run: python -m unittest discover -s tools/liveops -p 'test_refresh_live_case_intelligence.py' -v
+
+      - name: Refresh public incident/advisory signals
+        run: python tools/liveops/refresh_live_case_intelligence.py
+
+      - name: Commit only the generated feed snapshot
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add website/public/live-case-intelligence.json
+          if git diff --cached --quiet; then
+            echo "No source/feed changes to publish."
+            exit 0
+          fi
+          git commit -m "chore(live-ops): refresh public incident intelligence"
+          git push origin HEAD:${{ github.event.repository.default_branch }}

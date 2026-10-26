@@ -1,0 +1,7 @@
+FROM postgres:17.11-alpine
+
+# Reuse the database role/database bootstrap that the local development stack uses.
+# It executes only when PostgreSQL initializes an EMPTY data directory.
+COPY --chmod=0755 infra/postgres/init/01-create-roles-and-databases.sh /docker-entrypoint-initdb.d/01-create-roles-and-databases.sh
+
+EXPOSE 5432

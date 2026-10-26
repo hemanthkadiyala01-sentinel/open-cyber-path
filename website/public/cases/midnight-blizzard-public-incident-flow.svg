@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 680" role="img" aria-labelledby="title desc">
+<title id="title">Publicly reported Midnight Blizzard incident flow</title>
+<desc id="desc">A simplified source-backed flow from a reported password-spray foothold through OAuth application abuse and corporate email access, followed by reported follow-on attempts and defensive response. This is not victim telemetry.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b2836"/><stop offset="1" stop-color="#06131f"/></linearGradient>
+  <linearGradient id="node" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#123a4a"/><stop offset="1" stop-color="#0b202d"/></linearGradient>
+  <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#2b5968" stroke-width=".7" opacity=".38"/></pattern>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#37dfc0"/></marker>
+</defs>
+<rect width="1440" height="680" rx="24" fill="url(#bg)"/><rect width="1440" height="680" rx="24" fill="url(#grid)"/>
+<text x="58" y="58" fill="#35f2bd" font-family="monospace" font-size="15" letter-spacing="3">PUBLIC INCIDENT FLOW · SOURCE-BACKED SUMMARY</text>
+<text x="58" y="98" fill="#eefafa" font-family="Arial,sans-serif" font-size="32" font-weight="700">Midnight Blizzard: the reported sequence</text>
+<text x="58" y="128" fill="#9ebcc7" font-family="Arial,sans-serif" font-size="16">Simplified from public Microsoft disclosures and response guidance. Dates and steps shown are not a complete forensic timeline.</text>
+<g font-family="Arial,sans-serif">
+  <rect x="52" y="188" width="246" height="174" rx="16" fill="url(#node)" stroke="#2b7480" stroke-width="2"/>
+  <text x="74" y="222" fill="#35f2bd" font-family="monospace" font-size="12">01 · REPORTED ENTRY</text>
+  <text x="74" y="258" fill="#effafa" font-size="20" font-weight="700">Password spraying</text>
+  <text x="74" y="290" fill="#b8d0d7" font-size="14"><tspan x="74" dy="0">Against a legacy</tspan><tspan x="74" dy="20">non-production test</tspan><tspan x="74" dy="20">tenant account.</tspan></text>
+  <path d="M300 275H340" stroke="#37dfc0" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="350" y="188" width="246" height="174" rx="16" fill="url(#node)" stroke="#2b7480" stroke-width="2"/>
+  <text x="372" y="222" fill="#35f2bd" font-family="monospace" font-size="12">02 · FOOTHOLD</text>
+  <text x="372" y="258" fill="#effafa" font-size="20" font-weight="700">Account access</text>
+  <text x="372" y="290" fill="#b8d0d7" font-size="14"><tspan x="372" dy="0">The account was reported</tspan><tspan x="372" dy="20">as the initial foothold;</tspan><tspan x="372" dy="20">context and permissions matter.</tspan></text>
+  <path d="M598 275H638" stroke="#37dfc0" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="648" y="188" width="246" height="174" rx="16" fill="url(#node)" stroke="#2b7480" stroke-width="2"/>
+  <text x="670" y="222" fill="#35f2bd" font-family="monospace" font-size="12">03 · IDENTITY / OAUTH</text>
+  <text x="670" y="258" fill="#effafa" font-size="20" font-weight="700">App permissions</text>
+  <text x="670" y="290" fill="#b8d0d7" font-size="14"><tspan x="670" dy="0">Public reports described</tspan><tspan x="670" dy="20">OAuth application abuse</tspan><tspan x="670" dy="20">and elevated permissions.</tspan></text>
+  <path d="M896 275H936" stroke="#37dfc0" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="946" y="188" width="246" height="174" rx="16" fill="url(#node)" stroke="#2b7480" stroke-width="2"/>
+  <text x="968" y="222" fill="#35f2bd" font-family="monospace" font-size="12">04 · REPORTED IMPACT</text>
+  <text x="968" y="258" fill="#effafa" font-size="20" font-weight="700">Email access</text>
+  <text x="968" y="290" fill="#b8d0d7" font-size="14"><tspan x="968" dy="0">Some corporate email was</tspan><tspan x="968" dy="20">accessed and exfiltrated,</tspan><tspan x="968" dy="20">according to Microsoft.</tspan></text>
+  <path d="M1194 275H1234" stroke="#37dfc0" stroke-width="3" marker-end="url(#arrow)"/>
+  <rect x="1244" y="188" width="144" height="174" rx="16" fill="#132f32" stroke="#34bca2" stroke-width="2"/>
+  <text x="1262" y="222" fill="#35f2bd" font-family="monospace" font-size="12">05 · FOLLOW-ON</text>
+  <text x="1262" y="258" fill="#effafa" font-size="18" font-weight="700">Further use</text>
+  <text x="1262" y="290" fill="#b8d0d7" font-size="13"><tspan x="1262" dy="0">Reported attempts</tspan><tspan x="1262" dy="19">using information</tspan><tspan x="1262" dy="19">from email.</tspan></text>
+</g>
+<rect x="52" y="410" width="1336" height="185" rx="18" fill="#0a202b" stroke="#2d5966" stroke-width="1.5"/>
+<text x="80" y="449" fill="#35f2bd" font-family="monospace" font-size="13" letter-spacing="2">DEFENSIVE RESPONSE / WHAT THE LEARNER PRACTISES</text>
+<g font-family="Arial,sans-serif" fill="#d8ecef" font-size="16">
+  <text x="82" y="489"><tspan font-weight="700">Identity:</tspan><tspan> correlate sign-in, app consent, permission, and mailbox audit events.</tspan></text>
+  <text x="82" y="523"><tspan font-weight="700">Scope:</tspan><tspan> separate confirmed incident statements from gaps and synthetic exercise records.</tspan></text>
+  <text x="82" y="557"><tspan font-weight="700">Response:</tspan><tspan> preserve evidence, review access, remediate proportionately, and verify recovery.</tspan></text>
+</g>
+<text x="58" y="635" fill="#e0bd87" font-family="Arial,sans-serif" font-size="13">Integrity note: this is an original educational diagram based on public statements—not a Microsoft internal diagram or victim telemetry.</text>
+</svg>
