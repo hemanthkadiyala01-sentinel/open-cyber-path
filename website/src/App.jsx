@@ -285,9 +285,9 @@ const attackPatterns = [
 const gratitudeQuotes = [
   { id: 'stuck', number: '01', label: 'WHEN YOU FEEL STUCK', icon: 'target', tone: 'coral', quote: 'Stuck does not mean incapable. It means you have reached the edge of what you know. Turn the problem into one small question, test one idea, and keep moving.', nextStep: 'Write down one question you can answer next.' },
   { id: 'starting', number: '02', label: 'STARTING FROM ZERO', icon: 'route', tone: 'blue', quote: 'You do not need a perfect setup or a paid course to begin. Start with one trusted resource, one safe lab, and the curiosity to ask why.', nextStep: 'Choose one beginner resource and spend 20 focused minutes with it.' },
-  { id: 'lab', number: '03', label: 'WHEN A LAB DOESNâ€™T WORK', icon: 'terminal', tone: 'violet', quote: 'A failed test is feedback-not a verdict on your ability. Read the error, change one thing at a time, and learn what the result tells you.', nextStep: 'Explain the error in your own words before trying again.' },
+  { id: 'lab', number: '03', label: 'WHEN A LAB DOESN’T WORK', icon: 'terminal', tone: 'violet', quote: 'A failed test is feedback-not a verdict on your ability. Read the error, change one thing at a time, and learn what the result tells you.', nextStep: 'Explain the error in your own words before trying again.' },
   { id: 'portfolio', number: '04', label: 'BUILDING YOUR PORTFOLIO', icon: 'chart', tone: 'amber', quote: 'A small project you can explain is stronger than a giant project you barely understand. Show your evidence, decisions, limits, and what you learned.', nextStep: 'Document one finding, screenshot, or lesson from today.' },
-  { id: 'comparison', number: '05', label: 'WHEN OTHERS SEEM AHEAD', icon: 'spark', tone: 'teal', quote: 'Do not compare your first chapter to someone elseâ€™s tenth year. Measure progress by what you can explain today that confused you yesterday.', nextStep: 'Write down one thing you understand now that was confusing last week.' },
+  { id: 'comparison', number: '05', label: 'WHEN OTHERS SEEM AHEAD', icon: 'spark', tone: 'teal', quote: 'Do not compare your first chapter to someone else’s tenth year. Measure progress by what you can explain today that confused you yesterday.', nextStep: 'Write down one thing you understand now that was confusing last week.' },
   { id: 'gratitude', number: '06', label: 'PASS THE KNOWLEDGE ON', icon: 'users', tone: 'gold', quote: 'When a tutorial, tool, or kind answer helps you, acknowledge the people behind it. Credit the source, respect its terms, then make the path clearer for the next learner.', nextStep: 'Share one useful resource and credit the person or project behind it.' },
 ];
 
@@ -439,7 +439,7 @@ function ResourceCard({ resource }) {
           <section className="resource-detail-section"><small>ACCESS &amp; SETUP</small><p><b>{resource.kind}</b> · {resource.account || 'Check the provider page for current sign-in requirements.'}</p></section>
           <section className="resource-detail-section"><small>PROVIDER NOTE</small><p>{resource.note || 'Review the provider page for current prerequisites, terms, and setup instructions.'}</p></section>
           <section className="resource-detail-section"><small>HOW TO BEGIN</small><ol className="resource-detail-steps"><li>Review the provider page for its intended audience, current structure, and prerequisites.</li><li>Start with the overview or introductory material the provider recommends for your level.</li><li>Before hands-on work, check any account, cost, lab-permission, and environment requirements.</li></ol></section>
-          <p className="resource-detail-disclaimer">This is an external resource. OpenCyberPath does not host or control the providerâ€™s content, access policy, prices, or availability. Always check the original page.</p>
+          <p className="resource-detail-disclaimer">This is an external resource. OpenCyberPath does not host or control the provider’s content, access policy, prices, or availability. Always check the original page.</p>
         </div>
       </details>
       <ExternalLink className="card-link" href={resource.url}>Open resource <Icon name="arrow-up-right" size={16} /></ExternalLink>
@@ -1144,7 +1144,7 @@ function App() {
     }
   };
   const copyGratitudeQuote = async (quote) => {
-    const shareText = `â€œ${quote}â€\n- OpenCyberPath (original reflection)`;
+    const shareText = `“${quote}”\n- OpenCyberPath (original reflection)`;
     try {
       if (!navigator.clipboard?.writeText) throw new Error('Clipboard access is unavailable');
       await navigator.clipboard.writeText(shareText);
@@ -1196,7 +1196,7 @@ function App() {
           <div className="hero-visual"><img className="hero-image" src="/images/learning/detection-engineering-lab.webp" alt="Analyst reviewing detection outcomes, event charts, and alert logic" onError={handleArtworkError} /><div className="hero-image-vignette"/><div className="hero-sticker sticker-top"><Icon name="book-open" size={19} /><span><small>LEARN</small><b>Understand the basics</b></span></div><div className="hero-sticker sticker-bottom"><Icon name="target" size={19} /><span><small>PRACTISE</small><b>Build evidence of skill</b></span></div><div className="hero-quote"><Icon name="spark" size={19} /><p>Learn it.<br />Practise it.<br /><b>Share what you discover.</b></p></div></div>
         </section>
         {showTourInvitation && <section className="tour-invitation" aria-labelledby="tour-invitation-title">
-          <div className="tour-invitation-art" aria-hidden="true"><span className="tour-invitation-art-symbol">âœ¦</span><small>SCENE 01 - PLAY INTRO</small></div>
+          <div className="tour-invitation-art" aria-hidden="true"><span className="tour-invitation-art-symbol">✦</span><small>SCENE 01 - PLAY INTRO</small></div>
           <div className="tour-invitation-copy"><div className="tour-invitation-kicker">OPTIONAL · 7-SCENE DISCOVERY TOUR</div><h2 id="tour-invitation-title">Find the part of cybersecurity that calls to you.</h2><p>A short, cinematic guide to the main sections, including learning paths, resources, exams, labs, tools, and career support. It will suggest a starting point based on your interest, without locking you into a route.</p></div>
           <div className="tour-invitation-actions"><button type="button" className="tour-invitation-play" onClick={openWelcomeTour}><span aria-hidden="true">▶</span> Play the intro <span aria-hidden="true">↗</span></button><button type="button" className="tour-invitation-later" onClick={dismissTourInvitation}>Not now</button></div>
         </section>}
@@ -1211,7 +1211,7 @@ function App() {
         <AdaptiveLearningPlanner paths={learningPaths} moduleProgress={moduleProgress} onOpenPath={openLearningPath} />
 
         <section className="quote-spotlight" aria-labelledby="quote-spotlight-title">
-          <div className="quote-spotlight-mark" aria-hidden="true">â€œ</div>
+          <div className="quote-spotlight-mark" aria-hidden="true">“</div>
           <div className="quote-spotlight-copy">
             <div className="quote-spotlight-kicker"><Icon name="spark" size={15} /> A NOTE FOR THE BEGINNING</div>
             <h2 id="quote-spotlight-title">You do not need to learn <em>everything today.</em></h2>
@@ -1317,7 +1317,7 @@ function App() {
             </div>
             <aside className="gratitude-featured">
               <span className="gratitude-feature-label"><Icon name="target" size={15} /> YOUR REMINDER FOR TODAY</span>
-              <span className="gratitude-feature-mark" aria-hidden="true">â€œ</span>
+              <span className="gratitude-feature-mark" aria-hidden="true">“</span>
               <blockquote>You do not have to master cybersecurity today. Learn one concept. Practise one safe lab. Write down one thing you discovered. Do it again tomorrow.</blockquote>
               <span className="gratitude-attribution">ONE STEP TODAY. MORE CONFIDENCE TOMORROW.</span>
               <div className="gratitude-feature-actions">
@@ -1394,7 +1394,7 @@ function App() {
           </div>
         <div className="resource-search-toolbar">
           <label className="search-box"><Icon name="search" size={19} /><input ref={searchInputRef} value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search resources, tools, topicsÃ¢â‚¬Â¦" aria-label="Search resources" /><kbd>Ctrl K</kbd></label>
-          <label className="select-wrap resource-sort-wrap"><span className="sr-only">Sort resources</span><select value={sortBy} onChange={(e) => setSortBy(e.target.value)} aria-label="Sort resources"><option value="relevance">Most Relevant</option><option value="name">Name AÃ¢â‚¬â€œZ</option><option value="beginner">Beginner First</option></select></label>
+          <label className="select-wrap resource-sort-wrap"><span className="sr-only">Sort resources</span><select value={sortBy} onChange={(e) => setSortBy(e.target.value)} aria-label="Sort resources"><option value="relevance">Most Relevant</option><option value="name">Name A-Z</option><option value="beginner">Beginner First</option></select></label>
         </div>
         <div className="resource-type-filters" role="group" aria-label="Filter resource types">
           {['All', 'Courses', 'Labs', 'Documentation', 'Tools', 'Practice Platforms', 'Certifications', 'Datasets', 'Frameworks', 'Career', 'Videos'].map((item) => (
@@ -1462,7 +1462,7 @@ function App() {
         <div className="path-grid roadmap-path-grid">{learningPaths.map((path) => <PathCard key={path.id} path={path} onClick={openLearningPath} />)}</div>
         <div className="path-model-heading"><div><div className="section-kicker">ONE CONSISTENT LEARNING MODEL</div><h2>Every path ends with <em>evidence, not just a checklist.</em></h2></div><p>Each roadmap uses the same module contract. The subject, diagram, resources, worksheets, and capstone change to fit the path.</p></div>
         <div className="path-model-grid">
-          {[['01','Understand','Learn the concept, vocabulary, and prerequisites.','book-open'],['02','Practise safely','Use supplied samples, local exercises, or the providerâ€™s authorised training lab.','target'],['03','Save evidence','Keep notes, steps, outputs, assumptions, and limitations.','file-text'],['04','Explain the result','Describe what you learned, what remains unknown, and the next useful step.','check-circle']].map(([number,title,description,icon]) => <article className="path-model-card" key={number}><span><Icon name={icon} size={20}/></span><small>STEP {number}</small><h3>{title}</h3><p>{description}</p></article>)}
+          {[['01','Understand','Learn the concept, vocabulary, and prerequisites.','book-open'],['02','Practise safely','Use supplied samples, local exercises, or the provider’s authorised training lab.','target'],['03','Save evidence','Keep notes, steps, outputs, assumptions, and limitations.','file-text'],['04','Explain the result','Describe what you learned, what remains unknown, and the next useful step.','check-circle']].map(([number,title,description,icon]) => <article className="path-model-card" key={number}><span><Icon name={icon} size={20}/></span><small>STEP {number}</small><h3>{title}</h3><p>{description}</p></article>)}
         </div>
         <div className="roadmap-footer"><Icon name="lightbulb" size={21}/><p><b>Keep the claims honest.</b> The time estimates are suggested study pacing, not guarantees. A roadmap or completed lab does not guarantee a job, client, certification, or bounty reward. Publish work you can reproduce and explain.</p></div>
       </section>}
@@ -1536,7 +1536,7 @@ function App() {
         <div className="notes-banner"><img src="/images/learning/handwritten-notes-study.svg" alt="Notebook-style SOC triage notes with event, context, evidence, and decision steps" onError={handleArtworkError}/><div className="notes-banner-copy"><div className="section-kicker">NOTEBOOK MODE</div><h3>Notes that feel easier to revise.</h3><p>Handwritten-script notebook pages on ruled paper, plain-language definitions, worked examples, checklists, practice questions, and answer checks. Start with fictional records; you do not need a full SIEM installation to begin learning.</p></div><span className="notes-format"><Icon name="notebook-pen" size={18} /> PDF + DOCX</span></div>
         <Suspense fallback={<p className="section-loading">Loading interactive lab workbench...</p>}><InteractiveLabWorkbench /></Suspense>
         <div className="lab-filter-panel"><div><div className="section-kicker">LAB & NOTE LIBRARY</div><p>Filter by experience level or learning topic.</p></div><div className="lab-filter-controls"><label className="select-wrap"><span className="sr-only">Filter labs by topic</span><select value={labCategory} onChange={(e) => setLabCategory(e.target.value)}><option>All topics</option>{[...new Set(labs.map((lab) => lab.category))].map((topic) => <option key={topic}>{topic}</option>)}</select></label><label className="select-wrap"><span className="sr-only">Filter labs by level</span><select value={labLevel} onChange={(e) => setLabLevel(e.target.value)}><option>All labs</option><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select></label></div></div>
-        <div className="lab-results-caption">Showing <b>{visibleLabs.length}</b> learning items <span>â€¢</span> every guide has PDF + DOCX</div>
+        <div className="lab-results-caption">Showing <b>{visibleLabs.length}</b> learning items <span>•</span> every guide has PDF + DOCX</div>
         <div className="lab-grid">{visibleLabs.map((lab) => <LabCard key={lab.id} lab={lab} />)}</div>
         {visibleLabs.length === 0 && <div className="empty-state"><Icon name="search" size={26} /><h3>No labs in this filter</h3><button className="button button-primary" onClick={() => { setLabCategory('All topics'); setLabLevel('All labs'); }}>Show all labs</button></div>}
         <Suspense fallback={<p className="section-loading">Loading curated concept videos...</p>}><CuratedVideosLibrary /></Suspense>
