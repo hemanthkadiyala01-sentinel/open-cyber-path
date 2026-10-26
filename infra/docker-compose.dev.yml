@@ -43,12 +43,12 @@ services:
       KC_DB_USERNAME: keycloak
       KC_DB_PASSWORD: ${KEYCLOAK_DB_PASSWORD:?Set KEYCLOAK_DB_PASSWORD}
       KC_HTTP_ENABLED: "true"
-      KC_HOSTNAME: http://localhost:8081
+      KC_HOSTNAME: "https://mom-roses-seafood-labor.trycloudflare.com"
       KC_HEALTH_ENABLED: "true"
       KC_BOOTSTRAP_ADMIN_USERNAME: ${KEYCLOAK_ADMIN_USERNAME:?Set KEYCLOAK_ADMIN_USERNAME}
       KC_BOOTSTRAP_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD:?Set KEYCLOAK_ADMIN_PASSWORD}
     ports:
-      - "127.0.0.1:8081:8080"
+      - "${DEV_LAN_IP:-127.0.0.1}:8081:8080"
     volumes:
       - ./keycloak/realm-export.json:/opt/keycloak/data/import/realm-export.json:ro
 
