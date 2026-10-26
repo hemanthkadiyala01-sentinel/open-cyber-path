@@ -474,3 +474,125 @@ main > * { min-width: 0; max-width: 100%; }
   }
   html, body { max-width: 100%; overflow-x: clip; }
 }
+/* OCP-MOBILE-UX-DRAG-ASSISTANT-V1 */
+@media (max-width: 640px) {
+  /* The full account header must scroll away; the fixed bottom app navigation remains independent. */
+  .native-app-shell .site-header,
+  .web-app-shell .site-header {
+    position: static !important;
+    top: auto !important;
+  }
+  .native-app-shell .site-header .header-actions,
+  .web-app-shell .site-header .header-actions {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: stretch;
+    width: 100%;
+    min-width: 0;
+  }
+  .native-app-shell .site-header .header-actions .header-search,
+  .web-app-shell .site-header .header-actions .header-search {
+    grid-column: 1 / -1;
+    width: 100%;
+    min-width: 0;
+  }
+  .native-app-shell .site-header .header-actions .ocp-account-actions,
+  .web-app-shell .site-header .header-actions .ocp-account-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 8px;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .native-app-shell .site-header .header-actions .ocp-account-actions > *,
+  .web-app-shell .site-header .header-actions .ocp-account-actions > * {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 44px;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+  .native-app-shell .site-header .header-actions .ocp-account-actions .ocp-account-status,
+  .native-app-shell .site-header .header-actions .ocp-account-actions .ocp-account-api-status,
+  .native-app-shell .site-header .header-actions .ocp-account-actions .ocp-account-identity,
+  .web-app-shell .site-header .header-actions .ocp-account-actions .ocp-account-status,
+  .web-app-shell .site-header .header-actions .ocp-account-actions .ocp-account-api-status,
+  .web-app-shell .site-header .header-actions .ocp-account-actions .ocp-account-identity {
+    grid-column: 1 / -1;
+  }
+  /* Use flexible minimums for every nested section so long labels cannot widen the webview. */
+  .native-app-shell main *,
+  .web-app-shell main * {
+    min-width: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  .native-app-shell main p,
+  .native-app-shell main li,
+  .native-app-shell main label,
+  .web-app-shell main p,
+  .web-app-shell main li,
+  .web-app-shell main label {
+    overflow-wrap: anywhere;
+  }
+  .native-app-shell .resource-page,
+  .native-app-shell .resource-directory-layout,
+  .native-app-shell .resource-directory-main,
+  .native-app-shell .resource-directory-main .resource-grid,
+  .native-app-shell .resource-card,
+  .native-app-shell .resource-card-body,
+  .web-app-shell .resource-page,
+  .web-app-shell .resource-directory-layout,
+  .web-app-shell .resource-directory-main,
+  .web-app-shell .resource-directory-main .resource-grid,
+  .web-app-shell .resource-card,
+  .web-app-shell .resource-card-body {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+  .native-app-shell .resource-card details > summary,
+  .web-app-shell .resource-card details > summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    min-width: 0;
+    max-width: 100%;
+    white-space: normal;
+  }
+  .native-app-shell .resource-detail-summary-copy,
+  .web-app-shell .resource-detail-summary-copy {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    flex: 1 1 180px;
+    min-width: 0;
+    max-width: 100%;
+    gap: 3px;
+    overflow-wrap: anywhere;
+  }
+  .native-app-shell .resource-detail-summary-copy small,
+  .web-app-shell .resource-detail-summary-copy small {
+    display: block;
+    line-height: 1.4;
+  }
+  .native-app-shell .resource-detail-summary-copy strong,
+  .web-app-shell .resource-detail-summary-copy strong {
+    display: block;
+    min-width: 0;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+  .native-app-shell .resource-card details > :not(summary),
+  .web-app-shell .resource-card details > :not(summary) {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+}
