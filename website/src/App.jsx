@@ -61,7 +61,7 @@ function matchesLevel(label, selected, allLabel) {
   const normalized = String(label || '').toLowerCase();
   const wanted = selected.toLowerCase();
   if (normalized.includes(wanted)) return true;
-  const range = normalized.split('â†’').map((part) => part.trim());
+  const range = normalized.split('→').map((part) => part.trim());
   if (range.length < 2) return false;
   const selectedRank = levelRanks[wanted];
   const start = levelRanks[range[0]] || 1;
@@ -162,7 +162,7 @@ const attackPatterns = [
     image: "/images/learning/basics/basics-mfa.webp"
   },
   {
-    id: "basics-credential-stuffing", icon: "lock", title: "Credential stuffing & brute-force attempts", family: "IDENTITY & TRUST", level: "Beginner â†’ Intermediate",
+    id: "basics-credential-stuffing", icon: "lock", title: "Credential stuffing & brute-force attempts", family: "IDENTITY & TRUST", level: "Beginner → Intermediate",
     short: "Repeated sign-in attempts may reuse leaked credentials or guess weak passwords at scale.",
     cause: "Weak passwords, reused credentials, missing rate limits, and limited sign-in monitoring make account attacks easier to miss.",
     example: "A sample sign-in log contains many failed attempts followed by a success that needs investigation.",
@@ -171,7 +171,7 @@ const attackPatterns = [
     image: "/images/learning/basics/basics-credential-stuffing.webp"
   },
   {
-    id: "basics-injection", icon: "code", title: "Injection flaws", family: "WEB APPLICATIONS", level: "Beginner â†’ Intermediate",
+    id: "basics-injection", icon: "code", title: "Injection flaws", family: "WEB APPLICATIONS", level: "Beginner → Intermediate",
     short: "An application treats untrusted input as part of a command or query instead of ordinary data.",
     cause: "Unsafe string concatenation blurs the boundary between program instructions and user-supplied values.",
     example: "A search page builds a database query by joining raw user input into the query string.",
@@ -180,7 +180,7 @@ const attackPatterns = [
     image: "/images/learning/basics/basics-injection.webp"
   },
   {
-    id: "basics-xss", icon: "code", title: "Cross-site scripting (XSS)", family: "WEB APPLICATIONS", level: "Beginner â†’ Intermediate",
+    id: "basics-xss", icon: "code", title: "Cross-site scripting (XSS)", family: "WEB APPLICATIONS", level: "Beginner → Intermediate",
     short: "A browser interprets untrusted page content as active markup or script instead of displaying it as data.",
     cause: "Unsafe HTML insertion and missing context-aware output encoding can let user content alter a page's behaviour.",
     example: "A comment is rendered as markup when it should have appeared as plain text.",
@@ -189,7 +189,7 @@ const attackPatterns = [
     image: "/images/learning/basics/basics-xss.webp"
   },
   {
-    id: "basics-access-control", icon: "users", title: "Broken access control", family: "WEB APPLICATIONS", level: "Beginner â†’ Intermediate",
+    id: "basics-access-control", icon: "users", title: "Broken access control", family: "WEB APPLICATIONS", level: "Beginner → Intermediate",
     short: "A user can access a record or action outside the permissions assigned to their role or account.",
     cause: "The server may trust a client-supplied record identifier or check authentication without enforcing authorization.",
     example: "A user who owns one training record can view another fictional user's record by changing an identifier.",
@@ -198,7 +198,7 @@ const attackPatterns = [
     image: "/images/learning/basics/basics-access-control.webp"
   },
   {
-    id: "basics-session-cookies", icon: "lock", title: "Session & cookie security", family: "WEB APPLICATIONS", level: "Beginner â†’ Intermediate",
+    id: "basics-session-cookies", icon: "lock", title: "Session & cookie security", family: "WEB APPLICATIONS", level: "Beginner → Intermediate",
     short: "A stolen or poorly protected session token can let someone act as a logged-in user.",
     cause: "Insecure transport, permissive cookie settings, long-lived tokens, and weak session rotation increase risk.",
     example: "A session remains active on a shared computer after the user walks away.",
@@ -207,7 +207,7 @@ const attackPatterns = [
     image: "/images/learning/basics/basics-session-cookies.webp"
   },
   {
-    id: "basics-csrf", icon: "shield-check", title: "Cross-site request forgery (CSRF)", family: "WEB APPLICATIONS", level: "Beginner â†’ Intermediate",
+    id: "basics-csrf", icon: "shield-check", title: "Cross-site request forgery (CSRF)", family: "WEB APPLICATIONS", level: "Beginner → Intermediate",
     short: "A browser may send an unwanted state-changing request while a person is already authenticated to a service.",
     cause: "Browsers can attach credentials automatically, while an application may fail to verify that the action was intentionally initiated.",
     example: "A signed-in training account receives an unexpected settings-change request from another page.",
@@ -234,7 +234,7 @@ const attackPatterns = [
     image: "/images/learning/basics/basics-secure-transport.webp"
   },
   {
-    id: "basics-cloud-exposure", icon: "shield-check", title: "Misconfiguration & exposed data", family: "CLOUD & CONFIGURATION", level: "Beginner â†’ Intermediate",
+    id: "basics-cloud-exposure", icon: "shield-check", title: "Misconfiguration & exposed data", family: "CLOUD & CONFIGURATION", level: "Beginner → Intermediate",
     short: "A service, storage location, or account permits more access than its owner intended.",
     cause: "Default settings, broad permissions, forgotten resources, and weak identity boundaries can expose data.",
     example: "A fictional project backup is stored in a shared location that anyone with the link can read.",
@@ -252,7 +252,7 @@ const attackPatterns = [
     image: "/images/learning/basics/basics-ransomware.webp"
   },
   {
-    id: "basics-supply-chain", icon: "git-compare-arrows", title: "Supply-chain compromise", family: "SOFTWARE SECURITY", level: "Beginner â†’ Intermediate",
+    id: "basics-supply-chain", icon: "git-compare-arrows", title: "Supply-chain compromise", family: "SOFTWARE SECURITY", level: "Beginner → Intermediate",
     short: "A trusted dependency, update path, build service, or supplier is misused to affect downstream users.",
     cause: "Projects depend on packages, build systems, credentials, and services maintained by many parties.",
     example: "A project receives an unexpected dependency version with unexplained changes.",
@@ -261,7 +261,7 @@ const attackPatterns = [
     image: "/images/learning/basics/basics-supply-chain.webp"
   },
   {
-    id: "basics-dos", icon: "network", title: "Denial of service (DoS)", family: "RESILIENCE", level: "Beginner â†’ Intermediate",
+    id: "basics-dos", icon: "network", title: "Denial of service (DoS)", family: "RESILIENCE", level: "Beginner → Intermediate",
     short: "Excessive or expensive requests can exhaust a service's capacity and reduce availability for legitimate users.",
     cause: "Limited capacity, unbounded expensive operations, or insufficient upstream protection can amplify traffic spikes.",
     example: "A service's synthetic metrics show a sudden rise in requests and latency while successful responses fall.",
@@ -270,7 +270,7 @@ const attackPatterns = [
     image: "/images/learning/basics/basics-denial-of-service.webp"
   },
   {
-    id: "basics-incident-response", icon: "radar", title: "Logging & incident response", family: "DETECTION & RESPONSE", level: "Beginner â†’ Intermediate",
+    id: "basics-incident-response", icon: "radar", title: "Logging & incident response", family: "DETECTION & RESPONSE", level: "Beginner → Intermediate",
     short: "Useful, time-aligned logs help teams reconstruct events, test hypotheses, and explain what remains unknown.",
     cause: "Disabled logging, inconsistent timestamps, narrow retention, or missing context can leave investigators with gaps.",
     example: "An alert exists, but the team cannot tell which account or process produced the surrounding activity.",
@@ -1172,7 +1172,7 @@ function App() {
           <summary className={`nav-link nav-more-summary ${page === 'cyber-pulse' || ['resources','ctf-lab','liveops','certifications','systems-academy','tools','career-hub','resume-studio','job-hub','cyberrange','caselab','offline-learning','skillproof','concepts'].includes(page) || (page === 'application-demo' && ['certifications','systems-academy','tools','career-hub','resume-studio','job-hub','cyberrange','offline-learning','skillproof','concepts'].includes('job-hub')) ? 'active' : ''}`}><span>Discover</span><span aria-hidden="true">⌄</span></summary>
           <div className="nav-more-panel" role="group" aria-label="More site sections">
             {[['resources','Resources'],['ctf-lab','CTF Practice'],['liveops','LiveOps'],['certifications','Certs & Exams'],['systems-academy','OS + Networks'],['tools','Tools & films'],['career-hub','Career hub'],['resume-studio','Resume'],['job-hub','Jobs'],['cyberrange','CyberRange'],['caselab','CaseLab'],['offline-learning','Offline learning'],['skillproof','SkillProof'],['concepts','Basics']].map(([key,label]) => <button type="button" key={key} className={`nav-link nav-key-${key} ${page === key || (page === 'application-demo' && key === 'job-hub') ? 'active' : ''}`} onClick={(event) => { event.currentTarget.closest('details')?.removeAttribute('open'); if (key === 'systems-academy') setAcademyPathId('all'); navigate(key); }}>{label}</button>)}
-                      <button type="button" className={`nav-link ${page === 'cyber-pulse' ? 'active' : ''}`} onClick={(event) => { event.currentTarget.closest('details')?.removeAttribute('open'); navigate('cyber-pulse'); }}>CyberPulse Ã‚· News & freshness</button>            <button type="button" className={`nav-link ${page === 'youtube-live-learning' ? 'active' : ''}`} onClick={(event) => { event.currentTarget.closest('details')?.removeAttribute('open'); navigate('youtube-live-learning'); }}>YouTube Live Learning</button></div>
+                      <button type="button" className={`nav-link ${page === 'cyber-pulse' ? 'active' : ''}`} onClick={(event) => { event.currentTarget.closest('details')?.removeAttribute('open'); navigate('cyber-pulse'); }}>CyberPulse · News & freshness</button>            <button type="button" className={`nav-link ${page === 'youtube-live-learning' ? 'active' : ''}`} onClick={(event) => { event.currentTarget.closest('details')?.removeAttribute('open'); navigate('youtube-live-learning'); }}>YouTube Live Learning</button></div>
         </details>
       </nav>
       <div className="header-actions"><label className="header-search"><Icon name="search" size={16} /><input value={query} onChange={(e) => { setQuery(e.target.value); if (page !== 'resources') navigate('resources'); }} onFocus={() => { if (page !== 'resources') navigate('resources'); }} placeholder="Search skills, labs, topics..." aria-label="Search resources" /><kbd>Ctrl K</kbd></label><ExternalLink className="github-link" href="https://github.com/hemanthkadiyala01-sentinel/open-cyber-path"><Icon name="network" size={15} /> GitHub</ExternalLink><AccountActions /></div>
@@ -1263,7 +1263,7 @@ function App() {
               <div className="evidence-panel-heading"><span className="evidence-panel-icon"><Icon name="chart" size={22} /></span><div><span className="dataset-kicker">DETECTION ENGINEERING</span><h3>Evaluate a narrow rule</h3></div><span className={`dataset-status ${ruleMetrics ? 'loaded' : ''}`}>{ruleMetrics ? 'Reproducible' : 'Checking files'}</span></div>
               <p className="evidence-lede">A small rule looks for an encoded-command argument in <code>powershell.exe</code>. The score below is recalculated from the included labelled cases.</p>
               {ruleMetrics ? <>
-                <div className="confusion-matrix" aria-label="Confusion matrix from synthetic training cases"><div className="matrix-heading">ACTUAL LABEL Ã— RULE PREDICTION</div><div className="matrix-grid"><div className="matrix-cell matrix-tp"><span>True positives</span><strong>{ruleMetrics.tp}</strong><small>Suspicious + alert</small></div><div className="matrix-cell matrix-fp"><span>False positives</span><strong>{ruleMetrics.fp}</strong><small>Benign + alert</small></div><div className="matrix-cell matrix-fn"><span>False negatives</span><strong>{ruleMetrics.fn}</strong><small>Suspicious + missed</small></div><div className="matrix-cell matrix-tn"><span>True negatives</span><strong>{ruleMetrics.tn}</strong><small>Benign + no alert</small></div></div></div>
+                <div className="confusion-matrix" aria-label="Confusion matrix from synthetic training cases"><div className="matrix-heading">ACTUAL LABEL × RULE PREDICTION</div><div className="matrix-grid"><div className="matrix-cell matrix-tp"><span>True positives</span><strong>{ruleMetrics.tp}</strong><small>Suspicious + alert</small></div><div className="matrix-cell matrix-fp"><span>False positives</span><strong>{ruleMetrics.fp}</strong><small>Benign + alert</small></div><div className="matrix-cell matrix-fn"><span>False negatives</span><strong>{ruleMetrics.fn}</strong><small>Suspicious + missed</small></div><div className="matrix-cell matrix-tn"><span>True negatives</span><strong>{ruleMetrics.tn}</strong><small>Benign + no alert</small></div></div></div>
                 <div className="rate-grid">{[['Accuracy', ruleMetrics.accuracy], ['Precision', ruleMetrics.precision], ['Recall', ruleMetrics.recall], ['Specificity', ruleMetrics.specificity], ['F1', ruleMetrics.f1]].map(([name,value]) => <div className="rate-card" key={name}><span>{name}</span><strong>{(value * 100).toFixed(1)}%</strong><div className="rate-track"><span style={{ width: `${Math.max(0, Math.min(100, value * 100))}%` }} /></div></div>)}</div>
                 <p className="ambiguous-note">{ruleMetrics.scored} cases scored · {ruleMetrics.ambiguous} ambiguous case excluded. These tiny synthetic metrics are for learning only, not real-world performance.</p>
               </> : <p className="data-empty">{datasetState}</p>}
@@ -1393,7 +1393,7 @@ function App() {
             <PageHeading kicker="CYBERSECURITY RESOURCE DIRECTORY" title="Cybersecurity Learning" emphasis="Resources" description="Curated courses, labs, documentation, tools, and official learning platforms to help you build real skills." />
           </div>
         <div className="resource-search-toolbar">
-          <label className="search-box"><Icon name="search" size={19} /><input ref={searchInputRef} value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search resources, tools, topicsÃ¢â‚¬Â¦" aria-label="Search resources" /><kbd>Ctrl K</kbd></label>
+          <label className="search-box"><Icon name="search" size={19} /><input ref={searchInputRef} value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search resources, tools, topics…" aria-label="Search resources" /><kbd>Ctrl K</kbd></label>
           <label className="select-wrap resource-sort-wrap"><span className="sr-only">Sort resources</span><select value={sortBy} onChange={(e) => setSortBy(e.target.value)} aria-label="Sort resources"><option value="relevance">Most Relevant</option><option value="name">Name A-Z</option><option value="beginner">Beginner First</option></select></label>
         </div>
         <div className="resource-type-filters" role="group" aria-label="Filter resource types">
@@ -1450,8 +1450,8 @@ function App() {
 
       {page === 'roadmap' && <section className="section-wrap roadmap-section">
         <PageHeading kicker="THE CYBERSECURITY DOMAIN MAP" title="Explore the complete cybersecurity" emphasis="landscape." description="Start with the 8 broad pillars, then choose from 10 career visions with guided modules, safe practice, portfolio evidence, and a capstone. You do not need to learn every area at once." />
-        <section className="domain-quick-map" aria-labelledby="domain-quick-map-title"><div className="domain-quick-map-heading"><div><div className="section-kicker">THE COMPLETE FIELD AT A GLANCE</div><h2 id="domain-quick-map-title">All <em>8 cybersecurity pillars</em></h2><p>These are eight OpenCyberPath career-exploration categories. Select any card to open the specialisations and beginner first steps below.</p></div><div className="domain-quick-map-stats"><strong>08</strong><span>PILLARS</span><i>â†˜</i><strong>10</strong><span>CAREER VISIONS</span></div></div><div className="domain-quick-card-grid">{cybersecurityPillars.map((pillar) => <button className={`domain-quick-card domain-tone-${pillar.tone}`} key={pillar.id} type="button" onClick={() => { const target = document.getElementById(`pillar-${pillar.id}`); if (target) { target.open = true; target.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }}><span className="domain-quick-number">{pillar.number}</span><span className="domain-quick-card-main"><b>{pillar.title}</b><small>{pillar.specializations.length} specialisations · {pillar.level}</small></span><Icon name="arrow-right" size={17}/></button>)}</div></section>
-        <div className="domain-framework-note"><div className="domain-framework-icon"><Icon name="book-open" size={20}/></div><div><b>A quick framework distinction</b><p>The OpenCyberPath map is not the official ISC2 CISSP domain list. It is an independent career-exploration framework, not the official (ISC)² CISSP exam-domain list. Consult the current (ISC)² CISSP exam outline for authoritative exam requirements.</p><details className="isc2-domain-reference"><summary>View the official CISSP domain names <Icon name="arrow-right" size={13}/></summary><ol>{isc2CisspDomains.map((domain) => <li key={domain}>{domain}</li>)}</ol><ExternalLink href="https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline" className="domain-official-link">Check the current (ISC)Â² exam outline <Icon name="arrow-up-right" size={13}/></ExternalLink></details></div></div>
+        <section className="domain-quick-map" aria-labelledby="domain-quick-map-title"><div className="domain-quick-map-heading"><div><div className="section-kicker">THE COMPLETE FIELD AT A GLANCE</div><h2 id="domain-quick-map-title">All <em>8 cybersecurity pillars</em></h2><p>These are eight OpenCyberPath career-exploration categories. Select any card to open the specialisations and beginner first steps below.</p></div><div className="domain-quick-map-stats"><strong>08</strong><span>PILLARS</span><i>↘</i><strong>10</strong><span>CAREER VISIONS</span></div></div><div className="domain-quick-card-grid">{cybersecurityPillars.map((pillar) => <button className={`domain-quick-card domain-tone-${pillar.tone}`} key={pillar.id} type="button" onClick={() => { const target = document.getElementById(`pillar-${pillar.id}`); if (target) { target.open = true; target.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }}><span className="domain-quick-number">{pillar.number}</span><span className="domain-quick-card-main"><b>{pillar.title}</b><small>{pillar.specializations.length} specialisations · {pillar.level}</small></span><Icon name="arrow-right" size={17}/></button>)}</div></section>
+        <div className="domain-framework-note"><div className="domain-framework-icon"><Icon name="book-open" size={20}/></div><div><b>A quick framework distinction</b><p>The OpenCyberPath map is not the official ISC2 CISSP domain list. It is an independent career-exploration framework, not the official (ISC)² CISSP exam-domain list. Consult the current (ISC)² CISSP exam outline for authoritative exam requirements.</p><details className="isc2-domain-reference"><summary>View the official CISSP domain names <Icon name="arrow-right" size={13}/></summary><ol>{isc2CisspDomains.map((domain) => <li key={domain}>{domain}</li>)}</ol><ExternalLink href="https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline" className="domain-official-link">Check the current (ISC)² exam outline <Icon name="arrow-up-right" size={13}/></ExternalLink></details></div></div>
         <label className="domain-search"><Icon name="search" size={17}/><input value={domainQuery} onChange={(event) => setDomainQuery(event.target.value)} placeholder="Search pillars or specialisations..." aria-label="Search cybersecurity pillars and specialisations"/><span>{visibleCybersecurityPillars.length} of 8 pillars</span></label>
         <div className="domain-pillars-grid">{visibleCybersecurityPillars.map((pillar) => <details id={`pillar-${pillar.id}`} className={`domain-pillar domain-tone-${pillar.tone}`} key={pillar.id}>
           <summary className="domain-pillar-summary"><span className="domain-pillar-icon"><Icon name={pillar.icon} size={21}/></span><span className="domain-pillar-heading"><small>PILLAR {pillar.number} · {pillar.level}</small><strong>{pillar.title}</strong><em>{pillar.summary}</em><span className="domain-pillar-count">{pillar.specializations.length} specialisations <Icon name="plus" size={13}/></span></span></summary>
