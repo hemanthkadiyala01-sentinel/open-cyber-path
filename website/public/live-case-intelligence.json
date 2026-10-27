@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T05:11:10Z",
+  "generatedAt": "2026-10-27T12:18:22Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -34,7 +34,7 @@
       "url": "https://thehackernews.com/",
       "description": "Independent global cybersecurity reporting; verify claims against primary disclosures where available",
       "status": "ok",
-      "itemCount": 44
+      "itemCount": 46
     },
     {
       "id": "ncsc-uk",
@@ -64,6 +64,162 @@
     }
   ],
   "items": [
+    {
+      "id": "thehackernews-microsoft-authenticator-flaw-let-permissionless-android-apps-steal-work-account-tokens",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Microsoft Authenticator Flaw Let Permissionless Android Apps Steal Work Account Tokens",
+      "publishedAt": "2026-10-27T12:09:50Z",
+      "url": "https://thehackernews.com/2026/10/microsoft-authenticator-flaw-let.html",
+      "summary": "Microsoft has fixed a flaw in its Authenticator app for Android that let a malicious app with no permissions pose as a trusted Microsoft app, such as Teams, and collect sign-in tokens for a victim's work account. Microsoft tracks the flaw as CVE-2026-80097 and fixed it in Authenticator for Android version 6.2606.4246, so anyone using the app should update. In the researchers' tests,",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "identity-cloud",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-keystone-to-destroy-18-835-hardware-wallets-after-hackers-steal-device-verification-key",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Keystone to Destroy 18,835 Hardware Wallets After Hackers Steal Device Verification Key",
+      "publishedAt": "2026-10-27T11:46:00Z",
+      "url": "https://thehackernews.com/2026/10/keystone-to-destroy-18835-hardware.html",
+      "summary": "An attacker who gained access to Keystone's website obtained the key that its hardware wallets use to prove they are genuine, the company said in a statement on October 26. Someone with that key could build counterfeit devices that pass the online check owners use to verify a Keystone. A buyer who trusted a counterfeit could have their crypto stolen, but the incident did not involve",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-ai-generated-fake-login-pages-are-making-account-takeovers-easier",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "AI-Generated Fake Login Pages Are Making Account Takeovers Easier",
+      "publishedAt": "2026-10-27T11:32:46Z",
+      "url": "https://thehackernews.com/2026/10/ai-generated-fake-login-pages-are.html",
+      "summary": "Fake login pages are nothing new, but generative AI is making them easier to build and more convincing. Attackers can recreate familiar login screens, impersonate trusted brands and tailor phishing attempts to specific employees or organizations. Some fake login pages go beyond stealing passwords. They can also capture MFA codes or hijack authenticated sessions, allowing attackers to gain",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-lazarus-abuses-south-korean-security-software-to-deploy-malware-using-post-quantum-encrypt",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Lazarus Abuses South Korean Security Software to Deploy Malware Using Post-Quantum Encryption",
+      "publishedAt": "2026-10-27T11:32:31Z",
+      "url": "https://thehackernews.com/2026/10/lazarus-abuses-south-korean-security.html",
+      "summary": "The North Korea-linked Lazarus Group has been attributed to a cyber espionage campaign dubbed Operation FlashHole targeting at least three organizations in South Korea spanning the construction, software, and wire-communication equipment manufacturing sectors. According to Russian cybersecurity company Kaspersky, the campaign has been active since at least July 2025. It's assessed to pick up",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "malware-ransomware",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-apple-backports-coregraphics-zero-day-patches-to-older-iphones",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Apple backports CoreGraphics zero-day patches to older iPhones",
+      "publishedAt": "2026-10-27T10:36:12Z",
+      "url": "https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/",
+      "summary": "​Apple has backported security patches released last month to older iPhones and iPads, addressing a zero-day bug exploited in \"extremely sophisticated\" targeted attacks on iOS devices. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-australia-gets-into-amadey-malware-backend-cuts-off-access-to-180-000-infected-computers",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Australia Gets Into Amadey Malware Backend, Cuts Off Access to 180,000 Infected Computers",
+      "publishedAt": "2026-10-27T09:33:06Z",
+      "url": "https://thehackernews.com/2026/10/australia-gets-into-amadey-malware.html",
+      "summary": "A criminal using the Amadey malware can no longer access or steal data from 180,000 infected computers around the world, including some in Australia, the Australian Signals Directorate (ASD) says. The agency's operators gained access to the criminal's operation's backend and cut it off from those computers. \"The next steps that we took were to disconnect that Amadey controller from all those",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "malware-ransomware",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-energy-giant-engie-discloses-data-breach-affecting-customers",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Energy giant ENGIE discloses data breach affecting customers",
+      "publishedAt": "2026-10-27T09:25:50Z",
+      "url": "https://www.bleepingcomputer.com/news/security/energy-giant-engie-discloses-data-breach-affecting-customers/",
+      "summary": "French energy giant ENGIE, one of the world's largest power and natural gas providers, confirmed that attackers stole customer data after breaching a marketing platform used by business partners. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "third-party-breach",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-openai-compaction-flaw-let-researchers-bypass-hidden-reasoning-protections",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "OpenAI Compaction Flaw Let Researchers Bypass Hidden Reasoning Protections",
+      "publishedAt": "2026-10-27T08:22:43Z",
+      "url": "https://thehackernews.com/2026/10/openai-compaction-flaw-let-researchers.html",
+      "summary": "OpenAI's compaction feature, which shrinks a long conversation to save space, could be turned into a way to copy a model's hidden reasoning out in plain text, security firm Xint has shown. OpenAI's reasoning models work through a problem before answering, and the service normally returns only the raw reasoning as an encrypted item the user cannot read. The method got past",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "CISA confirms PHP2Shell vulnerabilities now exploited in attacks",
+      "publishedAt": "2026-10-27T08:20:54Z",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added the PHP2Shell vulnerabilities to its catalog of actively exploited security flaws and ordered federal agencies to patch their systems by Thursday. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-attackers-hijack-dahua-ip-cameras-in-ukraine-using-p2p-access-and-auth-weaknesses",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Attackers Hijack Dahua IP Cameras in Ukraine Using P2P Access and Auth Weaknesses",
+      "publishedAt": "2026-10-27T06:34:47Z",
+      "url": "https://thehackernews.com/2026/10/attackers-hijack-dahua-ip-cameras-in.html",
+      "summary": "The Computer Emergency Response Team of Ukraine (CERT-UA) has issued an alert warning of unauthorized remote access to video surveillance systems manufactured by Dahua. \"Cases of compromising IP cameras and DVRs with access to the video stream, changing the device configuration and creating third-party accounts have been recorded,\" the State Special Communications Service of Ukraine (SSSCIP)",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-cisa-confirms-active-exploitation-of-two-php2shell-flaws-enabling-remote-code-execution",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
+      "publishedAt": "2026-10-27T04:37:59Z",
+      "url": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday confirmed active exploitation of the recently patched PHP2Shell flaws by adding them to its Known Exploited Vulnerabilities (KEV) catalog. The PHP vulnerabilities, both rated 9.2 on the CVSS scoring system, facilitate unauthenticated remote code execution on affected deployments - CVE-2026-109618 - An out-of-memory",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "certin-ciad-2026-0055",
+      "sourceId": "cert-in",
+      "publisher": "CERT-In",
+      "title": "Out-of-Bounds Write Vulnerability in Google Brotli Decoder",
+      "publishedAt": "2026-10-27T00:00:00Z",
+      "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0055",
+      "summary": "Official CERT-In advisory. Review the linked notice for exact affected products, exploitation context, and vendor-approved mitigation; do not assume every installation is affected.",
+      "signalType": "Official security advisory",
+      "caseType": "vulnerability",
+      "confidence": "official-advisory",
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0055; details must be checked in the linked notice"
+    },
     {
       "id": "bleepingcomputer-university-of-copenhagen-data-breach-exposes-data-of-525-000-people",
       "sourceId": "bleepingcomputer",
@@ -457,32 +613,6 @@
       "sourceStatus": "Listed by CERT-In as CIAD-2026-0054; details must be checked in the linked notice"
     },
     {
-      "id": "bleepingcomputer-abandoned-popcorn-time-app-exposed-millions-of-devices-to-rce-attacks",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Abandoned Popcorn Time app exposed millions of devices to RCE attacks",
-      "publishedAt": "2026-10-23T20:55:05Z",
-      "url": "https://www.bleepingcomputer.com/news/security/abandoned-popcorn-time-app-exposed-millions-of-device-to-rce-attacks/",
-      "summary": "Researchers remotely disabled a vulnerable updater in the abandoned Time4Popcorn app, a fork of the Popcorn Time BitTorrent client, closing a security flaw that could have allowed attackers to execute malicious code with elevated privileges on millions of computers. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-microsoft-teams-to-get-ai-powered-context-aware-phishing-detection",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Microsoft Teams to get AI-powered, context-aware phishing detection",
-      "publishedAt": "2026-10-23T18:54:41Z",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-teams-to-get-ai-powered-context-aware-phishing-detection/",
-      "summary": "Microsoft has announced plans to add AI-powered phishing detection to Teams messages starting in early November 2026. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "thehackernews-blackx-uefi-bootkit-bypasses-secure-boot-on-patched-windows-systems-missing-revocations",
       "sourceId": "thehackernews",
       "publisher": "The Hacker News",
@@ -518,19 +648,6 @@
       "summary": "Cybersecurity researchers have discovered an artificial intelligence (AI)-driven intrusion ecosystem run by affiliates of the INC and The Gentlemen ransomware groups. Central to the operation is an \"Autonomous Red Team Kill Chain Framework\" referred to as Phantom. The threat actor is assessed to be Russian-speaking and functions both as an intrusion and data-extortion operator, as well as an",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "ai-agent",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-microsoft-windows-server-2016-reaches-end-of-support-in-january",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Microsoft: Windows Server 2016 reaches end of support in January",
-      "publishedAt": "2026-10-23T17:05:07Z",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-january/",
-      "summary": "Microsoft says Windows Server 2016 will stop receiving security updates after it reaches the end of support in January 2027. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -862,71 +979,6 @@
       "sourceStatus": "Listed by CERT-In as CIAD-2026-0052; details must be checked in the linked notice"
     },
     {
-      "id": "thehackernews-critical-gitlab-flaw-cvss-10-0-could-allow-unauthenticated-rce-across-12-years-of-releases",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases",
-      "publishedAt": "2026-10-21T18:57:34Z",
-      "url": "https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html",
-      "summary": "GitLab released fixes on October 21 for a flaw that lets an attacker run code on a self-managed server without logging in, and it affects every version of the software going back to 7.0, released in 2014. The fix matters even for administrators who patched nine days earlier: the October 12 update covered only versions 19.2 and later, and the new fixed versions sit one patch above it, so an",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-litellm-compromised-in-supply-chain-attack-delivering-credential-stealer-and-backdoor",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "LiteLLM Compromised in Supply Chain Attack Delivering Credential Stealer and Backdoor",
-      "publishedAt": "2026-10-21T18:01:57Z",
-      "url": "https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html",
-      "summary": "The popular LiteLLM Python package has been compromised as part of a software supply chain attack that delivered a credential stealer and a backdoor, according to reports from SafeDep, Socket, StepSecurity, and Upwind. The compromise affects LiteLLM 1.107.0, distributed through PyPI wheels and Docker images. The Python package has since been quarantined on Python Package Index (PyPI), and the",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "dependency-compromise",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-php-issues-emergency-patches-for-two-critical-php2shell-rce-flaws-as-exploit-attempts-emer",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "PHP Issues Emergency Patches for Two Critical PHP2Shell RCE Flaws as Exploit Attempts Emerge",
-      "publishedAt": "2026-10-21T14:00:00Z",
-      "url": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html",
-      "summary": "PHP has released emergency updates that fix two critical flaws in the language itself, letting an attacker without an account run code on a web server. The fixes are in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, and the PHP team says only updating fully protects a server. The flaws, together called PHP2Shell, sit in the PHP runtime, not in any application, so a site is exposed even when its own",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-google-chrome-adds-clickfix-warnings-to-stop-users-from-running-malicious-commands",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Google Chrome Adds ClickFix Warnings to Stop Users From Running Malicious Commands",
-      "publishedAt": "2026-10-21T13:15:09Z",
-      "url": "https://thehackernews.com/2026/10/google-chrome-adds-clickfix-warnings-to.html",
-      "summary": "Google on Tuesday said it's rolling out improved safeguards in its Chrome browser to secure users against ClickFix attacks when Enhanced Protection is enabled. ClickFix is a popular social engineering technique in which bad actors trick users into copying and pasting malicious code directly into their computer's operating system, thereby bypassing conventional security controls. As part of",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-china-aligned-bronze-sandcastle-abuses-sandboxie-dll-sideloading-to-deploy-backdoors",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "China-Aligned Bronze Sandcastle Abuses Sandboxie DLL Sideloading to Deploy Backdoors",
-      "publishedAt": "2026-10-21T12:05:00Z",
-      "url": "https://thehackernews.com/2026/10/china-aligned-bronze-sandcastle-abuses.html",
-      "summary": "Cybersecurity researchers have disclosed details of a previously undocumented China-aligned threat cluster known as Bronze Sandcastle that has been observed targeting organizations in Asia and Africa since mid-2025. \"The most distinctive technical marker for Bronze Sandcastle is its consistent use of Sandboxie DLL sideloading,\" Sophos security researcher Gabor Szappanos said in a post published",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "ncsc-uk-critical-security-issue-affecting-php",
       "sourceId": "ncsc-uk",
       "publisher": "UK NCSC",
@@ -938,19 +990,6 @@
       "caseType": "vulnerability",
       "confidence": "official-publication",
       "sourceStatus": "Published by the UK NCSC; consult the linked notice for its evidence and scope."
-    },
-    {
-      "id": "thehackernews-php2shell-what-actually-protects-you-before-the-14-00-utc-php-rce-patch-and-what-doesn-t",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "PHP2Shell: What Actually Protects You Before the 14:00 UTC PHP RCE Patch, and What Doesn't",
-      "publishedAt": "2026-10-21T10:36:53Z",
-      "url": "https://thehackernews.com/2026/10/php2shell-what-actually-protects-you.html",
-      "summary": "You cannot fully block the two critical PHP flaws called PHP2Shell before today's fix, and the one setting being passed around as a workaround is not enough on its own, the security firm that suggested it now says. PHP will release the fix at 14:00 UTC on October 21 for two flaws it rates 9.2 out of 10, and has given no workaround of its own. Until you can install it, what lowers your",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
       "id": "certin-ciad-2026-0050",
@@ -1624,45 +1663,6 @@
       "caseType": "malware-ransomware",
       "confidence": "official-publication",
       "sourceStatus": "Published by the UK NCSC; consult the linked notice for its evidence and scope."
-    },
-    {
-      "id": "ncsc-uk-iranian-cyber-targeting-of-dissidents-activists-and-journalists",
-      "sourceId": "ncsc-uk",
-      "publisher": "UK NCSC",
-      "title": "Iranian cyber targeting of dissidents, activists and journalists",
-      "publishedAt": "2026-09-15T12:00:00Z",
-      "url": "https://www.ncsc.gov.uk/news/iranian-cyber-targeting-of-dissidents-activists-and-journalists",
-      "summary": "Advisory on CHOSEN BRICK malware, including technical analysis and advice to help individuals and organisations protect themselves.",
-      "signalType": "Official NCSC publication — inspect the linked item to distinguish incident reporting from guidance",
-      "caseType": "malware-ransomware",
-      "confidence": "official-publication",
-      "sourceStatus": "Published by the UK NCSC; consult the linked notice for its evidence and scope."
-    },
-    {
-      "id": "certin-ciad-2026-0045",
-      "sourceId": "cert-in",
-      "publisher": "CERT-In",
-      "title": "Multiple Vulnerabilities in SAP Products",
-      "publishedAt": "2026-09-10T00:00:00Z",
-      "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0045",
-      "summary": "Official CERT-In advisory. Review the linked notice for exact affected products, exploitation context, and vendor-approved mitigation; do not assume every installation is affected.",
-      "signalType": "Official security advisory",
-      "caseType": "vulnerability",
-      "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0045; details must be checked in the linked notice"
-    },
-    {
-      "id": "certin-ciad-2026-0044",
-      "sourceId": "cert-in",
-      "publisher": "CERT-In",
-      "title": "Multiple Vulnerabilities in Microsoft Products",
-      "publishedAt": "2026-09-09T00:00:00Z",
-      "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0044",
-      "summary": "Official CERT-In advisory. Review the linked notice for exact affected products, exploitation context, and vendor-approved mitigation; do not assume every installation is affected.",
-      "signalType": "Official security advisory",
-      "caseType": "vulnerability",
-      "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0044; details must be checked in the linked notice"
     }
   ]
 }
