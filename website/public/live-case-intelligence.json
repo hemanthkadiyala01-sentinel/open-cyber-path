@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T22:42:46Z",
+  "generatedAt": "2026-10-27T05:11:10Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -297,6 +297,34 @@
       "caseType": "dependency-compromise",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "cisa-cve-2026-109619",
+      "sourceId": "cisa-kev",
+      "publisher": "CISA KEV Catalog",
+      "title": "CVE-2026-109619: PHP Stale Internal Request-State Vulnerability",
+      "publishedAt": "2026-10-26T00:00:00Z",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109619",
+      "summary": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "signalType": "Known exploited vulnerability — listed by CISA KEV",
+      "caseType": "vulnerability",
+      "confidence": "cisa-kev-listed",
+      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
+      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "id": "cisa-cve-2026-109618",
+      "sourceId": "cisa-kev",
+      "publisher": "CISA KEV Catalog",
+      "title": "CVE-2026-109618: PHP Memory Corruption Vulnerability",
+      "publishedAt": "2026-10-26T00:00:00Z",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-109618",
+      "summary": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "signalType": "Known exploited vulnerability — listed by CISA KEV",
+      "caseType": "vulnerability",
+      "confidence": "cisa-kev-listed",
+      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
+      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
     },
     {
       "id": "thehackernews-unpatched-tailscale-ssh-flaws-could-let-a-hacked-device-reach-root-on-other-servers",
@@ -1546,20 +1574,6 @@
       "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
     },
     {
-      "id": "cisa-cve-2026-85102",
-      "sourceId": "cisa-kev",
-      "publisher": "CISA KEV Catalog",
-      "title": "CVE-2026-85102: Check Point Multiple Products Improper Certificate Validation Vulnerability",
-      "publishedAt": "2026-09-22T00:00:00Z",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-85102",
-      "summary": "Check Point Security Gateway and Check Point Spark Firewall using Site to Site VPN or Remote Access VPN contain an improper certificate validation vulnerability which could allow an unauthenticated remote attacker to execute arbitrary code on the Gateway. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-      "signalType": "Known exploited vulnerability — listed by CISA KEV",
-      "caseType": "certificate-compromise",
-      "confidence": "cisa-kev-listed",
-      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
-      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-    },
-    {
       "id": "ncsc-uk-one-does-not-simply-defend-agentically",
       "sourceId": "ncsc-uk",
       "publisher": "UK NCSC",
@@ -1571,20 +1585,6 @@
       "caseType": "generic",
       "confidence": "official-publication",
       "sourceStatus": "Published by the UK NCSC; consult the linked notice for its evidence and scope."
-    },
-    {
-      "id": "cisa-cve-2026-7273",
-      "sourceId": "cisa-kev",
-      "publisher": "CISA KEV Catalog",
-      "title": "CVE-2026-7273: Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability",
-      "publishedAt": "2026-09-21T00:00:00Z",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-7273",
-      "summary": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute OS commands via a crafted HTTP request. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-      "signalType": "Known exploited vulnerability — listed by CISA KEV",
-      "caseType": "vulnerability",
-      "confidence": "cisa-kev-listed",
-      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
-      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
     },
     {
       "id": "ncsc-uk-cyber-adversary-simulation-cyas-scheme-documents-now-available",
