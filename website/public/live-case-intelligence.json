@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T09:44:58Z",
+  "generatedAt": "2026-10-28T18:22:29Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -9,10 +9,8 @@
       "name": "CERT-In Advisories",
       "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADVLIST02&year=2026",
       "description": "Official Indian cybersecurity advisories",
-      "status": "stale",
-      "itemCount": 0,
-      "error": "No CISA advisory feed endpoint returned usable records: https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADVLIST02&year=2026: The read operation timed out",
-      "lastKnownItemCount": 15
+      "status": "ok",
+      "itemCount": 15
     },
     {
       "id": "bleepingcomputer",
@@ -28,7 +26,7 @@
       "url": "https://therecord.media/",
       "description": "Global reporting on breaches, cybercrime, and threat activity; reports are not automatically primary confirmation",
       "status": "ok",
-      "itemCount": 4
+      "itemCount": 3
     },
     {
       "id": "thehackernews",
@@ -66,6 +64,240 @@
     }
   ],
   "items": [
+    {
+      "id": "thehackernews-google-to-allow-one-tap-android-app-installs-from-approved-third-party-stores-outside-u-s",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Google to Allow One-Tap Android App Installs From Approved Third-Party Stores Outside U.S.",
+      "publishedAt": "2026-10-28T17:08:09Z",
+      "url": "https://thehackernews.com/2026/10/google-to-allow-one-tap-android-app.html",
+      "summary": "Third-party Android app stores can now apply to Google for permission to install apps with one tap, without Android's usual confirmation screens, and to update them in the background. To qualify, a store must pass identity checks and send Google its full catalog, along with every new app and update, for ongoing malware scanning. Approved stores get the features from December 1, but only on",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "malware-ransomware",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-sony-isp-subsidiary-data-breach-exposes-2-5-million-customer-records",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Sony ISP subsidiary data breach exposes 2.5 million customer records",
+      "publishedAt": "2026-10-28T16:45:47Z",
+      "url": "https://www.bleepingcomputer.com/news/security/sony-isp-subsidiary-data-breach-exposes-25-million-customer-records/",
+      "summary": "Sony Network Communications has confirmed a data breach that compromised approximately 2.5 million records containing current and former customers' personal information. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "third-party-breach",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-moldova-investigates-possible-foreign-involvement-in-major-government-cyberattack",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "Moldova investigates possible foreign involvement in major government cyberattack",
+      "publishedAt": "2026-10-28T16:37:00Z",
+      "url": "https://therecord.media/moldova-investigates-possible-foreign-involvement-cyberattacks",
+      "summary": "Prime Minister Vasile Tofan said the incident may be part of a broader campaign targeting both citizens' personal data and government digital infrastructure, according to local media reports.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-researcher-reveals-how-logic-bugs-alone-cracked-microsoft-edge-in-175-000-pwn2own-win",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Researcher Reveals How Logic Bugs Alone Cracked Microsoft Edge in $175,000 Pwn2Own Win",
+      "publishedAt": "2026-10-28T16:23:34Z",
+      "url": "https://thehackernews.com/2026/10/researcher-reveals-how-logic-bugs-alone.html",
+      "summary": "A chain of logic flaws, with no memory corruption, can turn a malicious web page into code running on a Windows computer outside Microsoft Edge's sandbox, a security researcher has shown. Orange Tsai of DEVCORE published the full method on October 28, five months after the chain won $175,000 at the Pwn2Own Berlin contest in May. Microsoft fixed the Edge bugs the day after the contest,",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-php2shell-attack-roots-25-servers-breaches-u-s-government-affiliated-network",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network",
+      "publishedAt": "2026-10-28T16:02:45Z",
+      "url": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html",
+      "summary": "Cybersecurity researchers have disclosed details of what appears to be an artificial intelligence (AI)-assisted attack orchestrated by a suspected China-nexus threat actor that has leveraged the PHP2Shell vulnerabilities to breach exposed systems. The activity, which was observed on October 25, 2026, involved an attacker combining PHP2Shell with a kernel privilege escalation exploit to root",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-volt-typhoon-hides-zero-day-attacks-using-silent-train-framework",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Volt Typhoon hides zero-day attacks using 'Silent Train' framework",
+      "publishedAt": "2026-10-28T16:00:00Z",
+      "url": "https://www.bleepingcomputer.com/news/security/volt-typhoon-hides-zero-day-attacks-using-silent-train-framework/",
+      "summary": "Chinese state-sponsored hacking group Volt Typhoon has been using a framework that relies on rotating chains of connected devices compromised on demand, including for zero-day attacks targeting high-value systems. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-uk-to-look-at-making-software-companies-liable-for-cyber-breaches",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "UK to look at making software companies liable for cyber breaches",
+      "publishedAt": "2026-10-28T15:37:00Z",
+      "url": "https://therecord.media/uk-budget-proposal-software-companies-liable-cyber-breaches",
+      "summary": "The new U.K. budget says the government will \"consider where liability for cyber breaches should sit,\" potentially a landmark shift for a country that has relied on voluntary codes to encourage software vendors to improve security.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-belarusian-hackers-increasingly-acting-as-proxies-for-russia-amid-war-in-ukraine",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "Belarusian hackers increasingly acting as proxies for Russia amid war in Ukraine",
+      "publishedAt": "2026-10-28T15:15:00Z",
+      "url": "https://therecord.media/belarus-russia-hackers-ukraine-war",
+      "summary": "Belarus-linked hackers are increasingly aligning their cyber operations with Russia's interests in Ukraine, researchers said Wednesday.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-microsoft-urges-entra-id-admins-to-migrate-users-to-passkeys",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Microsoft urges Entra ID admins to migrate users to passkeys",
+      "publishedAt": "2026-10-28T14:48:32Z",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-reminds-entra-id-admins-to-migrate-users-to-passkeys/",
+      "summary": "Microsoft again asked Entra ID administrators to migrate users to phishing-resistant methods to avoid sign-in disruptions before it retires SMS and voice authentication in February 2027. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "identity-cloud",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-infratrust-report-warns-of-exploited-flaws-in-critical-network-infrastructure",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "InfraTrust report warns of exploited flaws in critical network infrastructure",
+      "publishedAt": "2026-10-28T14:00:00Z",
+      "url": "https://www.bleepingcomputer.com/news/security/infratrust-report-warns-of-exploited-flaws-in-critical-network-infrastructure/",
+      "summary": "Attackers are actively exploiting vulnerabilities across critical network infrastructure, and PHP flaws known as \"PHP2Shell\" put the web management interfaces of firewalls, VPNs, application delivery controllers, and other appliances at risk. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-even-after-php2shell-blast-radius-matters-more-than-a-cvss-score",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Even after PHP2Shell, blast radius matters more than a CVSS score",
+      "publishedAt": "2026-10-28T13:50:59Z",
+      "url": "https://www.bleepingcomputer.com/news/security/even-after-php2shell-blast-radius-matters-more-than-a-cvss-score/",
+      "summary": "PHP2Shell shows how quickly attackers can exploit critical vulnerabilities, often before organizations have time to patch. Token Security explains why limiting the access of service accounts, API keys, and AI agents is just as important as fixing vulnerabilities to reduce the damage from a breach. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "ai-agent",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-hackers-target-critical-oracle-e-business-suite-rce-flaw-days-after-security-patch",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Hackers Target Critical Oracle E-Business Suite RCE Flaw Days After Security Patch",
+      "publishedAt": "2026-10-28T12:48:03Z",
+      "url": "https://thehackernews.com/2026/10/hackers-target-critical-oracle-e.html",
+      "summary": "Threat actors are beginning to probe for a newly patched critical vulnerability in Oracle E-Business Suite (EBS), according to threat intelligence firm Defused Cyber. The vulnerability in question is CVE-2026-101767 (CVSS score: 9.8) in the Oracle Application Object Library of Oracle E-Business Suite. It was patched by Oracle last week as part of its Critical Patch Update. Security researchers",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-hackers-now-scanning-systems-for-recently-patched-oracle-flaw",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Hackers now scanning systems for recently-patched Oracle flaw",
+      "publishedAt": "2026-10-28T12:19:57Z",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-now-scanning-systems-for-recently-patched-oracle-flaw/",
+      "summary": "Attackers have begun probing the Internet for systems unpatched against a recently disclosed critical Oracle E-Business Suite (EBS) vulnerability. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-critical-16-year-old-uefi-flaw-can-run-code-before-secure-boot-on-network-booting-servers",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Critical 16-Year-Old UEFI Flaw Can Run Code Before Secure Boot on Network-Booting Servers",
+      "publishedAt": "2026-10-28T11:50:00Z",
+      "url": "https://thehackernews.com/2026/10/critical-16-year-old-uefi-flaw-can-run.html",
+      "summary": "A critical 16-year-old flaw in EDK II, the open-source code that most hardware makers use to build UEFI firmware, can allow an attacker to run code on a machine before its operating system loads, but only while the machine is booting over the network. UEFI firmware is the software that runs first when a computer is switched on, before the operating system. An attacker who can reach the machine",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-wazuh-and-ai-for-enhanced-soc-workflows",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Wazuh and AI for Enhanced SOC Workflows",
+      "publishedAt": "2026-10-28T11:30:00Z",
+      "url": "https://thehackernews.com/2026/10/wazuh-and-ai-for-enhanced-soc-workflows.html",
+      "summary": "Artificial Intelligence (AI) has become one of this decade's defining technologies. From healthcare and finance to manufacturing and education, organizations increasingly rely on AI to automate repetitive tasks, uncover patterns hidden within large datasets, and support faster decision-making. Cybersecurity has experienced a similar transformation. While attackers employ AI to automate",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-adobe-fixes-8-critical-campaign-classic-flaws-allowing-code-execution-and-security-bypass",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Adobe Fixes 8 Critical Campaign Classic Flaws Allowing Code Execution and Security Bypass",
+      "publishedAt": "2026-10-28T11:15:51Z",
+      "url": "https://thehackernews.com/2026/10/adobe-fixes-8-critical-campaign-classic.html",
+      "summary": "Adobe has released patches to address multiple critical security flaws in Campaign Classic that, if successfully exploited, could result in arbitrary code execution, security feature bypass, and privilege escalation. The list of eight vulnerabilities is as follows - CVE-2026-104351 (CVSS score: 9.9) - A code injection vulnerability that could lead to arbitrary code execution.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "CISA warns of hackers now exploiting critical Node2Shell flaw",
+      "publishedAt": "2026-10-28T10:46:23Z",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/",
+      "summary": "On Tuesday, the US Cybersecurity and Infrastructure Security Agency (CISA) confirmed that hackers have begun exploiting a critical Brotli vulnerability known as Node2Shell, Broccoli2Shell, and HTTP2Shell. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-american-organizations-under-attack-skyw4lker-device-code-phishing-campaign-exposed",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "American Organizations Under Attack: Skyw4lker Device Code Phishing Campaign Exposed",
+      "publishedAt": "2026-10-28T10:30:00Z",
+      "url": "https://thehackernews.com/2026/10/american-organizations-under-attack.html",
+      "summary": "Modern phishing campaigns can compromise American businesses without relying on traditional credential theft. Attackers can abuse legitimate cloud services, authentication mechanisms, and trusted business workflows to gain access to corporate accounts while leaving fewer obvious signs behind. ANY.RUN's analysis of Skyw4lker, a device code phishing campaign primarily targeting U.S. organizations",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "identity-cloud",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
     {
       "id": "bleepingcomputer-nefilim-and-hive-ransomware-affiliate-gets-70-months-in-prison",
       "sourceId": "bleepingcomputer",
@@ -145,6 +377,19 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
+      "id": "certin-ciad-2026-0057",
+      "sourceId": "cert-in",
+      "publisher": "CERT-In",
+      "title": "Multiple vulnerabilities in GoAhead Web Server",
+      "publishedAt": "2026-10-28T00:00:00Z",
+      "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0057",
+      "summary": "Official CERT-In advisory. Review the linked notice for exact affected products, exploitation context, and vendor-approved mitigation; do not assume every installation is affected.",
+      "signalType": "Official security advisory",
+      "caseType": "vulnerability",
+      "confidence": "official-advisory",
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0057; details must be checked in the linked notice"
+    },
+    {
       "id": "bleepingcomputer-japan-s-gmo-urges-customers-to-shut-down-pcs-amid-ransomware-threat",
       "sourceId": "bleepingcomputer",
       "publisher": "BleepingComputer",
@@ -180,19 +425,6 @@
       "summary": "A credit card skimming group reportedly compromised a shared analytics script used by e-commerce platform Convertr to steal shoppers' payment data during checkout. [...]",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "therecord-nefilim-hive-ransomware-operator-given-five-year-plus-sentence-after-guilty-plea",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "Nefilim, Hive ransomware operator given five-year-plus sentence after guilty plea",
-      "publishedAt": "2026-10-27T20:40:00Z",
-      "url": "https://therecord.media/nefilim-hive-ransomware-operator-70-months-prison",
-      "summary": "Ukrainian national Artem Stryzhak, 36, had pleaded guilty last year to charges related to participating in at least two well-known ransomware groups.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "malware-ransomware",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -236,32 +468,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "therecord-hackers-repeatedly-breached-suppliers-holding-uk-police-data-watchdog-finds",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "Hackers repeatedly breached suppliers holding UK police data, watchdog finds",
-      "publishedAt": "2026-10-27T15:07:00Z",
-      "url": "https://therecord.media/uk-police-data-breached-from-suppliers-watchdog-report",
-      "summary": "His Majesty’s Inspectorate of Constabulary and Fire & Rescue Services says British police data has been breach several times this decade through third-party IT suppliers.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "therecord-university-of-new-mexico-hospital-diverts-ambulances-after-cyberattack",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "University of New Mexico hospital diverts ambulances after cyberattack",
-      "publishedAt": "2026-10-27T14:57:00Z",
-      "url": "https://therecord.media/university-of-new-mexico-hospital-diverts-cyber-incident",
-      "summary": "For about two hours on Monday, the organization diverted ambulances to health systems in Albuquerque and Santa Fe. They were forced to suspend outpatient surgeries and appointments for the remainder of the day.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "bleepingcomputer-tailscale-warns-of-ssh-flaws-allowing-root-privilege-escalation",
       "sourceId": "bleepingcomputer",
       "publisher": "BleepingComputer",
@@ -271,19 +477,6 @@
       "summary": "The Tailscale security team is working to patch almost a dozen security vulnerabilities that could be exploited to steal credentials, crash servers, gain root privileges, and more. [...]",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-the-huntress-tragic-quadrant-ranking-threats-hitting-businesses-hardest",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "The Huntress Tragic Quadrant: Ranking Threats Hitting Businesses Hardest",
-      "publishedAt": "2026-10-27T14:01:11Z",
-      "url": "https://www.bleepingcomputer.com/news/security/the-huntress-tragic-quadrant-ranking-threats-hitting-businesses-hardest/",
-      "summary": "Attackers are increasingly abusing legitimate IT tools, Microsoft 365 sessions, and everyday workflows to compromise businesses without triggering traditional defenses. Huntress Labs ranks the threats hitting organizations hardest, highlighting which attack techniques deserve immediate attention and which remain emerging risks. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -310,19 +503,6 @@
       "summary": "Apple on Monday backported fixes for a high-severity security flaw that was exploited in real-world cyber attacks to older devices. The vulnerability, tracked as CVE-2026-86950 (CVSS score: 8.8), is an out-of-bounds write affecting CoreGraphics that could result in arbitrary code execution when processing a maliciously crafted file. Patches for the flaw were released last month by Apple in",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "therecord-malicious-apps-prey-on-russians-anxiety-about-fuel-prices-drone-strikes",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "Malicious apps prey on Russians’ anxiety about fuel prices, drone strikes",
-      "publishedAt": "2026-10-27T13:36:00Z",
-      "url": "https://therecord.media/malicious-apps-russian-anxiety-gas-prices-drone-strikes",
-      "summary": "Cybercriminals are stuffing infostealer malware into bogus apps aimed at tracking gas prices, police activity, drone strikes and other information of concern to average Russians, researchers said.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "malware-ransomware",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -379,19 +559,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "bleepingcomputer-apple-backports-coregraphics-zero-day-patches-to-older-iphones",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Apple backports CoreGraphics zero-day patches to older iPhones",
-      "publishedAt": "2026-10-27T10:36:12Z",
-      "url": "https://www.bleepingcomputer.com/news/apple/apple-backports-coregraphics-zero-day-patches-to-older-iphones/",
-      "summary": "​Apple has backported security patches released last month to older iPhones and iPads, addressing a zero-day bug exploited in \"extremely sophisticated\" targeted attacks on iOS devices. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "thehackernews-australia-gets-into-amadey-malware-backend-cuts-off-access-to-180-000-infected-computers",
       "sourceId": "thehackernews",
       "publisher": "The Hacker News",
@@ -405,19 +572,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "bleepingcomputer-energy-giant-engie-discloses-data-breach-affecting-customers",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Energy giant ENGIE discloses data breach affecting customers",
-      "publishedAt": "2026-10-27T09:25:50Z",
-      "url": "https://www.bleepingcomputer.com/news/security/energy-giant-engie-discloses-data-breach-affecting-customers/",
-      "summary": "French energy giant ENGIE, one of the world's largest power and natural gas providers, confirmed that attackers stole customer data after breaching a marketing platform used by business partners. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "third-party-breach",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "thehackernews-openai-compaction-flaw-let-researchers-bypass-hidden-reasoning-protections",
       "sourceId": "thehackernews",
       "publisher": "The Hacker News",
@@ -427,19 +581,6 @@
       "summary": "OpenAI's compaction feature, which shrinks a long conversation to save space, could be turned into a way to copy a model's hidden reasoning out in plain text, security firm Xint has shown. OpenAI's reasoning models work through a problem before answering, and the service normally returns only the raw reasoning as an encrypted item the user cannot read. The method got past",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "CISA confirms PHP2Shell vulnerabilities now exploited in attacks",
-      "publishedAt": "2026-10-27T08:20:54Z",
-      "url": "https://www.bleepingcomputer.com/news/security/cisa-confirms-php2shell-vulnerabilities-now-exploited-in-attacks/",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added the PHP2Shell vulnerabilities to its catalog of actively exploited security flaws and ordered federal agencies to patch their systems by Thursday. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -480,8 +621,20 @@
       "signalType": "Official security advisory",
       "caseType": "vulnerability",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0055; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0055; details must be checked in the linked notice"
+    },
+    {
+      "id": "certin-ciad-2026-0056",
+      "sourceId": "cert-in",
+      "publisher": "CERT-In",
+      "title": "Multiple Vulnerabilities in Apple Products",
+      "publishedAt": "2026-10-27T00:00:00Z",
+      "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0056",
+      "summary": "Official CERT-In advisory. Review the linked notice for exact affected products, exploitation context, and vendor-approved mitigation; do not assume every installation is affected.",
+      "signalType": "Official security advisory",
+      "caseType": "vulnerability",
+      "confidence": "official-advisory",
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0056; details must be checked in the linked notice"
     },
     {
       "id": "cisa-cve-2026-48356",
@@ -510,45 +663,6 @@
       "confidence": "cisa-kev-listed",
       "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
       "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "id": "bleepingcomputer-university-of-copenhagen-data-breach-exposes-data-of-525-000-people",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "University of Copenhagen data breach exposes data of 525,000 people",
-      "publishedAt": "2026-10-26T22:20:36Z",
-      "url": "https://www.bleepingcomputer.com/news/security/university-of-copenhagen-data-breach-exposes-data-of-525-000-people/",
-      "summary": "The University of Copenhagen in Denmark confirmed that hackers accessed one of its test environments containing personal data belonging to 525,000 people. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "third-party-breach",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-former-pentester-used-artex-ai-to-steal-8-2-million-data-records",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Former pentester used ARTEX AI to steal 8.2 million data records",
-      "publishedAt": "2026-10-26T21:08:28Z",
-      "url": "https://www.bleepingcomputer.com/news/security/former-pentester-used-artex-ai-to-steal-82-million-data-records/",
-      "summary": "South Korean police identified seven suspects linked to a cybercrime operation that breached more than 90 organizations in the country, with ARTEX AI pentesting framework used in most of the attacks. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-openai-launches-gpt-6-1-terra-with-3x-faster-ai-agents-50-lower-pricing",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "OpenAI launches GPT-6.1 Terra with 3x faster AI agents, 50% lower pricing",
-      "publishedAt": "2026-10-26T20:46:49Z",
-      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-launches-gpt-61-terra-with-3x-faster-ai-agents-50-percent-lower-pricing/",
-      "summary": "OpenAI has launched GPT-6.1 Terra, a new model focused on computer use, visual reasoning, coding, and everyday work, while costing significantly less than its larger models. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "ai-agent",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
       "id": "thehackernews-hackers-infect-953-online-stores-with-scanner-evading-javascript-mostly-on-magento",
@@ -797,8 +911,7 @@
       "signalType": "Official security advisory",
       "caseType": "vulnerability",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0054; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0054; details must be checked in the linked notice"
     },
     {
       "id": "thehackernews-blackx-uefi-bootkit-bypasses-secure-boot-on-patched-windows-systems-missing-revocations",
@@ -892,45 +1005,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "thehackernews-researchers-demonstrate-node2shell-rce-exploit-on-node-js-build-using-crafted-brotli-data",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Researchers Demonstrate Node2Shell RCE Exploit on Node.js Build Using Crafted Brotli Data",
-      "publishedAt": "2026-10-23T08:40:43Z",
-      "url": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
-      "summary": "Malicious Brotli data can make an application on an official build of Node.js run attacker-supplied code, security researchers at Imperva have demonstrated. Their \"Node2Shell\" proof of concept ran code on the official Node.js 24.22.0 image for Linux arm64, with no debugger or custom build, by feeding crafted data to the bundled Brotli decoder (CVE-2026-111497). Node.js disclosed the flaw",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-critical-x402-sdk-flaw-could-let-malicious-apis-drain-ai-agents-token-balances",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Critical x402 SDK Flaw Could Let Malicious APIs Drain AI Agents’ Token Balances",
-      "publishedAt": "2026-10-23T08:35:45Z",
-      "url": "https://thehackernews.com/2026/10/critical-x402-sdk-flaw-could-let.html",
-      "summary": "AI agents paying for API calls with the x402 SDKs could sign a payment for their full balance of a supported token if a malicious API asked for it, security firm V12 said on October 22. The cause was the SDKs' default client, which set no spending limit until releases on August 18 added one. The risk was limited to agents who automatically signed payments and whose apps set",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "ai-agent",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-php2shell-exploit-attempts-hit-millions-as-attackers-try-to-deploy-mirai-malware",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "PHP2Shell Exploit Attempts Hit Millions as Attackers Try to Deploy Mirai Malware",
-      "publishedAt": "2026-10-23T07:40:45Z",
-      "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html",
-      "summary": "Threat actors have been observed unsuccessfully attempting to exploit the newly disclosed PHP2Shell vulnerabilities to rope infected systems into a Mirai botnet variant called Potassium, as it emerges that weaponizing the flaws may be harder than previously thought. The attacks aim to exploit CVE-2026-109618 and CVE-2026-109619 (CVSS scores: 9.2), which can result in unauthenticated remote",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "malware-ransomware",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "reuters-pwc-third-party-incident-2026-10-23",
       "sourceId": "reuters-editorial",
       "publisher": "Reuters",
@@ -954,8 +1028,7 @@
       "signalType": "Official security advisory",
       "caseType": "dependency-compromise",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0053; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0053; details must be checked in the linked notice"
     },
     {
       "id": "cisa-cve-2026-114625",
@@ -986,71 +1059,6 @@
       "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
     },
     {
-      "id": "thehackernews-the-ai-agent-nobody-owns-watch-expert-webinar-on-your-newest-insider-threat",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "The AI Agent Nobody Owns: Watch Expert Webinar On Your Newest Insider Threat",
-      "publishedAt": "2026-10-22T19:05:35Z",
-      "url": "https://thehackernews.com/2026/10/the-ai-agent-nobody-owns-watch-expert.html",
-      "summary": "Right now, there is probably an AI agent running on a laptop somewhere in your network. It stores API keys and database passwords, can access your internal systems, and works without anyone watching. Nobody reviewed its access. Nobody owns it. If an employee had that much reach with that little oversight, you would call it an insider risk. So why do we still call the agent a productivity tool?",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "ai-agent",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-arista-warns-of-critical-velocloud-sql-injection-zero-day-exploited-in-attacks",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Arista Warns of Critical VeloCloud SQL Injection Zero-Day Exploited in Attacks",
-      "publishedAt": "2026-10-22T19:05:17Z",
-      "url": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
-      "summary": "Attackers are exploiting a zero-day SQL injection flaw in Arista's VeloCloud Orchestrator (VCO), the central management system for VeloCloud SD-WAN networks, the company said in an advisory on October 22. The flaw lets anyone who can log in to the orchestrator, even with a read-only customer account, gain operator privileges, the top level of control over it. For",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-emudhra-to-exit-global-ssl-tls-business-after-8-intermediate-ca-keys-found-easily-guessabl",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "eMudhra to Exit Global SSL/TLS Business After 8 Intermediate CA Keys Found Easily Guessable",
-      "publishedAt": "2026-10-22T18:12:43Z",
-      "url": "https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html",
-      "summary": "eMudhra, an Indian certificate authority (CA), will withdraw from its global SSL/TLS certificate business, its board decided on Thursday. The decision came five days after a researcher reported recovering the private keys of eight of its intermediate CA certificates. eMudhra said it will replace affected customers' certificates with free ones from partners, though its",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "certificate-compromise",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-threatsday-ai-secrets-leak-pingcap-source-theft-signal-hang-up-flaw-laravel-auth-bypass-21",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "ThreatsDay: AI Secrets Leak, PingCAP Source Theft, Signal Hang-Up Flaw, Laravel Auth Bypass + 21 More",
-      "publishedAt": "2026-10-22T17:45:44Z",
-      "url": "https://thehackernews.com/2026/10/threatsday-ai-secrets-leak-pingcap.html",
-      "summary": "This week has already been rough for cybersecurity. Critical PHP and GitLab RCE flaws, serious Linux security bugs, compromised eMudhra certificates, a Node.js RCE flaw, a hacked LiteLLM release, and hundreds of hijacked Tor relays. That's a lot to deal with in just a few days. And the week isn't even over yet. But those big headlines are only half the story. Stolen passwords, exposed",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "certificate-compromise",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-two-cvss-9-0-linux-ksmbd-rce-flaws-disclosed-on-public-mailing-lists-before-kernel-fixes",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Two CVSS 9.0 Linux KSMBD RCE Flaws Disclosed on Public Mailing Lists Before Kernel Fixes",
-      "publishedAt": "2026-10-22T17:01:53Z",
-      "url": "https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html",
-      "summary": "Linux servers running KSMBD, the kernel's built-in SMB server, are exposed to two publicly reported remote code execution flaws rated 9.0 by Trend Micro's Zero Day Initiative, with no fix yet in the mainline kernel. One of them, ZDI-CAN-33774, can be triggered before any network authentication. The other, ZDI-CAN-33549, requires the SMB Direct transport and an RDMA-capable network",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "certin-ciad-2026-0051",
       "sourceId": "cert-in",
       "publisher": "CERT-In",
@@ -1061,8 +1069,7 @@
       "signalType": "Official security advisory",
       "caseType": "vulnerability",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0051; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0051; details must be checked in the linked notice"
     },
     {
       "id": "certin-ciad-2026-0052",
@@ -1075,8 +1082,7 @@
       "signalType": "Official security advisory",
       "caseType": "vulnerability",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0052; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0052; details must be checked in the linked notice"
     },
     {
       "id": "ncsc-uk-critical-security-issue-affecting-php",
@@ -1102,8 +1108,7 @@
       "signalType": "Official security advisory",
       "caseType": "certificate-compromise",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0050; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0050; details must be checked in the linked notice"
     },
     {
       "id": "ncsc-uk-introducing-a-new-ai-chapter-in-the-ncsc-research-problem-book",
@@ -1255,8 +1260,7 @@
       "signalType": "Official security advisory",
       "caseType": "ai-agent",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0049; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0049; details must be checked in the linked notice"
     },
     {
       "id": "certin-ciad-2026-0048",
@@ -1269,8 +1273,7 @@
       "signalType": "Official security advisory",
       "caseType": "vulnerability",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0048; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0048; details must be checked in the linked notice"
     },
     {
       "id": "certin-ciad-2026-0047",
@@ -1283,8 +1286,7 @@
       "signalType": "Official security advisory",
       "caseType": "vulnerability",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0047; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0047; details must be checked in the linked notice"
     },
     {
       "id": "cisa-cve-2026-76519",
@@ -1394,8 +1396,7 @@
       "signalType": "Official security advisory",
       "caseType": "api-abuse",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0046; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0046; details must be checked in the linked notice"
     },
     {
       "id": "cisa-cve-2023-22894",
@@ -1655,20 +1656,6 @@
       "publishedAt": "2026-09-24T00:00:00Z",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-71362",
       "summary": "Adobe Commerce and Magento contains an incorrect authorization vulnerability that could allow an attacker to leverage this vulnerability to gain elevated access to sensitive resources without any user interaction. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-      "signalType": "Known exploited vulnerability — listed by CISA KEV",
-      "caseType": "vulnerability",
-      "confidence": "cisa-kev-listed",
-      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
-      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "id": "cisa-cve-2026-5430",
-      "sourceId": "cisa-kev",
-      "publisher": "CISA KEV Catalog",
-      "title": "CVE-2026-5430: WSO2 Multiple Products Path Traversal Vulnerability",
-      "publishedAt": "2026-09-24T00:00:00Z",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-5430",
-      "summary": "WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
       "signalType": "Known exploited vulnerability — listed by CISA KEV",
       "caseType": "vulnerability",
       "confidence": "cisa-kev-listed",
