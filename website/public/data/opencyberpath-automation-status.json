@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T22:22:33Z",
+  "generatedAt": "2026-10-28T05:52:54Z",
   "status": "partial",
   "summary": {
     "connectedSources": 8,
@@ -14,15 +14,15 @@
       "label": "CyberPulse news and advisories",
       "status": "partial",
       "itemCount": 400,
-      "lastCheckedAt": "2026-10-27T18:15:44Z",
-      "note": "Existing six-hour public-source refresh; latest snapshot age: 4h."
+      "lastCheckedAt": "2026-10-27T22:35:42Z",
+      "note": "Existing six-hour public-source refresh; latest snapshot age: 7h."
     },
     {
       "id": "youtube-discovery",
       "label": "YouTube recent public videos",
       "status": "unavailable",
       "itemCount": 0,
-      "lastCheckedAt": "2026-10-27T22:22:28Z",
+      "lastCheckedAt": "2026-10-28T05:52:51Z",
       "note": "No YouTube discovery snapshot available."
     },
     {
@@ -31,7 +31,7 @@
       "status": "stale",
       "itemCount": 14,
       "lastCheckedAt": "2026-10-26T04:04:43.813046Z",
-      "note": "Existing review-only feed snapshot; latest report age: 42h."
+      "note": "Existing review-only feed snapshot; latest report age: 49h."
     },
     {
       "id": "certification-monitor",
@@ -45,16 +45,16 @@
       "id": "configured-public-feeds",
       "label": "Configured public RSS/Atom feeds",
       "status": "fresh",
-      "itemCount": 33,
-      "lastCheckedAt": "2026-10-27T22:22:29Z",
-      "note": "33 items from configured feeds; 5/5 feeds checked successfully; original publisher links retained."
+      "itemCount": 31,
+      "lastCheckedAt": "2026-10-28T05:52:52Z",
+      "note": "31 items from configured feeds; 5/5 feeds checked successfully; original publisher links retained."
     },
     {
       "id": "employer-job-boards",
       "label": "Configured employer job boards",
       "status": "not-configured",
       "itemCount": 0,
-      "lastCheckedAt": "2026-10-27T22:22:29Z",
+      "lastCheckedAt": "2026-10-28T05:52:52Z",
       "note": "Optional. Add verified public Greenhouse/Lever board identifiers to sources.json; do not guess a company board token."
     },
     {
@@ -62,7 +62,7 @@
       "label": "GitHub public repositories",
       "status": "partial",
       "itemCount": 10,
-      "lastCheckedAt": "2026-10-27T22:22:31Z",
+      "lastCheckedAt": "2026-10-28T05:52:53Z",
       "note": "10 public repository candidates; review the README, license, activity, dependencies and safe-use context. 4 query/query-group(s) could not be checked."
     },
     {
@@ -70,7 +70,7 @@
       "label": "Remote OK public jobs feed",
       "status": "fresh",
       "itemCount": 29,
-      "lastCheckedAt": "2026-10-27T22:22:32Z",
+      "lastCheckedAt": "2026-10-28T05:52:54Z",
       "note": "Relevant public listings filtered by cybersecurity keywords. Remote OK asks aggregators to credit it and link directly to original listings."
     },
     {
@@ -78,7 +78,7 @@
       "label": "CTFtime public events API",
       "status": "fresh",
       "itemCount": 37,
-      "lastCheckedAt": "2026-10-27T22:22:33Z",
+      "lastCheckedAt": "2026-10-28T05:52:54Z",
       "note": "Upcoming public events; confirm registration windows and competition rules at the organiser."
     },
     {
@@ -86,7 +86,7 @@
       "label": "Reddit public discussions",
       "status": "needs-approved-access",
       "itemCount": 0,
-      "lastCheckedAt": "2026-10-27T22:22:33Z",
+      "lastCheckedAt": "2026-10-28T05:52:54Z",
       "note": "Not connected. Requires approved API access and compliance with current Reddit Data API terms; no scraping fallback is used."
     },
     {
@@ -94,7 +94,7 @@
       "label": "X public post search",
       "status": "needs-provider-access",
       "itemCount": 0,
-      "lastCheckedAt": "2026-10-27T22:22:33Z",
+      "lastCheckedAt": "2026-10-28T05:52:54Z",
       "note": "Not connected. Configure a permitted X API plan and bearer token to enable recent public search; scraping is not used."
     },
     {
@@ -102,7 +102,7 @@
       "label": "Instagram public hashtag discovery",
       "status": "needs-approved-access",
       "itemCount": 0,
-      "lastCheckedAt": "2026-10-27T22:22:33Z",
+      "lastCheckedAt": "2026-10-28T05:52:54Z",
       "note": "Not connected. Requires eligible professional-account setup, approved permissions and access token. This is hashtag-scoped discovery, not every Instagram post."
     },
     {
@@ -110,7 +110,7 @@
       "label": "LinkedIn authorized organization posts",
       "status": "needs-approved-access",
       "itemCount": 0,
-      "lastCheckedAt": "2026-10-27T22:22:33Z",
+      "lastCheckedAt": "2026-10-28T05:52:54Z",
       "note": "Not connected. Standard API access does not provide an unrestricted global public-post search. An approved organization-scoped token and permission are required for posts from an authorized organization."
     },
     {
@@ -118,7 +118,7 @@
       "label": "LinkedIn global public-post search",
       "status": "not-supported-by-standard-connector",
       "itemCount": 0,
-      "lastCheckedAt": "2026-10-27T22:22:33Z",
+      "lastCheckedAt": "2026-10-28T05:52:54Z",
       "note": "No unrestricted global public-post search is claimed. Authorized organization-scoped post retrieval can be configured separately."
     },
     {
@@ -126,7 +126,7 @@
       "label": "Platform coverage guardrail",
       "status": "policy-limited",
       "itemCount": 0,
-      "lastCheckedAt": "2026-10-27T22:22:33Z",
+      "lastCheckedAt": "2026-10-28T05:52:54Z",
       "note": "Connectors only index public material returned by an approved API/feed. Private posts, login-gated material and unavailable platform data are not scraped."
     }
   ],
