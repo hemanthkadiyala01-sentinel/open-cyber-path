@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T01:05:08Z",
+  "generatedAt": "2026-10-30T10:06:49Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -18,7 +18,7 @@
       "url": "https://www.bleepingcomputer.com/rss-feeds/",
       "description": "Independent global incident and vulnerability reporting; cross-check material claims",
       "status": "ok",
-      "itemCount": 11
+      "itemCount": 12
     },
     {
       "id": "therecord",
@@ -64,6 +64,71 @@
     }
   ],
   "items": [
+    {
+      "id": "bleepingcomputer-binance-links-6-3-billion-crypto-theft-to-compromised-devops-laptop",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Binance links $6.3 billion crypto theft to compromised DevOps laptop",
+      "publishedAt": "2026-10-30T09:18:13Z",
+      "url": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/",
+      "summary": "Binance, the world's largest crypto exchange, has linked the theft of about $6.3 billion in cryptocurrency to a DevOps engineer's compromised laptop. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-hackers-actively-exploit-highly-critical-drupal-commerce-core-authorization-bypass-flaw",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Hackers Actively Exploit Highly Critical Drupal Commerce Core Authorization Bypass Flaw",
+      "publishedAt": "2026-10-30T07:45:30Z",
+      "url": "https://thehackernews.com/2026/10/hackers-actively-exploit-highly.html",
+      "summary": "Drupal has warned that threat actors are exploiting a \"highly critical\" security flaw in its Commerce Core component. The vulnerability, tracked as CVE-2026-118539 (CVSS score: N/A), is a case of missing authorization affecting Commerce Core versions from 0.0.0 to 2.41 and from 3.0.0 to 3.3.13. \"This module enables you to sell goods and services to customers through an included shopping cart",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-cisa-adds-actively-exploited-gitlab-rce-and-cisco-firewall-dos-flaws-to-kev",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "CISA Adds Actively Exploited GitLab RCE and Cisco Firewall DoS Flaws to KEV",
+      "publishedAt": "2026-10-30T07:27:05Z",
+      "url": "https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Cisco and GitLab software to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed below - CVE-2026-97229 (CVSS score: 10.0) - An integer overflow or wraparound vulnerability in GitLab Community Edition and Enterprise",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-binance-suffers-security-breach-affecting-6-3-billion-in-assets-nearly-3-billion-frozen",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Binance Suffers Security Breach Affecting $6.3 Billion in Assets, Nearly $3 Billion Frozen",
+      "publishedAt": "2026-10-30T04:14:59Z",
+      "url": "https://thehackernews.com/2026/10/binance-suffers-security-breach.html",
+      "summary": "Cryptocurrency giant Binance said on Thursday that a \"security incident\" on its platform has impacted about $6.3 billion worth of assets. The world's biggest cryptocurrency exchange said nearly $3 billion of those assets have been frozen on-chain so far. Tether and Circle said they have frozen more than 1.567 billion USDT and 800 million USDC related to the incident, respectively. The",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-binance-hit-by-record-6-3-billion-crypto-hack-scrambles-to-freeze-funds",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "Binance hit by record $6.3 billion crypto hack, scrambles to freeze funds",
+      "publishedAt": "2026-10-30T00:00:00Z",
+      "url": "https://therecord.media/binance-hit-by-record-6-billion-crypto-hack",
+      "summary": "Binance, the world's largest cryptocurrency exchange, confirmed Thursday that it had been hacked in a $6.3 billion cyber heist that blockchain investigators are blaming on North Korea.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
     {
       "id": "bleepingcomputer-binance-probes-potential-5-8-billion-crypto-theft-hack",
       "sourceId": "bleepingcomputer",
@@ -243,19 +308,6 @@
       "summary": "Google on Wednesday took the wraps off Gemini 4 Carbon, its latest frontier model with state-of-the-art cybersecurity and long-horizon capabilities. \"It shows significant gains across coding and agentic tasks as well as across key capabilities critical for cybersecurity defense, landing a firm lead in SEC-bench Pro (88.2%) for finding vulnerabilities, ExploitGym (54.8%) for exploitation, and",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "therecord-cyberattack-disrupts-belgian-tax-services-before-filing-deadline",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "Cyberattack disrupts Belgian tax services before filing deadline",
-      "publishedAt": "2026-10-29T13:31:00Z",
-      "url": "https://therecord.media/cyberattack-disrupts-belgian-tax-services-before-deadline",
-      "summary": "The Federal Public Service Finance (FPS Finance), which oversees taxation and other financial administration, said Wednesday that it was investigating the extent of the attack and had temporarily suspended access to MyMinfin, the country's main online platform for managing tax and financial affairs.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -955,45 +1007,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "thehackernews-microsoft-365-token-replay-attacks-compromise-97-accounts-at-79-organizations",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Microsoft 365 Token-Replay Attacks Compromise 97 Accounts at 79 Organizations",
-      "publishedAt": "2026-10-26T08:35:51Z",
-      "url": "https://thehackernews.com/2026/10/microsoft-365-token-replay-attacks.html",
-      "summary": "Cybersecurity researchers have disclosed a Microsoft 365 campaign that has been observed leveraging an adversary-in-the-middle (AitM) relay to capture sign-in sessions and then replay the stolen tokens to break into email accounts at 79 organizations. Huntress, which observed the activity between July 14 and September 22, 2026, said it detected 497 successful Microsoft 365 sign-in events across",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "identity-cloud",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-gheist-uses-stolen-github-tokens-to-steal-private-repository-secrets-via-actions-logs",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Gheist Uses Stolen GitHub Tokens to Steal Private Repository Secrets via Actions Logs",
-      "publishedAt": "2026-10-26T07:49:46Z",
-      "url": "https://thehackernews.com/2026/10/gheist-uses-stolen-github-tokens-to.html",
-      "summary": "An automated campaign is using stolen GitHub tokens to plant workflows that print a repository's secrets into its GitHub Actions logs, which the attackers then download before deleting the runs. The attacks have succeeded in private repositories and GitHub Enterprise environments, according to an analysis by cloud security company Wiz. A GitHub safeguard that pauses",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-malicious-file-in-downloads-folder-tries-to-trick-ai-coding-agent-into-installing-malware",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Malicious File in Downloads Folder Tries to Trick AI Coding Agent Into Installing Malware",
-      "publishedAt": "2026-10-26T06:03:48Z",
-      "url": "https://thehackernews.com/2026/10/malicious-file-in-downloads-folder.html",
-      "summary": "A malicious instruction file sitting in a developer's Downloads folder tried to make their AI coding agent install a known-malicious npm package, security firm Forever Security said in a report published last week. The company caught the attempt on a real customer's machine and stopped the agent before any code ran. It could not determine how the file got into the folder. The file",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "dependency-compromise",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "cisa-cve-2026-109619",
       "sourceId": "cisa-kev",
       "publisher": "CISA KEV Catalog",
@@ -1644,20 +1657,6 @@
       "publishedAt": "2026-09-25T00:00:00Z",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-67279",
       "summary": "Mikrotik RouterOS contains an improper enforcement of behavioral workflow vulnerability that could allow an unauthenticated client to open a session channel and send an exec request. This vulnerability can be chained to achieve unauthenticated exploitation of CVE-2026-86060. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-      "signalType": "Known exploited vulnerability — listed by CISA KEV",
-      "caseType": "vulnerability",
-      "confidence": "cisa-kev-listed",
-      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
-      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "id": "cisa-cve-2026-65660",
-      "sourceId": "cisa-kev",
-      "publisher": "CISA KEV Catalog",
-      "title": "CVE-2026-65660: Microsoft SharePoint Code Injection Vulnerability",
-      "publishedAt": "2026-09-25T00:00:00Z",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-65660",
-      "summary": "Microsoft SharePoint contains a code injection vulnerability which could allow an authorized attacker to execute code over a network. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
       "signalType": "Known exploited vulnerability — listed by CISA KEV",
       "caseType": "vulnerability",
       "confidence": "cisa-kev-listed",
