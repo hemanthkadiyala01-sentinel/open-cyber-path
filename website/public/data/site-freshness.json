@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T22:57:44Z",
+  "generatedAt": "2026-10-30T06:25:11Z",
   "status": "ready",
   "summary": {
     "sections": 11,
@@ -14,7 +14,7 @@
       "label": "Cybersecurity news & advisories",
       "mode": "automatic",
       "cadence": "Every 6 hours",
-      "lastCheckedAt": "2026-10-29T22:57:44Z",
+      "lastCheckedAt": "2026-10-30T06:25:11Z",
       "status": "partial",
       "summary": "6/8 public sources refreshed successfully in the latest run; community posts are labelled unverified signals."
     },
