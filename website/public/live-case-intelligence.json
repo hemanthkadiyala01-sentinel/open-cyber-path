@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-30T18:02:50Z",
+  "generatedAt": "2026-10-30T22:24:54Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -18,7 +18,7 @@
       "url": "https://www.bleepingcomputer.com/rss-feeds/",
       "description": "Independent global incident and vulnerability reporting; cross-check material claims",
       "status": "ok",
-      "itemCount": 11
+      "itemCount": 12
     },
     {
       "id": "therecord",
@@ -26,7 +26,7 @@
       "url": "https://therecord.media/",
       "description": "Global reporting on breaches, cybercrime, and threat activity; reports are not automatically primary confirmation",
       "status": "ok",
-      "itemCount": 4
+      "itemCount": 3
     },
     {
       "id": "thehackernews",
@@ -64,6 +64,45 @@
     }
   ],
   "items": [
+    {
+      "id": "bleepingcomputer-critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Critical Linux kernel flaw allows remote root attacks on MPTCP servers",
+      "publishedAt": "2026-10-30T21:09:46Z",
+      "url": "https://www.bleepingcomputer.com/news/security/critical-linux-kernel-flaw-allows-remote-root-attacks-on-mptcp-servers/",
+      "summary": "Security researchers at Anthropic have developed an exploit for a critical Linux kernel vulnerability that allows unauthenticated attackers to remotely execute commands as root on servers running Multipath TCP (MPTCP) listeners. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-fashion-retailer-resolve-says-hackers-stole-payment-card-information",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "Fashion retailer Resolve says hackers stole payment card information",
+      "publishedAt": "2026-10-30T19:00:00Z",
+      "url": "https://therecord.media/resolve-fashion-retailer-data-breach-payment-cards",
+      "summary": "The company, billing itself as “the next-generation fashion retailer for Millennial and Generation Z consumers,” said a recent hack exposed customer payment card numbers.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-chinese-hackers-use-ai-powered-artex-to-target-over-200-organizations-worldwide",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Chinese Hackers Use AI-Powered ARTEX to Target Over 200 Organizations Worldwide",
+      "publishedAt": "2026-10-30T16:58:44Z",
+      "url": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
+      "summary": "Chinese state-sponsored threat actors have been observed using a Go-based artificial intelligence (AI)-powered penetration testing framework called ARTEX in attacks aimed at high-value targets simultaneously. The activity has been attributed by CrowdStrike to a China-based \"targeted intrusion adversary\" it tracks under the moniker Vapor Panda (previously VexatiousTemper). First identified in",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
     {
       "id": "therecord-florida-warns-that-4-9-million-people-had-social-security-numbers-leaked-in-financial-aid-",
       "sourceId": "therecord",
@@ -156,19 +195,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "therecord-hackers-target-government-windows-systems-in-asia-with-new-malware",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "Hackers target government Windows systems in Asia with new malware",
-      "publishedAt": "2026-10-30T12:36:00Z",
-      "url": "https://therecord.media/hackers-target-government-windows-systems-asia-new-malware",
-      "summary": "The previously unknown malware, dubbed NetamLoader, uses legitimate Microsoft software components to execute malicious code, evade security tools and download additional programs onto infected computers.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "malware-ransomware",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "thehackernews-why-urgent-security-fixes-aren-t-fixed-observe-prove-act-confirm-gets-them-moving",
       "sourceId": "thehackernews",
       "publisher": "The Hacker News",
@@ -176,19 +202,6 @@
       "publishedAt": "2026-10-30T11:58:53Z",
       "url": "https://thehackernews.com/2026/10/why-urgent-security-fixes-arent-fixed.html",
       "summary": "The alert is critical. The fix is known. And the ticket sits in a queue for days. Security teams understand the risk, but the people who keep applications available need proof that the change won’t break anything. Their concerns are practical. An IPS protection could block legitimate traffic. A configuration change could interrupt a service. An endpoint policy could affect an application",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "therecord-polymarket-confirms-cyberattack-on-third-party-provider-after-outages",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "Polymarket confirms cyberattack on third-party provider after outages",
-      "publishedAt": "2026-10-30T11:33:00Z",
-      "url": "https://therecord.media/polymarket-confirms-cyberattack-third-party",
-      "summary": "The company suffered outages starting at 2 p.m. Eastern U.S. time on Thursday and eventually attributed the downtime to a compromise involving an unnamed provider.",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "generic",
       "confidence": "reported",
@@ -1020,19 +1033,6 @@
       "confidence": "cisa-kev-listed",
       "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
       "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "id": "thehackernews-hackers-infect-953-online-stores-with-scanner-evading-javascript-mostly-on-magento",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Hackers Infect 953 Online Stores With Scanner-Evading JavaScript, Mostly on Magento",
-      "publishedAt": "2026-10-26T18:12:22Z",
-      "url": "https://thehackernews.com/2026/10/hackers-infect-953-online-stores-with.html",
-      "summary": "An unknown threat actor has infected 953 online stores, most of them running Magento, as part of a long-running campaign active since July 2025. According to Dutch e-commerce security company Sansec, the activity is designed to add a small piece of code to the store's pages that, when visited by unsuspecting users, serves malicious JavaScript loader code through Magento CMS blocks. \"When you",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
       "id": "cisa-cve-2026-109619",
