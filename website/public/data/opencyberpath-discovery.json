@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-31T12:43:49Z",
+  "generatedAt": "2026-10-31T21:42:20Z",
   "status": "partial",
   "itemCount": 350,
   "items": [
@@ -13,7 +13,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2027-01-02T18:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -33,7 +33,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-12-27T14:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -53,7 +53,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-12-19T12:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -73,7 +73,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-12-17T19:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -93,7 +93,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-12-11T12:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -113,7 +113,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-12-05T05:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -133,7 +133,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-12-04T18:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -153,7 +153,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-12-01T15:14:59Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -173,7 +173,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-11-28T09:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -193,7 +193,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-11-28T04:30:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -208,12 +208,12 @@
       "id": "event:c138cde1448b44b78ed3",
       "kind": "event",
       "title": "LakeCTF Quals 26-27",
-      "summary": "Qualifications for fifth edition of LakeCTF",
+      "summary": "Qualifications for fifth edition of LakeCTF old discord server here for discussion: https://discord.gg/8FHmzT5aGM new discord server in your invite email",
       "url": "https://ctftime.org/event/3474/",
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-11-27T18:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -233,7 +233,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-11-21T15:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -253,7 +253,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-11-21T13:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -294,7 +294,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-11-21T06:30:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -314,7 +314,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-11-20T23:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -334,7 +334,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-11-20T18:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -354,7 +354,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-11-20T10:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -374,7 +374,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-11-14T15:30:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -394,7 +394,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-11-13T23:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -414,7 +414,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-11-13T17:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -434,7 +434,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-11-13T10:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -454,7 +454,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-11-12T17:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -474,7 +474,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-11-07T12:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -494,7 +494,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-11-06T18:15:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -514,7 +514,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-11-06T17:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -534,7 +534,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-11-06T13:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -554,7 +554,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-11-06T12:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -574,7 +574,7 @@
       "source": "CTFtime public event listing",
       "sourceUrl": "https://ctftime.org/event/list/upcoming",
       "publishedAt": "2026-11-06T10:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:20Z",
       "topics": [
         "CTF and cybersecurity events"
       ],
@@ -584,6 +584,303 @@
       "endsAt": "2026-11-07T10:00:00Z",
       "format": "Online or hybrid; confirm with organiser",
       "eligibility": "Open"
+    },
+    {
+      "id": "repository:ad51e848e30579ee68f1",
+      "kind": "repository",
+      "title": "OSINT-Cheat-sheet",
+      "summary": "OSINT cheat sheet, list OSINT tools, wiki, dataset, article, book , red team OSINT for hackers and OSINT tips and OSINT branch. This repository will grow every time will research, there is a research, science and technology, tutorial. Please use it wisely.",
+      "url": "https://github.com/Jieyab89/OSINT-Cheat-sheet",
+      "source": "GitHub public repositories",
+      "sourceUrl": "https://github.com/search?q=topic%3Acybersecurity+tutorial+OR+training",
+      "publishedAt": "2026-10-31T20:29:19Z",
+      "lastSeenAt": "2026-10-31T21:42:17Z",
+      "topics": [
+        "Cybersecurity learning"
+      ],
+      "confidence": "GitHub public metadata; repository content and safety are not independently vetted",
+      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
+      "updatedAt": "2026-10-31T20:29:19Z",
+      "language": "HTML",
+      "topicsList": [
+        "HTML",
+        "cheatsheet",
+        "cybersecurity",
+        "datasets",
+        "education",
+        "hacking",
+        "humint"
+      ],
+      "stars": 2307,
+      "license": "MIT",
+      "repositoryState": "active"
+    },
+    {
+      "id": "repository:29f4cd9d0781cc04c038",
+      "kind": "repository",
+      "title": "petervargas.com",
+      "summary": "Personal site of Peter Vargas",
+      "url": "https://github.com/PetterVargas/petervargas.com",
+      "source": "GitHub public repositories",
+      "sourceUrl": "https://github.com/search?q=topic%3Acybersecurity+tutorial+OR+training",
+      "publishedAt": "2026-10-31T20:23:24Z",
+      "lastSeenAt": "2026-10-31T21:42:17Z",
+      "topics": [
+        "Cybersecurity learning"
+      ],
+      "confidence": "GitHub public metadata; repository content and safety are not independently vetted",
+      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
+      "updatedAt": "2026-10-31T20:23:24Z",
+      "language": "TypeScript",
+      "topicsList": [
+        "TypeScript",
+        "chfi",
+        "cibercrime",
+        "cyber-security",
+        "cybersecurity",
+        "cybersecurity-awareness",
+        "cybersecurity-education"
+      ],
+      "stars": 2,
+      "license": "Licence not detected",
+      "repositoryState": "active"
+    },
+    {
+      "id": "repository:41ee2638753dc57e6cce",
+      "kind": "repository",
+      "title": "ids-study",
+      "summary": "Comparative ML benchmark of 7 algorithms for network intrusion detection on NSL-KDD, plus HSR-IDS, a two-stage specialist router: macro-F1 54.15% to a median 57.51% with thresholds selected on training data. Plain SMOTE reaches 61.61%.",
+      "url": "https://github.com/anishc23/ids-study",
+      "source": "GitHub public repositories",
+      "sourceUrl": "https://github.com/search?q=topic%3Acybersecurity+tutorial+OR+training",
+      "publishedAt": "2026-10-31T19:24:09Z",
+      "lastSeenAt": "2026-10-31T21:42:17Z",
+      "topics": [
+        "Cybersecurity learning"
+      ],
+      "confidence": "GitHub public metadata; repository content and safety are not independently vetted",
+      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
+      "updatedAt": "2026-10-31T19:24:09Z",
+      "language": "Jupyter Notebook",
+      "topicsList": [
+        "Jupyter Notebook",
+        "class-imbalance",
+        "cybersecurity",
+        "intrusion-detection",
+        "machine-learning",
+        "nsl-kdd",
+        "shap"
+      ],
+      "stars": 1,
+      "license": "MIT",
+      "repositoryState": "active"
+    },
+    {
+      "id": "repository:1d3db0c6782e95315f8b",
+      "kind": "repository",
+      "title": "rangerdanger",
+      "summary": "OT/ICS cyber range for hands-on substation network segmentation training. Real DPI firewall (containd), 7 labs aligned to the DefendICS workshop, runs on a single laptop.",
+      "url": "https://github.com/tonylturner/rangerdanger",
+      "source": "GitHub public repositories",
+      "sourceUrl": "https://github.com/search?q=topic%3Acybersecurity+tutorial+OR+training",
+      "publishedAt": "2026-10-31T18:59:58Z",
+      "lastSeenAt": "2026-10-31T21:42:17Z",
+      "topics": [
+        "Cybersecurity learning"
+      ],
+      "confidence": "GitHub public metadata; repository content and safety are not independently vetted",
+      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
+      "updatedAt": "2026-10-31T18:59:58Z",
+      "language": "Go",
+      "topicsList": [
+        "Go",
+        "cyber-range",
+        "cybersecurity",
+        "deep-packet-inspection",
+        "dnp3",
+        "docker-compose",
+        "firewall"
+      ],
+      "stars": 2,
+      "license": "Apache-2.0",
+      "repositoryState": "active"
+    },
+    {
+      "id": "repository:51fe45de5671b9ea1ded",
+      "kind": "repository",
+      "title": "rangeforce",
+      "summary": "RangeForce — independent third-party profile of a public API surface, by API Evangelist. RangeForce is a cloud-based cyber range and hands-on cybersecurity training platform that helps organizations build, measure, and validate the defensive skills of their security teams.",
+      "url": "https://github.com/api-evangelist/rangeforce",
+      "source": "GitHub public repositories",
+      "sourceUrl": "https://github.com/search?q=topic%3Acybersecurity+tutorial+OR+training",
+      "publishedAt": "2026-10-31T18:42:10Z",
+      "lastSeenAt": "2026-10-31T21:42:17Z",
+      "topics": [
+        "Cybersecurity learning"
+      ],
+      "confidence": "GitHub public metadata; repository content and safety are not independently vetted",
+      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
+      "updatedAt": "2026-10-31T18:42:10Z",
+      "language": "",
+      "topicsList": [
+        "apis-json",
+        "company",
+        "cyber-range",
+        "cybersecurity",
+        "secops",
+        "security-training"
+      ],
+      "stars": 0,
+      "license": "Licence not detected",
+      "repositoryState": "active"
+    },
+    {
+      "id": "repository:5471c9564db7b23b7a12",
+      "kind": "repository",
+      "title": "cybersecurity-mastery-path",
+      "summary": "Free, structured cybersecurity training — networking, crypto, web security, pentesting methodology and defense, entry level to master level.",
+      "url": "https://github.com/SIGILIPELLI/cybersecurity-mastery-path",
+      "source": "GitHub public repositories",
+      "sourceUrl": "https://github.com/search?q=topic%3Acybersecurity+tutorial+OR+training",
+      "publishedAt": "2026-10-31T18:04:35Z",
+      "lastSeenAt": "2026-10-31T21:42:17Z",
+      "topics": [
+        "Cybersecurity learning"
+      ],
+      "confidence": "GitHub public metadata; repository content and safety are not independently vetted",
+      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
+      "updatedAt": "2026-10-31T18:04:35Z",
+      "language": "",
+      "topicsList": [
+        "cybersecurity",
+        "education",
+        "infosec",
+        "pentesting",
+        "security"
+      ],
+      "stars": 0,
+      "license": "Licence not detected",
+      "repositoryState": "active"
+    },
+    {
+      "id": "repository:b0df519b013aabead7ee",
+      "kind": "repository",
+      "title": "play",
+      "summary": "Local-first workspace for hands-on challenges, featuring a visual lab, integrated terminal, private notes, and progress tracking.",
+      "url": "https://github.com/cubearc/play",
+      "source": "GitHub public repositories",
+      "sourceUrl": "https://github.com/search?q=topic%3Acybersecurity+tutorial+OR+training",
+      "publishedAt": "2026-10-31T17:42:38Z",
+      "lastSeenAt": "2026-10-31T21:42:17Z",
+      "topics": [
+        "Cybersecurity learning"
+      ],
+      "confidence": "GitHub public metadata; repository content and safety are not independently vetted",
+      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
+      "updatedAt": "2026-10-31T17:42:38Z",
+      "language": "TypeScript",
+      "topicsList": [
+        "TypeScript",
+        "ctf",
+        "ctf-challenges",
+        "ctf-solutions",
+        "ctf-tools",
+        "ctf-writeups",
+        "cybersecurity"
+      ],
+      "stars": 0,
+      "license": "Apache-2.0",
+      "repositoryState": "active"
+    },
+    {
+      "id": "repository:45cc9b026c60b88c9633",
+      "kind": "repository",
+      "title": "Hacking-Rust",
+      "summary": "A FREE comprehensive online Rust hacking tutorial utilizing the x64, ARM64 and ARM32 architectures going step-by-step into the world of reverse engineering Rust from scratch.",
+      "url": "https://github.com/mytechnotalent/Hacking-Rust",
+      "source": "GitHub public repositories",
+      "sourceUrl": "https://github.com/search?q=topic%3Acybersecurity+tutorial+OR+training",
+      "publishedAt": "2026-10-31T13:54:46Z",
+      "lastSeenAt": "2026-10-31T21:42:17Z",
+      "topics": [
+        "Cybersecurity learning"
+      ],
+      "confidence": "GitHub public metadata; repository content and safety are not independently vetted",
+      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
+      "updatedAt": "2026-10-31T13:54:46Z",
+      "language": "Rust",
+      "topicsList": [
+        "Rust",
+        "arm32",
+        "arm64",
+        "cyber",
+        "cyber-security",
+        "cybersecurity",
+        "hack"
+      ],
+      "stars": 246,
+      "license": "Apache-2.0",
+      "repositoryState": "active"
+    },
+    {
+      "id": "repository:fbf8dc7ba346e67cc0c6",
+      "kind": "repository",
+      "title": "Go-Hacking",
+      "summary": "A FREE comprehensive online Go hacking tutorial utilizing the x64, ARM64 and ARM32 architectures going step-by-step into the world of reverse engineering Golang from scratch.",
+      "url": "https://github.com/mytechnotalent/Go-Hacking",
+      "source": "GitHub public repositories",
+      "sourceUrl": "https://github.com/search?q=topic%3Acybersecurity+tutorial+OR+training",
+      "publishedAt": "2026-10-31T13:54:33Z",
+      "lastSeenAt": "2026-10-31T21:42:17Z",
+      "topics": [
+        "Cybersecurity learning"
+      ],
+      "confidence": "GitHub public metadata; repository content and safety are not independently vetted",
+      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
+      "updatedAt": "2026-10-31T13:54:33Z",
+      "language": "Go",
+      "topicsList": [
+        "Go",
+        "api",
+        "api-security",
+        "api-services",
+        "arm",
+        "arm32",
+        "arm64"
+      ],
+      "stars": 382,
+      "license": "Apache-2.0",
+      "repositoryState": "active"
+    },
+    {
+      "id": "repository:42bc487040f457d60978",
+      "kind": "repository",
+      "title": "Hacking-Windows",
+      "summary": "A FREE Windows C development course where we will learn the Win32API and reverse engineer each step utilizing IDA Free in both an x86 and x64 environment.",
+      "url": "https://github.com/mytechnotalent/Hacking-Windows",
+      "source": "GitHub public repositories",
+      "sourceUrl": "https://github.com/search?q=topic%3Acybersecurity+tutorial+OR+training",
+      "publishedAt": "2026-10-31T13:54:19Z",
+      "lastSeenAt": "2026-10-31T21:42:17Z",
+      "topics": [
+        "Cybersecurity learning"
+      ],
+      "confidence": "GitHub public metadata; repository content and safety are not independently vetted",
+      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
+      "updatedAt": "2026-10-31T13:54:19Z",
+      "language": "C",
+      "topicsList": [
+        "C",
+        "assembler",
+        "assembly",
+        "blue-team",
+        "cplusplus",
+        "cpp",
+        "cyber"
+      ],
+      "stars": 1640,
+      "license": "Apache-2.0",
+      "repositoryState": "active"
     },
     {
       "id": "event:afb0f04489f97f6a7324",
@@ -603,37 +900,25 @@
       "startsAt": "2026-10-31T13:00:00Z",
       "endsAt": "2026-10-31T21:00:00Z",
       "format": "On-site",
-      "eligibility": "Open"
+      "eligibility": "Open",
+      "snapshotStatus": "retained-previous-snapshot"
     },
     {
-      "id": "repository:b0df519b013aabead7ee",
-      "kind": "repository",
-      "title": "play",
-      "summary": "Local-first workspace for hands-on challenges, featuring a visual lab, integrated terminal, private notes, and progress tracking.",
-      "url": "https://github.com/cubearc/play",
-      "source": "GitHub public repositories",
-      "sourceUrl": "https://github.com/search?q=topic%3Acybersecurity+tutorial+OR+training",
-      "publishedAt": "2026-10-31T12:43:36Z",
-      "lastSeenAt": "2026-10-31T12:43:47Z",
+      "id": "news:5dd0a980fbff6e2e651c",
+      "kind": "news",
+      "title": "Chainalysis discloses data breach from \"offensive agentic techniques\"",
+      "summary": "Blockchain analytics firm Chainalysis disclosed a data breach after attackers used \"offensive agentic techniques\" to access internal systems and tools, exposing customer names, email addresses, user IDs, and organizational roles. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/",
+      "source": "BleepingComputer",
+      "sourceUrl": "https://www.bleepingcomputer.com/feed/",
+      "publishedAt": "2026-10-31T12:50:09Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
-        "Cybersecurity learning"
+        "Security news"
       ],
-      "confidence": "GitHub public metadata; repository content and safety are not independently vetted",
+      "confidence": "Publisher news; verify details in the original article",
       "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
-      "updatedAt": "2026-10-31T12:43:36Z",
-      "language": "Rust",
-      "topicsList": [
-        "Rust",
-        "ctf",
-        "ctf-challenges",
-        "ctf-solutions",
-        "ctf-tools",
-        "ctf-writeups",
-        "cybersecurity"
-      ],
-      "stars": 0,
-      "license": "Apache-2.0",
-      "repositoryState": "active"
+      "cveId": null
     },
     {
       "id": "repository:98ee7f780cc28876ef04",
@@ -663,7 +948,8 @@
       ],
       "stars": 0,
       "license": "MIT",
-      "repositoryState": "active"
+      "repositoryState": "active",
+      "snapshotStatus": "retained-previous-snapshot"
     },
     {
       "id": "repository:70d7f1143f2188b81aca",
@@ -693,7 +979,25 @@
       ],
       "stars": 13,
       "license": "AGPL-3.0",
-      "repositoryState": "active"
+      "repositoryState": "active",
+      "snapshotStatus": "retained-previous-snapshot"
+    },
+    {
+      "id": "news:b84dfe472134279a715b",
+      "kind": "news",
+      "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
+      "summary": "American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data. However, the company noted that the breach did not result in unauthorized access to its…",
+      "url": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
+      "source": "The Hacker News",
+      "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
+      "publishedAt": "2026-10-31T12:01:56Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
+      "topics": [
+        "Security news"
+      ],
+      "confidence": "Publisher news; verify details in the original article",
+      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
+      "cveId": null
     },
     {
       "id": "news:1ee24f3ddee579a88fc1",
@@ -704,7 +1008,7 @@
       "source": "SANS Internet Storm Center",
       "sourceUrl": "https://isc.sans.edu/rssfeed.xml",
       "publishedAt": "2026-10-31T10:52:53Z",
-      "lastSeenAt": "2026-10-31T12:43:46Z",
+      "lastSeenAt": "2026-10-31T21:42:16Z",
       "topics": [
         "Threat intelligence and incident response"
       ],
@@ -721,7 +1025,7 @@
       "source": "SANS Internet Storm Center",
       "sourceUrl": "https://isc.sans.edu/rssfeed.xml",
       "publishedAt": "2026-10-31T10:48:17Z",
-      "lastSeenAt": "2026-10-31T12:43:46Z",
+      "lastSeenAt": "2026-10-31T21:42:16Z",
       "topics": [
         "Threat intelligence and incident response"
       ],
@@ -738,7 +1042,7 @@
       "source": "SANS Internet Storm Center",
       "sourceUrl": "https://isc.sans.edu/rssfeed.xml",
       "publishedAt": "2026-10-31T10:45:40Z",
-      "lastSeenAt": "2026-10-31T12:43:46Z",
+      "lastSeenAt": "2026-10-31T21:42:16Z",
       "topics": [
         "Threat intelligence and incident response"
       ],
@@ -773,7 +1077,8 @@
       ],
       "stars": 1,
       "license": "Licence not detected",
-      "repositoryState": "active"
+      "repositoryState": "active",
+      "snapshotStatus": "retained-previous-snapshot"
     },
     {
       "id": "event:681b7aed617a8a4039a7",
@@ -795,6 +1100,23 @@
       "format": "Online or hybrid; confirm with organiser",
       "eligibility": "Open",
       "snapshotStatus": "retained-previous-snapshot"
+    },
+    {
+      "id": "news:c305d693e177d5ef64da",
+      "kind": "news",
+      "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Ivanti Connect Secure (ICS) to its Known Exploited Vulnerabilities (KEV) catalog, following active exploitation in the wild. The vulnerabilities are…",
+      "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+      "source": "The Hacker News",
+      "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
+      "publishedAt": "2026-10-31T08:27:43Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
+      "topics": [
+        "Security news"
+      ],
+      "confidence": "Publisher news; verify details in the original article",
+      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
+      "cveId": null
     },
     {
       "id": "repository:faa8ae304fca57cd4694",
@@ -824,37 +1146,8 @@
       ],
       "stars": 1,
       "license": "NOASSERTION",
-      "repositoryState": "active"
-    },
-    {
-      "id": "repository:42bc487040f457d60978",
-      "kind": "repository",
-      "title": "Hacking-Windows",
-      "summary": "A FREE Windows C development course where we will learn the Win32API and reverse engineer each step utilizing IDA Free in both an x86 and x64 environment.",
-      "url": "https://github.com/mytechnotalent/Hacking-Windows",
-      "source": "GitHub public repositories",
-      "sourceUrl": "https://github.com/search?q=topic%3Acybersecurity+tutorial+OR+training",
-      "publishedAt": "2026-10-31T05:43:56Z",
-      "lastSeenAt": "2026-10-31T12:43:47Z",
-      "topics": [
-        "Cybersecurity learning"
-      ],
-      "confidence": "GitHub public metadata; repository content and safety are not independently vetted",
-      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
-      "updatedAt": "2026-10-31T05:43:56Z",
-      "language": "C",
-      "topicsList": [
-        "C",
-        "assembler",
-        "assembly",
-        "blue-team",
-        "cplusplus",
-        "cpp",
-        "cyber"
-      ],
-      "stars": 1640,
-      "license": "Apache-2.0",
-      "repositoryState": "active"
+      "repositoryState": "active",
+      "snapshotStatus": "retained-previous-snapshot"
     },
     {
       "id": "repository:2e957354a51ad7c480f4",
@@ -896,7 +1189,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-31T05:33:41Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -913,7 +1206,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-31T04:56:12Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -930,7 +1223,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-31T04:24:48Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -968,7 +1261,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-31T03:10:30Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -1006,14 +1299,13 @@
       "source": "Microsoft Security Blog",
       "sourceUrl": "https://www.microsoft.com/en-us/security/blog/feed/",
       "publishedAt": "2026-10-31T01:02:57Z",
-      "lastSeenAt": "2026-10-31T05:53:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
       "confidence": "Publisher feed; verify claims in the source article",
       "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
-      "feedId": "microsoft-security-blog",
-      "snapshotStatus": "retained-previous-snapshot"
+      "feedId": "microsoft-security-blog"
     },
     {
       "id": "community:af6b9d9f84a814470588",
@@ -1024,7 +1316,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-30T23:49:12Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -1041,7 +1333,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:13:38Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1058,7 +1350,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:13:29Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1075,7 +1367,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:13:16Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1092,7 +1384,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:13:01Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1109,7 +1401,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:12:20Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1126,7 +1418,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:10:23Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1143,7 +1435,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:10:13Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1160,7 +1452,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:09:55Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1177,7 +1469,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:09:11Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1194,7 +1486,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:09:04Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1211,7 +1503,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:08:55Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1228,7 +1520,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:08:39Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1245,7 +1537,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:08:24Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1262,7 +1554,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:07:28Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1279,7 +1571,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:07:04Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1296,7 +1588,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:06:46Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1313,7 +1605,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:03:51Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1330,7 +1622,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:03:37Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1347,7 +1639,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:02:40Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1364,7 +1656,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:02:35Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1381,7 +1673,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:02:30Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1398,7 +1690,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:02:25Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1415,7 +1707,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:02:20Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1432,7 +1724,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:02:14Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1449,7 +1741,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:02:09Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1466,7 +1758,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:02:05Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1483,7 +1775,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:02:00Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1500,7 +1792,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:01:54Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1517,7 +1809,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:01:46Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1534,7 +1826,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:01:21Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1551,7 +1843,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:01:12Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1568,7 +1860,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:00:53Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1585,7 +1877,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:00:48Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1602,7 +1894,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:00:43Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1619,7 +1911,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:00:17Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1636,7 +1928,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:00:12Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1653,7 +1945,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:00:07Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1670,7 +1962,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T23:00:01Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1687,7 +1979,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:59:49Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1704,7 +1996,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:59:45Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1721,7 +2013,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:59:33Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1738,7 +2030,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:59:08Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1755,7 +2047,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:59:00Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1772,7 +2064,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:58:53Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1789,7 +2081,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:58:47Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1806,7 +2098,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:58:39Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1823,7 +2115,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:58:31Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1840,7 +2132,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:58:16Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1857,7 +2149,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:58:10Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1874,7 +2166,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:58:05Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1891,7 +2183,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:57:37Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1908,7 +2200,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:57:22Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1925,7 +2217,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:57:00Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1942,7 +2234,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:56:14Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1959,7 +2251,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:55:49Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1976,7 +2268,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:55:09Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -1993,7 +2285,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:53:08Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -2010,7 +2302,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:52:58Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -2027,7 +2319,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:52:47Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -2044,7 +2336,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:52:23Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -2061,7 +2353,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:51:37Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -2078,7 +2370,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:51:29Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -2095,7 +2387,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T22:51:19Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -2112,7 +2404,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-30T21:57:40Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -2129,43 +2421,13 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-30T21:50:09Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
       "confidence": "Community discussion; not an independently verified security claim",
       "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
       "cveId": null
-    },
-    {
-      "id": "repository:ad51e848e30579ee68f1",
-      "kind": "repository",
-      "title": "OSINT-Cheat-sheet",
-      "summary": "OSINT cheat sheet, list OSINT tools, wiki, dataset, article, book , red team OSINT for hackers and OSINT tips and OSINT branch. This repository will grow every time will research, there is a research, science and technology, tutorial. Please use it wisely.",
-      "url": "https://github.com/Jieyab89/OSINT-Cheat-sheet",
-      "source": "GitHub public repositories",
-      "sourceUrl": "https://github.com/search?q=topic%3Acybersecurity+tutorial+OR+training",
-      "publishedAt": "2026-10-30T21:39:22Z",
-      "lastSeenAt": "2026-10-31T12:43:47Z",
-      "topics": [
-        "Cybersecurity learning"
-      ],
-      "confidence": "GitHub public metadata; repository content and safety are not independently vetted",
-      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
-      "updatedAt": "2026-10-30T21:39:22Z",
-      "language": "HTML",
-      "topicsList": [
-        "HTML",
-        "cheatsheet",
-        "cybersecurity",
-        "datasets",
-        "education",
-        "hacking",
-        "humint"
-      ],
-      "stars": 2304,
-      "license": "MIT",
-      "repositoryState": "active"
     },
     {
       "id": "news:a0383c33619603934337",
@@ -2176,7 +2438,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-30T21:09:46Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -2193,7 +2455,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T20:24:24Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -2210,7 +2472,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-30T20:22:31Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -2227,7 +2489,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-30T19:06:50Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -2244,7 +2506,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-30T19:05:22Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -2261,7 +2523,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T18:53:08Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -2278,7 +2540,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-30T17:55:58Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -2295,7 +2557,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-30T16:58:44Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -2312,14 +2574,34 @@
       "source": "Microsoft Security Blog",
       "sourceUrl": "https://www.microsoft.com/en-us/security/blog/feed/",
       "publishedAt": "2026-10-30T16:11:44Z",
-      "lastSeenAt": "2026-10-31T05:53:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
       "confidence": "Publisher feed; verify claims in the source article",
       "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
-      "feedId": "microsoft-security-blog",
-      "snapshotStatus": "retained-previous-snapshot"
+      "feedId": "microsoft-security-blog"
+    },
+    {
+      "id": "job:4cb76241c6e432d6349f",
+      "kind": "job",
+      "title": "AWS Cloud Solutions Architect",
+      "summary": "Cloudary SAS · Location not specified · architecture · design · ansible · infosec · docker",
+      "url": "https://remoteok.com/remote-jobs/remote-aws-cloud-solutions-architect-cloudary-sas-1137606",
+      "source": "Remote OK",
+      "sourceUrl": "https://remoteok.com/faq",
+      "publishedAt": "2026-10-30T16:00:06Z",
+      "lastSeenAt": "2026-10-31T21:42:19Z",
+      "topics": [
+        "Jobs and internships"
+      ],
+      "confidence": "Public Remote OK listing; verify company, eligibility, location and application link before applying",
+      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
+      "company": "Cloudary SAS",
+      "location": "Not specified",
+      "employmentType": "Remote listing",
+      "applyUrl": "https://remoteok.com/remote-jobs/remote-aws-cloud-solutions-architect-cloudary-sas-1137606",
+      "sourceCredit": "Remote OK; open the original listing to apply."
     },
     {
       "id": "news:779acaa6d3ce18058411",
@@ -2330,7 +2612,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-30T15:58:20Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -2347,7 +2629,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-30T15:48:25Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -2364,7 +2646,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-30T15:43:53Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -2381,7 +2663,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-30T15:43:52Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -2398,7 +2680,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-30T15:17:28Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -2433,7 +2715,8 @@
       ],
       "stars": 0,
       "license": "Licence not detected",
-      "repositoryState": "active"
+      "repositoryState": "active",
+      "snapshotStatus": "retained-previous-snapshot"
     },
     {
       "id": "news:fc223002f296ab855ddb",
@@ -2444,7 +2727,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T14:54:25Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -2461,7 +2744,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T14:54:20Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -2478,7 +2761,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T14:53:57Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -2495,7 +2778,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-30T14:44:25Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -2512,7 +2795,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T14:42:35Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -2529,7 +2812,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-30T14:42:14Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -2546,7 +2829,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-30T14:36:54Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -2563,7 +2846,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-30T14:21:52Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -2580,7 +2863,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-30T14:08:14Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -2597,7 +2880,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-30T14:00:10Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -2627,66 +2910,6 @@
       "snapshotStatus": "retained-previous-snapshot"
     },
     {
-      "id": "repository:45cc9b026c60b88c9633",
-      "kind": "repository",
-      "title": "Hacking-Rust",
-      "summary": "A FREE comprehensive online Rust hacking tutorial utilizing the x64, ARM64 and ARM32 architectures going step-by-step into the world of reverse engineering Rust from scratch.",
-      "url": "https://github.com/mytechnotalent/Hacking-Rust",
-      "source": "GitHub public repositories",
-      "sourceUrl": "https://github.com/search?q=topic%3Acybersecurity+tutorial+OR+training",
-      "publishedAt": "2026-10-30T13:28:05Z",
-      "lastSeenAt": "2026-10-31T12:43:47Z",
-      "topics": [
-        "Cybersecurity learning"
-      ],
-      "confidence": "GitHub public metadata; repository content and safety are not independently vetted",
-      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
-      "updatedAt": "2026-10-30T13:28:05Z",
-      "language": "Rust",
-      "topicsList": [
-        "Rust",
-        "arm32",
-        "arm64",
-        "cyber",
-        "cyber-security",
-        "cybersecurity",
-        "hack"
-      ],
-      "stars": 246,
-      "license": "Apache-2.0",
-      "repositoryState": "active"
-    },
-    {
-      "id": "repository:fbf8dc7ba346e67cc0c6",
-      "kind": "repository",
-      "title": "Go-Hacking",
-      "summary": "A FREE comprehensive online Go hacking tutorial utilizing the x64, ARM64 and ARM32 architectures going step-by-step into the world of reverse engineering Golang from scratch.",
-      "url": "https://github.com/mytechnotalent/Go-Hacking",
-      "source": "GitHub public repositories",
-      "sourceUrl": "https://github.com/search?q=topic%3Acybersecurity+tutorial+OR+training",
-      "publishedAt": "2026-10-30T13:27:51Z",
-      "lastSeenAt": "2026-10-31T12:43:47Z",
-      "topics": [
-        "Cybersecurity learning"
-      ],
-      "confidence": "GitHub public metadata; repository content and safety are not independently vetted",
-      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
-      "updatedAt": "2026-10-30T13:27:51Z",
-      "language": "Go",
-      "topicsList": [
-        "Go",
-        "api",
-        "api-security",
-        "api-services",
-        "arm",
-        "arm32",
-        "arm64"
-      ],
-      "stars": 382,
-      "license": "Apache-2.0",
-      "repositoryState": "active"
-    },
-    {
       "id": "news:31191d9e5f2a0c5d725c",
       "kind": "news",
       "title": "CISA says max severity GitLab flaw now exploited in the wild",
@@ -2695,7 +2918,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-30T13:00:32Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -2712,7 +2935,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-30T12:21:56Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -2729,7 +2952,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-30T11:58:53Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -2746,7 +2969,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-30T11:20:26Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -2763,7 +2986,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-30T11:01:03Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -2780,7 +3003,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-30T10:40:45Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -2797,7 +3020,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-30T10:16:07Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -2896,7 +3119,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-30T09:18:13Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -2913,7 +3136,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-30T08:55:47Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -2930,7 +3153,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-30T07:45:30Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -2947,42 +3170,13 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-30T07:27:05Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
       "confidence": "Publisher news; verify details in the original article",
       "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
       "cveId": null
-    },
-    {
-      "id": "repository:5471c9564db7b23b7a12",
-      "kind": "repository",
-      "title": "cybersecurity-mastery-path",
-      "summary": "Free, structured cybersecurity training — networking, crypto, web security, pentesting methodology and defense, entry level to master level.",
-      "url": "https://github.com/SIGILIPELLI/cybersecurity-mastery-path",
-      "source": "GitHub public repositories",
-      "sourceUrl": "https://github.com/search?q=topic%3Acybersecurity+tutorial+OR+training",
-      "publishedAt": "2026-10-30T07:13:20Z",
-      "lastSeenAt": "2026-10-30T13:06:39Z",
-      "topics": [
-        "Cybersecurity learning"
-      ],
-      "confidence": "GitHub public metadata; repository content and safety are not independently vetted",
-      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
-      "updatedAt": "2026-10-30T07:13:20Z",
-      "language": "",
-      "topicsList": [
-        "cybersecurity",
-        "education",
-        "infosec",
-        "pentesting",
-        "security"
-      ],
-      "stars": 0,
-      "license": "Licence not detected",
-      "repositoryState": "active",
-      "snapshotStatus": "retained-previous-snapshot"
     },
     {
       "id": "repository:6c7477406a8415559962",
@@ -3074,7 +3268,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-30T04:14:59Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -3091,7 +3285,7 @@
       "source": "SANS Internet Storm Center",
       "sourceUrl": "https://isc.sans.edu/rssfeed.xml",
       "publishedAt": "2026-10-30T03:30:17Z",
-      "lastSeenAt": "2026-10-31T12:43:46Z",
+      "lastSeenAt": "2026-10-31T21:42:16Z",
       "topics": [
         "Threat intelligence and incident response"
       ],
@@ -3108,7 +3302,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-30T01:52:34Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -3125,7 +3319,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-30T00:10:09Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -3142,7 +3336,7 @@
       "source": "CISA Known Exploited Vulnerabilities",
       "sourceUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "publishedAt": "2026-10-30T00:00:00Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Known exploited vulnerability"
       ],
@@ -3159,7 +3353,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-29T23:35:52Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -3207,7 +3401,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-29T22:45:23Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -3224,7 +3418,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-29T22:09:24Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -3241,7 +3435,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-29T22:08:04Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -3289,7 +3483,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-29T21:47:25Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -3306,7 +3500,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-29T21:20:51Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -3323,7 +3517,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-29T21:20:11Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -3401,7 +3595,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-29T19:23:41Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -3448,7 +3642,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-29T19:11:58Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -3465,7 +3659,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-29T19:10:06Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -3482,7 +3676,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-29T19:03:46Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -3499,7 +3693,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-29T19:01:31Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -3516,7 +3710,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-29T18:38:26Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -3593,7 +3787,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-29T18:27:31Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -3610,7 +3804,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:41:28Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3627,7 +3821,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:41:06Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3644,7 +3838,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:40:19Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3661,7 +3855,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:40:12Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3678,7 +3872,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:40:07Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3695,7 +3889,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:40:01Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3712,7 +3906,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:39:56Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3729,7 +3923,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:39:49Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3746,7 +3940,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:39:41Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3763,7 +3957,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:39:03Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3780,7 +3974,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:38:31Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3797,7 +3991,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:37:57Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3814,7 +4008,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:37:26Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3831,7 +4025,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:36:21Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3848,7 +4042,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:35:48Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3865,7 +4059,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:35:29Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3882,7 +4076,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:35:23Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3899,7 +4093,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:35:16Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3916,7 +4110,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:35:04Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3933,7 +4127,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:34:35Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3950,7 +4144,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:34:26Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3967,7 +4161,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:33:48Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -3984,7 +4178,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:33:09Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -4001,7 +4195,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:32:58Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -4018,7 +4212,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-29T16:32:39Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -4035,7 +4229,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-29T16:10:31Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -4052,7 +4246,7 @@
       "source": "Remote OK",
       "sourceUrl": "https://remoteok.com/faq",
       "publishedAt": "2026-10-29T16:00:03Z",
-      "lastSeenAt": "2026-10-31T12:43:49Z",
+      "lastSeenAt": "2026-10-31T21:42:19Z",
       "topics": [
         "Jobs and internships"
       ],
@@ -4073,14 +4267,13 @@
       "source": "Microsoft Security Blog",
       "sourceUrl": "https://www.microsoft.com/en-us/security/blog/feed/",
       "publishedAt": "2026-10-29T16:00:00Z",
-      "lastSeenAt": "2026-10-31T05:53:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
       "confidence": "Publisher feed; verify claims in the source article",
       "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
-      "feedId": "microsoft-security-blog",
-      "snapshotStatus": "retained-previous-snapshot"
+      "feedId": "microsoft-security-blog"
     },
     {
       "id": "news:dc0d0f13ef3673154003",
@@ -4091,14 +4284,13 @@
       "source": "Microsoft Security Blog",
       "sourceUrl": "https://www.microsoft.com/en-us/security/blog/feed/",
       "publishedAt": "2026-10-29T16:00:00Z",
-      "lastSeenAt": "2026-10-31T05:53:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
       "confidence": "Publisher feed; verify claims in the source article",
       "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
-      "feedId": "microsoft-security-blog",
-      "snapshotStatus": "retained-previous-snapshot"
+      "feedId": "microsoft-security-blog"
     },
     {
       "id": "news:1be6a1df25ca72b4139a",
@@ -4109,7 +4301,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-29T15:57:05Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -4126,7 +4318,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-29T15:41:58Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -4143,7 +4335,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-29T15:20:29Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -4160,7 +4352,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-29T15:15:43Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -4177,7 +4369,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-29T14:52:34Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -4194,7 +4386,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-29T14:35:40Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -4211,7 +4403,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-29T14:00:10Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -4228,7 +4420,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-29T13:59:48Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -4245,7 +4437,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-29T13:42:40Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -4262,7 +4454,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-29T13:05:36Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -4279,7 +4471,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-29T12:00:07Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -4327,7 +4519,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-29T11:39:41Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -4344,7 +4536,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-29T11:39:18Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -4361,7 +4553,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-29T11:33:41Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -4378,7 +4570,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-29T11:33:15Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -4395,7 +4587,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-29T11:10:13Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -4412,7 +4604,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-29T11:09:03Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -4429,7 +4621,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-29T11:08:56Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -4446,7 +4638,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-29T10:44:46Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -4463,7 +4655,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-29T10:39:32Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -4480,7 +4672,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-29T10:26:33Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -4497,7 +4689,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-29T09:05:39Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -4535,7 +4727,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-29T08:24:22Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -4582,7 +4774,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-29T06:22:33Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -4599,7 +4791,7 @@
       "source": "SANS Internet Storm Center",
       "sourceUrl": "https://isc.sans.edu/rssfeed.xml",
       "publishedAt": "2026-10-29T06:17:41Z",
-      "lastSeenAt": "2026-10-31T12:43:46Z",
+      "lastSeenAt": "2026-10-31T21:42:16Z",
       "topics": [
         "Threat intelligence and incident response"
       ],
@@ -4616,7 +4808,7 @@
       "source": "The Hacker News",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-10-29T05:50:17Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -4633,7 +4825,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-29T05:08:33Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -4650,7 +4842,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-29T04:40:14Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -4667,7 +4859,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-29T04:12:21Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -4684,7 +4876,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-29T03:40:06Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -4701,7 +4893,7 @@
       "source": "SANS Internet Storm Center",
       "sourceUrl": "https://isc.sans.edu/rssfeed.xml",
       "publishedAt": "2026-10-29T03:10:12Z",
-      "lastSeenAt": "2026-10-31T12:43:46Z",
+      "lastSeenAt": "2026-10-31T21:42:16Z",
       "topics": [
         "Threat intelligence and incident response"
       ],
@@ -4748,7 +4940,7 @@
       "source": "SANS Internet Storm Center",
       "sourceUrl": "https://isc.sans.edu/rssfeed.xml",
       "publishedAt": "2026-10-29T00:42:15Z",
-      "lastSeenAt": "2026-10-31T12:43:46Z",
+      "lastSeenAt": "2026-10-31T21:42:16Z",
       "topics": [
         "Threat intelligence and incident response"
       ],
@@ -4765,7 +4957,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-28T23:53:02Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -4782,44 +4974,13 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-28T23:45:46Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
       "confidence": "Community discussion; not an independently verified security claim",
       "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
       "cveId": null
-    },
-    {
-      "id": "repository:1d3db0c6782e95315f8b",
-      "kind": "repository",
-      "title": "rangerdanger",
-      "summary": "OT/ICS cyber range for hands-on substation network segmentation training. Real DPI firewall (containd), 7 labs aligned to the DefendICS workshop, runs on a single laptop.",
-      "url": "https://github.com/tonylturner/rangerdanger",
-      "source": "GitHub public repositories",
-      "sourceUrl": "https://github.com/search?q=topic%3Acybersecurity+tutorial+OR+training",
-      "publishedAt": "2026-10-28T23:02:48Z",
-      "lastSeenAt": "2026-10-29T13:14:44Z",
-      "topics": [
-        "Cybersecurity learning"
-      ],
-      "confidence": "GitHub public metadata; repository content and safety are not independently vetted",
-      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
-      "updatedAt": "2026-10-28T23:02:48Z",
-      "language": "TypeScript",
-      "topicsList": [
-        "TypeScript",
-        "cyber-range",
-        "cybersecurity",
-        "deep-packet-inspection",
-        "dnp3",
-        "docker-compose",
-        "firewall"
-      ],
-      "stars": 2,
-      "license": "Apache-2.0",
-      "repositoryState": "active",
-      "snapshotStatus": "retained-previous-snapshot"
     },
     {
       "id": "community:15cb24e56b988334a81e",
@@ -4830,7 +4991,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-28T23:01:59Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -4877,7 +5038,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T22:43:50Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -4894,7 +5055,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T22:43:45Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -4911,7 +5072,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T22:43:41Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -4928,7 +5089,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T22:42:53Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -4945,7 +5106,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T22:42:49Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -4962,7 +5123,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T22:42:36Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5040,7 +5201,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:23:44Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5088,7 +5249,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:20:53Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5105,7 +5266,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:17:58Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5122,7 +5283,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:17:36Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5139,7 +5300,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:17:31Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5156,7 +5317,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:17:27Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5173,7 +5334,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:17:20Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5190,7 +5351,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:17:15Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5207,7 +5368,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:17:08Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5224,7 +5385,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:16:51Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5241,7 +5402,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:16:42Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5258,7 +5419,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:16:37Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5275,7 +5436,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:16:30Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5292,7 +5453,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:16:24Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5309,7 +5470,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:15:49Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5326,7 +5487,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:15:41Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5343,7 +5504,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:15:35Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5360,7 +5521,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:15:29Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5377,7 +5538,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:15:15Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5394,7 +5555,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:15:08Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5411,7 +5572,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:14:59Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5428,7 +5589,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:14:52Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5476,7 +5637,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:14:14Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5493,7 +5654,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:14:08Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5510,7 +5671,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:14:00Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5527,7 +5688,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:13:50Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5544,7 +5705,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:13:32Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5561,7 +5722,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:13:18Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5578,7 +5739,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:13:10Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5595,7 +5756,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:10:17Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5612,7 +5773,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:10:08Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5629,7 +5790,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:10:01Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5646,7 +5807,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:09:50Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5663,7 +5824,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:09:42Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5680,7 +5841,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:09:09Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5697,7 +5858,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:09:04Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5714,7 +5875,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:08:59Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5731,7 +5892,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:08:55Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5748,7 +5909,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:08:49Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5765,7 +5926,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:08:45Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5782,7 +5943,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:08:40Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5799,7 +5960,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:08:35Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5816,7 +5977,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:08:30Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5833,7 +5994,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:08:23Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5850,7 +6011,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:08:13Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5867,7 +6028,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:08:08Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5884,7 +6045,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:07:57Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5901,7 +6062,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:07:40Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5918,7 +6079,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:06:42Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5935,7 +6096,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:06:34Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5952,7 +6113,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:06:24Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5969,7 +6130,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:06:13Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -5986,7 +6147,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:05:47Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6003,7 +6164,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:05:17Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6020,7 +6181,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:05:07Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6037,7 +6198,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:05:00Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6054,7 +6215,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:04:52Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6071,7 +6232,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:04:46Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6088,7 +6249,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:04:39Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6105,7 +6266,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:04:22Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6122,7 +6283,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T21:04:10Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6139,7 +6300,7 @@
       "source": "Hacker News · security-filtered posts",
       "sourceUrl": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
       "publishedAt": "2026-10-28T21:03:24Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Community signal"
       ],
@@ -6156,7 +6317,7 @@
       "source": "BleepingComputer",
       "sourceUrl": "https://www.bleepingcomputer.com/feed/",
       "publishedAt": "2026-10-28T20:47:22Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Security news"
       ],
@@ -6173,7 +6334,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T19:57:48Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6190,7 +6351,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T19:57:34Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6207,7 +6368,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T19:57:19Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6224,7 +6385,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T19:56:57Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6241,7 +6402,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T19:56:23Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6258,7 +6419,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T19:56:18Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6275,7 +6436,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T19:56:13Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6292,7 +6453,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T19:56:07Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6309,7 +6470,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T19:56:02Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6326,7 +6487,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T19:55:46Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6343,7 +6504,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T19:55:41Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6360,7 +6521,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T19:55:37Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
@@ -6377,126 +6538,7 @@
       "source": "GitHub reviewed security advisories",
       "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
       "publishedAt": "2026-10-28T19:55:32Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
-      "topics": [
-        "Software advisory"
-      ],
-      "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
-      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
-      "cveId": "CVE-[phone redacted]"
-    },
-    {
-      "id": "news:9ee1cd56223e8b5deb96",
-      "kind": "news",
-      "title": "Highcharts Core: HTML text parsing falls back to unfiltered `innerHTML` during printing",
-      "summary": "### Impact When the HTML text parser cannot obtain a document from `DOMParser` because the call throws, it falls back to assigning the raw markup to the `innerHTML` of an element created in the hosting document, and the allow-list is applied only to the…",
-      "url": "https://github.com/advisories/GHSA-65hg-cf3f-5m39",
-      "source": "GitHub reviewed security advisories",
-      "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
-      "publishedAt": "2026-10-28T19:55:22Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
-      "topics": [
-        "Software advisory"
-      ],
-      "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
-      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
-      "cveId": "CVE-[phone redacted]"
-    },
-    {
-      "id": "news:b3137a9071fd80cd5350",
-      "kind": "news",
-      "title": "Highcharts Core: `javascript:` URL in an `xlink:href` attribute survives text filtering and reaches exported charts",
-      "summary": "### Impact The filter applied to markup in text options checks `href`, `src` and a few similar attributes against an allowed-scheme list, but accepts `xlink:href` without that check, so an SVG anchor whose `xlink:href` is a `javascript:` URL passes the…",
-      "url": "https://github.com/advisories/GHSA-mw4f-gj5x-6xr4",
-      "source": "GitHub reviewed security advisories",
-      "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
-      "publishedAt": "2026-10-28T19:55:10Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
-      "topics": [
-        "Software advisory"
-      ],
-      "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
-      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
-      "cveId": "CVE-[phone redacted]"
-    },
-    {
-      "id": "news:55533264669722967a2b",
-      "kind": "news",
-      "title": "Echo's middleware.Static: `%2F`-encoded path bypasses route/group middleware guarding a statically-served path",
-      "summary": "## Summary When `middleware.Static` is mounted globally (`e.Use(middleware.Static(...))`) and an application relies on a **route- or group-level middleware guard** to restrict a path that also falls under the served static root, a `%2F`-encoded request…",
-      "url": "https://github.com/advisories/GHSA-375p-5qhx-8wq4",
-      "source": "GitHub reviewed security advisories",
-      "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
-      "publishedAt": "2026-10-28T19:54:20Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
-      "topics": [
-        "Software advisory"
-      ],
-      "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
-      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
-      "cveId": "CVE-[phone redacted]"
-    },
-    {
-      "id": "news:b8da0f199f42fd971e93",
-      "kind": "news",
-      "title": "Echo vulnerable to Reflected Cross-Site Scripting (XSS) via unsanitized JSONP callback in Context.JSONP / Context.JSONPBlob",
-      "summary": "### Summary The `Context.JSONP`, `Context.JSONPBlob`, and internal `jsonPBlob` helper in `context.go` directly concatenate the caller-supplied `callback` parameter into a JavaScript response **without any validation, escaping, or allow-listing**. This…",
-      "url": "https://github.com/advisories/GHSA-h9g5-28mm-hx3g",
-      "source": "GitHub reviewed security advisories",
-      "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
-      "publishedAt": "2026-10-28T19:54:05Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
-      "topics": [
-        "Software advisory"
-      ],
-      "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
-      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
-      "cveId": "CVE-[phone redacted]"
-    },
-    {
-      "id": "news:f8e21716201d9d9e4454",
-      "kind": "news",
-      "title": "Echo has Rate Limiter Bypass via Spoofed X-Forwarded-For Header in Default Configuration",
-      "summary": "## Summary When `echo.New()` is used without explicitly setting `Echo#IPExtractor`, the `RealIP()` method falls back to reading the client-supplied `X-Forwarded-For` (or `X-Real-IP`) header without any proxy-origin validation. The default `RateLimiter()`…",
-      "url": "https://github.com/advisories/GHSA-246p-cpwv-v3jq",
-      "source": "GitHub reviewed security advisories",
-      "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
-      "publishedAt": "2026-10-28T19:53:47Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
-      "topics": [
-        "Software advisory"
-      ],
-      "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
-      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
-      "cveId": "CVE-[phone redacted]"
-    },
-    {
-      "id": "news:c5b5ab6ea9aa5f4cc7f2",
-      "kind": "news",
-      "title": "Echo has CSRF Protection Bypass via MethodOverride Rewriting POST to Safe Method",
-      "summary": "## Summary The `MethodOverride` middleware accepts any non-empty string as the override target method — including safe methods (GET, HEAD, OPTIONS, TRACE) — when rewriting a POST request. When `MethodOverride` is registered before `CSRF` in the post-routing…",
-      "url": "https://github.com/advisories/GHSA-r7w9-592q-9vg4",
-      "source": "GitHub reviewed security advisories",
-      "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
-      "publishedAt": "2026-10-28T19:53:36Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
-      "topics": [
-        "Software advisory"
-      ],
-      "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
-      "reviewStatus": "PUBLIC_SOURCE_CANDIDATE",
-      "cveId": "CVE-[phone redacted]"
-    },
-    {
-      "id": "news:3f42a6bd3ed4e41df4b5",
-      "kind": "news",
-      "title": "Echo: Reverse Proxy Forwards Attacker-Supplied X-Real-IP to Upstream by Default",
-      "summary": "## Summary The Echo proxy middleware (`middleware/proxy.go`) preserves an incoming `X-Real-IP` header verbatim and forwards it to the upstream service when `Echo#IPExtractor` is not configured — which is the default. Because any HTTP client can supply an…",
-      "url": "https://github.com/advisories/GHSA-99jh-6h7p-pp36",
-      "source": "GitHub reviewed security advisories",
-      "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
-      "publishedAt": "2026-10-28T19:53:24Z",
-      "lastSeenAt": "2026-10-31T12:43:45Z",
+      "lastSeenAt": "2026-10-31T21:42:15Z",
       "topics": [
         "Software advisory"
       ],
