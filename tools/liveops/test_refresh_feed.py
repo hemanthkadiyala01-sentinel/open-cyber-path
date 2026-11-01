@@ -90,8 +90,20 @@ class RefreshFeedTests(unittest.TestCase):
         self.assertEqual(rf.calc_status(row, None), "ARCHIVED")
 
     def test_status_marks_recent_publication_new(self):
+        from datetime import datetime, timezone
+
         row = {"publishedAt": "2026-10-18T00:00:00Z", "updatedAt": "2026-10-18T00:00:00Z", "contentHash": "abc"}
-        self.assertEqual(rf.calc_status(row, None), "NEW")
+        fixed_now = datetime(2026, 10, 20, tzinfo=timezone.utc)
+        with patch.object(rf, "now_utc", return_value=fixed_now):
+            self.assertEqual(rf.calc_status(row, None), "NEW")
+
+    def test_status_marks_publication_outside_new_window_active(self):
+        from datetime import datetime, timezone
+
+        row = {"publishedAt": "2026-10-18T00:00:00Z", "updatedAt": "2026-10-18T00:00:00Z", "contentHash": "abc"}
+        fixed_now = datetime(2026, 11, 1, tzinfo=timezone.utc)
+        with patch.object(rf, "now_utc", return_value=fixed_now):
+            self.assertEqual(rf.calc_status(row, None), "ACTIVE")
 
     def test_all_source_failures_preserve_previous_records_and_feed_mode(self):
         original_feed = rf.read_existing()
