@@ -522,6 +522,8 @@ export default function SiteGuideAssistant({
   opened: controlledOpened,
   onDismiss = () => {},
   hideLauncher = false,
+  panelStyle = undefined,
+  onResetPosition = () => {},
 }) {
   const [internalOpened, setInternalOpened] = useState(false);
   const opened = typeof controlledOpened === 'boolean' ? controlledOpened : internalOpened;
@@ -704,10 +706,11 @@ export default function SiteGuideAssistant({
   const sourceStatusText = sourceStatus?.status === 'fresh' ? 'Source snapshots are fresh' : sourceStatus?.status === 'partial' ? 'Some sources are unavailable or need access' : sourceStatus ? 'Source coverage is partial or stale' : 'Using indexed site content while live discovery status loads';
 
   return <div className={hideLauncher ? 'ocp-guide-panel-host' : 'ocp-guide-assistant'}>
-    {opened && <section className="ocp-guide-panel" role="dialog" aria-modal="false" aria-labelledby="ocp-guide-title" aria-describedby="ocp-guide-description">
+    {opened && <section className="ocp-guide-panel" style={panelStyle} role="dialog" aria-modal="false" aria-labelledby="ocp-guide-title" aria-describedby="ocp-guide-description">
       <header className="ocp-guide-head">
         <div className="ocp-guide-avatar" aria-hidden="true">OCP</div>
         <div className="ocp-guide-heading"><h2 id="ocp-guide-title">OpenCyberPath Guide</h2><p id="ocp-guide-description">Search the site · Find public learning · Navigate</p></div>
+        <button className="ocp-guide-reset-position" type="button" onClick={onResetPosition} aria-label="Reset assistant position" title="Reset assistant position">Reset</button>
         <button className="ocp-guide-close" type="button" onClick={() => setOpened(false)} aria-label="Close site guide">×</button>
       </header>
       <div className="ocp-guide-status"><span className={`ocp-guide-status-dot ${sourceStatus?.status === 'fresh' ? 'is-fresh' : ''}`} />{sourceStatusText}</div>

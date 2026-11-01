@@ -109,6 +109,30 @@ async function assertRuntimeMutationDenied(sql: string, values: unknown[], label
   assert(denied, `${label}: runtime role was expected to be denied by grants${failure ? ` (code ${(failure as { code?: string }).code ?? 'unknown'})` : ''}.`);
 }
 
+async function assertInvalidIdentityDenied(userA: string, userB: string): Promise<void> {
+  // Reset transaction-local identity before testing the unauthenticated state.
+  await client!.query('RESET app.current_user_id');
+  await client!.query('RESET app.current_user_signature');
+
+  const missing = await client!.query('SELECT public.ocp_current_user_id() IS NULL AS rejected');
+  assert(missing.rows[0]?.rejected === true,
+    'Missing identity context unexpectedly produced an authenticated identity.');
+  await assertCounts(userA, 0, 'Missing identity must not expose Account A rows');
+  await assertCounts(userB, 0, 'Missing identity must not expose Account B rows');
+  console.log('PASS: missing/reset identity context fails closed across all five protected tables.');
+
+  await client!.query(
+    `SELECT set_config('app.current_user_id', $1, true),
+            set_config('app.current_user_signature', $2, true)`,
+    [userA, '0'.repeat(64)],
+  );
+  const forged = await client!.query('SELECT public.ocp_current_user_id() IS NULL AS rejected');
+  assert(forged.rows[0]?.rejected === true,
+    'An invalid HMAC signature unexpectedly produced an authenticated identity.');
+  await assertCounts(userA, 0, 'Invalid signature must not expose Account A rows');
+  await assertCounts(userB, 0, 'Invalid signature must not expose Account B rows');
+  console.log('PASS: invalid HMAC signature fails closed across all five protected tables.');
+}
 async function run(): Promise<void> {
   client = await pool.connect();
   await client.query('BEGIN');
@@ -169,6 +193,8 @@ async function run(): Promise<void> {
   );
   console.log('PASS: both signed identities accepted and temporary rows created in the test transaction.');
 
+  await assertInvalidIdentityDenied(userA, userB);
+  await setIdentity(userB);
   await assertCounts(userB, 1, 'Account B must see its own records');
   await assertCounts(userA, 0, 'Account B must not read Account A records');
   console.log('PASS: Account B can read its own rows but cannot read Account A rows in all five tables, including CaseLab submissions.');
@@ -244,10 +270,36 @@ async function run(): Promise<void> {
   assert(deleteB.rowCount === 0, 'Account A unexpectedly deleted Account B evidence.');
   console.log('PASS: Account A cannot update Account B notes or delete Account B evidence.');
 
+  const originalBackendPidResult = await client.query('SELECT pg_backend_pid() AS pid');
+  const originalBackendPid = Number(originalBackendPidResult.rows[0]?.pid);
   await client.query('ROLLBACK');
   transactionStarted = false;
-  console.log('RESULT: all runtime RLS isolation assertions passed.');
-  console.log('CLEANUP: the transaction was rolled back; no test rows were committed.');
+
+  // Reacquire the same backend and prove transaction-local identity does not leak.
+  client.release();
+  client = undefined;
+  client = await pool.connect();
+  await client.query('BEGIN');
+  transactionStarted = true;
+  await client.query("SET LOCAL statement_timeout = '5s'");
+
+  const reusedBackendPidResult = await client.query('SELECT pg_backend_pid() AS pid');
+  const reusedBackendPid = Number(reusedBackendPidResult.rows[0]?.pid);
+  assert(reusedBackendPid === originalBackendPid,
+    'Pool-reuse test did not reacquire the same PostgreSQL backend; identity leakage was not tested.');
+  const reusedIdentity = await client.query(
+    'SELECT public.ocp_current_user_id() IS NULL AS missing',
+  );
+  assert(reusedIdentity.rows[0]?.missing === true,
+    'Identity context leaked into a new transaction on the reused pooled connection.');
+  await assertCounts(userA, 0, 'Reused connection must not expose rolled-back Account A rows');
+  await assertCounts(userB, 0, 'Reused connection must not expose rolled-back Account B rows');
+  await client.query('ROLLBACK');
+  transactionStarted = false;
+
+  console.log('PASS: reused the same PostgreSQL backend without leaking identity into a new transaction.');
+  console.log('RESULT: all runtime RLS isolation and negative-identity assertions passed.');
+  console.log('CLEANUP: both test transactions were rolled back; no test rows were committed.');
 }
 
 try {

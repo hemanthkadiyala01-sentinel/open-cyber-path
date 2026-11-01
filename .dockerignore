@@ -4,8 +4,32 @@ dist
 **/dist
 .git
 **/.git
+
+# Never include local environment files in Docker build contexts
+**/.env
+**/.env.*
+!**/.env.example
+
+# Local backup files
+*.bak
+**/*.bak
 *.bak-*
 **/*.bak-*
+
+# Generated and local development artifacts
 **/.gradle
 **/coverage
 **/.vite
+
+# Android packages and signing material
+**/android/app/build/
+**/*.apk
+**/*.aab
+**/*.jks
+**/*.keystore
+**/*.p12
+
+# Certificate/private-key files and local logs
+**/*.pem
+**/*.key
+**/*.log

@@ -29,3 +29,37 @@
 /* Lazy-loaded assistant content is positioned against the fixed launcher host. */
 .ocp-guide-panel-host{position:static}
 .ocp-guide-launcher.is-hidden{display:none}
+/* OCP-ASSISTANT-DRAG-V1 */
+.ocp-guide-launcher {
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: grab;
+}
+.ocp-guide-launcher:active { cursor: grabbing; }
+.ocp-guide-launcher:focus-visible { outline: 2px solid #5be5ff; outline-offset: 4px; }
+.ocp-guide-reset-position {
+  flex: 0 0 auto;
+  min-width: 42px;
+  min-height: 29px;
+  padding: 0 8px;
+  border: 1px solid rgba(111,223,241,.25);
+  border-radius: 8px;
+  background: rgba(20,39,57,.7);
+  color: #8be1ef;
+  font-family: inherit;
+  font-size: .62rem;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+}
+.ocp-guide-reset-position:hover { border-color: rgba(111,223,241,.7); background: rgba(16,55,74,.9); }
+@media (max-width: 560px) {
+  .ocp-guide-head { gap: 8px; padding: 12px 10px 10px; }
+  .ocp-guide-heading { overflow-wrap: anywhere; }
+  .ocp-guide-reset-position { min-width: 38px; padding-inline: 5px; }
+  .ocp-guide-panel { max-width: calc(100vw - 24px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ocp-guide-launcher { transition: none; }
+}
