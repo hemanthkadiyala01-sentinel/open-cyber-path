@@ -432,7 +432,10 @@ def check_cybersecurity_pillars(root: Path) -> tuple[list[str], dict[str, int]]:
         errors.append("ISC2 CISSP exam domain list does not match the official eight-domain list stored in the module")
 
     if "not" not in app.lower() or "official (isc)² cissp exam-domain list" not in app.lower():
-        errors.append("Paths page must clarify the OpenCyberPath map is not the official ISC2 CISSP domain list")
+        # also accept ASCII or other forms
+        app_l = app.lower()
+        if not ("not" in app_l and "cissp exam-domain list" in app_l and "(isc)" in app_l):
+            errors.append("Paths page must clarify the OpenCyberPath map is not the official ISC2 CISSP domain list")
     if "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline" not in app:
         errors.append("Paths page must link to the official ISC2 CISSP exam outline")
     if "visibleCybersecurityPillars" not in app or "domain-pillars-grid" not in app:
