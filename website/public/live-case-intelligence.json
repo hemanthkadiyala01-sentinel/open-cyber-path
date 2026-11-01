@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T13:33:48Z",
+  "generatedAt": "2026-11-01T19:43:37Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -64,6 +64,19 @@
     }
   ],
   "items": [
+    {
+      "id": "bleepingcomputer-alpine-linux-rebuilds-gitlab-after-attempted-rce-attack",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Alpine Linux rebuilds GitLab after attempted RCE attack",
+      "publishedAt": "2026-11-01T15:11:21Z",
+      "url": "https://www.bleepingcomputer.com/news/security/alpine-linux-rebuilds-gitlab-after-attempted-rce-attack/",
+      "summary": "Hackers attempted to exploit a critical GitLab vulnerability in Alpine Linux's development infrastructure on October 20-21, prompting the open-source project to rebuild its GitLab server and reset all passwords over concerns of a possible compromise. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
     {
       "id": "thehackernews-cvss-10-0-lxd-microcloud-flaw-lets-attackers-impersonate-trusted-clients-without-a-private",
       "sourceId": "thehackernews",
@@ -494,19 +507,6 @@
       "confidence": "cisa-kev-listed",
       "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
       "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "id": "bleepingcomputer-binance-probes-potential-5-8-billion-crypto-theft-hack",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Binance probes potential $5.8 billion crypto-theft hack",
-      "publishedAt": "2026-10-29T22:45:23Z",
-      "url": "https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/",
-      "summary": "Cryptocurrency exchange Binance is investigating a potential security breach involving up to $5.8 billion in digital assets, in what could become the largest cryptocurrency hack in history. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
       "id": "thehackernews-threatsday-critical-firewall-flaws-banking-trojans-rented-weaponized-pdf-token-theft-26-mo",
