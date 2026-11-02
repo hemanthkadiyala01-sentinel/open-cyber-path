@@ -29,7 +29,7 @@ jobs:
           persist-credentials: true
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: '3.12'
 
@@ -40,7 +40,12 @@ jobs:
         run: python -m unittest tools.liveops.test_refresh_feed -v
 
       - name: Refresh approved public sources
-        run: python tools/liveops/refresh_feed.py --scheduled
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = "schedule" ]; then
+            python tools/liveops/refresh_feed.py --scheduled --defer-health-failure
+          else
+            python tools/liveops/refresh_feed.py --defer-health-failure
+          fi
 
       - name: Check feed schema and privacy fields
         run: python tools/liveops/refresh_feed.py --self-test
@@ -57,3 +62,7 @@ jobs:
           git add website/public/liveops-feed.json
           git commit -m "chore: refresh OpenCyberPath LiveOps public source feed"
           git push
+
+      - name: Publish source health summary and enforce outage threshold
+        if: always()
+        run: python tools/liveops/refresh_feed.py --report-health

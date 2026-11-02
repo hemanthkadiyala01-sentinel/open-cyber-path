@@ -138,5 +138,107 @@ class RefreshFeedTests(unittest.TestCase):
         self.assertIn(feed["feedMode"], {"starter-snapshot", "manual-refresh", "automated-refresh"})
 
 
+    def test_source_failure_counter_defaults_to_zero(self):
+        self.assertEqual(rf.consecutive_failure_count({}), 0)
+        self.assertEqual(rf.consecutive_failure_count({"consecutiveFailures": "invalid"}), 0)
+        self.assertEqual(rf.consecutive_failure_count({"consecutiveFailures": -4}), 0)
+
+    def test_source_failure_increments_and_preserves_last_success(self):
+        previous = {"itemsSeen": 29, "lastSuccessAt": "2026-11-02T00:00:00Z", "consecutiveFailures": 2}
+        result = rf.make_source_failure_health(
+            {"id": "debian", "name": "Debian Security Advisories"},
+            previous,
+            "2026-11-02T06:00:00Z",
+            "Refresh failed: URLError",
+            True,
+        )
+        self.assertEqual(result["consecutiveFailures"], 3)
+        self.assertEqual(result["lastFailureAt"], "2026-11-02T06:00:00Z")
+        self.assertEqual(result["lastSuccessAt"], previous["lastSuccessAt"])
+        self.assertEqual(result["itemsSeen"], 29)
+
+    def test_source_success_resets_failure_counter(self):
+        previous = {"lastFailureAt": "2026-11-02T00:00:00Z", "consecutiveFailures": 2}
+        result = rf.make_source_success_health(
+            {"id": "debian", "name": "Debian Security Advisories"},
+            [{"id": "debian:DSA-1"}],
+            "2026-11-02T06:00:00Z",
+            previous,
+        )
+        self.assertEqual(result["status"], "ok")
+        self.assertEqual(result["consecutiveFailures"], 0)
+        self.assertEqual(result["lastFailureAt"], previous["lastFailureAt"])
+
+    def test_partial_source_failure_is_warning_not_a_failure_gate(self):
+        sources = [
+            {"id": "a", "status": "ok", "consecutiveFailures": 0},
+            {"id": "b", "status": "error", "consecutiveFailures": 1},
+            {"id": "c", "status": "ok", "consecutiveFailures": 0},
+        ]
+        self.assertEqual(rf.health_gate_exit_code(sources), 0)
+
+    def test_three_consecutive_source_failures_trigger_gate(self):
+        sources = [
+            {"id": "a", "status": "ok", "consecutiveFailures": 0},
+            {"id": "b", "status": "error", "consecutiveFailures": 3},
+        ]
+        self.assertEqual(rf.health_gate_exit_code(sources), 1)
+
+    def test_total_source_outage_triggers_gate_immediately(self):
+        sources = [
+            {"id": "a", "status": "error", "consecutiveFailures": 1},
+            {"id": "b", "status": "error", "consecutiveFailures": 1},
+        ]
+        self.assertEqual(rf.health_gate_exit_code(sources), 1)
+
+    def test_health_summary_lists_sources_and_escapes_markdown_cells(self):
+        feed = {
+            "generatedAt": "2026-11-02T06:00:00Z",
+            "items": [{"id": "one"}],
+            "sources": [{
+                "id": "debian",
+                "name": "Debian | security",
+                "status": "error",
+                "itemsSeen": 29,
+                "lastSuccessAt": "2026-11-02T00:00:00Z",
+                "consecutiveFailures": 1,
+                "message": "temporary <network> issue",
+            }],
+        }
+        summary = rf.build_health_summary(feed)
+        self.assertIn("Debian \\| security", summary)
+        self.assertIn("temporary &lt;network&gt; issue", summary)
+        self.assertIn("1 degraded", summary)
+
+    def test_health_summary_marks_three_failures_critical(self):
+        feed = {
+            "generatedAt": "2026-11-02T06:00:00Z",
+            "items": [],
+            "sources": [{"id": "debian", "name": "Debian", "status": "error", "consecutiveFailures": 3}],
+        }
+        summary = rf.build_health_summary(feed)
+        self.assertIn("critical", summary)
+        self.assertIn("at least one source has failed three consecutive runs", summary)
+
+    def test_all_source_failures_can_defer_exit_until_health_report(self):
+        original_feed = rf.read_existing()
+        with tempfile.TemporaryDirectory() as temp_dir:
+            test_path = Path(temp_dir) / "liveops-feed.json"
+            test_path.write_text(json.dumps(original_feed), encoding="utf-8")
+            with patch.object(rf, "FEED_PATH", test_path), \
+                 patch.object(rf, "parse_cert_in", side_effect=RuntimeError("offline")), \
+                 patch.object(rf, "parse_cisa", side_effect=RuntimeError("offline")), \
+                 patch.object(rf, "parse_github", side_effect=RuntimeError("offline")), \
+                 patch.object(rf, "parse_debian", side_effect=RuntimeError("offline")), \
+                 patch.object(rf, "parse_github_signals", side_effect=RuntimeError("offline")), \
+                 patch.object(sys, "argv", ["refresh_feed.py", "--defer-health-failure"]):
+                exit_code = rf.main()
+            result = json.loads(test_path.read_text(encoding="utf-8"))
+            self.assertEqual(exit_code, 0)
+            self.assertEqual(len(result["items"]), len(original_feed["items"]))
+            self.assertTrue(all(source["status"] == "error" for source in result["sources"]))
+            self.assertTrue(all(source["consecutiveFailures"] >= 1 for source in result["sources"]))
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
