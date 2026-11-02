@@ -12,6 +12,7 @@ import hashlib
 import html
 import email.utils
 import json
+import os
 import re
 import sys
 import time
@@ -463,6 +464,140 @@ def validate_feed(data: dict[str, Any]) -> None:
             raise ValueError(f"identity fields are forbidden in public feed ({ident})")
 
 
+def consecutive_failure_count(source: dict[str, Any]) -> int:
+    """Return a safe, non-negative consecutive-failure count for older feed schemas too."""
+    try:
+        return max(0, int(source.get("consecutiveFailures", 0)))
+    except (TypeError, ValueError, OverflowError):
+        return 0
+
+
+def make_source_success_health(
+    definition: dict[str, Any],
+    records: list[dict[str, Any]],
+    attempt: str,
+    previous: dict[str, Any],
+) -> dict[str, Any]:
+    """Record recovery and reset the consecutive-failure counter."""
+    return {
+        **definition,
+        "status": "ok",
+        "itemsSeen": len(records),
+        "lastAttemptAt": attempt,
+        "lastSuccessAt": attempt,
+        "lastFailureAt": previous.get("lastFailureAt"),
+        "consecutiveFailures": 0,
+        "message": f"Retrieved {len(records)} public records; individual reporter identities are not published.",
+    }
+
+
+def make_source_failure_health(
+    definition: dict[str, Any],
+    previous: dict[str, Any],
+    attempt: str,
+    message: str,
+    retained_items: bool,
+) -> dict[str, Any]:
+    """Record a failure while retaining the last successful source metadata."""
+    return {
+        **definition,
+        "status": "error",
+        "itemsSeen": int(previous.get("itemsSeen", 0) or 0),
+        "lastAttemptAt": attempt,
+        "lastSuccessAt": previous.get("lastSuccessAt"),
+        "lastFailureAt": attempt,
+        "consecutiveFailures": consecutive_failure_count(previous) + 1,
+        "message": message + (" Previous records were retained." if retained_items else ""),
+    }
+
+
+def health_gate_exit_code(sources: list[dict[str, Any]]) -> int:
+    """Warn on an isolated failure; fail on a total outage or 3 consecutive failures."""
+    if not sources:
+        return 1
+    failed = [source for source in sources if source.get("status") != "ok"]
+    if len(failed) == len(sources):
+        return 1
+    if any(consecutive_failure_count(source) >= 3 for source in failed):
+        return 1
+    return 0
+
+
+def markdown_cell(value: Any) -> str:
+    """Escape feed-controlled text before writing it into a Markdown table."""
+    return (
+        str(value if value is not None else "")
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace("|", "\\|")
+        .replace("\r", " ")
+        .replace("\n", " ")
+    )
+
+
+def build_health_summary(feed: dict[str, Any]) -> str:
+    """Build a compact per-source health report for GitHub Actions."""
+    sources = feed.get("sources", [])
+    healthy = sum(1 for source in sources if source.get("status") == "ok")
+    failed = len(sources) - healthy
+    lines = [
+        "## OpenCyberPath LiveOps source health",
+        "",
+        f"- Feed generated at: `{markdown_cell(feed.get('generatedAt') or 'unchanged after total outage')}`",
+        f"- Retained feed records: **{len(feed.get('items', []))}**",
+        f"- Source health: **{healthy}/{len(sources)} healthy**, **{failed} degraded**",
+        "",
+        "| Source | Status | Records from last successful run | Consecutive failures | Last success | Details |",
+        "|---|---|---:|---:|---|---|",
+    ]
+    for source in sources:
+        status = str(source.get("status", "unknown")).lower()
+        failures = consecutive_failure_count(source)
+        label = "healthy" if status == "ok" else ("critical" if failures >= 3 else "degraded")
+        lines.append(
+            "| " + " | ".join((
+                markdown_cell(source.get("name") or source.get("id") or "Unknown"),
+                label,
+                str(source.get("itemsSeen", 0)),
+                str(failures),
+                markdown_cell(source.get("lastSuccessAt") or "Never"),
+                markdown_cell(source.get("message") or "No details"),
+            )) + " |"
+        )
+    lines.extend([
+        "",
+        "A degraded source keeps its previous records. A recovered source resets its consecutive-failure count.",
+        "",
+    ])
+    if failed:
+        lines.append(f"> Warning: {failed} of {len(sources)} source(s) did not refresh successfully in this run.")
+    if health_gate_exit_code(sources) != 0:
+        lines.append("> Critical: total source outage or at least one source has failed three consecutive runs.")
+    return "\n".join(lines)
+
+
+def report_health() -> int:
+    """Write the saved feed health to the Actions summary, then apply the alert gate."""
+    feed = read_existing()
+    summary = build_health_summary(feed)
+    print(summary)
+    sources = feed.get("sources", [])
+    for source in sources:
+        if source.get("status") != "ok":
+            message = clean_text(source.get("message") or "Source refresh failed", 200)
+            command_message = message.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+            print(f"::warning title=LiveOps source degraded::{source.get('id', 'unknown')}: {command_message}")
+    summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary_path:
+        with Path(summary_path).open("a", encoding="utf-8") as summary_file:
+            summary_file.write(summary + "\n")
+    exit_code = health_gate_exit_code(sources)
+    if exit_code:
+        print("::error title=LiveOps outage threshold reached::All sources are unavailable or a source has failed three consecutive runs.")
+    return exit_code
+
+
 def self_test() -> int:
     data = read_existing()
     validate_feed(data)
@@ -481,7 +616,11 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--self-test", action="store_true", help="validate the existing feed without making network requests")
     parser.add_argument("--scheduled", action="store_true", help="mark this run as invoked by a scheduled collector (used by GitHub Actions)")
+    parser.add_argument("--defer-health-failure", action="store_true", help="persist source health before the workflow applies its final failure gate")
+    parser.add_argument("--report-health", action="store_true", help="write the saved source-health summary and enforce the outage threshold")
     args = parser.parse_args()
+    if args.report_health:
+        return report_health()
     if args.self_test:
         return self_test()
 
@@ -511,18 +650,11 @@ def main() -> int:
                 # Never output arbitrary identity properties from external source records.
                 record = {key: value for key, value in record.items() if key.lower() not in {"author", "reporter", "submitter", "avatar_url", "username", "email", "profile_url"}}
                 item_map[record["id"]] = record
-            health = {
-                **definition, "status": "ok", "itemsSeen": len(records), "lastAttemptAt": attempt,
-                "lastSuccessAt": attempt, "message": f"Retrieved {len(records)} public records; individual reporter identities are not published.",
-            }
+            health = make_source_success_health(definition, records, attempt, old_source)
             print(f"PASS {source_id}: {len(records)} records")
         except Exception as exc:  # keep each adapter isolated; one broken source must not wipe the others
             message = clean_text(f"Refresh failed: {type(exc).__name__}: {exc}", 240)
-            health = {
-                **definition, "status": "error", "itemsSeen": int(old_source.get("itemsSeen", 0) or 0),
-                "lastAttemptAt": attempt, "lastSuccessAt": old_source.get("lastSuccessAt"),
-                "message": message + (" Previous records were retained." if item_map else ""),
-            }
+            health = make_source_failure_health(definition, old_source, attempt, message, bool(item_map))
             print(f"WARN {source_id}: {message}; retained existing items")
         source_health.append(health)
 
@@ -548,7 +680,7 @@ def main() -> int:
     print(f"Feed written atomically: {FEED_PATH} ({len(merged)} unique records; {successes}/{len(adapters)} sources succeeded)")
     if successes == 0:
         print("ERROR: every source failed. The previous records remain in the feed, but this run is not considered successful.", file=sys.stderr)
-        return 1
+        return 0 if args.defer_health_failure else 1
     if successes < len(adapters):
         print("NOTE: partial refresh. Failed sources are clearly marked and their previous records were retained.")
     return 0
