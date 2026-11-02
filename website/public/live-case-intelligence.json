@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T19:43:37Z",
+  "generatedAt": "2026-11-02T00:48:01Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -64,6 +64,19 @@
     }
   ],
   "items": [
+    {
+      "id": "bleepingcomputer-fbi-links-6-3-billion-binance-crypto-heist-to-north-korean-hackers",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "FBI links $6.3 billion Binance crypto heist to North Korean hackers",
+      "publishedAt": "2026-11-01T19:57:53Z",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-links-63-billion-binance-crypto-heist-to-north-korean-hackers/",
+      "summary": "The FBI has confirmed that North Korean state-sponsored hackers known as TraderTraitor were behind the $6.3 billion crypto-theft attack on Binance, making it the largest cryptocurrency heist on record. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
     {
       "id": "bleepingcomputer-alpine-linux-rebuilds-gitlab-after-attempted-rce-attack",
       "sourceId": "bleepingcomputer",
@@ -412,19 +425,6 @@
       "summary": "Drupal warned admins to patch a critical access bypass vulnerability in the Commerce Core module that attackers are exploiting in the wild. [...]",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-binance-links-6-3-billion-crypto-theft-to-compromised-devops-laptop",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Binance links $6.3 billion crypto theft to compromised DevOps laptop",
-      "publishedAt": "2026-10-30T09:18:13Z",
-      "url": "https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/",
-      "summary": "Binance, the world's largest crypto exchange, has linked the theft of about $6.3 billion in cryptocurrency to a DevOps engineer's compromised laptop. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
