@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T21:44:01Z",
+  "generatedAt": "2026-11-03T06:54:13Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -42,7 +42,7 @@
       "url": "https://www.ncsc.gov.uk/information/rss-feeds",
       "description": "Official UK NCSC news, guidance and threat reports; distinguish incidents from general guidance",
       "status": "ok",
-      "itemCount": 6
+      "itemCount": 8
     },
     {
       "id": "cisa-advisories",
@@ -64,6 +64,84 @@
     }
   ],
   "items": [
+    {
+      "id": "ncsc-uk-cyber-chief-uk-facing-ai-powered-attacks-on-critical-infrastructure-within-two-years",
+      "sourceId": "ncsc-uk",
+      "publisher": "UK NCSC",
+      "title": "Cyber chief: UK facing AI-powered attacks on critical infrastructure within two years",
+      "publishedAt": "2026-11-03T12:00:00Z",
+      "url": "https://www.ncsc.gov.uk/news/cyber-chief-uk-facing-ai-powered-attacks-on-critical-infrastructure-in-two-years",
+      "summary": "The NCSC warns that ‘tech on the cheap’ has left UK organisations exposed to AI uncovering and exploiting longstanding cyber security weaknesses and calls for urgent investment in resilience.",
+      "signalType": "Official NCSC publication — inspect the linked item to distinguish incident reporting from guidance",
+      "caseType": "generic",
+      "confidence": "official-publication",
+      "sourceStatus": "Published by the UK NCSC; consult the linked notice for its evidence and scope."
+    },
+    {
+      "id": "ncsc-uk-artificial-intelligence-and-cyber-intrusion",
+      "sourceId": "ncsc-uk",
+      "publisher": "UK NCSC",
+      "title": "Artificial intelligence and cyber intrusion",
+      "publishedAt": "2026-11-03T12:00:00Z",
+      "url": "https://www.ncsc.gov.uk/report/artificial-intelligence-and-cyber-intrusion",
+      "summary": "An NCSC assessment that examines current AI-enabled threat trends and projections of the threat landscape to 2028.",
+      "signalType": "Official NCSC publication — inspect the linked item to distinguish incident reporting from guidance",
+      "caseType": "generic",
+      "confidence": "official-publication",
+      "sourceStatus": "Published by the UK NCSC; consult the linked notice for its evidence and scope."
+    },
+    {
+      "id": "thehackernews-attackers-exploit-critical-siemens-iot2050-flaw-to-plant-remote-command-backdoors",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Attackers Exploit Critical Siemens IoT2050 Flaw to Plant Remote Command Backdoors",
+      "publishedAt": "2026-11-03T05:34:41Z",
+      "url": "https://thehackernews.com/2026/11/attackers-exploit-critical-siemens.html",
+      "summary": "A maximum-severity security flaw impacting Siemens SIMATIC IoT2050 Advanced devices has come under active exploitation, VulnCheck has revealed. The vulnerability, tracked as CVE-2026-58115 (CVSS score: 10.0), is a case of missing authentication for a critical function that could be exploited by an unauthenticated remote attacker to run arbitrary code. \"SIMATIC IoT2050 Advanced devices running",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-attackers-target-unpatched-cryptopayment-gateway-flaw-that-can-expose-wallet-credentials",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Attackers Target Unpatched CryptoPayment Gateway Flaw That Can Expose Wallet Credentials",
+      "publishedAt": "2026-11-03T05:34:37Z",
+      "url": "https://thehackernews.com/2026/11/attackers-target-unpatched.html",
+      "summary": "Threat actors are attempting to exploit an unpatched maximum-severity security vulnerability in the CryptoPayment Gateway WordPress plugin, according to findings from Defused Cyber. The vulnerability in question is CVE-2026-81648, which carries a CVSS score of 10.0. Successful exploitation of the flaw could permit unauthenticated users to delete arbitrary files on the server and extract",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-uk-faces-unprecedented-rise-in-cyberattacks-in-coming-months-warns-cyber-chief",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "UK faces ‘unprecedented rise’ in cyberattacks in coming months, warns cyber chief",
+      "publishedAt": "2026-11-03T00:01:00Z",
+      "url": "https://therecord.media/uk-ncsc-predicts-rise-cyberattacks-coming-months",
+      "summary": "\"[V]ulnerabilities that have been tolerated for far too long can now be discovered and exploited at a scale that was once unimaginable,\" the NCSC's chief will warn in releasing the agency's annual report.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-largest-crypto-exchange-in-brazil-confirms-cyberattack-as-millions-flow-out-of-platform",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "Largest crypto exchange in Brazil confirms cyberattack as millions flow out of platform",
+      "publishedAt": "2026-11-02T21:42:00Z",
+      "url": "https://therecord.media/mercado-bitcoin-brazil-cryptocurrency-heist",
+      "summary": "Blockchain security companies said more than $46 million left the Mercado Bitcoin platform.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
     {
       "id": "bleepingcomputer-chinese-hackers-use-artex-ai-in-automated-attacks-against-200-orgs",
       "sourceId": "bleepingcomputer",
@@ -189,32 +267,6 @@
       "publishedAt": "2026-11-02T14:46:05Z",
       "url": "https://thehackernews.com/2026/11/darkblinders-compromises-israeli-target.html",
       "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign targeting Israel and the Kurdistan Region of Iraq by an Iran state-aligned threat actor between August and October 2026. According to a report published by Dream Research Labs, the campaign has led to the compromise of a high-profile individual in Israel, along with additional compromises affecting a government cloud",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "therecord-apple-warns-users-in-99-countries-of-mercenary-spyware",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "Apple warns users in 99 countries of mercenary spyware",
-      "publishedAt": "2026-11-02T14:42:00Z",
-      "url": "https://therecord.media/apple-warns-users-99-countries-mercenary-spyware",
-      "summary": "Apple does not attribute attacks or the notices to specific malicious actors or geographical regions, the notification said, due to the “extreme cost, sophistication, and worldwide nature of mercenary spyware attacks [which] make them some of the most advanced digital threats in existence today.”",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "therecord-russian-and-ukrainian-hackers-hijack-emergency-apps-to-spread-fake-nuclear-attack-warnings",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "Russian and Ukrainian hackers hijack emergency apps to spread fake nuclear attack warnings",
-      "publishedAt": "2026-11-02T14:30:00Z",
-      "url": "https://therecord.media/ukraine-hackers-russia-alert-system",
-      "summary": "A popular Ukrainian air raid alert system was hacked over the weekend, prompting a cyber group to breach a similar Russian system in retaliation.",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "generic",
       "confidence": "reported",
@@ -966,32 +1018,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "thehackernews-american-organizations-under-attack-skyw4lker-device-code-phishing-campaign-exposed",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "American Organizations Under Attack: Skyw4lker Device Code Phishing Campaign Exposed",
-      "publishedAt": "2026-10-28T10:30:00Z",
-      "url": "https://thehackernews.com/2026/10/american-organizations-under-attack.html",
-      "summary": "Modern phishing campaigns can compromise American businesses without relying on traditional credential theft. Attackers can abuse legitimate cloud services, authentication mechanisms, and trusted business workflows to gain access to corporate accounts while leaving fewer obvious signs behind. ANY.RUN's analysis of Skyw4lker, a device code phishing campaign primarily targeting U.S. organizations",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "identity-cloud",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-anthropic-s-unreleased-ai-model-chains-flaws-into-working-chrome-safari-windows-and-linux-",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Anthropic's Unreleased AI Model Chains Flaws Into Working Chrome, Safari, Windows and Linux Exploits",
-      "publishedAt": "2026-10-28T08:15:07Z",
-      "url": "https://thehackernews.com/2026/10/anthropics-unreleased-ai-model-chains.html",
-      "summary": "An unreleased Anthropic AI model found security flaws in Chrome, Safari, Android, Windows, and Linux and chained them into working proof-of-concept exploits, the company said in its latest report. The exploits were built in the lab after the model was prompted, not seen in any real attack, and Anthropic reported every flaw to the vendor first, so all of them are already patched. One proof of",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "certin-ciad-2026-0057",
       "sourceId": "cert-in",
       "publisher": "CERT-In",
@@ -1626,34 +1652,6 @@
       "publishedAt": "2026-10-02T00:00:00Z",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102490",
       "summary": "Zammad GmbH Zammad contains an improper privilege management vulnerability that can allow the local zammad user to escalate privileges to root. This vulnerability can be chained with CVE-2026-102489. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-      "signalType": "Known exploited vulnerability — listed by CISA KEV",
-      "caseType": "vulnerability",
-      "confidence": "cisa-kev-listed",
-      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
-      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "id": "cisa-cve-2026-102489",
-      "sourceId": "cisa-kev",
-      "publisher": "CISA KEV Catalog",
-      "title": "CVE-2026-102489: Zammad GmbH Zammad Session Fixation Vulnerability",
-      "publishedAt": "2026-10-02T00:00:00Z",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-102489",
-      "summary": "Zammad GmbH Zammad contains a session fixation vulnerability that can lead to remote code execution as the zammad user. This vulnerability can be chained with CVE-2026-102490. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-      "signalType": "Known exploited vulnerability — listed by CISA KEV",
-      "caseType": "vulnerability",
-      "confidence": "cisa-kev-listed",
-      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
-      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "id": "cisa-cve-2026-104286",
-      "sourceId": "cisa-kev",
-      "publisher": "CISA KEV Catalog",
-      "title": "CVE-2026-104286: Fortinet FortiMail Path Traversal Vulnerability",
-      "publishedAt": "2026-10-01T00:00:00Z",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-104286",
-      "summary": "Fortinet FortiMail contains a path traversal and an improper neutralization of NULL byte or NULL character vulnerability that may allow an unauthenticated attacker to write arbitrary files on the underlying system via crafted HTTP or HTTPS requests. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
       "signalType": "Known exploited vulnerability — listed by CISA KEV",
       "caseType": "vulnerability",
       "confidence": "cisa-kev-listed",
