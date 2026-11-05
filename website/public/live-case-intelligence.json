@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T17:26:36Z",
+  "generatedAt": "2026-11-05T23:40:36Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -18,7 +18,7 @@
       "url": "https://www.bleepingcomputer.com/rss-feeds/",
       "description": "Independent global incident and vulnerability reporting; cross-check material claims",
       "status": "ok",
-      "itemCount": 15
+      "itemCount": 14
     },
     {
       "id": "therecord",
@@ -26,7 +26,7 @@
       "url": "https://therecord.media/",
       "description": "Global reporting on breaches, cybercrime, and threat activity; reports are not automatically primary confirmation",
       "status": "ok",
-      "itemCount": 5
+      "itemCount": 4
     },
     {
       "id": "thehackernews",
@@ -65,6 +65,84 @@
   ],
   "items": [
     {
+      "id": "therecord-queens-public-library-says-ransomware-attack-disrupted-wi-fi-on-site-computers",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "Queens Public Library says ransomware attack disrupted Wi-Fi, on-site computers",
+      "publishedAt": "2026-11-05T22:08:00Z",
+      "url": "https://therecord.media/queens-library-ransomware-causes-disruptions",
+      "summary": "The library system, which has 66 branches serving the borough’s 2.3 million residents, published multiple alerts on Wednesday confirming that the disruption was caused by a ransomware attack.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "malware-ransomware",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-fake-openai-spacex-events-used-to-steal-microsoft-google-accounts",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Fake OpenAI, SpaceX events used to steal Microsoft, Google accounts",
+      "publishedAt": "2026-11-05T21:30:30Z",
+      "url": "https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts/",
+      "summary": "Hackers are using fake OpenAI, SpaceX, and Anthropic event invitations to lure employees into phishing attacks, using two different phishing-as-a-service platforms to steal Microsoft and Google account credentials and authentication sessions. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-social-media-giants-sue-california-to-overturn-law-shielding-kids-15-and-under-from-compul",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "Social media giants sue California to overturn law shielding kids 15 and under from compulsive use",
+      "publishedAt": "2026-11-05T20:48:00Z",
+      "url": "https://therecord.media/social-media-giants-sue-california-over-social-media-law",
+      "summary": "Google, Meta and TikTok each filed suit in federal court against an incoming California law that blocks platforms from deploying features considered “psychologically exploitative.”",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-nearly-1-5-million-exposed-secrets-targeted-in-new-revocation-program",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Nearly 1.5 million exposed secrets targeted in new revocation program",
+      "publishedAt": "2026-11-05T20:15:08Z",
+      "url": "https://www.bleepingcomputer.com/news/security/truffle-security-launches-program-to-revoke-14-million-live-secrets/",
+      "summary": "Truffle Security has launched the Secrets Revocation Program, a free initiative that helps API key issuers revoke 1.4 million publicly exposed secrets that remain valid. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-harden-cooling-systems-now-feds-warn-critical-infrastructure-operators-amid-attacks",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "Harden cooling systems now, feds warn critical infrastructure operators amid attacks",
+      "publishedAt": "2026-11-05T19:15:00Z",
+      "url": "https://therecord.media/cyberattacks-refrigeration-cisa-fbi",
+      "summary": "The U.S. government on Thursday called on critical infrastructure operators to safeguard their cooling systems following hacks that have caused chaos in European supermarkets in recent weeks.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "OpenSSH flaw lets attackers log into password-disabled Linux accounts",
+      "publishedAt": "2026-11-05T17:45:29Z",
+      "url": "https://www.bleepingcomputer.com/news/security/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts/",
+      "summary": "A newly disclosed OpenSSH vulnerability dubbed \"*sshole\" allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts that are configured to block password authentication, simply by entering an oversized password. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
       "id": "therecord-russian-state-linked-hackers-target-iphone-android-devices-in-zero-click-espionage-campaig",
       "sourceId": "therecord",
       "publisher": "The Record",
@@ -74,6 +152,32 @@
       "summary": "Russian state-linked hackers targeted users in Ukraine, the United States and Europe in a campaign to steal sensitive information from iPhone and Android devices, researchers found.",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-openssh-issues-emergency-fix-for-flaw-letting-long-passwords-bypass-ssh-auth-on-alpine-lin",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
+      "publishedAt": "2026-11-05T16:42:46Z",
+      "url": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
+      "summary": "Attackers can log in to accounts that have no password, such as SSH key-only accounts, on some Alpine Linux servers running the standard openssh-server package. They need network access to the server, an account name, and a password between 257 and 1,024 bytes long. OpenSSH, which rates the flaw critical, released version 10.6p2 today to block it. Alpine has published fixed packages for every",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-researchers-bypass-chatgpt-lockdown-mode-to-exfiltrate-chats-without-user-interaction",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
+      "publishedAt": "2026-11-05T16:42:32Z",
+      "url": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
+      "summary": "Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT. Lockdown Mode was introduced by the artificial intelligence (AI) company in June 2026 as an optional setting to minimize data exfiltration risks arising from prompt injections. \"The flaw could enable silent chat data theft, phishing,",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -234,32 +338,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "therecord-ukraine-fires-two-senior-security-officials-amid-corruption-probe-into-scam-call-centers",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "Ukraine fires two senior security officials amid corruption probe into scam call centers",
-      "publishedAt": "2026-11-05T00:00:00Z",
-      "url": "https://therecord.media/ukraine-fires-senior-security-officials-amid-scam-center-corruption-investigation",
-      "summary": "Ukraine's security service has fired two senior officials amid a corruption investigation into an alleged criminal network that bribed law enforcement officers to protect fraudulent call centers and other illegal operations.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "therecord-chainalysis-warns-all-users-hit-in-cyber-breach-involving-agentic-techniques",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "Chainalysis warns all users hit in cyber breach involving ‘agentic’ techniques",
-      "publishedAt": "2026-11-05T00:00:00Z",
-      "url": "https://therecord.media/chainalysis-all-users-hit-by-agentic-cyberattack",
-      "summary": "Chainalysis, the blockchain analytics company, said Wednesday night that some information belonging to all its users — which its website says include those in the law enforcement and national security sectors — had been exposed in a cyberattack.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "bleepingcomputer-vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks",
       "sourceId": "bleepingcomputer",
       "publisher": "BleepingComputer",
@@ -273,19 +351,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "therecord-more-asian-airlines-announce-data-breaches-after-attack-on-spanish-it-provider-amadeus",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "More Asian airlines announce data breaches after attack on Spanish IT provider Amadeus",
-      "publishedAt": "2026-11-04T21:30:00Z",
-      "url": "https://therecord.media/asian-airlines-announce-data-breach-it-provider-incident",
-      "summary": "Japan Airlines, Cathay Pacific, Korean Air, Asiana Airlines, Singapore Airlines and Malaysia Airlines have all come forward over the last week to report data breaches traced back to Amadeus IT Group — a company that builds and maintains platforms for flight reservation, ticketing and check-in platforms.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "third-party-breach",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "bleepingcomputer-zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches",
       "sourceId": "bleepingcomputer",
       "publisher": "BleepingComputer",
@@ -295,19 +360,6 @@
       "summary": "Zyxel has patched a zero-day vulnerability in its GS1900 series network switches that hackers exploited to compromise nearly 1,000 devices worldwide and steal configuration files and credentials. [...]",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "therecord-canadian-extradited-to-us-for-allegedly-hacking-schools-in-at-least-four-states",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "Canadian extradited to US for allegedly hacking schools in at least four states",
-      "publishedAt": "2026-11-04T19:17:00Z",
-      "url": "https://therecord.media/canadian-nationals-accused-us-education-hacks-cryptomining",
-      "summary": "The Department of Justice said it identified two suspects in a case that dates back to 2016 and involved illicit cryptomining on the computers of U.S. educational institutions.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -416,19 +468,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "bleepingcomputer-sonicwall-warns-of-unpatched-flaws-in-end-of-life-gms-software",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "SonicWall warns of unpatched flaws in end-of-life GMS software",
-      "publishedAt": "2026-11-04T14:42:25Z",
-      "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-unpatched-flaws-in-end-of-life-gms-software/",
-      "summary": "SonicWall warned customers of two security flaws affecting end-of-life Global Management System (GMS) systems that will not be patched. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "thehackernews-apt29-linked-hackers-hijack-web-analytics-script-to-deliver-ios-and-android-exploits",
       "sourceId": "thehackernews",
       "publisher": "The Hacker News",
@@ -438,32 +477,6 @@
       "summary": "The Russia-linked threat actor known as APT29 is presumed to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker. \"The injected JavaScript code collects browser and device attributes,\" Sekoia researchers Amaury-Jacques Garçon and",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "dependency-compromise",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-us-charges-two-canadians-accused-of-hacking-us-universities",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "US charges two Canadians accused of hacking US universities",
-      "publishedAt": "2026-11-04T13:13:20Z",
-      "url": "https://www.bleepingcomputer.com/news/security/us-charges-two-canadians-accused-of-hacking-us-universities/",
-      "summary": "A federal grand jury indicted two Canadians suspected of hacking multiple US universities and using the compromised systems to mine for cryptocurrency. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "CISA flags WordPress RCE flaw as actively exploited in attacks",
-      "publishedAt": "2026-11-04T12:11:05Z",
-      "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/",
-      "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers have started exploiting a recently patched high-severity WordPress vulnerability in the wild. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -514,19 +527,6 @@
       "publishedAt": "2026-11-04T11:24:31Z",
       "url": "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html",
       "summary": "A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy an implant called DarkVigil (aka FDMTP). The campaign, observed starting July 1, 2026, is assessed to have targeted organizations and",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Hackers use n-day exploits in zero-click attacks on iOS, Android devices",
-      "publishedAt": "2026-11-04T09:39:54Z",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-use-n-day-exploits-in-zero-click-attacks-on-ios-android-devices/",
-      "summary": "A large-scale watering hole attack associated with Russian hackers has been targeting iOS and Android users visiting compromised sites or fake ones impersonating legitimate portals. [...]",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "generic",
       "confidence": "reported",
@@ -984,32 +984,6 @@
       "publishedAt": "2026-10-31T05:33:41Z",
       "url": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
       "summary": "A malicious ChatGPT share link could run an attacker's code in the logged-in session of anyone who opened it, allowing them to read their private conversations, researchers at the security firm Parameter showed. The researchers reported the flaw through OpenAI's bug bounty program on October 18, and OpenAI fixed it eight days later and rated it P1, its most serious category.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-cloudflare-reports-18-2-million-network-layer-ddos-attacks-in-q3-up-38",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%",
-      "publishedAt": "2026-10-31T04:56:12Z",
-      "url": "https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html",
-      "summary": "Threat actors are launching about 8,226 network-layer distributed denial-of-service (DDoS) attacks per hour, Cloudflare revealed Thursday. The web infrastructure and security company said it autonomously mitigated 18.2 million network-layer (L3) DDoS attacks and 14.4 trillion HTTP DDoS requests in the third quarter of 2026. That amounts to 197,400 attacks per day, or one attack every 0.44",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-chinese-hackers-use-ai-powered-artex-to-target-over-200-organizations-worldwide",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Chinese Hackers Use AI-Powered ARTEX to Target Over 200 Organizations Worldwide",
-      "publishedAt": "2026-10-30T16:58:44Z",
-      "url": "https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html",
-      "summary": "Chinese state-sponsored threat actors have been observed using a Go-based artificial intelligence (AI)-powered penetration testing framework called ARTEX in attacks aimed at high-value targets simultaneously. The activity has been attributed by CrowdStrike to a China-based \"targeted intrusion adversary\" it tracks under the moniker Vapor Panda (previously VexatiousTemper). First identified in",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "generic",
       "confidence": "reported",
@@ -1656,6 +1630,33 @@
       "confidence": "cisa-kev-listed",
       "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
       "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "id": "cisa-cve-2015-3306",
+      "sourceId": "cisa-kev",
+      "publisher": "CISA KEV Catalog",
+      "title": "CVE-2015-3306: ProFTPD Improper Access Control Vulnerability",
+      "publishedAt": "2026-10-08T00:00:00Z",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-3306",
+      "summary": "ProFTPD contains an improper access control vulnerability that could allow remote attackers to read and write to arbitrary files via the site cpfr and site cpto commands. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "signalType": "Known exploited vulnerability — listed by CISA KEV",
+      "caseType": "vulnerability",
+      "confidence": "cisa-kev-listed",
+      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
+      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "id": "ncsc-uk-incident-affecting-asos-customers",
+      "sourceId": "ncsc-uk",
+      "publisher": "UK NCSC",
+      "title": "Incident affecting ASOS customers",
+      "publishedAt": "2026-10-06T12:00:00Z",
+      "url": "https://www.ncsc.gov.uk/news/incident-affecting-asos-customers",
+      "summary": "ASOS has said it is investigating a cyber incident and that some customer personal information may have been accessed.",
+      "signalType": "Official NCSC publication — inspect the linked item to distinguish incident reporting from guidance",
+      "caseType": "generic",
+      "confidence": "official-publication",
+      "sourceStatus": "Published by the UK NCSC; consult the linked notice for its evidence and scope."
     }
   ]
 }
