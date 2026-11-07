@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "feedMode": "automated-refresh",
-  "generatedAt": "2026-11-07T13:06:56Z",
+  "generatedAt": "2026-11-07T21:53:46Z",
   "scheduleHours": 6,
   "privacyPolicy": "Public feed intentionally omits individual reporter and submitter identity fields. Source organisations and source references are retained for traceability.",
   "sources": [
@@ -12,8 +12,8 @@
       "kind": "Government advisory listing",
       "status": "ok",
       "itemsSeen": 15,
-      "lastAttemptAt": "2026-11-07T13:06:56Z",
-      "lastSuccessAt": "2026-11-07T13:06:56Z",
+      "lastAttemptAt": "2026-11-07T21:53:46Z",
+      "lastSuccessAt": "2026-11-07T21:53:46Z",
       "lastFailureAt": null,
       "consecutiveFailures": 0,
       "message": "Retrieved 15 public records; individual reporter identities are not published."
@@ -25,8 +25,8 @@
       "kind": "Known-exploited vulnerability catalogue",
       "status": "ok",
       "itemsSeen": 100,
-      "lastAttemptAt": "2026-11-07T13:06:56Z",
-      "lastSuccessAt": "2026-11-07T13:06:56Z",
+      "lastAttemptAt": "2026-11-07T21:53:46Z",
+      "lastSuccessAt": "2026-11-07T21:53:46Z",
       "lastFailureAt": null,
       "consecutiveFailures": 0,
       "message": "Retrieved 100 public records; individual reporter identities are not published."
@@ -38,8 +38,8 @@
       "kind": "Public reviewed security advisories",
       "status": "ok",
       "itemsSeen": 100,
-      "lastAttemptAt": "2026-11-07T13:06:56Z",
-      "lastSuccessAt": "2026-11-07T13:06:56Z",
+      "lastAttemptAt": "2026-11-07T21:53:46Z",
+      "lastSuccessAt": "2026-11-07T21:53:46Z",
       "lastFailureAt": null,
       "consecutiveFailures": 0,
       "message": "Retrieved 100 public records; individual reporter identities are not published."
@@ -51,8 +51,8 @@
       "kind": "Distribution security advisories",
       "status": "ok",
       "itemsSeen": 30,
-      "lastAttemptAt": "2026-11-07T13:06:56Z",
-      "lastSuccessAt": "2026-11-07T13:06:56Z",
+      "lastAttemptAt": "2026-11-07T21:53:46Z",
+      "lastSuccessAt": "2026-11-07T21:53:46Z",
       "lastFailureAt": null,
       "consecutiveFailures": 0,
       "message": "Retrieved 30 public records; individual reporter identities are not published."
@@ -62,13 +62,13 @@
       "name": "GitHub Public Issues & Fix Signals",
       "url": "https://docs.github.com/en/rest/search/search#search-issues-and-pull-requests",
       "kind": "Public issue and fix candidates (unverified until reviewed)",
-      "status": "ok",
+      "status": "error",
       "itemsSeen": 100,
-      "lastAttemptAt": "2026-11-07T13:06:56Z",
+      "lastAttemptAt": "2026-11-07T21:53:46Z",
       "lastSuccessAt": "2026-11-07T13:06:56Z",
-      "lastFailureAt": null,
-      "consecutiveFailures": 0,
-      "message": "Retrieved 100 public records; individual reporter identities are not published."
+      "lastFailureAt": "2026-11-07T21:53:46Z",
+      "consecutiveFailures": 1,
+      "message": "Refresh failed: HTTPError: HTTP Error 403: rate limit exceeded Previous records were retained."
     }
   ],
   "items": [
@@ -621,7 +621,7 @@
       "lastSeenAt": "2026-11-07T13:06:56Z",
       "isKEV": false,
       "contentHash": "2b4633c21bebfc7bfdb0f436ca3768a426c0e93cd0cb55138cb975292e03ad94",
-      "status": "UPDATED"
+      "status": "ACTIVE"
     },
     {
       "id": "github-signal:b316a043ce1261e5ba",
@@ -1210,7 +1210,7 @@
       "lastSeenAt": "2026-11-07T13:06:56Z",
       "isKEV": false,
       "contentHash": "569b0d0f43f9ec44f5d71eabe117c3e98c8c352559c18ed758fcc73a60d9997c",
-      "status": "UPDATED"
+      "status": "ACTIVE"
     },
     {
       "id": "github-signal:a289e6584dc798a54a",
@@ -1495,7 +1495,7 @@
       "lastSeenAt": "2026-11-07T13:06:56Z",
       "isKEV": false,
       "contentHash": "226853e838f7f0ca0731b88cb7aae8b9c090fef23f207c3635ff1081e298c284",
-      "status": "UPDATED"
+      "status": "ACTIVE"
     },
     {
       "id": "github-signal:98f0a223d2404ceb2f",
@@ -1666,7 +1666,7 @@
       "lastSeenAt": "2026-11-07T13:06:56Z",
       "isKEV": false,
       "contentHash": "20049866ca207ce7532f58a120a358da13e74f478eac7467f75bd91c429ff598",
-      "status": "UPDATED"
+      "status": "ACTIVE"
     },
     {
       "id": "github-signal:b6a44d9bfbb7ff6153",
@@ -1685,7 +1685,7 @@
       "lastSeenAt": "2026-11-07T13:06:56Z",
       "isKEV": false,
       "contentHash": "8949ffc719473a671e810376cad068ae29753f04a8a6631ad0d9a932cccce9ee",
-      "status": "UPDATED"
+      "status": "ACTIVE"
     },
     {
       "id": "github-signal:0c1cbcb9e53492dd62",
@@ -1780,7 +1780,7 @@
       "lastSeenAt": "2026-11-07T13:06:56Z",
       "isKEV": false,
       "contentHash": "53e7aa5efa0e1be9956f33ebc7005bd9a746b43a17ff70e45417d4cdc8ae64d4",
-      "status": "UPDATED"
+      "status": "ACTIVE"
     },
     {
       "id": "github-signal:b77a2043228bf97261",
@@ -1856,7 +1856,7 @@
       "lastSeenAt": "2026-11-07T13:06:56Z",
       "isKEV": false,
       "contentHash": "ad62363a72e35bf3ec41f4440b69279a6a8ea4bdb79f7acea2090687e245673a",
-      "status": "UPDATED"
+      "status": "NEW"
     },
     {
       "id": "github-signal:8782837cc7e66657d8",
@@ -1970,7 +1970,7 @@
       "lastSeenAt": "2026-11-07T13:06:56Z",
       "isKEV": false,
       "contentHash": "da5176a55fb1f55a9568e24bcef920b8dbcff07db6fa2c4ed416a830e38bd1e6",
-      "status": "UPDATED"
+      "status": "NEW"
     },
     {
       "id": "github-signal:4d37b1ed0384ff4d5d",
@@ -3810,7 +3810,7 @@
       "category": "Package security · pip",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-07T06:02:11Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "e29f3ac01a6dabdb950b8edd152140c5f1cdb30dd4165cb543077b760a8deb3d",
       "status": "ACTIVE"
@@ -3829,7 +3829,7 @@
       "category": "Package security · pip",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-07T06:02:11Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "c282000ca9370289c24e91eceb83c8031e37b959ff3c6bbda8e6d39e8d67e862",
       "status": "ACTIVE"
@@ -3848,9 +3848,28 @@
       "category": "Distribution security update",
       "confidence": "Official Debian security feed",
       "firstSeenAt": "2026-11-07T13:06:56Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "1a359ef0029fa138f2eef61558c923486db0069c5aba37dd9c8c2efdef335351",
+      "status": "NEW"
+    },
+    {
+      "id": "debian:dsa-6614-1",
+      "sourceId": "debian",
+      "sourceName": "Debian Security Advisories",
+      "sourceUrl": "https://lists.debian.org/debian-security-announce/2026/msg00533.html",
+      "reference": "DSA-6614-1",
+      "title": "DSA-6614-1 ruby3.3 - security update",
+      "summary": "Public Debian security advisory. Open the original notice to review the affected package, fixed versions and distribution-specific guidance.",
+      "publishedAt": "2026-11-07T00:00:00Z",
+      "updatedAt": "2026-11-07T00:00:00Z",
+      "severity": "See original advisory",
+      "category": "Distribution security update",
+      "confidence": "Official Debian security feed",
+      "firstSeenAt": "2026-11-07T21:53:46Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
+      "isKEV": false,
+      "contentHash": "cf0dcbdcc0e8d173600a1e13598f154d8ddebdfd3e5907de8595358930a6d8c3",
       "status": "NEW"
     },
     {
@@ -3867,7 +3886,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-07T06:02:11Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "eaa270a6896a6ea73759d90dc500104a463bd88efccf906f36b98c8de17931a8",
       "status": "NEW"
@@ -3886,7 +3905,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-07T06:02:11Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "a1bededacffa0be26e97e6b390eb478734a931faed65fe39c9d8b77b85fb9b32",
       "status": "NEW"
@@ -3905,7 +3924,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-07T06:02:11Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "5c5fc69895ba3dfe234db559c795e3a3ea5b1f0ad03639ca639936463c51f6c8",
       "status": "NEW"
@@ -3924,7 +3943,7 @@
       "category": "Package security · pip",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-07T06:02:11Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "4492566f10500308bafb2fd5e1748e9d25c2883717842458037912882e5856cd",
       "status": "NEW"
@@ -3943,7 +3962,7 @@
       "category": "Package security · pip",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-07T06:02:11Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "12d371b69b302130e0af6bf1d1d7c1862462eccc0f136fd8c0c1154f1a09e84a",
       "status": "NEW"
@@ -3962,7 +3981,7 @@
       "category": "Package security · pip",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-07T06:02:11Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "2dd7a30d3739eed5fb9ae8dcd932be3ed1f41d4d45ae8724371b742ebcba468f",
       "status": "NEW"
@@ -3981,7 +4000,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-07T06:02:11Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "9149357f5e32e31029e38afcaa003b286b4d6a46e881836967aa5c4c887449c5",
       "status": "NEW"
@@ -4000,7 +4019,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-07T06:02:11Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "b424936b03aa96e921b28a59056988c2287183d6bf06b3b75460146ebfff29d5",
       "status": "NEW"
@@ -4019,7 +4038,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-07T06:02:11Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "eeb6b0cff102b2b28b6553bf9d55438593e7ba76886a8607ae1ac25597687f0d",
       "status": "NEW"
@@ -4038,7 +4057,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-07T06:02:11Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "1a4596748a62959b9234c22a532770a3e36c34918e374a81d64fc02f4b176554",
       "status": "NEW"
@@ -4057,7 +4076,7 @@
       "category": "Package security · pip",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-07T06:02:11Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "11fcb1de18b86be477d65f0c3eda6045dc3dedd0804a826e1345c5f4d59a79a2",
       "status": "ACTIVE"
@@ -5881,7 +5900,7 @@
       "category": "Package security · composer",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T19:27:12Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "a8da4aa89e2fa2d2b305af7d7e4b2427bd9ee925d8f11d44f64994f71a866a81",
       "status": "ACTIVE"
@@ -5900,7 +5919,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T19:27:12Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "715bacaab4991825ff0f29bc155423ea0dc51373ae229ef939178df4a3d1159f",
       "status": "NEW"
@@ -5919,7 +5938,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T19:27:12Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "f93201522b13208ed41ce76b1fbaa27203eab693b049d9756c8f9c3632ae4e27",
       "status": "NEW"
@@ -5938,7 +5957,7 @@
       "category": "Package security · pip",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T19:27:12Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "7abcd7b96cb66971635f7751ab43e4885e54ed789f8885a79071989de8056916",
       "status": "ACTIVE"
@@ -5957,7 +5976,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T19:27:12Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "50e798b645086387ee9c48799866385ca9923ca4cf28afe8a5b2aae4ac05a0ec",
       "status": "NEW"
@@ -5976,7 +5995,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T19:27:12Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "a4c803a04061ff475fb65ed1b953321f546098930316feee492faf9334215c8e",
       "status": "NEW"
@@ -5995,7 +6014,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T19:27:12Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "664d712e58ea6c380d75de06b3ce7352b9fae026d4ce2fe6675c6b604eb3e102",
       "status": "NEW"
@@ -6014,7 +6033,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T19:27:12Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "99ab8b8b4cbfdfe746e27470e4b194a15d129fab6f1d7bc0d97b18eb127198b2",
       "status": "NEW"
@@ -6033,7 +6052,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T19:27:12Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "6b4452246fa9b638496eeeb011e42fcf63e3a7e12be3bf935829f0ee55ad8690",
       "status": "ACTIVE"
@@ -6052,7 +6071,7 @@
       "category": "Package security · nuget",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T19:27:12Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "6be97544270c555cb4b870f9140f8ce23546375e54e8fb07ac50540ab3aef622",
       "status": "ACTIVE"
@@ -6071,7 +6090,7 @@
       "category": "Package security · nuget",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T19:27:12Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "709031f30d709bb8fe40b6f1967a86f5d11c6c325331abde47c9d769fb6f72b0",
       "status": "ACTIVE"
@@ -6090,7 +6109,7 @@
       "category": "Package security · pip",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T19:27:12Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "7978238730693400d507cbe00440ba0910ca113824a3239f2e95a8a95632dbac",
       "status": "ACTIVE"
@@ -7971,7 +7990,7 @@
       "category": "Package security · pip",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "835a24b5db5df741c94a3c01c9b187ef55963d19441ba189c3020e242d017100",
       "status": "ACTIVE"
@@ -7990,7 +8009,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "25b3af5e71838a039854739aeab668db66844070509ed32884bbe425bceed04f",
       "status": "ACTIVE"
@@ -8009,7 +8028,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "75fd157fb2fdeb04b8c560d6b89bc5a20c4383f7941ef3d22e148964cf6ae074",
       "status": "ACTIVE"
@@ -8028,7 +8047,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "11db7bf1447346f1f74ea590bcda333cfca0b2e85284ab1767e35d5e2fc0c820",
       "status": "ACTIVE"
@@ -8047,7 +8066,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "86acf1ce7de106996a5f5024832810d0909cf01c679aebd2f963b080d6cf1dfc",
       "status": "ACTIVE"
@@ -8066,7 +8085,7 @@
       "category": "Package security · pip",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "1e556c533e7bb9bb70cdca3c7e2054e4bb73cdfbd33c8dea35ba2a625d1539e4",
       "status": "ACTIVE"
@@ -8085,7 +8104,7 @@
       "category": "Package security · npm",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "8d3144e0b090d9e93debf9f33fff2dcb331956688b8154957bdc2feeacf11d69",
       "status": "ACTIVE"
@@ -8104,7 +8123,7 @@
       "category": "Package security · npm",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "899488fa4c7fc8eef3067484670b1649ea3b07dc0c2b2c48709ad00d84a3616f",
       "status": "ACTIVE"
@@ -8123,7 +8142,7 @@
       "category": "Package security · npm",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "cf2ed9c76563a0acacfc70c265b81bab66de6b2c15cc2f81127826f10988f64e",
       "status": "ACTIVE"
@@ -8142,7 +8161,7 @@
       "category": "Package security · npm",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "088f221b886b83095da59fe8d4492e733e3d2b41eda35a07a1b36198233869c3",
       "status": "ACTIVE"
@@ -8161,7 +8180,7 @@
       "category": "Package security · npm",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "8aeedca4b366bffbf9b4058c866627e1a3584cfd41bd139df1ea0c4e0b8bf473",
       "status": "ACTIVE"
@@ -8180,7 +8199,7 @@
       "category": "Package security · npm",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "c6a06a4ea5fe8159de67795de177e997866bc8559d7782f9a9f257720cacc597",
       "status": "ACTIVE"
@@ -8199,7 +8218,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "6fe5d31d1e41683dbe70e6115680cc8ba090f28839f4a035ee206045576a9cc8",
       "status": "ACTIVE"
@@ -8218,7 +8237,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "6e5042f4f68786f5645ff287666db8ddb6015ebf8cfa38276c02352ec79252a7",
       "status": "ACTIVE"
@@ -8237,7 +8256,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T19:59:13Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "cd434ad05ff967bceb8db70b038d5025008b7fadf136aabbf94eeca7b21cfe58",
       "status": "ACTIVE"
@@ -8256,7 +8275,7 @@
       "category": "Package security · npm",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "321526af33a68e75c2f26f18cabc71b0707fc21f0b34a96929fab2788e2a923c",
       "status": "ACTIVE"
@@ -8275,7 +8294,7 @@
       "category": "Package security · composer",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "7d2af2f636f5dadbd8be274cb22adf2e038cb17cf9ad89a10946c94b2ce31f9b",
       "status": "ACTIVE"
@@ -8294,7 +8313,7 @@
       "category": "Package security · npm",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "84a590bb9117a2b6f84c0715ea3040aedc02c6a07acd29ce54d3a195cd0c4b16",
       "status": "ACTIVE"
@@ -8313,7 +8332,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "e1ee3d4a2918c3696c3ecb977e5c42346b7d440a818847fef89fc78c105d206e",
       "status": "ACTIVE"
@@ -8332,7 +8351,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "d3a6a697c781c99e723603b5e1fdef02de64c84a3e9c1fb1da1d954f47914b77",
       "status": "ACTIVE"
@@ -8351,7 +8370,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "a351789fb69e681e171a76cf55a3aacad1d8e74e1014e3454394c83b9dc7ad18",
       "status": "ACTIVE"
@@ -8370,7 +8389,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "9d355073b445e5d5d8a8c15b1c9c322546dbfc48f4aa389d404400e88591f09c",
       "status": "ACTIVE"
@@ -8389,7 +8408,7 @@
       "category": "Package security · npm",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "ac5e18b362144d0437937050c2266a4d78d646ec940f17ed736f97d5e09ef01e",
       "status": "ACTIVE"
@@ -8408,7 +8427,7 @@
       "category": "Package security · pip",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "b3b366732e643c97a0d2a9c43e8e2fbeab963bcc1e34906f478a88c52c6971f3",
       "status": "ACTIVE"
@@ -8427,7 +8446,7 @@
       "category": "Package security · npm",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-06T06:52:19Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "63e73e1731208a49fc78e939e522663fe44f3e0ad477ee3276405eb227bd89f0",
       "status": "ACTIVE"
@@ -9057,7 +9076,7 @@
       "lastSeenAt": "2026-11-05T19:59:13Z",
       "isKEV": false,
       "contentHash": "b1e2f19e65167616c76dd4c677bfe4a898df1652e0384d0856eef80b0bc0a39f",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-signal:832706d320f6d62c2d",
@@ -10289,7 +10308,7 @@
       "category": "Package security · npm",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T19:59:13Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "6a7ff3e51a6ad5be77c6067d4a6d51814aad70029845eb65dabce2a2a9fe8e32",
       "status": "NEW"
@@ -10308,7 +10327,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T19:59:13Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "c89b7201a437db793566d76de2a017b1e35d2ddc1fb519bdff6954c08ea6f890",
       "status": "ACTIVE"
@@ -10327,7 +10346,7 @@
       "category": "Package security · pip",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T19:59:13Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "333ed4c9e5682249c902d909aa2b31c1515aa4dde611a16f76643b940d13a341",
       "status": "NEW"
@@ -10346,7 +10365,7 @@
       "category": "Package security · npm",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T19:59:13Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "a7f682aa377d301661b7be544d6065f9adaa7179baa18833bf8ef1a0cbb31186",
       "status": "ACTIVE"
@@ -10365,7 +10384,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T19:59:13Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "f9ef945c04e3f05925f9ea47eb942f78bbc68abec018d6b7a7632de7f86429b6",
       "status": "NEW"
@@ -10384,7 +10403,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T19:59:13Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "ee60bb3038eaf1b1422605fbdd27cf6c36735962cf1f13ad5b03cd4b281e07e5",
       "status": "NEW"
@@ -10403,7 +10422,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T19:59:13Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "7f15c9e34b11c3e54823b639cd2de73083822ccec0ef526dc0757998b27fd4b3",
       "status": "ACTIVE"
@@ -10422,7 +10441,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T19:59:13Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "cd43003d8f0ae839bff2b8f6d971274f15c94bd63b0608469ca89d9f0bf3bb82",
       "status": "ACTIVE"
@@ -10441,7 +10460,7 @@
       "category": "Package security · npm",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T19:59:13Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "ef6ba0ee1af9d0c6edb42962323fbec82694f696fe61e9f4c7ea7735db0f98b5",
       "status": "ACTIVE"
@@ -10460,7 +10479,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T19:59:13Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "c0d81974bc8ae1ff3d37cec2d78e2b3040d34106afd565cfda4f6297763e363e",
       "status": "ACTIVE"
@@ -10479,7 +10498,7 @@
       "category": "Package security · npm",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T19:59:13Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "a1e0a039b50143e898c61cd297a395862389b21444e0cba0638bb2ef2cf14b48",
       "status": "ACTIVE"
@@ -10498,7 +10517,7 @@
       "category": "Package security · pip",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T19:59:13Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "e943bb2f89047492b4f749447a9607b59707b1f85ebe86e74e6d9c935ff07e29",
       "status": "ACTIVE"
@@ -12284,7 +12303,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T06:51:46Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "debefe00c41a7149cfc7e91961819eaa913c270b55bebc8de8e6325e0873f5f2",
       "status": "ACTIVE"
@@ -12303,7 +12322,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T06:51:46Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "7daba8670090933ce9c260b1898e7c31dee8a4198f25f47f7377f07cddf8abf7",
       "status": "ACTIVE"
@@ -12322,7 +12341,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T06:51:46Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "6e71ab3dbc8d201c79e27ea73406154b6132aca4e4a08eec43495a7911eefb8e",
       "status": "ACTIVE"
@@ -12341,7 +12360,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T06:51:46Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "5b11c218b27023c43eaeec5db8a2622dce90a5da3d7d3e3073e32b5665aeca2a",
       "status": "ACTIVE"
@@ -12360,7 +12379,7 @@
       "category": "Package security · pip",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T06:51:46Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "44231fe63b6631ef77394ffe83422dbc4d6280690c1ce743718f253b69902ffa",
       "status": "ACTIVE"
@@ -12379,7 +12398,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-01T22:04:51Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "89de798f67a6d05f75aa8e9536dd58be2695ef3a7eeddcb752ba06742682943a",
       "status": "ACTIVE"
@@ -12398,7 +12417,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T06:51:46Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "08da8b2925baf2552695b401a53fffc773eeb2730e492ca1d38aaae12ce5d77b",
       "status": "ACTIVE"
@@ -12417,7 +12436,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T06:51:46Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "3c536192469d94b0ba93fe816131c216f3231e8bbc6f92bb36566f1936df0590",
       "status": "ACTIVE"
@@ -12436,7 +12455,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T06:51:46Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "48ba32f84745714ea624f2568d03bffb5fd89c05ddf9803442cb9fec6dccc9dc",
       "status": "ACTIVE"
@@ -12455,7 +12474,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T06:51:46Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "6eeabb0b0da207b6e6ad3139ea95b658f41036391198be40d007fe0a8ed60785",
       "status": "ACTIVE"
@@ -12474,7 +12493,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-05T06:51:46Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "5498232de5b4d78084ae319d4082978a468c3e82094ac31d6cad4b02ef54bacf",
       "status": "ACTIVE"
@@ -12686,7 +12705,7 @@
       "lastSeenAt": "2026-11-04T19:47:54Z",
       "isKEV": false,
       "contentHash": "f2daf32b44fb15bf713ee98cac44d49da20a9a0d973e046c786ee6dc65a3c268",
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-signal:a291cedea2f29eb09b",
@@ -14279,7 +14298,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "b948391743c35857654f541012f19f35ed5feda46711e27b328354a34ce9dab8",
       "status": "ACTIVE"
@@ -14298,7 +14317,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "588577e1a4d0549052d9d4c5c0c119e48f1ad884df52c4c340d016bba437f5e8",
       "status": "ACTIVE"
@@ -14317,7 +14336,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "6a375a2f0476934b7eecf4a2f65bbe5d4cde3e0e8da6ae88bb132deba7cbc02f",
       "status": "ACTIVE"
@@ -14336,7 +14355,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "62776bf1698d12b74d63c6b1f0837300a06e30bc15052b5186594a819dd4efb0",
       "status": "ACTIVE"
@@ -14355,7 +14374,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "7e64e7001acbcd95ca7ae8cda00f7a0361498e0e172ddb11fdde5e6476672d82",
       "status": "ACTIVE"
@@ -14374,7 +14393,7 @@
       "category": "Package security · npm",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "5c572c353892ef7844d67e12a16b9cd6279e77902cd26fbe8f1069f748577c2d",
       "status": "ACTIVE"
@@ -14393,7 +14412,7 @@
       "category": "Package security · go",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "a97d8f7d6a6867e85c10d7bedf4f7d20d7a014ebaa9bb6ed10e3a195a60e1028",
       "status": "NEW"
@@ -14412,7 +14431,7 @@
       "category": "Package security · npm",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "24527c78e99a59b5d79f20a830610187d2fb598bb8df791ff26873eb77038e11",
       "status": "NEW"
@@ -14431,7 +14450,7 @@
       "category": "Package security · npm",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-01T22:04:51Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "c254a7cb0441fdf531029c024f7453258e8c3af3e0055699a988ed66eb7832b3",
       "status": "ACTIVE"
@@ -14450,7 +14469,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "c57769fea7140beba5bca29ca4752325629ce99c1265ce9aae2605f6ebb8aee9",
       "status": "ACTIVE"
@@ -14469,7 +14488,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "8786b719b66429907eb380722bbd9c7e29dadd5c7f9f56b5d48d554f3f0df408",
       "status": "ACTIVE"
@@ -14488,7 +14507,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "979bffa917f354f8b10e6ee1cab242a5d86725b046bf5818983c3f714e1621ef",
       "status": "ACTIVE"
@@ -14507,7 +14526,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "484f759a05d63eb2ad835903001fe791c1c6ccedb906211b0109f73b0e75450a",
       "status": "ACTIVE"
@@ -14526,7 +14545,7 @@
       "category": "Package security · pip",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "6be91fa65cfb308222dbb3c626fb6daebedfb804a910e98473591f2b12dfca4d",
       "status": "ACTIVE"
@@ -14545,7 +14564,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "4bbe1ba19a01e53f2285d9a1d01d59ac88d4ad0a8f9a19b55942acd695ea7557",
       "status": "ACTIVE"
@@ -14564,7 +14583,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "edb21690ed3c2ddd0f8c17deda027a9bf04fe6423492bd585ddf5dcd5e2c097c",
       "status": "ACTIVE"
@@ -14583,7 +14602,7 @@
       "category": "Package security · npm",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "807d7f9066edace4a54f7ff27a249b4783f80df3aba1c0740dfa82d62deed73c",
       "status": "NEW"
@@ -14602,7 +14621,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "78e90c503cedb56f62f6b0858faeb6dbcdd888da0c0e4e22c25e74edf96db323",
       "status": "ACTIVE"
@@ -14621,7 +14640,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "ed52a0c2e548f8b296cc5f2affe09dbbb4acece9b15b62c93aaccf9e7bd85882",
       "status": "ACTIVE"
@@ -14640,7 +14659,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "dc05ad34d6c6ad7bddd27c45c712ec1bc79d6cdd09584a946b12bd337adcfdba",
       "status": "ACTIVE"
@@ -14659,7 +14678,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "9ee8742cdc55118f5b666ee18e44d0ee815eb60c99cc70a250cd6f0976b842bc",
       "status": "ACTIVE"
@@ -14678,7 +14697,7 @@
       "category": "Package security · maven",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "7bdebac6a9ff8a609c83fb40fc6b091860708c169110c2aa3016915b951caeec",
       "status": "ACTIVE"
@@ -14697,7 +14716,7 @@
       "category": "Package security · rust",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-01T22:04:51Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "7732a7cc51b707d10b7a168bcb5e0309ef5e92aef6bda6962ad3b24d1de73b6b",
       "status": "ACTIVE"
@@ -16578,7 +16597,7 @@
       "category": "Package security · nuget",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T06:28:38Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "7f44c33768ca432e3658d4d2ed2054f02896a8e3247dda2fee53db80c4c2a881",
       "status": "ACTIVE"
@@ -16597,7 +16616,7 @@
       "category": "Package security · nuget",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T06:28:38Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "9bff2e581e229c08d19e5aa5b2e0b73a5d14e303cca9a3be65c3e3edb9551eff",
       "status": "ACTIVE"
@@ -16616,7 +16635,7 @@
       "category": "Package security · nuget",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T06:28:38Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "a9035e6f0c569b6aed5776a223a1812dee2942e00a9161838c9da54872eb0086",
       "status": "ACTIVE"
@@ -16635,7 +16654,7 @@
       "category": "Package security · nuget",
       "confidence": "Public GitHub-reviewed advisory",
       "firstSeenAt": "2026-11-04T06:28:38Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "9d71c6803bf291f43a435d2f3407905b848505b8d6d6fc223b8006d72ea056f1",
       "status": "ACTIVE"
@@ -17110,7 +17129,7 @@
       "category": "Security advisory",
       "confidence": "Official government advisory",
       "firstSeenAt": "2026-11-04T19:47:54Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "bf94f82373463aaacad1d5e89518ed36e68ccc356209d856125b283dcfce8666",
       "status": "NEW"
@@ -17129,7 +17148,7 @@
       "category": "Distribution security update",
       "confidence": "Official Debian security feed",
       "firstSeenAt": "2026-11-05T19:59:13Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "09ecc8773b82f4e05a0249b416e5a4cb51ce4029392a8388a5f292b584aeafdc",
       "status": "NEW"
@@ -17148,7 +17167,7 @@
       "category": "Distribution security update",
       "confidence": "Official Debian security feed",
       "firstSeenAt": "2026-11-05T19:59:13Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "9c430bea2e31e8f23273cd9293595ea63c36cb21e6249be1ce88a4728a3f019a",
       "status": "NEW"
@@ -17167,7 +17186,7 @@
       "category": "Distribution security update",
       "confidence": "Official Debian security feed",
       "firstSeenAt": "2026-11-05T19:59:13Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "d498902c37941894d2727bd27b601d1e727461bba65027e6573e5be2e9173072",
       "status": "NEW"
@@ -17186,7 +17205,7 @@
       "category": "Distribution security update",
       "confidence": "Official Debian security feed",
       "firstSeenAt": "2026-11-05T19:59:13Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "86b5d72283600e258320c4e0d4ea39f2df728294befcf633f15b418d171b2556",
       "status": "NEW"
@@ -17205,7 +17224,7 @@
       "category": "Distribution security update",
       "confidence": "Official Debian security feed",
       "firstSeenAt": "2026-11-05T19:59:13Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "99faeab1b6271f4f3a7ca92f58910037540a56965d3f55eb3248d54edbce5dce",
       "status": "NEW"
@@ -17224,7 +17243,7 @@
       "category": "Distribution security update",
       "confidence": "Official Debian security feed",
       "firstSeenAt": "2026-11-05T19:59:13Z",
-      "lastSeenAt": "2026-11-07T13:06:56Z",
+      "lastSeenAt": "2026-11-07T21:53:46Z",
       "isKEV": false,
       "contentHash": "586336300c20120fec3b5e3c25cfbc2aa69a1fca6c89e94f0618b851dba9197c",
       "status": "NEW"
@@ -22851,25 +22870,6 @@
       "lastSeenAt": "2026-11-03T01:00:20Z",
       "isKEV": false,
       "contentHash": "cab6b19e49463d1f7d6cb60950bb78c985572e62ed149177a2eaad516655a539",
-      "status": "NEW"
-    },
-    {
-      "id": "github-signal:4bbe04a0c71f6aee79",
-      "sourceId": "github-signals",
-      "sourceName": "GitHub Public Issues & Fix Signals",
-      "sourceUrl": "https://github.com/Tim0theus/maicenta/pull/14",
-      "reference": "Public fix PR #14",
-      "title": "Stop the Windows startup crash in SQLCipher memory security",
-      "summary": "Unverified public issue/fix title-only signal. Submitter identity, repository-owner display names, and body text are not collected in this feed. Corroborate the source before designing a challenge.",
-      "publishedAt": "2026-11-03T00:21:58Z",
-      "updatedAt": "2026-11-03T00:58:50Z",
-      "severity": "Unverified signal",
-      "category": "Unverified public community signal",
-      "confidence": "Public issue/PR candidate — not confirmed vulnerability evidence",
-      "firstSeenAt": "2026-11-03T01:00:20Z",
-      "lastSeenAt": "2026-11-03T01:00:20Z",
-      "isKEV": false,
-      "contentHash": "8307a1e140443aed8162f1d6dd36c889050f6a09b6016689cd5ef4c9313c22da",
       "status": "NEW"
     }
   ]
