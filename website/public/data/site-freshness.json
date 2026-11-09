@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-09T07:09:58Z",
+  "generatedAt": "2026-11-09T22:41:21Z",
   "status": "ready",
   "summary": {
     "sections": 11,
@@ -14,7 +14,7 @@
       "label": "Cybersecurity news & advisories",
       "mode": "automatic",
       "cadence": "Every 6 hours",
-      "lastCheckedAt": "2026-11-09T07:09:58Z",
+      "lastCheckedAt": "2026-11-09T22:41:21Z",
       "status": "partial",
       "summary": "6/8 public sources refreshed successfully in the latest run; community posts are labelled unverified signals."
     },
@@ -23,7 +23,7 @@
       "label": "LiveOps public problem-source radar",
       "mode": "automatic",
       "cadence": "Every 6 hours after workflow is enabled",
-      "lastCheckedAt": "2026-11-09T06:38:27Z",
+      "lastCheckedAt": "2026-11-09T22:24:26Z",
       "status": "fresh",
       "summary": "Source discovery and candidate records; these are not automatically certified as publish-ready challenges."
     },
@@ -32,7 +32,7 @@
       "label": "Resource, video and external-link reachability",
       "mode": "automatic",
       "cadence": "Weekly",
-      "lastCheckedAt": "2026-11-02T11:32:33.814Z",
+      "lastCheckedAt": "2026-11-09T11:56:15.064Z",
       "status": "fresh",
       "summary": "A responding URL does not prove a course is free, accessible, safe, current, or educationally accurate."
     },
@@ -41,7 +41,7 @@
       "label": "Certification and exam source links",
       "mode": "automatic",
       "cadence": "Daily source monitor; weekly resource review",
-      "lastCheckedAt": "2026-11-08T11:17:29.600Z",
+      "lastCheckedAt": "2026-11-09T12:52:48.372Z",
       "status": "fresh",
       "summary": "Monitors page reachability and content change signals; exam terms and pricing still require issuer confirmation."
     },
