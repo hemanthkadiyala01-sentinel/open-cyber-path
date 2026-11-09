@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T22:11:02Z",
+  "generatedAt": "2026-11-09T06:42:21Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -64,6 +64,19 @@
     }
   ],
   "items": [
+    {
+      "id": "thehackernews-cisa-flags-sonicwall-sonicos-mfa-bypass-flaw-amid-reports-of-possible-exploitation",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
+      "publishedAt": "2026-11-09T06:05:24Z",
+      "url": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited Vulnerabilities (KEV) catalog, following reports that it said may have been exploited in real-world attacks. The vulnerability, tracked as CVE-2026-19868 (CVSS score: 7.1 / 7.5), has been described as an authentication reinforcement",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
     {
       "id": "bleepingcomputer-iris-ohyama-data-cloud-breach-exposes-info-of-7-7-million-customers",
       "sourceId": "bleepingcomputer",
@@ -959,19 +972,6 @@
       "publishedAt": "2026-11-02T11:50:00Z",
       "url": "https://thehackernews.com/2026/11/critical-langflow-flaws-could-let.html",
       "summary": "Two critical flaws in Langflow could let a remote attacker with no account bypass authentication or run arbitrary code, IBM said last week. Langflow is an open-source tool for building AI agents and workflows, and its vulnerability reports go to IBM. Every release from 1.0.0 through 1.12.8 has the flaws, and the only fix is version 1.13.0. Neither flaw is in CISA's Known",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "ai-agent",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-is-your-soc-ready-for-ai-agents-a-maturity-check-before-you-deploy",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Is Your SOC Ready for AI Agents? A Maturity Check Before You Deploy",
-      "publishedAt": "2026-11-02T11:30:00Z",
-      "url": "https://thehackernews.com/2026/11/is-your-soc-ready-for-ai-agents.html",
-      "summary": "Forty percent of security teams now use AI every day, and another 56% are testing it. Only 4% have no plans to adopt it, according to Prophet Security's State of AI in Security Operations 2026 survey of more than 250 CISOs, SOC leaders and practitioners. For the teams still testing, the next decision is whether their own SOC is ready. AI SOC readiness has two parts: whether a SOC has the",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "ai-agent",
       "confidence": "reported",
