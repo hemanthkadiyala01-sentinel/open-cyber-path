@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T21:19:29Z",
+  "generatedAt": "2026-11-11T06:32:15Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -64,6 +64,32 @@
     }
   ],
   "items": [
+    {
+      "id": "thehackernews-cisco-broadworks-and-openwave-flaws-actively-exploited-despite-available-patches",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
+      "publishedAt": "2026-11-11T06:04:02Z",
+      "url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. Details of the vulnerabilities are below - CVE-2026-20320 (CVSS score: 7.5) - An improper restriction of XML external entity",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-railway-breach-leads-to-740-000-in-fraudulent-ai-charges",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Railway breach leads to $740,000 in fraudulent AI charges",
+      "publishedAt": "2026-11-10T22:20:19Z",
+      "url": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/",
+      "summary": "Cloud hosting provider Railway says hackers exploited vulnerabilities in its infrastructure to steal customer authentication secrets and generate approximately $740,000 in fraudulent AI usage, potentially exposing credentials for up to 100,000 workspaces. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
     {
       "id": "therecord-microsoft-s-patch-tuesday-surpasses-1-000-bugs-for-second-month-in-a-row",
       "sourceId": "therecord",
@@ -474,7 +500,7 @@
       "title": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
       "publishedAt": "2026-11-10T06:52:54Z",
       "url": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
-      "summary": "Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild. The high-severity vulnerability, assigned the CVE identifier CVE-2026-125350 (CVSS score: N/A), has been described as a use-after-free bug in the XML component. Use-after-free bugs typically occur when a program attempts to access a memory location after",
+      "summary": "Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild. The high-severity vulnerability, assigned the CVE identifier CVE-2026-125350 (CVSS score: 8.8), has been described as a use-after-free bug in the XML component. \"Use-after-free in XML in Google Chrome prior to 157.0.8103.50 allowed a remote attacker",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "vulnerability",
       "confidence": "reported",
@@ -600,19 +626,6 @@
       "summary": "Vanderbilt University warns it is responding to a cyberattack claimed by the BYOD ransomware gang, which claims to have encrypted the university's databases and stolen sensitive student, employee, and research data. [...]",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "malware-ransomware",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-sega-newsletter-data-breach-exposes-2-2-million-email-addresses",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "SEGA newsletter data breach exposes 2.2 million email addresses",
-      "publishedAt": "2026-11-09T22:09:33Z",
-      "url": "https://www.bleepingcomputer.com/news/security/sega-newsletter-data-breach-exposes-22-million-email-addresses/",
-      "summary": "Japanese gaming giant SEGA has disclosed that a data breach at its third-party newsletter provider, ARARA, exposed the email addresses of 2.2 million newsletter subscribers. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "third-party-breach",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -1073,19 +1086,6 @@
       "summary": "A flaw in APT, the package manager for Debian and Ubuntu, allows an attacker who can modify package downloads to swap a checked package for their own. The attacker's code then runs as root, according to advisories that Debian, Ubuntu, and APT's developers published on November 4. The attack needs APT to retry failed downloads, which it does by default from Debian 12 and",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-sonicwall-won-t-patch-eol-gms-flaws-that-could-expose-files-alter-database-records",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "SonicWall Won't Patch EoL GMS Flaws That Could Expose Files, Alter Database Records",
-      "publishedAt": "2026-11-04T17:00:38Z",
-      "url": "https://thehackernews.com/2026/11/sonicwall-wont-patch-eol-gms-flaws-that.html",
-      "summary": "SonicWall has warned of two vulnerabilities impacting end-of-life Global Management System (GMS) systems that it said will not be patched. Details of the security flaws, which affect SonicWall GMS 9.5.2 and earlier versions, are below - CVE-2026-109593 (CVSS score: 9.1) - An unauthenticated file read vulnerability that could allow an attacker with network access to read internal GMS files,",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
