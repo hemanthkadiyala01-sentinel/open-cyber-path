@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T17:12:29Z",
+  "generatedAt": "2026-11-12T00:47:17Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -64,6 +64,58 @@
     }
   ],
   "items": [
+    {
+      "id": "bleepingcomputer-baker-tilly-notifies-clients-of-data-breach-at-third-party-provider",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Baker Tilly notifies clients of data breach at third-party provider",
+      "publishedAt": "2026-11-11T23:01:31Z",
+      "url": "https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/",
+      "summary": "The Baker Tilly Advisory Group is notifying clients that a data breach has compromised certain personal information about them and their dependents. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "third-party-breach",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Active ScreenConnect attacks breach MSPs, impact dozens of organizations",
+      "publishedAt": "2026-11-11T22:56:21Z",
+      "url": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/",
+      "summary": "ConnectWise is investigating an active malware campaign targeting managed service providers (MSPs) that uses compromised ScreenConnect environments to deploy rogue remote-access clients to customer devices. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "malware-ransomware",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-emudhra-revokes-8-more-ca-certificates-after-private-key-mishap",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "eMudhra revokes 8 more CA certificates after private key mishap",
+      "publishedAt": "2026-11-11T21:27:40Z",
+      "url": "https://www.bleepingcomputer.com/news/security/emudhra-revokes-8-more-ca-certificates-after-private-key-mishap/",
+      "summary": "Certificate authority eMudhra has revoked eight additional intermediate CA certificates after an investigation into its recent certificate security incident found improper handling of private keys during the certificate-generation process. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "certificate-compromise",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Notion says Fireworks breach exposed customer AI chat transcripts",
+      "publishedAt": "2026-11-11T20:54:20Z",
+      "url": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/",
+      "summary": "Notion, the digital workspace platform, disclosed that a security breach at its AI infrastructure provider, Fireworks AI, exposed Notion AI chat transcripts in a small number of workspaces. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
     {
       "id": "therecord-iran-backed-network-directed-london-attacks-over-facetime-us-prosecutors-say",
       "sourceId": "therecord",
@@ -429,32 +481,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "bleepingcomputer-microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
-      "publishedAt": "2026-11-10T19:07:36Z",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-november-2026-patch-tuesday-fixes-1-235-flaws-outlook-zero-day/",
-      "summary": "Today is Microsoft's November 2026 Patch Tuesday, with security updates addressing a record-breaking 1,235 flaws, including one actively exploited Microsoft Outlook zero-day vulnerability. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-windows-11-kb5132061-kb5131087-cumulative-updates-released",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Windows 11 KB5132061 & KB5131087 cumulative updates released",
-      "publishedAt": "2026-11-10T18:33:26Z",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5132061-and-kb5131087-cumulative-updates-released/",
-      "summary": "Microsoft has released the Patch Tuesday Windows 11 and cumulative updates for versions 26H2/25H2/24H2 and 23H2 to fix security vulnerabilities and bugs, and add new features. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "thehackernews-hackers-exploit-critical-xen-orchestra-auth-bypass-flaw-to-gain-admin-access",
       "sourceId": "thehackernews",
       "publisher": "The Hacker News",
@@ -481,19 +507,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "bleepingcomputer-critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Critical Xen Orchestra auth bypass flaw exploited to hijack VM servers",
-      "publishedAt": "2026-11-10T16:17:16Z",
-      "url": "https://www.bleepingcomputer.com/news/security/critical-xen-orchestra-auth-bypass-flaw-exploited-to-hijack-vm-servers/",
-      "summary": "A critical authentication bypass vulnerability in Xen Orchestra is being actively exploited in attacks that could grant administrator privileges and allow takeover of XCP-ng virtualization hosts. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "thehackernews-attackers-exploit-ahsaycbs-flaws-to-deploy-sandbox-evading-python-backdoor",
       "sourceId": "thehackernews",
       "publisher": "The Hacker News",
@@ -501,19 +514,6 @@
       "publishedAt": "2026-11-10T16:00:55Z",
       "url": "https://thehackernews.com/2026/11/attackers-exploit-ahsaycbs-flaws-to.html",
       "summary": "Cybersecurity researchers have disclosed details of an attack that exploited two now-patched vulnerabilities in AhsayCBS to deliver a Python-based implant. The activity, observed by Huntress in early October 2026, involves the exploitation of a chain comprising CVE-2026-105133 and CVE-2026-105134 to bypass authentication and execute arbitrary commands on affected systems. Patches for the two",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Binance warns of iOS flaw that could leak crypto wallet secrets",
-      "publishedAt": "2026-11-10T15:59:19Z",
-      "url": "https://www.bleepingcomputer.com/news/security/binance-warns-of-ios-flaw-that-could-leak-crypto-wallet-secrets/",
-      "summary": "Binance is warning about a vulnerability in Apple's iOS 26.7.1, 27.0.1, and 27.2 that could allow third-party apps to read private files stored by other apps, including cryptocurrency seed phrases, secret keys, and login credentials. [...]",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "vulnerability",
       "confidence": "reported",
