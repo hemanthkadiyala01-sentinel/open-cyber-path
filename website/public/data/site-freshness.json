@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T19:51:09Z",
+  "generatedAt": "2026-11-12T07:42:03Z",
   "status": "ready",
   "summary": {
     "sections": 11,
@@ -14,7 +14,7 @@
       "label": "Cybersecurity news & advisories",
       "mode": "automatic",
       "cadence": "Every 6 hours",
-      "lastCheckedAt": "2026-11-11T19:51:09Z",
+      "lastCheckedAt": "2026-11-12T07:42:03Z",
       "status": "partial",
       "summary": "5/8 public sources refreshed successfully in the latest run; community posts are labelled unverified signals."
     },
@@ -23,7 +23,7 @@
       "label": "LiveOps public problem-source radar",
       "mode": "automatic",
       "cadence": "Every 6 hours after workflow is enabled",
-      "lastCheckedAt": "2026-11-11T19:38:18Z",
+      "lastCheckedAt": "2026-11-12T07:15:55Z",
       "status": "fresh",
       "summary": "Source discovery and candidate records; these are not automatically certified as publish-ready challenges."
     },
