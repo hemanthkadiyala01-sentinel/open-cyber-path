@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-13T01:51:45Z",
+  "generatedAt": "2026-11-13T11:05:43Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -26,7 +26,7 @@
       "url": "https://therecord.media/",
       "description": "Global reporting on breaches, cybercrime, and threat activity; reports are not automatically primary confirmation",
       "status": "ok",
-      "itemCount": 4
+      "itemCount": 3
     },
     {
       "id": "thehackernews",
@@ -64,6 +64,84 @@
     }
   ],
   "items": [
+    {
+      "id": "bleepingcomputer-check-point-warns-of-zero-day-flaw-exploited-for-root-access",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Check Point warns of zero-day flaw exploited for root access",
+      "publishedAt": "2026-11-13T10:44:22Z",
+      "url": "https://www.bleepingcomputer.com/news/security/check-point-patches-zero-day-that-lets-hackers-get-root-access/",
+      "summary": "Check Point Software has released emergency hotfixes to address a high-severity flaw that hackers have been exploiting to gain root privileges and establish persistence on vulnerable devices since late October. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-microsoft-confirms-windows-activation-failures-after-november-updates",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Microsoft confirms Windows activation failures after November updates",
+      "publishedAt": "2026-11-13T09:36:18Z",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-windows-activation-failures-after-november-updates/",
+      "summary": "Microsoft has confirmed that this month's Patch Tuesday security updates are causing Windows activation and licensing failures with 0x80041008 error codes. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-police-arrest-354-suspects-in-dark-web-cybercrime-crackdown",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Police arrest 354 suspects in dark web cybercrime crackdown",
+      "publishedAt": "2026-11-13T08:34:20Z",
+      "url": "https://www.bleepingcomputer.com/news/security/police-arrest-354-vendors-buyers-in-global-cybercrime-crackdown/",
+      "summary": "Authorities arrested 354 suspects in a joint international operation targeting vendors and buyers on the Archetyp, Nemesis, Tor2Door, Bohemia, and Kingdom dark web marketplaces. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-hackers-exploit-php2shell-flaws-in-check-point-gateways-to-deploy-tsga-backdoor-and-wipe-e",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Hackers Exploit PHP2Shell Flaws in Check Point Gateways to Deploy TSGA Backdoor and Wipe ESXi Files",
+      "publishedAt": "2026-11-13T08:05:49Z",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
+      "summary": "An unknown threat actor has been observed targeting unpatched Check Point Security Gateways to obtain initial access via the PHP2Shell vulnerabilities and then a previously unreported local privilege escalation flaw in Gaia OS to deploy a backdoor called TSGA. The activity, detailed by Check Point, began on October 30, 2026, and targeted Israeli organizations, with a broader follow-up",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-hackers-exploit-n-central-flaws-to-infect-21-servers-including-19-running-hotfix-2",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Hackers Exploit N-central Flaws to Infect 21 Servers, Including 19 Running Hotfix 2",
+      "publishedAt": "2026-11-13T05:43:28Z",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-n-central-flaws-to.html",
+      "summary": "N-able on Thursday said it's taking additional precautions in the wake of public disclosure of a new set of flaws tracked as 4EverAble2Shell and Agent2Shell. \"We are restricting certain N-central features and integrations,\" the company said in a Thursday update. \"These measures may affect some functionality, but we believe taking additional precautions while remediation is completed is the",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "certin-ciad-2026-0059",
+      "sourceId": "cert-in",
+      "publisher": "CERT-In",
+      "title": "Multiple Vulnerabilities in Microsoft Products",
+      "publishedAt": "2026-11-13T00:00:00Z",
+      "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0059",
+      "summary": "Official CERT-In advisory. Review the linked notice for exact affected products, exploitation context, and vendor-approved mitigation; do not assume every installation is affected.",
+      "signalType": "Official security advisory",
+      "caseType": "vulnerability",
+      "confidence": "official-advisory",
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0059; details must be checked in the linked notice"
+    },
     {
       "id": "bleepingcomputer-new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks",
       "sourceId": "bleepingcomputer",
@@ -204,19 +282,6 @@
       "summary": "German authorities on Thursday said investigators traced the rebuilt network to the Virtualine bulletproof hosting provider, seized by the FBI in October, with the assistance of police in Frankfurt and the Dutch National High Tech Crime Unit.",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "malware-ransomware",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "therecord-connectwise-investigates-screenconnect-breaches-after-reports-of-incidents-at-nearly-50-or",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "ConnectWise investigates ScreenConnect breaches after reports of incidents at nearly 50 organizations",
-      "publishedAt": "2026-11-12T16:16:00Z",
-      "url": "https://therecord.media/connectwise-screenconnect-breaches-third-party-tool",
-      "summary": "Abuse of an independent third-party tool led to breaches at ScreenConnect customers, confirmed the software's maker, ConnectWise. Cybersecurity researchers had spotted intrusions at nearly 50.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -438,45 +503,6 @@
       "summary": "ConnectWise has taken the precautionary step of disabling five third-party extensions in partner environments following reports of unauthorized access. In an advisory posted on its site, the company said there is no evidence that the incident involves a compromise of its infrastructure or a vulnerability in the ScreenConnect software. \"Our initial assessment suggests the activity may involve",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-baker-tilly-notifies-clients-of-data-breach-at-third-party-provider",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Baker Tilly notifies clients of data breach at third-party provider",
-      "publishedAt": "2026-11-11T23:01:31Z",
-      "url": "https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/",
-      "summary": "The Baker Tilly Advisory Group is notifying clients that a data breach has compromised certain personal information about them and their dependents. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "third-party-breach",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Active ScreenConnect attacks breach MSPs, impact dozens of organizations",
-      "publishedAt": "2026-11-11T22:56:21Z",
-      "url": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/",
-      "summary": "ConnectWise is investigating an active malware campaign targeting managed service providers (MSPs) that uses compromised ScreenConnect environments to deploy rogue remote-access clients to customer devices. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "malware-ransomware",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-emudhra-revokes-8-more-ca-certificates-after-private-key-mishap",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "eMudhra revokes 8 more CA certificates after private key mishap",
-      "publishedAt": "2026-11-11T21:27:40Z",
-      "url": "https://www.bleepingcomputer.com/news/security/emudhra-revokes-8-more-ca-certificates-after-private-key-mishap/",
-      "summary": "Certificate authority eMudhra has revoked eight additional intermediate CA certificates after an investigation into its recent certificate security incident found improper handling of private keys during the certificate-generation process. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "certificate-compromise",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -990,32 +1016,6 @@
       "summary": "The login systems behind two car brands' mobile apps could be taken over completely, two security researchers found, allowing them to access any customer's account and, for an owner with a connected car, unlock the doors and start the engine. Both apps signed customers in through ForgeRock, an identity platform now part of Ping Identity, and on those servers the researchers reached an",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-web3auth-flaw-exploited-to-steal-keplr-crypto-provider-empties-other-wallets-for-safety",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Web3Auth Flaw Exploited to Steal Keplr Crypto, Provider Empties Other Wallets for Safety",
-      "publishedAt": "2026-11-09T10:56:25Z",
-      "url": "https://thehackernews.com/2026/11/web3auth-flaw-exploited-to-steal-keplr.html",
-      "summary": "Some people who set up a Keplr crypto wallet with their Google or Apple account have had money stolen by an attacker. Keplr uses a company called Web3Auth to run that Google and Apple sign-in. The attacker used a security flaw at that company to reach the wallets, both companies said late last week. Web3Auth then used the attacker's own route to empty other at-risk wallets before the attacker",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "identity-cloud",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-lnbits-urges-all-operators-to-shut-down-their-bitcoin-lightning-wallet-servers-amid-attack",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "LNbits Urges All Operators to Shut Down Their Bitcoin Lightning Wallet Servers Amid Attacks",
-      "publishedAt": "2026-11-09T10:01:21Z",
-      "url": "https://thehackernews.com/2026/11/lnbits-urges-all-operators-to-shut-down.html",
-      "summary": "Everyone running LNbits, a free, open-source Bitcoin Lightning wallet system, should shut down their servers now because of a wave of attacks, the project said yesterday. It has several security fixes to release and asked operators to be careful until they are out. One operator said new accounts used an exploit to withdraw 2,285,545 satoshis, about 0.023 bitcoin, from his server before he could",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
