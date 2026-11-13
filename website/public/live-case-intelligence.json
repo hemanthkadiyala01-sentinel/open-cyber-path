@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-12T19:58:49Z",
+  "generatedAt": "2026-11-13T01:51:45Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -18,7 +18,7 @@
       "url": "https://www.bleepingcomputer.com/rss-feeds/",
       "description": "Independent global incident and vulnerability reporting; cross-check material claims",
       "status": "ok",
-      "itemCount": 14
+      "itemCount": 13
     },
     {
       "id": "therecord",
@@ -26,7 +26,7 @@
       "url": "https://therecord.media/",
       "description": "Global reporting on breaches, cybercrime, and threat activity; reports are not automatically primary confirmation",
       "status": "ok",
-      "itemCount": 5
+      "itemCount": 4
     },
     {
       "id": "thehackernews",
@@ -64,6 +64,32 @@
     }
   ],
   "items": [
+    {
+      "id": "bleepingcomputer-new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "New worm-like 'SCKit' malware targets MSPs in ScreenConnect attacks",
+      "publishedAt": "2026-11-12T22:53:10Z",
+      "url": "https://www.bleepingcomputer.com/news/security/new-worm-like-sckit-malware-targets-msps-in-screenconnect-attacks/",
+      "summary": "A new worm-like malware toolkit named SCKit was deployed in the recent ScreenConnect attacks targeting managed service providers (MSPs), designed to spread from infected customer devices to MSP technicians' computers and compromise additional managed networks. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "malware-ransomware",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Hackers compromise 4,800 GitHub accounts to steal cloud credentials",
+      "publishedAt": "2026-11-12T22:25:30Z",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/",
+      "summary": "A new campaign dubbed 'wfx-loot' has unfolded on GitHub where threat actors used 4,837 compromised accounts to probe 61,764 repositories, open pull requests, and push secrets-stealing malware. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "malware-ransomware",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
     {
       "id": "bleepingcomputer-new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released",
       "sourceId": "bleepingcomputer",
@@ -256,19 +282,6 @@
       "summary": "Endpoint management platforms can become powerful attack tools when compromised, allowing hackers to deploy malware, execute commands, and disrupt thousands of devices. Action1 explains how customer-controlled cryptographic authorization can prevent attackers from abusing sensitive endpoint operations. [...]",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "malware-ransomware",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "therecord-hijacked-email-accounts-complicate-investigations-into-european-bomb-hoaxes",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "Hijacked email accounts complicate investigations into European bomb hoaxes",
-      "publishedAt": "2026-11-12T14:45:00Z",
-      "url": "https://therecord.media/europe-hoax-email-threats",
-      "summary": "Bomb threats sent to thousands of schools across Europe this week came from a compromised email account at a Taiwanese university, the latest incident in a series of hoax threats that have targeted airports and newsrooms using messages sent from legitimate institutions.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -468,32 +481,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "bleepingcomputer-notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Notion says Fireworks breach exposed customer AI chat transcripts",
-      "publishedAt": "2026-11-11T20:54:20Z",
-      "url": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/",
-      "summary": "Notion, the digital workspace platform, disclosed that a security breach at its AI infrastructure provider, Fireworks AI, exposed Notion AI chat transcripts in a small number of workspaces. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
-      "publishedAt": "2026-11-11T16:24:18Z",
-      "url": "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/",
-      "summary": "Maersk announced that a threat actor gained unauthorized access to a local legacy system inherited through an earlier acquisition and extracted data from it. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "third-party-breach",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "thehackernews-critical-zoom-workplace-flaw-could-allow-unauthenticated-remote-privilege-escalation",
       "sourceId": "thehackernews",
       "publisher": "The Hacker News",
@@ -516,19 +503,6 @@
       "summary": "Cybersecurity researchers have disclosed details of a campaign in which an emerging agentic penetration testing platform called AntiFox has been used to steal Amazon Web Services (AWS) credentials and pivot laterally into compromised environments. \"In several recently observed intrusions, Alibaba Cloud systems hosting AntiFox interfaces were associated with confirmed malicious actions against",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Hackers use AntiFox AI agents in AWS credential-theft attacks",
-      "publishedAt": "2026-11-11T15:12:59Z",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/",
-      "summary": "Attackers are using Alibaba Cloud to host self-managed instances of AntiFox, an open-source agentic penetration testing platform, to target web services and AWS environments. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "ai-agent",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -1657,6 +1631,34 @@
       "caseType": "vulnerability",
       "confidence": "official-advisory",
       "sourceStatus": "Listed by CERT-In as CIAD-2026-0047; details must be checked in the linked notice"
+    },
+    {
+      "id": "cisa-cve-2026-76519",
+      "sourceId": "cisa-kev",
+      "publisher": "CISA KEV Catalog",
+      "title": "CVE-2026-76519: Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+      "publishedAt": "2026-10-14T00:00:00Z",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76519",
+      "summary": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "signalType": "Known exploited vulnerability — listed by CISA KEV",
+      "caseType": "vulnerability",
+      "confidence": "cisa-kev-listed",
+      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
+      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "id": "cisa-cve-2026-105134",
+      "sourceId": "cisa-kev",
+      "publisher": "CISA KEV Catalog",
+      "title": "CVE-2026-105134: Ahsay AhsayCBS Command Injection Vulnerability",
+      "publishedAt": "2026-10-14T00:00:00Z",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-105134",
+      "summary": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver component’s /rps/api/json/UpdateReceivers.do endpoint. This vulnerability can be chained with CVE-2026-105133. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "signalType": "Known exploited vulnerability — listed by CISA KEV",
+      "caseType": "vulnerability",
+      "confidence": "cisa-kev-listed",
+      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
+      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
     }
   ]
 }
