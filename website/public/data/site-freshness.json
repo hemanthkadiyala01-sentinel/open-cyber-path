@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-14T06:59:34Z",
+  "generatedAt": "2026-11-14T18:28:23Z",
   "status": "ready",
   "summary": {
     "sections": 11,
@@ -14,16 +14,16 @@
       "label": "Cybersecurity news & advisories",
       "mode": "automatic",
       "cadence": "Every 6 hours",
-      "lastCheckedAt": "2026-11-14T06:59:34Z",
+      "lastCheckedAt": "2026-11-14T18:28:23Z",
       "status": "partial",
-      "summary": "5/8 public sources refreshed successfully in the latest run; community posts are labelled unverified signals."
+      "summary": "6/8 public sources refreshed successfully in the latest run; community posts are labelled unverified signals."
     },
     {
       "id": "liveops",
       "label": "LiveOps public problem-source radar",
       "mode": "automatic",
       "cadence": "Every 6 hours after workflow is enabled",
-      "lastCheckedAt": "2026-11-14T06:28:29Z",
+      "lastCheckedAt": "2026-11-14T18:07:29Z",
       "status": "fresh",
       "summary": "Source discovery and candidate records; these are not automatically certified as publish-ready challenges."
     },
@@ -41,7 +41,7 @@
       "label": "Certification and exam source links",
       "mode": "automatic",
       "cadence": "Daily source monitor; weekly resource review",
-      "lastCheckedAt": "2026-11-13T12:12:46.994Z",
+      "lastCheckedAt": "2026-11-14T11:28:24.333Z",
       "status": "fresh",
       "summary": "Monitors page reachability and content change signals; exam terms and pricing still require issuer confirmation."
     },
