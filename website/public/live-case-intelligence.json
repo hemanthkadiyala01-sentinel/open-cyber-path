@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-15T16:24:05Z",
+  "generatedAt": "2026-11-15T22:52:38Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -64,6 +64,19 @@
     }
   ],
   "items": [
+    {
+      "id": "bleepingcomputer-fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
+      "publishedAt": "2026-11-15T18:29:53Z",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
+      "summary": "The FBI is warning that hackers are using an AI-powered penetration testing framework called ARTEX to automate cyberattacks against organizations worldwide, including a recent ConnectWise supply-chain breach that compromised Microsoft 365 customer environments. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "dependency-compromise",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
     {
       "id": "bleepingcomputer-tsmc-employee-data-breach-linked-to-cloud-provider",
       "sourceId": "bleepingcomputer",
@@ -453,19 +466,6 @@
       "summary": "A new campaign dubbed 'wfx-loot' has unfolded on GitHub where threat actors used 4,837 compromised accounts to probe 61,764 repositories, open pull requests, and push secrets-stealing malware. [...]",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "malware-ransomware",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "New N-able \"4EverAble2Shell\" zero-day exploited hours after PoC released",
-      "publishedAt": "2026-11-12T19:51:16Z",
-      "url": "https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/",
-      "summary": "Hackers are actively exploiting a newly disclosed N-able N-central zero-day vulnerability dubbed \"4EverAble2Shell\" to compromise servers and deploy cryptocurrency miners, with researchers reporting at least 21 affected systems, including 19 running the company's latest security update. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
