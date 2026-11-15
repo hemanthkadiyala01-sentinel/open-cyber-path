@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-15T06:39:59Z",
+  "generatedAt": "2026-11-15T16:24:05Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -9,10 +9,8 @@
       "name": "CERT-In Advisories",
       "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADVLIST02&year=2026",
       "description": "Official Indian cybersecurity advisories",
-      "status": "stale",
-      "itemCount": 0,
-      "error": "No CISA advisory feed endpoint returned usable records: https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADVLIST02&year=2026: Remote end closed connection without response",
-      "lastKnownItemCount": 15
+      "status": "ok",
+      "itemCount": 15
     },
     {
       "id": "bleepingcomputer",
@@ -36,7 +34,7 @@
       "url": "https://thehackernews.com/",
       "description": "Independent global cybersecurity reporting; verify claims against primary disclosures where available",
       "status": "ok",
-      "itemCount": 49
+      "itemCount": 48
     },
     {
       "id": "ncsc-uk",
@@ -66,6 +64,32 @@
     }
   ],
   "items": [
+    {
+      "id": "bleepingcomputer-tsmc-employee-data-breach-linked-to-cloud-provider",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "TSMC employee data breach linked to cloud provider",
+      "publishedAt": "2026-11-15T15:23:48Z",
+      "url": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
+      "summary": "Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "third-party-breach",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-cursor-says-stolen-fireworks-ai-key-led-to-trojanized-claude-code-extension-incident",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
+      "publishedAt": "2026-11-15T08:22:04Z",
+      "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+      "summary": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update. \"The key was exposed by Fireworks, and the attacker used it to copy data from a read-only",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "malware-ransomware",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
     {
       "id": "bleepingcomputer-cursor-confirms-security-breach-led-to-malicious-claude-code-extension",
       "sourceId": "bleepingcomputer",
@@ -376,8 +400,7 @@
       "signalType": "Official security advisory",
       "caseType": "malware-ransomware",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0060; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0060; details must be checked in the linked notice"
     },
     {
       "id": "cisa-cve-2026-123039",
@@ -441,19 +464,6 @@
       "publishedAt": "2026-11-12T19:51:16Z",
       "url": "https://www.bleepingcomputer.com/news/security/new-n-able-4everable2shell-zero-day-exploited-hours-after-poc-released/",
       "summary": "Hackers are actively exploiting a newly disclosed N-able N-central zero-day vulnerability dubbed \"4EverAble2Shell\" to compromise servers and deploy cryptocurrency miners, with researchers reporting at least 21 affected systems, including 19 running the company's latest security update. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-apache-http-server-patches-critical-http-2-remote-code-execution-flaw",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Apache HTTP Server patches critical HTTP/2 remote code execution flaw",
-      "publishedAt": "2026-11-12T19:12:55Z",
-      "url": "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/",
-      "summary": "A critical vulnerability in the HTTP/2 module of Apache HTTP Server could be exploited by an unauthenticated attacker to obtain remote code execution (RCE). [...]",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "vulnerability",
       "confidence": "reported",
@@ -665,8 +675,7 @@
       "signalType": "Official security advisory",
       "caseType": "vulnerability",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0059; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0059; details must be checked in the linked notice"
     },
     {
       "id": "thehackernews-critical-zoom-workplace-flaw-could-allow-unauthenticated-remote-privilege-escalation",
@@ -968,32 +977,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "thehackernews-france-blames-iran-for-sabotage-attack-on-refrigeration-controllers-at-about-700-retail-si",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "France Blames Iran for Sabotage Attack on Refrigeration Controllers at About 700 Retail Sites",
-      "publishedAt": "2026-11-10T09:08:20Z",
-      "url": "https://thehackernews.com/2026/11/france-blames-iran-for-sabotage-attack.html",
-      "summary": "An October cyberattack on refrigeration controllers at about 700 French retail sites was carried out by a cyber unit of Iran's Islamic Revolutionary Guard Corps (IRGC), the French government said yesterday. The attackers broke into controllers on the night of October 11 and changed their defrost settings to high temperatures. That caused food losses and, in at least 15 cases, fires. The unit",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-anthropic-s-claude-fable-5-2-beats-gpt-6-cyber-in-multi-stage-cyberattack-benchmark",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Anthropic's Claude Fable 5.2 Beats GPT-6 Cyber in Multi-Stage Cyberattack Benchmark",
-      "publishedAt": "2026-11-10T08:16:14Z",
-      "url": "https://thehackernews.com/2026/11/anthropics-claude-fable-52-beats-gpt-6.html",
-      "summary": "Anthropic on Monday released Claude Fable 5.2 and Claude Mythos 5.2 models, which it said exhibit improvements in coding, reasoning, and vision. During pre-release training, the large language models (LLMs) helped its engineers \"complete otherwise-infeasible software migrations, designed three working electronic devices from scratch, solved two open problems in the physics of black holes, made",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "cisa-cve-2026-20320",
       "sourceId": "cisa-kev",
       "publisher": "CISA KEV Catalog",
@@ -1158,8 +1141,7 @@
       "signalType": "Official security advisory",
       "caseType": "generic",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0058; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0058; details must be checked in the linked notice"
     },
     {
       "id": "cisa-cve-2024-27834",
@@ -1282,8 +1264,7 @@
       "signalType": "Official security advisory",
       "caseType": "vulnerability",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0057; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0057; details must be checked in the linked notice"
     },
     {
       "id": "cisa-cve-2026-46300",
@@ -1324,8 +1305,7 @@
       "signalType": "Official security advisory",
       "caseType": "vulnerability",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0055; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0055; details must be checked in the linked notice"
     },
     {
       "id": "certin-ciad-2026-0056",
@@ -1338,8 +1318,7 @@
       "signalType": "Official security advisory",
       "caseType": "vulnerability",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0056; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0056; details must be checked in the linked notice"
     },
     {
       "id": "cisa-cve-2026-48356",
@@ -1408,8 +1387,7 @@
       "signalType": "Official security advisory",
       "caseType": "vulnerability",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0054; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0054; details must be checked in the linked notice"
     },
     {
       "id": "reuters-pwc-third-party-incident-2026-10-23",
@@ -1435,8 +1413,7 @@
       "signalType": "Official security advisory",
       "caseType": "dependency-compromise",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0053; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0053; details must be checked in the linked notice"
     },
     {
       "id": "cisa-cve-2026-114625",
@@ -1477,8 +1454,7 @@
       "signalType": "Official security advisory",
       "caseType": "vulnerability",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0051; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0051; details must be checked in the linked notice"
     },
     {
       "id": "certin-ciad-2026-0052",
@@ -1491,8 +1467,7 @@
       "signalType": "Official security advisory",
       "caseType": "vulnerability",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0052; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0052; details must be checked in the linked notice"
     },
     {
       "id": "ncsc-uk-critical-security-issue-affecting-php",
@@ -1518,8 +1493,7 @@
       "signalType": "Official security advisory",
       "caseType": "certificate-compromise",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0050; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0050; details must be checked in the linked notice"
     },
     {
       "id": "ncsc-uk-introducing-a-new-ai-chapter-in-the-ncsc-research-problem-book",
@@ -1671,8 +1645,20 @@
       "signalType": "Official security advisory",
       "caseType": "ai-agent",
       "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0049; details must be checked in the linked notice",
-      "staleSource": true
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0049; details must be checked in the linked notice"
+    },
+    {
+      "id": "certin-ciad-2026-0048",
+      "sourceId": "cert-in",
+      "publisher": "CERT-In",
+      "title": "Multiple Vulnerabilities in SAP Products",
+      "publishedAt": "2026-10-14T00:00:00Z",
+      "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0048",
+      "summary": "Official CERT-In advisory. Review the linked notice for exact affected products, exploitation context, and vendor-approved mitigation; do not assume every installation is affected.",
+      "signalType": "Official security advisory",
+      "caseType": "vulnerability",
+      "confidence": "official-advisory",
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0048; details must be checked in the linked notice"
     }
   ]
 }
