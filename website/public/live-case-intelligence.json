@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-17T16:06:21Z",
+  "generatedAt": "2026-11-18T00:58:59Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -18,7 +18,7 @@
       "url": "https://www.bleepingcomputer.com/rss-feeds/",
       "description": "Independent global incident and vulnerability reporting; cross-check material claims",
       "status": "ok",
-      "itemCount": 13
+      "itemCount": 12
     },
     {
       "id": "therecord",
@@ -26,7 +26,7 @@
       "url": "https://therecord.media/",
       "description": "Global reporting on breaches, cybercrime, and threat activity; reports are not automatically primary confirmation",
       "status": "ok",
-      "itemCount": 2
+      "itemCount": 3
     },
     {
       "id": "thehackernews",
@@ -34,7 +34,7 @@
       "url": "https://thehackernews.com/",
       "description": "Independent global cybersecurity reporting; verify claims against primary disclosures where available",
       "status": "ok",
-      "itemCount": 48
+      "itemCount": 47
     },
     {
       "id": "ncsc-uk",
@@ -49,10 +49,26 @@
       "name": "CISA Cybersecurity Advisories",
       "url": "https://www.cisa.gov/cybersecurity-advisories",
       "description": "Official US cybersecurity advisories; an advisory is not proof of a particular victim compromise",
-      "status": "stale",
-      "itemCount": 0,
-      "error": "No CISA advisory feed endpoint returned usable records: https://www.cisa.gov/cybersecurity-advisories/all.xml: HTTP Error 403: Forbidden | https://www.cisa.gov/cybersecurity-advisories/cybersecurity-advisories.xml: HTTP Error 403: Forbidden",
-      "lastKnownItemCount": 0
+      "status": "ok",
+      "itemCount": 60,
+      "feedEndpoints": [
+        {
+          "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+          "status": "ok",
+          "itemCount": 30
+        },
+        {
+          "url": "https://www.cisa.gov/cybersecurity-advisories/cybersecurity-advisories.xml",
+          "status": "ok",
+          "itemCount": 10
+        },
+        {
+          "url": "https://www.cisa.gov/cybersecurity-advisories/alerts.xml",
+          "status": "ok",
+          "itemCount": 30
+        }
+      ],
+      "successfulFeedCount": 3
     },
     {
       "id": "cisa-kev",
@@ -65,15 +81,132 @@
   ],
   "items": [
     {
-      "id": "therecord-uber-says-nearly-150-000-impacted-by-third-party-breach",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "Uber says nearly 150,000 impacted by third-party breach",
-      "publishedAt": "2026-11-18T01:20:00Z",
-      "url": "https://therecord.media/uber-says-150000-impacted-third-party-breach",
-      "summary": "In breach notification letters, the rideshare company said it was notified by a third party service provider on October 9 that internal credentials were stolen and used to access Uber’s account.",
+      "id": "bleepingcomputer-critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Critical Java4Shell flaw allows RCE attacks on major Java applications",
+      "publishedAt": "2026-11-17T23:04:21Z",
+      "url": "https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/",
+      "summary": "A critical vulnerability dubbed Java4Shell in OpenJDK, the open-source implementation of Java, can allow unauthenticated attackers to remotely execute code on popular enterprise applications, including Jenkins, Atlassian Jira, Confluence, and Keycloak. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Cloud keys leaked in Docker Hub images are stolen within seconds",
+      "publishedAt": "2026-11-17T21:27:17Z",
+      "url": "https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/",
+      "summary": "Credentials and access secrets exposed in public Docker Hub images are being extracted and exploited by attackers within as little as eight seconds of publication. [...]",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-website-management-platform-optimizely-confirms-hackers-put-malicious-code-into-customer-s",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "Website management platform Optimizely confirms hackers put malicious code into customer sites",
+      "publishedAt": "2026-11-17T21:20:00Z",
+      "url": "https://therecord.media/optimizely-malicious-code-customer-sites",
+      "summary": "Researchers said they found malicious JavaScript code on 178 different widely visited websites run through the Optimizely Web experimentation platform. The company confirmed the breach.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-japan-takes-fugaku-supercomputer-offlline-after-cyberattack",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Japan takes Fugaku supercomputer offlline after cyberattack",
+      "publishedAt": "2026-11-17T20:51:21Z",
+      "url": "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/",
+      "summary": "The Fugaku supercomputer operated by Japan's RIKEN Center for Computational Science has been taken offline following a security breach. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-researchers-claim-two-rce-exploits-that-bypass-telegram-s-new-android-defenses",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses",
+      "publishedAt": "2026-11-17T19:34:20Z",
+      "url": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
+      "summary": "A malicious widget can bypass the security filter that Telegram added to its Android app last week and run code outside it, according to NebuSec, a security company. Widgets are small interactive blocks that bots send inside chat messages, and their JavaScript runs on the user's phone. The researchers ran their demonstration on a Telegram test server, because only approved bots can send",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-apple-reports-outages-affecting-icloud-mail-applecare-and-more",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Apple reports outages affecting iCloud Mail, AppleCare and more",
+      "publishedAt": "2026-11-17T19:24:07Z",
+      "url": "https://www.bleepingcomputer.com/news/apple/apple-reports-outages-affecting-icloud-mail-applecare-and-more/",
+      "summary": "Apple is reporting service disruptions affecting several of its services, including iCloud Mail, iCloud Account & Sign In, Apple School Manager, and Schoolwork. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-kazakh-ransomware-hacking-suspect-extradited-from-italy",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "Kazakh ransomware hacking suspect extradited from Italy",
+      "publishedAt": "2026-11-17T19:09:00Z",
+      "url": "https://therecord.media/kazakh-suspected-extradited-charges-8-digits-team-inc-lynx",
+      "summary": "The U.S. accused Roman Khlynovskiy of participating in ransomware attacks against healthcare organizations, schools and companies as part of the \"8 Digits Team\" connected with INC and Lynx.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "malware-ransomware",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-chinese-state-group-developing-automated-attack-tool-for-cyber-espionage-google-says",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "Chinese state group developing automated attack tool for cyber espionage, Google says",
+      "publishedAt": "2026-11-17T18:50:00Z",
+      "url": "https://therecord.media/chinese-state-group-developing-automated-attack-tool-espionage",
+      "summary": "Google released its latest AI Threat Tracker report on Monday, writing that threat actors are rapidly evolving their use of artificial intelligence in attacks — now leaning more heavily on autonomous multi-agent offensive frameworks like Artex, CAIRN, CyberStrikeAI and PentAGI to execute multi-stage intrusions at greater operational velocity.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-tor-releases-emergency-update-amid-ongoing-ddos-attack",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Tor releases emergency update amid ongoing DDoS attack",
+      "publishedAt": "2026-11-17T18:04:15Z",
+      "url": "https://www.bleepingcomputer.com/news/security/tor-releases-emergency-update-amid-ongoing-ddos-attack/",
+      "summary": "The Tor Project has released a security update for its network relay software to increase defenses against an ongoing distributed denial-of-service attack that it says has overwhelmed relays and affected most operators. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-oracle-to-patch-11-java-flaws-today-as-critical-openjdk-rce-cve-2026-114938-report-emerges",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Oracle to Patch 11 Java Flaws Today as Critical OpenJDK RCE (CVE-2026-114938) Report Emerges",
+      "publishedAt": "2026-11-17T15:17:36Z",
+      "url": "https://thehackernews.com/2026/11/oracle-to-patch-11-java-flaws-today-as.html",
+      "summary": "Oracle is preparing to release security patches for 11 vulnerabilities in Java SE on Tuesday, November 17, 2026, all of which may be exploited remotely without authentication, as separate reports warn of a potentially critical remote code execution (RCE) flaw affecting OpenJDK. The 11 vulnerabilities carry a maximum CVSS 3.1 severity score of 8.1, according to Oracle's advance security notice.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -85,19 +218,6 @@
       "publishedAt": "2026-11-17T15:01:11Z",
       "url": "https://www.bleepingcomputer.com/news/security/inside-modern-phishing-kits-built-to-steal-microsoft-365-sessions/",
       "summary": "Huntress researchers break down how EvilTokens, Knight Office, and Kali365 capture and replay M365 tokens, plus how defenders can detect and contain them. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "therecord-autistic-teen-hacker-pleads-guilty-to-leak-of-grand-theft-auto-vi-footage",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "Autistic teen hacker pleads guilty to leak of Grand Theft Auto VI footage",
-      "publishedAt": "2026-11-17T14:09:00Z",
-      "url": "https://therecord.media/autistic-teen-hacker-guilty-plea-britain-gta6-leak",
-      "summary": "Now 21, Artion Kurtaj pleaded guilty to a 2022 spree that included leaking clips of Grand Theft Auto VI while it was still years away from release.",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "generic",
       "confidence": "reported",
@@ -214,7 +334,7 @@
       "title": "ConnectWise Warns ScreenConnect Attacks Continue as SCKit Targets Unpatched Systems",
       "publishedAt": "2026-11-17T06:29:27Z",
       "url": "https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html",
-      "summary": "ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that the technician client is running version 26.6.5 or later. The company said additional activity targeting on-premises environments continues to be reported where the identified third-party extensions remain enabled, and",
+      "summary": "ConnectWise on Monday said it completed its investigation into unauthorized access targeting partner ScreenConnect environments, and recommended customers to ensure that the technician client is running version 26.6.5 or later. The company said additional activity targeting on-premises environments continues to be reported where the identified third-party extensions remain enabled and",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "generic",
       "confidence": "reported",
@@ -247,6 +367,20 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
+      "id": "cisa-cve-2026-115731",
+      "sourceId": "cisa-kev",
+      "publisher": "CISA KEV Catalog",
+      "title": "CVE-2026-115731: Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
+      "publishedAt": "2026-11-17T00:00:00Z",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-115731",
+      "summary": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet’s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary code on the Puppet Server as the service user by submitting a report containing a crafted rich-data type through a PUT request. If the certificate authority automatically signs requests without strong verification, an unauthenticated network attacker can obtain a valid certificate and exploit the vu Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "signalType": "Known exploited vulnerability — listed by CISA KEV",
+      "caseType": "certificate-compromise",
+      "confidence": "cisa-kev-listed",
+      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
+      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
       "id": "bleepingcomputer-gemini-ai-agents-repeatedly-bypassed-safeguards-to-attack-real-website",
       "sourceId": "bleepingcomputer",
       "publisher": "BleepingComputer",
@@ -267,71 +401,6 @@
       "publishedAt": "2026-11-16T21:31:44Z",
       "url": "https://www.bleepingcomputer.com/news/security/google-project-zero-cuts-bug-disclosure-deadline-to-30-days-amid-ai-threats/",
       "summary": "Google Project Zero will replace its \"90+30\" disclosure policy with shorter, fixed deadlines in response to AI-accelerated vulnerability discovery and exploitation. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-california-sues-openai-over-ai-agents-escaping-sandboxes-hacking-firms",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "California sues OpenAI over AI agents escaping sandboxes, hacking firms",
-      "publishedAt": "2026-11-16T20:59:44Z",
-      "url": "https://www.bleepingcomputer.com/news/security/california-sues-openai-over-ai-agents-escaping-sandboxes-hacking-firms/",
-      "summary": "California Attorney General Rob Bonta sued OpenAI on Monday, alleging the company knowingly continued testing advanced artificial intelligence models despite repeated security failures that allowed autonomous AI agents to escape isolated environments and launch cyberattacks against real-world organizations. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "ai-agent",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Barracuda links cloud breach to ARTEX AI-powered cyberattack",
-      "publishedAt": "2026-11-16T19:57:13Z",
-      "url": "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/",
-      "summary": "Hackers who breached the cloud environment of network and email security company Barracuda earlier this month used a stolen cloud access key and the ARTEX AI penetration testing framework. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "identity-cloud",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-fandango-says-hackers-stole-payment-card-details-from-checkout-pages",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Fandango says hackers stole payment card details from checkout pages",
-      "publishedAt": "2026-11-16T15:44:21Z",
-      "url": "https://www.bleepingcomputer.com/news/security/fandango-says-hackers-stole-payment-card-details-from-checkout-pages/",
-      "summary": "Ticket seller Fandango Media is notifying customers about a data breach that exposed payment card details entered on its checkout pages. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "third-party-breach",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-7-tips-for-complying-with-cjis-password-and-mfa-requirements",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "7 Tips For Complying with CJIS Password and MFA Requirements",
-      "publishedAt": "2026-11-16T15:01:11Z",
-      "url": "https://www.bleepingcomputer.com/news/security/7-tips-for-complying-with-cjis-password-and-mfa-requirements/",
-      "summary": "The FBI's latest CJIS Security Policy requires law enforcement agencies to strengthen password protections and enforce MFA across privileged and non-privileged accounts. Specops Software outlines seven practical steps to meet these requirements, block compromised passwords, and maintain compliance. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-google-warns-that-fully-automated-ai-attacks-are-coming-soon",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Google warns that fully-automated AI attacks are coming soon",
-      "publishedAt": "2026-11-16T14:00:00Z",
-      "url": "https://www.bleepingcomputer.com/news/security/google-warns-that-fully-automated-ai-attacks-are-coming-soon/",
-      "summary": "Threat actors are now relying on agentic workflows powered by AI-based offensive frameworks to automate vulnerability discovery and exploitation, accelerating attacks to machine speed. [...]",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "vulnerability",
       "confidence": "reported",
@@ -360,19 +429,6 @@
       "summary": "A default password opened doors it never should have. A trusted update delivered malware. Even a security feature became a way to break in. Different stories, same problem: the things meant to protect us aren't always doing their job. Meanwhile, AI is making bug hunting faster, old flaws are still paying off, and attackers keep finding easy ways in. Some attacks take real skill. Others barely",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "malware-ransomware",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-microsoft-windows-server-2016-reaches-end-of-support-in-60-days",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Microsoft: Windows Server 2016 reaches end of support in 60 days",
-      "publishedAt": "2026-11-16T12:53:18Z",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-windows-server-2016-reaches-end-of-support-in-60-days/",
-      "summary": "Microsoft has reminded customers again that Windows Server 2016 will stop receiving security updates after it reaches the end of support in two months. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -899,19 +955,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "thehackernews-emudhra-revokes-8-more-cas-it-previously-declared-unaffected-by-key-compromise",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "eMudhra Revokes 8 More CAs It Previously Declared Unaffected by Key Compromise",
-      "publishedAt": "2026-11-11T12:00:53Z",
-      "url": "https://thehackernews.com/2026/11/emudhra-revokes-8-more-cas-it.html",
-      "summary": "The in-house Python script behind eMudhra's October key compromise has now cost the company 8 more of its intermediate certificate authorities (CAs), even though it did not weaken their keys. Each intermediate CA has its own private key, which the company uses to sign the certificates it issues. The 8 intermediate CAs compromised in October had a different problem: a single line in the script",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "certificate-compromise",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "ncsc-uk-ncsc-scheme-will-help-critical-organisations-test-their-cyber-defences",
       "sourceId": "ncsc-uk",
       "publisher": "UK NCSC",
@@ -923,32 +966,6 @@
       "caseType": "generic",
       "confidence": "official-publication",
       "sourceStatus": "Published by the UK NCSC; consult the linked notice for its evidence and scope."
-    },
-    {
-      "id": "thehackernews-microsoft-patches-1-259-flaws-including-exploited-outlook-bug-that-may-expose-ntlmv2-hashe",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Microsoft Patches 1,259 Flaws, Including Exploited Outlook Bug That May Expose NTLMv2 Hashes",
-      "publishedAt": "2026-11-11T08:17:53Z",
-      "url": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html",
-      "summary": "Microsoft on Tuesday released patches for a total of 1,259 vulnerabilities spanning its software portfolio, the second consecutive month where the patch volume has exceeded 1,000 flaws. These cover 726 flaws in Windows, 174 in Office, 61 in Developer Tools, 59 in SQL Server, 53 in Developer Tools, and 27 in SharePoint Server. The patches also include 165 non-Microsoft-issued CVE identifiers.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-railway-says-stolen-customer-ai-keys-led-to-740-000-in-estimated-unauthorized-usage-charge",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Railway Says Stolen Customer AI Keys Led to $740,000 in Estimated Unauthorized Usage Charges",
-      "publishedAt": "2026-11-11T07:49:04Z",
-      "url": "https://thehackernews.com/2026/11/railway-says-stolen-customer-ai-keys.html",
-      "summary": "AI provider keys that customers stored on Railway were stolen in an October breach and used to commit an estimated $740,000 in unauthorized spending, the platform-as-a-service provider said yesterday. It has promised to pay those charges itself when an AI provider will not refund them. The company builds and runs apps for its customers and stores their secrets, such as API keys and database",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
       "id": "cisa-cve-2026-20320",
