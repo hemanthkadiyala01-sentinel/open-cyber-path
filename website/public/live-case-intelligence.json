@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-18T20:36:57Z",
+  "generatedAt": "2026-11-19T02:36:27Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -26,7 +26,7 @@
       "url": "https://therecord.media/",
       "description": "Global reporting on breaches, cybercrime, and threat activity; reports are not automatically primary confirmation",
       "status": "ok",
-      "itemCount": 5
+      "itemCount": 4
     },
     {
       "id": "thehackernews",
@@ -80,6 +80,19 @@
     }
   ],
   "items": [
+    {
+      "id": "bleepingcomputer-ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms",
+      "publishedAt": "2026-11-18T23:08:33Z",
+      "url": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
+      "summary": "Ukrainian authorities, working with the FBI, have arrested four suspected members of an international ransomware organization linked to more than $40.5 million in ransom payments from at least 28 companies worldwide. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "malware-ransomware",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
     {
       "id": "therecord-trump-administration-officials-size-up-a-bad-stretch-for-tech",
       "sourceId": "therecord",
@@ -205,19 +218,6 @@
       "publishedAt": "2026-11-18T15:00:10Z",
       "url": "https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/",
       "summary": "Attackers are using deepfakes, helpdesk impersonation, and fake IT support requests to deceive employees and gain unauthorized access to corporate systems. Specops Software examines real-world attacks and explains how stronger identity verification can help organizations prevent social engineering threats. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "therecord-british-hacker-gets-6-year-sentence-for-11-6m-crypto-theft-scheme",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "British hacker gets 6 year sentence for $11.6M crypto theft scheme",
-      "publishedAt": "2026-11-18T14:48:00Z",
-      "url": "https://therecord.media/british-hacker-gets-six-year-sentence-scattered-spider",
-      "summary": "Tyler Robert Buchanan, 24, of Dundee, Scotland, was previously described as the suspected ringleader of the hacking collective, which Microsoft called “one of the most dangerous financial criminal groups” around.",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "generic",
       "confidence": "reported",
@@ -536,19 +536,6 @@
       "summary": "Oracle is preparing to release security patches for 11 vulnerabilities in Java SE on Tuesday, November 17, 2026, all of which may be exploited remotely without authentication, as separate reports warn of a potentially critical remote code execution (RCE) flaw affecting OpenJDK. The 11 vulnerabilities carry a maximum CVSS 3.1 severity score of 8.1, according to Oracle's advance security notice.",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-inside-modern-phishing-kits-built-to-steal-microsoft-365-sessions",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Inside Modern Phishing Kits Built to Steal Microsoft 365 Sessions",
-      "publishedAt": "2026-11-17T15:01:11Z",
-      "url": "https://www.bleepingcomputer.com/news/security/inside-modern-phishing-kits-built-to-steal-microsoft-365-sessions/",
-      "summary": "Huntress researchers break down how EvilTokens, Knight Office, and Kali365 capture and replay M365 tokens, plus how defenders can detect and contain them. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -1671,6 +1658,20 @@
       "publishedAt": "2026-10-20T00:00:00Z",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110936",
       "summary": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "signalType": "Known exploited vulnerability — listed by CISA KEV",
+      "caseType": "vulnerability",
+      "confidence": "cisa-kev-listed",
+      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
+      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "id": "cisa-cve-2026-106931",
+      "sourceId": "cisa-kev",
+      "publisher": "CISA KEV Catalog",
+      "title": "CVE-2026-106931: EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
+      "publishedAt": "2026-10-20T00:00:00Z",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-106931",
+      "summary": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected product. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
       "signalType": "Known exploited vulnerability — listed by CISA KEV",
       "caseType": "vulnerability",
       "confidence": "cisa-kev-listed",
