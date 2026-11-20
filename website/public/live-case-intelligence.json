@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-20T11:46:42Z",
+  "generatedAt": "2026-11-20T20:26:11Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -18,7 +18,7 @@
       "url": "https://www.bleepingcomputer.com/rss-feeds/",
       "description": "Independent global incident and vulnerability reporting; cross-check material claims",
       "status": "ok",
-      "itemCount": 12
+      "itemCount": 13
     },
     {
       "id": "therecord",
@@ -26,7 +26,7 @@
       "url": "https://therecord.media/",
       "description": "Global reporting on breaches, cybercrime, and threat activity; reports are not automatically primary confirmation",
       "status": "ok",
-      "itemCount": 5
+      "itemCount": 4
     },
     {
       "id": "thehackernews",
@@ -42,7 +42,7 @@
       "url": "https://www.ncsc.gov.uk/information/rss-feeds",
       "description": "Official UK NCSC news, guidance and threat reports; distinguish incidents from general guidance",
       "status": "ok",
-      "itemCount": 7
+      "itemCount": 6
     },
     {
       "id": "cisa-advisories",
@@ -50,7 +50,7 @@
       "url": "https://www.cisa.gov/cybersecurity-advisories",
       "description": "Official US cybersecurity advisories; an advisory is not proof of a particular victim compromise",
       "status": "ok",
-      "itemCount": 62,
+      "itemCount": 61,
       "feedEndpoints": [
         {
           "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
@@ -80,6 +80,175 @@
     }
   ],
   "items": [
+    {
+      "id": "therecord-container-store-restores-systems-after-cyberattack",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "Container Store restores systems after cyberattack",
+      "publishedAt": "2026-11-20T19:32:00Z",
+      "url": "https://therecord.media/container-store-restores-systems-cyberattack",
+      "summary": "The firm’s parent company, Neighborhood Intelligence, said in a statement that The Container Store has “restored its website and systems following a cybersecurity incident this past weekend.”",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-bell-canada-says-agentic-hacker-stole-enterprise-customer-data",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Bell Canada says 'agentic' hacker stole enterprise customer data",
+      "publishedAt": "2026-11-20T18:51:43Z",
+      "url": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
+      "summary": "Bell Canada has confirmed that an \"agentic\" threat actor breached its systems on November 17, 2026, and stole enterprise customer data, including information from a system used to order and provision telecommunications circuits. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-whatsapp-patches-3-security-flaws-including-android-bug-suspected-of-use-in-scams",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
+      "publishedAt": "2026-11-20T17:57:20Z",
+      "url": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
+      "summary": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-2026-23871, has been described as a case of incomplete validation of external ad-reply URLs in WhatsApp for Android and WhatsApp Business for Android before 2.26.17.4. The issue could",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Hackers use autonomous AI tool Cairn to find zero-day, take over server",
+      "publishedAt": "2026-11-20T17:30:00Z",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
+      "summary": "Threat actors used the open-source AI penetration-testing framework Cairn to find a previously unknown vulnerability in a medical imaging application. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-amazon-says-chinese-hackers-used-cairn-ai-tool-to-discover-apparent-zero-day-during-attack",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "Amazon says Chinese hackers used Cairn AI tool to discover apparent zero-day during attack on university",
+      "publishedAt": "2026-11-20T17:30:00Z",
+      "url": "https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day",
+      "summary": "A China-linked threat actor used the open source AI penetration testing tool Cairn to persistently attack two universities, and in one case, possibly discover a zero-day bug, researchers said.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-bazuka-android-malware-uses-fake-screen-overlays-to-hide-credential-theft-and-device-contr",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
+      "publishedAt": "2026-11-20T16:58:16Z",
+      "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+      "summary": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale. Dutch mobile security company ThreatFabric said it discovered the threat in late October 2026 during an investigation into an NFC-relay banking Trojan. \"Bazuka is a full malware framework,",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "identity-cloud",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-vendor-data-breach-exposes-chase-visa-mastercard-customer-info",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
+      "publishedAt": "2026-11-20T15:58:06Z",
+      "url": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/",
+      "summary": "J.P. Morgan Chase warned it suffered a data breach after a cyberattack at a third-party service provider exposed customers' personal information and marketing data. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "third-party-breach",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-still-tracking-company-passwords-in-spreadsheets-you-re-flying-blind",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Still tracking company passwords in spreadsheets? You’re flying blind.",
+      "publishedAt": "2026-11-20T15:00:10Z",
+      "url": "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/",
+      "summary": "Tracking company passwords in spreadsheets can leave IT administrators unaware of weak, reused, or compromised credentials stored and shared outside approved systems. NordPass explains how centralized password management can improve credential visibility, identify security risks, and simplify secure password sharing. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-cyber-director-cairncross-out-as-white-house-resets-cyber-leadership",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "Cyber Director Cairncross out as White House resets cyber leadership",
+      "publishedAt": "2026-11-20T14:30:00Z",
+      "url": "https://therecord.media/sean-cairncross-out-as-national-cyber-director",
+      "summary": "Sean Cairncross is leaving the White House as Kirsten Davies, the Pentagon’s chief information officer, has been named the acting cyber czar.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-dozens-of-credit-unions-hit-by-supplier-breach-that-went-unnoticed-for-six-weeks",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "Dozens of credit unions hit by supplier breach that went unnoticed for six weeks",
+      "publishedAt": "2026-11-20T14:24:00Z",
+      "url": "https://therecord.media/dozens-of-credit-unions-hit-by-supplier-breach",
+      "summary": "Ireland’s Data Protection Commission told Recorded Future News on Thursday it had received more than 40 breach notifications from credit unions that used the Belfast-based company as a data processor.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-n-able-says-recent-security-breach-led-to-major-service-outage",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "N-able says recent security breach led to major service outage",
+      "publishedAt": "2026-11-20T13:18:36Z",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/",
+      "summary": "N-able says attackers who breached one of its servers have caused a major outage affecting Mail Assure and SpamExperts Hosted Cloud services worldwide. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-linux-kvm-flaw-cve-2026-99312-lets-guest-vms-access-host-memory-on-amd-hosts",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Linux KVM Flaw CVE-2026-99312 Lets Guest VMs Access Host Memory on AMD Hosts",
+      "publishedAt": "2026-11-20T12:20:00Z",
+      "url": "https://thehackernews.com/2026/11/new-linux-kvm-flaw-cve-2026-99312-lets.html",
+      "summary": "A flaw in KVM, the hypervisor built into the Linux kernel, let researchers read about 127 GB of a cloud server's memory from inside a virtual machine of their own on DigitalOcean. On a shared server, that memory can include other customers' virtual machines. The flaw, tracked as CVE-2026-99312, affects only hosts with AMD processors and nested virtualization enabled. Fixed kernels shipped",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-the-path-to-ai-autonomy-in-the-soc",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "The Path to AI Autonomy in the SOC",
+      "publishedAt": "2026-11-20T12:00:00Z",
+      "url": "https://thehackernews.com/2026/11/the-path-to-ai-autonomy-in-soc.html",
+      "summary": "Security leaders are about to hand AI agents a lot more authority. In a recent a16z survey of CISOs at organizations with more than 1,000 employees, 36% said they are comfortable today letting AI agents act autonomously on low-risk security actions. In 12 months from now, 60% expect to be comfortable at that level. Overall, AI SOC was the highest ranking initiative for 2027. The pressure",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "ai-agent",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
     {
       "id": "bleepingcomputer-f5-releases-emergency-patches-for-critical-big-ip-rce-flaws",
       "sourceId": "bleepingcomputer",
@@ -172,6 +341,75 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
+      "id": "cisa-cve-2026-76466",
+      "sourceId": "cisa-kev",
+      "publisher": "CISA KEV Catalog",
+      "title": "CVE-2026-76466: Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+      "publishedAt": "2026-11-20T00:00:00Z",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466",
+      "summary": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "signalType": "Known exploited vulnerability — listed by CISA KEV",
+      "caseType": "vulnerability",
+      "confidence": "cisa-kev-listed",
+      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
+      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "id": "cisa-cve-2026-129448",
+      "sourceId": "cisa-kev",
+      "publisher": "CISA KEV Catalog",
+      "title": "CVE-2026-129448: Apache Roller Deserialization of Untrusted Data Vulnerability",
+      "publishedAt": "2026-11-20T00:00:00Z",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448",
+      "summary": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication. This CVE covers the same underlying vulnerability as CVE-2026-82384 but applies to a broader range of affected versions. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "signalType": "Known exploited vulnerability — listed by CISA KEV",
+      "caseType": "vulnerability",
+      "confidence": "cisa-kev-listed",
+      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
+      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "id": "cisa-cve-2026-123890",
+      "sourceId": "cisa-kev",
+      "publisher": "CISA KEV Catalog",
+      "title": "CVE-2026-123890: VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+      "publishedAt": "2026-11-20T00:00:00Z",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890",
+      "summary": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and gain unauthorized access to the system. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines",
+      "signalType": "Known exploited vulnerability — listed by CISA KEV",
+      "caseType": "vulnerability",
+      "confidence": "cisa-kev-listed",
+      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
+      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "id": "cisa-cve-2025-42884",
+      "sourceId": "cisa-kev",
+      "publisher": "CISA KEV Catalog",
+      "title": "CVE-2025-42884: SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+      "publishedAt": "2026-11-20T00:00:00Z",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-42884",
+      "summary": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "signalType": "Known exploited vulnerability — listed by CISA KEV",
+      "caseType": "vulnerability",
+      "confidence": "cisa-kev-listed",
+      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
+      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+    },
+    {
+      "id": "certin-ciad-2026-0062",
+      "sourceId": "cert-in",
+      "publisher": "CERT-In",
+      "title": "Abuse of Business Payment Workflows and Use of AI-Driven Agentic Offensive Frameworks across Sectors",
+      "publishedAt": "2026-11-20T00:00:00Z",
+      "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0062",
+      "summary": "Official CERT-In advisory. Review the linked notice for exact affected products, exploitation context, and vendor-approved mitigation; do not assume every installation is affected.",
+      "signalType": "Official security advisory",
+      "caseType": "generic",
+      "confidence": "official-advisory",
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0062; details must be checked in the linked notice"
+    },
+    {
       "id": "bleepingcomputer-hackers-steal-data-of-1-6-million-sbc-medical-group-customers",
       "sourceId": "bleepingcomputer",
       "publisher": "BleepingComputer",
@@ -179,19 +417,6 @@
       "publishedAt": "2026-11-19T22:25:42Z",
       "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
       "summary": "SBC Medical Group has warned in a filing with the U.S. Securities and Exchange Commission (SEC) that two cybersecurity incidents exposed sensitive customer and employee information, including personal data belonging to 1.6 million people. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "therecord-lawmakers-launch-new-ai-safety-caucus-amid-rising-security-concerns",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "Lawmakers launch new AI safety caucus amid rising security concerns",
-      "publishedAt": "2026-11-19T21:19:00Z",
-      "url": "https://therecord.media/lawmakers-launch-new-ai-safety-caucus",
-      "summary": "Seven of 26 founding members of the caucus are Republicans, a notable number given the White House’s steadfast opposition to regulating AI.",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "generic",
       "confidence": "reported",
@@ -237,32 +462,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "therecord-doj-dhs-partner-on-new-unit-tackling-scams-and-cybercrime",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "DOJ, DHS partner on new unit tackling scams and cybercrime",
-      "publishedAt": "2026-11-19T17:25:00Z",
-      "url": "https://therecord.media/doj-dhs-partner-on-new-unit-tackling-scams-cybercrime",
-      "summary": "The departments are partnering on the Threat Disruption Center to better triage victim complaints, map cybercriminal networks and provide a direct channel to private sector organizations that work with victims.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "therecord-cisa-nominee-losapio-vows-to-bolster-cyber-defenses-while-denying-jan-6-capitol-attack",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "CISA nominee LoSapio vows to bolster cyber defenses while denying Jan. 6 Capitol attack",
-      "publishedAt": "2026-11-19T17:00:00Z",
-      "url": "https://therecord.media/cisa-losapio-nomination-trump",
-      "summary": "President Donald Trump’s pick to lead the Cybersecurity and Infrastructure Security Agency pledged to lawmakers to uncover any “gaps” within the organization while also denying the Capitol came under attack on January 6, 2021.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "thehackernews-phpaftershell-explained-how-hackers-could-turn-a-php-session-flaw-into-code-execution",
       "sourceId": "thehackernews",
       "publisher": "The Hacker News",
@@ -289,19 +488,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "therecord-uk-court-confirms-british-government-served-apple-with-secret-encryption-notice",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "UK court confirms British government served Apple with secret encryption notice",
-      "publishedAt": "2026-11-19T16:15:00Z",
-      "url": "https://therecord.media/apple-uk-encryption-notice",
-      "summary": "The British government served Apple with a secret legal notice targeting the company’s cryptographic protections for iCloud accounts, a tribunal has confirmed, ending almost two years of official refusal to acknowledge what had been widely reported.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "thehackernews-php-fixes-7-critical-flaws-including-bugs-that-could-allow-remote-code-execution",
       "sourceId": "thehackernews",
       "publisher": "The Hacker News",
@@ -309,19 +495,6 @@
       "publishedAt": "2026-11-19T15:18:07Z",
       "url": "https://thehackernews.com/2026/11/php-fixes-7-critical-flaws-including.html",
       "summary": "The PHP Foundation has released security updates to address multiple critical security flaws that could be exploited to achieve remote code execution on affected deployments, including CVE-2026-115560. The release of the patch follows an advance notice in which the project maintainers alerted users to multiple critical vulnerabilities affecting all supported PHP versions under specific",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "therecord-european-commission-confirms-cyberattack-says-hackers-used-ai-tool",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "European Commission confirms cyberattack, says hackers used AI tool",
-      "publishedAt": "2026-11-19T15:15:00Z",
-      "url": "https://therecord.media/european-commission-confirms-cyberattack-using-ai",
-      "summary": "POLITICO had reported CERT-EU had identified the attackers’ use of ARTEX, an open-source AI hacking platform that the FBI last week warned was being used both by criminals and state-sponsored groups.",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "vulnerability",
       "confidence": "reported",
@@ -380,19 +553,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "bleepingcomputer-drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Drupal patches critical RCE flaw, warns exploits may surface quickly",
-      "publishedAt": "2026-11-19T13:08:08Z",
-      "url": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaw-warns-exploits-may-surface-quickly/",
-      "summary": "The Drupal Security Team has patched a critical remote code execution vulnerability that can let attackers take over vulnerable sites. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "thehackernews-everything-is-a-web-application-including-your-firewall",
       "sourceId": "thehackernews",
       "publisher": "The Hacker News",
@@ -406,19 +566,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "bleepingcomputer-microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Microsoft tests new Edge Lockdown Mode that disables GPU APIs",
-      "publishedAt": "2026-11-19T11:46:00Z",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-new-edge-lockdown-mode-that-disables-gpu-apis/",
-      "summary": "Microsoft is developing a new Edge security feature to reduce the attack surface by disabling the WebGL, WebGL2, and WebGPU APIs. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "thehackernews-hackers-breach-n-able-cloud-server-disrupting-email-security-management-across-3-regions",
       "sourceId": "thehackernews",
       "publisher": "The Hacker News",
@@ -428,19 +575,6 @@
       "summary": "N-able on Wednesday disclosed that unknown threat actors gained unauthorized access to one of the servers in the Mail Assure and Spam Experts Hosted Cloud, causing it to disable management interfaces and APIs. \"We have taken steps to mitigate the threat and are continuing to harden our services to reduce the risk of recurrence,\" N-able said. \"The investigation is ongoing, but at this time we",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-nvidia-investigating-gentlemen-ransomware-breach-claims",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "NVIDIA investigating Gentlemen ransomware breach claims",
-      "publishedAt": "2026-11-19T09:23:21Z",
-      "url": "https://www.bleepingcomputer.com/news/security/nvidia-investigating-gentlemen-ransomware-breach-claims/",
-      "summary": "NVIDIA is investigating claims of a security breach after the Gentlemen ransomware group has added the company to its dark web data leak site. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "third-party-breach",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -493,19 +627,6 @@
       "summary": "The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws. The release is scheduled for November 19, 2026, between 2 and 2:30 p.m. UTC. \"These releases are part of PHP's regular four-week release cycle and will address security vulnerabilities affecting all supported PHP versions,\" the maintainers said.",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms",
-      "publishedAt": "2026-11-18T23:08:33Z",
-      "url": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
-      "summary": "Ukrainian authorities, working with the FBI, have arrested four suspected members of an international ransomware organization linked to more than $40.5 million in ransom payments from at least 28 companies worldwide. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "malware-ransomware",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -951,58 +1072,6 @@
       "publishedAt": "2026-11-16T06:53:34Z",
       "url": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
       "summary": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. The activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer in June 2025, has been attributed to a threat actor named BO Team (aka Black Owl, Hoody Hyena,",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-cursor-says-stolen-fireworks-ai-key-led-to-trojanized-claude-code-extension-incident",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
-      "publishedAt": "2026-11-15T08:22:04Z",
-      "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
-      "summary": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update. \"The key was exposed by Fireworks, and the attacker used it to copy data from a read-only",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "malware-ransomware",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-attackers-exploit-unrealircd-flaw-that-enables-server-level-command-injection",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
-      "publishedAt": "2026-11-14T12:38:35Z",
-      "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation. The vulnerability, tracked as CVE-2026-114713 (CVSS score: 8.6), is a case of improper neutralization of delimiters",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-postgresql-patches-52-flaws-including-22-year-old-bug-enabling-authenticated-rce",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
-      "publishedAt": "2026-11-13T16:53:08Z",
-      "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
-      "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked as CVE-2026-6460, has a CVSS score of 8.8. Any code run this way has the rights of the operating",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-new-mior-and-skyfall-attacks-let-rogue-cloud-hosts-steal-secrets-from-amd-sev-snp-vms",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "New Mior and Skyfall Attacks Let Rogue Cloud Hosts Steal Secrets From AMD SEV-SNP VMs",
-      "publishedAt": "2026-11-13T15:27:05Z",
-      "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
-      "summary": "Two attacks made public this week allow a malicious host to read data inside AMD SEV-SNP-protected virtual machines (VMs), which are built to keep the server's operator out. One of them, Mior, can also modify a VM's memory and fake the signed report confirming which software it runs. Both need control of the server's hypervisor, and Mior also needs control of the server's BIOS. Researchers",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "generic",
       "confidence": "reported",
@@ -1606,76 +1675,6 @@
       "caseType": "generic",
       "confidence": "official-publication",
       "sourceStatus": "Published by the UK NCSC; consult the linked notice for its evidence and scope."
-    },
-    {
-      "id": "cisa-cve-2026-96656",
-      "sourceId": "cisa-kev",
-      "publisher": "CISA KEV Catalog",
-      "title": "CVE-2026-96656: Plex Media Server External Control of File Name or Path Vulnerability",
-      "publishedAt": "2026-10-20T00:00:00Z",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96656",
-      "summary": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96655. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-      "signalType": "Known exploited vulnerability — listed by CISA KEV",
-      "caseType": "vulnerability",
-      "confidence": "cisa-kev-listed",
-      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
-      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "id": "cisa-cve-2026-96655",
-      "sourceId": "cisa-kev",
-      "publisher": "CISA KEV Catalog",
-      "title": "CVE-2026-96655: Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-      "publishedAt": "2026-10-20T00:00:00Z",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96655",
-      "summary": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/universal' path parameter. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96654, and CVE-2026-96656. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-      "signalType": "Known exploited vulnerability — listed by CISA KEV",
-      "caseType": "vulnerability",
-      "confidence": "cisa-kev-listed",
-      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
-      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "id": "cisa-cve-2026-96654",
-      "sourceId": "cisa-kev",
-      "publisher": "CISA KEV Catalog",
-      "title": "CVE-2026-96654: Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
-      "publishedAt": "2026-10-20T00:00:00Z",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96654",
-      "summary": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. This vulnerability can be chained with CVE-2026-96652, CVE-2026-96655, and CVE-2026-96656. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-      "signalType": "Known exploited vulnerability — listed by CISA KEV",
-      "caseType": "vulnerability",
-      "confidence": "cisa-kev-listed",
-      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
-      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "id": "cisa-cve-2026-96652",
-      "sourceId": "cisa-kev",
-      "publisher": "CISA KEV Catalog",
-      "title": "CVE-2026-96652: Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-      "publishedAt": "2026-10-20T00:00:00Z",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-96652",
-      "summary": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the Plex server to POST to the attacker's chosen destination. This vulnerability can be chained with CVE-2026-96654, CVE-2026-96655, and CVE-2026-96656. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-      "signalType": "Known exploited vulnerability — listed by CISA KEV",
-      "caseType": "vulnerability",
-      "confidence": "cisa-kev-listed",
-      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
-      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "id": "cisa-cve-2026-110936",
-      "sourceId": "cisa-kev",
-      "publisher": "CISA KEV Catalog",
-      "title": "CVE-2026-110936: Siemens Software Center Uncontrolled Search Path Element Vulnerability",
-      "publishedAt": "2026-10-20T00:00:00Z",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110936",
-      "summary": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application searches, leading to arbitrary code execution with the privileges of the affected application. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-      "signalType": "Known exploited vulnerability — listed by CISA KEV",
-      "caseType": "vulnerability",
-      "confidence": "cisa-kev-listed",
-      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
-      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
     }
   ]
 }
