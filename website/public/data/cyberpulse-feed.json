@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "status": "partial",
-  "generatedAt": "2026-11-19T20:57:28Z",
-  "lastSuccessfulSyncAt": "2026-11-19T20:57:28Z",
+  "generatedAt": "2026-11-20T07:43:38Z",
+  "lastSuccessfulSyncAt": "2026-11-20T07:43:38Z",
   "sourceCount": 8,
-  "successfulSources": 6,
+  "successfulSources": 4,
   "itemCount": 400,
   "note": "Headlines and short excerpts are shown for discovery. Read the original source for full context. Community posts are unverified signals, not confirmed advisories.",
   "sources": [
@@ -13,8 +13,8 @@
       "label": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/feed/",
       "status": "fresh",
-      "checkedAt": "2026-11-19T20:57:28Z",
-      "lastSuccessAt": "2026-11-19T20:57:28Z",
+      "checkedAt": "2026-11-20T07:43:38Z",
+      "lastSuccessAt": "2026-11-20T07:43:38Z",
       "itemsFetched": 15,
       "note": "Headlines/brief summaries only; open the original source for context."
     },
@@ -23,8 +23,8 @@
       "label": "The Hacker News",
       "url": "https://feeds.feedburner.com/TheHackersNews",
       "status": "fresh",
-      "checkedAt": "2026-11-19T20:57:28Z",
-      "lastSuccessAt": "2026-11-19T20:57:28Z",
+      "checkedAt": "2026-11-20T07:43:38Z",
+      "lastSuccessAt": "2026-11-20T07:43:38Z",
       "itemsFetched": 50,
       "note": "Headlines/brief summaries only; open the original source for context."
     },
@@ -32,19 +32,19 @@
       "id": "hackernews-security",
       "label": "Hacker News · security-filtered posts",
       "url": "https://hnrss.org/newest?q=cybersecurity+OR+vulnerability+OR+ransomware+OR+phishing+OR+security&count=30",
-      "status": "fresh",
-      "checkedAt": "2026-11-19T20:57:28Z",
+      "status": "stale",
+      "checkedAt": "2026-11-20T07:43:38Z",
       "lastSuccessAt": "2026-11-19T20:57:28Z",
-      "itemsFetched": 30,
-      "note": "Headlines/brief summaries only; open the original source for context."
+      "itemsFetched": 0,
+      "note": "Refresh failed; previous records retained (HTTPError)."
     },
     {
       "id": "cert-in",
       "label": "CERT-In advisories",
       "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBADVLIST02",
       "status": "fresh",
-      "checkedAt": "2026-11-19T20:57:28Z",
-      "lastSuccessAt": "2026-11-19T20:57:28Z",
+      "checkedAt": "2026-11-20T07:43:38Z",
+      "lastSuccessAt": "2026-11-20T07:43:38Z",
       "itemsFetched": 15,
       "note": "Headlines/brief summaries only; open the original source for context."
     },
@@ -53,7 +53,7 @@
       "label": "CISA Cybersecurity Advisories",
       "url": "https://www.cisa.gov/news-events/cybersecurity-advisories?feed=rss",
       "status": "unavailable",
-      "checkedAt": "2026-11-19T20:57:28Z",
+      "checkedAt": "2026-11-20T07:43:38Z",
       "lastSuccessAt": null,
       "itemsFetched": 0,
       "note": "Refresh failed; previous records retained (HTTPError)."
@@ -63,8 +63,8 @@
       "label": "CISA Known Exploited Vulnerabilities",
       "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "status": "fresh",
-      "checkedAt": "2026-11-19T20:57:28Z",
-      "lastSuccessAt": "2026-11-19T20:57:28Z",
+      "checkedAt": "2026-11-20T07:43:38Z",
+      "lastSuccessAt": "2026-11-20T07:43:38Z",
       "itemsFetched": 100,
       "note": "Headlines/brief summaries only; open the original source for context."
     },
@@ -72,18 +72,18 @@
       "id": "github-advisories",
       "label": "GitHub reviewed security advisories",
       "url": "https://docs.github.com/en/rest/security-advisories/global-advisories",
-      "status": "fresh",
-      "checkedAt": "2026-11-19T20:57:28Z",
+      "status": "stale",
+      "checkedAt": "2026-11-20T07:43:38Z",
       "lastSuccessAt": "2026-11-19T20:57:28Z",
-      "itemsFetched": 100,
-      "note": "Headlines/brief summaries only; open the original source for context."
+      "itemsFetched": 0,
+      "note": "Refresh failed; previous records retained (HTTPError)."
     },
     {
       "id": "debian-security",
       "label": "Debian security advisories",
       "url": "https://www.debian.org/security/dsa.en.rdf",
       "status": "unavailable",
-      "checkedAt": "2026-11-19T20:57:28Z",
+      "checkedAt": "2026-11-20T07:43:38Z",
       "lastSuccessAt": null,
       "itemsFetched": 0,
       "note": "Refresh failed; previous records retained (HTTPError)."
@@ -103,7 +103,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -121,7 +121,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -139,7 +139,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-20T09:27:05Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -157,7 +157,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-21T17:38:13Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -175,7 +175,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-22T12:22:54Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -193,7 +193,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-23T12:04:50Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -211,7 +211,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-23T12:04:50Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -229,7 +229,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-24T11:36:05Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -247,7 +247,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-27T12:39:32Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -265,7 +265,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-28T13:31:03Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -283,7 +283,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-10-28T13:31:03Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -301,7 +301,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-11-04T20:00:17Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -319,7 +319,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-11-13T20:00:08Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -337,7 +337,7 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-11-13T20:00:08Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
@@ -355,10 +355,118 @@
       "publishedAt": null,
       "updatedAt": null,
       "firstSeenAt": "2026-11-18T20:52:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government advisory listing",
       "cveId": null,
       "status": "ACTIVE"
+    },
+    {
+      "id": "thehackernews:e40617893cabf092a419255a",
+      "sourceId": "thehackernews",
+      "source": "The Hacker News",
+      "type": "news",
+      "topic": "Security news",
+      "title": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs",
+      "summary": "Threat actors have been observed using the ROMULUS ClickFix malware delivery platform to deliver a previously undocumented remote access trojan (RAT) that shares similarities with CNCMachineRMS. \"ROMULUS likely operates as a delivery service, distributing…",
+      "url": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
+      "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
+      "publishedAt": "2026-11-20T07:11:39Z",
+      "updatedAt": null,
+      "firstSeenAt": "2026-11-20T07:43:38Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
+      "confidence": "Publisher news; verify details in the original article",
+      "cveId": null,
+      "status": "NEW"
+    },
+    {
+      "id": "thehackernews:209921156d987de0e7b75345",
+      "sourceId": "thehackernews",
+      "source": "The Hacker News",
+      "type": "news",
+      "topic": "Security news",
+      "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
+      "summary": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026. The vulnerability, tracked as…",
+      "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
+      "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
+      "publishedAt": "2026-11-20T06:33:31Z",
+      "updatedAt": null,
+      "firstSeenAt": "2026-11-20T07:43:38Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
+      "confidence": "Publisher news; verify details in the original article",
+      "cveId": null,
+      "status": "NEW"
+    },
+    {
+      "id": "thehackernews:4b0033536e5760bb8ffda6cd",
+      "sourceId": "thehackernews",
+      "source": "The Hacker News",
+      "type": "news",
+      "topic": "Security news",
+      "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
+      "summary": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine. The…",
+      "url": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
+      "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
+      "publishedAt": "2026-11-20T05:30:01Z",
+      "updatedAt": null,
+      "firstSeenAt": "2026-11-20T07:43:38Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
+      "confidence": "Publisher news; verify details in the original article",
+      "cveId": null,
+      "status": "NEW"
+    },
+    {
+      "id": "bleepingcomputer:15f220796a18084d9a07baad",
+      "sourceId": "bleepingcomputer",
+      "source": "BleepingComputer",
+      "type": "news",
+      "topic": "Security news",
+      "title": "VMware patches vCenter zero-day exploited in attacks since September",
+      "summary": "Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
+      "sourceUrl": "https://www.bleepingcomputer.com/feed/",
+      "publishedAt": "2026-11-20T00:26:25Z",
+      "updatedAt": null,
+      "firstSeenAt": "2026-11-20T07:43:38Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
+      "confidence": "Publisher news; verify details in the original article",
+      "cveId": null,
+      "status": "NEW"
+    },
+    {
+      "id": "bleepingcomputer:f234841cd5e8d0a97c8abf34",
+      "sourceId": "bleepingcomputer",
+      "source": "BleepingComputer",
+      "type": "news",
+      "topic": "Security news",
+      "title": "Hackers steal data of 1.6 million SBC Medical Group customers",
+      "summary": "SBC Medical Group has warned in a filing with the U.S. Securities and Exchange Commission (SEC) that two cybersecurity incidents exposed sensitive customer and employee information, including personal data belonging to 1.6 million people. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
+      "sourceUrl": "https://www.bleepingcomputer.com/feed/",
+      "publishedAt": "2026-11-19T22:25:42Z",
+      "updatedAt": null,
+      "firstSeenAt": "2026-11-20T07:43:38Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
+      "confidence": "Publisher news; verify details in the original article",
+      "cveId": null,
+      "status": "NEW"
+    },
+    {
+      "id": "bleepingcomputer:8ea9e80818a4bc392e09ee05",
+      "sourceId": "bleepingcomputer",
+      "source": "BleepingComputer",
+      "type": "news",
+      "topic": "Security news",
+      "title": "ASUS warns of critical hard-coded key flaw in Control Center Express",
+      "summary": "ASUS released Control Center Express v1.7.29 to fix three critical vulnerabilities that could let remote attackers gain administrative control of the management console and the devices it manages. [...]",
+      "url": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/",
+      "sourceUrl": "https://www.bleepingcomputer.com/feed/",
+      "publishedAt": "2026-11-19T21:15:59Z",
+      "updatedAt": null,
+      "firstSeenAt": "2026-11-20T07:43:38Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
+      "confidence": "Publisher news; verify details in the original article",
+      "cveId": null,
+      "status": "NEW"
     },
     {
       "id": "github-advisories:GHSA-7589-6fvf-x4pw",
@@ -732,10 +840,10 @@
       "publishedAt": "2026-11-19T18:47:58Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-19T20:57:28Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "hackernews-security:7ba3306faa6d99a7cfd7822e",
@@ -804,10 +912,10 @@
       "publishedAt": "2026-11-19T18:20:01Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-19T20:57:28Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "hackernews-security:61b45fdae21c930a609f09e1",
@@ -858,10 +966,10 @@
       "publishedAt": "2026-11-19T16:59:56Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-19T20:57:28Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "hackernews-security:cd759e6684ea23fc765cc449",
@@ -912,10 +1020,10 @@
       "publishedAt": "2026-11-19T16:28:23Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-19T20:57:28Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "github-advisories:GHSA-q8v2-3j4h-xg2p",
@@ -1176,10 +1284,10 @@
       "publishedAt": "2026-11-19T15:18:07Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-19T20:57:28Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "thehackernews:63edce0941e0edb0a008ee05",
@@ -1187,17 +1295,17 @@
       "source": "The Hacker News",
       "type": "news",
       "topic": "Security news",
-      "title": "Critical VMware vCenter Flaw (CVSS 9.8) Lets Network Attackers Bypass Authentication",
+      "title": "Critical VMware vCenter Zero-Day Flaw Lets Network Attackers Bypass Authentication",
       "summary": "A critical flaw in VMware vCenter lets an attacker with network access bypass authentication and gain unauthorized access to the system, Broadcom, which owns VMware, said in an advisory published today. Fixed versions are out for all supported branches, and…",
       "url": "https://thehackernews.com/2026/11/critical-vmware-vcenter-flaw-cvss-98.html",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-11-19T15:11:06Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-19T20:57:28Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "bleepingcomputer:eb38241a0eaffa222fca6e70",
@@ -1212,10 +1320,10 @@
       "publishedAt": "2026-11-19T15:00:10Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-19T20:57:28Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "bleepingcomputer:03c656aa7f6268581691b1b5",
@@ -1230,10 +1338,10 @@
       "publishedAt": "2026-11-19T14:57:24Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-19T20:57:28Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "hackernews-security:a9c972ba5e8646487513a870",
@@ -1284,10 +1392,10 @@
       "publishedAt": "2026-11-19T14:33:06Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-19T20:57:28Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "hackernews-security:2a508438292cfa9fdad5ba37",
@@ -1320,10 +1428,10 @@
       "publishedAt": "2026-11-19T13:08:08Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-19T20:57:28Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "hackernews-security:6bb4d4dbb35b8277ed0873e8",
@@ -1374,10 +1482,10 @@
       "publishedAt": "2026-11-19T11:52:23Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-19T20:57:28Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "bleepingcomputer:abfd462e0ed18e9c8bcf3b6f",
@@ -1392,10 +1500,10 @@
       "publishedAt": "2026-11-19T11:46:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-19T20:57:28Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "bleepingcomputer:b737cfc44cd60b706a6729f4",
@@ -1410,10 +1518,10 @@
       "publishedAt": "2026-11-19T10:35:05Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-19T20:57:28Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "hackernews-security:dc1081452c88c713a0ebb191",
@@ -1464,10 +1572,10 @@
       "publishedAt": "2026-11-19T09:31:26Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-19T20:57:28Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "bleepingcomputer:dc1081452c88c713a0ebb191",
@@ -1482,10 +1590,10 @@
       "publishedAt": "2026-11-19T09:23:21Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-19T20:57:28Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "thehackernews:29eb33240b0fe5717515a5b0",
@@ -1493,17 +1601,17 @@
       "source": "The Hacker News",
       "type": "news",
       "topic": "Security news",
-      "title": "Ruby Releases Fixes for 7 Regex and String Flaws, Warns 5 Have Proof-of-Concept RCE",
+      "title": "Ruby Ships Fixes for 7 Flaws, Including Critical Ruby2Shell, Said to Hit Default Rails Apps Pre-Auth",
       "summary": "Ruby contains seven memory-safety flaws in its regular expression engine and its string case-conversion code. For five of them, its maintainers say, proof-of-concept exploits, or PoCs, have shown that crafted input can run code on the machine. \"We are aware…",
       "url": "https://thehackernews.com/2026/11/ruby-releases-fixes-for-7-regex-and.html",
       "sourceUrl": "https://feeds.feedburner.com/TheHackersNews",
       "publishedAt": "2026-11-19T08:42:11Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-19T20:57:28Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "hackernews-security:b4c56f8c95f7aeb7a9a2dcee",
@@ -1536,10 +1644,10 @@
       "publishedAt": "2026-11-19T08:14:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-19T20:57:28Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "thehackernews:dd71654a2f478334a00f7230",
@@ -1554,10 +1662,10 @@
       "publishedAt": "2026-11-19T08:00:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-19T20:57:28Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
-      "status": "NEW"
+      "status": "ACTIVE"
     },
     {
       "id": "thehackernews:75b5f95941280ec24fc1cc15",
@@ -1572,7 +1680,7 @@
       "publishedAt": "2026-11-19T04:33:46Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-19T07:54:22Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -1702,7 +1810,7 @@
       "publishedAt": "2026-11-18T23:08:33Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-19T07:54:22Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -1888,7 +1996,7 @@
       "publishedAt": "2026-11-18T20:49:32Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-18T20:52:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2056,7 +2164,7 @@
       "publishedAt": "2026-11-18T19:39:33Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-18T20:52:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2128,7 +2236,7 @@
       "publishedAt": "2026-11-18T18:31:17Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-18T20:52:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2182,7 +2290,7 @@
       "publishedAt": "2026-11-18T18:15:39Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-18T20:52:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2200,7 +2308,7 @@
       "publishedAt": "2026-11-18T17:10:45Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-18T20:52:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2218,7 +2326,7 @@
       "publishedAt": "2026-11-18T16:58:42Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-18T20:52:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2311,7 +2419,7 @@
       "publishedAt": "2026-11-18T14:11:28Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-18T20:52:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2329,7 +2437,7 @@
       "publishedAt": "2026-11-18T12:28:30Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-18T20:52:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2347,7 +2455,7 @@
       "publishedAt": "2026-11-18T12:15:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-18T20:52:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2365,7 +2473,7 @@
       "publishedAt": "2026-11-18T11:55:49Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-18T07:55:08Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2401,7 +2509,7 @@
       "publishedAt": "2026-11-18T11:03:57Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-18T20:52:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2455,7 +2563,7 @@
       "publishedAt": "2026-11-18T08:24:31Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-18T20:52:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2473,7 +2581,7 @@
       "publishedAt": "2026-11-18T08:24:23Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-18T20:52:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2563,7 +2671,7 @@
       "publishedAt": "2026-11-18T06:45:26Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-18T07:55:08Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2581,7 +2689,7 @@
       "publishedAt": "2026-11-18T05:58:04Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-18T07:55:08Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -2635,7 +2743,7 @@
       "publishedAt": "2026-11-18T00:00:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-18T20:52:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government catalog; prioritization input, not a severity score",
       "cveId": "CVE-2024-10441",
       "dateAdded": "2026-11-18",
@@ -2655,7 +2763,7 @@
       "publishedAt": "2026-11-18T00:00:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-18T20:52:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government catalog; prioritization input, not a severity score",
       "cveId": "CVE-2026-40217",
       "dateAdded": "2026-11-18",
@@ -2675,7 +2783,7 @@
       "publishedAt": "2026-11-18T00:00:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-18T20:52:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government catalog; prioritization input, not a severity score",
       "cveId": "CVE-2026-90817",
       "dateAdded": "2026-11-18",
@@ -2695,7 +2803,7 @@
       "publishedAt": "2026-11-18T00:00:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-18T20:52:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government catalog; prioritization input, not a severity score",
       "cveId": "CVE-2026-90436",
       "dateAdded": "2026-11-18",
@@ -3067,7 +3175,7 @@
       "publishedAt": "2026-11-17T19:34:20Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-17T21:19:01Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -3374,7 +3482,7 @@
       "publishedAt": "2026-11-17T15:17:36Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-17T21:19:01Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -3392,7 +3500,7 @@
       "publishedAt": "2026-11-17T15:17:28Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-17T21:19:01Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -3500,7 +3608,7 @@
       "publishedAt": "2026-11-17T12:25:06Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-17T21:19:01Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -3518,7 +3626,7 @@
       "publishedAt": "2026-11-17T12:14:36Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-17T21:19:01Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -3536,7 +3644,7 @@
       "publishedAt": "2026-11-17T11:20:18Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-17T21:19:01Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -3572,7 +3680,7 @@
       "publishedAt": "2026-11-17T11:07:31Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-17T21:19:01Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -3698,7 +3806,7 @@
       "publishedAt": "2026-11-17T07:12:13Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-17T08:28:04Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -3716,7 +3824,7 @@
       "publishedAt": "2026-11-17T06:29:27Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-17T08:28:04Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -3734,7 +3842,7 @@
       "publishedAt": "2026-11-17T05:00:34Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-17T08:28:04Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -3788,7 +3896,7 @@
       "publishedAt": "2026-11-17T00:00:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-17T21:19:01Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government catalog; prioritization input, not a severity score",
       "cveId": "CVE-2026-115731",
       "dateAdded": "2026-11-17",
@@ -4731,7 +4839,7 @@
       "publishedAt": "2026-11-16T14:00:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-16T22:29:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -4749,7 +4857,7 @@
       "publishedAt": "2026-11-16T13:27:20Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-16T22:29:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -4785,7 +4893,7 @@
       "publishedAt": "2026-11-16T12:34:21Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-16T22:29:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -4803,7 +4911,7 @@
       "publishedAt": "2026-11-16T12:33:18Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-16T22:29:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -4857,7 +4965,7 @@
       "publishedAt": "2026-11-16T09:32:57Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-16T22:29:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -4911,7 +5019,7 @@
       "publishedAt": "2026-11-16T07:34:21Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-16T22:29:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -4929,7 +5037,7 @@
       "publishedAt": "2026-11-16T06:53:34Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-16T22:29:41Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -5037,7 +5145,7 @@
       "publishedAt": "2026-11-15T11:27:31Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-15T19:05:31Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -5055,7 +5163,7 @@
       "publishedAt": "2026-11-15T08:22:04Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-15T19:05:31Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -5199,7 +5307,7 @@
       "publishedAt": "2026-11-14T12:38:35Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-14T18:28:23Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -6077,7 +6185,7 @@
       "publishedAt": "2026-11-13T16:53:08Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-13T20:00:08Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -6170,7 +6278,7 @@
       "publishedAt": "2026-11-13T15:27:05Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-13T20:00:08Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -6206,7 +6314,7 @@
       "publishedAt": "2026-11-13T14:28:58Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-13T20:00:08Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -6224,7 +6332,7 @@
       "publishedAt": "2026-11-13T13:54:20Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-13T20:00:08Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Publisher news; verify details in the original article",
       "cveId": null,
       "status": "ACTIVE"
@@ -6741,7 +6849,7 @@
       "publishedAt": "2026-11-13T00:00:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-13T20:00:08Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government catalog; prioritization input, not a severity score",
       "cveId": "CVE-2026-114713",
       "dateAdded": "2026-11-13",
@@ -6761,7 +6869,7 @@
       "publishedAt": "2026-11-13T00:00:00Z",
       "updatedAt": null,
       "firstSeenAt": "2026-11-13T20:00:08Z",
-      "lastSeenAt": "2026-11-19T20:57:28Z",
+      "lastSeenAt": "2026-11-20T07:43:38Z",
       "confidence": "Official government catalog; prioritization input, not a severity score",
       "cveId": "CVE-2026-123039",
       "dateAdded": "2026-11-13",
@@ -7371,120 +7479,6 @@
       "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
       "cveId": "CVE-2026-126188",
       "severity": "LOW",
-      "status": "ACTIVE"
-    },
-    {
-      "id": "github-advisories:GHSA-5pm8-86m8-9m6r",
-      "sourceId": "github-advisories",
-      "source": "GitHub reviewed security advisories",
-      "type": "software-advisory",
-      "topic": "Software advisory",
-      "title": "basic-ftp: Uncaught TypeError in MLSD directory-listing parser via __proto__ fact name causes DoS in Client.list()",
-      "summary": "### Summary basic-ftp's MLSD directory-listing parser (src/parseListMLSD.ts) looks up fact-handler functions in a plain object literal keyed directly by fact names taken from the FTP server's response, with no validation. A directory-listing line containing…",
-      "url": "https://github.com/advisories/GHSA-5pm8-86m8-9m6r",
-      "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
-      "publishedAt": "2026-11-12T21:42:12Z",
-      "updatedAt": "2026-11-12T21:42:13Z",
-      "firstSeenAt": "2026-11-13T07:15:34Z",
-      "lastSeenAt": "2026-11-16T07:15:01Z",
-      "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
-      "cveId": "CVE-2026-126345",
-      "severity": "MEDIUM",
-      "status": "ACTIVE"
-    },
-    {
-      "id": "github-advisories:GHSA-qv5m-9pm6-hqp3",
-      "sourceId": "github-advisories",
-      "source": "GitHub reviewed security advisories",
-      "type": "software-advisory",
-      "topic": "Software advisory",
-      "title": "@hono/node-server: Unhandled `ECONNRESET` on the socket during an asynchronous WebSocket upgrade crashes the process",
-      "summary": "### Summary While `@hono/node-server` waits for the Hono application to handle a WebSocket upgrade request, the socket has no error listener. If the client resets the TCP connection during that time, the resulting `ECONNRESET` is emitted as an unhandled…",
-      "url": "https://github.com/advisories/GHSA-qv5m-9pm6-hqp3",
-      "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
-      "publishedAt": "2026-11-12T21:32:48Z",
-      "updatedAt": "2026-11-12T21:32:49Z",
-      "firstSeenAt": "2026-11-13T07:15:34Z",
-      "lastSeenAt": "2026-11-16T07:15:01Z",
-      "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
-      "cveId": "CVE-2026-126343",
-      "severity": "MEDIUM",
-      "status": "ACTIVE"
-    },
-    {
-      "id": "github-advisories:GHSA-jpvv-r467-5p4w",
-      "sourceId": "github-advisories",
-      "source": "GitHub reviewed security advisories",
-      "type": "software-advisory",
-      "topic": "Software advisory",
-      "title": "@hono/node-server: Backslash in the request path is parsed as a path separator, bypassing path-based access control at a reverse proxy",
-      "summary": "### Summary `@hono/node-server` passes the raw request-target to the WHATWG URL parser, which treats a backslash in the path as `/` and then resolves `..` segments. A request for `/admin\\secret` or `/public\\..\\admin/secret` reaches the application as…",
-      "url": "https://github.com/advisories/GHSA-jpvv-r467-5p4w",
-      "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
-      "publishedAt": "2026-11-12T21:28:02Z",
-      "updatedAt": "2026-11-12T21:28:03Z",
-      "firstSeenAt": "2026-11-13T07:15:34Z",
-      "lastSeenAt": "2026-11-16T07:15:01Z",
-      "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
-      "cveId": "CVE-2026-126210",
-      "severity": "MEDIUM",
-      "status": "ACTIVE"
-    },
-    {
-      "id": "github-advisories:GHSA-345x-3rq2-jfrm",
-      "sourceId": "github-advisories",
-      "source": "GitHub reviewed security advisories",
-      "type": "software-advisory",
-      "topic": "Software advisory",
-      "title": "Loofah: SVG ` ` and ` ` bypass local-reference restriction",
-      "summary": "## Summary Loofah restricts `href` and `xlink:href` on certain SVG elements to same-document references. Two elements escaped the restriction: - ` `: `SVG_ALLOW_LOCAL_HREF` listed it in lowercase as `textpath`, but the HTML5 parser names the element…",
-      "url": "https://github.com/advisories/GHSA-345x-3rq2-jfrm",
-      "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
-      "publishedAt": "2026-11-12T21:26:53Z",
-      "updatedAt": "2026-11-12T21:27:48Z",
-      "firstSeenAt": "2026-11-13T07:15:34Z",
-      "lastSeenAt": "2026-11-16T07:15:01Z",
-      "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
-      "cveId": "CVE-2026-126208",
-      "severity": "MEDIUM",
-      "status": "ACTIVE"
-    },
-    {
-      "id": "github-advisories:GHSA-p9wj-w8xq-vjx6",
-      "sourceId": "github-advisories",
-      "source": "GitHub reviewed security advisories",
-      "type": "software-advisory",
-      "topic": "Software advisory",
-      "title": "Loofah allowed_uri? treats javascript: alert(1) as safe",
-      "summary": "## Summary `Loofah::HTML5::Scrub.allowed_uri?` returns `true` for a `javascript:` or `vbscript:` URI whose scheme is split by a numeric character reference without a trailing semicolon, followed by a character that `allowed_uri?` strips, such as a space or…",
-      "url": "https://github.com/advisories/GHSA-p9wj-w8xq-vjx6",
-      "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
-      "publishedAt": "2026-11-12T21:26:25Z",
-      "updatedAt": "2026-11-12T21:27:46Z",
-      "firstSeenAt": "2026-11-13T07:15:34Z",
-      "lastSeenAt": "2026-11-16T07:15:01Z",
-      "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
-      "cveId": "CVE-2026-126209",
-      "severity": "MEDIUM",
-      "status": "ACTIVE"
-    },
-    {
-      "id": "github-advisories:GHSA-m3x9-938q-5767",
-      "sourceId": "github-advisories",
-      "source": "GitHub reviewed security advisories",
-      "type": "software-advisory",
-      "topic": "Software advisory",
-      "title": "Loofah: CSS url() sanitization bypass via escaped parentheses",
-      "summary": "## Summary `Loofah::HTML5::Scrub.scrub_css` rejected any property whose top-level Crass tokens included a `:url` or `:bad_url`, and left `url` out of the allowed CSS functions. Both checks ran only against the first parse of the `style` attribute. When…",
-      "url": "https://github.com/advisories/GHSA-m3x9-938q-5767",
-      "sourceUrl": "https://docs.github.com/en/rest/security-advisories/global-advisories",
-      "publishedAt": "2026-11-12T21:05:41Z",
-      "updatedAt": "2026-11-12T21:05:41Z",
-      "firstSeenAt": "2026-11-13T07:15:34Z",
-      "lastSeenAt": "2026-11-16T07:15:01Z",
-      "confidence": "GitHub-reviewed public advisory; check affected versions and vendor guidance",
-      "cveId": "CVE-2026-126207",
-      "severity": "MEDIUM",
       "status": "ACTIVE"
     }
   ]
