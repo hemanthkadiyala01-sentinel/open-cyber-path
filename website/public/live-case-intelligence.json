@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-20T20:26:11Z",
+  "generatedAt": "2026-11-21T02:21:37Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -80,6 +80,32 @@
     }
   ],
   "items": [
+    {
+      "id": "therecord-west-virginia-legislature-hit-with-cyber-incident-affecting-it-systems",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "West Virginia Legislature hit with cyber incident affecting IT systems",
+      "publishedAt": "2026-11-20T21:34:36Z",
+      "url": "https://therecord.media/west-virginia-legislature-cyberattack",
+      "summary": "A cybersecurity incident that began Thursday was still ongoing Friday in the West Virginia Legislature. A spokesperson said the disruption did not spread to other government entities.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-us-companies-use-of-chinese-open-weight-ai-draws-rebuke-from-house-chairmen",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "US companies’ use of Chinese open weight AI draws rebuke from House chairmen",
+      "publishedAt": "2026-11-20T20:25:00Z",
+      "url": "https://therecord.media/chinese-open-weight-AI-use-by-US-companies-house-investigation",
+      "summary": "An investigation led by the House Homeland Security Committee focused on the dangers of U.S. companies using lower-cost open weight AI models for certain projects.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
     {
       "id": "therecord-container-store-restores-systems-after-cyberattack",
       "sourceId": "therecord",
@@ -179,32 +205,6 @@
       "publishedAt": "2026-11-20T15:00:10Z",
       "url": "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/",
       "summary": "Tracking company passwords in spreadsheets can leave IT administrators unaware of weak, reused, or compromised credentials stored and shared outside approved systems. NordPass explains how centralized password management can improve credential visibility, identify security risks, and simplify secure password sharing. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "therecord-cyber-director-cairncross-out-as-white-house-resets-cyber-leadership",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "Cyber Director Cairncross out as White House resets cyber leadership",
-      "publishedAt": "2026-11-20T14:30:00Z",
-      "url": "https://therecord.media/sean-cairncross-out-as-national-cyber-director",
-      "summary": "Sean Cairncross is leaving the White House as Kirsten Davies, the Pentagon’s chief information officer, has been named the acting cyber czar.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "therecord-dozens-of-credit-unions-hit-by-supplier-breach-that-went-unnoticed-for-six-weeks",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "Dozens of credit unions hit by supplier breach that went unnoticed for six weeks",
-      "publishedAt": "2026-11-20T14:24:00Z",
-      "url": "https://therecord.media/dozens-of-credit-unions-hit-by-supplier-breach",
-      "summary": "Ireland’s Data Protection Commission told Recorded Future News on Thursday it had received more than 40 breach notifications from credit unions that used the Belfast-based company as a data processor.",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "generic",
       "confidence": "reported",
