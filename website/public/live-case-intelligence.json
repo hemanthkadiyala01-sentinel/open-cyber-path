@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-21T02:21:37Z",
+  "generatedAt": "2026-11-21T11:11:49Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -34,7 +34,7 @@
       "url": "https://thehackernews.com/",
       "description": "Independent global cybersecurity reporting; verify claims against primary disclosures where available",
       "status": "ok",
-      "itemCount": 48
+      "itemCount": 49
     },
     {
       "id": "ncsc-uk",
@@ -80,6 +80,32 @@
     }
   ],
   "items": [
+    {
+      "id": "thehackernews-signal-blocks-ai-agents-from-reading-private-chats-via-screenshots-on-android-and-ios",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
+      "publishedAt": "2026-11-21T08:49:20Z",
+      "url": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
+      "summary": "Signal has announced that it will restrict screenshots by default to stop artificial intelligence (AI) agents from reading private chats on Android and iOS devices, but conceded that the protection is \"incomplete.\" The feature applies to agentic systems built into iOS 27 and on Android versions where the encrypted messaging platform can detect an AI assistant attempting to read the Signal",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "ai-agent",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-hackers-exploit-critical-vmware-cisco-and-apache-flaws-as-espionage-attacks-emerge",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+      "publishedAt": "2026-11-21T08:49:13Z",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added four flaws impacting Apache Roller, Cisco Expressway, SAP NetWeaver, and Broadcom VMware vCenter to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed below - CVE-2026-129448 (CVSS score: 9.8) - A deserialization of untrusted data vulnerability in",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
     {
       "id": "therecord-west-virginia-legislature-hit-with-cyber-incident-affecting-it-systems",
       "sourceId": "therecord",
@@ -139,7 +165,7 @@
       "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
       "publishedAt": "2026-11-20T17:57:20Z",
       "url": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
-      "summary": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-2026-23871, has been described as a case of incomplete validation of external ad-reply URLs in WhatsApp for Android and WhatsApp Business for Android before 2.26.17.4. The issue could",
+      "summary": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-2026-23871 (CVSS score: 3.5), has been described as a case of incomplete validation of external ad-reply URLs in WhatsApp for Android and WhatsApp Business for Android before 2.26.17.4.",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "vulnerability",
       "confidence": "reported",
@@ -966,7 +992,7 @@
       "title": "N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners",
       "publishedAt": "2026-11-17T05:00:34Z",
       "url": "https://thehackernews.com/2026/11/n-able-patches-17-n-central-flaws-as.html",
-      "summary": "N-able has released a new security update to address additional critical security flaws impacting N-central. Describing N-central 2026.4 Hotfix 3 as a critical security update, the company said it includes a number of security patches and fixes that enhance the security of the Remote Monitoring and Management (RMM) and Unified Endpoint Management (UEM) platform. \"HF3 builds on the",
+      "summary": "N-able has released a new security update to address additional critical security flaws impacting N-central. Describing N-central 2026.4 Hotfix 3 as a critical security update, the company said it includes a number of security patches and fixes that enhance the security of the Remote Monitoring and Management (RMM) and Unified Endpoint Management (UEM) platform. \"HF3 builds on the protections",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "vulnerability",
       "confidence": "reported",
@@ -1061,19 +1087,6 @@
       "summary": "Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records. The records, which Amazon's threat intelligence team captured with decoy servers, describe stolen keys being used to run the AI models that powered the search for more keys. The team said this",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "ai-agent",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-bo-team-exploits-log4shell-in-vmware-vcenter-compromises-russian-firm-s-code-signing-serve",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
-      "publishedAt": "2026-11-16T06:53:34Z",
-      "url": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
-      "summary": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. The activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer in June 2025, has been attributed to a threat actor named BO Team (aka Black Owl, Hoody Hyena,",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -1662,19 +1675,6 @@
       "caseType": "certificate-compromise",
       "confidence": "official-advisory",
       "sourceStatus": "Listed by CERT-In as CIAD-2026-0050; details must be checked in the linked notice"
-    },
-    {
-      "id": "ncsc-uk-introducing-a-new-ai-chapter-in-the-ncsc-research-problem-book",
-      "sourceId": "ncsc-uk",
-      "publisher": "UK NCSC",
-      "title": "Introducing a new AI chapter in the NCSC research problem book",
-      "publishedAt": "2026-10-20T12:00:00Z",
-      "url": "https://www.ncsc.gov.uk/blogs/introducing-new-ai-chapter-ncsc-research-problem-book",
-      "summary": "A revolution is underway at the intersection of AI and cyber security.",
-      "signalType": "Official NCSC publication — inspect the linked item to distinguish incident reporting from guidance",
-      "caseType": "generic",
-      "confidence": "official-publication",
-      "sourceStatus": "Published by the UK NCSC; consult the linked notice for its evidence and scope."
     }
   ]
 }
