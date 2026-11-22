@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-22T11:30:55Z",
+  "generatedAt": "2026-11-22T19:44:57Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -18,7 +18,7 @@
       "url": "https://www.bleepingcomputer.com/rss-feeds/",
       "description": "Independent global incident and vulnerability reporting; cross-check material claims",
       "status": "ok",
-      "itemCount": 13
+      "itemCount": 12
     },
     {
       "id": "therecord",
@@ -80,6 +80,32 @@
     }
   ],
   "items": [
+    {
+      "id": "bleepingcomputer-hackers-exploit-gl-inet-cloud-flaw-to-infect-routers-kvm-devices",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
+      "publishedAt": "2026-11-22T18:45:37Z",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+      "summary": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "malware-ransomware",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
+      "publishedAt": "2026-11-22T15:43:04Z",
+      "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+      "summary": "E-commerce platform Cleverbridge is warning that hackers breached its systems and stole customers' payment card information, including credit card numbers and CVV security codes. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "third-party-breach",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
     {
       "id": "thehackernews-openrouter-drops-3-providers-after-researchers-catch-months-of-prompt-theft-at-ai-hosting-",
       "sourceId": "thehackernews",
@@ -471,19 +497,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "bleepingcomputer-vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "VMware patches vCenter zero-day exploited in attacks since September",
-      "publishedAt": "2026-11-20T00:26:25Z",
-      "url": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
-      "summary": "Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "cisa-cve-2026-76466",
       "sourceId": "cisa-kev",
       "publisher": "CISA KEV Catalog",
@@ -551,32 +564,6 @@
       "caseType": "generic",
       "confidence": "official-advisory",
       "sourceStatus": "Listed by CERT-In as CIAD-2026-0062; details must be checked in the linked notice"
-    },
-    {
-      "id": "bleepingcomputer-hackers-steal-data-of-1-6-million-sbc-medical-group-customers",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Hackers steal data of 1.6 million SBC Medical Group customers",
-      "publishedAt": "2026-11-19T22:25:42Z",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
-      "summary": "SBC Medical Group has warned in a filing with the U.S. Securities and Exchange Commission (SEC) that two cybersecurity incidents exposed sensitive customer and employee information, including personal data belonging to 1.6 million people. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "ASUS warns of critical hard-coded key flaw in Control Center Express",
-      "publishedAt": "2026-11-19T21:15:59Z",
-      "url": "https://www.bleepingcomputer.com/news/security/asus-warns-of-critical-hard-coded-key-flaw-in-control-center-express/",
-      "summary": "ASUS released Control Center Express v1.7.29 to fix three critical vulnerabilities that could let remote attackers gain administrative control of the management console and the devices it manages. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
       "id": "thehackernews-threatsday-gpt-6-2-jailbreak-flaws-bubbleloader-png-malware-500m-ransom-demands-17-more-st",
@@ -1675,6 +1662,19 @@
       "caseType": "certificate-compromise",
       "confidence": "official-advisory",
       "sourceStatus": "Listed by CERT-In as CIAD-2026-0050; details must be checked in the linked notice"
+    },
+    {
+      "id": "ncsc-uk-introducing-a-new-ai-chapter-in-the-ncsc-research-problem-book",
+      "sourceId": "ncsc-uk",
+      "publisher": "UK NCSC",
+      "title": "Introducing a new AI chapter in the NCSC research problem book",
+      "publishedAt": "2026-10-20T12:00:00Z",
+      "url": "https://www.ncsc.gov.uk/blogs/introducing-new-ai-chapter-ncsc-research-problem-book",
+      "summary": "A revolution is underway at the intersection of AI and cyber security.",
+      "signalType": "Official NCSC publication — inspect the linked item to distinguish incident reporting from guidance",
+      "caseType": "generic",
+      "confidence": "official-publication",
+      "sourceStatus": "Published by the UK NCSC; consult the linked notice for its evidence and scope."
     }
   ]
 }
