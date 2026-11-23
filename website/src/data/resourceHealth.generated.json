@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-16T11:52:52.099Z",
+  "generatedAt": "2026-11-23T13:26:32.726Z",
   "note": "HTTP reachability is not proof that the page content is accurate, suitable, or free. 401/403/429 and transient failures are sent for manual review, not labelled broken.",
   "summary": {
     "checkedUrls": 318,
-    "healthy": 283,
+    "healthy": 284,
     "broken": 0,
-    "review": 35
+    "review": 34
   },
   "resources": [
     {
@@ -14,7 +14,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://academy.hackthebox.com/path/preview/cracking-into-hack-the-box",
-      "checkedAt": "2026-11-16T11:52:37.500Z",
+      "checkedAt": "2026-11-23T13:26:18.510Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -30,7 +30,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://atlas.mitre.org/",
-      "checkedAt": "2026-11-16T11:52:37.560Z",
+      "checkedAt": "2026-11-23T13:26:18.538Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -52,7 +52,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.atomicredteam.io/",
-      "checkedAt": "2026-11-16T11:52:37.561Z",
+      "checkedAt": "2026-11-23T13:26:18.539Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -68,7 +68,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://attack.mitre.org/",
-      "checkedAt": "2026-11-16T11:52:37.562Z",
+      "checkedAt": "2026-11-23T13:26:18.540Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -108,7 +108,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://attack.mitre.org/matrices/ics/",
-      "checkedAt": "2026-11-16T11:52:37.563Z",
+      "checkedAt": "2026-11-23T13:26:18.541Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -124,7 +124,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://attack.mitre.org/resources/learn-more-about-attack/training/",
-      "checkedAt": "2026-11-16T11:52:37.563Z",
+      "checkedAt": "2026-11-23T13:26:18.542Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -146,7 +146,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://attack.mitre.org/resources/learn-more-about-attack/training/threat-hunting/",
-      "checkedAt": "2026-11-16T11:52:37.564Z",
+      "checkedAt": "2026-11-23T13:26:18.542Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -162,7 +162,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://attack.mitre.org/resources/training/cti/",
-      "checkedAt": "2026-11-16T11:52:37.565Z",
+      "checkedAt": "2026-11-23T13:26:18.543Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -178,7 +178,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://attacksim.networkershome.com/",
-      "checkedAt": "2026-11-16T11:52:37.894Z",
+      "checkedAt": "2026-11-23T13:26:18.785Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -194,7 +194,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://aws.amazon.com/detective/",
-      "checkedAt": "2026-11-16T11:52:38.149Z",
+      "checkedAt": "2026-11-23T13:26:18.789Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -210,7 +210,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://aws.amazon.com/guardduty/",
-      "checkedAt": "2026-11-16T11:52:38.151Z",
+      "checkedAt": "2026-11-23T13:26:18.790Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -226,7 +226,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://aws.amazon.com/training/",
-      "checkedAt": "2026-11-16T11:52:38.162Z",
+      "checkedAt": "2026-11-23T13:26:18.794Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -248,7 +248,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://aws.amazon.com/training/learn-about/security/",
-      "checkedAt": "2026-11-16T11:52:38.167Z",
+      "checkedAt": "2026-11-23T13:26:18.796Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -264,7 +264,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://bellingcat.gitbook.io/toolkit",
-      "checkedAt": "2026-11-16T11:52:38.174Z",
+      "checkedAt": "2026-11-23T13:26:18.864Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -280,7 +280,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://blueteamlabs.online/",
-      "checkedAt": "2026-11-16T11:52:38.196Z",
+      "checkedAt": "2026-11-23T13:26:18.936Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -296,7 +296,7 @@
       "status": "review",
       "statusCode": 403,
       "finalUrl": "https://bvtech.org/cyber-range/challenges/wargames/level1",
-      "checkedAt": "2026-11-16T11:52:38.387Z",
+      "checkedAt": "2026-11-23T13:26:18.943Z",
       "detail": "HTTP 403; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -312,7 +312,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://cfreds.nist.gov/all",
-      "checkedAt": "2026-11-16T11:52:38.390Z",
+      "checkedAt": "2026-11-23T13:26:18.947Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -340,7 +340,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://cheatsheetseries.owasp.org/",
-      "checkedAt": "2026-11-16T11:52:38.392Z",
+      "checkedAt": "2026-11-23T13:26:18.950Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -356,7 +356,7 @@
       "status": "review",
       "statusCode": null,
       "finalUrl": null,
-      "checkedAt": "2026-11-16T11:52:38.393Z",
+      "checkedAt": "2026-11-23T13:26:18.951Z",
       "detail": "Could not confirm reachability (TypeError); manual review recommended",
       "entries": [
         {
@@ -372,7 +372,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://cloud.google.com/learn/certificates",
-      "checkedAt": "2026-11-16T11:52:38.441Z",
+      "checkedAt": "2026-11-23T13:26:19.060Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -388,7 +388,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://cloudsecurityalliance.org/research/cloud-controls-matrix",
-      "checkedAt": "2026-11-16T11:52:38.451Z",
+      "checkedAt": "2026-11-23T13:26:19.063Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -404,7 +404,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://codeql.github.com/docs/",
-      "checkedAt": "2026-11-16T11:52:38.455Z",
+      "checkedAt": "2026-11-23T13:26:19.084Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -420,7 +420,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://cryptohack.org/",
-      "checkedAt": "2026-11-16T11:52:38.482Z",
+      "checkedAt": "2026-11-23T13:26:19.131Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -433,11 +433,11 @@
     },
     {
       "url": "https://csrc.nist.gov/Projects/incident-response/life-cycle-resources",
-      "status": "review",
-      "statusCode": null,
-      "finalUrl": null,
-      "checkedAt": "2026-11-16T11:52:38.508Z",
-      "detail": "Timed out after 10000 ms; manual review recommended",
+      "status": "healthy",
+      "statusCode": 200,
+      "finalUrl": "https://csrc.nist.gov/Projects/incident-response/life-cycle-resources",
+      "checkedAt": "2026-11-23T13:26:19.218Z",
+      "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
           "id": "nist-incident-response",
@@ -452,7 +452,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final",
-      "checkedAt": "2026-11-16T11:52:38.542Z",
+      "checkedAt": "2026-11-23T13:26:19.227Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -468,7 +468,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
-      "checkedAt": "2026-11-16T11:52:38.570Z",
+      "checkedAt": "2026-11-23T13:26:19.239Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -484,7 +484,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://csrc.nist.gov/pubs/sp/800/86/final",
-      "checkedAt": "2026-11-16T11:52:38.590Z",
+      "checkedAt": "2026-11-23T13:26:19.256Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -506,7 +506,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://ctf.aquilacyber.org/auth/register",
-      "checkedAt": "2026-11-16T11:52:38.595Z",
+      "checkedAt": "2026-11-23T13:26:19.363Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -522,7 +522,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://owasp.org/projects/ctf-in-a-box",
-      "checkedAt": "2026-11-16T11:52:38.628Z",
+      "checkedAt": "2026-11-23T13:26:19.384Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -538,7 +538,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://ctf.pkcert.gov.pk/",
-      "checkedAt": "2026-11-16T11:52:38.649Z",
+      "checkedAt": "2026-11-23T13:26:19.428Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -554,7 +554,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://cwe.mitre.org/top25/",
-      "checkedAt": "2026-11-16T11:52:38.676Z",
+      "checkedAt": "2026-11-23T13:26:19.460Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -570,7 +570,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://cyberdefenders.org/blue-team-labs/",
-      "checkedAt": "2026-11-16T11:52:38.693Z",
+      "checkedAt": "2026-11-23T13:26:19.504Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -586,7 +586,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://cyberdefenders.org/blueteam-ctf-challenges/amadey-apt-c-36/",
-      "checkedAt": "2026-11-16T11:52:38.770Z",
+      "checkedAt": "2026-11-23T13:26:19.536Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -620,7 +620,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://cyberdefenders.org/blueteam-ctf-challenges/gh0stnet-intrusion/",
-      "checkedAt": "2026-11-16T11:52:38.903Z",
+      "checkedAt": "2026-11-23T13:26:19.630Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -636,7 +636,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://cyberdefenders.org/blueteam-ctf-challenges/intel101/",
-      "checkedAt": "2026-11-16T11:52:39.008Z",
+      "checkedAt": "2026-11-23T13:26:19.639Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -652,7 +652,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://cyberdefenders.org/blueteam-ctf-challenges/packetdetective/",
-      "checkedAt": "2026-11-16T11:52:39.081Z",
+      "checkedAt": "2026-11-23T13:26:19.732Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -674,7 +674,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://cyberdefenders.org/blueteam-ctf-challenges/resourcepacks/",
-      "checkedAt": "2026-11-16T11:52:39.507Z",
+      "checkedAt": "2026-11-23T13:26:19.836Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -690,7 +690,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://cyberdefenders.org/blueteam-ctf-challenges/sigma-101/",
-      "checkedAt": "2026-11-16T11:52:39.673Z",
+      "checkedAt": "2026-11-23T13:26:19.897Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -712,7 +712,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://cyberdefenders.org/blueteam-ctf-challenges/t1110003/",
-      "checkedAt": "2026-11-16T11:52:39.790Z",
+      "checkedAt": "2026-11-23T13:26:20.510Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -728,7 +728,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://cyberdefenders.org/blueteam-ctf-challenges/yara-wizards/",
-      "checkedAt": "2026-11-16T11:52:39.873Z",
+      "checkedAt": "2026-11-23T13:26:20.532Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -750,7 +750,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://cyberdefenders.org/blueteam-ctf-challenges/yara101/",
-      "checkedAt": "2026-11-16T11:52:39.917Z",
+      "checkedAt": "2026-11-23T13:26:20.550Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -772,7 +772,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/HTTP",
-      "checkedAt": "2026-11-16T11:52:39.963Z",
+      "checkedAt": "2026-11-23T13:26:20.581Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -788,7 +788,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html",
-      "checkedAt": "2026-11-16T11:52:40.046Z",
+      "checkedAt": "2026-11-23T13:26:20.594Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -815,8 +815,8 @@
       "url": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html",
       "status": "healthy",
       "statusCode": 206,
-      "finalUrl": "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html",
-      "checkedAt": "2026-11-16T11:52:40.122Z",
+      "finalUrl": "https://docs.aws.amazon.com/wellarchitected/latest/framework/security.html",
+      "checkedAt": "2026-11-23T13:26:20.683Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -832,7 +832,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://docs.bugcrowd.com/researchers/engagement-management/details/",
-      "checkedAt": "2026-11-16T11:52:40.143Z",
+      "checkedAt": "2026-11-23T13:26:20.709Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -848,7 +848,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://docs.github.com/en/actions/reference/security/secure-use",
-      "checkedAt": "2026-11-16T11:52:40.241Z",
+      "checkedAt": "2026-11-23T13:26:20.847Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -870,7 +870,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://docs.github.com/en/code-security",
-      "checkedAt": "2026-11-16T11:52:40.243Z",
+      "checkedAt": "2026-11-23T13:26:20.853Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -886,7 +886,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://docs.hackerone.com/en/articles/8475116-quality-reports",
-      "checkedAt": "2026-11-16T11:52:40.392Z",
+      "checkedAt": "2026-11-23T13:26:20.894Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -902,7 +902,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://docs.hackerone.com/en/articles/8494552-defining-scope",
-      "checkedAt": "2026-11-16T11:52:40.458Z",
+      "checkedAt": "2026-11-23T13:26:21.051Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -936,7 +936,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://docs.opencti.io/latest/",
-      "checkedAt": "2026-11-16T11:52:40.603Z",
+      "checkedAt": "2026-11-23T13:26:21.097Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -952,7 +952,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://docs.remnux.org/",
-      "checkedAt": "2026-11-16T11:52:40.640Z",
+      "checkedAt": "2026-11-23T13:26:21.286Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -974,7 +974,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://docs.securityonion.net/en/2.4/",
-      "checkedAt": "2026-11-16T11:52:40.689Z",
+      "checkedAt": "2026-11-23T13:26:21.293Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -990,7 +990,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://docs.suricata.io/en/latest/",
-      "checkedAt": "2026-11-16T11:52:40.838Z",
+      "checkedAt": "2026-11-23T13:26:21.326Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -1006,7 +1006,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://docs.velociraptor.app/",
-      "checkedAt": "2026-11-16T11:52:40.840Z",
+      "checkedAt": "2026-11-23T13:26:21.377Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1022,7 +1022,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://docs.virustotal.com/reference/overview",
-      "checkedAt": "2026-11-16T11:52:40.907Z",
+      "checkedAt": "2026-11-23T13:26:21.379Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -1038,7 +1038,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://docs.zeek.org/en/current/",
-      "checkedAt": "2026-11-16T11:52:40.940Z",
+      "checkedAt": "2026-11-23T13:26:21.431Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -1054,7 +1054,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://docs.zeek.org/en/current/",
-      "checkedAt": "2026-11-16T11:52:41.005Z",
+      "checkedAt": "2026-11-23T13:26:21.495Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -1076,7 +1076,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://docs.zeek.org/en/current/tutorial/index.html",
-      "checkedAt": "2026-11-16T11:52:41.022Z",
+      "checkedAt": "2026-11-23T13:26:21.511Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -1092,7 +1092,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://documentation.wazuh.com/current/",
-      "checkedAt": "2026-11-16T11:52:41.060Z",
+      "checkedAt": "2026-11-23T13:26:21.544Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1108,7 +1108,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://documentation.wazuh.com/current/getting-started/index.html",
-      "checkedAt": "2026-11-16T11:52:41.090Z",
+      "checkedAt": "2026-11-23T13:26:21.567Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1136,7 +1136,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://ethernaut.openzeppelin.com/",
-      "checkedAt": "2026-11-16T11:52:41.230Z",
+      "checkedAt": "2026-11-23T13:26:21.578Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1152,7 +1152,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://fortinet.networkershome.com/",
-      "checkedAt": "2026-11-16T11:52:41.292Z",
+      "checkedAt": "2026-11-23T13:26:21.661Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -1168,7 +1168,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://fortivox.cloud/ctf/",
-      "checkedAt": "2026-11-16T11:52:41.302Z",
+      "checkedAt": "2026-11-23T13:26:21.701Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1184,7 +1184,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://www.futureskillsprime.in/",
-      "checkedAt": "2026-11-16T11:52:41.319Z",
+      "checkedAt": "2026-11-23T13:26:21.711Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1200,7 +1200,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://play.lakera.ai/agent-breaker",
-      "checkedAt": "2026-11-16T11:52:41.330Z",
+      "checkedAt": "2026-11-23T13:26:21.754Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1216,7 +1216,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/NationalSecurityAgency/ghidra",
-      "checkedAt": "2026-11-16T11:52:41.355Z",
+      "checkedAt": "2026-11-23T13:26:21.806Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1232,7 +1232,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/digininja/DVWA",
-      "checkedAt": "2026-11-16T11:52:41.381Z",
+      "checkedAt": "2026-11-23T13:26:21.844Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1248,7 +1248,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/ffuf/ffuf",
-      "checkedAt": "2026-11-16T11:52:41.638Z",
+      "checkedAt": "2026-11-23T13:26:21.873Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1264,7 +1264,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/grqz/ssl_imp",
-      "checkedAt": "2026-11-16T11:52:41.679Z",
+      "checkedAt": "2026-11-23T13:26:22.152Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1280,7 +1280,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/juice-shop/juice-shop",
-      "checkedAt": "2026-11-16T11:52:41.724Z",
+      "checkedAt": "2026-11-23T13:26:22.166Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1296,7 +1296,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/madhuakula/kubernetes-goat",
-      "checkedAt": "2026-11-16T11:52:41.726Z",
+      "checkedAt": "2026-11-23T13:26:22.226Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1312,7 +1312,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/mandiant/capa/blob/master/doc/usage.md",
-      "checkedAt": "2026-11-16T11:52:41.865Z",
+      "checkedAt": "2026-11-23T13:26:22.364Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1328,7 +1328,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/mandiant/flare-vm",
-      "checkedAt": "2026-11-16T11:52:42.098Z",
+      "checkedAt": "2026-11-23T13:26:22.393Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1344,7 +1344,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/mitmproxy/mitmproxy",
-      "checkedAt": "2026-11-16T11:52:42.118Z",
+      "checkedAt": "2026-11-23T13:26:22.541Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1360,7 +1360,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/NationalSecurityAgency/ghidra",
-      "checkedAt": "2026-11-16T11:52:42.142Z",
+      "checkedAt": "2026-11-23T13:26:22.672Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1376,7 +1376,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/OJ/gobuster",
-      "checkedAt": "2026-11-16T11:52:42.150Z",
+      "checkedAt": "2026-11-23T13:26:22.674Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1392,7 +1392,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/ossf/scorecard",
-      "checkedAt": "2026-11-16T11:52:42.159Z",
+      "checkedAt": "2026-11-23T13:26:22.677Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1408,7 +1408,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/OWASP/crAPI",
-      "checkedAt": "2026-11-16T11:52:42.271Z",
+      "checkedAt": "2026-11-23T13:26:22.708Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1430,7 +1430,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/projectdiscovery/nuclei",
-      "checkedAt": "2026-11-16T11:52:42.451Z",
+      "checkedAt": "2026-11-23T13:26:22.825Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1446,7 +1446,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/projectdiscovery/subfinder",
-      "checkedAt": "2026-11-16T11:52:42.530Z",
+      "checkedAt": "2026-11-23T13:26:22.912Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1462,7 +1462,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/rapid7/metasploit-framework",
-      "checkedAt": "2026-11-16T11:52:42.649Z",
+      "checkedAt": "2026-11-23T13:26:22.972Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1478,7 +1478,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/RhinoSecurityLabs/cloudgoat",
-      "checkedAt": "2026-11-16T11:52:42.670Z",
+      "checkedAt": "2026-11-23T13:26:23.115Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1500,7 +1500,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/SigmaHQ/sigma",
-      "checkedAt": "2026-11-16T11:52:42.921Z",
+      "checkedAt": "2026-11-23T13:26:23.157Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1534,7 +1534,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/splunk/botsv3",
-      "checkedAt": "2026-11-16T11:52:42.941Z",
+      "checkedAt": "2026-11-23T13:26:23.238Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1550,7 +1550,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/sqlmapproject/sqlmap",
-      "checkedAt": "2026-11-16T11:52:43.039Z",
+      "checkedAt": "2026-11-23T13:26:23.364Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1566,7 +1566,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/stevietv/learn-web-security-golang-starter",
-      "checkedAt": "2026-11-16T11:52:43.068Z",
+      "checkedAt": "2026-11-23T13:26:23.374Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1582,7 +1582,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/stuxnet999/MemLabs",
-      "checkedAt": "2026-11-16T11:52:43.091Z",
+      "checkedAt": "2026-11-23T13:26:23.406Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1604,7 +1604,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/VirusTotal/yara",
-      "checkedAt": "2026-11-16T11:52:43.134Z",
+      "checkedAt": "2026-11-23T13:26:23.577Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1620,7 +1620,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/WitherOrNot/warbird-docs",
-      "checkedAt": "2026-11-16T11:52:43.358Z",
+      "checkedAt": "2026-11-23T13:26:23.587Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1636,7 +1636,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/Yara-Rules/rules",
-      "checkedAt": "2026-11-16T11:52:43.360Z",
+      "checkedAt": "2026-11-23T13:26:23.606Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1652,7 +1652,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/yuliskov/SmartTube",
-      "checkedAt": "2026-11-16T11:52:43.401Z",
+      "checkedAt": "2026-11-23T13:26:23.649Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1668,7 +1668,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://github.com/zaproxy/zaproxy",
-      "checkedAt": "2026-11-16T11:52:43.466Z",
+      "checkedAt": "2026-11-23T13:26:23.655Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1684,7 +1684,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://help.hackthebox.com/en/articles/6007919-introduction-to-starting-point",
-      "checkedAt": "2026-11-16T11:52:43.573Z",
+      "checkedAt": "2026-11-23T13:26:23.755Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -1700,7 +1700,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://ise.networkershome.com/",
-      "checkedAt": "2026-11-16T11:52:43.586Z",
+      "checkedAt": "2026-11-23T13:26:23.818Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -1716,7 +1716,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://kubernetes.io/docs/concepts/security/",
-      "checkedAt": "2026-11-16T11:52:43.711Z",
+      "checkedAt": "2026-11-23T13:26:23.928Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1732,7 +1732,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://lab.techclick.in/lab/dns-tunnel-detect",
-      "checkedAt": "2026-11-16T11:52:43.842Z",
+      "checkedAt": "2026-11-23T13:26:23.938Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -1754,7 +1754,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://labs.cyfotok.com/labs/phishing",
-      "checkedAt": "2026-11-16T11:52:43.846Z",
+      "checkedAt": "2026-11-23T13:26:24.048Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -1776,7 +1776,7 @@
       "status": "review",
       "statusCode": null,
       "finalUrl": null,
-      "checkedAt": "2026-11-16T11:52:43.851Z",
+      "checkedAt": "2026-11-23T13:26:24.088Z",
       "detail": "Could not confirm reachability (TypeError); manual review recommended",
       "entries": [
         {
@@ -1792,7 +1792,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://learn.microsoft.com/en-us/azure/sentinel/",
-      "checkedAt": "2026-11-16T11:52:43.941Z",
+      "checkedAt": "2026-11-23T13:26:24.114Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1808,7 +1808,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://learn.microsoft.com/en-us/azure/sentinel/hunting",
-      "checkedAt": "2026-11-16T11:52:43.943Z",
+      "checkedAt": "2026-11-23T13:26:24.139Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1824,7 +1824,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://learn.microsoft.com/en-us/azure/sentinel/skill-up-resources",
-      "checkedAt": "2026-11-16T11:52:43.963Z",
+      "checkedAt": "2026-11-23T13:26:24.148Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1852,7 +1852,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://learn.microsoft.com/en-us/defender-xdr/advanced-hunting-expert-training",
-      "checkedAt": "2026-11-16T11:52:43.964Z",
+      "checkedAt": "2026-11-23T13:26:24.163Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1886,7 +1886,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://learn.microsoft.com/en-us/defender-xdr/hunting-overview",
-      "checkedAt": "2026-11-16T11:52:44.007Z",
+      "checkedAt": "2026-11-23T13:26:24.209Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1908,7 +1908,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://learn.microsoft.com/en-us/shows/mvp-windows-and-devices-for-it/powershell-beginners",
-      "checkedAt": "2026-11-16T11:52:44.031Z",
+      "checkedAt": "2026-11-23T13:26:24.294Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1924,7 +1924,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://learn.microsoft.com/en-us/training/browse/?products=azure&subjects=security",
-      "checkedAt": "2026-11-16T11:52:44.046Z",
+      "checkedAt": "2026-11-23T13:26:24.337Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1940,7 +1940,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://learn.microsoft.com/en-us/training/career-paths/security-engineer",
-      "checkedAt": "2026-11-16T11:52:44.051Z",
+      "checkedAt": "2026-11-23T13:26:24.378Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1956,7 +1956,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://learn.microsoft.com/en-us/training/defender/",
-      "checkedAt": "2026-11-16T11:52:44.091Z",
+      "checkedAt": "2026-11-23T13:26:24.384Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1972,7 +1972,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://learn.microsoft.com/en-us/training/modules/evaluate-regulatory-compliance/",
-      "checkedAt": "2026-11-16T11:52:44.144Z",
+      "checkedAt": "2026-11-23T13:26:24.411Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -1988,7 +1988,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://learn.microsoft.com/en-us/training/modules/identify-security-risks-posture-management/",
-      "checkedAt": "2026-11-16T11:52:44.218Z",
+      "checkedAt": "2026-11-23T13:26:24.449Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2004,7 +2004,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://learn.microsoft.com/en-us/training/modules/manage-cloud-security-posture-management/",
-      "checkedAt": "2026-11-16T11:52:44.218Z",
+      "checkedAt": "2026-11-23T13:26:24.450Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2020,7 +2020,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://learn.microsoft.com/en-us/training/paths/get-started-windows-powershell/",
-      "checkedAt": "2026-11-16T11:52:44.228Z",
+      "checkedAt": "2026-11-23T13:26:24.492Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2042,7 +2042,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://learn.microsoft.com/en-us/training/paths/sc-200-configure-azure-sentinel-environment/",
-      "checkedAt": "2026-11-16T11:52:44.236Z",
+      "checkedAt": "2026-11-23T13:26:24.568Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2058,7 +2058,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://learn.microsoft.com/en-us/training/paths/sc-200-utilize-kql-for-azure-sentinel/",
-      "checkedAt": "2026-11-16T11:52:44.276Z",
+      "checkedAt": "2026-11-23T13:26:24.599Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2072,10 +2072,10 @@
     {
       "url": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-Audit#detailedtracking_auditprocesscreation",
       "status": "healthy",
-      "statusCode": 206,
+      "statusCode": 200,
       "finalUrl": "https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-Audit",
-      "checkedAt": "2026-11-16T11:52:44.304Z",
-      "detail": "HTTP range request responded; content not inspected",
+      "checkedAt": "2026-11-23T13:26:24.607Z",
+      "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
           "id": "windows-security-auditing",
@@ -2102,7 +2102,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://linuxcommand.org/",
-      "checkedAt": "2026-11-16T11:52:44.313Z",
+      "checkedAt": "2026-11-23T13:26:24.616Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2124,7 +2124,7 @@
       "status": "review",
       "statusCode": 403,
       "finalUrl": "https://labex.io/linuxjourney",
-      "checkedAt": "2026-11-16T11:52:44.324Z",
+      "checkedAt": "2026-11-23T13:26:24.656Z",
       "detail": "HTTP 403; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -2140,7 +2140,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://mas.owasp.org/MASTG/",
-      "checkedAt": "2026-11-16T11:52:44.369Z",
+      "checkedAt": "2026-11-23T13:26:24.687Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2162,7 +2162,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://mitre-attack.github.io/attack-navigator/",
-      "checkedAt": "2026-11-16T11:52:44.391Z",
+      "checkedAt": "2026-11-23T13:26:24.720Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2178,7 +2178,7 @@
       "status": "review",
       "statusCode": 503,
       "finalUrl": "https://nightjar-ctf.onrender.com/",
-      "checkedAt": "2026-11-16T11:52:44.413Z",
+      "checkedAt": "2026-11-23T13:26:24.759Z",
       "detail": "HTTP 503; transient errors, bot protection, or access rules may apply",
       "entries": [
         {
@@ -2194,7 +2194,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://nmap.org/book/",
-      "checkedAt": "2026-11-16T11:52:44.430Z",
+      "checkedAt": "2026-11-23T13:26:24.771Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -2210,7 +2210,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://nvd.nist.gov/",
-      "checkedAt": "2026-11-16T11:52:44.490Z",
+      "checkedAt": "2026-11-23T13:26:24.818Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2226,7 +2226,7 @@
       "status": "review",
       "statusCode": 503,
       "finalUrl": "https://operation-ghost-route.onrender.com/",
-      "checkedAt": "2026-11-16T11:52:44.571Z",
+      "checkedAt": "2026-11-23T13:26:24.836Z",
       "detail": "HTTP 503; transient errors, bot protection, or access rules may apply",
       "entries": [
         {
@@ -2248,7 +2248,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://osintframework.com/",
-      "checkedAt": "2026-11-16T11:52:44.581Z",
+      "checkedAt": "2026-11-23T13:26:24.871Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -2264,7 +2264,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://overthewire.org/wargames/bandit/",
-      "checkedAt": "2026-11-16T11:52:44.667Z",
+      "checkedAt": "2026-11-23T13:26:24.945Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2286,7 +2286,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://overthewire.org/wargames/bandit/bandit0.html",
-      "checkedAt": "2026-11-16T11:52:44.709Z",
+      "checkedAt": "2026-11-23T13:26:24.970Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2308,7 +2308,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://overthewire.org/wargames/natas/",
-      "checkedAt": "2026-11-16T11:52:44.727Z",
+      "checkedAt": "2026-11-23T13:26:25.011Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2324,7 +2324,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://owasp.org/projects/asvs",
-      "checkedAt": "2026-11-16T11:52:44.743Z",
+      "checkedAt": "2026-11-23T13:26:25.020Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -2340,7 +2340,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://owasp.org/projects/iot-security-testing-guide",
-      "checkedAt": "2026-11-16T11:52:44.786Z",
+      "checkedAt": "2026-11-23T13:26:25.039Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -2362,7 +2362,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://owasp.org/projects/juice-shop",
-      "checkedAt": "2026-11-16T11:52:44.797Z",
+      "checkedAt": "2026-11-23T13:26:25.092Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -2378,7 +2378,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://owasp.org/projects/top-10-for-large-language-model-applications",
-      "checkedAt": "2026-11-16T11:52:44.919Z",
+      "checkedAt": "2026-11-23T13:26:25.094Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -2394,7 +2394,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://owasp.org/projects/web-security-testing-guide",
-      "checkedAt": "2026-11-16T11:52:44.929Z",
+      "checkedAt": "2026-11-23T13:26:25.105Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -2410,7 +2410,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://owasp.org/projects/api-security-project",
-      "checkedAt": "2026-11-16T11:52:44.953Z",
+      "checkedAt": "2026-11-23T13:26:25.111Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -2426,7 +2426,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://asvs.owasp.org/",
-      "checkedAt": "2026-11-16T11:52:44.977Z",
+      "checkedAt": "2026-11-23T13:26:25.136Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2442,7 +2442,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://owasp.org/projects/crapi",
-      "checkedAt": "2026-11-16T11:52:45.238Z",
+      "checkedAt": "2026-11-23T13:26:25.286Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -2458,7 +2458,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://owasp.org/projects/devsecops-guideline",
-      "checkedAt": "2026-11-16T11:52:45.254Z",
+      "checkedAt": "2026-11-23T13:26:25.288Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -2474,7 +2474,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://owasp.org/projects/top-ten",
-      "checkedAt": "2026-11-16T11:52:45.352Z",
+      "checkedAt": "2026-11-23T13:26:25.307Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -2490,7 +2490,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://owasp.org/projects/web-security-testing-guide",
-      "checkedAt": "2026-11-16T11:52:45.405Z",
+      "checkedAt": "2026-11-23T13:26:25.314Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -2512,7 +2512,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://owasp.org/projects/webgoat",
-      "checkedAt": "2026-11-16T11:52:45.421Z",
+      "checkedAt": "2026-11-23T13:26:25.323Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -2534,7 +2534,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://owaspsamm.org/",
-      "checkedAt": "2026-11-16T11:52:45.422Z",
+      "checkedAt": "2026-11-23T13:26:25.338Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2550,7 +2550,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://paloalto-fw.networkershome.com/",
-      "checkedAt": "2026-11-16T11:52:45.456Z",
+      "checkedAt": "2026-11-23T13:26:25.538Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -2566,7 +2566,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://picoctf.org/",
-      "checkedAt": "2026-11-16T11:52:45.465Z",
+      "checkedAt": "2026-11-23T13:26:25.568Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2582,7 +2582,7 @@
       "status": "review",
       "statusCode": null,
       "finalUrl": null,
-      "checkedAt": "2026-11-16T11:52:45.501Z",
+      "checkedAt": "2026-11-23T13:26:25.619Z",
       "detail": "Could not confirm reachability (TypeError); manual review recommended",
       "entries": [
         {
@@ -2598,7 +2598,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://portswigger.net/web-security",
-      "checkedAt": "2026-11-16T11:52:45.537Z",
+      "checkedAt": "2026-11-23T13:26:25.636Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2632,7 +2632,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://portswigger.net/web-security/access-control",
-      "checkedAt": "2026-11-16T11:52:45.579Z",
+      "checkedAt": "2026-11-23T13:26:25.648Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2648,7 +2648,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality",
-      "checkedAt": "2026-11-16T11:52:45.605Z",
+      "checkedAt": "2026-11-23T13:26:25.682Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2664,7 +2664,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://portswigger.net/web-security/api-testing",
-      "checkedAt": "2026-11-16T11:52:45.708Z",
+      "checkedAt": "2026-11-23T13:26:25.690Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2680,7 +2680,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://portswigger.net/web-security/authentication",
-      "checkedAt": "2026-11-16T11:52:45.728Z",
+      "checkedAt": "2026-11-23T13:26:25.699Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2696,7 +2696,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://portswigger.net/web-security/cross-site-scripting",
-      "checkedAt": "2026-11-16T11:52:45.858Z",
+      "checkedAt": "2026-11-23T13:26:25.712Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2712,7 +2712,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded",
-      "checkedAt": "2026-11-16T11:52:45.891Z",
+      "checkedAt": "2026-11-23T13:26:25.772Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2728,7 +2728,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://portswigger.net/web-security/csrf",
-      "checkedAt": "2026-11-16T11:52:46.011Z",
+      "checkedAt": "2026-11-23T13:26:26.087Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2744,7 +2744,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://portswigger.net/web-security/file-path-traversal",
-      "checkedAt": "2026-11-16T11:52:46.037Z",
+      "checkedAt": "2026-11-23T13:26:26.129Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2760,7 +2760,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://portswigger.net/web-security/file-upload",
-      "checkedAt": "2026-11-16T11:52:46.095Z",
+      "checkedAt": "2026-11-23T13:26:26.188Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2776,7 +2776,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://portswigger.net/web-security/getting-started",
-      "checkedAt": "2026-11-16T11:52:46.178Z",
+      "checkedAt": "2026-11-23T13:26:26.200Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2792,7 +2792,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://portswigger.net/web-security/information-disclosure/exploiting/lab-infoleak-on-debug-page",
-      "checkedAt": "2026-11-16T11:52:46.180Z",
+      "checkedAt": "2026-11-23T13:26:26.200Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2808,7 +2808,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://portswigger.net/web-security/learning-paths/sql-injection",
-      "checkedAt": "2026-11-16T11:52:46.215Z",
+      "checkedAt": "2026-11-23T13:26:26.203Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -2824,7 +2824,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://portswigger.net/web-security/request-smuggling/advanced",
-      "checkedAt": "2026-11-16T11:52:46.219Z",
+      "checkedAt": "2026-11-23T13:26:26.216Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2840,7 +2840,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://portswigger.net/web-security/sql-injection",
-      "checkedAt": "2026-11-16T11:52:46.245Z",
+      "checkedAt": "2026-11-23T13:26:26.219Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2862,7 +2862,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://portswigger.net/web-security/sql-injection/lab-login-bypass",
-      "checkedAt": "2026-11-16T11:52:46.276Z",
+      "checkedAt": "2026-11-23T13:26:26.338Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2878,7 +2878,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data",
-      "checkedAt": "2026-11-16T11:52:46.354Z",
+      "checkedAt": "2026-11-23T13:26:26.449Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2906,7 +2906,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://portswigger.net/web-security/ssrf",
-      "checkedAt": "2026-11-16T11:52:46.414Z",
+      "checkedAt": "2026-11-23T13:26:26.457Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2922,7 +2922,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://portswigger.net/web-security/websockets",
-      "checkedAt": "2026-11-16T11:52:46.429Z",
+      "checkedAt": "2026-11-23T13:26:26.497Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -2936,10 +2936,10 @@
     {
       "url": "https://prime-suspect-crypto-ctf.onrender.com/",
       "status": "healthy",
-      "statusCode": 206,
+      "statusCode": 200,
       "finalUrl": "https://prime-suspect-crypto-ctf.onrender.com/",
-      "checkedAt": "2026-11-16T11:52:46.436Z",
-      "detail": "HTTP range request responded; content not inspected",
+      "checkedAt": "2026-11-23T13:26:26.504Z",
+      "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
           "id": "intel-prime-suspect",
@@ -2954,7 +2954,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://pwn.college/",
-      "checkedAt": "2026-11-16T11:52:46.457Z",
+      "checkedAt": "2026-11-23T13:26:26.509Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -2970,7 +2970,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://rangewx.com/en/labs/analyser-artefacts-navigation",
-      "checkedAt": "2026-11-16T11:52:46.500Z",
+      "checkedAt": "2026-11-23T13:26:26.556Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -2986,7 +2986,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://rangewx.com/en/labs/analyser-donnees-cloud-mobile",
-      "checkedAt": "2026-11-16T11:52:46.574Z",
+      "checkedAt": "2026-11-23T13:26:26.642Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3008,7 +3008,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://rangewx.com/en/labs/analyser-emails-forensiques",
-      "checkedAt": "2026-11-16T11:52:46.579Z",
+      "checkedAt": "2026-11-23T13:26:26.674Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3030,7 +3030,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://rangewx.com/en/labs/analyser-geolocalisation-medias",
-      "checkedAt": "2026-11-16T11:52:46.596Z",
+      "checkedAt": "2026-11-23T13:26:26.699Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3052,7 +3052,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://rangewx.com/en/labs/analyser-journaux-securite",
-      "checkedAt": "2026-11-16T11:52:46.635Z",
+      "checkedAt": "2026-11-23T13:26:26.714Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3074,7 +3074,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://rangewx.com/en/labs/analyser-trafic-reseau",
-      "checkedAt": "2026-11-16T11:52:46.713Z",
+      "checkedAt": "2026-11-23T13:26:26.734Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3090,7 +3090,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://rangewx.com/en/labs/auditer-posture-cloud-openstack-m1",
-      "checkedAt": "2026-11-16T11:52:46.851Z",
+      "checkedAt": "2026-11-23T13:26:26.806Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3118,7 +3118,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://rangewx.com/en/labs/chaine-attaque-multi-etapes-k8s-m1",
-      "checkedAt": "2026-11-16T11:52:46.890Z",
+      "checkedAt": "2026-11-23T13:26:27.110Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3134,7 +3134,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://rangewx.com/en/labs/configurer-roles-acces-cloud",
-      "checkedAt": "2026-11-16T11:52:46.942Z",
+      "checkedAt": "2026-11-23T13:26:27.129Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3162,7 +3162,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://rangewx.com/en/labs/corriger-fuite-stockage-objet-openstack-m1",
-      "checkedAt": "2026-11-16T11:52:46.953Z",
+      "checkedAt": "2026-11-23T13:26:27.153Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3178,7 +3178,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://rangewx.com/en/labs/corriger-groupe-securite-permissif-openstack-m1",
-      "checkedAt": "2026-11-16T11:52:46.956Z",
+      "checkedAt": "2026-11-23T13:26:27.161Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3194,7 +3194,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://rangewx.com/en/labs/corriger-rbac-moindre-privilege-k8s-m1",
-      "checkedAt": "2026-11-16T11:52:46.983Z",
+      "checkedAt": "2026-11-23T13:26:27.229Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3210,7 +3210,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://rangewx.com/en/labs/decouverte-compte-cloud-m1",
-      "checkedAt": "2026-11-16T11:52:47.020Z",
+      "checkedAt": "2026-11-23T13:26:27.233Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3226,7 +3226,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://rangewx.com/en/labs/detecter-attaques-live-wazuh",
-      "checkedAt": "2026-11-16T11:52:47.108Z",
+      "checkedAt": "2026-11-23T13:26:27.259Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3248,7 +3248,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://rangewx.com/en/labs/investiguer-endpoint-windows-compromis-m1",
-      "checkedAt": "2026-11-16T11:52:47.112Z",
+      "checkedAt": "2026-11-23T13:26:27.304Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3264,7 +3264,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://rangewx.com/en/labs/investiguer-routeur-linux-compromis",
-      "checkedAt": "2026-11-16T11:52:47.158Z",
+      "checkedAt": "2026-11-23T13:26:27.627Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3280,7 +3280,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://rangewx.com/en/labs/investiguer-serveur-compromis",
-      "checkedAt": "2026-11-16T11:52:47.165Z",
+      "checkedAt": "2026-11-23T13:26:27.639Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3296,7 +3296,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://rangewx.com/en/scenarios/audit-cloud-gouvernance-capstone-m1",
-      "checkedAt": "2026-11-16T11:52:47.177Z",
+      "checkedAt": "2026-11-23T13:26:27.656Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3318,7 +3318,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://rangewx.com/en/scenarios/phishing-fausse-facture",
-      "checkedAt": "2026-11-16T11:52:47.199Z",
+      "checkedAt": "2026-11-23T13:26:27.700Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3334,7 +3334,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://remnux.org/",
-      "checkedAt": "2026-11-16T11:52:47.267Z",
+      "checkedAt": "2026-11-23T13:26:27.719Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -3350,7 +3350,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://schema.ocsf.io/",
-      "checkedAt": "2026-11-16T11:52:47.301Z",
+      "checkedAt": "2026-11-23T13:26:27.749Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3366,7 +3366,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://securitylab.github.com/",
-      "checkedAt": "2026-11-16T11:52:47.327Z",
+      "checkedAt": "2026-11-23T13:26:27.907Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -3382,7 +3382,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://securityscorecards.dev/",
-      "checkedAt": "2026-11-16T11:52:47.334Z",
+      "checkedAt": "2026-11-23T13:26:27.940Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -3398,7 +3398,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://www.netacad.com/",
-      "checkedAt": "2026-11-16T11:52:47.381Z",
+      "checkedAt": "2026-11-23T13:26:28.071Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -3414,7 +3414,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://slsa.dev/",
-      "checkedAt": "2026-11-16T11:52:47.400Z",
+      "checkedAt": "2026-11-23T13:26:28.078Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -3436,7 +3436,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://threatfox.abuse.ch/",
-      "checkedAt": "2026-11-16T11:52:47.409Z",
+      "checkedAt": "2026-11-23T13:26:28.084Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3452,7 +3452,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://top10.owasp.org/2025/",
-      "checkedAt": "2026-11-16T11:52:47.411Z",
+      "checkedAt": "2026-11-23T13:26:28.112Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -3474,7 +3474,7 @@
       "status": "review",
       "statusCode": 429,
       "finalUrl": "https://tryhackme.com/path/outline/azuresecurity",
-      "checkedAt": "2026-11-16T11:52:47.450Z",
+      "checkedAt": "2026-11-23T13:26:28.127Z",
       "detail": "HTTP 429; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -3490,7 +3490,7 @@
       "status": "review",
       "statusCode": 429,
       "finalUrl": "https://tryhackme.com/path/outline/cybersecurity101",
-      "checkedAt": "2026-11-16T11:52:47.473Z",
+      "checkedAt": "2026-11-23T13:26:28.163Z",
       "detail": "HTTP 429; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -3506,7 +3506,7 @@
       "status": "review",
       "statusCode": 429,
       "finalUrl": "https://tryhackme.com/path/outline/jrpenetrationtester",
-      "checkedAt": "2026-11-16T11:52:47.654Z",
+      "checkedAt": "2026-11-23T13:26:28.192Z",
       "detail": "HTTP 429; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -3522,7 +3522,7 @@
       "status": "review",
       "statusCode": 429,
       "finalUrl": "https://tryhackme.com/path/outline/soclevel1",
-      "checkedAt": "2026-11-16T11:52:47.748Z",
+      "checkedAt": "2026-11-23T13:26:28.219Z",
       "detail": "HTTP 429; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -3538,7 +3538,7 @@
       "status": "review",
       "statusCode": 429,
       "finalUrl": "https://tryhackme.com/r/rooms",
-      "checkedAt": "2026-11-16T11:52:47.750Z",
+      "checkedAt": "2026-11-23T13:26:28.300Z",
       "detail": "HTTP 429; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -3554,7 +3554,7 @@
       "status": "review",
       "statusCode": 429,
       "finalUrl": "https://tryhackme.com/room/alerttriagewithsplunk",
-      "checkedAt": "2026-11-16T11:52:47.761Z",
+      "checkedAt": "2026-11-23T13:26:28.346Z",
       "detail": "HTTP 429; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -3570,7 +3570,7 @@
       "status": "review",
       "statusCode": 429,
       "finalUrl": "https://tryhackme.com/room/btautopsye0",
-      "checkedAt": "2026-11-16T11:52:47.784Z",
+      "checkedAt": "2026-11-23T13:26:28.401Z",
       "detail": "HTTP 429; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -3586,7 +3586,7 @@
       "status": "review",
       "statusCode": 429,
       "finalUrl": "https://tryhackme.com/room/dnsindetail",
-      "checkedAt": "2026-11-16T11:52:47.844Z",
+      "checkedAt": "2026-11-23T13:26:28.405Z",
       "detail": "HTTP 429; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -3602,7 +3602,7 @@
       "status": "review",
       "statusCode": 429,
       "finalUrl": "https://tryhackme.com/room/httpindetail",
-      "checkedAt": "2026-11-16T11:52:47.858Z",
+      "checkedAt": "2026-11-23T13:26:28.408Z",
       "detail": "HTTP 429; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -3618,7 +3618,7 @@
       "status": "review",
       "statusCode": 429,
       "finalUrl": "https://tryhackme.com/room/linuxfundamentalspart1",
-      "checkedAt": "2026-11-16T11:52:47.906Z",
+      "checkedAt": "2026-11-23T13:26:28.439Z",
       "detail": "HTTP 429; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -3634,7 +3634,7 @@
       "status": "review",
       "statusCode": 429,
       "finalUrl": "https://tryhackme.com/room/linuxloggingforsoc",
-      "checkedAt": "2026-11-16T11:52:47.933Z",
+      "checkedAt": "2026-11-23T13:26:28.503Z",
       "detail": "HTTP 429; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -3650,7 +3650,7 @@
       "status": "review",
       "statusCode": 429,
       "finalUrl": "https://tryhackme.com/room/loganalysiswithsiem",
-      "checkedAt": "2026-11-16T11:52:47.970Z",
+      "checkedAt": "2026-11-23T13:26:28.538Z",
       "detail": "HTTP 429; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -3666,7 +3666,7 @@
       "status": "review",
       "statusCode": 429,
       "finalUrl": "https://tryhackme.com/room/loglesshunt",
-      "checkedAt": "2026-11-16T11:52:47.971Z",
+      "checkedAt": "2026-11-23T13:26:28.547Z",
       "detail": "HTTP 429; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -3682,7 +3682,7 @@
       "status": "review",
       "statusCode": 429,
       "finalUrl": "https://tryhackme.com/room/splunkexploringspl",
-      "checkedAt": "2026-11-16T11:52:48.003Z",
+      "checkedAt": "2026-11-23T13:26:28.556Z",
       "detail": "HTTP 429; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -3704,7 +3704,7 @@
       "status": "review",
       "statusCode": 429,
       "finalUrl": "https://tryhackme.com/room/windowscommandline",
-      "checkedAt": "2026-11-16T11:52:48.045Z",
+      "checkedAt": "2026-11-23T13:26:28.583Z",
       "detail": "HTTP 429; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -3720,7 +3720,7 @@
       "status": "review",
       "statusCode": 429,
       "finalUrl": "https://tryhackme.com/room/windowseventlogs",
-      "checkedAt": "2026-11-16T11:52:48.089Z",
+      "checkedAt": "2026-11-23T13:26:28.631Z",
       "detail": "HTTP 429; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -3736,7 +3736,7 @@
       "status": "review",
       "statusCode": 429,
       "finalUrl": "https://tryhackme.com/room/windowsloggingforsoc",
-      "checkedAt": "2026-11-16T11:52:48.095Z",
+      "checkedAt": "2026-11-23T13:26:28.656Z",
       "detail": "HTTP 429; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -3758,7 +3758,7 @@
       "status": "review",
       "statusCode": 429,
       "finalUrl": "https://tryhackme.com/room/windowspowershell",
-      "checkedAt": "2026-11-16T11:52:48.121Z",
+      "checkedAt": "2026-11-23T13:26:28.696Z",
       "detail": "HTTP 429; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -3774,7 +3774,7 @@
       "status": "review",
       "statusCode": 429,
       "finalUrl": "https://tryhackme.com/room/windowsthreatdetection1",
-      "checkedAt": "2026-11-16T11:52:48.126Z",
+      "checkedAt": "2026-11-23T13:26:28.750Z",
       "detail": "HTTP 429; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -3796,7 +3796,7 @@
       "status": "review",
       "statusCode": 429,
       "finalUrl": "https://tryhackme.com/room/wiresharkthebasics",
-      "checkedAt": "2026-11-16T11:52:48.130Z",
+      "checkedAt": "2026-11-23T13:26:28.758Z",
       "detail": "HTTP 429; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -3818,7 +3818,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://urlscan.io/docs/",
-      "checkedAt": "2026-11-16T11:52:48.131Z",
+      "checkedAt": "2026-11-23T13:26:28.766Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3834,7 +3834,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://volatility3.readthedocs.io/en/stable/",
-      "checkedAt": "2026-11-16T11:52:48.132Z",
+      "checkedAt": "2026-11-23T13:26:28.779Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3856,7 +3856,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://volatility3.readthedocs.io/en/latest/",
-      "checkedAt": "2026-11-16T11:52:48.137Z",
+      "checkedAt": "2026-11-23T13:26:28.780Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3872,7 +3872,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://www.athena-ctf.com/practice",
-      "checkedAt": "2026-11-16T11:52:48.144Z",
+      "checkedAt": "2026-11-23T13:26:28.803Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -3900,7 +3900,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.atomicredteam.io/docs/atomic-red-team",
-      "checkedAt": "2026-11-16T11:52:48.165Z",
+      "checkedAt": "2026-11-23T13:26:28.825Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3916,7 +3916,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.autopsy.com/",
-      "checkedAt": "2026-11-16T11:52:48.166Z",
+      "checkedAt": "2026-11-23T13:26:28.826Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3932,7 +3932,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.autopsy.com/support-thank-you/",
-      "checkedAt": "2026-11-16T11:52:48.194Z",
+      "checkedAt": "2026-11-23T13:26:28.833Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3948,7 +3948,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.autopsy.com/training/",
-      "checkedAt": "2026-11-16T11:52:48.301Z",
+      "checkedAt": "2026-11-23T13:26:28.840Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3964,7 +3964,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://www.circl.lu/doc/misp/",
-      "checkedAt": "2026-11-16T11:52:48.313Z",
+      "checkedAt": "2026-11-23T13:26:28.972Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -3980,7 +3980,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.cisa.gov/cross-sector-cybersecurity-performance-goals",
-      "checkedAt": "2026-11-16T11:52:48.399Z",
+      "checkedAt": "2026-11-23T13:26:29.021Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -3996,7 +3996,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.cisa.gov/topics/industrial-control-systems/ics-training-calendar",
-      "checkedAt": "2026-11-16T11:52:48.453Z",
+      "checkedAt": "2026-11-23T13:26:29.027Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4012,7 +4012,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-      "checkedAt": "2026-11-16T11:52:48.508Z",
+      "checkedAt": "2026-11-23T13:26:29.087Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4028,7 +4028,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.cisa.gov/resources-tools",
-      "checkedAt": "2026-11-16T11:52:48.509Z",
+      "checkedAt": "2026-11-23T13:26:29.140Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4044,7 +4044,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.cisa.gov/securebydesign",
-      "checkedAt": "2026-11-16T11:52:48.562Z",
+      "checkedAt": "2026-11-23T13:26:29.182Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4060,7 +4060,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://www.cisa.gov/sites/default/files/publications/19_1106_cisa_CISA_Cyber_Essentials_S508C_1.pdf",
-      "checkedAt": "2026-11-16T11:52:48.578Z",
+      "checkedAt": "2026-11-23T13:26:29.195Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -4076,7 +4076,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.cisa.gov/topics/industrial-control-systems/ics-training-calendar",
-      "checkedAt": "2026-11-16T11:52:48.580Z",
+      "checkedAt": "2026-11-23T13:26:29.235Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4092,7 +4092,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.cisco.com/site/us/en/learn/training-certifications/certifications/enterprise/ccna/index.html",
-      "checkedAt": "2026-11-16T11:52:48.583Z",
+      "checkedAt": "2026-11-23T13:26:29.269Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4108,7 +4108,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.cisecurity.org/cis-benchmarks",
-      "checkedAt": "2026-11-16T11:52:48.596Z",
+      "checkedAt": "2026-11-23T13:26:29.273Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4124,7 +4124,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.cisecurity.org/controls",
-      "checkedAt": "2026-11-16T11:52:48.633Z",
+      "checkedAt": "2026-11-23T13:26:29.274Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4146,7 +4146,7 @@
       "status": "review",
       "statusCode": 403,
       "finalUrl": "https://www.classcentral.com/course/youtube-but-is-it-malware-431619",
-      "checkedAt": "2026-11-16T11:52:48.694Z",
+      "checkedAt": "2026-11-23T13:26:29.275Z",
       "detail": "HTTP 403; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -4162,7 +4162,7 @@
       "status": "review",
       "statusCode": 403,
       "finalUrl": "https://www.classcentral.com/course/youtube-detecting-malicious-files-with-yara-rules-as-they-traverse-the-network-163574",
-      "checkedAt": "2026-11-16T11:52:48.699Z",
+      "checkedAt": "2026-11-23T13:26:29.281Z",
       "detail": "HTTP 403; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -4178,7 +4178,7 @@
       "status": "review",
       "statusCode": 403,
       "finalUrl": "https://www.cloudflare.com/learning/",
-      "checkedAt": "2026-11-16T11:52:48.711Z",
+      "checkedAt": "2026-11-23T13:26:29.312Z",
       "detail": "HTTP 403; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -4194,7 +4194,7 @@
       "status": "review",
       "statusCode": 403,
       "finalUrl": "https://www.cloudflare.com/learning/dns/what-is-dns/",
-      "checkedAt": "2026-11-16T11:52:48.749Z",
+      "checkedAt": "2026-11-23T13:26:29.328Z",
       "detail": "HTTP 403; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -4210,7 +4210,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.comptia.org/en-us/certifications/security/",
-      "checkedAt": "2026-11-16T11:52:48.825Z",
+      "checkedAt": "2026-11-23T13:26:29.397Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4226,7 +4226,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.coursera.org/professional-certificates/google-cybersecurity",
-      "checkedAt": "2026-11-16T11:52:48.842Z",
+      "checkedAt": "2026-11-23T13:26:29.407Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4242,7 +4242,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://www.cryptool.org/en/",
-      "checkedAt": "2026-11-16T11:52:48.864Z",
+      "checkedAt": "2026-11-23T13:26:29.432Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -4256,10 +4256,10 @@
     {
       "url": "https://www.cyberseek.org/",
       "status": "healthy",
-      "statusCode": 206,
+      "statusCode": 200,
       "finalUrl": "https://www.cyberseek.org/",
-      "checkedAt": "2026-11-16T11:52:48.865Z",
-      "detail": "HTTP range request responded; content not inspected",
+      "checkedAt": "2026-11-23T13:26:29.433Z",
+      "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
           "id": "adv-cyberseek",
@@ -4274,7 +4274,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://www.damnvulnerabledefi.xyz/",
-      "checkedAt": "2026-11-16T11:52:48.871Z",
+      "checkedAt": "2026-11-23T13:26:29.437Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -4296,7 +4296,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.elastic.co/security-labs",
-      "checkedAt": "2026-11-16T11:52:48.873Z",
+      "checkedAt": "2026-11-23T13:26:29.445Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4312,7 +4312,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://www.enisa.europa.eu/topics/skills-and-competences",
-      "checkedAt": "2026-11-16T11:52:48.874Z",
+      "checkedAt": "2026-11-23T13:26:29.448Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -4328,7 +4328,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://www.isc2.org/certifications/cc",
-      "checkedAt": "2026-11-16T11:52:49.344Z",
+      "checkedAt": "2026-11-23T13:26:29.481Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -4344,7 +4344,7 @@
       "status": "review",
       "statusCode": null,
       "finalUrl": null,
-      "checkedAt": "2026-11-16T11:52:49.377Z",
+      "checkedAt": "2026-11-23T13:26:29.831Z",
       "detail": "Could not confirm reachability (TypeError); manual review recommended",
       "entries": [
         {
@@ -4360,7 +4360,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://www.malware-traffic-analysis.net/",
-      "checkedAt": "2026-11-16T11:52:49.567Z",
+      "checkedAt": "2026-11-23T13:26:30.041Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -4380,10 +4380,10 @@
     {
       "url": "https://www.nist.gov/cyberframework",
       "status": "healthy",
-      "statusCode": 206,
+      "statusCode": 200,
       "finalUrl": "https://www.nist.gov/cyberframework",
-      "checkedAt": "2026-11-16T11:52:49.571Z",
-      "detail": "HTTP range request responded; content not inspected",
+      "checkedAt": "2026-11-23T13:26:30.057Z",
+      "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
           "id": "nist-csf-2",
@@ -4414,10 +4414,10 @@
     {
       "url": "https://www.nist.gov/cyberframework/profiles",
       "status": "healthy",
-      "statusCode": 206,
+      "statusCode": 200,
       "finalUrl": "https://www.nist.gov/cyberframework/profiles",
-      "checkedAt": "2026-11-16T11:52:49.584Z",
-      "detail": "HTTP range request responded; content not inspected",
+      "checkedAt": "2026-11-23T13:26:30.080Z",
+      "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
           "id": "grc-nist-profile",
@@ -4442,10 +4442,10 @@
     {
       "url": "https://www.nist.gov/cyberframework/quick-start-guides",
       "status": "healthy",
-      "statusCode": 206,
+      "statusCode": 200,
       "finalUrl": "https://www.nist.gov/cyberframework/quick-start-guides",
-      "checkedAt": "2026-11-16T11:52:49.674Z",
-      "detail": "HTTP range request responded; content not inspected",
+      "checkedAt": "2026-11-23T13:26:30.190Z",
+      "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
           "id": "nist-csf-quickstart",
@@ -4458,10 +4458,10 @@
     {
       "url": "https://www.nist.gov/cyberframework/videos",
       "status": "healthy",
-      "statusCode": 206,
+      "statusCode": 200,
       "finalUrl": "https://www.nist.gov/cyberframework/videos",
-      "checkedAt": "2026-11-16T11:52:49.676Z",
-      "detail": "HTTP range request responded; content not inspected",
+      "checkedAt": "2026-11-23T13:26:30.201Z",
+      "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
           "id": "nist-official-video-series",
@@ -4480,10 +4480,10 @@
     {
       "url": "https://www.nist.gov/itl/ai-risk-management-framework",
       "status": "healthy",
-      "statusCode": 206,
+      "statusCode": 200,
       "finalUrl": "https://www.nist.gov/itl/ai-risk-management-framework",
-      "checkedAt": "2026-11-16T11:52:49.690Z",
-      "detail": "HTTP range request responded; content not inspected",
+      "checkedAt": "2026-11-23T13:26:30.203Z",
+      "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
           "id": "adv-nist-ai-rmf",
@@ -4496,10 +4496,10 @@
     {
       "url": "https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center",
       "status": "healthy",
-      "statusCode": 206,
+      "statusCode": 200,
       "finalUrl": "https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center",
-      "checkedAt": "2026-11-16T11:52:49.699Z",
-      "detail": "HTTP range request responded; content not inspected",
+      "checkedAt": "2026-11-23T13:26:30.239Z",
+      "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
           "id": "adv-nist-nice-roles",
@@ -4512,10 +4512,10 @@
     {
       "url": "https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center/international-cybersecurity-workforce",
       "status": "healthy",
-      "statusCode": 206,
+      "statusCode": 200,
       "finalUrl": "https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center/resources/international-cybersecurity",
-      "checkedAt": "2026-11-16T11:52:49.716Z",
-      "detail": "HTTP range request responded; content not inspected",
+      "checkedAt": "2026-11-23T13:26:30.249Z",
+      "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
           "id": "adv-nist-nice-international",
@@ -4530,7 +4530,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://www.nist.gov/itl/applied-cybersecurity/nice/nice-framework-resource-center/resources/learner-resources",
-      "checkedAt": "2026-11-16T11:52:49.748Z",
+      "checkedAt": "2026-11-23T13:26:30.256Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -4544,10 +4544,10 @@
     {
       "url": "https://www.nist.gov/itl/applied-cybersecurity/nice/resources/cyber-careers",
       "status": "healthy",
-      "statusCode": 206,
+      "statusCode": 200,
       "finalUrl": "https://www.nist.gov/itl/applied-cybersecurity/nice/resources/cyber-careers",
-      "checkedAt": "2026-11-16T11:52:49.756Z",
-      "detail": "HTTP range request responded; content not inspected",
+      "checkedAt": "2026-11-23T13:26:30.259Z",
+      "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
           "id": "adv-nice-career-pathways",
@@ -4560,10 +4560,10 @@
     {
       "url": "https://www.nist.gov/itl/applied-cybersecurity/nice/resources/online-learning-content",
       "status": "healthy",
-      "statusCode": 206,
+      "statusCode": 200,
       "finalUrl": "https://www.nist.gov/itl/applied-cybersecurity/nice/free-and-low-cost-online-cybersecurity-learning-content",
-      "checkedAt": "2026-11-16T11:52:49.797Z",
-      "detail": "HTTP range request responded; content not inspected",
+      "checkedAt": "2026-11-23T13:26:30.265Z",
+      "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
           "id": "adv-nist-low-cost-learning",
@@ -4576,10 +4576,10 @@
     {
       "url": "https://www.nist.gov/privacy-framework",
       "status": "healthy",
-      "statusCode": 206,
+      "statusCode": 200,
       "finalUrl": "https://www.nist.gov/privacy-framework",
-      "checkedAt": "2026-11-16T11:52:49.803Z",
-      "detail": "HTTP range request responded; content not inspected",
+      "checkedAt": "2026-11-23T13:26:30.277Z",
+      "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
           "id": "adv-nist-privacy-framework",
@@ -4594,7 +4594,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://www.practicalnetworking.net/",
-      "checkedAt": "2026-11-16T11:52:49.827Z",
+      "checkedAt": "2026-11-23T13:26:30.293Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -4610,7 +4610,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://www.practicalnetworking.net/stand-alone/subnetting-mastery/",
-      "checkedAt": "2026-11-16T11:52:49.836Z",
+      "checkedAt": "2026-11-23T13:26:30.306Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -4624,10 +4624,10 @@
     {
       "url": "https://www.splunk.com/en_us/blog/learn/splunk-tutorials.html",
       "status": "healthy",
-      "statusCode": 206,
+      "statusCode": 200,
       "finalUrl": "https://www.splunk.com/en_us/blog/learn/splunk-tutorials.html",
-      "checkedAt": "2026-11-16T11:52:49.886Z",
-      "detail": "HTTP range request responded; content not inspected",
+      "checkedAt": "2026-11-23T13:26:30.349Z",
+      "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
           "id": "splunk-search-basics-official-docs",
@@ -4642,7 +4642,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.splunk.com/en_us/training/free-courses/overview.html",
-      "checkedAt": "2026-11-16T11:52:49.930Z",
+      "checkedAt": "2026-11-23T13:26:30.351Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4676,7 +4676,7 @@
       "status": "review",
       "statusCode": 403,
       "finalUrl": "https://www.srxlabs.com/learning/",
-      "checkedAt": "2026-11-16T11:52:50.046Z",
+      "checkedAt": "2026-11-23T13:26:30.407Z",
       "detail": "HTTP 403; access restriction or automated-request blocking may apply",
       "entries": [
         {
@@ -4692,7 +4692,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://www.stratosphereips.org/datasets-ctu13",
-      "checkedAt": "2026-11-16T11:52:50.048Z",
+      "checkedAt": "2026-11-23T13:26:30.416Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -4708,7 +4708,7 @@
       "status": "review",
       "statusCode": null,
       "finalUrl": null,
-      "checkedAt": "2026-11-16T11:52:50.109Z",
+      "checkedAt": "2026-11-23T13:26:30.431Z",
       "detail": "Could not confirm reachability (TypeError); manual review recommended",
       "entries": [
         {
@@ -4724,7 +4724,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://www.unb.ca/cic/datasets/ids-2017.html",
-      "checkedAt": "2026-11-16T11:52:50.124Z",
+      "checkedAt": "2026-11-23T13:26:30.500Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -4738,10 +4738,10 @@
     {
       "url": "https://www.wireshark.org/docs/",
       "status": "healthy",
-      "statusCode": 206,
+      "statusCode": 200,
       "finalUrl": "https://www.wireshark.org/docs/",
-      "checkedAt": "2026-11-16T11:52:50.164Z",
-      "detail": "HTTP range request responded; content not inspected",
+      "checkedAt": "2026-11-23T13:26:30.556Z",
+      "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
           "id": "wireshark-beginner-2026-official-docs",
@@ -4760,10 +4760,10 @@
     {
       "url": "https://www.wireshark.org/docs/wsug_html_chunked/",
       "status": "healthy",
-      "statusCode": 206,
+      "statusCode": 200,
       "finalUrl": "https://www.wireshark.org/docs/wsug_html_chunked/",
-      "checkedAt": "2026-11-16T11:52:50.178Z",
-      "detail": "HTTP range request responded; content not inspected",
+      "checkedAt": "2026-11-23T13:26:30.571Z",
+      "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
           "id": "adv-wireshark-guide",
@@ -4778,7 +4778,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.wireshark.org/resources",
-      "checkedAt": "2026-11-16T11:52:50.211Z",
+      "checkedAt": "2026-11-23T13:26:30.672Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4794,7 +4794,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/playlist?list=PLIFyRwBY_4bQUE4IB5c4VPRyDoLgOdExE",
-      "checkedAt": "2026-11-16T11:52:50.242Z",
+      "checkedAt": "2026-11-23T13:26:30.685Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4810,7 +4810,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=-fV7jZwZuGQ",
-      "checkedAt": "2026-11-16T11:52:50.254Z",
+      "checkedAt": "2026-11-23T13:26:30.703Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4826,7 +4826,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=-jhZwIRIIrc",
-      "checkedAt": "2026-11-16T11:52:50.294Z",
+      "checkedAt": "2026-11-23T13:26:30.788Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4842,7 +4842,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=2EUxOc_LNd8",
-      "checkedAt": "2026-11-16T11:52:50.387Z",
+      "checkedAt": "2026-11-23T13:26:30.806Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4858,7 +4858,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=2SSZs7coCKQ",
-      "checkedAt": "2026-11-16T11:52:50.399Z",
+      "checkedAt": "2026-11-23T13:26:30.847Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4874,7 +4874,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=2SYknklVHqU",
-      "checkedAt": "2026-11-16T11:52:50.464Z",
+      "checkedAt": "2026-11-23T13:26:30.872Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4890,7 +4890,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=3Kq1MIfTWCE",
-      "checkedAt": "2026-11-16T11:52:50.471Z",
+      "checkedAt": "2026-11-23T13:26:30.875Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4906,7 +4906,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=6ZvyZhk84ts",
-      "checkedAt": "2026-11-16T11:52:50.473Z",
+      "checkedAt": "2026-11-23T13:26:30.895Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4922,7 +4922,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=7An7BB-CcQI",
-      "checkedAt": "2026-11-16T11:52:50.474Z",
+      "checkedAt": "2026-11-23T13:26:30.908Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4938,7 +4938,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=9RfsRn7m7OE",
-      "checkedAt": "2026-11-16T11:52:50.493Z",
+      "checkedAt": "2026-11-23T13:26:30.919Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4954,7 +4954,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=AJ1XS_3Waas",
-      "checkedAt": "2026-11-16T11:52:50.501Z",
+      "checkedAt": "2026-11-23T13:26:30.948Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4970,7 +4970,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=B-MwKnNBh5s",
-      "checkedAt": "2026-11-16T11:52:50.544Z",
+      "checkedAt": "2026-11-23T13:26:30.970Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -4986,7 +4986,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=Bw__xplbx1o",
-      "checkedAt": "2026-11-16T11:52:50.554Z",
+      "checkedAt": "2026-11-23T13:26:30.995Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5002,7 +5002,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=BWZ-MHIhqjM",
-      "checkedAt": "2026-11-16T11:52:50.555Z",
+      "checkedAt": "2026-11-23T13:26:31.008Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5018,7 +5018,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=dHthJNFt-NI",
-      "checkedAt": "2026-11-16T11:52:50.563Z",
+      "checkedAt": "2026-11-23T13:26:31.008Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5034,7 +5034,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=F61G2CMbkos",
-      "checkedAt": "2026-11-16T11:52:50.594Z",
+      "checkedAt": "2026-11-23T13:26:31.016Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5050,7 +5050,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=gLJdrXPn0ns",
-      "checkedAt": "2026-11-16T11:52:50.603Z",
+      "checkedAt": "2026-11-23T13:26:31.029Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5066,7 +5066,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=gWclBdzBzDM",
-      "checkedAt": "2026-11-16T11:52:50.625Z",
+      "checkedAt": "2026-11-23T13:26:31.050Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5082,7 +5082,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=hF95PiItWtM",
-      "checkedAt": "2026-11-16T11:52:50.631Z",
+      "checkedAt": "2026-11-23T13:26:31.082Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5098,7 +5098,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=hqfmOaFGDoo",
-      "checkedAt": "2026-11-16T11:52:50.636Z",
+      "checkedAt": "2026-11-23T13:26:31.094Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5114,7 +5114,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=IHrGresKu2w",
-      "checkedAt": "2026-11-16T11:52:50.641Z",
+      "checkedAt": "2026-11-23T13:26:31.121Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5130,7 +5130,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=JB73TuX9DVs",
-      "checkedAt": "2026-11-16T11:52:50.665Z",
+      "checkedAt": "2026-11-23T13:26:31.123Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5146,7 +5146,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=jnM0KoRNO8o",
-      "checkedAt": "2026-11-16T11:52:50.678Z",
+      "checkedAt": "2026-11-23T13:26:31.145Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5162,7 +5162,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=JSP-yOBRbrg",
-      "checkedAt": "2026-11-16T11:52:50.703Z",
+      "checkedAt": "2026-11-23T13:26:31.151Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5178,7 +5178,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=lvSoxOMg5_c",
-      "checkedAt": "2026-11-16T11:52:50.704Z",
+      "checkedAt": "2026-11-23T13:26:31.161Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5194,7 +5194,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=NdTu3bDTBbo",
-      "checkedAt": "2026-11-16T11:52:50.705Z",
+      "checkedAt": "2026-11-23T13:26:31.191Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5210,7 +5210,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=nMGbK-ALaVg",
-      "checkedAt": "2026-11-16T11:52:50.712Z",
+      "checkedAt": "2026-11-23T13:26:31.223Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5226,7 +5226,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=pPPiaGU12Og",
-      "checkedAt": "2026-11-16T11:52:50.749Z",
+      "checkedAt": "2026-11-23T13:26:31.226Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5242,7 +5242,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=pZ2Nu8LqJvE",
-      "checkedAt": "2026-11-16T11:52:50.764Z",
+      "checkedAt": "2026-11-23T13:26:31.238Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5258,7 +5258,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=QaUxdtNfbd8",
-      "checkedAt": "2026-11-16T11:52:50.769Z",
+      "checkedAt": "2026-11-23T13:26:31.261Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5274,7 +5274,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=QgLkJ_J2pp4",
-      "checkedAt": "2026-11-16T11:52:50.770Z",
+      "checkedAt": "2026-11-23T13:26:31.263Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5290,7 +5290,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=QjPFjd8GJWY",
-      "checkedAt": "2026-11-16T11:52:50.772Z",
+      "checkedAt": "2026-11-23T13:26:31.274Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5306,7 +5306,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=QT81wcuoRFY",
-      "checkedAt": "2026-11-16T11:52:50.774Z",
+      "checkedAt": "2026-11-23T13:26:31.308Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5322,7 +5322,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=qwA6MmbeGNo",
-      "checkedAt": "2026-11-16T11:52:50.793Z",
+      "checkedAt": "2026-11-23T13:26:31.310Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5338,7 +5338,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=qyNWK6k-W1Y",
-      "checkedAt": "2026-11-16T11:52:50.830Z",
+      "checkedAt": "2026-11-23T13:26:31.333Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5354,7 +5354,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=Sopg0HJsk78",
-      "checkedAt": "2026-11-16T11:52:50.831Z",
+      "checkedAt": "2026-11-23T13:26:31.341Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5370,7 +5370,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=sZgYmie-DpY",
-      "checkedAt": "2026-11-16T11:52:50.836Z",
+      "checkedAt": "2026-11-23T13:26:31.344Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5386,7 +5386,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=tDgxcJ52Dg8",
-      "checkedAt": "2026-11-16T11:52:50.841Z",
+      "checkedAt": "2026-11-23T13:26:31.355Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5402,7 +5402,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=Uk3DEgY5Ue8",
-      "checkedAt": "2026-11-16T11:52:50.846Z",
+      "checkedAt": "2026-11-23T13:26:31.380Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5418,7 +5418,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=vd5lgIJKmYs",
-      "checkedAt": "2026-11-16T11:52:50.853Z",
+      "checkedAt": "2026-11-23T13:26:31.401Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5434,7 +5434,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=vnlF4nZ2AL4",
-      "checkedAt": "2026-11-16T11:52:50.886Z",
+      "checkedAt": "2026-11-23T13:26:31.425Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5450,7 +5450,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=VNp35Uw_bSM",
-      "checkedAt": "2026-11-16T11:52:50.904Z",
+      "checkedAt": "2026-11-23T13:26:31.434Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5466,7 +5466,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=wtu-rAqk3ag",
-      "checkedAt": "2026-11-16T11:52:50.905Z",
+      "checkedAt": "2026-11-23T13:26:31.438Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5482,7 +5482,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=xiUvOGr7Zfg",
-      "checkedAt": "2026-11-16T11:52:50.913Z",
+      "checkedAt": "2026-11-23T13:26:31.440Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5498,7 +5498,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=XRwI88i7Hjw",
-      "checkedAt": "2026-11-16T11:52:50.920Z",
+      "checkedAt": "2026-11-23T13:26:31.483Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5514,7 +5514,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=YM3UWuvIJyc",
-      "checkedAt": "2026-11-16T11:52:50.947Z",
+      "checkedAt": "2026-11-23T13:26:31.500Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5530,7 +5530,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=YTnyeyrFWdE",
-      "checkedAt": "2026-11-16T11:52:50.954Z",
+      "checkedAt": "2026-11-23T13:26:31.511Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5546,7 +5546,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=Yxv1suJYMI8",
-      "checkedAt": "2026-11-16T11:52:50.964Z",
+      "checkedAt": "2026-11-23T13:26:31.522Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5562,7 +5562,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://www.youtube.com/watch?v=zzpz3VYKzUw",
-      "checkedAt": "2026-11-16T11:52:50.967Z",
+      "checkedAt": "2026-11-23T13:26:31.525Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5578,7 +5578,7 @@
       "status": "healthy",
       "statusCode": 206,
       "finalUrl": "https://www.zaproxy.org/docs/",
-      "checkedAt": "2026-11-16T11:52:50.978Z",
+      "checkedAt": "2026-11-23T13:26:31.537Z",
       "detail": "HTTP range request responded; content not inspected",
       "entries": [
         {
@@ -5594,7 +5594,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://yara.readthedocs.io/en/stable/",
-      "checkedAt": "2026-11-16T11:52:50.979Z",
+      "checkedAt": "2026-11-23T13:26:31.569Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5628,7 +5628,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://zeek.org/events/webinars/",
-      "checkedAt": "2026-11-16T11:52:50.985Z",
+      "checkedAt": "2026-11-23T13:26:31.580Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
@@ -5668,7 +5668,7 @@
       "status": "healthy",
       "statusCode": 200,
       "finalUrl": "https://zscaler.networkershome.com/",
-      "checkedAt": "2026-11-16T11:52:51.017Z",
+      "checkedAt": "2026-11-23T13:26:31.583Z",
       "detail": "HTTP 200; content and access terms not verified",
       "entries": [
         {
