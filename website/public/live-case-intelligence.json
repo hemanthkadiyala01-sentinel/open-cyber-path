@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-24T13:49:46Z",
+  "generatedAt": "2026-11-24T23:55:00Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -18,7 +18,7 @@
       "url": "https://www.bleepingcomputer.com/rss-feeds/",
       "description": "Independent global incident and vulnerability reporting; cross-check material claims",
       "status": "ok",
-      "itemCount": 10
+      "itemCount": 13
     },
     {
       "id": "therecord",
@@ -26,7 +26,7 @@
       "url": "https://therecord.media/",
       "description": "Global reporting on breaches, cybercrime, and threat activity; reports are not automatically primary confirmation",
       "status": "ok",
-      "itemCount": 5
+      "itemCount": 4
     },
     {
       "id": "thehackernews",
@@ -50,7 +50,7 @@
       "url": "https://www.cisa.gov/cybersecurity-advisories",
       "description": "Official US cybersecurity advisories; an advisory is not proof of a particular victim compromise",
       "status": "ok",
-      "itemCount": 61,
+      "itemCount": 62,
       "feedEndpoints": [
         {
           "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
@@ -80,6 +80,188 @@
     }
   ],
   "items": [
+    {
+      "id": "bleepingcomputer-rackspace-shuts-down-spot-cloud-platform-after-security-breach",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Rackspace shuts down Spot cloud platform after security breach",
+      "publishedAt": "2026-11-24T21:37:30Z",
+      "url": "https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/",
+      "summary": "Rackspace is shutting down its Rackspace Spot cloud platform after a security breach allowed hackers to access customer Kubernetes clusters and secrets, giving customers until December 8 to migrate their services and download their data. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-colorado-says-cyberattack-took-down-mycolorado-app-warns-150-000-had-data-stolen",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "Colorado says cyberattack took down myColorado app, warns 150,000 had data stolen",
+      "publishedAt": "2026-11-24T20:52:00Z",
+      "url": "https://therecord.media/mycolorado-app-down-data-breach",
+      "summary": "Cybercriminals likely stole data from 150,000 users of myColorado, which residents typically use for digital identification, document storage and accessing state government services.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-new-inception-extortion-gang-launches-large-scale-vishing-campaign",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "New Inception extortion gang launches large-scale vishing campaign",
+      "publishedAt": "2026-11-24T20:21:20Z",
+      "url": "https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/",
+      "summary": "A newly formed data extortion group named 'Inception' has been linked to a large-scale campaign that targets single sign-on (SSO) credentials of multiple global brands and firms. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "third-party-breach",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-turnitin-discloses-cyberattack-affecting-customer-facing-systems",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Turnitin discloses cyberattack affecting customer-facing systems",
+      "publishedAt": "2026-11-24T18:59:52Z",
+      "url": "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/",
+      "summary": "Turnitin disclosed via a statement from its CEO, Chris Caren, that it recently detected unauthorized activity involving certain customer-facing systems. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-radware-discloses-breach-exposing-customer-cloud-access-keys",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Radware discloses breach exposing customer cloud access keys",
+      "publishedAt": "2026-11-24T17:49:05Z",
+      "url": "https://www.bleepingcomputer.com/news/security/radware-discloses-breach-exposing-customer-cloud-access-keys/",
+      "summary": "Cybersecurity company Radware says attackers gained access to some of its customers' account details and cloud access keys through an unsecured internal Cloud WAF (Web Application Firewall) management API that was left exposed online. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "identity-cloud",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-lawmakers-warn-id-verification-companies-to-bolster-security-after-september-hack",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "Lawmakers warn ID verification companies to bolster security after September hack",
+      "publishedAt": "2026-11-24T17:49:00Z",
+      "url": "https://therecord.media/idscan-data-breach-warning-congressional-letter",
+      "summary": "A bicameral, bipartisan letter from lawmakers said identity verification companies still have significant security work to do in the wake of a data breach at IDscan in September.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "third-party-breach",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-iran-aligned-volant-manticore-uses-ipfs-based-kuboshell-backdoor-in-espionage-campaigns",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
+      "publishedAt": "2026-11-24T16:54:07Z",
+      "url": "https://thehackernews.com/2026/11/iran-aligned-volant-manticore-uses-ipfs.html",
+      "summary": "A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus. Central to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File System (IPFS) for command-and-control (C2) and deploys Homa, a post-compromise framework that's a reimplementation of",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-shinyhunters-claims-to-return-after-fbi-arrests-uses-old-pgp-keys-as-proof",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "ShinyHunters claims to return after FBI arrests, uses old PGP keys as proof",
+      "publishedAt": "2026-11-24T16:30:19Z",
+      "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-resurfaces-after-fbi-arrests-uses-old-pgp-keys-as-proof/",
+      "summary": "The ShinyHunters extortion gang claims to have returned in posts on a new data leak site after a series of arrests over the past two months targeting alleged members. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "third-party-breach",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-european-commission-confirms-data-theft-in-eu-academy-breach",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "European Commission confirms data theft in EU Academy breach",
+      "publishedAt": "2026-11-24T16:22:44Z",
+      "url": "https://www.bleepingcomputer.com/news/security/european-commission-confirms-data-theft-in-eu-academy-breach/",
+      "summary": "The European Commission, the European Union's main executive body, has confirmed that attackers breached its EU Academy online learning hub and stole the personal data of an undisclosed number of users. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-hackers-compromise-check-point-servers-in-22-organizations",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Hackers compromise Check Point Servers in 22 organizations",
+      "publishedAt": "2026-11-24T16:15:23Z",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-compromise-check-point-servers-in-22-organizations/",
+      "summary": "Threat actors have exploited multiple vulnerabilities to compromise two dozen Check Point Security management servers in an ongoing campaign targeting 22 organizations. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-carnegie-endowment-for-international-peace-says-third-party-breach-leaked-donation-info",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "Carnegie Endowment for International Peace says third-party breach leaked donation info",
+      "publishedAt": "2026-11-24T16:00:00Z",
+      "url": "https://therecord.media/carnegie-endowment-data-breach",
+      "summary": "Some donors to the Carnegie Endowment for International Peace had their information leaked due to a cyberattack on a third-party vendor named Soapbox Engage.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "third-party-breach",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "From Vulnerability Noise to Resilience: Rethinking Security in the AI Era",
+      "publishedAt": "2026-11-24T15:01:11Z",
+      "url": "https://www.bleepingcomputer.com/news/security/from-vulnerability-noise-to-resilience-rethinking-security-in-the-ai-era/",
+      "summary": "AI-driven development is adding complexity to software supply chains, leaving security teams overwhelmed by vulnerabilities that may pose little actual risk. RapidFort explains how runtime visibility, container hardening, and automated remediation can reduce vulnerability noise and improve software resilience. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "dependency-compromise",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-cisa-warns-of-exploited-n-able-bug-as-company-restores-email-platform",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "CISA warns of exploited N-able bug as company restores email platform",
+      "publishedAt": "2026-11-24T15:00:00Z",
+      "url": "https://therecord.media/cisa-nable-cybersecurity-bug",
+      "summary": "The U.S. cyber agency is giving government departments until Thanksgiving to patch a vulnerability impacting a critical email security platform that blocks spam, malware and other threats.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "malware-ransomware",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-mcdonald-s-japan-data-breach-exposes-customer-location-information",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "McDonald's Japan data breach exposes customer location information",
+      "publishedAt": "2026-11-24T14:09:37Z",
+      "url": "https://www.bleepingcomputer.com/news/security/mcdonalds-japan-data-breach-exposes-customer-location-information/",
+      "summary": "McDonald's Japan, the fast-food giant's Japanese subsidiary, has disclosed a data breach after attackers accessed a database containing sensitive information for users of the company's official smartphone app. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "third-party-breach",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
     {
       "id": "bleepingcomputer-new-shirudo-tool-uses-ai-to-shield-unpatched-linux-systems-from-exploits",
       "sourceId": "bleepingcomputer",
@@ -116,19 +298,6 @@
       "summary": "A threat cluster previously assessed to be affiliated with the ShinyHunters extortion crew may have rebranded and continued operations under a new name called INCEPTION, according to Okta's Threat Intelligence team. The cluster, dubbed O-UNC-053, is characterized by the use of voice phishing (aka vishing) attacks to trick targets into entering credentials in phishing pages and approving",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "third-party-breach",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "therecord-mcdonald-s-japan-discloses-breach-exposing-customer-purchase-and-location-data",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "McDonald’s Japan discloses breach exposing customer purchase and location data",
-      "publishedAt": "2026-11-24T13:00:00Z",
-      "url": "https://therecord.media/japan-mcdonalds-cyberattack-breach",
-      "summary": "McDonald’s Japan disclosed a cybersecurity breach that exposed customers’ purchase histories and mobile device location data.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -237,43 +406,46 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "therecord-grand-theft-auto-vi-hacker-sentenced-to-seven-years-released-the-same-day",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "‘Grand Theft Auto VI’ hacker sentenced to seven years, released the same day",
+      "id": "cisa-cve-2026-132224",
+      "sourceId": "cisa-kev",
+      "publisher": "CISA KEV Catalog",
+      "title": "CVE-2026-132224: Optimizely Web Experimentation External Control of Critical State Data Vulnerability",
       "publishedAt": "2026-11-24T00:00:00Z",
-      "url": "https://therecord.media/gta-vi-hacker-arion-kurtaj-released-on-license",
-      "summary": "A British cybercriminal who hacked Rockstar Games and leaked footage of Grand Theft Auto VI was sentenced Monday to seven years in prison, and then released on license because of time served.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132224",
+      "summary": "Optimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow that could allow an attacker to impersonate existing customer users and modify Project JavaScript. Successful exploitation can result in attacker-controlled JavaScript being distributed through Optimizely-hosted assets and executed in browsers visiting affected customer websites. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "signalType": "Known exploited vulnerability — listed by CISA KEV",
+      "caseType": "vulnerability",
+      "confidence": "cisa-kev-listed",
+      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
+      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
     },
     {
-      "id": "therecord-laliga-hacked-spain-s-top-football-league-confirms-theft-of-fans-personal-data",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "LaLiga hacked: Spain’s top football league confirms theft of fans’ personal data",
+      "id": "cisa-cve-2026-132165",
+      "sourceId": "cisa-kev",
+      "publisher": "CISA KEV Catalog",
+      "title": "CVE-2026-132165: Drupal Core Remote Code Execution Vulnerability",
       "publishedAt": "2026-11-24T00:00:00Z",
-      "url": "https://therecord.media/laliga-hacked-spain-top-professional-league-confirms-cyber-incident",
-      "summary": "Spain’s professional soccer league LaLiga said Monday hackers stole personal information belonging to fans in a cyberattack affecting its digital services and those of several Spanish clubs.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-132165",
+      "summary": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to reinstall Drupal on the site. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "signalType": "Known exploited vulnerability — listed by CISA KEV",
+      "caseType": "vulnerability",
+      "confidence": "cisa-kev-listed",
+      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
+      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
     },
     {
-      "id": "therecord-hackers-breach-austrian-foreign-ministry-website-access-diplomats-contact-details",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "Hackers breach Austrian Foreign Ministry website, access diplomats' contact details",
+      "id": "cisa-cve-2026-131914",
+      "sourceId": "cisa-kev",
+      "publisher": "CISA KEV Catalog",
+      "title": "CVE-2026-131914: Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
       "publishedAt": "2026-11-24T00:00:00Z",
-      "url": "https://therecord.media/austrian-foreign-ministry-says-website-hacked",
-      "summary": "Austria's Foreign Ministry said late last week that hackers breached one of its websites and accessed the names and official contact information of employees at its Vienna headquarters and at Austria’s diplomatic missions abroad.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-131914",
+      "summary": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+      "signalType": "Known exploited vulnerability — listed by CISA KEV",
+      "caseType": "vulnerability",
+      "confidence": "cisa-kev-listed",
+      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
+      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
     },
     {
       "id": "bleepingcomputer-south-korea-s-power-giant-kepco-confirms-data-breach-impacting-1-5-million",
@@ -315,19 +487,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "therecord-signal-blocks-screenshots-by-apple-google-operating-systems-to-protect-data-from-ai-agents",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "Signal blocks screenshots by Apple, Google operating systems to protect data from AI agents",
-      "publishedAt": "2026-11-23T18:37:00Z",
-      "url": "https://therecord.media/signal-no-screenshots-by-apple-google-operating-systems",
-      "summary": "Google’s Gemini Intelligence and Apple's Siri AI \"are changing this environment in a way that’s making it increasingly hostile to privacy,\" Signal said.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "ai-agent",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "thehackernews-webworm-suspected-of-modifying-softether-vpn-to-evade-detection-and-hide-remote-access",
       "sourceId": "thehackernews",
       "publisher": "The Hacker News",
@@ -341,19 +500,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "bleepingcomputer-globetopper-loses-2-5-million-after-hackers-steal-70k-in-gift-cards",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "GlobeTopper loses $2.5 million after hackers steal $70k in gift cards",
-      "publishedAt": "2026-11-23T16:50:01Z",
-      "url": "https://www.bleepingcomputer.com/news/security/globetopper-loses-25-million-after-hackers-steal-70k-in-gift-cards/",
-      "summary": "A cyberattack disrupted operations at B2B top-up solutions provider GlobeTopper, causing an estimated $2.5 million in lost revenue, while the attacker redeemed digital gift cards worth $70,000. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "thehackernews-weekly-recap-vmware-0-day-java4shell-nginx2root-ruby2shell-and-a-whole-lot-of-shell-troubl",
       "sourceId": "thehackernews",
       "publisher": "The Hacker News",
@@ -363,19 +509,6 @@
       "summary": "A stolen key. A trusted message. A routine update. None of these looks like the start of a major security problem. That's partly why they work. Attackers don't always need to break down a door. Sometimes they just use one that's already open. This week's stories show how quickly a small opening can turn into a much bigger mess. One breach helps attackers reach another target. Tools people rely",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-ai-agents-are-creating-a-shared-responsibility-gap",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "AI Agents Are Creating a Shared Responsibility Gap",
-      "publishedAt": "2026-11-23T15:00:10Z",
-      "url": "https://www.bleepingcomputer.com/news/security/ai-agents-are-creating-a-shared-responsibility-gap/",
-      "summary": "AI agents operate across multiple platforms, creating security gaps when no single vendor can see or control their actions. Token Security examines the shared responsibility problem and explains how organizations can better manage agent identities, permissions, and accountability. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "ai-agent",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -458,19 +591,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "bleepingcomputer-cisa-flags-critical-cisco-rce-flaw-as-actively-exploited-in-attacks",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
-      "publishedAt": "2026-11-23T07:44:19Z",
-      "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/",
-      "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers are now exploiting a recently patched critical Cisco Expressway vulnerability in the wild. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "cisa-cve-2026-134624",
       "sourceId": "cisa-kev",
       "publisher": "CISA KEV Catalog",
@@ -499,32 +619,6 @@
       "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
     },
     {
-      "id": "bleepingcomputer-hackers-exploit-gl-inet-cloud-flaw-to-infect-routers-kvm-devices",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
-      "publishedAt": "2026-11-22T18:45:37Z",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
-      "summary": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "malware-ransomware",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
-      "publishedAt": "2026-11-22T15:43:04Z",
-      "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
-      "summary": "E-commerce platform Cleverbridge is warning that hackers breached its systems and stole customers' payment card information, including credit card numbers and CVV security codes. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "third-party-breach",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "thehackernews-openrouter-drops-3-providers-after-researchers-catch-months-of-prompt-theft-at-ai-hosting-",
       "sourceId": "thehackernews",
       "publisher": "The Hacker News",
@@ -547,19 +641,6 @@
       "summary": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it. Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the application calling it directly. Security firm pwn.ai showed this week that ordinary upload,",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
-      "publishedAt": "2026-11-21T22:59:58Z",
-      "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
-      "summary": "Rackspace warned customers that hackers breached its Rackspace Spot cloud platform using compromised credentials, allowing them to deploy unauthorized workloads and access Kubernetes secrets in customer clusters. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -1019,19 +1100,6 @@
       "summary": "On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case, researchers at Technische Universität Berlin say. That leaves short PINs open to guessing. In lab tests, the researchers found a four-digit Hello PIN on an AMD laptop and a 6-digit BitLocker PIN on an Intel laptop this way. Both PINs were set by the",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-ai-pentesting-checklist-for-web-apps-15-questions-to-ask-before-choosing-a-vendor",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor",
-      "publishedAt": "2026-11-18T12:15:00Z",
-      "url": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
-      "summary": "TL;DR Attackers move first. On average, exploitation now starts before a patch exists (Mandiant M-Trends 2026). In 1H 2026, 23% of vulnerabilities VulnCheck added to its exploited list were hit on or before disclosure day. AI pentesting vendors aren't interchangeable. Most look convincing in a demo. The gaps show up in your logged-in flows, your coverage, and your production safety. Make",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -1610,73 +1678,6 @@
       "caseType": "third-party-breach",
       "confidence": "company-acknowledged-incident",
       "sourceStatus": "The report says PwC acknowledged an incident; the alleged data scope remains unconfirmed in this source."
-    },
-    {
-      "id": "certin-ciad-2026-0053",
-      "sourceId": "cert-in",
-      "publisher": "CERT-In",
-      "title": "Compromise of LiteLLM PyPI Package and Docker Images",
-      "publishedAt": "2026-10-23T00:00:00Z",
-      "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0053",
-      "summary": "Official CERT-In advisory. Review the linked notice for exact affected products, exploitation context, and vendor-approved mitigation; do not assume every installation is affected.",
-      "signalType": "Official security advisory",
-      "caseType": "dependency-compromise",
-      "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0053; details must be checked in the linked notice"
-    },
-    {
-      "id": "cisa-cve-2026-114625",
-      "sourceId": "cisa-kev",
-      "publisher": "CISA KEV Catalog",
-      "title": "CVE-2026-114625: Arista VeloCloud Orchestrator SQL Injection Vulnerability",
-      "publishedAt": "2026-10-23T00:00:00Z",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-114625",
-      "summary": "Arista VeloCloud Orchestrator on-prem contains a SQL injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may compromise the confidentiality, integrity, and availability of the orchestrator and data managed by the orchestrator. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-      "signalType": "Known exploited vulnerability — listed by CISA KEV",
-      "caseType": "vulnerability",
-      "confidence": "cisa-kev-listed",
-      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
-      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "id": "cisa-cve-2026-110447",
-      "sourceId": "cisa-kev",
-      "publisher": "CISA KEV Catalog",
-      "title": "CVE-2026-110447: Collabora Online – Built-in CODE Server OS Command Injection Vulnerability",
-      "publishedAt": "2026-10-23T00:00:00Z",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-110447",
-      "summary": "Collabora Collabora Online – Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn't running. Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
-      "signalType": "Known exploited vulnerability — listed by CISA KEV",
-      "caseType": "vulnerability",
-      "confidence": "cisa-kev-listed",
-      "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
-      "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "id": "certin-ciad-2026-0051",
-      "sourceId": "cert-in",
-      "publisher": "CERT-In",
-      "title": "Multiple Vulnerabilities in Oracle Products",
-      "publishedAt": "2026-10-22T00:00:00Z",
-      "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0051",
-      "summary": "Official CERT-In advisory. Review the linked notice for exact affected products, exploitation context, and vendor-approved mitigation; do not assume every installation is affected.",
-      "signalType": "Official security advisory",
-      "caseType": "vulnerability",
-      "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0051; details must be checked in the linked notice"
-    },
-    {
-      "id": "certin-ciad-2026-0052",
-      "sourceId": "cert-in",
-      "publisher": "CERT-In",
-      "title": "Advisory to MSME - Remote code execution vulnerabilities in PHP (PHP2Shell",
-      "publishedAt": "2026-10-22T00:00:00Z",
-      "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0052",
-      "summary": "Official CERT-In advisory. Review the linked notice for exact affected products, exploitation context, and vendor-approved mitigation; do not assume every installation is affected.",
-      "signalType": "Official security advisory",
-      "caseType": "vulnerability",
-      "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0052; details must be checked in the linked notice"
     }
   ]
 }
