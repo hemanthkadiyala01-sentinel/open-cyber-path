@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T16:58:35Z",
+  "generatedAt": "2026-11-27T01:46:04Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -18,7 +18,7 @@
       "url": "https://www.bleepingcomputer.com/rss-feeds/",
       "description": "Independent global incident and vulnerability reporting; cross-check material claims",
       "status": "ok",
-      "itemCount": 13
+      "itemCount": 12
     },
     {
       "id": "therecord",
@@ -34,7 +34,7 @@
       "url": "https://thehackernews.com/",
       "description": "Independent global cybersecurity reporting; verify claims against primary disclosures where available",
       "status": "ok",
-      "itemCount": 48
+      "itemCount": 47
     },
     {
       "id": "ncsc-uk",
@@ -80,6 +80,32 @@
     }
   ],
   "items": [
+    {
+      "id": "bleepingcomputer-nordvpn-black-friday-deal-get-78-off-vpn-plans-in-2026",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "NordVPN Black Friday Deal: Get 78% off VPN plans in 2026",
+      "publishedAt": "2026-11-26T17:58:42Z",
+      "url": "https://www.bleepingcomputer.com/news/security/nordvpn-black-friday-deal-get-78-percent-off-vpn-plans-in-2026/",
+      "summary": "NordVPN's 2026 Black Friday and Cyber Monday deal is now live, offering savings of up to 78% on VPN subscriptions, plus three extra months of protection. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-fake-paid-expert-interviews-impersonate-brands-to-steal-google-logins",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Fake paid expert interviews impersonate brands to steal Google logins",
+      "publishedAt": "2026-11-26T17:15:27Z",
+      "url": "https://www.bleepingcomputer.com/news/apple/fake-paid-expert-interviews-impersonate-brands-to-steal-google-logins/",
+      "summary": "An ongoing phishing campaign dubbed \"GoodGuys\" impersonates major brands, including Google, Nvidia, Accenture, and SpaceX, to steal corporate Google and Okta credentials using fake invitations to paid expert interviews and webinars. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
     {
       "id": "bleepingcomputer-remus-malware-steals-gmail-messages-via-fake-google-sheets-extension",
       "sourceId": "bleepingcomputer",
@@ -583,45 +609,6 @@
       "confidence": "cisa-kev-listed",
       "sourceStatus": "The CVE is listed in CISA KEV; this does not establish that the learner's assets are affected.",
       "sourceCatalogUrl": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
-    },
-    {
-      "id": "bleepingcomputer-rackspace-shuts-down-spot-cloud-platform-after-security-breach",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Rackspace shuts down Spot cloud platform after security breach",
-      "publishedAt": "2026-11-24T21:37:30Z",
-      "url": "https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/",
-      "summary": "Rackspace is shutting down its Rackspace Spot cloud platform after a security breach allowed hackers to access customer Kubernetes clusters and secrets, giving customers until December 8 to migrate their services and download their data. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-new-inception-extortion-gang-launches-large-scale-vishing-campaign",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "New Inception extortion gang launches large-scale vishing campaign",
-      "publishedAt": "2026-11-24T20:21:20Z",
-      "url": "https://www.bleepingcomputer.com/news/security/new-inception-extortion-gang-launches-large-scale-vishing-campaign/",
-      "summary": "A newly formed data extortion group named 'Inception' has been linked to a large-scale campaign that targets single sign-on (SSO) credentials of multiple global brands and firms. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "third-party-breach",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-turnitin-discloses-cyberattack-affecting-customer-facing-systems",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Turnitin discloses cyberattack affecting customer-facing systems",
-      "publishedAt": "2026-11-24T18:59:52Z",
-      "url": "https://www.bleepingcomputer.com/news/security/turnitin-discloses-cyberattack-affecting-customer-facing-systems/",
-      "summary": "Turnitin disclosed via a statement from its CEO, Chris Caren, that it recently detected unauthorized activity involving certain customer-facing systems. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
       "id": "thehackernews-iran-aligned-volant-manticore-uses-ipfs-based-kuboshell-backdoor-in-espionage-campaigns",
@@ -1218,19 +1205,6 @@
       "sourceStatus": "Listed by CERT-In as CIAD-2026-0062; details must be checked in the linked notice"
     },
     {
-      "id": "thehackernews-threatsday-gpt-6-2-jailbreak-flaws-bubbleloader-png-malware-500m-ransom-demands-17-more-st",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "ThreatsDay: GPT-6.2 Jailbreak Flaws, BubbleLoader PNG Malware, $500M Ransom Demands + 17 More Stories",
-      "publishedAt": "2026-11-19T18:47:58Z",
-      "url": "https://thehackernews.com/2026/11/threatsday-gpt-62-jailbreak-flaws.html",
-      "summary": "The easiest way to fool someone is to give them something they already expect. A job offer. A message about a service outage. A familiar app. Nothing looks strange at first. And that's the problem. This week's stories show how ordinary things are being used to steal data, spread malware, and get people to hand over access. There's another shift worth watching. AI is making some attacks easier",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "malware-ransomware",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "certin-ciad-2026-0061",
       "sourceId": "cert-in",
       "publisher": "CERT-In",
@@ -1679,6 +1653,32 @@
       "caseType": "third-party-breach",
       "confidence": "company-acknowledged-incident",
       "sourceStatus": "The report says PwC acknowledged an incident; the alleged data scope remains unconfirmed in this source."
+    },
+    {
+      "id": "certin-ciad-2026-0053",
+      "sourceId": "cert-in",
+      "publisher": "CERT-In",
+      "title": "Compromise of LiteLLM PyPI Package and Docker Images",
+      "publishedAt": "2026-10-23T00:00:00Z",
+      "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0053",
+      "summary": "Official CERT-In advisory. Review the linked notice for exact affected products, exploitation context, and vendor-approved mitigation; do not assume every installation is affected.",
+      "signalType": "Official security advisory",
+      "caseType": "dependency-compromise",
+      "confidence": "official-advisory",
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0053; details must be checked in the linked notice"
+    },
+    {
+      "id": "certin-ciad-2026-0051",
+      "sourceId": "cert-in",
+      "publisher": "CERT-In",
+      "title": "Multiple Vulnerabilities in Oracle Products",
+      "publishedAt": "2026-10-22T00:00:00Z",
+      "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0051",
+      "summary": "Official CERT-In advisory. Review the linked notice for exact affected products, exploitation context, and vendor-approved mitigation; do not assume every installation is affected.",
+      "signalType": "Official security advisory",
+      "caseType": "vulnerability",
+      "confidence": "official-advisory",
+      "sourceStatus": "Listed by CERT-In as CIAD-2026-0051; details must be checked in the linked notice"
     }
   ]
 }
