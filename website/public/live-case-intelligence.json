@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T01:46:04Z",
+  "generatedAt": "2026-11-27T12:31:06Z",
   "freshnessPolicy": "Scheduled source check every three hours when the workflow is enabled on the default branch. Publication time is from the source where supplied. Feed errors are shown; source reporting does not prove local exposure.",
   "safetyNotice": "This feed reports public cybersecurity incidents, advisories and exploited-vulnerability signals. Selecting a card starts a defensive drill with synthetic records; it never probes an affected target.",
   "sources": [
@@ -26,7 +26,7 @@
       "url": "https://therecord.media/",
       "description": "Global reporting on breaches, cybercrime, and threat activity; reports are not automatically primary confirmation",
       "status": "ok",
-      "itemCount": 4
+      "itemCount": 5
     },
     {
       "id": "thehackernews",
@@ -81,6 +81,136 @@
   ],
   "items": [
     {
+      "id": "thehackernews-how-to-keep-your-security-picture-current-when-attackers-move-at-ai-speed",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "How to Keep Your Security Picture Current When Attackers Move at AI Speed",
+      "publishedAt": "2026-11-27T10:32:18Z",
+      "url": "https://thehackernews.com/2026/11/how-to-keep-your-security-picture.html",
+      "summary": "Most security metrics are not built to be used. They are built to be shown. Somewhere between the quarterly review and the next status update, a set of numbers gets assembled that looks reassuring in a room and tells almost no one what is actually happening across the environment that week. Someone pulls them together the week before, cleans them up, and presents a picture of a program that is,",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-drupal-warns-of-new-site-takeover-flaw-exploited-in-attacks",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Drupal warns of new site takeover flaw exploited in attacks",
+      "publishedAt": "2026-11-27T10:10:15Z",
+      "url": "https://www.bleepingcomputer.com/news/security/drupal-warns-of-new-access-bypass-flaw-exploited-in-attacks/",
+      "summary": "The Drupal security team says attackers are exploiting a second critical vulnerability that lets them breach and hijack unpatched websites. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-sap-confirms-security-incident-after-suspicious-github-activity",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "SAP confirms security incident after suspicious GitHub activity",
+      "publishedAt": "2026-11-27T09:56:36Z",
+      "url": "https://www.bleepingcomputer.com/news/security/sap-confirms-security-incident-after-suspicious-github-activity/",
+      "summary": "SAP has confirmed to BleepingComputer that it took urgent action to protect its customers after detecting suspicious activity in its IT environment. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-hackers-trojanize-official-q-dir-and-desktopok-downloads-to-deliver-remote-access-malware",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware",
+      "publishedAt": "2026-11-27T09:29:30Z",
+      "url": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
+      "summary": "Cybersecurity researchers have disclosed details of a software supply chain attack that has tampered with Q-Dir and DesktopOK installation files distributed via the official SoftwareOK website. \"Evidence indicates that malicious files were generated not only when users downloaded the programs directly from the official download page but also during the update process of previously installed",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "dependency-compromise",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-microsoft-pushes-emergency-hotpatch-to-fix-windows-server-crashes",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "Microsoft pushes emergency hotpatch to fix Windows Server crashes",
+      "publishedAt": "2026-11-27T09:08:16Z",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/new-out-of-band-oob-emergency-hotpatch-fixes-windows-server-2025-crashes/",
+      "summary": "Microsoft has released an emergency hotpatch update to address Windows Server 2025 crashes triggered after installing this month's security hotpatch update (KB5131077). [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "bleepingcomputer-new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges",
+      "sourceId": "bleepingcomputer",
+      "publisher": "BleepingComputer",
+      "title": "New NFS2ROOT Linux flaw can let attackers gain root privileges",
+      "publishedAt": "2026-11-27T08:06:58Z",
+      "url": "https://www.bleepingcomputer.com/news/security/new-nfs2root-linux-flaw-can-let-attackers-gain-root-privileges/",
+      "summary": "​A 12-year-old critical vulnerability in the Linux kernel's Network File System (NFS) server, tracked as CVE-2026-99362, allows remote attackers to gain root privileges. [...]",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-switzerland-confirms-ai-assisted-cyberattacks-breached-critical-infrastructure-operators",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Switzerland Confirms AI-Assisted Cyberattacks Breached Critical Infrastructure Operators",
+      "publishedAt": "2026-11-27T06:04:20Z",
+      "url": "https://thehackernews.com/2026/11/switzerland-confirms-ai-assisted.html",
+      "summary": "Attackers using AI agents have broken into computer systems at Swiss organizations in four of five confirmed attacks, the first such cases in the country, the country's cybersecurity agency said yesterday. Three of the attacks targeted critical infrastructure operators, and two of those succeeded, with no major disruptions reported. The victims have not been named, and it is not known who is",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "ai-agent",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "thehackernews-unpatched-cacti-zero-day-enables-rce-in-just-four-http-requests-via-guest-access",
+      "sourceId": "thehackernews",
+      "publisher": "The Hacker News",
+      "title": "Unpatched Cacti Zero-Day Enables RCE in Just Four HTTP Requests via Guest Access",
+      "publishedAt": "2026-11-27T05:48:20Z",
+      "url": "https://thehackernews.com/2026/11/unpatched-cacti-zero-day-enables-rce-in.html",
+      "summary": "Details have emerged about a new zero-day vulnerability in Cacti, an open-source network monitoring tool, that could be exploited to achieve remote code execution. The proof-of-concept (PoC) exploit, which has yet to be assigned a CVE identifier, has been tracked as 4HTTP2SHELL and 4HTTP2ROOT. \"I found a path from a fresh, unauthenticated HTTP session to command execution as the Cacti server",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "vulnerability",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-cyberattack-disrupts-global-news-distribution-platform-at-france-s-afp",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "Cyberattack disrupts global news distribution platform at France’s AFP",
+      "publishedAt": "2026-11-27T00:00:00Z",
+      "url": "https://therecord.media/france-afp-hit-by-cyberattack",
+      "summary": "French international news agency Agence France-Presse was hit by a cyberattack Thursday, forcing it to take offline one of its main platforms for distributing news content to media organizations worldwide.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
+      "id": "therecord-british-government-takes-services-offline-following-cyber-incident",
+      "sourceId": "therecord",
+      "publisher": "The Record",
+      "title": "British government takes services offline following ‘cyber incident’",
+      "publishedAt": "2026-11-27T00:00:00Z",
+      "url": "https://therecord.media/uk-department-work-pensions-cyber-incident",
+      "summary": "The Department for Work and Pensions said Friday that it had experienced a cyber incident, with several services taken down as a precaution.",
+      "signalType": "Media report — verify claims against the original vendor or incident statement",
+      "caseType": "generic",
+      "confidence": "reported",
+      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
+    },
+    {
       "id": "bleepingcomputer-nordvpn-black-friday-deal-get-78-off-vpn-plans-in-2026",
       "sourceId": "bleepingcomputer",
       "publisher": "BleepingComputer",
@@ -126,7 +256,7 @@
       "title": "North Korea-Linked PolinRider Poisons Over 7,600 GitHub Repositories to Spread Malware",
       "publishedAt": "2026-11-26T15:13:41Z",
       "url": "https://thehackernews.com/2026/11/north-korea-linked-polinrider-poisons.html",
-      "summary": "The threat actors behind the PolinRider campaign have been observed planting a Python loader in GitHub repositories, as evidence emerges that the activity may have started as far back as February 2025. \"The loader hides in a small utils package or in conftest.py,\" SafeDep said in a report published this week. \"When Python imports the file, the loader reads the newest transaction that an",
+      "summary": "The threat actors behind the PolinRider campaign have compromised over 7,600 GitHub repositories, in some cases planting a Python loader capable of delivering next-stage payloads, as evidence emerges that the activity may have started as far back as February 2025. \"These are real developers, not throwaway accounts,\" Apiiro researcher Shmulik Cohen said. \"6,541 of the 7,609 repos (86%) belong",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "malware-ransomware",
       "confidence": "reported",
@@ -289,19 +419,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "therecord-florida-ransomware-recovery-ceo-indicted-for-allegedly-paying-hacker-ransoms",
-      "sourceId": "therecord",
-      "publisher": "The Record",
-      "title": "Florida ransomware recovery CEO indicted for allegedly paying hacker ransoms",
-      "publishedAt": "2026-11-25T17:30:00Z",
-      "url": "https://therecord.media/ransomware-doj-indictment-recovery",
-      "summary": "The CEO of a ransomware recovery firm was indicted by a federal grand jury over allegations he lied about his services and paid out ransoms to cybercriminals.",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "malware-ransomware",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "bleepingcomputer-cisa-warns-of-critical-unpatched-flaw-in-danfoss-refrigeration-controllers",
       "sourceId": "bleepingcomputer",
       "publisher": "BleepingComputer",
@@ -311,19 +428,6 @@
       "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning about a critical vulnerability in Danfoss AK-SM 8xxA Series controllers used by food retailers to manage commercial refrigeration, HVAC, and lighting systems. [...]",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "InfraTrust warns of exploited supply chain flaws in network appliances",
-      "publishedAt": "2026-11-25T15:00:00Z",
-      "url": "https://www.bleepingcomputer.com/news/security/infratrust-warns-of-exploited-supply-chain-flaws-in-network-appliances/",
-      "summary": "Eclypsium's November InfraTrust report warns that most infrastructure security advisories addressing exploited vulnerabilities over the past month involve flaws in third-party software bundled into products rather than code developed by the vendors themselves. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "dependency-compromise",
       "confidence": "reported",
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
@@ -380,19 +484,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "bleepingcomputer-hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Hackers now exploit critical Drupal RCE flaw to hijack sites",
-      "publishedAt": "2026-11-25T10:10:20Z",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/",
-      "summary": "The Drupal security team has confirmed that a critical vulnerability that lets attackers hijack unpatched sites has been actively exploited since at least Thursday. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "thehackernews-hackers-exploited-cvss-10-0-hex-pm-rce-flaw-to-compromise-6-package-registry-servers",
       "sourceId": "thehackernews",
       "publisher": "The Hacker News",
@@ -400,32 +491,6 @@
       "publishedAt": "2026-11-25T09:06:59Z",
       "url": "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html",
       "summary": "An attacker ran operating system commands on Monday on six production servers of Hex.pm, the package registry that Elixir and Erlang developers fetch their dependencies from. The flaw used in the attack had been in the registry's code since February 2016, and the team that maintains the service had every server on a patched build within about 15 minutes of the first malicious request. Checks",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-microsoft-confirms-authentication-issues-after-november-updates",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Microsoft confirms authentication issues after November updates",
-      "publishedAt": "2026-11-25T09:02:57Z",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-authentication-issues-after-november-updates/",
-      "summary": "Microsoft has confirmed that customers may experience authentication issues after installing November security updates that address a high-severity remote code execution vulnerability. [...]",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "bleepingcomputer-hackers-reportedly-breached-cia-intelligence-analysis-system",
-      "sourceId": "bleepingcomputer",
-      "publisher": "BleepingComputer",
-      "title": "Hackers reportedly breached CIA intelligence analysis system",
-      "publishedAt": "2026-11-25T07:45:03Z",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-reportedly-breached-cia-intelligence-analysis-system/",
-      "summary": "Unknown attackers have reportedly breached an open-source intelligence analysis system at the US Central Intelligence Agency (CIA) [...]",
       "signalType": "Media report — verify claims against the original vendor or incident statement",
       "caseType": "vulnerability",
       "confidence": "reported",
@@ -1084,58 +1149,6 @@
       "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
     },
     {
-      "id": "thehackernews-hackers-exploit-critical-cisco-expressway-flaw-breach-four-devices-and-reach-internal-netw",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "Hackers Exploit Critical Cisco Expressway Flaw, Breach Four Devices and Reach Internal Network",
-      "publishedAt": "2026-11-20T10:32:50Z",
-      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html",
-      "summary": "Threat actors have been observed exploiting a recently disclosed critical security flaw in Cisco Expressway to breach a Russian organization shortly after the public release of a proof-of-concept (PoC) exploit. The activity involves the exploitation of CVE-2026-76466 (CVSS score: 9.8), a vulnerability that could allow an unauthenticated, remote attacker with network access to a Cisco Expressway",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-china-linked-hackers-exploit-critical-vmware-vcenter-zero-day-to-gain-admin-access-and-ste",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
-      "publishedAt": "2026-11-20T09:38:15Z",
-      "url": "https://thehackernews.com/2026/11/china-linked-hackers-exploit-critical.html",
-      "summary": "The suspected China-nexus cyber espionage group known as Armory Castle (formerly UNC5221) has been attributed to the zero-day exploitation of a critical security flaw in VMware vCenter Server in early September 2026. The vulnerability, tracked as CVE-2026-123890 (CVSS score: 9.8), is a case of authentication bypass in the VMware Directory Service that could be exploited to gain unauthorized",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "vulnerability",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-romulus-clickfix-attacks-deliver-rat-that-can-spy-on-users-and-control-pcs",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "ROMULUS ClickFix Attacks Deliver RAT That Can Spy on Users and Control PCs",
-      "publishedAt": "2026-11-20T07:11:39Z",
-      "url": "https://thehackernews.com/2026/11/romulus-clickfix-attacks-deliver-rat.html",
-      "summary": "Threat actors have been observed using the ROMULUS ClickFix malware delivery platform to deliver a previously undocumented remote access trojan (RAT) that shares similarities with CNCMachineRMS. \"ROMULUS likely operates as a delivery service, distributing CNCMachineRMS and Legion Loader through separate chains while retaining ClickFix and signed binary sideloading techniques,\" Blackpoint",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "malware-ransomware",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
-      "id": "thehackernews-new-unpatched-windows-0-day-fastunlock-lets-someone-holding-a-locked-pc-run-programs-on-it",
-      "sourceId": "thehackernews",
-      "publisher": "The Hacker News",
-      "title": "New Unpatched Windows 0-Day FastUnlock Lets Someone Holding a Locked PC Run Programs on It",
-      "publishedAt": "2026-11-20T05:30:01Z",
-      "url": "https://thehackernews.com/2026/11/new-unpatched-windows-0-day-fastunlock.html",
-      "summary": "A newly disclosed unpatched zero-day technique called FastUnlock lets someone with physical access to a locked Windows computer start programs without signing in. Whoever uses it gets only a limited account, not administrator control of the machine. The method was posted yesterday by a researcher who uses the handles MSNightmare and Nightmare Eclipse, and the endpoint-security firm ThreatLocker",
-      "signalType": "Media report — verify claims against the original vendor or incident statement",
-      "caseType": "generic",
-      "confidence": "reported",
-      "sourceStatus": "Independent media report; cross-check material claims against primary disclosures where available."
-    },
-    {
       "id": "cisa-cve-2026-76466",
       "sourceId": "cisa-kev",
       "publisher": "CISA KEV Catalog",
@@ -1666,19 +1679,6 @@
       "caseType": "dependency-compromise",
       "confidence": "official-advisory",
       "sourceStatus": "Listed by CERT-In as CIAD-2026-0053; details must be checked in the linked notice"
-    },
-    {
-      "id": "certin-ciad-2026-0051",
-      "sourceId": "cert-in",
-      "publisher": "CERT-In",
-      "title": "Multiple Vulnerabilities in Oracle Products",
-      "publishedAt": "2026-10-22T00:00:00Z",
-      "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0051",
-      "summary": "Official CERT-In advisory. Review the linked notice for exact affected products, exploitation context, and vendor-approved mitigation; do not assume every installation is affected.",
-      "signalType": "Official security advisory",
-      "caseType": "vulnerability",
-      "confidence": "official-advisory",
-      "sourceStatus": "Listed by CERT-In as CIAD-2026-0051; details must be checked in the linked notice"
     }
   ]
 }
